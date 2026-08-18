@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base: #F9F7F2;
+  --color-primary: #f3821d;
+  --color-accent: #d2955c;
+  --color-dark: #003525;
+  --color-charcoal: #332D29;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+
+  --spacing-section: 8rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply bg-base text-charcoal font-sans selection:bg-primary/20 selection:text-primary;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif font-medium tracking-tight;
+  }
+  .eyebrow {
+    @apply text-[10px] uppercase tracking-[0.5em] text-primary font-bold mb-4 block;
+  }
+}
+
+@layer components {
+  /* Separated borders and colors to avoid linter conflicts */
+  .pill-button {
+    @apply px-10 py-4 rounded-full text-[10px] uppercase tracking-[0.3em] font-bold;
+    @apply transition-all duration-500 active:scale-95 border cursor-pointer;
+  }
+
+  .btn-filled {
+    @apply bg-primary border-primary text-white shadow-lg shadow-primary/10;
+    @apply hover:bg-dark hover:border-dark;
+  }
+
+  .btn-outline {
+    @apply border-white/30 text-white backdrop-blur-sm;
+    @apply hover:bg-white hover:text-dark;
+  }
+
+  .nav-blur {
+    @apply bg-base/80 backdrop-blur-xl border-b border-dark/5 py-4;
+  }
+
+  .journey-card {
+    @apply relative overflow-hidden bg-white/50 transition-all duration-700;
+    @apply hover:-translate-y-2 hover:shadow-2xl hover:shadow-dark/5;
+  }
+
+  .journey-card img {
+    @apply transition-transform duration-1000 ease-out group-hover:scale-110;
+  }
+
+  /* Optimized Form Input to resolve IntelliSense conflicts */
+  .form-input {
+    @apply bg-transparent w-full py-5 transition-all duration-700 focus:outline-none;
+    /* Base text style */
+    @apply font-serif text-lg border-b border-dark/10;
+    /* Focus state */
+    @apply focus:border-primary;
+    /* Placeholder state - targeted separately to clear warnings */
+    @apply placeholder:font-sans placeholder:text-xs placeholder:uppercase;
+    @apply placeholder:tracking-widest placeholder:text-charcoal/20;
+  }
+
+  .ken-burns {
+    animation: kenburns 25s ease-out infinite alternate;
+  }
+  
+  .whatsapp-float {
+    @apply fixed bottom-10 right-10 z-50 bg-[#25D366] text-white p-5 rounded-full;
+    @apply shadow-2xl transition-transform hover:scale-110 active:scale-90;
+    animation: pulse-green 2s infinite;
+  }
+}
+
+@keyframes kenburns {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.15) translate(-2%, -1%); }
+}
+
+@keyframes pulse-green {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+  70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #F9F7F2; }
+::-webkit-scrollbar-thumb { background: #B5551C; border-radius: 10px; }
