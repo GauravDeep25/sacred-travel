@@ -4,7 +4,7 @@ import SectionHeader from '../components/SectionHeader';
 import JourneyGrid from '../components/JourneyGrid';
 import { siteConfig } from '../data/siteConfig';
 
-export default function Domestic() {
+export default function International() {
   // State for the background image slider
   const [index, setIndex] = useState(0);
 
@@ -12,7 +12,7 @@ export default function Domestic() {
     const timer = setInterval(() => {
       setIndex((prevIndex) => {
         // Cycles through the images in your siteConfig
-        return (prevIndex + 1) % siteConfig.domestic.hero.length;
+        return (prevIndex + 1) % siteConfig.international.hero.length;
       });
     }, 5000); 
 
@@ -20,7 +20,7 @@ export default function Domestic() {
   }, []); 
 
   // Fallback for static text elements 
-  const staticContent = siteConfig.domestic.hero[0];
+  const staticContent = siteConfig.international.hero[0];
 
   return (
     <div className="bg-base min-h-screen">
@@ -29,7 +29,7 @@ export default function Domestic() {
       <section className="relative h-[65vh] w-full flex items-center justify-center overflow-hidden bg-white">
         {/* Background Image Layer */}
         <div className="absolute inset-0 z-0">
-          {siteConfig.domestic.hero.map((slide, i) => (
+          {siteConfig.international.hero.map((slide, i) => (
             <motion.div
               key={i}
               initial={false}
@@ -65,7 +65,7 @@ export default function Domestic() {
             transition={{ duration: 1.2, delay: 0.7 }} 
             className="text-white text-5xl md:text-8xl font-serif leading-[1.1] mt-4"
           >
-            Domestic <br />
+            International <br />
             <span className="italic text-accent">Journeys</span>
           </motion.h1>
 
@@ -85,7 +85,7 @@ export default function Domestic() {
         <div className="max-w-7xl mx-auto">
           <SectionHeader 
             eyebrow="Explore Our" 
-            title="Domestic" 
+            title="International" 
             italicTitle="Destinations" 
           />
           <JourneyGrid items={siteConfig.placeholders} />

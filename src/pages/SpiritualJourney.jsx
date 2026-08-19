@@ -4,7 +4,7 @@ import SectionHeader from '../components/SectionHeader';
 import JourneyGrid from '../components/JourneyGrid';
 import { siteConfig } from '../data/siteConfig';
 
-export default function Domestic() {
+export default function SpiritualJourney() {
   // State for the background image slider
   const [index, setIndex] = useState(0);
 
@@ -12,7 +12,7 @@ export default function Domestic() {
     const timer = setInterval(() => {
       setIndex((prevIndex) => {
         // Cycles through the images in your siteConfig
-        return (prevIndex + 1) % siteConfig.domestic.hero.length;
+        return (prevIndex + 1) % siteConfig.spiritualjourney.hero.length;
       });
     }, 5000); 
 
@@ -20,7 +20,7 @@ export default function Domestic() {
   }, []); 
 
   // Fallback for static text elements 
-  const staticContent = siteConfig.domestic.hero[0];
+  const staticContent = siteConfig.spiritualjourney.hero[0];
 
   return (
     <div className="bg-base min-h-screen">
@@ -29,7 +29,7 @@ export default function Domestic() {
       <section className="relative h-[65vh] w-full flex items-center justify-center overflow-hidden bg-white">
         {/* Background Image Layer */}
         <div className="absolute inset-0 z-0">
-          {siteConfig.domestic.hero.map((slide, i) => (
+          {siteConfig.spiritualjourney.hero.map((slide, i) => (
             <motion.div
               key={i}
               initial={false}
@@ -65,18 +65,9 @@ export default function Domestic() {
             transition={{ duration: 1.2, delay: 0.7 }} 
             className="text-white text-5xl md:text-8xl font-serif leading-[1.1] mt-4"
           >
-            Domestic <br />
+            Spiritual <br />
             <span className="italic text-accent">Journeys</span>
           </motion.h1>
-
-          <motion.p 
-            initial={{ opacity: 0 }} 
-            animate={{ opacity: 1 }} 
-            transition={{ duration: 1.5, delay: 1 }} 
-            className="text-white/70 mt-8 max-w-xl mx-auto font-sans text-sm md:text-base leading-relaxed"
-          >
-            {staticContent.sub}
-          </motion.p>
         </div>
       </section>
 
@@ -84,9 +75,9 @@ export default function Domestic() {
       <section className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <SectionHeader 
-            eyebrow="Explore Our" 
-            title="Domestic" 
-            italicTitle="Destinations" 
+            eyebrow="Embark On" 
+            title="Spiritual" 
+            italicTitle="Paths" 
           />
           <JourneyGrid items={siteConfig.placeholders} />
         </div>
