@@ -4,7 +4,7 @@ import SectionHeader from '../components/SectionHeader';
 import JourneyGrid from '../components/JourneyGrid';
 import { siteConfig } from '../data/siteConfig';
 
-export default function Domestic() {
+export default function SpiritualJourney() {
   // State for the background image slider
   const [index, setIndex] = useState(0);
 
@@ -65,18 +65,9 @@ export default function Domestic() {
             transition={{ duration: 1.2, delay: 0.7 }} 
             className="text-white text-5xl md:text-8xl font-serif leading-[1.1] mt-4"
           >
-            Domestic <br />
+            Spiritual <br />
             <span className="italic text-accent">Journeys</span>
           </motion.h1>
-
-          <motion.p 
-            initial={{ opacity: 0 }} 
-            animate={{ opacity: 1 }} 
-            transition={{ duration: 1.5, delay: 1 }} 
-            className="text-white/70 mt-8 max-w-xl mx-auto font-sans text-sm md:text-base leading-relaxed"
-          >
-            {staticContent.sub}
-          </motion.p>
         </div>
       </section>
 
@@ -84,9 +75,9 @@ export default function Domestic() {
       <section className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <SectionHeader 
-            eyebrow="Explore Our" 
-            title="Domestic" 
-            italicTitle="Destinations" 
+            eyebrow="Embark On" 
+            title="Spiritual" 
+            italicTitle="Paths" 
           />
           <JourneyGrid items={siteConfig.placeholders} />
         </div>

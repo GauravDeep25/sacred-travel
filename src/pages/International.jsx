@@ -4,7 +4,7 @@ import SectionHeader from '../components/SectionHeader';
 import JourneyGrid from '../components/JourneyGrid';
 import { siteConfig } from '../data/siteConfig';
 
-export default function Domestic() {
+export default function International() {
   // State for the background image slider
   const [index, setIndex] = useState(0);
 
@@ -65,7 +65,7 @@ export default function Domestic() {
             transition={{ duration: 1.2, delay: 0.7 }} 
             className="text-white text-5xl md:text-8xl font-serif leading-[1.1] mt-4"
           >
-            Domestic <br />
+            International <br />
             <span className="italic text-accent">Journeys</span>
           </motion.h1>
 
@@ -85,7 +85,7 @@ export default function Domestic() {
         <div className="max-w-7xl mx-auto">
           <SectionHeader 
             eyebrow="Explore Our" 
-            title="Domestic" 
+            title="International" 
             italicTitle="Destinations" 
           />
           <JourneyGrid items={siteConfig.placeholders} />
