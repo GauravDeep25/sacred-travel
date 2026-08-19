@@ -12,6 +12,8 @@ export const siteConfig = {
     { name: "Home", path: "/" },
     { name: "Domestic", path: "/domestic" },
     { name: "International", path: "/international" },
+    { name: "Spiritual Journey", path: "/spiritualjourney" },
+    { name: "Experiences", path: "/experiences" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" }
   ],
@@ -41,31 +43,31 @@ export const siteConfig = {
       }
     ],
     categories: [
-  { 
-    label: "North Sacred circuits", 
-    eyebrow: "The Heart", 
-    desc: "A journey through the ancient stone temples and living traditions of the upper plains.",
-    img: "./src/assets/spiritual-north.jpg" 
-  },
-  { 
-    label: "Himalayan Trails", 
-    eyebrow: "The Peaks", 
-    desc: "Finding silence and spiritual clarity amidst the highest peaks on earth.",
-    img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800" 
-  },
-  { 
-    label: "River Rituals", 
-    eyebrow: "The Flow", 
-    desc: "Tracing the life-giving waters where time dissolves into eternal ceremony.",
-    img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800" 
-  },
-  { 
-    label: "Bespoke Paths", 
-    eyebrow: "Tailored", 
-    desc: "Private, high-touch expeditions crafted specifically for the discerning seeker.",
-    img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800" 
-  }
-],
+      { 
+        label: "North Sacred circuits", 
+        eyebrow: "The Heart", 
+        desc: "A journey through the ancient stone temples and living traditions of the upper plains.",
+        img: "./src/assets/spiritual-north.jpg" 
+      },
+      { 
+        label: "Himalayan Trails", 
+        eyebrow: "The Peaks", 
+        desc: "Finding silence and spiritual clarity amidst the highest peaks on earth.",
+        img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800" 
+      },
+      { 
+        label: "River Rituals", 
+        eyebrow: "The Flow", 
+        desc: "Tracing the life-giving waters where time dissolves into eternal ceremony.",
+        img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800" 
+      },
+      { 
+        label: "Bespoke Paths", 
+        eyebrow: "Tailored", 
+        desc: "Private, high-touch expeditions crafted specifically for the discerning seeker.",
+        img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800" 
+      }
+    ],
     stats: [
       { value: 2400, label: "Guided Seekers", suffix: "+" },
       { value: 180, label: "Unique Routes", suffix: "" },
@@ -79,16 +81,159 @@ export const siteConfig = {
     ]
   },
 
-  domestic: [
-    { id: 'varanasi', title: "Eternal Kashi", location: "Uttar Pradesh", img: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹45,000" },
-    { id: 'ladakh', title: "The High Passes", location: "Ladakh", img: "https://images.unsplash.com/photo-1581793745862-99fde7f73623?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹85,000" },
-    { id: 'rishikesh', title: "Yoga of the Ganges", location: "Uttarakhand", img: "https://images.unsplash.com/photo-1598977123418-454555150162?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹35,000" }
-  ],
+  domestic: {
+    hero: [
+      {
+        img: "./src/assets/hero-spiti.jpg",
+        eyebrow: "Domestic · Journeys",
+        h1: "Explore",
+        h1Italic: "Sacred India.",
+        sub: "Discover the timeless beauty within."
+      },
+      {
+        img: "./src/assets/hero-temple-south.jpg",
+        eyebrow: "Heritage · Stone",
+        h1: "Ancient",
+        h1Italic: "Wonders.",
+        sub: "Walk through centuries of divine architecture."
+      },
+      {
+        img: "./src/assets/hero-aarti.jpg",
+        eyebrow: "Culture · Flow",
+        h1: "Living",
+        h1Italic: "Traditions.",
+        sub: "Witness the vibrant pulse of local devotion."
+      }
+    ],
+    items: [
+      { id: 'varanasi', title: "Eternal Kashi", location: "Uttar Pradesh", img: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹45,000" },
+      { id: 'ladakh', title: "The High Passes", location: "Ladakh", img: "https://images.unsplash.com/photo-1581793745862-99fde7f73623?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹85,000" },
+      { id: 'rishikesh', title: "Yoga of the Ganges", location: "Uttarakhand", img: "https://images.unsplash.com/photo-1598977123418-454555150162?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹35,000" }
+    ]
+  },
 
-  international: [
-    { id: 'bhutan', title: "Kingdom of Cloud", location: "Bhutan", img: "https://images.unsplash.com/photo-1578516123433-39dfbe6e0781?auto=format&fit=crop&q=80&w=800", price: "Starts at $1,200" },
-    { id: 'bali', title: "Island of Gods", location: "Indonesia", img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=800", price: "Starts at $950" }
-  ],
+  international: {
+    hero: [
+      {
+        img: "./src/assets/hero-temple-south.jpg",
+        eyebrow: "Global · Journeys",
+        h1: "Beyond",
+        h1Italic: "Borders.",
+        sub: "Experience the world's ancient wonders."
+      },
+      {
+        img: "./src/assets/hero-spiti.jpg",
+        eyebrow: "Global · Peaks",
+        h1: "Distant",
+        h1Italic: "Horizons.",
+        sub: "Journeys that expand the mind and soul."
+      },
+      {
+        img: "./src/assets/hero-aarti.jpg",
+        eyebrow: "World · Spirit",
+        h1: "Universal",
+        h1Italic: "Connection.",
+        sub: "Finding the sacred across different cultures."
+      }
+    ],
+    items: [
+      { id: 'bhutan', title: "Kingdom of Cloud", location: "Bhutan", img: "https://images.unsplash.com/photo-1578516123433-39dfbe6e0781?auto=format&fit=crop&q=80&w=800", price: "Starts at $1,200" },
+      { id: 'bali', title: "Island of Gods", location: "Indonesia", img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=800", price: "Starts at $950" }
+    ]
+  },
+
+  spiritualjourney: {
+    hero: [
+      {
+        img: "./src/assets/hero-aarti.jpg",
+        eyebrow: "Spiritual · Paths",
+        h1: "Awaken",
+        h1Italic: "The Soul.",
+        sub: "Embark on transformative pilgrimages."
+      },
+      {
+        img: "./src/assets/hero-temple-south.jpg",
+        eyebrow: "Inner · Peace",
+        h1: "Path of",
+        h1Italic: "Devotion.",
+        sub: "Trace the footsteps of ancient seekers."
+      },
+      {
+        img: "./src/assets/hero-spiti.jpg",
+        eyebrow: "Quiet · Mind",
+        h1: "Silent",
+        h1Italic: "Retreats.",
+        sub: "Find clarity in the world's most peaceful places."
+      }
+    ],
+    items: [
+      { id: 'kailash', title: "Mount Kailash Yatra", location: "Tibet", img: "https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹1,50,000" },
+      { id: 'chardham', title: "Char Dham Yatra", location: "Uttarakhand", img: "https://images.unsplash.com/photo-1626014903706-932f91bc7d71?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹65,000" },
+      { id: 'bodhgaya', title: "Path of Awakening", location: "Bihar", img: "https://images.unsplash.com/photo-1590393275627-0c484ceeb085?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹25,000" }
+    ]
+  },
+
+  experiences: {
+    hero: [
+      {
+        img: "./src/assets/hero-spiti.jpg",
+        eyebrow: "Curated · Experiences",
+        h1: "Signature",
+        h1Italic: "Retreats.",
+        sub: "Immerse yourself in specialized wellness and nature paths."
+      },
+      {
+        img: "./src/assets/hero-aarti.jpg",
+        eyebrow: "Local · Immersion",
+        h1: "Cultural",
+        h1Italic: "Tapestry.",
+        sub: "Engage deeply with regional traditions and rituals."
+      },
+      {
+        img: "./src/assets/hero-temple-south.jpg",
+        eyebrow: "Design · Heritage",
+        h1: "Architectural",
+        h1Italic: "Marvels.",
+        sub: "Stay in thoughtfully preserved heritage properties."
+      }
+    ],
+    items: [
+      { id: 'ayurveda', title: "Ayurvedic Retreat", location: "Kerala", img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹55,000" },
+      { id: 'desert-camp', title: "Desert Glamping", location: "Rajasthan", img: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹40,000" },
+      { id: 'himalayan-trek', title: "Valley of Flowers", location: "Uttarakhand", img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹30,000" }
+    ]
+  },
+
+  about: {
+    hero: [
+      {
+        img: "./src/assets/hero-temple-south.jpg",
+        eyebrow: "Our · Story",
+        h1: "Who",
+        h1Italic: "We Are.",
+        sub: "Curating soulful journeys since 2010."
+      },
+      {
+        img: "./src/assets/hero-spiti.jpg",
+        eyebrow: "Our · Vision",
+        h1: "The",
+        h1Italic: "Philosophy.",
+        sub: "Guided by a deep respect for authentic exploration."
+      },
+      {
+        img: "./src/assets/hero-aarti.jpg",
+        eyebrow: "Our · People",
+        h1: "Meet The",
+        h1Italic: "Curators.",
+        sub: "Passionate travelers dedicated to crafting your perfect path."
+      }
+    ],
+    items: [
+      { id: 'our-story', title: "Our Story", location: "The Beginning", img: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&q=80&w=800", price: "Since 2010" },
+      { id: 'our-mission', title: "Our Mission", location: "The Philosophy", img: "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?auto=format&fit=crop&q=80&w=800", price: "Curating Soulful Journeys" },
+      { id: 'our-team', title: "Our Curators", location: "The People", img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800", price: "Meet the Experts" }
+    ]
+  },
 
   founder: {
     name: "[FOUNDER NAME]",

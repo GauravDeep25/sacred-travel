@@ -12,7 +12,7 @@ export default function Experiences() {
     const timer = setInterval(() => {
       setIndex((prevIndex) => {
         // Cycles through the images in your siteConfig
-        return (prevIndex + 1) % siteConfig.home.hero.length;
+        return (prevIndex + 1) % siteConfig.experiences.hero.length;
       });
     }, 5000); 
 
@@ -20,7 +20,7 @@ export default function Experiences() {
   }, []); 
 
   // Fallback for static text elements 
-  const staticContent = siteConfig.home.hero[0];
+  const staticContent = siteConfig.experiences.hero[0];
 
   return (
     <div className="bg-base min-h-screen">
@@ -29,7 +29,7 @@ export default function Experiences() {
       <section className="relative h-[65vh] w-full flex items-center justify-center overflow-hidden bg-white">
         {/* Background Image Layer */}
         <div className="absolute inset-0 z-0">
-          {siteConfig.home.hero.map((slide, i) => (
+          {siteConfig.experiences.hero.map((slide, i) => (
             <motion.div
               key={i}
               initial={false}
