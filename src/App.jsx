@@ -12,6 +12,7 @@ import International from './pages/International';
 import SpiritualJourney from './pages/SpiritualJourney';
 import Experiences from './pages/Experiences';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 // Scroll Management
 function ScrollToTop() {
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/spiritualjourney" element={<SpiritualJourney />} />
           <Route path="/experiences" element={<Experiences />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <Footer />

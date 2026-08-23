@@ -13,7 +13,8 @@ export default function Navbar() {
     "/international", 
     "/spiritualjourney", 
     "/experiences", 
-    "/about"
+    "/about",
+    "/contact",
   ];
   
   const isPageTop = heroRoutes.includes(location.pathname);
@@ -41,6 +42,7 @@ export default function Navbar() {
           <Link to="/spiritualjourney" className={`${textColor} hover:text-accent transition-colors`}>Spiritual Journery</Link>
           <Link to="/experiences" className={`${textColor} hover:text-accent transition-colors`}>Experiences</Link>
           <Link to="/about" className={`${textColor} hover:text-accent transition-colors`}>About</Link>
+          <Link to="/contact" className={`${textColor} hover:text-accent transition-colors`}>Contact Us</Link>
         </div>
 
         <a href={`https://wa.me/${siteConfig.company.whatsapp}`} className="rounded-sm bg-primary text-white px-6 py-2.5 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-dark transition-all">

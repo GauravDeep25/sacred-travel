@@ -416,8 +416,8 @@ export const siteConfig = {
       {
         img: "./assets/hero-temple-south.jpg",
         eyebrow: "Our · Story",
-        h1: "Who",
-        h1Italic: "We Are.",
+        h1: "Who are we?",
+        h1Italic: "It began in the mountains",
         sub: "Curating soulful journeys since 2010."
       },
       {
@@ -435,19 +435,21 @@ export const siteConfig = {
         sub: "Passionate travelers dedicated to crafting your perfect path."
       }
     ],
-    items: [
-      { id: 'our-story', title: "Our Story", location: "The Beginning", img: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&q=80&w=800", price: "Since 2010" },
-      { id: 'our-mission', title: "Our Mission", location: "The Philosophy", img: "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?auto=format&fit=crop&q=80&w=800", price: "Curating Soulful Journeys" },
-      { id: 'our-team', title: "Our Curators", location: "The People", img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800", price: "Meet the Experts" }
+    connect:[
+      {
+        h1: "OUR MISSION",
+        quote: "To open India's sacred geography to travellers who want more than a sight — and to do it with the care the places themselves deserve."
+      }
     ]
   },
 
   founder: {
     name: "[FOUNDER NAME]",
-    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=800",
+    photo: "https://placehold.co/800x1200/2A1F1A/FAF6F0?text=Founder+Photo",
     bio: "With over two decades of exploring the hidden corners of the subcontinent, [NAME] founded [COMPANY] to share the transformative power of sacred travel.",
     quote: "Travel, at its most meaningful, is a pilgrimage — a sacred journey through time and tradition, connecting you not just to places, but to the stories, spirits, and wisdom that make them timeless."
   },
+  
 
   // Skeleton placeholders
   placeholders: Array(6).fill({
