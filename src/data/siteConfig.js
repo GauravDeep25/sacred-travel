@@ -105,6 +105,172 @@ export const siteConfig = {
         sub: "Witness the vibrant pulse of local devotion."
       }
     ],
+    categories: [
+      { 
+        bannerTitle: "North India",
+        bannerDesc: "North india stuff",
+        label: "North Sacred circuits", 
+        img: "./src/assets/spiritual-north.jpg",
+
+        cards: [
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 1", 
+            img: "./src/assets/spiritual-north.jpg",
+            duration: "6 Nights / 7 Days",
+            price: "From ₹42,000"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 2", 
+            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+            duration: "8 Nights / 9 Days",
+            price: "From ₹65,000"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 3", 
+            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+            duration: "9 Nights / 10 Days",
+            price: "From ₹58,000"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "Bespoke Paths", 
+            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+            duration: "10 Nights / 11 Days",
+            price: "From ₹70,000"
+          }
+        ]
+      },
+      { 
+        bannerTitle: "Northeast India",
+        bannerDesc: "Northeast india stuff",
+        label: "Himalayan Trails", 
+        img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+
+        cards: [
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 1", 
+            img: "./src/assets/spiritual-north.jpg",
+            duration: "5 Nights / 6 Days",
+            price: "From ₹35,000"
+          },
+          { 
+            cardTitle: "card 2",
+            cardDesc: "card 2 desc",
+            label: "card 2", 
+            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+            duration: "7 Nights / 8 Days",
+            price: "From ₹50,000"
+          },
+          { 
+            cardTitle: "card 3",
+            cardDesc: "card 1 desc",
+            label: "card 3", 
+            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+            duration: "4 Nights / 5 Days",
+            price: "From ₹28,000"
+          },
+          { 
+            cardTitle: "card 4",
+            cardDesc: "card 1 desc",
+            label: "Bespoke Paths", 
+            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+            duration: "12 Nights / 13 Days",
+            price: "From ₹85,000"
+          }
+        ]
+      },
+      { 
+        bannerTitle: "West India",
+        bannerDesc: "west india stuff",
+        label: "River Rituals", 
+        img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+
+        cards: [
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 1", 
+            img: "./src/assets/spiritual-north.jpg",
+            duration: "6 Nights / 7 Days",
+            price: "From ₹40,000"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 2", 
+            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+            duration: "8 Nights / 9 Days",
+            price: "From ₹62,000"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 3", 
+            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+            duration: "5 Nights / 6 Days",
+            price: "From ₹32,000"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "Bespoke Paths", 
+            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+            duration: "10 Nights / 11 Days",
+            price: "From ₹75,000"
+          }
+        ]
+      },
+      { 
+        bannerTitle: "South India",
+        bannerDesc: "south india stuff",
+        label: "Bespoke Paths", 
+        img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+
+        cards: [
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 1", 
+            img: "./src/assets/spiritual-north.jpg",
+            duration: "7 Nights / 8 Days",
+            price: "From ₹48,000"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 2", 
+            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+            duration: "9 Nights / 10 Days",
+            price: "From ₹55,000"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 3", 
+            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+            duration: "6 Nights / 7 Days",
+            price: "From ₹38,000"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "Bespoke Paths", 
+            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+            duration: "11 Nights / 12 Days",
+            price: "From ₹80,000"
+          }
+        ]
+      },
+    ],
     items: [
       { id: 'varanasi', title: "Eternal Kashi", location: "Uttar Pradesh", img: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹45,000" },
       { id: 'ladakh', title: "The High Passes", location: "Ladakh", img: "https://images.unsplash.com/photo-1581793745862-99fde7f73623?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹85,000" },
@@ -115,27 +281,194 @@ export const siteConfig = {
   international: {
     hero: [
       {
-        img: "./src/assets/hero-temple-south.jpg",
-        eyebrow: "Global · Journeys",
-        h1: "Beyond",
-        h1Italic: "Borders.",
-        sub: "Experience the world's ancient wonders."
+        img: "./src/assets/hero-spiti.jpg",
+        eyebrow: "International · Journeys",
+        h1: "Explore",
+        h1Italic: "Sacred India.",
+        sub: "Discover the timeless beauty within."
       },
       {
-        img: "./src/assets/hero-spiti.jpg",
-        eyebrow: "Global · Peaks",
-        h1: "Distant",
-        h1Italic: "Horizons.",
-        sub: "Journeys that expand the mind and soul."
+        img: "./src/assets/hero-temple-south.jpg",
+        eyebrow: "Heritage · Stone",
+        h1: "Ancient",
+        h1Italic: "Wonders.",
+        sub: "Walk through centuries of divine architecture."
       },
       {
         img: "./src/assets/hero-aarti.jpg",
-        eyebrow: "World · Spirit",
-        h1: "Universal",
-        h1Italic: "Connection.",
-        sub: "Finding the sacred across different cultures."
+        eyebrow: "Culture · Flow",
+        h1: "Living",
+        h1Italic: "Traditions.",
+        sub: "Witness the vibrant pulse of local devotion."
       }
     ],
+    categories: [
+      { 
+        bannerTitle: "North India",
+        bannerDesc: "North india stuff",
+        label: "North Sacred circuits", 
+        img: "./src/assets/spiritual-north.jpg",
+
+        cards: [
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 1", 
+            img: "./src/assets/spiritual-north.jpg",
+            duration: "6 Nights / 7 Days",
+            price: "From $1,200"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 2", 
+            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+            duration: "8 Nights / 9 Days",
+            price: "From $1,500"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 3", 
+            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+            duration: "9 Nights / 10 Days",
+            price: "From $1,800"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "Bespoke Paths", 
+            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+            duration: "10 Nights / 11 Days",
+            price: "From $2,200"
+          }
+        ]
+      },
+      { 
+        bannerTitle: "Northeast India",
+        bannerDesc: "Northeast india stuff",
+        label: "Himalayan Trails", 
+        img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+
+        cards: [
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 1", 
+            img: "./src/assets/spiritual-north.jpg",
+            duration: "5 Nights / 6 Days",
+            price: "From $900"
+          },
+          { 
+            cardTitle: "card 2",
+            cardDesc: "card 2 desc",
+            label: "card 2", 
+            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+            duration: "7 Nights / 8 Days",
+            price: "From $1,100"
+          },
+          { 
+            cardTitle: "card 3",
+            cardDesc: "card 1 desc",
+            label: "card 3", 
+            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+            duration: "4 Nights / 5 Days",
+            price: "From $750"
+          },
+          { 
+            cardTitle: "card 4",
+            cardDesc: "card 1 desc",
+            label: "Bespoke Paths", 
+            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+            duration: "12 Nights / 13 Days",
+            price: "From $2,500"
+          }
+        ]
+      },
+      { 
+        bannerTitle: "West India",
+        bannerDesc: "west india stuff",
+        label: "River Rituals", 
+        img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+
+        cards: [
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 1", 
+            img: "./src/assets/spiritual-north.jpg",
+            duration: "6 Nights / 7 Days",
+            price: "From $1,050"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 2", 
+            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+            duration: "8 Nights / 9 Days",
+            price: "From $1,350"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 3", 
+            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+            duration: "5 Nights / 6 Days",
+            price: "From $850"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "Bespoke Paths", 
+            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+            duration: "10 Nights / 11 Days",
+            price: "From $2,000"
+          }
+        ]
+      },
+      { 
+        bannerTitle: "South India",
+        bannerDesc: "south india stuff",
+        label: "Bespoke Paths", 
+        img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+
+        cards: [
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 1", 
+            img: "./src/assets/spiritual-north.jpg",
+            duration: "7 Nights / 8 Days",
+            price: "From $1,150"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 2", 
+            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+            duration: "9 Nights / 10 Days",
+            price: "From $1,450"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "card 3", 
+            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+            duration: "6 Nights / 7 Days",
+            price: "From $950"
+          },
+          { 
+            cardTitle: "card 1",
+            cardDesc: "card 1 desc",
+            label: "Bespoke Paths", 
+            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+            duration: "11 Nights / 12 Days",
+            price: "From $2,400"
+          }
+        ]
+      },
+    ],
+
     items: [
       { id: 'bhutan', title: "Kingdom of Cloud", location: "Bhutan", img: "https://images.unsplash.com/photo-1578516123433-39dfbe6e0781?auto=format&fit=crop&q=80&w=800", price: "Starts at $1,200" },
       { id: 'bali', title: "Island of Gods", location: "Indonesia", img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=800", price: "Starts at $950" }
