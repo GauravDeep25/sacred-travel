@@ -54,7 +54,7 @@ export default function SpiritualJourney() {
             initial={{ opacity: 0, y: 20 }} 
             animate={{ opacity: 1, y: 0 }} 
             transition={{ duration: 1.2, delay: 0.7 }} 
-            className="mt-4 max-w-3xl font-display text-4xl text-ivory sm:text-6xl"
+            className="mt-4 max-w-3xl font-display text-4xl text-white sm:text-6xl"
           >
             {staticContent.h1} <span className="italic text-accent">{staticContent.h1Italic}</span>
           </motion.h1>

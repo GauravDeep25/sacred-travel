@@ -27,9 +27,9 @@ export default function SpiritualGrid() {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="self-start sticky top-32"
+            className="self-start"
           >
-            <div className="rounded-none border border-[#E5E3DB] bg-[#FCFBF8] p-8 sticky top-32">
+            <div className="rounded-none border border-[#E5E3DB] bg-[#FCFBF8] p-8">
               <div className="relative mx-auto aspect-square w-full max-w-64">
               <div className="absolute inset-0 rounded-full border border-[#E5E3DB]"></div>
               <div className="absolute inset-8 rounded-full border border-[#E5E3DB]"></div>
