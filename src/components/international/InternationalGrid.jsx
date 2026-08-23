@@ -4,10 +4,10 @@ import { siteConfig } from '../../data/siteConfig';
 import RegionalBanner from './RegionalBanner';
 import CardsGrid from './CardsGrid';
 
-export default function DomesticGrid() {
+export default function InternationalGrid() {
   return (
     <section className="pt-24 px-6 pb-0">
-      {siteConfig.domestic.categories.map((cat, i) => (
+      {siteConfig.international.categories?.map((cat, i) => (
         <motion.div 
           key={i} 
           initial={{ opacity: 0, y: 30 }} 

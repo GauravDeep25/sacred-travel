@@ -117,25 +117,33 @@ export const siteConfig = {
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 1", 
-            img: "./src/assets/spiritual-north.jpg" 
+            img: "./src/assets/spiritual-north.jpg",
+            duration: "6 Nights / 7 Days",
+            price: "From ₹42,000"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 2", 
-            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+            duration: "8 Nights / 9 Days",
+            price: "From ₹65,000"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 3", 
-            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+            duration: "9 Nights / 10 Days",
+            price: "From ₹58,000"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "Bespoke Paths", 
-            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+            duration: "10 Nights / 11 Days",
+            price: "From ₹70,000"
           }
         ]
       },
@@ -150,25 +158,33 @@ export const siteConfig = {
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 1", 
-            img: "./src/assets/spiritual-north.jpg" 
+            img: "./src/assets/spiritual-north.jpg",
+            duration: "5 Nights / 6 Days",
+            price: "From ₹35,000"
           },
           { 
             cardTitle: "card 2",
             cardDesc: "card 2 desc",
             label: "card 2", 
-            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+            duration: "7 Nights / 8 Days",
+            price: "From ₹50,000"
           },
           { 
             cardTitle: "card 3",
             cardDesc: "card 1 desc",
             label: "card 3", 
-            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+            duration: "4 Nights / 5 Days",
+            price: "From ₹28,000"
           },
           { 
             cardTitle: "card 4",
             cardDesc: "card 1 desc",
             label: "Bespoke Paths", 
-            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+            duration: "12 Nights / 13 Days",
+            price: "From ₹85,000"
           }
         ]
       },
@@ -183,25 +199,33 @@ export const siteConfig = {
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 1", 
-            img: "./src/assets/spiritual-north.jpg" 
+            img: "./src/assets/spiritual-north.jpg",
+            duration: "6 Nights / 7 Days",
+            price: "From ₹40,000"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 2", 
-            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+            duration: "8 Nights / 9 Days",
+            price: "From ₹62,000"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 3", 
-            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+            duration: "5 Nights / 6 Days",
+            price: "From ₹32,000"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "Bespoke Paths", 
-            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+            duration: "10 Nights / 11 Days",
+            price: "From ₹75,000"
           }
         ]
       },
@@ -216,25 +240,33 @@ export const siteConfig = {
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 1", 
-            img: "./src/assets/spiritual-north.jpg" 
+            img: "./src/assets/spiritual-north.jpg",
+            duration: "7 Nights / 8 Days",
+            price: "From ₹48,000"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 2", 
-            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+            duration: "9 Nights / 10 Days",
+            price: "From ₹55,000"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 3", 
-            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+            duration: "6 Nights / 7 Days",
+            price: "From ₹38,000"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "Bespoke Paths", 
-            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+            duration: "11 Nights / 12 Days",
+            price: "From ₹80,000"
           }
         ]
       },
@@ -282,25 +314,33 @@ export const siteConfig = {
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 1", 
-            img: "./src/assets/spiritual-north.jpg" 
+            img: "./src/assets/spiritual-north.jpg",
+            duration: "6 Nights / 7 Days",
+            price: "From $1,200"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 2", 
-            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+            duration: "8 Nights / 9 Days",
+            price: "From $1,500"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 3", 
-            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+            duration: "9 Nights / 10 Days",
+            price: "From $1,800"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "Bespoke Paths", 
-            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+            duration: "10 Nights / 11 Days",
+            price: "From $2,200"
           }
         ]
       },
@@ -315,25 +355,33 @@ export const siteConfig = {
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 1", 
-            img: "./src/assets/spiritual-north.jpg" 
+            img: "./src/assets/spiritual-north.jpg",
+            duration: "5 Nights / 6 Days",
+            price: "From $900"
           },
           { 
             cardTitle: "card 2",
             cardDesc: "card 2 desc",
             label: "card 2", 
-            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+            duration: "7 Nights / 8 Days",
+            price: "From $1,100"
           },
           { 
             cardTitle: "card 3",
             cardDesc: "card 1 desc",
             label: "card 3", 
-            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+            duration: "4 Nights / 5 Days",
+            price: "From $750"
           },
           { 
             cardTitle: "card 4",
             cardDesc: "card 1 desc",
             label: "Bespoke Paths", 
-            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+            duration: "12 Nights / 13 Days",
+            price: "From $2,500"
           }
         ]
       },
@@ -348,25 +396,33 @@ export const siteConfig = {
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 1", 
-            img: "./src/assets/spiritual-north.jpg" 
+            img: "./src/assets/spiritual-north.jpg",
+            duration: "6 Nights / 7 Days",
+            price: "From $1,050"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 2", 
-            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+            duration: "8 Nights / 9 Days",
+            price: "From $1,350"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 3", 
-            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+            duration: "5 Nights / 6 Days",
+            price: "From $850"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "Bespoke Paths", 
-            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+            duration: "10 Nights / 11 Days",
+            price: "From $2,000"
           }
         ]
       },
@@ -381,25 +437,33 @@ export const siteConfig = {
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 1", 
-            img: "./src/assets/spiritual-north.jpg" 
+            img: "./src/assets/spiritual-north.jpg",
+            duration: "7 Nights / 8 Days",
+            price: "From $1,150"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 2", 
-            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
+            duration: "9 Nights / 10 Days",
+            price: "From $1,450"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "card 3", 
-            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800",
+            duration: "6 Nights / 7 Days",
+            price: "From $950"
           },
           { 
             cardTitle: "card 1",
             cardDesc: "card 1 desc",
             label: "Bespoke Paths", 
-            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800" 
+            img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800",
+            duration: "11 Nights / 12 Days",
+            price: "From $2,400"
           }
         ]
       },
