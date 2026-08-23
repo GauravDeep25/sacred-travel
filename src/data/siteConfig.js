@@ -371,27 +371,30 @@ export const siteConfig = {
             cardDesc: "Yamunotri, Gangotri, Kedarnath and Badrinath — the four Himalayan seats where India's holiest rivers begin and where Shiva and Vishnu are worshipped at the roof of the country.",
             includes: "Haridwar pickup, helicopter or road options, assisted darshan, priest coordination, oxygen-equipped vehicles and mountain-trained crew.",
             duration: "10–12 days",
-            season: "May–June, September–October"
+            season: "May–June, September–October",
+            img: "/assets/spiritual-north-NuyL8ZKr.jpg"
           },
           {
             cardTitle: "Panch Kedar",
             cardDesc: "Five Shiva shrines — Kedarnath, Tungnath, Rudranath, Madhyamaheshwar and Kalpeshwar — where the Pandavas are said to have found the lord hidden in the form of a bull.",
             includes: "Graded trekking support, village homestays, porters, and a guide versed in the Mahabharata narrative of each shrine.",
             duration: "14–16 days",
-            season: "May–June, September–October"
+            season: "May–June, September–October",
+            img: "/assets/spiritual-north-NuyL8ZKr.jpg"
           },
           {
             cardTitle: "Kashi · Prayagraj · Ayodhya",
             cardDesc: "The Ganga plain's ancient triad — the city of light, the confluence of rivers, and the birthplace city of Rama.",
             includes: "Ghat-side stays, private aarti seating, boat darshan at dawn, temple access.",
             duration: "6–7 days",
-            season: "October–March"
+            season: "October–March",
+            img: "/assets/spiritual-north-NuyL8ZKr.jpg"
           }
         ]
       },
       south: {
         bannerTitle: "South · Sacred circuits",
-        bannerDesc: "Granite gopurams, backwaters, Deccan ruins, and coastal shrines mapping ancient spiritual paths.",
+        bannerDesc: "Granite towers, thousand-pillar halls and living ritual unbroken for a millennium across the Tamil, Kannada and Telugu country.",
         img: "/assets/temple-south-CC6aHc0Q.jpg",
         cards: [
           {
@@ -399,55 +402,61 @@ export const siteConfig = {
             cardDesc: "Five Shiva temples embodying the elements — Chidambaram (space), Kalahasti (air), Thiruvannamalai (fire), Thiruvanaikaval (water) and Kanchipuram (earth).",
             includes: "Element-wise sequencing, early morning abhishekam access, Sanskrit-literate guide, comfortable inter-temple transfers.",
             duration: "8–9 days",
-            season: "November–February"
+            season: "November–February",
+            img: "/assets/temple-south-CC6aHc0Q.jpg"
           },
           {
             cardTitle: "Chola Temple Circuit",
             cardDesc: "Thanjavur, Gangaikonda Cholapuram and Darasuram — the imperial Chola temples, and the high-water mark of South Indian stone architecture.",
             includes: "Art-historian guide, heritage stays, Bharatanatyam or nagaswaram evening.",
             duration: "6 days",
-            season: "November–February"
+            season: "November–February",
+            img: "/assets/temple-south-CC6aHc0Q.jpg"
           },
           {
             cardTitle: "Tirupati & Rameswaram",
             cardDesc: "Venkateshwara on the seven hills and the island shrine where Rama is said to have worshipped Shiva before crossing to Lanka.",
             includes: "Assisted darshan slots, sacred bathing arrangements, Dhanushkodi excursion.",
             duration: "5–6 days",
-            season: "October–March"
+            season: "October–March",
+            img: "/assets/temple-south-CC6aHc0Q.jpg"
           }
         ] 
       },
       east: {
         bannerTitle: "East · Sacred circuits",
-        bannerDesc: "Shakti Peeths and holy river confluences running deep into the eastern heartland.",
-        img: "/assets/northeast-D8OXmwI_.jpg",
+        bannerDesc: "Shakti country — the goddess temples of Bengal, Assam and Odisha, and the great coastal seat of Jagannath at Puri.",
+        img: "/assets/aarti-Cr2kuE6b.jpg",
         cards: [
           {
             cardTitle: "Shakti Peeth Pilgrimage (East)",
             cardDesc: "Kamakhya, Kalighat, Tarapith and Jwalamukhi — the places where Sati's body is said to have fallen, each a distinct face of the goddess.",
             includes: "Morning puja participation, local priest introductions, respectful briefing on tantric traditions.",
             duration: "9–10 days",
-            season: "October–March"
+            season: "October–March",
+            img: "/assets/aarti-Cr2kuE6b.jpg"
           },
           {
             cardTitle: "Puri, Konark & Bhubaneswar",
             cardDesc: "The Jagannath temple, the sun chariot at Konark and the Lingaraja temple — Odisha's Kalinga architecture at its fullest.",
             includes: "Coastal stays, temple town walks, Odissi performance evening.",
             duration: "5–6 days",
-            season: "November–February"
+            season: "November–February",
+            img: "/assets/aarti-Cr2kuE6b.jpg"
           },
           {
             cardTitle: "Gaya & Bodh Gaya",
             cardDesc: "Pind daan at the Vishnupad temple and the Bodhi tree where the Buddha's awakening is remembered — two traditions, one riverbank.",
             includes: "Ritual coordination for ancestral rites, monastery visits, quiet meditation time.",
             duration: "4 days",
-            season: "November–February"
+            season: "November–February",
+            img: "/assets/aarti-Cr2kuE6b.jpg"
           }
         ] 
       },
       west: {
         bannerTitle: "West · Sacred circuits",
-        bannerDesc: "Jyotirlingas and ancient coastal temples from Saurashtra down to the Konkan coast.",
+        bannerDesc: "Jyotirlinga country and the coastal shrines of Gujarat and Maharashtra, with the Sahyadri caves in between.",
         img: "/assets/rajasthan-Dznk4KEj.jpg",
         cards: [
           {
@@ -455,21 +464,24 @@ export const siteConfig = {
             cardDesc: "Somnath, Nageshwar, Trimbakeshwar, Bhimashankar, Grishneshwar and Mahakaleshwar — six of the twelve lights of Shiva within one region.",
             includes: "Bhasma aarti registration at Ujjain, sunrise darshans, comfortable road transfers, Sanskrit chanting sessions.",
             duration: "9–10 days",
-            season: "October–March"
+            season: "October–March",
+            img: "/assets/rajasthan-Dznk4KEj.jpg"
           },
           {
             cardTitle: "Dwarka & Saurashtra Coast",
             cardDesc: "Krishna's kingdom by the Arabian sea, with Bet Dwarka, Somnath and the Girnar climb nearby.",
             includes: "Coastal stays, boat crossings, Girnar ropeway or guided ascent.",
             duration: "6 days",
-            season: "November–February"
+            season: "November–February",
+            img: "/assets/rajasthan-Dznk4KEj.jpg"
           },
           {
             cardTitle: "Ashtavinayak Yatra",
             cardDesc: "The eight self-manifested Ganesha shrines around Pune — a compact and much-loved Maharashtrian circuit.",
             includes: "Traditional sequencing, temple-town meals, priest-led sankalpa.",
             duration: "3–4 days",
-            season: "Year-round, best August–February"
+            season: "Year-round, best August–February",
+            img: "/assets/rajasthan-Dznk4KEj.jpg"
           }
         ] 
       }
