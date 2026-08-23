@@ -5,13 +5,11 @@ import JourneyGrid from '../components/JourneyGrid';
 import { siteConfig } from '../data/siteConfig';
 
 export default function Experiences() {
-  // State for the background image slider
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prevIndex) => {
-        // Cycles through the images in your siteConfig
         return (prevIndex + 1) % siteConfig.experiences.hero.length;
       });
     }, 5000); 
@@ -19,15 +17,12 @@ export default function Experiences() {
     return () => clearInterval(timer);
   }, []); 
 
-  // Fallback for static text elements 
   const staticContent = siteConfig.experiences.hero[0];
 
   return (
     <div className="bg-base min-h-screen">
       
-      {/* --- HERO SECTION --- */}
       <section className="relative h-[65vh] w-full flex items-center justify-center overflow-hidden bg-white">
-        {/* Background Image Layer */}
         <div className="absolute inset-0 z-0">
           {siteConfig.experiences.hero.map((slide, i) => (
             <motion.div
@@ -48,7 +43,6 @@ export default function Experiences() {
           ))}
         </div>
 
-        {/* Text Content Layer */}
         <div className="relative z-20 text-center px-6 max-w-5xl">
           <motion.span 
             initial={{ opacity: 0, y: 10 }} 
@@ -71,7 +65,6 @@ export default function Experiences() {
         </div>
       </section>
 
-      {/* --- SECOND SECTION (Content Grid) --- */}
       <section className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <SectionHeader 

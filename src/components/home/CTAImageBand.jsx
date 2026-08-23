@@ -9,7 +9,6 @@ export default function CTAImageBand() {
     offset: ["start end", "end start"]
   });
 
-  // Subtle parallax effect for the background image
   const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
 
   return (
@@ -17,7 +16,6 @@ export default function CTAImageBand() {
       ref={containerRef}
       className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden flex items-center justify-center"
     >
-      {/* Parallax Background */}
       <motion.div 
         style={{ y }} 
         className="absolute inset-0 z-0"
@@ -30,7 +28,6 @@ export default function CTAImageBand() {
         />
       </motion.div>
 
-      {/* Content Overlay */}
       <div className="relative z-20 text-center px-6">
         <motion.h2 
           initial={{ opacity: 0, scale: 0.95 }}
@@ -41,7 +38,6 @@ export default function CTAImageBand() {
         >
           Every journey begins with a single conversation.
         </motion.h2>
-        
         <motion.button 
           className="rounded-sm bg-primary text-white pill-button border border-accent hover:bg-accent"
         >

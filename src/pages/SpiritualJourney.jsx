@@ -19,7 +19,6 @@ export default function SpiritualJourney() {
   return (
     <div className="bg-base min-h-screen">
       
-      {/* --- HERO SECTION --- */}
       <section className="veil relative flex min-h-[62vh] items-end overflow-hidden">
         <div className="absolute inset-0 z-0">
           {siteConfig.spiritualjourney.hero.map((slide, i) => (
@@ -73,10 +72,8 @@ export default function SpiritualJourney() {
         </div>
       </section>
 
-      {/* --- WHEEL SELECTOR & GRID COMPONENT --- */}
       <SpiritualGrid />
 
-      {/* --- PAN-INDIA FLAGSHIPS SECTION --- */}
       <section className="bg-dark py-24 text-white">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <motion.div 
@@ -90,7 +87,6 @@ export default function SpiritualJourney() {
             <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-white">
               The great cross-regional circuits
             </h2>
-            {/* The fading gradient line under the heading */}
             <div className="h-[1px] w-48 bg-gradient-to-r from-accent to-transparent my-8"></div>
           </motion.div>
           
@@ -103,7 +99,6 @@ export default function SpiritualJourney() {
                 transition={{ delay: idx * 0.1 }}
                 viewport={{ once: true }}
               >
-                {/* Sharp corners, thin transparent white border, transparent background */}
                 <div className="h-full rounded-none border border-white/20 bg-transparent p-10">
                   <h3 className="font-serif text-3xl text-[#E5D3B3]">
                     {flag.title || flag.cardTitle}
@@ -112,7 +107,6 @@ export default function SpiritualJourney() {
                     {flag.desc || flag.cardDesc}
                   </p>
                   
-                  {/* Footer details aligned to bottom with proper spacing */}
                   <div className="mt-12 flex flex-wrap gap-6 text-[10px] uppercase tracking-[0.2em] text-white/60 font-medium">
                     <span>{flag.duration}</span>
                     <span>{flag.season || flag.price}</span>
@@ -123,7 +117,6 @@ export default function SpiritualJourney() {
           </div>
         </div>
       </section>
-      {/* --- ENQUIRE FORM SECTION --- */}
       <section className="bg-muted/60 py-24">
         <div className="mx-auto max-w-4xl px-5 sm:px-8">
           <motion.div 

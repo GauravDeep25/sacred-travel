@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 export default function CardsGrid({ cards }) {
-  // Prevent rendering if there are no cards
   if (!cards || cards.length === 0) return null;
 
   return (
@@ -30,13 +29,10 @@ export default function CardsGrid({ cards }) {
                 {card.cardDesc}
               </p>
               <hr className="border-gray-200 mb-4" />
-              
-              {/* --- UPDATED MODULAR SECTION --- */}
               <div className="flex justify-between items-center text-[10px] tracking-widest font-semibold uppercase mb-5">
                 <span className="text-gray-500">{card.duration}</span>
                 <span className="text-emerald-700">{card.price}</span>
               </div>
-              
               <a 
                 href={`https://wa.me/918591262424?text=I'd%20like%20the%20itinerary%20for%3A%20${encodeURIComponent(card.cardTitle)}`} 
                 target="_blank" 

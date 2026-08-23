@@ -17,8 +17,6 @@ export default function Domestic() {
 
   return (
     <div className="bg-base min-h-screen">
-      
-      {/* --- HERO SECTION --- */}
       <section className="relative h-[65vh] w-full flex items-center justify-center overflow-hidden bg-white">
         <div className="absolute inset-0 z-0">
           {siteConfig.domestic.hero.map((slide, i) => (
@@ -49,7 +47,6 @@ export default function Domestic() {
           >
             {staticContent.eyebrow}
           </motion.span>
-          
           <motion.h1 
             initial={{ opacity: 0, y: 20 }} 
             animate={{ opacity: 1, y: 0 }} 
@@ -70,11 +67,7 @@ export default function Domestic() {
           </motion.p>
         </div>
       </section>
-
-      {/* --- IMPORTED GRID COMPONENT (Now contains the navigation bar too) --- */}
       <DomesticGrid />
-
-      {/* --- ENQUIRE FORM SECTION --- */}
       <section className="bg-[#f5f3ef] py-24">
         <div className="mx-auto max-w-4xl px-5 sm:px-8">
           <motion.div 

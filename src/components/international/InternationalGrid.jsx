@@ -7,8 +7,6 @@ import CardsGrid from './CardsGrid';
 export default function InternationalGrid() {
   return (
     <>
-      {/* --- CATEGORY NAVIGATION BAR --- */}
-      {/* Updated to be responsive and fixed the pxpx typo */}
       <div className="border-b border-gray-200 bg-[#f5f3ef] sticky top-0 md:top-[55px] z-40">
         <div className="mx-auto flex max-w-7xl flex-wrap justify-center md:justify-start gap-6 px-5 py-5 sm:px-8">
           {siteConfig.international.categories?.map((cat, i) => {
@@ -26,16 +24,14 @@ export default function InternationalGrid() {
         </div>
       </div>
 
-      {/* --- GRID SECTION --- */}
       <section className="pt-24 px-6 pb-0">
         {siteConfig.international.categories?.map((cat, i) => {
           const sectionId = cat.bannerTitle.toLowerCase().replace(/\s+/g, '-');
-          
           return (
             <motion.div 
               key={i} 
               id={sectionId}
-              className="scroll-mt-32" /* Adds top margin for scroll targeting */
+              className="scroll-mt-32" 
               initial={{ opacity: 0, y: 30 }} 
               whileInView={{ opacity: 1, y: 0 }} 
               transition={{ delay: i * 0.1 }}

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// Using standard UI icons which are guaranteed to export correctly
 import { Mail, Phone, MessageCircle, ArrowUpRight } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 
@@ -9,8 +8,6 @@ export default function Footer() {
     <footer className="bg-dark text-base/80 pt-24 pb-12 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
-          
-          {/* Brand Column */}
           <div className="flex flex-col gap-6">
             <div>
               <div className="text-white text-3xl font-serif font-bold mb-1">
@@ -23,7 +20,6 @@ export default function Footer() {
             <p className="text-sm leading-relaxed max-w-xs text-base/50 italic">
               Experience the world through a lens of reverence and ancient wisdom.
             </p>
-            {/* Social Links using Text + Arrows for a more editorial look (Avoids Icon Errors) */}
             <div className="flex gap-5 text-[10px] uppercase tracking-widest text-white/40">
               <a href="#" className="hover:text-accent transition-colors flex items-center gap-1">
                 Instagram <ArrowUpRight size={10} />
@@ -34,7 +30,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Explore Column */}
           <div>
             <h4 className="text-white text-[11px] uppercase tracking-[0.3em] font-bold mb-8">Explore</h4>
             <ul className="flex flex-col gap-4 text-sm">
@@ -47,8 +42,6 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
-          {/* Reach Us Column */}
           <div>
             <h4 className="text-white text-[11px] uppercase tracking-[0.3em] font-bold mb-8">Reach Us</h4>
             <ul className="flex flex-col gap-6 text-sm">
@@ -72,8 +65,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* Presence Column */}
           <div>
             <h4 className="text-white text-[11px] uppercase tracking-[0.3em] font-bold mb-8">Presence</h4>
             <div className="flex flex-col gap-4 text-sm">
@@ -86,10 +77,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
         </div>
-
-        {/* Bottom Bar */}
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-[10px] uppercase tracking-[0.2em] text-white/20">
             © {new Date().getFullYear()} {siteConfig.company.name}.
@@ -100,8 +88,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
-      {/* Floating WhatsApp with Standard Icon */}
       <a 
         href={`https://wa.me/${siteConfig.company.whatsapp}`}
         className="whatsapp-float group"

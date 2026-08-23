@@ -7,11 +7,9 @@ import CardsGrid from './CardsGrid';
 export default function DomesticGrid() {
   return (
     <>
-      {/* --- CATEGORY NAVIGATION BAR --- */}
       <div className="border-b border-gray-200 bg-[#f5f3ef] sticky top-[55.5px] z-40">
         <div className="mx-auto flex max-w-7xl flex-wrap justify-center md:justify-start gap-6 px-5 py-5 sm:px-8">
           {siteConfig.domestic.categories.map((cat, i) => {
-            // Converts "North India" into "north-india" for the href
             const sectionId = cat.bannerTitle.toLowerCase().replace(/\s+/g, '-');
             return (
               <a 
@@ -26,12 +24,9 @@ export default function DomesticGrid() {
         </div>
       </div>
 
-      {/* --- GRID SECTION --- */}
       <section className="pt-24 px-6 pb-0">
         {siteConfig.domestic.categories.map((cat, i) => {
-          // Generate the exact same ID here for the scroll target
           const sectionId = cat.bannerTitle.toLowerCase().replace(/\s+/g, '-');
-          
           return (
             <motion.div 
               key={i} 

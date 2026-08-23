@@ -23,8 +23,6 @@ export default function SpiritualGrid() {
         </motion.div>
 
         <div className="grid gap-10 lg:grid-cols-[320px_1fr] mt-10">
-          
-          {/* Wheel Selector Sidebar */}
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -38,7 +36,6 @@ export default function SpiritualGrid() {
                 <div className="absolute inset-0 grid place-items-center">
                   <Sparkles className="size-5 text-gold" />
                 </div>
-                {/* NORTH */}
                 <button 
                   onClick={() => setActiveDirection('north')}
                   className={`absolute top-0 left-1/2 -translate-x-1/2 rounded-full border px-4 py-2 text-[0.65rem] uppercase tracking-[0.2em] transition-colors z-10 ${
@@ -49,8 +46,6 @@ export default function SpiritualGrid() {
                 >
                   north
                 </button>
-                
-                {/* SOUTH */}
                 <button 
                   onClick={() => setActiveDirection('south')}
                   className={`absolute bottom-0 left-1/2 -translate-x-1/2 rounded-full border px-4 py-2 text-[0.65rem] uppercase tracking-[0.2em] transition-colors z-10 ${
@@ -61,8 +56,6 @@ export default function SpiritualGrid() {
                 >
                   south
                 </button>
-                
-                {/* EAST */}
                 <button 
                   onClick={() => setActiveDirection('east')}
                   className={`absolute right-0 top-1/2 -translate-y-1/2 rounded-full border px-4 py-2 text-[0.65rem] uppercase tracking-[0.2em] transition-colors z-10 ${
@@ -73,8 +66,6 @@ export default function SpiritualGrid() {
                 >
                   east
                 </button>
-                
-                {/* WEST */}
                 <button 
                   onClick={() => setActiveDirection('west')}
                   className={`absolute left-0 top-1/2 -translate-y-1/2 rounded-full border px-4 py-2 text-[0.65rem] uppercase tracking-[0.2em] transition-colors z-10 ${
@@ -91,15 +82,12 @@ export default function SpiritualGrid() {
               </p>
             </div>
           </motion.div>
-
-          {/* Dynamic Render Based on Selection */}
           <div>
             {activeDirection === 'north' && <NorthDirection />}
             {activeDirection === 'south' && <SouthDirection />}
             {activeDirection === 'east' && <EastDirection />}
             {activeDirection === 'west' && <WestDirection />}
           </div>
-
         </div>
       </div>
     </section>

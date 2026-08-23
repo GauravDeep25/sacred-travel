@@ -14,19 +14,13 @@ export default function SpiritualCardsGrid({ cards }) {
           transition={{ delay: i * 0.1 }}
           viewport={{ once: true }}
         >
-          {/* Changed to rounded-none, explicit background, and subtle border */}
           <article className="rounded-none border border-[#E5E3DB] bg-[#FCFBF8] p-8 sm:p-10">
             <h4 className="font-serif text-2xl text-gray-900">{card.cardTitle}</h4>
-            
-            {/* The line below the heading */}
             <div className="h-[1px] w-12 bg-accent my-6"></div>
-            
             <p className="mt-5 text-sm leading-relaxed text-gray-600">
               {card.cardDesc}
             </p>
-            
             <div className="mt-6">
-              {/* Styled as a gold eyebrow */}
               <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-accent">
                 The journey includes
               </span>

@@ -21,7 +21,6 @@ export default function International() {
   return (
     <div className="bg-base min-h-screen">
       
-      {/* --- HERO SECTION --- */}
       <section className="relative h-[65vh] w-full flex items-center justify-center overflow-hidden bg-white">
         <div className="absolute inset-0 z-0">
           {siteConfig.international.hero.map((slide, i) => (
@@ -74,10 +73,8 @@ export default function International() {
         </div>
       </section>
 
-      {/* --- IMPORTED GRID COMPONENT (Contains the sticky navigation bar & grids) --- */}
       <InternationalGrid />
 
-      {/* --- ENQUIRE FORM SECTION --- */}
       <section className="bg-[#f5f3ef] py-24">
         <div className="mx-auto max-w-4xl px-5 sm:px-8">
           <motion.div 

@@ -414,7 +414,7 @@ export const siteConfig = {
             duration: "5–6 days",
             season: "October–March"
           }
-        ] // Add your south cards here when ready
+        ] 
       },
       east: {
         bannerTitle: "East · Sacred circuits",
@@ -442,7 +442,7 @@ export const siteConfig = {
             duration: "4 days",
             season: "November–February"
           }
-        ] // Add your east cards here when ready
+        ] 
       },
       west: {
         bannerTitle: "West · Sacred circuits",
@@ -470,7 +470,7 @@ export const siteConfig = {
             duration: "3–4 days",
             season: "Year-round, best August–February"
           }
-        ] // Add your west cards here when ready
+        ] 
       }
     },
     flagships: [
@@ -559,8 +559,6 @@ export const siteConfig = {
     quote: "Travel, at its most meaningful, is a pilgrimage — a sacred journey through time and tradition, connecting you not just to places, but to the stories, spirits, and wisdom that make them timeless."
   },
   
-
-  // Skeleton placeholders
   placeholders: Array(6).fill({
     title: "[TITLE PLACEHOLDER]",
     subtitle: "[SUBTITLE/LOCATION]",
