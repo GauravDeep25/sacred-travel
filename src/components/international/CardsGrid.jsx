@@ -37,9 +37,13 @@ export default function CardsGrid({ cards }) {
                 <span className="text-emerald-700">{card.price}</span>
               </div>
               
-              <button className="text-left text-[#D4A373] text-[10px] tracking-widest font-bold uppercase hover:text-[#b88655] transition-colors">
+              <a 
+                href={`https://wa.me/918591262424?text=I'd%20like%20the%20itinerary%20for%3A%20${encodeURIComponent(card.cardTitle)}`} 
+                target="_blank" 
+                rel="noreferrer" 
+                className="mt-5 inline-block border-b border-primary pb-1 text-[0.72rem] uppercase tracking-[0.22em] text-primary transition-colors hover:text-accent hover:border-accent">
                 View Itinerary
-              </button>
+              </a>
             </div>
           </div>
         </motion.div>
