@@ -48,7 +48,7 @@ export default function International() {
             initial={{ opacity: 0, y: 10 }} 
             animate={{ opacity: 1, y: 0 }} 
             transition={{ duration: 1, delay: 0.5 }}
-            className="eyebrow text-white"
+            className="eyebrow text-white tracking-widest text-[10px] uppercase"
           >
             {staticContent.eyebrow}
           </motion.span>
@@ -60,7 +60,7 @@ export default function International() {
             className="text-white text-5xl md:text-8xl font-serif leading-[1.1] mt-4"
           >
             International <br />
-            <span className="italic text-accent">Journeys</span>
+            <span className="italic text-accent text-[#D4A373]">Journeys</span>
           </motion.h1>
 
           <motion.p 
@@ -74,8 +74,105 @@ export default function International() {
         </div>
       </section>
 
-      {/* --- SECOND SECTION (Content Grid) --- */}
+      {/* --- IMPORTED GRID COMPONENT (Contains the sticky navigation bar & grids) --- */}
       <InternationalGrid />
+
+      {/* --- ENQUIRE FORM SECTION --- */}
+      <section className="bg-[#f5f3ef] py-24">
+        <div className="mx-auto max-w-4xl px-5 sm:px-8">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <p className="text-[#D4A373] text-[10px] tracking-widest font-semibold uppercase mb-3">
+              Enquire
+            </p>
+            <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-gray-900">
+              Ask about a region
+            </h2>
+            
+            <hr className="border-t border-[#D4A373] w-12 my-8" />
+            
+            <p className="mb-12 max-w-xl text-sm leading-relaxed text-gray-600">
+              Tell us the region, the dates and who is travelling — we'll send a considered itinerary, not a template.
+            </p>
+
+            <form className="space-y-10">
+              <div className="grid gap-10 md:grid-cols-2">
+                <div>
+                  <label htmlFor="name" className="text-[#D4A373] text-[10px] tracking-widest font-semibold uppercase block mb-3">
+                    Name
+                  </label>
+                  <input 
+                    id="name" 
+                    required 
+                    placeholder="Your full name" 
+                    className="w-full border-b border-gray-300 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-gray-400 focus:border-[#D4A373]" 
+                    name="name" 
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="text-[#D4A373] text-[10px] tracking-widest font-semibold uppercase block mb-3">
+                    Email
+                  </label>
+                  <input 
+                    id="email" 
+                    required 
+                    placeholder="you@email.com" 
+                    className="w-full border-b border-gray-300 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-gray-400 focus:border-[#D4A373]" 
+                    type="email" 
+                    name="email" 
+                  />
+                </div>
+                <div>
+                  <label htmlFor="phone" className="text-[#D4A373] text-[10px] tracking-widest font-semibold uppercase block mb-3">
+                    Phone
+                  </label>
+                  <input 
+                    id="phone" 
+                    placeholder="+91 ..." 
+                    className="w-full border-b border-gray-300 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-gray-400 focus:border-[#D4A373]" 
+                    name="phone" 
+                  />
+                </div>
+                <div>
+                  <label htmlFor="destination" className="text-[#D4A373] text-[10px] tracking-widest font-semibold uppercase block mb-3">
+                    Destination Interest
+                  </label>
+                  <input 
+                    id="destination" 
+                    placeholder="Bhutan, Bali, Uzbekistan..." 
+                    className="w-full border-b border-gray-300 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-gray-400 focus:border-[#D4A373]" 
+                    name="destination" 
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label htmlFor="message" className="text-[#D4A373] text-[10px] tracking-widest font-semibold uppercase block mb-3">
+                  Message
+                </label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows="3" 
+                  placeholder="Tell us about the journey you have in mind." 
+                  className="w-full border-b border-gray-300 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-gray-400 focus:border-[#D4A373] resize-none"
+                ></textarea>
+              </div>
+
+              <button 
+                type="submit" 
+                className="bg-[#E2852B] text-white px-8 py-3.5 text-[11px] font-bold uppercase tracking-[0.2em] transition-colors hover:bg-[#c97524] mt-4"
+              >
+                Send Enquiry
+              </button>
+            </form>
+          </motion.div>
+        </div>
+      </section>
       
     </div>
   );
