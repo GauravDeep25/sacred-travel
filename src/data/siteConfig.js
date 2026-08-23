@@ -5,7 +5,8 @@ export const siteConfig = {
     logo: "[LOGO]",
     whatsapp: "[PHONE]",
     email: "contact@[COMPANY].com",
-    address: "[ADDRESS]"
+    address: "[ADDRESS]",
+    website: "www.yugatirtha.com"
   },
   
   navigation: [
@@ -550,6 +551,38 @@ export const siteConfig = {
         quote: "To open India's sacred geography to travellers who want more than a sight — and to do it with the care the places themselves deserve."
       }
     ]
+  },
+
+  contact: {
+    hero: [
+      {
+        img: "./assets/hero-temple-south.jpg",
+        eyebrow: "Contact",
+        h1: "Let's plan your crossing",
+        alt: "Illuminated South Indian temple at dusk"
+      },
+      {
+        img: "./assets/hero-aarti.jpg",
+        eyebrow: "Reach Out",
+        h1: "Every journey begins with a conversation",
+        alt: "Ganga Aarti ceremony at dusk"
+      },
+      {
+        img: "./assets/hero-spiti.jpg",
+        eyebrow: "Advisory",
+        h1: "Curating your sacred passage",
+        alt: "High mountain landscape in the Himalayas"
+      }
+    ],
+    enquiry: {
+      eyebrow: "Enquiry",
+      title: "Tell us about your journey",
+      buttonText: "Send Enquiry"
+    },
+    sidebar: {
+      title: "Reach us directly",
+      note: "We reply to every enquiry within 24 hours, and we're happy to talk through a route before you commit to anything."
+    }
   },
 
   founder: {
