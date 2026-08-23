@@ -82,463 +82,76 @@ export default function International() {
 
       {/* --- SECOND SECTION (Content Grid) --- */}
       <section className="pt-24 px-6 pb-0">
-        <div className="max-w-7xl mx-auto px-6 mb-24">
-          
-          {/* --- REGIONAL BANNER --- */}
-          <div className="relative h-[220px] w-full mb-12 overflow-hidden shadow-sm">
-            <div className="absolute inset-0 z-0">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10" />
-              <img
-                src="./src/assets/hero-spiti.jpg" /* Replace with your banner image */
-                alt="North India"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Banner Text Overlay */}
-            <div className="relative z-20 h-full flex flex-col justify-end p-8 md:p-12">
-              <h2 className="text-white text-4xl md:text-5xl font-serif mb-3">
-                North India
-              </h2>
-              <p className="text-white/80 text-sm md:text-base font-sans max-w-3xl leading-relaxed">
-                Kashmir, Ladakh and Himachal Pradesh — high passes, chinar valleys, monasteries on cliff edges and the first light of the Himalaya.
-              </p>
-            </div>
-          </div>
-
-          {/* --- CARDS GRID --- */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            {/* Card 1 */}
-            <div className="bg-white border border-gray-200 flex flex-col group">
-              <div className="relative h-64 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=800" 
-                  alt="Kashmir" 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-2xl font-serif text-gray-900 mb-3">Kashmir: Valley of Chinars</h3>
-                <p className="text-gray-600 text-sm font-sans mb-8 flex-grow leading-relaxed">
-                  Srinagar houseboats, Gulmarg meadows, Pahalgam's rivers and the shrines of the valley at an unhurried pace.
-                </p>
-                
-                <hr className="border-gray-200 mb-4" />
-                
-                <div className="flex justify-between items-center text-[10px] tracking-widest font-semibold uppercase mb-5">
-                  <span className="text-gray-500">6 Nights / 7 Days</span>
-                  <span className="text-emerald-700">From ₹42,000</span>
+        {siteConfig.international.categories?.map((cat, i) => (
+          <motion.div 
+            key={i} 
+            initial={{ opacity: 0, y: 30 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            transition={{ delay: i * 0.1 }}
+            viewport={{ once: true }}
+          >
+            <div className="max-w-7xl mx-auto px-6 mb-24">
+              {/* --- REGIONAL BANNER --- */}
+              <div className="relative h-[220px] w-full mb-12 overflow-hidden shadow-sm">
+                <div className="absolute inset-0 z-0">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10" />
+                  <img
+                    src={cat.img}
+                    alt={cat.label}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                
-                <button className="text-left text-[#D4A373] text-[10px] tracking-widest font-bold uppercase hover:text-[#b88655] transition-colors">
-                  View Itinerary
-                </button>
-              </div>
-            </div>
 
-            {/* Card 2 */}
-            <div className="bg-white border border-gray-200 flex flex-col group">
-              <div className="relative h-64 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1581793745862-99fde7f73623?auto=format&fit=crop&q=80&w=800" 
-                  alt="Ladakh" 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-2xl font-serif text-gray-900 mb-3">Ladakh Expedition</h3>
-                <p className="text-gray-600 text-sm font-sans mb-8 flex-grow leading-relaxed">
-                  Leh, Nubra, Pangong and the old monasteries — led by our own high-altitude expedition team.
-                </p>
-                
-                <hr className="border-gray-200 mb-4" />
-                
-                <div className="flex justify-between items-center text-[10px] tracking-widest font-semibold uppercase mb-5">
-                  <span className="text-gray-500">8 Nights / 9 Days</span>
-                  <span className="text-emerald-700">From ₹65,000</span>
+                {/* Banner Text Overlay */}
+                <div className="relative z-20 h-full flex flex-col justify-end p-8 md:p-12">
+                  <h2 className="text-white text-4xl md:text-5xl font-serif mb-3">
+                    {cat.bannerTitle}
+                  </h2>
+                  <p className="text-white/80 text-sm md:text-base font-sans max-w-3xl leading-relaxed">
+                    {cat.bannerDesc}
+                  </p>
                 </div>
-                
-                <button className="text-left text-[#D4A373] text-[10px] tracking-widest font-bold uppercase hover:text-[#b88655] transition-colors">
-                  View Itinerary
-                </button>
+              </div>
+              {/* --- CARDS GRID --- */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {cat.cards?.map((card, j) => (
+                  <motion.div 
+                    key={j} 
+                    initial={{ opacity: 0, y: 30 }} 
+                    whileInView={{ opacity: 1, y: 0 }} 
+                    transition={{ delay: j * 0.1 }}
+                    viewport={{ once: true }}
+                    className="group cursor-pointer flex"
+                  >
+                    <div className="bg-white border border-gray-200 flex flex-col group w-full">
+                      <div className="relative h-64 overflow-hidden">
+                        <img 
+                          src={card.img}
+                          alt={card.label}
+                          className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
+                        />
+                      </div>
+                      <div className="p-6 flex flex-col flex-grow">
+                        <h3 className="text-2xl font-serif text-gray-900 mb-3">{card.cardTitle}</h3>
+                        <p className="text-gray-600 text-sm font-sans mb-8 flex-grow leading-relaxed">
+                          {card.cardDesc}
+                        </p>
+                        <hr className="border-gray-200 mb-4" />
+                        <div className="flex justify-between items-center text-[10px] tracking-widest font-semibold uppercase mb-5">
+                          <span className="text-gray-500">6 Nights / 7 Days</span>
+                          <span className="text-emerald-700">From ₹42,000</span>
+                        </div>
+                        <button className="text-left text-[#D4A373] text-[10px] tracking-widest font-bold uppercase hover:text-[#b88655] transition-colors">
+                          View Itinerary
+                        </button>
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
             </div>
-
-            {/* Card 3 */}
-            <div className="bg-white border border-gray-200 flex flex-col group">
-              <div className="relative h-64 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800" 
-                  alt="Himachal" 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-2xl font-serif text-gray-900 mb-3">Himachal & Spiti Circuit</h3>
-                <p className="text-gray-600 text-sm font-sans mb-8 flex-grow leading-relaxed">
-                  Shimla to Kaza through Kinnaur, Tabo and Key — the route the founder has run for a decade.
-                </p>
-                
-                <hr className="border-gray-200 mb-4" />
-                
-                <div className="flex justify-between items-center text-[10px] tracking-widest font-semibold uppercase mb-5">
-                  <span className="text-gray-500">9 Nights / 10 Days</span>
-                  <span className="text-emerald-700">From ₹58,000</span>
-                </div>
-                
-                <button className="text-left text-[#D4A373] text-[10px] tracking-widest font-bold uppercase hover:text-[#b88655] transition-colors">
-                  View Itinerary
-                </button>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-      <section className="py-0 px-6">
-        <div className="max-w-7xl mx-auto px-6 mb-24">
-          
-          {/* --- REGIONAL BANNER --- */}
-          <div className="relative h-[220px] w-full mb-12 overflow-hidden shadow-sm">
-            <div className="absolute inset-0 z-0">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10" />
-              <img
-                src="./src/assets/hero-spiti.jpg" /* Replace with your banner image */
-                alt="North India"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Banner Text Overlay */}
-            <div className="relative z-20 h-full flex flex-col justify-end p-8 md:p-12">
-              <h2 className="text-white text-4xl md:text-5xl font-serif mb-3">
-                North India
-              </h2>
-              <p className="text-white/80 text-sm md:text-base font-sans max-w-3xl leading-relaxed">
-                Kashmir, Ladakh and Himachal Pradesh — high passes, chinar valleys, monasteries on cliff edges and the first light of the Himalaya.
-              </p>
-            </div>
-          </div>
-
-          {/* --- CARDS GRID --- */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            {/* Card 1 */}
-            <div className="bg-white border border-gray-200 flex flex-col group">
-              <div className="relative h-64 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=800" 
-                  alt="Kashmir" 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-2xl font-serif text-gray-900 mb-3">Kashmir: Valley of Chinars</h3>
-                <p className="text-gray-600 text-sm font-sans mb-8 flex-grow leading-relaxed">
-                  Srinagar houseboats, Gulmarg meadows, Pahalgam's rivers and the shrines of the valley at an unhurried pace.
-                </p>
-                
-                <hr className="border-gray-200 mb-4" />
-                
-                <div className="flex justify-between items-center text-[10px] tracking-widest font-semibold uppercase mb-5">
-                  <span className="text-gray-500">6 Nights / 7 Days</span>
-                  <span className="text-emerald-700">From ₹42,000</span>
-                </div>
-                
-                <button className="text-left text-[#D4A373] text-[10px] tracking-widest font-bold uppercase hover:text-[#b88655] transition-colors">
-                  View Itinerary
-                </button>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="bg-white border border-gray-200 flex flex-col group">
-              <div className="relative h-64 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1581793745862-99fde7f73623?auto=format&fit=crop&q=80&w=800" 
-                  alt="Ladakh" 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-2xl font-serif text-gray-900 mb-3">Ladakh Expedition</h3>
-                <p className="text-gray-600 text-sm font-sans mb-8 flex-grow leading-relaxed">
-                  Leh, Nubra, Pangong and the old monasteries — led by our own high-altitude expedition team.
-                </p>
-                
-                <hr className="border-gray-200 mb-4" />
-                
-                <div className="flex justify-between items-center text-[10px] tracking-widest font-semibold uppercase mb-5">
-                  <span className="text-gray-500">8 Nights / 9 Days</span>
-                  <span className="text-emerald-700">From ₹65,000</span>
-                </div>
-                
-                <button className="text-left text-[#D4A373] text-[10px] tracking-widest font-bold uppercase hover:text-[#b88655] transition-colors">
-                  View Itinerary
-                </button>
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-white border border-gray-200 flex flex-col group">
-              <div className="relative h-64 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800" 
-                  alt="Himachal" 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-2xl font-serif text-gray-900 mb-3">Himachal & Spiti Circuit</h3>
-                <p className="text-gray-600 text-sm font-sans mb-8 flex-grow leading-relaxed">
-                  Shimla to Kaza through Kinnaur, Tabo and Key — the route the founder has run for a decade.
-                </p>
-                
-                <hr className="border-gray-200 mb-4" />
-                
-                <div className="flex justify-between items-center text-[10px] tracking-widest font-semibold uppercase mb-5">
-                  <span className="text-gray-500">9 Nights / 10 Days</span>
-                  <span className="text-emerald-700">From ₹58,000</span>
-                </div>
-                
-                <button className="text-left text-[#D4A373] text-[10px] tracking-widest font-bold uppercase hover:text-[#b88655] transition-colors">
-                  View Itinerary
-                </button>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-      <section className="py-0 px-6">
-        <div className="max-w-7xl mx-auto px-6 mb-24">
-          
-          {/* --- REGIONAL BANNER --- */}
-          <div className="relative h-[220px] w-full mb-12 overflow-hidden shadow-sm">
-            <div className="absolute inset-0 z-0">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10" />
-              <img
-                src="./src/assets/hero-spiti.jpg" /* Replace with your banner image */
-                alt="North India"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Banner Text Overlay */}
-            <div className="relative z-20 h-full flex flex-col justify-end p-8 md:p-12">
-              <h2 className="text-white text-4xl md:text-5xl font-serif mb-3">
-                North India
-              </h2>
-              <p className="text-white/80 text-sm md:text-base font-sans max-w-3xl leading-relaxed">
-                Kashmir, Ladakh and Himachal Pradesh — high passes, chinar valleys, monasteries on cliff edges and the first light of the Himalaya.
-              </p>
-            </div>
-          </div>
-
-          {/* --- CARDS GRID --- */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            {/* Card 1 */}
-            <div className="bg-white border border-gray-200 flex flex-col group">
-              <div className="relative h-64 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=800" 
-                  alt="Kashmir" 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-2xl font-serif text-gray-900 mb-3">Kashmir: Valley of Chinars</h3>
-                <p className="text-gray-600 text-sm font-sans mb-8 flex-grow leading-relaxed">
-                  Srinagar houseboats, Gulmarg meadows, Pahalgam's rivers and the shrines of the valley at an unhurried pace.
-                </p>
-                
-                <hr className="border-gray-200 mb-4" />
-                
-                <div className="flex justify-between items-center text-[10px] tracking-widest font-semibold uppercase mb-5">
-                  <span className="text-gray-500">6 Nights / 7 Days</span>
-                  <span className="text-emerald-700">From ₹42,000</span>
-                </div>
-                
-                <button className="text-left text-[#D4A373] text-[10px] tracking-widest font-bold uppercase hover:text-[#b88655] transition-colors">
-                  View Itinerary
-                </button>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="bg-white border border-gray-200 flex flex-col group">
-              <div className="relative h-64 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1581793745862-99fde7f73623?auto=format&fit=crop&q=80&w=800" 
-                  alt="Ladakh" 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-2xl font-serif text-gray-900 mb-3">Ladakh Expedition</h3>
-                <p className="text-gray-600 text-sm font-sans mb-8 flex-grow leading-relaxed">
-                  Leh, Nubra, Pangong and the old monasteries — led by our own high-altitude expedition team.
-                </p>
-                
-                <hr className="border-gray-200 mb-4" />
-                
-                <div className="flex justify-between items-center text-[10px] tracking-widest font-semibold uppercase mb-5">
-                  <span className="text-gray-500">8 Nights / 9 Days</span>
-                  <span className="text-emerald-700">From ₹65,000</span>
-                </div>
-                
-                <button className="text-left text-[#D4A373] text-[10px] tracking-widest font-bold uppercase hover:text-[#b88655] transition-colors">
-                  View Itinerary
-                </button>
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-white border border-gray-200 flex flex-col group">
-              <div className="relative h-64 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800" 
-                  alt="Himachal" 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-2xl font-serif text-gray-900 mb-3">Himachal & Spiti Circuit</h3>
-                <p className="text-gray-600 text-sm font-sans mb-8 flex-grow leading-relaxed">
-                  Shimla to Kaza through Kinnaur, Tabo and Key — the route the founder has run for a decade.
-                </p>
-                
-                <hr className="border-gray-200 mb-4" />
-                
-                <div className="flex justify-between items-center text-[10px] tracking-widest font-semibold uppercase mb-5">
-                  <span className="text-gray-500">9 Nights / 10 Days</span>
-                  <span className="text-emerald-700">From ₹58,000</span>
-                </div>
-                
-                <button className="text-left text-[#D4A373] text-[10px] tracking-widest font-bold uppercase hover:text-[#b88655] transition-colors">
-                  View Itinerary
-                </button>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section><section className="py-0 px-6">
-        <div className="max-w-7xl mx-auto px-6 mb-24">
-          
-          {/* --- REGIONAL BANNER --- */}
-          <div className="relative h-[220px] w-full mb-12 overflow-hidden shadow-sm">
-            <div className="absolute inset-0 z-0">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10" />
-              <img
-                src="./src/assets/hero-spiti.jpg" /* Replace with your banner image */
-                alt="North India"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Banner Text Overlay */}
-            <div className="relative z-20 h-full flex flex-col justify-end p-8 md:p-12">
-              <h2 className="text-white text-4xl md:text-5xl font-serif mb-3">
-                North India
-              </h2>
-              <p className="text-white/80 text-sm md:text-base font-sans max-w-3xl leading-relaxed">
-                Kashmir, Ladakh and Himachal Pradesh — high passes, chinar valleys, monasteries on cliff edges and the first light of the Himalaya.
-              </p>
-            </div>
-          </div>
-
-          {/* --- CARDS GRID --- */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            {/* Card 1 */}
-            <div className="bg-white border border-gray-200 flex flex-col group">
-              <div className="relative h-64 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=800" 
-                  alt="Kashmir" 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-2xl font-serif text-gray-900 mb-3">Kashmir: Valley of Chinars</h3>
-                <p className="text-gray-600 text-sm font-sans mb-8 flex-grow leading-relaxed">
-                  Srinagar houseboats, Gulmarg meadows, Pahalgam's rivers and the shrines of the valley at an unhurried pace.
-                </p>
-                
-                <hr className="border-gray-200 mb-4" />
-                
-                <div className="flex justify-between items-center text-[10px] tracking-widest font-semibold uppercase mb-5">
-                  <span className="text-gray-500">6 Nights / 7 Days</span>
-                  <span className="text-emerald-700">From ₹42,000</span>
-                </div>
-                
-                <button className="text-left text-[#D4A373] text-[10px] tracking-widest font-bold uppercase hover:text-[#b88655] transition-colors">
-                  View Itinerary
-                </button>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="bg-white border border-gray-200 flex flex-col group">
-              <div className="relative h-64 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1581793745862-99fde7f73623?auto=format&fit=crop&q=80&w=800" 
-                  alt="Ladakh" 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-2xl font-serif text-gray-900 mb-3">Ladakh Expedition</h3>
-                <p className="text-gray-600 text-sm font-sans mb-8 flex-grow leading-relaxed">
-                  Leh, Nubra, Pangong and the old monasteries — led by our own high-altitude expedition team.
-                </p>
-                
-                <hr className="border-gray-200 mb-4" />
-                
-                <div className="flex justify-between items-center text-[10px] tracking-widest font-semibold uppercase mb-5">
-                  <span className="text-gray-500">8 Nights / 9 Days</span>
-                  <span className="text-emerald-700">From ₹65,000</span>
-                </div>
-                
-                <button className="text-left text-[#D4A373] text-[10px] tracking-widest font-bold uppercase hover:text-[#b88655] transition-colors">
-                  View Itinerary
-                </button>
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-white border border-gray-200 flex flex-col group">
-              <div className="relative h-64 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800" 
-                  alt="Himachal" 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-2xl font-serif text-gray-900 mb-3">Himachal & Spiti Circuit</h3>
-                <p className="text-gray-600 text-sm font-sans mb-8 flex-grow leading-relaxed">
-                  Shimla to Kaza through Kinnaur, Tabo and Key — the route the founder has run for a decade.
-                </p>
-                
-                <hr className="border-gray-200 mb-4" />
-                
-                <div className="flex justify-between items-center text-[10px] tracking-widest font-semibold uppercase mb-5">
-                  <span className="text-gray-500">9 Nights / 10 Days</span>
-                  <span className="text-emerald-700">From ₹58,000</span>
-                </div>
-                
-                <button className="text-left text-[#D4A373] text-[10px] tracking-widest font-bold uppercase hover:text-[#b88655] transition-colors">
-                  View Itinerary
-                </button>
-              </div>
-            </div>
-
-          </div>
-        </div>
+          </motion.div>
+        ))}
       </section>
     </div>
   );
