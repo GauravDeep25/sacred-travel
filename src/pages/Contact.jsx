@@ -8,7 +8,7 @@ export default function Contact() {
   const contactData = siteConfig.contact || {
     hero: [
       {
-        img: "./assets/hero-temple-south.jpg",
+        img: "/assets/hero-temple-south.jpg",
         eyebrow: "Contact",
         h1: "Let's plan your crossing",
         alt: "Illuminated South Indian temple at dusk"

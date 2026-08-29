@@ -22,21 +22,21 @@ export const siteConfig = {
   home: {
     hero: [
       {
-        img: "./assets/hero-spiti.jpg",
+        img: "/assets/hero-spiti.jpg",
         eyebrow: "Yuga · era · Tirtha",
         h1: "Rediscover the soul",
         h1Italic: "of the mountains.",
         sub: "Curated pilgrimages to the world's most silent heights."
       },
       {
-        img: "./assets/hero-temple-south.jpg",
+        img: "/assets/hero-temple-south.jpg",
         eyebrow: "Sacred · Crossing · Devotion",
         h1: "Ancient echoes",
         h1Italic: "in stone.",
         sub: "Architecture that bridges the human and the divine."
       },
       {
-        img: "./assets/hero-aarti.jpg",
+        img: "/assets/hero-aarti.jpg",
         eyebrow: "Pravaha · Flow · Grace",
         h1: "The river's",
         h1Italic: "eternal prayer.",
@@ -48,7 +48,7 @@ export const siteConfig = {
         label: "North Sacred circuits", 
         eyebrow: "The Heart", 
         desc: "A journey through the ancient stone temples and living traditions of the upper plains.",
-        img: "./assets/spiritual-north.jpg" 
+        img: "/assets/spiritual-north.jpg" 
       },
       { 
         label: "Himalayan Trails", 
@@ -70,10 +70,10 @@ export const siteConfig = {
       }
     ],
     stats: [
-      { value: 2400, label: "Guided Seekers", suffix: "+" },
-      { value: 180, label: "Unique Routes", suffix: "" },
-      { value: 40, label: "Expeditions", suffix: "+" },
-      { value: 12, label: "Jyotirlingas", suffix: "" }
+      { value: 2400, label: "Travellers guided", suffix: "+" },
+      { value: 180, label: "Curated journeys", suffix: "+" },
+      { value: 40, label: "Spiti & Ladakh expeditions", suffix: "+" },
+      { value: 12, label: "Jyotirlingas covered", suffix: "" }
     ],
     testimonials: [
       { quote: "A profound experience that went beyond simple sightseeing. It felt like coming home.", name: "Aria Sharma", city: "Mumbai" },
@@ -505,25 +505,119 @@ export const siteConfig = {
   experiences: {
     hero: [
       {
-        img: "./assets/hero-spiti.jpg",
+        img: "/assets/hero-spiti.jpg",
         eyebrow: "Curated · Experiences",
-        h1: "Signature",
-        h1Italic: "Retreats.",
-        sub: "Immerse yourself in specialized wellness and nature paths."
+        h1: "Beyond",
+        h1Italic: "sightseeing.",
+        sub: "Darshan access, sunrise rituals, storytelling walks through temple towns, meditation and yoga add-ons."
       },
       {
-        img: "./assets/hero-aarti.jpg",
-        eyebrow: "Local · Immersion",
-        h1: "Cultural",
-        h1Italic: "Tapestry.",
-        sub: "Engage deeply with regional traditions and rituals."
+        img: "/assets/hero-aarti.jpg",
+        eyebrow: "Ritual · Immersion",
+        h1: "Where the sacred",
+        h1Italic: "becomes personal.",
+        sub: "Private ceremonies, after-hours access, and guides who know the living tradition behind the stone."
       },
       {
-        img: "./assets/hero-temple-south.jpg",
-        eyebrow: "Design · Heritage",
-        h1: "Architectural",
-        h1Italic: "Marvels.",
-        sub: "Stay in thoughtfully preserved heritage properties."
+        img: "/assets/hero-temple-south.jpg",
+        eyebrow: "Curated · Add-ons",
+        h1: "Every journey,",
+        h1Italic: "deeper.",
+        sub: "Layer a bespoke experience onto any pilgrimage or cultural tour — or make it the whole trip."
+      }
+    ],
+    intro: {
+      eyebrow: "What we offer",
+      title: "Experiences, not excursions",
+      body: "These are not add-ons. They are the moments that stay with you long after the journey ends — private darshans arranged before the gates open, dawn boat rides with a temple priest, storytelling walks through a fort town with a local historian. Each one is built around genuine access and genuine reverence."
+    },
+    categories: [
+      {
+        id: "darshan",
+        eyebrow: "Sacred access",
+        title: "Darshan & Ritual",
+        desc: "Private or priority darshan at major shrines. Assisted abhishekam, bhasma aarti registration at Ujjain, ghat-side seating at Varanasi, and pre-dawn puja participation coordinated with temple priests.",
+        img: "/assets/aarti-Cr2kuE6b.jpg",
+        tags: ["Varanasi Ganga Aarti", "Tirupati darshan access", "Bhasma Aarti — Ujjain", "Kedarnath priority entry", "Abhishekam participation"]
+      },
+      {
+        id: "walks",
+        eyebrow: "On foot, slowly",
+        title: "Storytelling Walks",
+        desc: "Guided walks through temple towns and heritage quarters with local historians, Sanskrit scholars, and artists who carry the living knowledge of a place. Madurai, Hampi, Varanasi, Orchha, and more.",
+        img: "/assets/temple-south-CC6aHc0Q.jpg",
+        tags: ["Temple town walks — Madurai", "Hampi ruined city", "Old Varanasi ghats", "Orchha after dark", "Chidambaram architecture tour"]
+      },
+      {
+        id: "wellness",
+        eyebrow: "Body & mind",
+        title: "Yoga & Meditation",
+        desc: "Structured morning practices with trained teachers in the right setting — Rishikesh at the Ganga bank, Mysore's Ashtanga lineage, or a quiet meditation day at a Himalayan monastery.",
+        img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200",
+        tags: ["Rishikesh Ganga-bank yoga", "Mysore Ashtanga — traditional shala", "Vipassana day retreat", "Monastery sit — Spiti", "Pranayama at sunrise"]
+      },
+      {
+        id: "culinary",
+        eyebrow: "Taste & tradition",
+        title: "Culinary & Craft",
+        desc: "Meals cooked in temple kitchens, craft village visits, sari-weaving demonstrations in Kanchipuram, a Marwari thali with a heritage family in Shekhawati, or a Chettinad cooking class at a mansion.",
+        img: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&q=80&w=1200",
+        tags: ["Temple langar — Amritsar", "Kanchipuram silk weaving", "Shekhawati fresco village", "Chettinad cooking class", "Onam Sadhya — Kerala"]
+      },
+      {
+        id: "wilderness",
+        eyebrow: "Wild India",
+        title: "Wilderness & Stars",
+        desc: "Desert nights under a million stars at Rann of Kutch, high-altitude camping above Spiti, private wildlife safaris in Bandhavgarh, or a river camp on the Kali-Gandaki gorge.",
+        img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1200",
+        tags: ["Rann of Kutch under stars", "Spiti high-altitude camp", "Kali-Gandaki gorge", "Bandhavgarh private safari", "Valley of Flowers trek"]
+      },
+      {
+        id: "heritage",
+        eyebrow: "Living history",
+        title: "Heritage Stays",
+        desc: "Nights in royal havelis, converted forts, planter bungalows and palace guest quarters — chosen not for luxury branding but for their authentic relationship to the place and its people.",
+        img: "/assets/rajasthan-Dznk4KEj.jpg",
+        tags: ["Shekhawati haveli stay", "Darbhanga palace — Madhubani", "Coorg planter bungalow", "Jaisalmer fort quarter", "Chettinad mansion — Karaikudi"]
+      }
+    ],
+    process: [
+      {
+        number: "01",
+        title: "Tell us what moves you",
+        desc: "A single message is all it takes. Tell us the destination, the kind of access you're looking for, and how many in your group. We'll take it from there."
+      },
+      {
+        number: "02",
+        title: "We research the real access",
+        desc: "Our team speaks to the priests, the local experts, the temple trusts. We find out what's actually possible — not just what's advertised."
+      },
+      {
+        number: "03",
+        title: "You receive a tailored proposal",
+        desc: "A clear itinerary with honest timings, honest costs, and honest descriptions of what to expect. No package language."
+      },
+      {
+        number: "04",
+        title: "We walk beside you",
+        desc: "On the ground, our guides carry the knowledge and the contacts — so your attention can be entirely on the experience itself."
+      }
+    ],
+    testimonials: [
+      {
+        quote: "The Bhasma Aarti access in Ujjain was something I had been trying to arrange for three years. Yugatirtha sorted it in a single call.",
+        name: "Rohan Mehta",
+        city: "Bengaluru"
+      },
+      {
+        quote: "The storytelling walk through Hampi was worth the entire trip. Our guide knew the iconography of every panel — it transformed ruins into a living city.",
+        name: "Claire Dubois",
+        city: "Paris"
+      },
+      {
+        quote: "Waking before dawn at Kedarnath, with no crowds and a guide who knew the morning prayers — that is something I will carry for the rest of my life.",
+        name: "Priya Nair",
+        city: "Dubai"
       }
     ],
     items: [
@@ -536,21 +630,21 @@ export const siteConfig = {
   about: {
     hero: [
       {
-        img: "./assets/hero-temple-south.jpg",
+        img: "/assets/hero-temple-south.jpg",
         eyebrow: "Our · Story",
         h1: "Who are we?",
         h1Italic: "It began in the mountains",
         sub: "Curating soulful journeys since 2010."
       },
       {
-        img: "./assets/hero-spiti.jpg",
+        img: "/assets/hero-spiti.jpg",
         eyebrow: "Our · Vision",
         h1: "The",
         h1Italic: "Philosophy.",
         sub: "Guided by a deep respect for authentic exploration."
       },
       {
-        img: "./assets/hero-aarti.jpg",
+        img: "/assets/hero-aarti.jpg",
         eyebrow: "Our · People",
         h1: "Meet The",
         h1Italic: "Curators.",
@@ -568,19 +662,19 @@ export const siteConfig = {
   contact: {
     hero: [
       {
-        img: "./assets/hero-temple-south.jpg",
+        img: "/assets/hero-temple-south.jpg",
         eyebrow: "Contact",
         h1: "Let's plan your crossing",
         alt: "Illuminated South Indian temple at dusk"
       },
       {
-        img: "./assets/hero-aarti.jpg",
+        img: "/assets/hero-aarti.jpg",
         eyebrow: "Reach Out",
         h1: "Every journey begins with a conversation",
         alt: "Ganga Aarti ceremony at dusk"
       },
       {
-        img: "./assets/hero-spiti.jpg",
+        img: "/assets/hero-spiti.jpg",
         eyebrow: "Advisory",
         h1: "Curating your sacred passage",
         alt: "High mountain landscape in the Himalayas"
@@ -598,10 +692,10 @@ export const siteConfig = {
   },
 
   founder: {
-    name: "[FOUNDER NAME]",
+    name: "Yash",
     photo: "https://placehold.co/800x1200/2A1F1A/FAF6F0?text=Founder+Photo",
-    bio: "With over two decades of exploring the hidden corners of the subcontinent, [NAME] founded [COMPANY] to share the transformative power of sacred travel.",
-    quote: "Travel, at its most meaningful, is a pilgrimage — a sacred journey through time and tradition, connecting you not just to places, but to the stories, spirits, and wisdom that make them timeless."
+    bio: "Yash is a travel entrepreneur and expedition leader with hands-on experience guiding journeys across some of India's most breathtaking and remote landscapes, including Spiti Valley and Ladakh. What began as a passion for the mountains grew into a deeper calling — to help travellers discover the spiritual heart of India.",
+    quote: "Travel, at its best, is a pilgrimage — a crossing (tirtha) through time (yuga) that connects people not just to places, but to something older and deeper than themselves."
   },
   
   placeholders: Array(6).fill({
