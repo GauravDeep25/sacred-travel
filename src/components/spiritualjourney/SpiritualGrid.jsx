@@ -23,7 +23,6 @@ export default function SpiritualGrid() {
           <div className="my-8 h-[1px] w-12 bg-accent"></div>
         </motion.div>
 
-        {/* UPDATED: Changed 320px to 450px to make the map container significantly wider */}
         <div className="mt-10 grid gap-10 lg:grid-cols-[450px_1fr]">
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
@@ -32,15 +31,12 @@ export default function SpiritualGrid() {
             className="self-start"
           >
             <div className="rounded-none border border-[#E5E3DB] bg-[#FCFBF8] p-8">
-              
               <IndiaMap onRegionClick={setActiveDirection} />
-              
               <p className="mt-8 text-center text-xs leading-relaxed text-muted-foreground">
                 Select a region on the map to see its sacred circuits, their mythology, ideal duration and best season.
               </p>
             </div>
           </motion.div>
-          
           <div>
             {activeDirection === 'north' && <NorthDirection />}
             {activeDirection === 'south' && <SouthDirection />}

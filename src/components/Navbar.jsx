@@ -48,7 +48,7 @@ export default function Navbar() {
           <Link to="/contact" className={`${textColor} hover:text-accent transition-colors`}>Contact Us</Link>
         </div>
         <div className="flex items-center gap-4 relative z-50">
-          <a href={`https://wa.me/${siteConfig.company.whatsapp}`} className="hidden md:block rounded-sm bg-primary text-white px-6 py-2.5 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-dark transition-all">
+          <a href={`https://wa.me/${siteConfig.company.whatsapp}`} className="hidden md:block rounded-sm bg-primary text-white px-6 py-2.5 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-dark transition-all translate-x-3">
             Enquire
           </a>
           <button

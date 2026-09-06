@@ -1,15 +1,15 @@
 export const siteConfig = {
   company: {
-    name: "[COMPANY NAME]",
-    tagline: "Journeys through time",
+    name: "Yuga Tirtha",
+    tagline: "Rediscover the Soul of India.",
     logo: "[LOGO]",
-    whatsapp: "[PHONE]",
-    email: "contact@[COMPANY].com",
+    whatsapp: "8591262424",
+    email: "contact@yugatirtha.com",
     address: "[ADDRESS]",
     website: "www.yugatirtha.com"
   },
-  
-  navigation: [
+
+   navigation: [
     { name: "Home", path: "/" },
     { name: "Domestic", path: "/domestic" },
     { name: "International", path: "/international" },
@@ -105,7 +105,6 @@ export const siteConfig = {
             cardDesc: "Srinagar houseboats, Gulmarg meadows, Pahalgam's rivers and the shrines of the valley at an unhurried pace.",
             label: "Kashmir",
             itineraryId: 'kashmir',
-            itineraryId: 'kashmir', 
             img: "/assets/kashmir-C3GCvNNI.jpg",
             duration: "6 nights / 7 days",
             price: "From ₹42,000"
@@ -115,7 +114,6 @@ export const siteConfig = {
             cardDesc: "Leh, Nubra, Pangong and the old monasteries — led by our own high-altitude expedition team.",
             label: "Ladakh",
             itineraryId: 'ladakh',
-            itineraryId: 'ladakh', 
             img: "/assets/spiritual-north-NuyL8ZKr.jpg",
             duration: "8 nights / 9 days",
             price: "From ₹65,000"
@@ -125,7 +123,6 @@ export const siteConfig = {
             cardDesc: "Shimla to Kaza through Kinnaur, Tabo and Key — the route the founder has run for a decade.",
             label: "Himachal",
             itineraryId: 'himachal',
-            itineraryId: 'himachal', 
             img: "/assets/hero-himalaya-Ben1uNJZ.jpg",
             duration: "9 nights / 10 days",
             price: "From ₹58,000"
@@ -144,7 +141,6 @@ export const siteConfig = {
             cardDesc: "Shillong, Cherrapunji, Mawlynnong and the double-decker root bridge trek through cloud forest.",
             label: "Meghalaya",
             itineraryId: 'meghalaya',
-            itineraryId: 'meghalaya', 
             img: "/assets/northeast-D8OXmwI_.jpg",
             duration: "6 nights / 7 days",
             price: "From ₹46,000"
@@ -154,7 +150,6 @@ export const siteConfig = {
             cardDesc: "Gangtok, Rumtek, Tawang and the eastern Himalaya's great Buddhist seats, with monastery morning prayers.",
             label: "Sikkim",
             itineraryId: 'sikkim',
-            itineraryId: 'sikkim', 
             img: "/assets/hero-himalaya-Ben1uNJZ.jpg",
             duration: "8 nights / 9 days",
             price: "From ₹59,000"
@@ -173,7 +168,6 @@ export const siteConfig = {
             cardDesc: "Jaipur, Jodhpur, Udaipur and Jaisalmer with heritage stays and desert nights.",
             label: "Rajasthan",
             itineraryId: 'rajasthan',
-            itineraryId: 'rajasthan', 
             img: "/assets/rajasthan-Dznk4KEj.jpg",
             duration: "9 nights / 10 days",
             price: "From ₹64,000"
@@ -208,7 +202,6 @@ export const siteConfig = {
             cardDesc: "Alleppey houseboats, Munnar tea slopes, Kochi's old quarters and ayurveda days.",
             label: "Kerala",
             itineraryId: 'kerala',
-            itineraryId: 'kerala', 
             img: "/assets/kerala-JKm5YrGV.jpg",
             duration: "7 nights / 8 days",
             price: "From ₹44,000"
@@ -278,7 +271,6 @@ export const siteConfig = {
             cardDesc: "Besakih, Tirta Empul purification, Ubud's rice terraces and the cliff shrine at Uluwatu.",
             label: "Bali",
             itineraryId: 'bali',
-            itineraryId: 'bali', 
             img: "/assets/intl-bali-Ck8GSayl.jpg",
             duration: "6 nights / 7 days",
             price: "From ₹92,000"
@@ -288,7 +280,6 @@ export const siteConfig = {
             cardDesc: "Hanoi, Halong Bay, Bangkok's temples and Chiang Mai's northern monasteries.",
             label: "Vietnam & Thailand",
             itineraryId: 'vietnam',
-            itineraryId: 'vietnam', 
             img: "/assets/intl-vietnam-ZB5ZxQ8t.jpg",
             duration: "9 nights / 10 days",
             price: "From ₹1,25,000"
@@ -315,7 +306,6 @@ export const siteConfig = {
             cardDesc: "Tbilisi, Kazbegi, Yerevan and cliff monasteries above the Debed gorge.",
             label: "Georgia & Armenia",
             itineraryId: 'georgia',
-            itineraryId: 'georgia', 
             img: "/assets/intl-caucasus-DAV0UB-k.jpg",
             duration: "8 nights / 9 days",
             price: "From ₹1,32,000"
@@ -676,7 +666,54 @@ export const siteConfig = {
         h1: "OUR MISSION",
         quote: "To open India's sacred geography to travellers who want more than a sight — and to do it with the care the places themselves deserve."
       }
-    ]
+    ],
+    story: {
+      title: "The Story Behind Yuga Tirtha",
+      paragraphs: [
+        "Some journeys begin with a destination. Mine began with a question. As I travelled across India, I often found myself wondering how much of this country we truly know.",
+        "We know the famous cities. We know the popular monuments. We know the destinations that appear on every travel itinerary. But beyond them, I began to discover another India.",
+        "An India hidden behind narrow village roads. An India where ancient temples still stand quietly in the mountains, carrying stories that have survived for centuries. An India where forgotten pilgrimage routes continue to lead travellers towards places of faith. An India where culture is not displayed in museums—it is still lived every day.",
+        "The more I travelled, the more I realised that some of India's greatest treasures were not necessarily the ones everyone was talking about. They were often the places we were slowly forgetting.",
+        "And somewhere along those journeys, a thought stayed with me: What if travel could help us remember? What if a journey could be more than checking destinations off a list? What if travelling through India could help us reconnect—with our history, our spirituality, our culture and perhaps even with ourselves?",
+        "That thought eventually became Yuga Tirtha."
+      ]
+    },
+    meaning: {
+      title: "The Meaning of the Journey",
+      paragraphs: [
+        "The name itself carries the idea behind everything we want to build.",
+        "Yuga represents an era—a journey through time. Tirtha represents a sacred crossing, a place where a journey becomes something deeper. Together, Yuga Tirtha represents a sacred journey across the ages.",
+        "Because India is not just a country to travel through. It is a civilisation to experience.",
+        "Every ancient temple, every forgotten monument, every sacred river and every old pilgrimage route carries a story from another time. Yet these stories are still alive. They are waiting to be discovered."
+      ]
+    },
+    philosophy: {
+      title: "Why Yuga Tirtha Was Born",
+      paragraphs: [
+        "Yuga Tirtha was born from the desire to travel differently. To slow down. To go beyond the obvious. To take the roads that are not always included in travel brochures.",
+        "To sit quietly in an ancient temple instead of rushing to the next destination. To listen to the stories of local people. To understand why a particular place has remained sacred for hundreds or even thousands of years.",
+        "And to remind ourselves that sometimes the most meaningful places are not the most famous ones.",
+        "We want to explore the India that exists beyond mainstream tourism. The hidden shrines. The forgotten heritage. The ancient traditions. The sacred landscapes. The stories that deserve to be remembered."
+      ]
+    },
+    ethos: {
+      title: "This Is More Than a Travel Company",
+      paragraphs: [
+        "Yuga Tirtha is not just about taking people from one destination to another. It is about creating experiences that stay with you long after the journey ends.",
+        "A journey where you don't just see a temple—but understand its story. Where you don't just visit a village—but experience its culture. Where you don't simply travel through a landscape—but understand why generations before you considered it sacred.",
+        "For some, Yuga Tirtha may be a journey towards spirituality. For others, it may be a journey into history and heritage. For some, it may simply be an opportunity to experience a side of India they never knew existed.",
+        "But for all of us, we hope it becomes a reminder. A reminder of where we come from. A reminder of the stories that shaped us. And a reminder that even in a rapidly changing world, some things are worth slowing down for."
+      ]
+    },
+    future: {
+      title: "The Journey Continues",
+      paragraphs: [
+        "Yuga Tirtha began with a curiosity to explore India. But today, it carries a much bigger purpose.",
+        "To rediscover what time has hidden. To bring forgotten stories back into the conversation. To create meaningful journeys for those searching for something beyond ordinary travel. And to help people see India not just as a destination, but as a living journey through time.",
+        "Because perhaps the greatest journeys are not always about finding something new. Sometimes, they are about rediscovering something that was always there.",
+        "That is the journey of Yuga Tirtha. Rediscover the Soul of India."
+      ]
+    }
   },
 
   contact: {
@@ -713,7 +750,7 @@ export const siteConfig = {
 
   founder: {
     name: "Yash",
-    photo: "https://placehold.co/800x1200/2A1F1A/FAF6F0?text=Founder+Photo",
+    photo: "/assets/founder.jpg",
     bio: "Yash is a travel entrepreneur and expedition leader with hands-on experience guiding journeys across some of India's most breathtaking and remote landscapes, including Spiti Valley and Ladakh. What began as a passion for the mountains grew into a deeper calling — to help travellers discover the spiritual heart of India.",
     quote: "Travel, at its best, is a pilgrimage — a crossing (tirtha) through time (yuga) that connects people not just to places, but to something older and deeper than themselves."
   },
