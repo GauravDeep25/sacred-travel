@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles } from 'lucide-react';
+import IndiaMap from '../IndiaMap'; 
+
 import NorthDirection from './NorthDirection';
 import SouthDirection from './SouthDirection';
 import EastDirection from './EastDirection';
@@ -19,10 +20,11 @@ export default function SpiritualGrid() {
         >
           <p className="eyebrow">The four directions</p>
           <h2 className="mt-3 font-display text-4xl sm:text-5xl">Choose a direction</h2>
-          <div className="h-[1px] w-12 bg-accent my-8"></div>
+          <div className="my-8 h-[1px] w-12 bg-accent"></div>
         </motion.div>
 
-        <div className="grid gap-10 lg:grid-cols-[320px_1fr] mt-10">
+        {/* UPDATED: Changed 320px to 450px to make the map container significantly wider */}
+        <div className="mt-10 grid gap-10 lg:grid-cols-[450px_1fr]">
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -30,58 +32,15 @@ export default function SpiritualGrid() {
             className="self-start"
           >
             <div className="rounded-none border border-[#E5E3DB] bg-[#FCFBF8] p-8">
-              <div className="relative mx-auto aspect-square w-full max-w-64">
-              <div className="absolute inset-0 rounded-full border border-[#E5E3DB]"></div>
-              <div className="absolute inset-8 rounded-full border border-[#E5E3DB]"></div>
-                <div className="absolute inset-0 grid place-items-center">
-                  <Sparkles className="size-5 text-gold" />
-                </div>
-                <button 
-                  onClick={() => setActiveDirection('north')}
-                  className={`absolute top-0 left-1/2 -translate-x-1/2 rounded-full border px-4 py-2 text-[0.65rem] uppercase tracking-[0.2em] transition-colors z-10 ${
-                    activeDirection === 'north' 
-                      ? 'border-primary bg-primary text-primary-foreground' 
-                      : 'border-[#E5E3DB] bg-[#FCFBF8] text-muted-foreground hover:border-primary hover:text-primary'
-                  }`}
-                >
-                  north
-                </button>
-                <button 
-                  onClick={() => setActiveDirection('south')}
-                  className={`absolute bottom-0 left-1/2 -translate-x-1/2 rounded-full border px-4 py-2 text-[0.65rem] uppercase tracking-[0.2em] transition-colors z-10 ${
-                    activeDirection === 'south' 
-                      ? 'border-primary bg-primary text-primary-foreground' 
-                      : 'border-[#E5E3DB] bg-[#FCFBF8] text-muted-foreground hover:border-primary hover:text-primary'
-                  }`}
-                >
-                  south
-                </button>
-                <button 
-                  onClick={() => setActiveDirection('east')}
-                  className={`absolute right-0 top-1/2 -translate-y-1/2 rounded-full border px-4 py-2 text-[0.65rem] uppercase tracking-[0.2em] transition-colors z-10 ${
-                    activeDirection === 'east' 
-                      ? 'border-primary bg-primary text-primary-foreground' 
-                      : 'border-[#E5E3DB] bg-[#FCFBF8] text-muted-foreground hover:border-primary hover:text-primary'
-                  }`}
-                >
-                  east
-                </button>
-                <button 
-                  onClick={() => setActiveDirection('west')}
-                  className={`absolute left-0 top-1/2 -translate-y-1/2 rounded-full border px-4 py-2 text-[0.65rem] uppercase tracking-[0.2em] transition-colors z-10 ${
-                    activeDirection === 'west' 
-                      ? 'border-primary bg-primary text-primary-foreground' 
-                      : 'border-[#E5E3DB] bg-[#FCFBF8] text-muted-foreground hover:border-primary hover:text-primary'
-                  }`}
-                >
-                  west
-                </button>
-              </div>
+              
+              <IndiaMap onRegionClick={setActiveDirection} />
+              
               <p className="mt-8 text-center text-xs leading-relaxed text-muted-foreground">
-                Select a direction to see its sacred circuits, their mythology, ideal duration and best season.
+                Select a region on the map to see its sacred circuits, their mythology, ideal duration and best season.
               </p>
             </div>
           </motion.div>
+          
           <div>
             {activeDirection === 'north' && <NorthDirection />}
             {activeDirection === 'south' && <SouthDirection />}
