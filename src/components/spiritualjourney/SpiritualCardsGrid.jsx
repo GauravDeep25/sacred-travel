@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Clock, CalendarDays } from 'lucide-react';
 
@@ -40,14 +41,24 @@ export default function SpiritualCardsGrid({ cards }) {
               </span>
             </div>
 
-            <a 
-              href={`https://wa.me/918591262424?text=I'm%20interested%20in%20the%20${encodeURIComponent(card.cardTitle)}%20journey.`} 
-              target="_blank" 
-              rel="noreferrer" 
-              className="mt-8 inline-block border-b border-accent pb-1 text-[10px] uppercase tracking-[0.2em] font-semibold text-accent hover:text-primary hover:border-primary transition-colors"
-            >
-              Enquire about this yatra
-            </a>
+            <div className="mt-8 flex flex-wrap gap-4">
+              {card.itineraryId && (
+                <Link
+                  to={`/itinerary/${card.itineraryId}`}
+                  className="inline-block border-b border-accent pb-1 text-[10px] uppercase tracking-[0.2em] font-semibold text-accent hover:text-primary hover:border-primary transition-colors"
+                >
+                  View Itinerary
+                </Link>
+              )}
+              <a
+                href={`https://wa.me/918591262424?text=I'm%20interested%20in%20the%20${encodeURIComponent(card.cardTitle)}%20journey.`}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-block border-b border-gray-300 pb-1 text-[10px] uppercase tracking-[0.2em] font-semibold text-gray-500 hover:text-primary hover:border-primary transition-colors"
+              >
+                Enquire via WhatsApp
+              </a>
+            </div>
           </article>
         </motion.div>
       ))}

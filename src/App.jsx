@@ -11,6 +11,7 @@ import SpiritualJourney from './pages/SpiritualJourney';
 import Experiences from './pages/Experiences';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ItineraryDetail from './pages/ItineraryDetail';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -32,6 +33,7 @@ export default function App() {
           <Route path="/experiences" element={<Experiences />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/itinerary/:destination" element={<ItineraryDetail />} />
         </Routes>
       </main>
       <Footer />
