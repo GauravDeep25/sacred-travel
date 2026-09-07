@@ -76,9 +76,9 @@ export const siteConfig = {
       { value: 12, label: "Jyotirlingas covered", suffix: "" }
     ],
     testimonials: [
-      { quote: "A profound experience that went beyond simple sightseeing. It felt like coming home.", name: "Aria Sharma", city: "Mumbai" },
-      { quote: "The attention to detail and the reverence for the local culture was unparalleled.", name: "Julian V.", city: "London" },
-      { quote: "Life-changing. I didn't just see India; I felt the pulse of its ancient wisdom.", name: "Sarah Jenkins", city: "New York" }
+      { quote: "A profound experience that went beyond simple sightseeing. It felt like coming home.", name: "Aria Sharma", city: "Gangtok" },
+      { quote: "The attention to detail and the reverence for the local culture was unparalleled.", name: "Yuvraj Singh", city: "Delhi" },
+      { quote: "Life-changing. I didn't just see My country; I felt the pulse of its ancient wisdom.", name: "Arjun Kulkarni", city: "Mumbai" }
     ]
   },
 
@@ -1233,176 +1233,6 @@ export const siteConfig = {
         ],
       },
     ],
-    spiti: [
-      {
-        id: 'spiti-1',
-        title: `Spiti Valley`,
-        duration: `6N/7D`,
-        inclusions: [
-          `Volvo transfer from Delhi to Shimla & Manali to Delhi.`,
-          `Entire travel from Shimla to Manali by tempo traveler.`,
-          `6 nights' accommodation – 1 Night in Hotel at Sangla/Chitkul, 1 Night in hotel at Kalpa, 2 Nights in hotel/homestay at Kaza, 1 Night in camps at Chandra Taal / Batal, 1 Night in Hotel at Manali.`,
-          `A total of 11 meals – 1 Meal on Day 1 (Dinner) + 2 Meals on Day 2 (Breakfast + Dinner) + 2 Meals on Day 3 (Breakfast + Dinner) + 2 Meals on Day 4 (Breakfast + Dinner) + 2 Meals on Day 5 (Breakfast + Dinner) + 1 Meal on Day 6 (Breakfast) + 1 Meal on Day 7 (Breakfast).`,
-          `Team captain throughout the trip`,
-          `Driver Night Charges, Toll Tax, Parking Charges, permits (Except Chandra Taal) etc.`,
-          `An Oxygen Cylinder 24X7 in the car in case of emergency`,
-        ],
-        days: [
-          {
-            title: `Starting Day – Delhi To Shimla | Overnight Volvo Journey`,
-            activities: [`Arrive at the designated boarding point in Delhi and board your Volvo bus in the evening.`, `Sit back and relax as you begin your dream Spiti Valley full circuit tour.`, `Overnight journey to Shimla.`],
-          },
-          {
-            title: `Day 1 – Shimla To Chitkul/Sangla (Approx. 220 Km | 9-10 Hrs) | Kinnaur Valley Drive`,
-            activities: [`Arrive in Shimla in the morning and begin your onward journey towards Chitkul.`, `En route, stop at Narkanda for breakfast amidst the scenic Himalayan surroundings.`, `Continue through the stunning landscapes of Kinnaur Valley, following the course of the Sutlej River for much of the journey.`, `Drive past deep gorges, apple orchards, traditional villages, and towering mountain cliffs along the way.`, `By evening, arrive in Chitkul, the last inhabited village near the Indo-Tibetan border, or Sangla.`, `Check in to your hotel and unwind after the long drive.`, `Take in the crisp mountain air and the peaceful charm of the valley.`, `Dinner and overnight stay in Chitkul/Sangla.`],
-          },
-          {
-            title: `Day 2 – Chitkul To Kalpa (Approx. 80 Km | 6-7 Hrs) | Last Village Of India & Kinnaur Views`,
-            activities: [`Wake up early and witness a beautiful sunrise over the Baspa Valley.`, `After breakfast, spend some time exploring Chitkul, known for its traditional wooden houses, riverside setting, and stunning mountain views.`, `Take a walk through the village and soak in the peaceful atmosphere of India's last inhabited village near the Indo-Tibetan border.`, `By noon, begin your journey towards Kalpa with scenic views of deep valleys, apple orchards, and the rugged landscapes of Kinnaur.`, `By evening, arrive in Kalpa and check in to your hotel.`, `On a clear day, you may enjoy panoramic views of the majestic Kinnaur Kailash range.`, `Dinner and overnight stay in Kalpa.`],
-          },
-          {
-            title: `Day 3 – Kalpa To Kaza (Approx. 220 Km | 8-9 Hrs) | Nako, Tabo & Ka Loops`,
-            activities: [`Enjoy an early breakfast and check out from your hotel in Kalpa.`, `Today, we journey deeper into the dramatic landscapes on this Spiti Valley trip.`, `Cross the Sumdo border and officially enter the remote region of Spiti.`, `En route, visit Nako Village, a picturesque Himalayan settlement known for its tranquil lake and traditional mud-brick houses.`, `Continue to Tabo and explore the ancient Tabo Monastery, home to centuries-old murals, temples, and Buddhist treasures.`, `Further ahead, drive through the famous Ka Loops, a series of sharp hairpin bends offering spectacular views of the valley below.`, `Watch the landscapes transform into the stark cold desert terrain that defines Spiti.`, `By evening, arrive in Kaza and check in to your stay.`, `Dinner and overnight stay in Kaza.`],
-          },
-          {
-            title: `Day 4 – Kaza Sightseeing | Key Monastery, Chicham Bridge, Hikkim, Komic & Langza`,
-            activities: [`After breakfast, set out for high-altitude exploration on this Spiti valley tour package.`, `Visit the iconic Key Monastery, the largest monastery in Spiti Valley and a renowned centre of Buddhist learning.`, `Perched on a hilltop, it offers sweeping views of the Spiti River and the surrounding mountains.`, `Next, head to Chicham Bridge, one of Asia's highest suspension bridges, suspended over a dramatic gorge.`, `Continue to Komic, one of the highest inhabited villages in the world at 4,513 metres.`, `Explore the village and experience life in one of the most remote corners of the Himalayas.`, `Later, visit Hikkim and stop by its famous high-altitude post office to send a postcard from here to friends and family back home.`, `The final stop is Langza, known for its giant Buddha statue and fossil-rich landscapes.`, `Keep an eye out for marine fossils, remnants of the ancient Tethys Sea that once covered this region.`, `Return to Kaza by evening for dinner and overnight stay.`],
-          },
-          {
-            title: `Day 5 – Kaza To Chandratal (Approx. 95 Km | 5-6 Hrs) | Overnight Campstay`,
-            activities: [`Enjoy breakfast and check out from your stay in Kaza.`, `Today, we make our way towards the spectacular Chandratal Lake.`, `En route, stop at Losar, the last village of Spiti Valley, and take a short break for refreshments.`, `By evening, arrive near Chandratal and check in to your campsite.`, `Later, take a short walk to the famous Moon Lake, known for its crystal-clear waters and changing shades of blue.`, `As night falls, witness the sky light up with countless stars, and on clear nights, even the Milky Way.`, `Dinner and overnight stay in camps near Chandratal.`],
-          },
-          {
-            title: `Day 6 – Chandratal To Manali (Approx. 95 Km | 5-6 Hrs) | Old Manali Café Crawl`,
-            activities: [`Wake up to a beautiful mountain morning and enjoy breakfast at the campsite.`, `Later, begin your journey back to Manali through the rugged landscapes of Lahaul.`, `Cross mountain streams, rocky terrain, and scenic valley stretches along the way.`, `By evening, arrive in Manali and check in to your hotel.`, `After some time to relax, head out to explore the vibrant lanes of Old Manali.`, `Spend the evening café hopping, trying local delicacies, and soaking in the laid-back mountain vibe.`, `You can also browse through local shops and enjoy the lively atmosphere around the village.`, `Overnight stay in Manali.`],
-          },
-          {
-            title: `Day 7 – Self-Exploration In Manali & Departure | Until The Himalayas Call Again`,
-            activities: [`Enjoy a hearty breakfast and then proceed to check out of the hotel.`, `Spend the day exploring Manali at your own pace.`, `You can visit the Hadimba Devi Temple, surrounded by towering cedar forests and known for its unique wooden architecture.`, `Walk through the lively lanes of Old Manali and unwind at its charming cafés.`, `Later, explore Mall Road for shopping, local treats, and souvenirs before your departure.`, `In the evening, board your overnight transfer to Delhi.`],
-          },
-          {
-            title: `Last Day – Arrival In Delhi`,
-            activities: [`Arrive in Delhi by morning after your overnight journey from Manali.`, `Take back unforgettable memories of high mountain passes, ancient monasteries, remote villages, and star-filled Himalayan nights.`, `Your Spiti Valley adventure comes to an end here.`],
-          },
-        ],
-      },
-      {
-        id: 'spiti-2',
-        title: `Spiti Valley`,
-        duration: `7N/8D`,
-        inclusions: [
-          `Volvo transfer from Delhi to Manali & back (Not included for self bike option).`,
-          `Bike Rent for 7 days (for biking option)`,
-          `Fuel Expenses for the bike from Manali to Manali`,
-          `Entire travel from Aut to Manali by tempo traveler/cab (For Tempo Traveler Option)`,
-          `7 nights' accommodation – 1 Night in a resort at Gushaini, 1 Night in camps at Chitkul, 1 Night in hotel at Kalpa, 2 Nights in Hotel/Homestay at Kaza, 1 Night in camps at Chandra Taal, 1 Night in Hotel at Manali, on triple sharing basis`,
-          `A total of 13 meals – 2 Meal on Day 1 (Breakfast + Dinner) + 1 Meal on Day 2 (Dinner) + 2 Meals on Day 3 (Breakfast + Dinner) + 2 Meals on Day 4 (Breakfast + Dinner) + 2 Meals on Day 5 (Breakfast + Dinner) + 2 Meal on Day 6 (Breakfast + Dinner) + 1 Meal on Day 7 (Breakfast) + 1 Meal on Day 8 (Breakfast).`,
-          `Mechanical Backup`,
-          `All inner line permits for the trip (Except Chandra Taal)`,
-          `Driver Night Charges, Toll Tax, Parking Charges, etc.`,
-          `Team Captain throughout the trip`,
-          `An Oxygen Cylinder 24X7 in the car in case of emergency`,
-          `Riding Gears – Helmet (Standard Size 58 - 60 cms), Riding Gloves (only for riders), Riding Jackets, Knee Pads (Though it is recommended you carry your own helmet for comfort)`,
-        ],
-        days: [
-          {
-            title: `Starting Day – Delhi To Tirthan Valley | Overnight Volvo Journey`,
-            activities: [`Arrive at the designated boarding point in Delhi and board your Volvo bus in the evening.`, `Begin your journey towards the serene Tirthan Valley.`, `Sit back and relax as you set on your Spiti Valley tour from Delhi.`, `Overnight journey to Aut.`],
-          },
-          {
-            title: `Day 1 – Aut To Jibhi/Gushaini | Waterfall Trek & Valley Views`,
-            activities: [`Arrive at Aut in the morning and proceed towards the beautiful villages of Jibhi or Gushaini.`, `For bikers, continue to Manali to collect your bikes and have breakfast.`, `Enjoy a scenic taxi ride back to your stay in Jibhi/Gushaini.`, `In the meanwhile, backpackers will enjoy a short trek to the picturesque Jibhi Waterfall (or Chhoie Waterfall, depending on the stay location).`, `Upon arrival, check in to the hotel and freshen up after the journey.`, `Dinner and overnight stay in Jibhi/Gushaini.`],
-          },
-          {
-            title: `Day 2 – Jibhi/Gushaini To Chitkul (Approx. 230 Km | 10-11 Hrs) | Kinnaur Valley Drive`,
-            activities: [`Enjoy an early breakfast and begin your journey towards Chitkul.`, `Today's drive takes you through the spectacular landscapes of Kinnaur Valley.`, `Follow the Sutlej River as it cuts through deep gorges, towering cliffs, and rugged mountain terrain.`, `Along the way, pass apple orchards, traditional villages, and some of the most scenic stretches in the Himalayas.`, `By evening, arrive in Chitkul, the last inhabited village near the Indo-Tibetan border.`, `Check in to your campsite and soak in the peaceful mountain surroundings.`, `Dinner and overnight stay in Chitkul.`],
-          },
-          {
-            title: `Day 3 – Chitkul To Kalpa (Approx. 80 Km | 6-7 Hrs) | Baspa Valley & Kinnaur Kailash Views`,
-            activities: [`Wake up early and witness a beautiful sunrise over the Baspa Valley.`, `Have breakfast and explore Chitkul's charming wooden houses, riverside trails, and mountain scenery.`, `By noon, begin your journey towards Kalpa.`, `Enjoy scenic views of apple orchards, deep valleys, and the rugged landscapes of Kinnaur along the way.`, `By evening, arrive in Kalpa and check in to your hotel.`, `Later, admire the majestic Kinnaur Kailash range before settling in for the night.`, `Dinner and overnight stay in Kalpa.`],
-          },
-          {
-            title: `Day 4 – Kalpa To Kaza (Approx. 220 Km | 8-9 Hrs) | Nako, Tabo & Ka Loops`,
-            activities: [`Have breakfast and check out from your hotel in Kalpa.`, `Today, your Spiti Valley bike trip takes you deeper into the dramatic landscapes of the cold desert.`, `Cross the Sumdo border and enter Spiti Valley, where rugged mountains and vast open valleys dominate the scenery.`, `En route, visit Nako, a picturesque Himalayan village nestled beside a tranquil high-altitude lake.`, `Continue to Tabo and explore the ancient Tabo Monastery, home to centuries-old murals, temples, and Buddhist treasures.`, `Further ahead, drive through the famous Ka Loops, sharp hairpin bends offering spectacular views of the valley below.`, `By evening, arrive in Kaza, the heart of Spiti Valley, and check in to your hotel or homestay.`, `Dinner and overnight stay in Kaza.`],
-          },
-          {
-            title: `Day 5 – Kaza Sightseeing | Key Monastery, Chicham Bridge, Hikkim, Komic & Langza`,
-            activities: [`Enjoy breakfast and set out to explore the highlights of your Spiti Valley bike tour package.`, `Begin at Key Monastery, the largest monastery in Spiti, known for its ancient murals, prayer halls, and sweeping valley views.`, `Next, stop at Chicham Bridge and gaze into the dramatic 1,000-ft-deep gorge below.`, `Continue to Komic, one of the world's highest inhabited villages, surrounded by vast barren mountains.`, `Later, visit Hikkim and send a postcard from one of the highest post offices on the planet.`, `The final stop is Langza, where you can spot ancient marine fossils and admire the giant Buddha statue overlooking the valley.`, `Return to Kaza by evening and unwind after a day of exploration.`, `Dinner and overnight stay in Kaza.`],
-          },
-          {
-            title: `Day 6 – Kaza To Chandratal (Approx. 95 Km | 5-6 Hrs) | Overnight Campstay`,
-            activities: [`Enjoy breakfast and check out from your stay in Kaza.`, `Today, we make our way towards the spectacular Chandratal Lake.`, `En route, stop at Losar, the last village of Spiti Valley, and take a short break for refreshments.`, `By evening, arrive near Chandratal and check in to your campsite.`, `Later, take a short walk to the famous Moon Lake, known for its crystal-clear waters and changing shades of blue.`, `As night falls, witness the sky light up with countless stars, and on clear nights, even the Milky Way.`, `Dinner and overnight stay in camps near Chandratal.`],
-          },
-          {
-            title: `Day 7 – Chandratal To Manali (Approx. 95 Km | 5-6 Hrs) | Old Manali Café Crawl`,
-            activities: [`Wake up to a beautiful mountain morning and enjoy breakfast at the campsite.`, `Later, begin your journey back to Manali through the rugged landscapes of Lahaul.`, `Cross mountain streams, rocky terrain, and scenic valley stretches along the way.`, `By evening, arrive in Manali and check in to your hotel.`, `After some time to relax, head out to explore the vibrant lanes of Old Manali.`, `Spend the evening café hopping, trying local delicacies, and soaking in the laid-back mountain vibe.`, `You can also browse through local shops and enjoy the lively atmosphere around the village.`, `Overnight stay in Manali.`],
-          },
-          {
-            title: `Day 8 – Self-Exploration In Manali & Departure | Until The Himalayas Call Again`,
-            activities: [`Enjoy a hearty breakfast and then proceed to check out of the hotel.`, `Spend the day exploring Manali at your own pace.`, `You can visit the Hadimba Devi Temple, surrounded by towering cedar forests and known for its unique wooden architecture.`, `Walk through the lively lanes of Old Manali and unwind at its charming cafés.`, `Later, explore Mall Road for shopping, local treats, and souvenirs before your departure.`, `In the evening, board your overnight transfer to Delhi.`],
-          },
-          {
-            title: `Last Day – Arrival In Delhi`,
-            activities: [`Arrive in Delhi by morning after your overnight journey from Manali.`, `Take back unforgettable memories of high mountain passes, ancient monasteries, remote villages, and star-filled Himalayan nights.`, `Your Spiti Valley adventure comes to an end here.`],
-          },
-        ],
-      },
-      {
-        id: 'spiti-3',
-        title: `Spiti Valley`,
-        duration: `8N/9D`,
-        inclusions: [
-          `Volvo transfers from Delhi to Shimla & Manali to Delhi.`,
-          `Entire travel from Shimla to Spiti and back to Manali by private vehicle as per group size.`,
-          `7 nights' accommodation – 1 Night in Narkanda (hotel/stay), 1 Night in Chitkul (hotel/homestay), 1 Night in Tabo (hotel/homestay), 1 Night in Mudh Village (Pin Valley – homestay), 2 Nights in Kaza (hotel/homestay), 1 Night in camps at Chandratal.`,
-          `All internal transfers as per itinerary.`,
-          `Driver allowance, night charges, toll tax, parking charges, and all necessary permits (excluding special permits if required in restricted areas).`,
-          `An oxygen cylinder 24X7 in the vehicle for emergency use.`,
-        ],
-        days: [
-          {
-            title: `Starting Day – Departure from Delhi to Shimla. Overnight Journey to Shimla.`,
-            activities: [`Start your journey by boarding your Volvo bus from Delhi in the evening.`, `Leave the city behind as you start your Spiti Valley tour.`, `Enjoy the scenic drive as the roads wind through hills, forests, and quiet towns.`, `Overnight bus journey to Shimla.`],
-          },
-          {
-            title: `Day 1 – Arrival In Shimla & Transfer To Narkanda`,
-            activities: [`Arrive in Shimla early in the morning and meet our representative for the onward journey towards Narkanda.`, `Start your scenic drive through winding mountain roads surrounded by pine forests, apple orchards, and breathtaking Himalayan views.`, `Reach Narkanda by evening and check in to your stay.`, `Spend the rest of the evening at leisure, relaxing in the cool mountain weather or exploring the nearby surroundings on your own.`, `Overnight stay in Narkanda.`],
-          },
-          {
-            title: `Day 2 – Narkanda To Chitkul | Explore Sangla & Rakcham`,
-            activities: [`After breakfast, check out and begin your journey towards Chitkul, the last inhabited village near the Indo-Tibetan border.`, `On the way, explore Sangla, a beautiful Himalayan town known for its traditional wooden houses, apple orchards, and breathtaking mountain scenery.`, `Further ahead, visit Rakcham, a peaceful village located between Sangla and Chitkul, surrounded by pine forests and snow-capped peaks.`, `Continue through the picturesque Baspa Valley and reach Chitkul by evening.`, `Check in to your hotel or homestay and spend some time at leisure exploring the village surroundings or relaxing near the Baspa River.`, `Overnight stay in Chitkul.`],
-          },
-          {
-            title: `Day 3 – Chitkul To Tabo | Visit Khab Sangam, Nako Lake & Nako Village`,
-            activities: [`Have your breakfast early and start your journey towards Tabo, entering the stunning landscapes of Spiti Valley.`, `En route, stop at Khab Sangam, the spectacular confluence where the Spiti River meets the Sutlej River in towering mountains.`, `Further ahead, you will visit Nako Village, a peaceful high-altitude settlement known for its traditional mud houses and scenic surroundings.`, `Spend some time near the beautiful Nako Lake, surrounded by willow trees and prayer flags, with panoramic mountain views.`, `Continue your Spiti Valley adventure further to witness the stark cold desert landscapes along the route.`, `Reach Tabo by evening and check in to your stay.`, `Spend the evening at leisure, relaxing in this quiet Himalayan village.`, `Overnight stay in Tabo.`],
-          },
-          {
-            title: `Day 4 – Explore Tabo & Dhankar | Transfer To Mudh Village`,
-            activities: [`Start your morning with a fresh breakfast and get ready to explore the ancient wonders of Spiti Valley.`, `Today, we'll begin by visiting the famous Tabo Monastery, one of the oldest functioning Buddhist monasteries in the Himalayas, known for its ancient murals, meditation halls, and spiritual significance.`, `A little ahead, explore the nearby Tabo Caves, where monks once meditated in isolation in the rugged mountain terrain.`, `From there, continue towards the spectacular Dhankar Monastery, dramatically perched on a cliff overlooking the Spiti Valley and the confluence of the Spiti and Pin Rivers.`, `Later, drive towards the beautiful Pin Valley region, known for its peaceful villages, dramatic landscapes, and untouched natural beauty.`, `Reach Mudh Village by evening and check in to your stay.`, `Spend the rest of the evening relaxing in the scenic mountain views of Pin Valley.`, `Overnight stay in Mudh Village.`],
-          },
-          {
-            title: `Day 5 – Explore Mudh Village & Transfer To Kaza`,
-            activities: [`Wake up to the peaceful views of Pin Valley and enjoy a fresh breakfast amidst the quiet mountain surroundings.`, `Spend some time exploring Mudh Village, known for its traditional mud houses, scenic landscapes, and untouched Himalayan beauty.`, `You can take a short walk through the village lanes, interact with locals, and soak in the calm atmosphere of this remote Spitian village.`, `Later, begin your journey towards Kaza, the main town of Spiti Valley.`, `Reach Kaza by evening and check in to your stay.`, `After some rest, head out to explore the lively Kaza Market, known for its local cafés, Tibetan eateries, handicraft shops, and backpacker vibe.`, `You can spend the evening trying local food, shopping for souvenirs, or simply enjoying the vibrant atmosphere of the town.`, `Overnight stay in Kaza.`],
-          },
-          {
-            title: `Day 6 – Explore Key Monastery, Kibber, Chicham, Hikkim, Komic & Langza`,
-            activities: [`Start your day with an early breakfast and head out to explore Spiti's iconic high-altitude villages.`, `First stop is Key Monastery, perched dramatically on a hilltop.`, `Take in the views and experience the monastery's centuries-old, spiritual vibe.`, `Next, drive to Chicham Bridge, the highest suspension bridge in Asia, offering jaw-dropping valley views.`, `You'll visit Komic, one of the highest inhabited villages in the world.`, `From there, head to Hikkim, where you'll have a chance to send postcards from the world's highest post office.`, `Your last stop is Langza, known for its massive Buddha statue and fossil-rich land.`, `You can even try spotting marine fossils from when this region was once under the Tethys Sea.`, `By evening, drive back to Kaza.`, `Overnight stay in Kaza.`],
-          },
-          {
-            title: `Day 7 – Kaza To Chandra Taal | Overnight Campstay`,
-            activities: [`Wake up early, have breakfast, and check out of the stay.`, `Today, you'll head towards one of its most magical spots on this Spiti tour, Chandratal.`, `En route, take a short halt at Losar, the last village of Spiti, for snacks and a quick break.`, `By evening, reach Chandra Taal and check into our camps.`, `Witness the vast turquoise lake changing its colours with the setting sun.`, `Enjoy dinner under a sky full of stars and the Milky Way stretching across like a glowing river.`, `Overnight stay in camps near Chandra Taal.`],
-          },
-          {
-            title: `Day 8 – Chandrataal To Manali`,
-            activities: [`Start early in the morning after breakfast and begin our journey towards Manali.`, `The drive today is thrilling as we cross rugged roads, water crossings, off-road sections, and constantly changing Himalayan views.`, `On the way, you'll cross Kunzum Pass and continue through the wide valleys of Lahaul, where the landscape slowly begins to change.`, `Pass through the Atal Tunnel before entering the lush Kullu Valley side.`, `Reach Manali by evening and check into the hotel.`, `After some rest, head out to explore Old Manali for café hopping, trying local food, and experiencing the laid-back mountain vibe at your own pace.`, `Return to the hotel for dinner.`, `Overnight stay in Manali.`],
-          },
-          {
-            title: `Last Day – Self-Exploration In Manali | Depart For Delhi`,
-            activities: [`Wake up to a fresh mountain morning and a relaxed start in Manali.`, `After breakfast, the day is free to explore the town at your own pace.`, `Visit Hadimba Devi Temple, take a walk through Old Manali, or spend time around Mall Road.`, `You can also explore cafés, shop for souvenirs, or just sit back and enjoy the last views of the mountains.`, `By evening, reach the boarding point and begin the journey back to Delhi.`, `Overnight journey to Delhi.`, `Your Spiti trip ends with a collection of mountain memories, long drives, and moments that stay with you long after the road ends.`],
-          },
-        ],
-      },
-    ],
     meghalaya: [
       {
         id: 'meghalaya-1',
@@ -1649,126 +1479,6 @@ export const siteConfig = {
         ],
       },
     ],
-    arunachal: [
-      {
-        id: 'arunachal-1',
-        title: `Arunachal`,
-        duration: `4N/5D`,
-        inclusions: [
-          `4 Nights hotel accommodation in Ziro Valley as per the package`,
-          `Breakfast from Day 2 to Day 5`,
-          `Applicable taxes as per the package`,
-        ],
-        days: [
-          {
-            title: `Day 1 – Arrive in Ziro Valley | Ziro Music Festival`,
-            activities: [`Transfer to your campsite/homestay and complete the check-in process.`, `Settle in and take some time to relax after your journey.`, `Explore the beautiful surroundings of Ziro Valley at leisure.`, `In the afternoon/evening, get ready for your first experience of the Ziro Music Festival.`, `Head to the festival venue and enjoy live performances by artists from across India and around the world.`, `Experience the unique combination of music, nature, art, food, and local culture.`, `Return to your accommodation after the festival.`, `Overnight stay in Ziro Valley.`],
-          },
-          {
-            title: `Day 2 – Ziro Music Festival`,
-            activities: [`Enjoy a relaxed morning and breakfast at your accommodation.`, `Spend the day immersing yourself in the Ziro Music Festival.`, `Enjoy performances across different stages and discover new artists and genres.`, `Explore the festival's food stalls featuring local Arunachali and regional flavours.`, `Browse handmade crafts, art, merchandise, and locally produced products.`, `Take breaks between performances to enjoy the surrounding Ziro Valley landscape.`, `Continue enjoying the festival's evening performances and vibrant atmosphere.`, `Return to your campsite/homestay after the day's celebrations.`, `Overnight stay in Ziro Valley.`],
-          },
-          {
-            title: `Day 3 – Explore Apatani Culture | Ziro Music Festival`,
-            activities: [`Enjoy breakfast and begin your cultural exploration of Ziro.`, `Visit traditional Apatani villages and experience the distinctive lifestyle and architecture of the community.`, `Explore the famous Apatani paddy fields, surrounded by green hills and forests.`, `Interact with local people and learn about traditional agricultural practices and village life.`, `Visit local homes or community areas, where possible, to understand the region's customs and traditions.`, `Explore traditional handicrafts and locally made products.`, `Return to your accommodation for some rest.`, `In the afternoon/evening, head back to the Ziro Music Festival.`, `Enjoy another evening of live music and performances.`, `Return to your stay after the festival.`, `Overnight stay in Ziro Valley.`],
-          },
-          {
-            title: `Day 4 – Explore Ziro Valley | Ziro Music Festival`,
-            activities: [`Enjoy breakfast at the campsite/homestay.`, `Begin a relaxed exploration of Ziro Valley.`, `Visit the scenic pine forests and enjoy a peaceful walk through the natural surroundings.`, `Explore viewpoints overlooking the valley and its iconic agricultural landscape.`, `Spend time photographing the beautiful combination of rice fields, forests, mountains, and traditional villages.`, `Depending on local conditions and time, visit additional nearby villages or cultural attractions.`, `Return to your accommodation and freshen up.`, `Later, head to the Ziro Music Festival for your final evening.`, `Enjoy the closing performances, atmosphere, and celebration of music and culture.`, `Return to your accommodation after the festival.`, `Overnight stay in Ziro Valley.`],
-          },
-          {
-            title: `Day 5 – Departure | Bid Farewell to the Valley of Music`,
-            activities: [`Enjoy breakfast at your accommodation.`, `Check out and prepare for your departure.`, `Take some final photographs of the beautiful Ziro Valley.`, `Meet your driver/local representative for your onward transfer.`, `Depart Ziro with unforgettable memories of the Ziro Music Festival, Apatani culture, music, and the peaceful Himalayan valley.`],
-          },
-        ],
-      },
-      {
-        id: 'arunachal-2',
-        title: `Arunachal`,
-        duration: `5N/6D`,
-        inclusions: [
-          `Accommodation as mentioned, sharing basis, and mentioned meal plan`,
-          `All transportation organized through a dedicated air-conditioned vehicle with a professional driver`,
-          `Breakfast included in the package`,
-          `Inner Line Permit for Arunachal Pradesh and processing fees included`,
-          `Pickup and drop from Guwahati Airport/Railway Station/Bus Station`,
-          `All sightseeing, land transfer & inter-hotel transfer`,
-          `Driver allowance, toll, parking, road tax, permit charges, night halt, interstate charges, Kaziranga permit toll, and forest guard welfare fees included`,
-          `Child below 6 yrs sharing same bed with parents will be complimentary and will be according to hotel rules`,
-        ],
-        days: [
-          {
-            title: `Day 1 – Airport Pickup, Guwahati to Dirang`,
-            activities: [`Arrive at Guwahati Airport and meet your driver.`, `Begin your scenic journey towards Dirang, a beautiful Himalayan valley in Arunachal Pradesh.`, `Drive through the picturesque landscapes of Assam and enter the mountains of Arunachal Pradesh.`, `En route, pass through beautiful forests, valleys, and mountain villages.`, `Stop at suitable viewpoints and local eateries for refreshments.`, `Continue towards Dirang and check in to your hotel/homestay.`, `Spend the evening relaxing and enjoying the peaceful mountain atmosphere.`, `Overnight stay in Dirang.`],
-          },
-          {
-            title: `Day 2 – Dirang to Tawang`,
-            activities: [`Enjoy an early breakfast and check out from the hotel.`, `Begin your spectacular drive towards Tawang.`, `The journey takes you through some of the most beautiful Himalayan landscapes in Arunachal Pradesh.`, `Cross the famous Sela Pass, one of the highest motorable mountain passes in the region, subject to weather and road conditions.`, `Stop to admire the surrounding snow-covered mountains and Sela Lake.`, `Continue through winding mountain roads and scenic valleys.`, `En route, visit the Jaswant Garh War Memorial, dedicated to Rifleman Jaswant Singh Rawat.`, `Continue towards Tawang.`, `On arrival, check in to your hotel.`, `Spend the evening relaxing after the long mountain journey.`, `Overnight stay in Tawang.`],
-          },
-          {
-            title: `Day 3 – Tawang Sightseeing`,
-            activities: [`Enjoy breakfast at the hotel.`, `Begin your Tawang sightseeing tour.`, `Visit the magnificent Tawang Monastery, one of the largest Buddhist monasteries in India and an important centre of Mahayana Buddhism.`, `Explore the monastery complex and enjoy panoramic views of the surrounding mountains.`, `Visit the Tawang War Memorial, built in honour of Indian soldiers who lost their lives during the 1962 war.`, `Explore the local markets and experience the culture and lifestyle of Tawang.`, `Depending on time and local accessibility, visit nearby attractions and viewpoints.`, `Spend the evening at leisure.`, `Return to your hotel and relax.`, `Overnight stay in Tawang.`],
-          },
-          {
-            title: `Day 4 – Around Tawang Sightseeing (Sela Pass, Bumla Pass, PTSO Lake, Madhuri Lake)`,
-            activities: [`Start early after breakfast for an exciting day exploring the high-altitude attractions around Tawang.`, `Visit Bumla Pass, located near the India–China border.`, `Enjoy the dramatic mountain scenery and learn about the strategic significance of the area.`, `Continue towards PTSO Lake, a beautiful high-altitude lake surrounded by rugged mountains.`, `Visit the spectacular Madhuri Lake, also known as Sangetsar Lake, famous for its unique landscape and cinematic appeal.`, `Enjoy the breathtaking views and take photographs.`, `If the route and weather permit, enjoy additional stops at scenic viewpoints along the way.`, `Return to Tawang in the evening.`, `Relax at your hotel after the high-altitude excursion.`, `Overnight stay in Tawang.`],
-          },
-          {
-            title: `Day 5 – Tawang to Bomdila`,
-            activities: [`Enjoy breakfast and check out from your hotel.`, `Begin your return journey towards Bomdila.`, `Drive through the spectacular Himalayan terrain and revisit some of the beautiful landscapes along the route.`, `Stop at scenic viewpoints and local villages along the way.`, `Depending on road conditions and time, take short breaks for photographs and refreshments.`, `Arrive in Bomdila, a picturesque hill town surrounded by forests and mountains.`, `Check in to your hotel.`, `Spend the evening relaxing and enjoying the cool mountain weather.`, `Overnight stay in Bomdila.`],
-          },
-          {
-            title: `Day 6 – Bomdila to Guwahati, Airport Drop`,
-            activities: [`Enjoy breakfast at the hotel.`, `Check out and begin your journey towards Guwahati.`, `Drive through the beautiful mountain roads before entering the plains of Assam.`, `Enjoy the final views of the Himalayan landscapes along the way.`, `Stop for refreshments and lunch en route.`, `Continue towards Guwahati.`, `On arrival, proceed directly to Guwahati Airport for your onward journey.`, `Bid farewell to the beautiful mountains of Arunachal Pradesh with unforgettable memories.`],
-          },
-        ],
-      },
-      {
-        id: 'arunachal-3',
-        title: `Arunachal`,
-        duration: `6N/7D`,
-        inclusions: [
-          `Entire travel as per the itinerary`,
-          `All Transfers in a Tempo Traveller`,
-          `1 Night in Hotel at Tezpur, 4 nights in Hotel in Ziro Valley, 1 Night in a Hotel in Guwahati`,
-          `Transport from Guwahati to Guwahati and back in comfortable tourist vehicles`,
-          `Inner Line Permit and all other necessary entry permits included`,
-          `6 Meals – Breakfast included from Day 2 to Day 7`,
-          `All tolls, parking fee, driver & fuel cost`,
-          `Airport/Khanapara Pickup and Drop`,
-        ],
-        days: [
-          {
-            title: `Day 1 – Arrival in Guwahati, Transfer to Tezpur`,
-            activities: [`Arrive at Guwahati Airport/Railway Station and meet your driver.`, `Begin your journey towards Tezpur, a beautiful historic town on the banks of the Brahmaputra River.`, `Enjoy the scenic drive through Assam's lush green landscapes and tea gardens.`, `On arrival in Tezpur, check in to your hotel.`, `After some rest, explore the local surroundings.`, `Depending on arrival time, visit Agnigarh or enjoy a relaxed evening by the Brahmaputra.`, `Return to the hotel for dinner.`, `Overnight stay in Tezpur.`],
-          },
-          {
-            title: `Day 2 – Early Morning Departure for Ziro Valley – Ziro Music Festival`,
-            activities: [`Start your day early with breakfast.`, `Check out from the hotel and begin your scenic journey towards Ziro Valley in Arunachal Pradesh.`, `Drive through the beautiful landscapes of Assam before entering the hills of Arunachal Pradesh.`, `Enjoy the changing scenery of forests, mountains, valleys, and local villages.`, `Stop en route for refreshments and lunch.`, `Continue towards Ziro Valley.`, `On arrival, check in to your campsite/homestay.`, `Freshen up and get ready for the Ziro Music Festival.`, `Head to the festival venue and enjoy live performances in the unique setting of Ziro's mountains and pine forests.`, `Experience the festival's music, local food, arts, crafts, and vibrant atmosphere.`, `Return to your accommodation after the day's performances.`, `Overnight stay in Ziro Valley.`],
-          },
-          {
-            title: `Day 3 – Apatani Tribal Village – Ziro Music Festival`,
-            activities: [`Enjoy breakfast at your accommodation.`, `Begin your exploration of the unique Apatani tribal culture.`, `Visit traditional Apatani villages and observe the distinctive architecture and community lifestyle.`, `Explore the famous Apatani paddy fields, surrounded by lush green hills.`, `Learn about traditional agricultural practices and the close relationship between the community and its natural surroundings.`, `Interact respectfully with local residents and discover traditional customs and handicrafts.`, `Return to your accommodation for some rest.`, `Later, head towards the Ziro Music Festival.`, `Spend the evening enjoying live music performances from artists across India and around the world.`, `Explore the food stalls, local products, art, and festival atmosphere.`, `Return to your accommodation after the festival.`, `Overnight stay in Ziro Valley.`],
-          },
-          {
-            title: `Day 4 – Fishing in Ziro Valley – Ziro Music Festival`,
-            activities: [`Enjoy breakfast at your campsite/homestay.`, `Spend the morning experiencing fishing in and around Ziro Valley, subject to local permissions and seasonal conditions.`, `Enjoy the peaceful surroundings and experience a slower side of life in the valley.`, `Spend some time exploring nearby villages and agricultural landscapes.`, `Return to your accommodation and relax.`, `In the afternoon/evening, get ready for another exciting day at the Ziro Music Festival.`, `Enjoy live performances, local cuisine, arts, crafts, and the energetic festival environment.`, `Return to your accommodation after the day's celebrations.`, `Overnight stay in Ziro Valley.`],
-          },
-          {
-            title: `Day 5 – Local Sightseeing – Ziro Music Festival`,
-            activities: [`Enjoy breakfast at the accommodation.`, `Begin a relaxed local sightseeing tour around Ziro Valley.`, `Visit scenic pine forests and enjoy a peaceful nature walk.`, `Explore traditional villages and surrounding paddy fields.`, `Visit local viewpoints to admire the beautiful valley landscape.`, `Spend time photographing the mountains, forests, agricultural fields, and traditional settlements.`, `Explore local handicrafts and learn more about Apatani traditions.`, `Return to your accommodation and freshen up.`, `Later, head to the Ziro Music Festival for another evening of music and celebrations.`, `Enjoy the final festival performances and soak in the unique atmosphere of music surrounded by nature.`, `Return to your accommodation after the festival.`, `Overnight stay in Ziro Valley.`],
-          },
-          {
-            title: `Day 6 – Transfer from Ziro Valley to Guwahati`,
-            activities: [`Enjoy breakfast and check out from your accommodation.`, `Begin your return journey towards Guwahati.`, `Drive through the scenic landscapes of Arunachal Pradesh and Assam.`, `Stop en route for refreshments and lunch.`, `Enjoy the final views of the hills and countryside.`, `Continue towards Guwahati.`, `On arrival, check in to your hotel and relax.`, `Spend the evening at leisure after the long journey.`, `Overnight stay in Guwahati.`],
-          },
-          {
-            title: `Day 7 – Maa Kamakhya Temple – Departure`,
-            activities: [`Enjoy breakfast at the hotel.`, `Check out and proceed to Maa Kamakhya Temple, one of the most revered temples in Assam.`, `Spend time exploring the temple complex and experiencing its spiritual atmosphere.`, `Depending on your departure schedule, enjoy some free time for local shopping or refreshments.`, `Proceed to Guwahati Airport/Railway Station for your onward journey.`, `Bid farewell to Assam and Arunachal Pradesh with wonderful memories of the Ziro Music Festival, Apatani culture, and Ziro Valley.`],
-          },
-        ],
-      },
-    ],
     rajasthan: [
       {
         id: 'rajasthan-1',
@@ -1796,8 +1506,8 @@ export const siteConfig = {
             activities: [`Enjoy a delicious breakfast at the hotel and check out.`, `Visit Lotus Temple, a Bahá'í House of Worship famous for its flowerlike shape. (Closed on Mondays)`, `Next, visit Akshardham Temple, a modern Hindu temple complex known for its grand architecture and spiritual exhibitions.`, `Later, set out on a scenic drive to Agra (approx. 210 km / 4 hrs) via the Yamuna Expressway.`, `On arrival in Agra, check in to your hotel and unwind.`, `In the evening, visit Mehtab Bagh for a romantic view of the Taj Mahal from across the Yamuna River.`, `Explore local markets for shopping.`, `Overnight stay in Agra.`],
           },
           {
-            title: `Day 3 – Arrival in Agra | Visit Agra Fort, Tomb of I'timad-ud-Daulah`,
-            activities: [`Enjoy breakfast and check out from hotel and proceed to visit Taj Mahal.`, `Visit Agra Fort, a UNESCO World Heritage site that served as the main residence of the Mughal emperors until 1638.`, `Explore its palaces, courtyards, and hall of public audience.`, `Next, visit Tomb of I'timad-ud-Daulah, often called the 'Baby Taj', a Mughal mausoleum often regarded as a draft of the Taj Mahal.`, `Visit Mehtab Bagh for a scenic view of Taj Mahal from across the river, if not visited on Day 2.`, `In the evening, explore local markets of Agra for leather goods, marble inlay work, and handicrafts.`, `Check in to your hotel and unwind.`, `Overnight stay in Agra.`],
+            title: `Day 3 – Arrival in Agra | Visit Agra Fort, Tomb of I'timād-ud-Daulah`,
+            activities: [`Enjoy breakfast and check out from hotel and proceed to visit Taj Mahal.`, `Visit Agra Fort, a UNESCO World Heritage site that served as the main residence of the Mughal emperors until 1638.`, `Explore its palaces, courtyards, and hall of public audience.`, `Next, visit Tomb of I'timād-ud-Daulah, often called the 'Baby Taj', a Mughal mausoleum often regarded as a draft of the Taj Mahal.`, `Visit Mehtab Bagh for a scenic view of Taj Mahal from across the river, if not visited on Day 2.`, `In the evening, explore local markets of Agra for leather goods, marble inlay work, and handicrafts.`, `Check in to your hotel and unwind.`, `Overnight stay in Agra.`],
           },
           {
             title: `Day 4 – Early Morning Taj Mahal Visit | Drive to Jaipur via Fatehpur Sikri and Abhaneri Stepwell`,
@@ -2017,331 +1727,50 @@ export const siteConfig = {
         ],
       },
     ],
-    japan: [
-      {
-        id: 'japan-1',
-        title: `JAPAN 7N`,
-        duration: ``,
-        inclusions: [
-          `3 Nights accommodation in Tokyo at a 3/4-star hotel`,
-          `2 Nights accommodation in Kyoto at a 3/4-star hotel`,
-          `2 Nights accommodation in Osaka at a 3/4-star hotel`,
-          `Daily breakfast at the hotel`,
-          `Airport transfers on private/shared basis`,
-          `Tokyo city sightseeing as per itinerary`,
-          `Mt. Fuji & Lake Kawaguchi day excursion`,
-          `Shinkansen bullet train from Tokyo to Kyoto`,
-          `Kyoto sightseeing as per itinerary`,
-          `Kyoto–Nara–Osaka transfers`,
-          `Nara sightseeing including Nara Park & Todai-ji Temple`,
-          `Osaka city sightseeing as per itinerary`,
-          `Akihabara anime & gaming district visit`,
-          `All sightseeing transfers as mentioned in the itinerary`,
-          `Applicable entrance fees for included sightseeing`,
-        ],
-        days: [
-          {
-            title: `Day 1 | Arrival in Tokyo`,
-            activities: [`Arrive at Tokyo International Airport`, `Private/shared transfer to hotel`, `Check-in and relax`, `Evening at leisure`, `Explore nearby streets, cafés and convenience stores`, `• • Overnight in Tokyo`],
-          },
-          {
-            title: `Day 2 | Tokyo City & Pop Culture`,
-            activities: [`Visit Asakusa & Senso-ji Temple`, `Explore Nakamise Shopping Street`, `Visit Akihabara for anime, manga and gaming`, `Explore Shibuya Crossing`, `Visit Shibuya Sky for panoramic city views`, `• • Overnight in Tokyo`],
-          },
-          {
-            title: `Day 3 | Tokyo – Mt. Fuji Excursion`,
-            activities: [`Breakfast at the hotel`, `Full-day excursion to the Mt. Fuji region`, `Visit Lake Kawaguchi`, `Explore Oishi Park`, `Enjoy views of Mt. Fuji`, `Visit a traditional Japanese village/heritage area depending on seasonal access`, `Return to Tokyo`, `• • Overnight in Tokyo`],
-          },
-          {
-            title: `Day 4 | Tokyo – Kyoto`,
-            activities: [`Breakfast and check-out`, `Board the Shinkansen bullet train to Kyoto`, `Check-in at the hotel`, `Visit Fushimi Inari Shrine`, `Explore the traditional streets of Gion`, `Evening at leisure`, `Overnight in Kyoto`],
-          },
-          {
-            title: `Day 5 | Kyoto Heritage & Culture`,
-            activities: [`Breakfast at the hotel`, `Visit Kinkaku-ji (Golden Pavilion)`, `Visit Arashiyama Bamboo Grove`, `Explore Tenryu-ji Temple`, `Walk through the historic Arashiyama area`, `Optional traditional tea ceremony`, `Overnight in Kyoto`],
-          },
-          {
-            title: `Day 6 | Kyoto – Nara – Osaka`,
-            activities: [`Breakfast and check-out`, `Travel to Nara`, `Visit Todai-ji Temple`, `Meet the famous Nara Deer`, `Explore Nara Park`, `Continue to Osaka`, `Check-in at the hotel`, `Evening at Dotonbori & Shinsaibashi`, `Explore Osaka's street-food scene`, `Overnight in Osaka`],
-          },
-          {
-            title: `Day 7 | Osaka – City & Entertainment`,
-            activities: [`Breakfast at the hotel`, `Visit Osaka Castle`, `Explore Kuromon Market`, `Free time for shopping`, `Optional visit to Universal Studios Japan or teamLab Botanical Garden Osaka`, `Evening at leisure in Dotonbori`, `Overnight in Osaka`],
-          },
-          {
-            title: `Day 8 | Departure from Osaka`,
-            activities: [`Breakfast at the hotel`, `Check-out`, `Free time depending on flight schedule`, `Transfer to Kansai International Airport`, `Departure from Japan`],
-          },
-        ],
-      },
-      {
-        id: 'japan-2',
-        title: `JAPAN 8N`,
-        duration: ``,
-        inclusions: [
-          `8 nights’ accommodation in selected hotels on twin/double sharing basis.`,
-          `Daily breakfast at hotels.`,
-          `Airport transfers in Tokyo and Osaka.`,
-          `Shinkansen ticket: Tokyo → Kyoto.`,
-          `Kyoto → Nara → Osaka transfers.`,
-          `Full-day Mt. Fuji & Lake Kawaguchi excursion.`,
-          `Sightseeing as per the itinerary in Tokyo, Kyoto, Nara & Osaka.`,
-          `Entrance tickets to Shibuya Sky and teamLab Borderless.`,
-          `English-speaking guide/local assistance where applicable.`,
-          `All intercity transportation as mentioned in the itinerary, including:`,
-          `Tokyo → Kyoto Shinkansen`,
-          `• • Kyoto → Nara → Osaka transfers`,
-        ],
-        days: [
-          {
-            title: `Day 1 | Arrival in Tokyo`,
-            activities: [`Arrive at Tokyo International Airport`, `Transfer to hotel and check-in`, `Relax and explore the neighbourhood`, `Evening at leisure`, `Overnight in Tokyo`],
-          },
-          {
-            title: `Day 2 | Tokyo City & Anime Experience`,
-            activities: [`Breakfast at the hotel`, `Visit Senso-ji Temple & Asakusa`, `Explore Nakamise Shopping Street`, `Visit Akihabara for anime, manga and gaming`, `Explore Shibuya Crossing`, `Visit Shibuya Sky`, `Overnight in Tokyo`],
-          },
-          {
-            title: `Day 3 | Tokyo – Modern Japan`,
-            activities: [`Breakfast at the hotel`, `Visit Meiji Shrine`, `Explore Harajuku & Takeshita Street`, `Visit teamLab Borderless`, `Explore Odaiba`, `Evening at leisure`, `Overnight in Tokyo`],
-          },
-          {
-            title: `Day 4 | Mt. Fuji Day Trip`,
-            activities: [`Breakfast at the hotel`, `Full-day excursion to the Mt. Fuji region`, `Visit Lake Kawaguchi`, `Explore Oishi Park`, `Enjoy panoramic views of Mt. Fuji`, `Visit a traditional village/heritage area`, `Return to Tokyo`, `Overnight in Tokyo`],
-          },
-          {
-            title: `Day 5 | Tokyo – Kyoto by Shinkansen`,
-            activities: [`Breakfast and check-out`, `Board the Shinkansen bullet train to Kyoto`, `Check-in at hotel`, `Visit Fushimi Inari Shrine`, `Explore Gion & Higashiyama`, `Evening at leisure`, `Overnight in Kyoto`],
-          },
-          {
-            title: `Day 6 | Kyoto Heritage & Arashiyama`,
-            activities: [`Breakfast at the hotel`, `Visit Kinkaku-ji – Golden Pavilion`, `Explore Arashiyama Bamboo Grove`, `Visit Tenryu-ji Temple`, `Explore the traditional streets of Arashiyama`, `Optional Japanese tea ceremony`, `Overnight in Kyoto`],
-          },
-          {
-            title: `Day 7 | Kyoto – Nara – Osaka`,
-            activities: [`Breakfast and check-out`, `Travel to Nara`, `Visit Nara Park`, `Meet the famous Nara Deer`, `Visit Todai-ji Temple`, `Continue to Osaka`, `Check-in at hotel`, `Evening at Dotonbori & Shinsaibashi`, `Overnight in Osaka`],
-          },
-          {
-            title: `Day 8 | Osaka – Culture, Shopping & Entertainment`,
-            activities: [`Breakfast at the hotel`, `Visit Osaka Castle`, `Explore Kuromon Market`, `Free time for shopping`, `Optional Universal Studios Japan or teamLab Botanical Garden Osaka`, `Evening food experience in Dotonbori`, `Overnight in Osaka`],
-          },
-          {
-            title: `Day 9 | Departure from Osaka`,
-            activities: [`Breakfast at the hotel`, `Check-out`, `Free time depending on flight schedule`, `Transfer to Kansai International Airport`, `Departure from Japan`],
-          },
-        ],
-      },
-    ],
-    srilanka: [
-      {
-        id: 'srilanka-1',
-        title: `Sri lanka - 5n/6d`,
-        duration: ``,
-        inclusions: [
-          `05 Nights of accommodation at above mentioned hotels on Half Board Basis`,
-          `Transfer by private A/C Large Coach`,
-          `Service of English speaking national guide`,
-          `500 ml x 02 water bottles per person per day`,
-        ],
-        days: [
-          {
-            title: `Day 01 – Airport / Galle`,
-            activities: [`Arrival & welcome by a Local Representative`, `Transfer to Galle`, `Evening Leisure at Hotel`, `Overnight stay at Hotel in Galle`, `Day 02 – Galle`, `Breakfast at Hotel`, `Visit Galle Dutch fort, Unawatuna Beach & Hikkaduwa Beach`, `Overnight stay at Hotel in Galle`],
-          },
-          {
-            title: `Day 03 – Galle / Weligama – Yala Excursion`,
-            activities: [`Breakfast at Hotel`, `Excursion to Yala`, `Visit Yala National Park Jeep Safari`, `Visit Kataragama Temple`, `Return back to Weligama Hotel`, `Evening Leisure a hotel`, `Overnight stay at Hotel in Weligama`],
-          },
-          {
-            title: `Day 04 – Weligama`,
-            activities: [`Breakfast at Hotel`, `Visit Coconut tree Hill, Parrot Island & Secret Beach`, `Leisure at Beach`, `Overnight stay at Hotel in Weligama`],
-          },
-          {
-            title: `Day 05 – Weligama – Bentota Excursion`,
-            activities: [`Breakfast at Hotel`, `Transfer to Bentota`, `Madu River Boat Ride & Cinnamon Island`, `Visit Kosgoda Turtle Hatchery`, `Optional: Water Sports (Jet Ski /Banana Ride /Tube Ride)`, `Return back to Weligama Hotel`, `Overnight stay at Hotel in Weligama`],
-          },
-          {
-            title: `Day 06 – Weligama / Colombo / Airport`,
-            activities: [`Breakfast at Hotel`, `Transfer to Airport via Colombo`, `Colombo city tour with shopping – Full Day`],
-          },
-        ],
-      },
-      {
-        id: 'srilanka-2',
-        title: `Sri lanka 5n/6d (Ella and trinkomale)`,
-        duration: ``,
-        inclusions: [
-          `Arrival assistance at the Colombo Airport by our representative.`,
-          `· Accommodation in the hotels mentioned or similar. Check-in 14h00 / Check-out 12h00 noon`,
-          `· Stay at Double Sharing basis`,
-          `. Meals on Dinner & Breakfast Basis at all Hotels (B5, D5)`,
-          `. Two 500ml water bottle per person per day while on tour.`,
-          `. Sightseeing & City Tour Excluding entrance as per below itinerary.`,
-          `. All transfer by Air Conditional Private High Roof van with an English-Speaking Chuffer Guide`,
-          `· Fuel and Local insurance for the vehicle`,
-          `. All applicable tax in Sri Lanka`,
-        ],
-        days: [
-          {
-            title: `Day 01: BIA / Trincomalee`,
-            activities: [`Transfer to Trincomalee`, `Overnight Stay at Trincomalee`],
-          },
-          {
-            title: `Day 02: Trincomalee`,
-            activities: [`Breakfast at the hotel`, `Visit Pigeon Island Marine National Park`, `Water Sport at Trincomalee`, `Overnight stay in Trincomalee`],
-          },
-          {
-            title: `Day 03: Trincomalee/Ella`,
-            activities: [`Breakfast at the hotel`, `Transfer to Ella`, `Overnight Stay in Ella`],
-          },
-          {
-            title: `Day 04: Ella`,
-            activities: [`Early Morning Visit Little Adam’s Peak with Packed Breakfast`, `Visit flying Rawana Adventure Park (Flying Rawana Mega Zip Line, ATV Rides)`, `Visit Ella Swing`, `Visit Nine Arch Bridge Ella`, `Overnight stay in Ella`],
-          },
-          {
-            title: `Day 05: Ella/Colombo`,
-            activities: [`Breakfast at the Hotel`, `Visit Rawana Ella Water fall`, `Transfer to Colombo Via Belihul Oya`, `Optional: Colombo Night Life (One way Drops Only)`, `Overnight Stay at Colombo`],
-          },
-          {
-            title: `Day 06: Colombo/BIA`,
-            activities: [`Breakfast at the Colombo`, `Colombo City Tour & Shopping (If Time Permits)`, `Transfer to Departure Flight`],
-          },
-        ],
-      },
-    ],
-    philippines: [
-      {
-        id: 'philippines-1',
-        title: `PHILIPPINES`,
-        duration: `7N8D`,
-        inclusions: [
-          `7 nights accommodation in 4★ hotels on twin sharing.`,
-          `Daily breakfast at the hotels.`,
-          `Return airport transfers in Manila, Boracay and Cebu.`,
-          `Domestic flights: Manila–Caticlan and Caticlan–Cebu.`,
-          `Airport/ferry transfers between Caticlan Airport and Boracay hotel.`,
-          `Manila City Tour including Intramuros and Rizal Park.`,
-          `Boracay Island Hopping Tour with snorkelling.`,
-          `Cebu City & Mactan Tour.`,
-          `All sightseeing transfers on private/shared basis as mentioned.`,
-          `Entrance fees for sightseeing mentioned in the itinerary.`,
-          `Local English-speaking assistance during tours.`,
-          `Applicable local taxes and service charges`,
-        ],
-        days: [
-          {
-            title: `DAY1 -Arrive in Manila → Airport transfer → Hotel check-in → Evening at leisure`,
-            activities: [],
-          },
-          {
-            title: `DAY 2 - Breakfast → Manila city tour → Intramuros → Rizal Park → Manila Bay → Shopping/leisure`,
-            activities: [],
-          },
-          {
-            title: `DAY 3- Breakfast → Check-out → Flight to Caticlan → Transfer to Boracay → Hotel check-in → White Beach sunset`,
-            activities: [],
-          },
-          {
-            title: `DAY 4 - Breakfast → Island-hopping tour → Snorkelling → Puka Beach → Crystal Cove/nearby islands → Sunset`,
-            activities: [],
-          },
-          {
-            title: `DAY 5 - Breakfast → Leisure day → Beach activities → Water sports/shopping → Evening at leisure`,
-            activities: [],
-          },
-          {
-            title: `DAY 6 - Breakfast → Check-out → Flight to Cebu → Hotel check-in → Cebu city exploration`,
-            activities: [],
-          },
-          {
-            title: `DAY 7 - Breakfast → Full-day island/sea excursion → Snorkelling → Local sightseeing → Evening at leisure`,
-            activities: [],
-          },
-          {
-            title: `DAY 8 - Breakfast → Check-out → Free time depending on flight → Airport transfer → Departure`,
-            activities: [],
-          },
-        ],
-      },
-      {
-        id: 'philippines-2',
-        title: `PHILIPPINES`,
-        duration: `6N7D`,
-        inclusions: [
-          `6 nights accommodation in 4★ hotels on twin sharing.`,
-          `Daily breakfast.`,
-          `Manila, Boracay & Cebu airport transfers.`,
-          `Domestic flights: Manila–Caticlan & Caticlan–Cebu.`,
-          `Caticlan–Boracay land & boat transfers.`,
-          `Manila City Tour.`,
-          `Boracay Island Hopping & Snorkelling Tour.`,
-          `Cebu City & Mactan sightseeing.`,
-          `Sightseeing entrance fees as per itinerary.`,
-          `Local English-speaking assistance during tours.`,
-          `Applicable taxes and service charges.`,
-        ],
-        days: [
-          {
-            title: `Day 1 Arrive → Airport transfer → Hotel check-in → Evening at leisure`,
-            activities: [],
-          },
-          {
-            title: `Day 2 Breakfast → Manila City Tour → Intramuros → Rizal Park → Shopping/leisure`,
-            activities: [],
-          },
-          {
-            title: `Day 3 Breakfast → Flight to Caticlan → Land & boat transfer → Hotel check-in → White Beach sunset`,
-            activities: [],
-          },
-          {
-            title: `Day 4 Breakfast → Island-hopping & snorkelling → Puka Beach → Free evening`,
-            activities: [],
-          },
-          {
-            title: `Day 5 Breakfast → Check-out → Flight to Cebu → Hotel check-in → Evening at leisure`,
-            activities: [],
-          },
-          {
-            title: `Day 6 Breakfast → Cebu City & Mactan Tour → Magellan's Cross → Basilica area → Fort San Pedro → Evening at leisure`,
-            activities: [],
-          },
-          {
-            title: `Day 7 Breakfast → Check-out → Airport transfer → Departure`,
-            activities: [],
-          },
-        ],
-      },
-    ],
     georgia: [
       {
         id: 'georgia-1',
         title: `GEORGIA 5N6D`,
         duration: ``,
-        inclusions: [],
+        inclusions: [
+          `5 nights accommodation in 4★ hotels on twin sharing basis.`,
+          `Daily breakfast at the hotel.`,
+          `Airport arrival & departure transfers.`,
+          `Private vehicle for sightseeing and intercity transfers.`,
+          `Tbilisi city sightseeing.`,
+          `Full-day Kazbegi & Gudauri excursion.`,
+          `Gergeti Trinity Church visit.`,
+          `Mtskheta & Jvari Monastery sightseeing.`,
+          `Ananuri Fortress & Zhinvali Reservoir visit.`,
+          `English-speaking driver/guide.`,
+          `Entrance fees as per itinerary.`,
+          `All applicable local taxes and service charges.`,
+          `24/7 local assistance during the tour.`,
+        ],
         days: [
           {
-            title: `Day 1 Arrive → Airport transfer → Hotel check-in → Evening at leisure`,
-            activities: [`5 nights accommodation in 4★ hotels on twin sharing basis.`],
+            title: `Day 1`,
+            activities: [`Arrive`, `Airport transfer`, `Hotel check-in`, `Evening at leisure`],
           },
           {
-            title: `Day 2 Breakfast → Old Tbilisi → Narikala Fortress → Mother of Georgia → Bridge of Peace → Rike Park → Sulphur Baths area`,
-            activities: [`Daily breakfast at the hotel.`],
+            title: `Day 2`,
+            activities: [`Breakfast`, `Old Tbilisi`, `Narikala Fortress`, `Mother of Georgia`, `Bridge of Peace`, `Rike Park`, `Sulphur Baths area`],
           },
           {
-            title: `Day 3 Breakfast → Zhinvali Reservoir → Ananuri Fortress → Gudauri → Friendship Monument → Kazbegi → Hotel check-in`,
-            activities: [`Airport arrival & departure transfers.`],
+            title: `Day 3`,
+            activities: [`Breakfast`, `Zhinvali Reservoir`, `Ananuri Fortress`, `Gudauri`, `Friendship Monument`, `Kazbegi`, `Hotel check-in`],
           },
           {
-            title: `Day 4 Breakfast → Gergeti Trinity Church → Scenic mountain drive → Return to Tbilisi → Evening at leisure`,
-            activities: [`Private vehicle for sightseeing and intercity transfers.`],
+            title: `Day 4`,
+            activities: [`Breakfast`, `Gergeti Trinity Church`, `Scenic mountain drive`, `Return to Tbilisi`, `Evening at leisure`],
           },
           {
-            title: `Day 5 Breakfast → Mtskheta → Jvari Monastery → Svetitskhoveli Cathedral → Tbilisi city/shopping → Evening at leisure`,
-            activities: [`Tbilisi city sightseeing.`],
+            title: `Day 5`,
+            activities: [`Breakfast`, `Mtskheta`, `Jvari Monastery`, `Svetitskhoveli Cathedral`, `Tbilisi city/shopping`, `Evening at leisure`],
           },
           {
-            title: `Day 6 Breakfast → Check-out → Free time depending on flight → Airport transfer → Departure`,
-            activities: [`Full-day Kazbegi & Gudauri excursion.`, `Gergeti Trinity Church visit.`, `Mtskheta & Jvari Monastery sightseeing.`, `Ananuri Fortress & Zhinvali Reservoir visit.`, `English-speaking driver/guide.`, `Entrance fees as per itinerary.`, `All applicable local taxes and service charges.`, `24/7 local assistance during the tour.`],
+            title: `Day 6`,
+            activities: [`Breakfast`, `Check-out`, `Free time depending on flight`, `Airport transfer`, `Departure`],
           },
         ],
       },
@@ -2349,35 +1778,50 @@ export const siteConfig = {
         id: 'georgia-2',
         title: `GEORGIA 6N7D`,
         duration: ``,
-        inclusions: [],
+        inclusions: [
+          `6 nights accommodation in 4★ hotels on twin sharing basis.`,
+          `Daily breakfast at the hotel.`,
+          `Airport arrival and departure transfers.`,
+          `Private vehicle for all sightseeing and intercity transfers.`,
+          `Tbilisi City Tour including Old Tbilisi, Narikala Fortress, Bridge of Peace & Rike Park.`,
+          `Kazbegi & Gudauri excursion including Zhinvali Reservoir, Ananuri Fortress & Friendship Monument.`,
+          `Gergeti Trinity Church visit.`,
+          `Kakheti day trip including Sighnaghi & Bodbe Monastery.`,
+          `Winery visit and wine tasting in Kakheti.`,
+          `Mtskheta excursion including Jvari Monastery & Svetitskhoveli Cathedral.`,
+          `English-speaking driver/guide.`,
+          `Entrance fees as per itinerary.`,
+          `Applicable taxes and service charges.`,
+          `24/7 local assistance.`,
+        ],
         days: [
           {
-            title: `Day 1 Arrive in Tbilisi → Airport transfer → Hotel check-in → Evening at leisure`,
-            activities: [`6 nights accommodation in 4★ hotels on twin sharing basis.`],
+            title: `Day 1`,
+            activities: [`Arrive in Tbilisi`, `Airport transfer`, `Hotel check-in`, `Evening at leisure`],
           },
           {
-            title: `Day 2 Breakfast → Old Tbilisi → Narikala Fortress → Mother of Georgia → Sulphur Baths area → Bridge of Peace → Rike Park`,
-            activities: [`Daily breakfast at the hotel.`],
+            title: `Day 2`,
+            activities: [`Breakfast`, `Old Tbilisi`, `Narikala Fortress`, `Mother of Georgia`, `Sulphur Baths area`, `Bridge of Peace`, `Rike Park`],
           },
           {
-            title: `Day 3 Breakfast → Drive along Georgian Military Highway → Zhinvali Reservoir → Ananuri Fortress → Gudauri → Friendship Monument → Arrive Kazbegi → Overnight`,
-            activities: [`Airport arrival and departure transfers.`],
+            title: `Day 3`,
+            activities: [`Breakfast`, `Drive along Georgian Military Highway`, `Zhinvali Reservoir`, `Ananuri Fortress`, `Gudauri`, `Friendship Monument`, `Arrive Kazbegi`, `Overnight`],
           },
           {
-            title: `Day 4 Breakfast → Visit Gergeti Trinity Church → Mountain views → Return to Tbilisi → Evening at leisure`,
-            activities: [`Private vehicle for all sightseeing and intercity transfers.`],
+            title: `Day 4`,
+            activities: [`Breakfast`, `Visit Gergeti Trinity Church`, `Mountain views`, `Return to Tbilisi`, `Evening at leisure`],
           },
           {
-            title: `Day 5 Breakfast → Day trip to Kakheti wine region → Sighnaghi → Bodbe Monastery → Local winery visit/tasting → Return to Tbilisi`,
-            activities: [`Tbilisi City Tour including Old Tbilisi, Narikala Fortress, Bridge of Peace & Rike Park.`],
+            title: `Day 5`,
+            activities: [`Breakfast`, `Day trip to Kakheti wine region`, `Sighnaghi`, `Bodbe Monastery`, `Local winery visit/tasting`, `Return to Tbilisi`],
           },
           {
-            title: `Day 6 Breakfast → Mtskheta → Jvari Monastery → Svetitskhoveli Cathedral → Return to Tbilisi → Shopping/free time → Farewell dinner`,
-            activities: [`Kazbegi & Gudauri excursion including Zhinvali Reservoir, Ananuri Fortress & Friendship Monument.`],
+            title: `Day 6`,
+            activities: [`Breakfast`, `Mtskheta`, `Jvari Monastery`, `Svetitskhoveli Cathedral`, `Return to Tbilisi`, `Shopping/free time`, `Farewell dinner`],
           },
           {
-            title: `Day 7 Breakfast → Check-out → Airport transfer → Departure`,
-            activities: [`Gergeti Trinity Church visit.`, `Kakheti day trip including Sighnaghi & Bodbe Monastery.`, `Winery visit and wine tasting in Kakheti.`, `Mtskheta excursion including Jvari Monastery & Svetitskhoveli Cathedral.`, `English-speaking driver/guide.`, `Entrance fees as per itinerary.`, `Applicable taxes and service charges.`, `24/7 local assistance.`],
+            title: `Day 7`,
+            activities: [`Breakfast`, `Check-out`, `Airport transfer`, `Departure`],
           },
         ],
       },
@@ -2387,59 +1831,49 @@ export const siteConfig = {
         id: 'vietnam-1',
         title: `Vietnam 6n/7d`,
         duration: ``,
-        inclusions: [],
+        inclusions: [
+          `06 Nights Accommodation in hostel`,
+          `A total of 7 meals included Breakfast from Day 2 to Day 7 and Lunch on Day 2.`,
+          `Half-day Hanoi City tour`,
+          `Halong Bay day tour with onboard Cruise Lunch and Kayaking`,
+          `Full Day Bana - Hill Tour with Cable Car and tickets to Golden Bridge, French Village, Fantasy Park (with rides)`,
+          `Hoi An Ancient Town Tour`,
+          `Basket Boat Ride in Coconut Forest and Lantern boat ride on Hoai River`,
+          `Cu Chi Tunnels Tour`,
+          `Domestic Flights – ( Hanoi to Danang to Saigon)`,
+          `All entrance fees and sightseeing as mentioned in the program`,
+          `Transportation by vehicle with A/C as per program`,
+          `Local English-speaking guides in Vietnam`,
+          `Bottles of mineral water on tour day`,
+        ],
         days: [
           {
-            title: `Day1 Hanoi Arrival and Half-day Tour`,
-            activities: [`Inclusions`],
-          },
-          {
-            title: `Day 2`,
-            activities: [`06 Nights Accommodation in hostel`],
-          },
-          {
-            title: `Excursions to the Halong Bay Cruise. Lunch on Cruise.`,
-            activities: [`A total of 7 meals included Breakfast from Day 2 to Day 7 and Lunch on Day 2.`, `Half-day Hanoi City tour`],
-          },
-          {
-            title: `Day 3`,
+            title: `Day 1 – Hanoi Arrival and Half-day Tour`,
             activities: [],
           },
           {
-            title: `Transfer from Hanoi to Da Nang. Day at Leisure.`,
-            activities: [`Halong Bay day tour with onboard Cruise Lunch and Kayaking`, `Full Day Bana - Hill Tour with Cable Car and tickets to Golden Bridge, French Village, Fantasy Park (with rides)`],
-          },
-          {
-            title: `Day 4`,
+            title: `Day 2 – Excursions to the Halong Bay Cruise. Lunch on Cruise.`,
             activities: [],
           },
           {
-            title: `Full Day Trip to Marble Mountain, Hoi An Ancient Town and Lantern on Boat Tour.`,
-            activities: [`Hoi An Ancient Town Tour`],
-          },
-          {
-            title: `Day 5`,
-            activities: [`Basket Boat Ride in Coconut Forest and Lantern boat ride on Hoai River`],
-          },
-          {
-            title: `Ba Na Hills Day Trip - Golden Bridge, Fantasy Park & French Village`,
-            activities: [`Cu Chi Tunnels Tour`],
-          },
-          {
-            title: `Day 6`,
+            title: `Day 3 – Transfer from Hanoi to Da Nang. Day at Leisure.`,
             activities: [],
           },
           {
-            title: `Da Nang to Saigon. Spend the day at Leisure.`,
-            activities: [`Domestic Flights – ( Hanoi to Danang to Saigon)`],
+            title: `Day 4 – Full Day Trip to Marble Mountain, Hoi An Ancient Town and Lantern on Boat Tour.`,
+            activities: [],
           },
           {
-            title: `Day 7`,
-            activities: [`All entrance fees and sightseeing as mentioned in the program`],
+            title: `Day 5 – Ba Na Hills Day Trip - Golden Bridge, Fantasy Park & French Village`,
+            activities: [],
           },
           {
-            title: `Visit Cu Chi Tunnels | Depart with a lot of happy memories.`,
-            activities: [`Transportation by vehicle with A/C as per program`, `Local English-speaking guides in Vietnam`, `Bottles of mineral water on tour day`],
+            title: `Day 6 – Da Nang to Saigon. Spend the day at Leisure.`,
+            activities: [],
+          },
+          {
+            title: `Day 7 – Visit Cu Chi Tunnels | Depart with a lot of happy memories.`,
+            activities: [],
           },
         ],
       },
@@ -2447,70 +1881,59 @@ export const siteConfig = {
         id: 'vietnam-2',
         title: `Vietnam 7n/8d`,
         duration: ``,
-        inclusions: [],
+        inclusions: [
+          `7 Nights Accommodation based on double/twin sharing room as per the itinerary`,
+          `A total of 9 meals included Breakfast from Day 2 to Day 8 and Lunch on Day 2 & 4`,
+          `Muong Hoa Funicular (2 way) + buffet lunch`,
+          `Hanoi to Sapa & Sapa to Hanoi VIA Sleeper or Limo Bus`,
+          `Sun World Fansipan Legend With Cable car ticket`,
+          `Glass Bridge Ticket`,
+          `Cat Cat Village Tour`,
+          `Half-day Hanoi City tour`,
+          `Halong Bay day tour with Sunset party and Kayaking`,
+          `Marble Mountains Tour`,
+          `Coconut Village Tour with Basket Boat ride`,
+          `Hoi An Ancient Town Tour`,
+          `Lantern boat ride on Hoai River`,
+          `Full Day Bana Hill Tour with Cable Car and tickets to Golden Bridge, French Village, Fantasy Park (with rides)`,
+          `Domestic Flights - ( Hanoi to Da Nang)`,
+          `Sightseeing as mentioned in the program`,
+          `Transportation by vehicle with A/C as per the program`,
+          `Local English-speaking guides in Vietnam`,
+          `Bottles of mineral water on the tour day`,
+          `Fixed Airport Pick-up & Drop-off`,
+        ],
         days: [
           {
-            title: `Day 1`,
-            activities: [`7 Nights Accommodation based on double/twin sharing room as per the itinerary`],
-          },
-          {
-            title: `Arrival In Hanoi & Transfer To Sapa | Evening At Leisure`,
-            activities: [`A total of 9 meals included Breakfast from Day 2 to Day 8 and Lunch on Day 2 & 4`, `Muong Hoa Funicular (2 way) + buffet lunch`],
-          },
-          {
-            title: `Day 2`,
-            activities: [`Hanoi to Sapa & Sapa to Hanoi VIA Sleeper or Limo Bus`],
-          },
-          {
-            title: `Sapa Sightseeing Tour | Fansipan Peak, Muong Hoa Funicular, Glass Bridge & Cat Cat Village`,
-            activities: [`Sun World Fansipan Legend With Cable car ticket`, `Glass Bridge Ticket`],
-          },
-          {
-            title: `Day 3`,
-            activities: [`Cat Cat Village Tour`],
-          },
-          {
-            title: `Sapa To Hanoi | Hanoi Half-Day City Tour`,
-            activities: [`Half-day Hanoi City tour`, `Halong Bay day tour with Sunset party and Kayaking`],
-          },
-          {
-            title: `Day 4`,
-            activities: [`Marble Mountains Tour`],
-          },
-          {
-            title: `Ha Long Bay | Luxury Day Cruise, Kayaking & Buffet Lunch`,
-            activities: [`Coconut Village Tour with Basket Boat ride`, `Hoi An Ancient Town Tour`],
-          },
-          {
-            title: `Day 5`,
-            activities: [`Lantern boat ride on Hoai River`],
-          },
-          {
-            title: `Hanoi To Da Nang | Evening At Leisure`,
-            activities: [`Full Day Bana Hill Tour with Cable Car and tickets to Golden Bridge, French Village, Fantasy Park (with rides)`, `Domestic Flights - ( Hanoi to Da Nang)`],
-          },
-          {
-            title: `Day 6`,
-            activities: [`Sightseeing as mentioned in the program`],
-          },
-          {
-            title: `Da Nang | Marble Mountain, Coconut Forest, Hoi An Ancient Town & Lantern Boat Ride`,
-            activities: [`Transportation by vehicle with A/C as per the program`, `Local English-speaking guides in Vietnam`],
-          },
-          {
-            title: `Day 7`,
-            activities: [`Bottles of mineral water on the tour day`],
-          },
-          {
-            title: `Ba Na Hills Day Trip | Cable Car, Golden Bridge, Fantasy Park & French Village`,
-            activities: [`Fixed Airport Pick-up & Drop-off`],
-          },
-          {
-            title: `Day 8`,
+            title: `Day 1 – Arrival In Hanoi & Transfer To Sapa | Evening At Leisure`,
             activities: [],
           },
           {
-            title: `Departure | Take back a lot of happy memories`,
+            title: `Day 2 – Sapa Sightseeing Tour | Fansipan Peak, Muong Hoa Funicular, Glass Bridge & Cat Cat Village`,
+            activities: [],
+          },
+          {
+            title: `Day 3 – Sapa To Hanoi | Hanoi Half-Day City Tour`,
+            activities: [],
+          },
+          {
+            title: `Day 4 – Ha Long Bay | Luxury Day Cruise, Kayaking & Buffet Lunch`,
+            activities: [],
+          },
+          {
+            title: `Day 5 – Hanoi To Da Nang | Evening At Leisure`,
+            activities: [],
+          },
+          {
+            title: `Day 6 – Da Nang | Marble Mountain, Coconut Forest, Hoi An Ancient Town & Lantern Boat Ride`,
+            activities: [],
+          },
+          {
+            title: `Day 7 – Ba Na Hills Day Trip | Cable Car, Golden Bridge, Fantasy Park & French Village`,
+            activities: [],
+          },
+          {
+            title: `Day 8 – Departure | Take back a lot of happy memories`,
             activities: [],
           },
         ],
@@ -2792,48 +2215,6 @@ export const siteConfig = {
           {
             title: `Day 5 – Ayodhya Sightseeing and Departure`,
             activities: [`Early morning, proceed for darshan at Shri Ram Janmabhoomi Temple, subject to darshan timings.`, `Return to the hotel for breakfast.`, `Check out from the hotel.`, `Visit Nageshwarnath Temple.`, `Visit Treta Ke Thakur.`, `Visit Guptar Ghat.`, `Visit Mani Parvat, subject to time availability.`, `Transfer to Ayodhya Airport/Railway Station for onward journey.`],
-          },
-        ],
-      },
-    ],
-    madhyapradesh: [
-      {
-        id: 'madhyapradesh-1',
-        title: `Bhasma Aarti Special`,
-        duration: `2N/3D`,
-        inclusions: [],
-        days: [
-          {
-            title: `Day 1 – Arrival in Ujjain | Local Temple Sightseeing`,
-            activities: [`Arrival in Ujjain and transfer to the hotel`, `Check-in at the hotel near Mahakaleshwar Temple`, `Freshen up and relax for some time`, `Visit Kaal Bhairav Temple for darshan`, `Visit Gadkalika Mata Temple`, `Visit Mangal Nath Temple, believed to be the birthplace of Mars`, `Proceed to Ram Ghat in the evening to witness the beautiful Shipra Aarti`, `Visit Harsiddhi Mata Temple for darshan`, `Visit Rinmukteshwar Temple`, `Return to the hotel and relax`],
-          },
-          {
-            title: `Day 2 – Mahakal Bhasma Aarti | Ujjain to Omkareshwar`,
-            activities: [`Around 12:30 AM, depart from the hotel for Mahakaleshwar Temple`, `Attend the sacred Bhasma Aarti with VIP pass`, `Seek blessings at Mahakaleshwar Jyotirlinga`, `Return to the hotel by around 6:00 AM`, `Breakfast at the hotel and rest for some time`, `Check out from the hotel`, `Drive towards Omkareshwar (approximately 2.5–3 hours)`, `Arrival in Omkareshwar and visit Omkareshwar Jyotirlinga for VIP darshan`, `Visit Mamleshwar Jyotirlinga for darshan`, `Enjoy a peaceful boat ride on the holy Narmada River`, `Check-in at the hotel and relax`],
-          },
-          {
-            title: `Day 3 – Omkareshwar | Ujjain / Indore Drop`,
-            activities: [`Early morning breakfast at the hotel`, `Check out from the hotel`, `Depending on your departure plan, proceed towards Ujjain or Indore`, `Drop at your preferred location / railway station / airport`, `Depart with divine blessings and beautiful memories of the spiritual journey`],
-          },
-        ],
-      },
-      {
-        id: 'madhyapradesh-2',
-        title: `VIP Passes`,
-        duration: `2N/3D`,
-        inclusions: [],
-        days: [
-          {
-            title: `Day 1 – Arrival in Ujjain | Temple Darshan & Local Exploration`,
-            activities: [`Arrive in Ujjain and transfer to the hotel`, `Check-in at the hotel near Mahakaleshwar Temple`, `Freshen up and relax`, `Visit Kaal Bhairav Temple for darshan`, `Visit Gadkalika Mata Temple`, `Visit Mangal Nath Temple, believed to be associated with the origin of Mars`, `Proceed to Ram Ghat for the evening Shipra Aarti`, `Visit Mahakaleshwar Temple for darshan through VIP Pass`, `Visit Harsiddhi Mata Temple`, `Return to the hotel and rest`],
-          },
-          {
-            title: `Day 1 – Arrival in Ujjain | Temple Darshan & Local Exploration`,
-            activities: [`Early morning breakfast at the hotel`, `Check out from the hotel`, `Drive towards Omkareshwar (Approx. 2.5–3 hours)`, `Arrive in Omkareshwar and proceed for Omkareshwar Jyotirlinga darshan`, `VIP Darshan at Omkareshwar Temple`, `Visit Mamleshwar Temple for darshan`, `Enjoy a peaceful boat ride on the Narmada River`, `Explore the spiritual surroundings of Omkareshwar`, `Check-in at the hotel and relax`],
-          },
-          {
-            title: `Day 3 – Omkareshwar to Ujjain / Indore | Departure`,
-            activities: [`Early morning breakfast at the hotel`, `Check out from the hotel`, `Optional morning darshan at Omkareshwar Temple, depending on departure time`, `Begin your journey towards Ujjain or Indore`, `Drop at your preferred location, railway station, or airport`],
           },
         ],
       },

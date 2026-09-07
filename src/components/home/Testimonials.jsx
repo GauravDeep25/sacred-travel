@@ -17,7 +17,8 @@ export default function Testimonials() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
+        {/* Adjusted gap slightly so the boxes sit well next to each other */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {reviews.map((item, i) => (
             <motion.div
               key={i}
@@ -25,14 +26,16 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.2, duration: 0.8 }}
               viewport={{ once: true }}
-              className="flex flex-col items-center text-center"
+              // Added background, border, and padding here to render the box
+              className="flex flex-col items-center text-center bg-white border border-[#E5E3DB] p-8 md:p-10 rounded-sm h-full"
             >
               {/* Big quote mark */}
               <div className="text-accent/50 text-6xl font-serif leading-none mb-4 select-none">
                 "
               </div>
 
-              <p className="text-charcoal/80 italic leading-relaxed mb-8 font-serif text-lg md:text-xl">
+              {/* Added flex-grow so the dividing line and names align at the bottom */}
+              <p className="flex-grow text-charcoal/80 italic leading-relaxed mb-8 font-serif text-lg md:text-xl">
                 {item.quote}
               </p>
 
