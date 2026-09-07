@@ -32,7 +32,7 @@ export default function CardsGrid({ cards }) {
               <hr className="border-gray-200 mb-4" />
               <div className="flex justify-between items-center text-[10px] tracking-widest font-semibold uppercase mb-5">
                 <span className="text-gray-500">{card.duration}</span>
-                <span className="text-emerald-700">{card.price}</span>
+                <span className="text-emerald-700">{card.price || card.season}</span>
               </div>
               {card.itineraryId ? (
                 <Link

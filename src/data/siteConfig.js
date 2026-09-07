@@ -396,7 +396,7 @@ export const siteConfig = {
             itineraryId: 'uttarakhand',
             duration: "14–16 days",
             season: "May–June, September–October",
-            img: "/assets/spiritual-north-NuyL8ZKr.jpg"
+            img: "/assets/hero-himalaya-Ben1uNJZ.jpg"
           },
           {
             cardTitle: "Kashi · Prayagraj · Ayodhya",
@@ -405,7 +405,7 @@ export const siteConfig = {
             itineraryId: 'uttarpradesh',
             duration: "6–7 days",
             season: "October–March",
-            img: "/assets/spiritual-north-NuyL8ZKr.jpg"
+            img: "/assets/hero-aarti.jpg"
           }
         ]
       },
@@ -430,7 +430,7 @@ export const siteConfig = {
             itineraryId: 'tamilnadu',
             duration: "6 days",
             season: "November–February",
-            img: "/assets/temple-south-CC6aHc0Q.jpg"
+            img: "/assets/hero-temple-south.jpg"
           },
           {
             cardTitle: "Tirupati & Rameswaram",
@@ -439,7 +439,7 @@ export const siteConfig = {
             itineraryId: 'andhrapradesh',
             duration: "5–6 days",
             season: "October–March",
-            img: "/assets/temple-south-CC6aHc0Q.jpg"
+            img: "/assets/kerala-JKm5YrGV.jpg"
           }
         ] 
       },
@@ -463,7 +463,7 @@ export const siteConfig = {
             itineraryId: 'odisha',
             duration: "5–6 days",
             season: "November–February",
-            img: "/assets/aarti-Cr2kuE6b.jpg"
+            img: "/assets/northeast-D8OXmwI_.jpg"
           },
           {
             cardTitle: "Gaya & Bodh Gaya",
@@ -471,7 +471,7 @@ export const siteConfig = {
             includes: "Ritual coordination for ancestral rites, monastery visits, quiet meditation time.",
             duration: "4 days",
             season: "November–February",
-            img: "/assets/aarti-Cr2kuE6b.jpg"
+            img: "/assets/hero-aarti.jpg"
           }
         ] 
       },
@@ -496,7 +496,7 @@ export const siteConfig = {
             itineraryId: 'gujarat',
             duration: "6 days",
             season: "November–February",
-            img: "/assets/rajasthan-Dznk4KEj.jpg"
+            img: "/assets/hero-spiti.jpg"
           },
           {
             cardTitle: "Ashtavinayak Yatra",
@@ -505,7 +505,7 @@ export const siteConfig = {
             itineraryId: 'maharashtra',
             duration: "3–4 days",
             season: "Year-round, best August–February",
-            img: "/assets/rajasthan-Dznk4KEj.jpg"
+            img: "/assets/temple-south-CC6aHc0Q.jpg"
           }
         ] 
       }
