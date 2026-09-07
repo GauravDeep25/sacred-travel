@@ -132,7 +132,7 @@ export const siteConfig = {
             cardDesc: "Shimla, Manali, Dharamshala, Dalhousie and the apple orchards of the lower Himalaya at an unhurried pace.",
             label: "Himachal",
             itineraryId: 'himachal',
-            img: "/assets/hero-himalaya-Ben1uNJZ.jpg",
+            img: "/assets/himachal.png",
             duration: "4 nights / 5 days",
             price: "From ₹35,000"
           },
@@ -168,7 +168,7 @@ export const siteConfig = {
             cardDesc: "Gangtok, Rumtek, Tawang and the eastern Himalaya's great Buddhist seats, with monastery morning prayers.",
             label: "Sikkim",
             itineraryId: 'sikkim',
-            img: "/assets/hero-himalaya-Ben1uNJZ.jpg",
+            img: "/assets/sikkim.png",
             duration: "8 nights / 9 days",
             price: "From ₹59,000"
           },
@@ -177,7 +177,7 @@ export const siteConfig = {
             cardDesc: "Tawang Monastery, Sela Pass, Dirang valleys and the ancient Monpa culture of the high eastern frontier.",
             label: "Arunachal",
             itineraryId: 'arunachal',
-            img: "/assets/northeast-D8OXmwI_.jpg",
+            img: "/assets/Arunachal.png",
             duration: "4 nights / 5 days",
             price: "From ₹48,000"
           }
@@ -204,7 +204,7 @@ export const siteConfig = {
             cardDesc: "Rock-cut caves, the Kailasa temple at Ellora, and the quiet Konkan coastline below the ghats.",
             label: "Maharashtra",
             itineraryId: 'maharashtra',
-            img: "/assets/temple-south-CC6aHc0Q.jpg",
+            img: "/assets/Maharashtra.png",
             duration: "6 nights / 7 days",
             price: "From ₹38,000"
           },
@@ -213,7 +213,7 @@ export const siteConfig = {
             cardDesc: "The white Rann, Modhera sun temple, Somnath and the craft villages of Kutch.",
             label: "Gujarat",
             itineraryId: 'gujarat',
-            img: "/assets/rajasthan-Dznk4KEj.jpg",
+            img: "/assets/Gujrat.png",
             duration: "7 nights / 8 days",
             price: "From ₹49,000"
           }
@@ -227,15 +227,6 @@ export const siteConfig = {
 
         cards: [
           {
-            cardTitle: "Kerala Backwaters & Hills",
-            cardDesc: "Alleppey houseboats, Munnar tea slopes, Kochi's old quarters and ayurveda days.",
-            label: "Kerala",
-            itineraryId: 'kerala',
-            img: "/assets/kerala-JKm5YrGV.jpg",
-            duration: "7 nights / 8 days",
-            price: "From ₹44,000"
-          },
-          {
             cardTitle: "Tamil Nadu Temple Trail",
             cardDesc: "Madurai, Thanjavur, Chidambaram and Rameswaram — the Chola and Pandya heartland, temple by temple.",
             label: "Tamil Nadu",
@@ -245,19 +236,11 @@ export const siteConfig = {
             price: "From ₹47,000"
           },
           {
-            cardTitle: "Karnataka: Hampi & Coast",
-            cardDesc: "Hampi's ruined city, Badami caves, Gokarna's shore temples and the Malnad ghats.",
-            label: "Karnataka",
-            img: "/assets/rajasthan-Dznk4KEj.jpg",
-            duration: "6 nights / 7 days",
-            price: "From ₹39,000"
-          },
-          {
             cardTitle: "Andhra: Tirupati & Coastal Shrines",
             cardDesc: "Tirumala darshan with assisted access, Srisailam, Lepakshi and the Krishna delta towns.",
             label: "Andhra Pradesh",
             itineraryId: 'andhrapradesh',
-            img: "/assets/temple-south-CC6aHc0Q.jpg",
+            img: "/assets/Andhra.png",
             duration: "5 nights / 6 days",
             price: "From ₹34,000"
           }
@@ -265,9 +248,7 @@ export const siteConfig = {
       }
     ],
     items: [
-      { id: 'varanasi', title: "Eternal Kashi", location: "Uttar Pradesh", img: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹45,000" },
-      { id: 'ladakh', title: "The High Passes", location: "Ladakh", img: "https://images.unsplash.com/photo-1581793745862-99fde7f73623?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹85,000" },
-      { id: 'rishikesh', title: "Yoga of the Ganges", location: "Uttarakhand", img: "https://images.unsplash.com/photo-1598977123418-454555150162?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹35,000" }
+      { id: 'ladakh', title: "The High Passes", location: "Ladakh", img: "https://images.unsplash.com/photo-1581793745862-99fde7f73623?auto=format&fit=crop&q=80&w=800", price: "Starts at ₹85,000" }
     ]
   },
 
@@ -289,14 +270,6 @@ export const siteConfig = {
         img: "/assets/intl-angkor-Xa0-qQac.jpg",
 
         cards: [
-          {
-            cardTitle: "Cambodia: Angkor Temple Trail",
-            cardDesc: "Sunrise at Angkor Wat, Bayon, Ta Prohm and Banteay Srei with a scholar-guide on Hindu-Buddhist iconography.",
-            label: "Cambodia",
-            img: "/assets/intl-angkor-Xa0-qQac.jpg",
-            duration: "5 nights / 6 days",
-            price: "From ₹78,000"
-          },
           {
             cardTitle: "Bali: Island of Water Temples",
             cardDesc: "Besakih, Tirta Empul purification, Ubud's rice terraces and the cliff shrine at Uluwatu.",
@@ -347,7 +320,7 @@ export const siteConfig = {
             cardDesc: "Sigiriya rock fortress, Kandy Temple of the Tooth, Ella tea hills, Ravana falls and coastal Trincomalee.",
             label: "Sri Lanka",
             itineraryId: 'srilanka',
-            img: "/assets/temple-south-CC6aHc0Q.jpg",
+            img: "/assets/Srilanka.png",
             duration: "5 nights / 6 days",
             price: "From ₹62,000"
           }
@@ -361,14 +334,6 @@ export const siteConfig = {
 
         cards: [
           {
-            cardTitle: "Uzbekistan Silk Road",
-            cardDesc: "Samarkand, Bukhara and Khiva — madrasas, caravanserais and Timurid blue domes.",
-            label: "Uzbekistan",
-            img: "/assets/intl-uzbek-DVSVjwrq.jpg",
-            duration: "7 nights / 8 days",
-            price: "From ₹1,15,000"
-          },
-          {
             cardTitle: "Georgia & Armenia Caucasus",
             cardDesc: "Tbilisi, Kazbegi, Yerevan and cliff monasteries above the Debed gorge.",
             label: "Georgia & Armenia",
@@ -376,53 +341,11 @@ export const siteConfig = {
             img: "/assets/intl-caucasus-DAV0UB-k.jpg",
             duration: "8 nights / 9 days",
             price: "From ₹1,32,000"
-          },
-          {
-            cardTitle: "Kazakhstan: Steppe & Almaty",
-            cardDesc: "Almaty, Charyn canyon and the Kolsai lakes under the Tian Shan.",
-            label: "Kazakhstan",
-            img: "/assets/intl-kazakh-CgLEidld.jpg",
-            duration: "6 nights / 7 days",
-            price: "From ₹1,05,000"
-          }
-        ]
-      },
-      {
-        bannerTitle: "Middle East",
-        bannerDesc: "Desert light and old trade cities — the Gulf's modern skylines set against dunes, souks and Nabataean stone.",
-        label: "Middle East",
-        img: "/assets/intl-dubai-BwHI-8lI.jpg",
-
-        cards: [
-          {
-            cardTitle: "Dubai & Abu Dhabi",
-            cardDesc: "Skyline days, desert nights, the Grand Mosque and old Dubai's creek quarters.",
-            label: "Dubai",
-            img: "/assets/intl-dubai-BwHI-8lI.jpg",
-            duration: "5 nights / 6 days",
-            price: "From ₹68,000"
-          },
-          {
-            cardTitle: "Jordan: Petra & Wadi Rum",
-            cardDesc: "Petra by day and candlelight, Wadi Rum camps and the Dead Sea shoreline.",
-            label: "Jordan",
-            img: "/assets/intl-petra-CNbqPeH5.jpg",
-            duration: "6 nights / 7 days",
-            price: "From ₹1,18,000"
-          },
-          {
-            cardTitle: "Oman: Mountains & Coast",
-            cardDesc: "Muscat, Jebel Shams, wadi swims and the empty dunes of Wahiba Sands.",
-            label: "Oman",
-            img: "/assets/intl-oman-LhBYLJPZ.jpg",
-            duration: "6 nights / 7 days",
-            price: "From ₹98,000"
           }
         ]
       }
     ],
     items: [
-      { id: 'bhutan', title: "Kingdom of Cloud", location: "Bhutan", img: "https://images.unsplash.com/photo-1578516123433-39dfbe6e0781?auto=format&fit=crop&q=80&w=800", price: "Starts at $1,200" },
       { id: 'bali', title: "Island of Gods", location: "Indonesia", img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=800", price: "Starts at $950" }
     ]
   },
@@ -459,7 +382,7 @@ export const siteConfig = {
             itineraryId: 'uttarakhand',
             duration: "2 nights / 3 days",
             season: "Year-round, best March–November",
-            img: "/assets/hero-himalaya-Ben1uNJZ.jpg"
+            img: "/assets/Kainchi-Dham.png"
           },
           {
             cardTitle: "Kashi · Prayagraj · Ayodhya",
@@ -502,7 +425,7 @@ export const siteConfig = {
             itineraryId: 'andhrapradesh',
             duration: "2 to 4 days",
             season: "Year-round, best October–March",
-            img: "/assets/kerala-JKm5YrGV.jpg"
+            img: "/assets/Andhra.png"
           }
         ]
       },
@@ -518,24 +441,9 @@ export const siteConfig = {
             itineraryId: 'odisha',
             duration: "3 to 5 days",
             season: "October–March",
-            img: "/assets/northeast-D8OXmwI_.jpg"
+            img: "/assets/konark.png"
           },
-          {
-            cardTitle: "Shakti Peeth Pilgrimage (East)",
-            cardDesc: "Kamakhya, Kalighat, Tarapith and Jwalamukhi — the places where Sati's body is said to have fallen, each a distinct face of the goddess.",
-            includes: "Morning puja participation, local priest introductions, respectful briefing on tantric traditions.",
-            duration: "9–10 days",
-            season: "October–March",
-            img: "/assets/aarti-Cr2kuE6b.jpg"
-          },
-          {
-            cardTitle: "Gaya & Bodh Gaya",
-            cardDesc: "Pind daan at the Vishnupad temple and the Bodhi tree where the Buddha's awakening is remembered — two traditions, one riverbank.",
-            includes: "Ritual coordination for ancestral rites, monastery visits, quiet meditation time.",
-            duration: "4 days",
-            season: "November–February",
-            img: "/assets/hero-aarti.jpg"
-          }
+
         ]
       },
       west: {
@@ -550,7 +458,7 @@ export const siteConfig = {
             itineraryId: 'maharashtra',
             duration: "2 to 4 days",
             season: "Year-round, best August–March",
-            img: "/assets/rajasthan-Dznk4KEj.jpg"
+            img: "/assets/Maharashtra.png"
           },
           {
             cardTitle: "Somnath & Dwarka Holy Shrines",
@@ -559,7 +467,7 @@ export const siteConfig = {
             itineraryId: 'gujarat',
             duration: "3 nights / 4 days",
             season: "October–March",
-            img: "/assets/hero-spiti.jpg"
+            img: "/assets/Gujrat.png"
           },
           {
             cardTitle: "Ujjain Mahakaleshwar & Omkareshwar",
@@ -577,7 +485,7 @@ export const siteConfig = {
             itineraryId: 'maharashtra',
             duration: "3–4 days",
             season: "Year-round, best August–February",
-            img: "/assets/temple-south-CC6aHc0Q.jpg"
+            img: "/assets/Maharashtra.png"
           }
         ]
       }
@@ -658,37 +566,37 @@ export const siteConfig = {
   },
 
   about: {
-  hero: [
-    {
-      img: "/assets/hero-temple-south.jpg",
-      eyebrow: "Our · Story",
-      h1: "Who are we?",
-      h1Italic: "It began in the mountains",
-      sub: "Curating soulful journeys since 2010."
-    },
-    {
-      img: "/assets/hero-spiti.jpg",
-      eyebrow: "Our · Vision",
-      h1: "The",
-      h1Italic: "Philosophy.",
-      sub: "Guided by a deep respect for authentic exploration."
-    },
-    {
-      img: "/assets/hero-aarti.jpg",
-      eyebrow: "Our · People",
-      h1: "Meet The",
-      h1Italic: "Curators.",
-      sub: "Passionate travelers dedicated to crafting your perfect path."
-    }
-  ],
+    hero: [
+      {
+        img: "/assets/hero-temple-south.jpg",
+        eyebrow: "Our · Story",
+        h1: "Who are we?",
+        h1Italic: "It began in the mountains",
+        sub: "Curating soulful journeys since 2010."
+      },
+      {
+        img: "/assets/hero-spiti.jpg",
+        eyebrow: "Our · Vision",
+        h1: "The",
+        h1Italic: "Philosophy.",
+        sub: "Guided by a deep respect for authentic exploration."
+      },
+      {
+        img: "/assets/hero-aarti.jpg",
+        eyebrow: "Our · People",
+        h1: "Meet The",
+        h1Italic: "Curators.",
+        sub: "Passionate travelers dedicated to crafting your perfect path."
+      }
+    ],
     connect: [
       {
         h1: "OUR MISSION",
         quote: "To open India's sacred geography to travellers who want more than a sight — and to do it with the care the places themselves deserve."
       }
     ],
-      story: {
-    title: "The Story Behind Yugatirtha",
+    story: {
+      title: "The Story Behind Yugatirtha",
       paragraphs: [
         "Some journeys begin with a destination. Mine began with a question. As I travelled across India, I often found myself wondering how much of this country we truly know.",
         "We know the famous cities. We know the popular monuments. We know the destinations that appear on every travel itinerary. But beyond them, I began to discover another India.",
@@ -697,83 +605,83 @@ export const siteConfig = {
         "And somewhere along those journeys, a thought stayed with me: What if travel could help us remember? What if a journey could be more than checking destinations off a list? What if travelling through India could help us reconnect—with our history, our spirituality, our culture and perhaps even with ourselves?",
         "That thought eventually became Yugatirtha."
       ]
-  },
-  meaning: {
-    title: "The Meaning of the Journey",
+    },
+    meaning: {
+      title: "The Meaning of the Journey",
       paragraphs: [
         "The name itself carries the idea behind everything we want to build.",
         "Yuga represents an era—a journey through time. Tirtha represents a sacred crossing, a place where a journey becomes something deeper. Together, Yugatirtha represents a sacred journey across the ages.",
         "Because India is not just a country to travel through. It is a civilisation to experience.",
         "Every ancient temple, every forgotten monument, every sacred river and every old pilgrimage route carries a story from another time. Yet these stories are still alive. They are waiting to be discovered."
       ]
-  },
-  philosophy: {
-    title: "Why Yugatirtha Was Born",
+    },
+    philosophy: {
+      title: "Why Yugatirtha Was Born",
       paragraphs: [
         "Yugatirtha was born from the desire to travel differently. To slow down. To go beyond the obvious. To take the roads that are not always included in travel brochures.",
         "To sit quietly in an ancient temple instead of rushing to the next destination. To listen to the stories of local people. To understand why a particular place has remained sacred for hundreds or even thousands of years.",
         "And to remind ourselves that sometimes the most meaningful places are not the most famous ones.",
         "We want to explore the India that exists beyond mainstream tourism. The hidden shrines. The forgotten heritage. The ancient traditions. The sacred landscapes. The stories that deserve to be remembered."
       ]
-  },
-  ethos: {
-    title: "This Is More Than a Travel Company",
+    },
+    ethos: {
+      title: "This Is More Than a Travel Company",
       paragraphs: [
         "Yugatirtha is not just about taking people from one destination to another. It is about creating experiences that stay with you long after the journey ends.",
         "A journey where you don't just see a temple—but understand its story. Where you don't just visit a village—but experience its culture. Where you don't simply travel through a landscape—but understand why generations before you considered it sacred.",
         "For some, Yugatirtha may be a journey towards spirituality. For others, it may be a journey into history and heritage. For some, it may simply be an opportunity to experience a side of India they never knew existed.",
         "But for all of us, we hope it becomes a reminder. A reminder of where we come from. A reminder of the stories that shaped us. And a reminder that even in a rapidly changing world, some things are worth slowing down for."
       ]
-  },
-  future: {
-    title: "The Journey Continues",
+    },
+    future: {
+      title: "The Journey Continues",
       paragraphs: [
         "Yugatirtha began with a curiosity to explore India. But today, it carries a much bigger purpose.",
         "To rediscover what time has hidden. To bring forgotten stories back into the conversation. To create meaningful journeys for those searching for something beyond ordinary travel. And to help people see India not just as a destination, but as a living journey through time.",
         "Because perhaps the greatest journeys are not always about finding something new. Sometimes, they are about rediscovering something that was always there.",
         "That is the journey of Yugatirtha. JOURNEYS THROUGH TIME"
       ]
-  }
-},
-
-contact: {
-  hero: [
-    {
-      img: "/assets/hero-temple-south.jpg",
-      eyebrow: "Contact",
-      h1: "Let's plan your crossing",
-      alt: "Illuminated South Indian temple at dusk"
-    },
-    {
-      img: "/assets/hero-aarti.jpg",
-      eyebrow: "Reach Out",
-      h1: "Every journey begins with a conversation",
-      alt: "Ganga Aarti ceremony at dusk"
-    },
-    {
-      img: "/assets/hero-spiti.jpg",
-      eyebrow: "Advisory",
-      h1: "Curating your sacred passage",
-      alt: "High mountain landscape in the Himalayas"
     }
-  ],
-    enquiry: {
-    eyebrow: "Enquiry",
-      title: "Tell us about your journey",
-        buttonText: "Send Enquiry"
   },
-  sidebar: {
-    title: "Reach us directly",
-      note: "We reply to every enquiry within 24 hours, and we're happy to talk through a route before you commit to anything."
-  }
-},
 
-founder: {
-  name: "Yash",
+  contact: {
+    hero: [
+      {
+        img: "/assets/hero-temple-south.jpg",
+        eyebrow: "Contact",
+        h1: "Let's plan your crossing",
+        alt: "Illuminated South Indian temple at dusk"
+      },
+      {
+        img: "/assets/hero-aarti.jpg",
+        eyebrow: "Reach Out",
+        h1: "Every journey begins with a conversation",
+        alt: "Ganga Aarti ceremony at dusk"
+      },
+      {
+        img: "/assets/hero-spiti.jpg",
+        eyebrow: "Advisory",
+        h1: "Curating your sacred passage",
+        alt: "High mountain landscape in the Himalayas"
+      }
+    ],
+    enquiry: {
+      eyebrow: "Enquiry",
+      title: "Tell us about your journey",
+      buttonText: "Send Enquiry"
+    },
+    sidebar: {
+      title: "Reach us directly",
+      note: "We reply to every enquiry within 24 hours, and we're happy to talk through a route before you commit to anything."
+    }
+  },
+
+  founder: {
+    name: "Yash",
     photo: "/assets/founder.jpg",
-      bio: "Yash is a travel entrepreneur and expedition leader with hands-on experience guiding journeys across some of India's most breathtaking and remote landscapes, including Spiti Valley and Ladakh. What began as a passion for the mountains grew into a deeper calling — to help travellers discover the spiritual heart of India.",
-        quote: "Travel, at its best, is a pilgrimage — a crossing (tirtha) through time (yuga) that connects people not just to places, but to something older and deeper than themselves."
-},
+    bio: "Yash is a travel entrepreneur and expedition leader with hands-on experience guiding journeys across some of India's most breathtaking and remote landscapes, including Spiti Valley and Ladakh. What began as a passion for the mountains grew into a deeper calling — to help travellers discover the spiritual heart of India.",
+    quote: "Travel, at its best, is a pilgrimage — a crossing (tirtha) through time (yuga) that connects people not just to places, but to something older and deeper than themselves."
+  },
 
   itineraries: {
     ...domesticSiteConfig.itineraries,
