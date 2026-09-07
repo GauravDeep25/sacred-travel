@@ -10,8 +10,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
           <div className="flex flex-col gap-6">
             <div>
-              <div className="text-white text-3xl font-serif font-bold mb-1">
-                {siteConfig.company.name}
+              <div className="text-3xl font-serif font-bold mb-1">
+                <span className="text-white">Yuga</span><span className="text-primary">tirtha</span>
               </div>
               <div className="text-accent text-[10px] uppercase tracking-[0.4em]">
                 {siteConfig.company.tagline}

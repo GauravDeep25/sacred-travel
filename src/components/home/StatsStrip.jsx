@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import { useInView } from 'framer-motion';
 import { siteConfig } from '../../data/siteConfig';
 
-function AnimatedStat({ value, suffix, label, delay }) {
+function AnimatedStat({ value, suffix, label, delay, className = '' }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-50px' });
 
@@ -13,7 +13,7 @@ function AnimatedStat({ value, suffix, label, delay }) {
       initial={{ opacity: 0, y: 20 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ delay, duration: 0.8 }}
-      className="text-center"
+      className={`text-center ${className}`}
     >
       <div className="text-5xl md:text-6xl font-serif text-white mb-3 leading-none">
         {value}{suffix}
@@ -31,7 +31,7 @@ export default function StatsStrip() {
   return (
     <section className="bg-dark py-24 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 md:gap-8">
           {stats.map((s, i) => (
             <AnimatedStat
               key={i}
@@ -39,6 +39,7 @@ export default function StatsStrip() {
               suffix={s.suffix}
               label={s.label}
               delay={i * 0.15}
+              className={i === stats.length - 1 && stats.length % 2 !== 0 ? "col-span-2 md:col-span-1" : ""}
             />
           ))}
         </div>

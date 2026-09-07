@@ -34,8 +34,9 @@ export default function Navbar() {
     <nav className={`fixed w-full z-50 transition-all duration-500 ${isSolid ? 'bg-base/95 shadow-sm py-3' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex flex-col relative z-50">
-          <span className={`text-2xl font-serif font-bold transition-colors ${textColor}`}>
-            {siteConfig.company.name}
+          <span className="text-2xl font-serif font-bold transition-colors">
+            <span className={isSolid ? 'text-dark' : 'text-white'}>Yuga</span>
+            <span className="text-primary">tirtha</span>
           </span>
           <span className={`text-[9px] uppercase tracking-[0.3em] transition-colors ${isSolid ? 'text-primary' : 'text-accent'}`}>
             {siteConfig.company.tagline}

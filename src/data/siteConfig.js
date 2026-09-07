@@ -45,35 +45,40 @@ export const siteConfig = {
     ],
     categories: [
       { 
-        label: "North Sacred circuits", 
-        eyebrow: "The Heart", 
-        desc: "A journey through the ancient stone temples and living traditions of the upper plains.",
-        img: "/assets/spiritual-north.jpg" 
+        label: "Spiritual Journeys", 
+        eyebrow: "OUR HEART", 
+        desc: "Char Dham, Panch Kedar, the 12 Jyotirlingas, Panch Bhoota Stalam and Shakti Peeths — walked with reverence and real access.",
+        img: "/assets/spiritual-north.jpg",
+        path: "/spiritualjourney"
       },
       { 
-        label: "Himalayan Trails", 
-        eyebrow: "The Peaks", 
-        desc: "Finding silence and spiritual clarity amidst the highest peaks on earth.",
-        img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800" 
+        label: "Domestic Packages", 
+        eyebrow: "NORTH TO SOUTH", 
+        desc: "Kashmir, Ladakh, Himachal, the Northeast, Rajasthan, Gujarat, Karnataka, Kerala, Tamil Nadu and Andhra.",
+        img: "/assets/kashmir-C3GCvNNI.jpg",
+        path: "/domestic"
       },
       { 
-        label: "River Rituals", 
-        eyebrow: "The Flow", 
-        desc: "Tracing the life-giving waters where time dissolves into eternal ceremony.",
-        img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800" 
+        label: "International Packages", 
+        eyebrow: "BEYOND INDIA", 
+        desc: "Southeast Asia, the CIS countries and the Middle East — small-group and private departures built around living heritage.",
+        img: "/assets/intl-angkor-Xa0-qQac.jpg",
+        path: "/international"
       },
       { 
-        label: "Bespoke Paths", 
-        eyebrow: "Tailored", 
-        desc: "Private, high-touch expeditions crafted specifically for the discerning seeker.",
-        img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=800" 
+        label: "Experiences", 
+        eyebrow: "BEYOND SIGHTSEEING", 
+        desc: "Darshan access, sunrise rituals, storytelling walks through temple towns, private boat ceremonies and encounters with master craftsmen.",
+        img: "/assets/hero-aarti.jpg",
+        path: "/experiences"
       }
     ],
     stats: [
       { value: 2400, label: "Travellers guided", suffix: "+" },
       { value: 180, label: "Curated journeys", suffix: "+" },
       { value: 40, label: "Spiti & Ladakh expeditions", suffix: "+" },
-      { value: 12, label: "Jyotirlingas covered", suffix: "" }
+      { value: 12, label: "Jyotirlingas covered", suffix: "" },
+      { value: 4, label: "Dham Covered", suffix: "" }
     ],
     testimonials: [
       { quote: "A profound experience that went beyond simple sightseeing. It felt like coming home.", name: "Aria Sharma", city: "Mumbai" },
