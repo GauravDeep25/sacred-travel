@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 import Home from './pages/Home';
 import Domestic from './pages/Domestic';
@@ -11,9 +12,9 @@ import SpiritualJourney from './pages/SpiritualJourney';
 import Experiences from './pages/Experiences';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import ItineraryDetail from './pages/ItineraryDetail';
 
-function ScrollToTop() {
+// Renamed to prevent conflict with the imported ScrollToTop button component
+function ScrollRestoration() {
   const { pathname } = useLocation();
   useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
   return null;
@@ -22,7 +23,7 @@ function ScrollToTop() {
 export default function App() {
   return (
     <Router>
-      <ScrollToTop />
+      <ScrollRestoration />
       <Navbar />
       <main className="bg-base">
         <Routes>
@@ -33,9 +34,9 @@ export default function App() {
           <Route path="/experiences" element={<Experiences />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/itinerary/:destination" element={<ItineraryDetail />} />
         </Routes>
       </main>
+      <ScrollToTop /> {/* Render the floating UI button here */}
       <Footer />
     </Router>
   );
