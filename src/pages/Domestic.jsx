@@ -6,20 +6,30 @@ import DomesticGrid from '../components/domestic/DomesticGrid';
 export default function Domestic() {
   const [index, setIndex] = useState(0);
 
+  const slides = siteConfig.domestic.hero;
+
+  // Preload slides for instant transitions
+  useEffect(() => {
+    slides?.forEach((slide) => {
+      const img = new Image();
+      img.src = slide.img;
+    });
+  }, [slides]);
+
   useEffect(() => {
     const timer = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % siteConfig.domestic.hero.length);
+      setIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, 5000); 
     return () => clearInterval(timer);
-  }, []); 
+  }, [slides.length]); 
 
-  const staticContent = siteConfig.domestic.hero[0];
+  const staticContent = slides[0];
 
   return (
     <div className="bg-base min-h-screen">
       <section className="relative h-[65vh] w-full flex items-center justify-center overflow-hidden bg-white">
         <div className="absolute inset-0 z-0">
-          {siteConfig.domestic.hero.map((slide, i) => (
+          {slides.map((slide, i) => (
             <motion.div
               key={i}
               initial={false}
@@ -31,27 +41,21 @@ export default function Domestic() {
               <img
                 src={slide.img}
                 className="w-full h-full object-cover ken-burns"
-                alt="Hero background"
-                crossOrigin="anonymous"
+                alt="Domestic Hero"
+                loading={i === 0 ? "eager" : "lazy"}
+                fetchPriority={i === 0 ? "high" : "auto"}
+                decoding="async"
               />
             </motion.div>
           ))}
         </div>
 
         <div className="relative z-20 text-center px-6 max-w-5xl">
-          <motion.span 
-            initial={{ opacity: 0, y: 10 }} 
-            animate={{ opacity: 1, y: 0 }} 
-            transition={{ duration: 1, delay: 0.5 }}
-            className="eyebrow text-white tracking-widest text-[10px] uppercase"
-          >
-            {staticContent.eyebrow}
-          </motion.span>
           <motion.h1 
             initial={{ opacity: 0, y: 20 }} 
             animate={{ opacity: 1, y: 0 }} 
             transition={{ duration: 1.2, delay: 0.7 }} 
-            className="text-white text-5xl md:text-8xl font-serif leading-[1.1] mt-4"
+            className="text-white text-5xl md:text-8xl font-serif leading-[1.1]"
           >
             Domestic <br />
             <span className="italic text-accent text-[#D4A373]">Journeys</span>

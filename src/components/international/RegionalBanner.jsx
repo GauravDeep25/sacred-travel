@@ -8,6 +8,8 @@ export default function RegionalBanner({ cat }) {
         <img
           src={cat.img}
           alt={cat.label}
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover"
         />
       </div>

@@ -9,6 +9,14 @@ export default function About() {
   const [index, setIndex] = useState(0);
   const aboutData = siteConfig.about;
 
+  // Preload slides into browser cache
+  useEffect(() => {
+    aboutData.hero?.forEach((slide) => {
+      const img = new Image();
+      img.src = slide.img;
+    });
+  }, [aboutData.hero]);
+
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % aboutData.hero.length);
@@ -35,7 +43,9 @@ export default function About() {
                 src={slide.img}
                 className="w-full h-full object-cover ken-burns"
                 alt="About Hero"
-                crossOrigin="anonymous"
+                loading={i === 0 ? "eager" : "lazy"}
+                fetchPriority={i === 0 ? "high" : "auto"}
+                decoding="async"
               />
             </motion.div>
           ))}
@@ -72,6 +82,8 @@ export default function About() {
             <img 
               src={siteConfig.founder.photo} 
               alt="Founder" 
+              loading="lazy"
+              decoding="async"
               className="rounded-sm shadow-2xl aspect-4/5 object-cover" 
             />
             <p className="mt-6 text-[10px] uppercase tracking-[0.2em] text-charcoal/40">

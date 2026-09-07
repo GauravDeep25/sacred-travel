@@ -23,6 +23,8 @@ export default function FounderAbout() {
             <img
               src={photo}
               alt={`${name} — Founder, ${companyName}`}
+              loading="lazy"
+              decoding="async"
               className="h-full w-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
             />
             {/* Decorative corner frame */}

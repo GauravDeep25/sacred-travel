@@ -7,6 +7,14 @@ export default function Hero() {
   const [index, setIndex] = useState(0);
   const slides = siteConfig.home.hero;
 
+  // Preload slides for instant switching without network wait
+  useEffect(() => {
+    slides.forEach((slide) => {
+      const img = new Image();
+      img.src = slide.img;
+    });
+  }, [slides]);
+
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % slides.length);
@@ -32,8 +40,10 @@ export default function Hero() {
             <img
               src={slide.img}
               className="w-full h-full object-cover ken-burns"
-              alt=""
-              crossOrigin="anonymous"
+              alt={slide.h1 || "Hero background"}
+              loading={i === 0 ? "eager" : "lazy"}
+              fetchPriority={i === 0 ? "high" : "auto"}
+              decoding="async"
             />
           </motion.div>
         ))}

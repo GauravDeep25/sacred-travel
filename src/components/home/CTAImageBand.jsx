@@ -25,6 +25,8 @@ export default function CTAImageBand() {
           src="/assets/hero-aarti.jpg"
           className="w-full h-full object-cover"
           alt="Sacred aarti ceremony"
+          loading="lazy"
+          decoding="async"
         />
       </motion.div>
 

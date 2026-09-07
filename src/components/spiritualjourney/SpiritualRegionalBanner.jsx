@@ -9,6 +9,7 @@ export default function SpiritualRegionalBanner({ cat }) {
         src={cat.img} 
         alt={cat.bannerTitle} 
         loading="lazy" 
+        decoding="async"
         className="size-full object-cover" 
       />
       <div className="absolute inset-x-0 bottom-0 z-10 p-8 pt-24 bg-gradient-to-t from-black/80 to-transparent">

@@ -10,15 +10,25 @@ export default function SpiritualJourney() {
   const [status, setStatus] = useState('idle'); // 'idle' | 'submitting' | 'success' | 'error'
   const [statusMessage, setStatusMessage] = useState('');
 
+  const slides = siteConfig.spiritualjourney.hero;
+
+  // Preload slides into browser cache
+  useEffect(() => {
+    slides?.forEach((slide) => {
+      const img = new Image();
+      img.src = slide.img;
+    });
+  }, [slides]);
+
   useEffect(() => {
     const timer = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % siteConfig.spiritualjourney.hero.length);
+      setIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, 5000); 
 
     return () => clearInterval(timer);
-  }, []); 
+  }, [slides.length]); 
 
-  const staticContent = siteConfig.spiritualjourney.hero[0];
+  const staticContent = slides[0];
 
   const handleChange = (e) => {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -93,8 +103,10 @@ export default function SpiritualJourney() {
               <img
                 src={slide.img}
                 className="w-full h-full object-cover ken-burns"
-                alt="Hero background"
-                crossOrigin="anonymous"
+                alt="Spiritual Journey Hero"
+                loading={i === 0 ? "eager" : "lazy"}
+                fetchPriority={i === 0 ? "high" : "auto"}
+                decoding="async"
               />
             </motion.div>
           ))}

@@ -157,6 +157,9 @@ export default function ItineraryDetail() {
           src={meta.img}
           alt={displayName}
           className="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-black/10" />
 

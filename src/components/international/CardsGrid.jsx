@@ -21,6 +21,8 @@ export default function CardsGrid({ cards }) {
               <img
                 src={card.img}
                 alt={card.label || card.cardTitle}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />
             </div>
