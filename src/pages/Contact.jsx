@@ -1,10 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Phone, MessageCircle, Mail, Globe } from 'lucide-react';
+import { Phone, MessageCircle, Mail, Globe, CheckCircle2, AlertCircle, Loader2, ArrowRight } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 
 export default function Contact() {
   const [index, setIndex] = useState(0);
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    destination: '',
+    message: ''
+  });
+  const [status, setStatus] = useState('idle'); // 'idle' | 'submitting' | 'success' | 'error'
+  const [statusMessage, setStatusMessage] = useState('');
+
   const contactData = siteConfig.contact || {
     hero: [
       {
@@ -31,7 +41,7 @@ export default function Contact() {
   const company = siteConfig.company || {
     name: "Yugatirtha",
     whatsapp: "+91 85912 62424",
-    email: "hello@yugatirtha.com",
+    email: "info@yugatirtha.com",
     website: "www.yugatirtha.com"
   };
 
@@ -43,9 +53,64 @@ export default function Contact() {
     return () => clearInterval(timer);
   }, [heroSlides.length]);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleChange = (e) => {
+    setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!form.name || !form.email) return;
+
+    setStatus('submitting');
+    setStatusMessage('');
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/info@yugatirtha.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone || 'Not provided',
+          destination: form.destination || 'General Enquiry',
+          message: form.message || 'No additional notes',
+          _subject: `New Journey Enquiry: ${form.destination || 'Yugatirtha'} - ${form.name}`,
+          _template: "table",
+          _captcha: "false"
+        })
+      });
+
+      const data = await response.json();
+
+      if (response.ok || data.success === "true" || data.success === true || (data.message && data.message.includes("Activation"))) {
+        setStatus('success');
+        if (data.message && data.message.includes("Activation")) {
+          setStatusMessage("Enquiry received! If this is your first time using this address, please check info@yugatirtha.com for the one-time FormSubmit confirmation email.");
+        }
+      } else {
+        throw new Error(data.message || 'Submission failed');
+      }
+    } catch (err) {
+      console.error('Enquiry submission error:', err);
+      setStatus('error');
+      setStatusMessage('Could not connect to email service. You can send your enquiry directly via mail or WhatsApp below.');
+    }
+  };
+
+  const handleReset = () => {
+    setForm({ name: '', email: '', phone: '', destination: '', message: '' });
+    setStatus('idle');
+    setStatusMessage('');
+  };
+
+  const mailtoUrl = `mailto:info@yugatirtha.com?subject=${encodeURIComponent(`Journey Enquiry - ${form.name || 'Traveler'}`)}&body=${encodeURIComponent(
+    `Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nDestination Interest: ${form.destination}\n\nMessage:\n${form.message}`
+  )}`;
+
+  const whatsappMsg = `Namaste ${company.name},%0AMy name is ${encodeURIComponent(form.name || '')}.%0AEmail: ${encodeURIComponent(form.email || '')}%0APhone: ${encodeURIComponent(form.phone || '')}%0ADestination: ${encodeURIComponent(form.destination || '')}%0AMessage: ${encodeURIComponent(form.message || '')}`;
 
   return (
     <div className="bg-base">
@@ -72,17 +137,17 @@ export default function Contact() {
 
         <div className="relative z-20 mx-auto w-full max-w-7xl px-5 pt-32 pb-14 sm:px-8">
           <motion.p 
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 10 }} 
+            animate={{ opacity: 1, y: 0 }} 
             transition={{ duration: 1, delay: 0.5 }}
             className="eyebrow text-gold text-accent!"
           >
             {staticHero.eyebrow || "Contact"}
           </motion.p>
           <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.7 }}
+            initial={{ opacity: 0, y: 20 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 1.2, delay: 0.7 }} 
             className="mt-4 font-serif text-4xl text-white sm:text-6xl"
           >
             {staticHero.h1 || "Let's plan your crossing"}
@@ -105,67 +170,155 @@ export default function Contact() {
               </h2>
               <div className="gold-rule my-6 max-w-40 h-[1px] bg-accent/40"></div>
               
-              <form className="space-y-6" onSubmit={handleSubmit}>
-                <div className="grid gap-6 md:grid-cols-2">
-                  <div>
-                    <label htmlFor="name" className="eyebrow">Name</label>
-                    <input 
-                      id="name" 
-                      name="name" 
-                      required 
-                      placeholder="Your full name" 
-                      className="w-full border-b border-dark/20 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-charcoal/40 focus:border-primary font-sans text-dark" 
-                    />
+              {status === 'success' ? (
+                <div className="rounded-sm border border-emerald-200 bg-emerald-50/50 p-8 sm:p-10">
+                  <div className="flex items-center gap-3 text-emerald-700 mb-3">
+                    <CheckCircle2 size={28} />
+                    <h3 className="font-serif text-2xl font-semibold">Enquiry Sent to info@yugatirtha.com</h3>
                   </div>
-                  <div>
-                    <label htmlFor="email" className="eyebrow">Email</label>
-                    <input 
-                      id="email" 
-                      name="email" 
-                      type="email" 
-                      required 
-                      placeholder="you@email.com" 
-                      className="w-full border-b border-dark/20 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-charcoal/40 focus:border-primary font-sans text-dark" 
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="phone" className="eyebrow">Phone</label>
-                    <input 
-                      id="phone" 
-                      name="phone" 
-                      placeholder="+91 ..." 
-                      className="w-full border-b border-dark/20 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-charcoal/40 focus:border-primary font-sans text-dark" 
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="destination" className="eyebrow">Destination Interest</label>
-                    <input 
-                      id="destination" 
-                      name="destination" 
-                      placeholder="Char Dham, Kashmir, Kerala..." 
-                      className="w-full border-b border-dark/20 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-charcoal/40 focus:border-primary font-sans text-dark" 
-                    />
+                  <p className="text-gray-700 text-sm leading-relaxed mb-4">
+                    Thank you, <strong>{form.name}</strong>. Your enquiry has been received and forwarded to <strong>info@yugatirtha.com</strong>.
+                    Our team will review your destination interests and get back to you within 24 hours.
+                  </p>
+                  {statusMessage && (
+                    <p className="text-xs text-amber-800 bg-amber-50 border border-amber-200 p-3 rounded mb-6">
+                      {statusMessage}
+                    </p>
+                  )}
+                  <div className="flex flex-wrap gap-4 pt-4 border-t border-emerald-200/60">
+                    <button
+                      onClick={handleReset}
+                      className="rounded-sm bg-primary px-6 py-3 text-[0.72rem] uppercase tracking-[0.22em] text-white hover:bg-dark transition-colors"
+                    >
+                      Send Another Enquiry
+                    </button>
+                    <a
+                      href={`https://wa.me/${company.whatsapp?.replace(/[^0-9]/g, '')}?text=${whatsappMsg}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded-sm border border-emerald-600 text-emerald-800 px-6 py-3 text-[0.72rem] uppercase tracking-[0.22em] hover:bg-emerald-100 transition-colors flex items-center gap-2"
+                    >
+                      <MessageCircle size={15} /> Chat on WhatsApp
+                    </a>
                   </div>
                 </div>
+              ) : (
+                <form className="space-y-6" onSubmit={handleSubmit}>
+                  {status === 'error' && (
+                    <div className="rounded-sm border border-red-200 bg-red-50 p-4 text-sm text-red-800">
+                      <div className="flex items-center gap-2 font-semibold mb-2">
+                        <AlertCircle size={18} />
+                        <span>Submission Notice</span>
+                      </div>
+                      <p className="mb-3 text-xs leading-relaxed">{statusMessage}</p>
+                      <div className="flex flex-wrap gap-3">
+                        <a
+                          href={mailtoUrl}
+                          className="inline-flex items-center gap-1.5 bg-red-700 text-white px-4 py-2 text-xs uppercase tracking-wider rounded-sm hover:bg-red-800"
+                        >
+                          <Mail size={14} /> Open in Email App
+                        </a>
+                        <a
+                          href={`https://wa.me/${company.whatsapp?.replace(/[^0-9]/g, '')}?text=${whatsappMsg}`}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-1.5 border border-red-700 text-red-800 px-4 py-2 text-xs uppercase tracking-wider rounded-sm hover:bg-red-100"
+                        >
+                          <MessageCircle size={14} /> Send via WhatsApp
+                        </a>
+                      </div>
+                    </div>
+                  )}
 
-                <div>
-                  <label htmlFor="message" className="eyebrow">Message</label>
-                  <textarea 
-                    id="message" 
-                    name="message" 
-                    rows="3" 
-                    placeholder="Tell us about the journey you have in mind." 
-                    className="w-full border-b border-dark/20 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-charcoal/40 focus:border-primary font-sans text-dark resize-none"
-                  ></textarea>
-                </div>
+                  <div className="grid gap-6 md:grid-cols-2">
+                    <div>
+                      <label htmlFor="name" className="eyebrow">Name *</label>
+                      <input 
+                        id="name" 
+                        name="name" 
+                        required 
+                        value={form.name}
+                        onChange={handleChange}
+                        placeholder="Your full name" 
+                        disabled={status === 'submitting'}
+                        className="w-full border-b border-dark/20 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-charcoal/40 focus:border-primary font-sans text-dark disabled:opacity-50" 
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="eyebrow">Email *</label>
+                      <input 
+                        id="email" 
+                        name="email" 
+                        type="email" 
+                        required 
+                        value={form.email}
+                        onChange={handleChange}
+                        placeholder="you@email.com" 
+                        disabled={status === 'submitting'}
+                        className="w-full border-b border-dark/20 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-charcoal/40 focus:border-primary font-sans text-dark disabled:opacity-50" 
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="phone" className="eyebrow">Phone</label>
+                      <input 
+                        id="phone" 
+                        name="phone" 
+                        value={form.phone}
+                        onChange={handleChange}
+                        placeholder="+91 ..." 
+                        disabled={status === 'submitting'}
+                        className="w-full border-b border-dark/20 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-charcoal/40 focus:border-primary font-sans text-dark disabled:opacity-50" 
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="destination" className="eyebrow">Destination Interest</label>
+                      <input 
+                        id="destination" 
+                        name="destination" 
+                        value={form.destination}
+                        onChange={handleChange}
+                        placeholder="Char Dham, Kashmir, Kerala..." 
+                        disabled={status === 'submitting'}
+                        className="w-full border-b border-dark/20 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-charcoal/40 focus:border-primary font-sans text-dark disabled:opacity-50" 
+                      />
+                    </div>
+                  </div>
 
-                <button 
-                  type="submit" 
-                  className="rounded-sm bg-primary px-8 py-3.5 text-[0.72rem] uppercase tracking-[0.22em] text-white transition-colors hover:bg-dark cursor-pointer font-medium"
-                >
-                  {contactData.enquiry?.buttonText || "Send Enquiry"}
-                </button>
-              </form>
+                  <div>
+                    <label htmlFor="message" className="eyebrow">Message</label>
+                    <textarea 
+                      id="message" 
+                      name="message" 
+                      rows="3" 
+                      value={form.message}
+                      onChange={handleChange}
+                      disabled={status === 'submitting'}
+                      placeholder="Tell us about the journey you have in mind." 
+                      className="w-full border-b border-dark/20 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-charcoal/40 focus:border-primary font-sans text-dark resize-none disabled:opacity-50"
+                    ></textarea>
+                  </div>
+
+                  <div className="flex flex-wrap items-center gap-4 pt-2">
+                    <button 
+                      type="submit" 
+                      disabled={status === 'submitting'}
+                      className="rounded-sm bg-primary px-8 py-3.5 text-[0.72rem] uppercase tracking-[0.22em] text-white transition-colors hover:bg-dark cursor-pointer font-medium disabled:opacity-60 flex items-center gap-2"
+                    >
+                      {status === 'submitting' ? (
+                        <>
+                          <Loader2 size={14} className="animate-spin" />
+                          Sending to info@yugatirtha.com...
+                        </>
+                      ) : (
+                        contactData.enquiry?.buttonText || "Send Enquiry"
+                      )}
+                    </button>
+                    <span className="text-xs text-charcoal/50">
+                      Delivered directly to <strong className="text-charcoal/80">info@yugatirtha.com</strong>
+                    </span>
+                  </div>
+                </form>
+              )}
             </div>
           </motion.div>
 
@@ -185,7 +338,7 @@ export default function Contact() {
                 <li className="flex items-start gap-4">
                   <Phone className="mt-0.5 size-5 text-primary shrink-0" />
                   <a href={`tel:${company.whatsapp}`} className="hover:text-primary transition-colors text-charcoal/90">
-                    {company.whatsapp}
+                    +{company.whatsapp}
                   </a>
                 </li>
                 <li className="flex items-start gap-4">
@@ -201,7 +354,7 @@ export default function Contact() {
                 </li>
                 <li className="flex items-start gap-4">
                   <Mail className="mt-0.5 size-5 text-primary shrink-0" />
-                  <a href={`mailto:${company.email}`} className="hover:text-primary transition-colors text-charcoal/90">
+                  <a href={`mailto:${company.email}`} className="hover:text-primary transition-colors text-charcoal/90 font-medium">
                     {company.email}
                   </a>
                 </li>

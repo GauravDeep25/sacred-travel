@@ -6,27 +6,38 @@ import { siteConfig } from '../data/siteConfig';
 
 // Map destination slugs to card images and page info
 const destinationMeta = {
-  kashmir:     { img: '/assets/kashmir-C3GCvNNI.jpg',          region: 'North India',     from: '/domestic',       fromLabel: 'Domestic' },
-  ladakh:      { img: '/assets/spiritual-north-NuyL8ZKr.jpg',  region: 'North India',     from: '/domestic',       fromLabel: 'Domestic' },
-  himachal:    { img: '/assets/hero-himalaya-Ben1uNJZ.jpg',     region: 'North India',     from: '/domestic',       fromLabel: 'Domestic' },
-  spiti:       { img: '/assets/hero-himalaya-Ben1uNJZ.jpg',     region: 'North India',     from: '/domestic',       fromLabel: 'Domestic' },
-  meghalaya:   { img: '/assets/northeast-D8OXmwI_.jpg',         region: 'Northeast India', from: '/domestic',       fromLabel: 'Domestic' },
-  sikkim:      { img: '/assets/hero-himalaya-Ben1uNJZ.jpg',     region: 'Northeast India', from: '/domestic',       fromLabel: 'Domestic' },
-  arunachal:   { img: '/assets/northeast-D8OXmwI_.jpg',         region: 'Northeast India', from: '/domestic',       fromLabel: 'Domestic' },
-  rajasthan:   { img: '/assets/rajasthan-Dznk4KEj.jpg',         region: 'West India',      from: '/domestic',       fromLabel: 'Domestic' },
-  kerala:      { img: '/assets/kerala-JKm5YrGV.jpg',            region: 'South India',     from: '/domestic',       fromLabel: 'Domestic' },
-  bali:        { img: '/assets/intl-bali-Ck8GSayl.jpg',         region: 'Southeast Asia',  from: '/international',  fromLabel: 'International' },
-  vietnam:     { img: '/assets/intl-vietnam-ZB5ZxQ8t.jpg',      region: 'Southeast Asia',  from: '/international',  fromLabel: 'International' },
-  philippines: { img: '/assets/intl-angkor-Xa0-qQac.jpg',       region: 'Southeast Asia',  from: '/international',  fromLabel: 'International' },
-  georgia:     { img: '/assets/intl-caucasus-DAV0UB-k.jpg',     region: 'CIS Countries',   from: '/international',  fromLabel: 'International' },
-  japan:       { img: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200', region: 'East Asia', from: '/international', fromLabel: 'International' },
-  srilanka:    { img: '/assets/temple-south-CC6aHc0Q.jpg',       region: 'South Asia',      from: '/international',  fromLabel: 'International' },
+  kashmir:       { img: '/assets/kashmir-C3GCvNNI.jpg',          region: 'North India',     from: '/domestic',         fromLabel: 'Domestic' },
+  ladakh:        { img: '/assets/spiritual-north-NuyL8ZKr.jpg',  region: 'North India',     from: '/domestic',         fromLabel: 'Domestic' },
+  himachal:      { img: '/assets/hero-himalaya-Ben1uNJZ.jpg',     region: 'North India',     from: '/domestic',         fromLabel: 'Domestic' },
+  spiti:         { img: '/assets/hero-himalaya-Ben1uNJZ.jpg',     region: 'North India',     from: '/domestic',         fromLabel: 'Domestic' },
+  meghalaya:     { img: '/assets/northeast-D8OXmwI_.jpg',         region: 'Northeast India', from: '/domestic',         fromLabel: 'Domestic' },
+  sikkim:        { img: '/assets/hero-himalaya-Ben1uNJZ.jpg',     region: 'Northeast India', from: '/domestic',         fromLabel: 'Domestic' },
+  arunachal:     { img: '/assets/northeast-D8OXmwI_.jpg',         region: 'Northeast India', from: '/domestic',         fromLabel: 'Domestic' },
+  rajasthan:     { img: '/assets/rajasthan-Dznk4KEj.jpg',         region: 'West India',      from: '/domestic',         fromLabel: 'Domestic' },
+  kerala:        { img: '/assets/kerala-JKm5YrGV.jpg',            region: 'South India',     from: '/domestic',         fromLabel: 'Domestic' },
+  maharashtra:   { img: '/assets/rajasthan-Dznk4KEj.jpg',        region: 'West India',      from: '/domestic',         fromLabel: 'Domestic' },
+  gujarat:       { img: '/assets/rajasthan-Dznk4KEj.jpg',        region: 'West India',      from: '/domestic',         fromLabel: 'Domestic' },
+  tamilnadu:     { img: '/assets/temple-south-CC6aHc0Q.jpg',     region: 'South India',     from: '/domestic',         fromLabel: 'Domestic' },
+  andhrapradesh: { img: '/assets/temple-south-CC6aHc0Q.jpg',     region: 'South India',     from: '/domestic',         fromLabel: 'Domestic' },
+  uttarakhand:   { img: '/assets/spiritual-north-NuyL8ZKr.jpg',  region: 'North India',     from: '/spiritualjourney', fromLabel: 'Spiritual Journey' },
+  uttarpradesh:  { img: '/assets/aarti-Cr2kuE6b.jpg',           region: 'North India',     from: '/spiritualjourney', fromLabel: 'Spiritual Journey' },
+  madhyapradesh: { img: '/assets/temple-south-CC6aHc0Q.jpg',    region: 'Central India',   from: '/spiritualjourney', fromLabel: 'Spiritual Journey' },
+  odisha:        { img: '/assets/aarti-Cr2kuE6b.jpg',           region: 'East India',      from: '/spiritualjourney', fromLabel: 'Spiritual Journey' },
+  bali:          { img: '/assets/intl-bali-Ck8GSayl.jpg',         region: 'Southeast Asia',  from: '/international',    fromLabel: 'International' },
+  vietnam:       { img: '/assets/intl-vietnam-ZB5ZxQ8t.jpg',      region: 'Southeast Asia',  from: '/international',    fromLabel: 'International' },
+  philippines:   { img: '/assets/intl-angkor-Xa0-qQac.jpg',       region: 'Southeast Asia',  from: '/international',    fromLabel: 'International' },
+  georgia:       { img: '/assets/intl-caucasus-DAV0UB-k.jpg',     region: 'CIS Countries',   from: '/international',    fromLabel: 'International' },
+  japan:         { img: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200', region: 'East Asia', from: '/international', fromLabel: 'International' },
+  srilanka:      { img: '/assets/temple-south-CC6aHc0Q.jpg',       region: 'South Asia',      from: '/international',    fromLabel: 'International' },
 };
 
 const destinationDisplayNames = {
   kashmir: 'Kashmir', ladakh: 'Ladakh', himachal: 'Himachal Pradesh',
   spiti: 'Spiti Valley', meghalaya: 'Meghalaya', sikkim: 'Sikkim',
   arunachal: 'Arunachal Pradesh', rajasthan: 'Rajasthan', kerala: 'Kerala',
+  maharashtra: 'Maharashtra', gujarat: 'Gujarat', tamilnadu: 'Tamil Nadu',
+  andhrapradesh: 'Andhra Pradesh', uttarakhand: 'Uttarakhand',
+  uttarpradesh: 'Uttar Pradesh', madhyapradesh: 'Madhya Pradesh', odisha: 'Odisha',
   bali: 'Bali', vietnam: 'Vietnam', philippines: 'Philippines',
   georgia: 'Georgia', japan: 'Japan', srilanka: 'Sri Lanka',
 };
@@ -113,7 +124,7 @@ export default function ItineraryDetail() {
 
   if (!packages || packages.length === 0) {
     return (
-      <div className="min-h-screen bg-[#faf9f6] flex flex-col items-center justify-center gap-6 px-6 text-center">
+      <div className="min-h-screen bg-[#faf9f6] flex flex-col items-center justify-center gap-6 px-6 pt-32 pb-16 text-center">
         <p className="text-[#D4A373] text-xs tracking-widest uppercase font-semibold">Itinerary</p>
         <h1 className="font-serif text-4xl text-gray-900">Coming Soon</h1>
         <p className="text-gray-500 text-sm max-w-md">
@@ -141,7 +152,7 @@ export default function ItineraryDetail() {
   return (
     <div className="min-h-screen bg-[#faf9f6]">
       {/* ── Hero Strip ─────────────────────────────── */}
-      <div className="relative h-[55vh] min-h-[340px] w-full overflow-hidden">
+      <div className="relative h-[55vh] min-h-[380px] w-full overflow-hidden">
         <img
           src={meta.img}
           alt={displayName}
@@ -149,13 +160,13 @@ export default function ItineraryDetail() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-black/10" />
 
-        {/* Back button */}
-        <div className="absolute top-6 left-6 z-10">
+        {/* Back button positioned safely below fixed navbar */}
+        <div className="absolute top-24 sm:top-28 left-6 sm:left-12 z-20">
           <Link
             to={meta.from}
-            className="inline-flex items-center gap-2 text-white/80 hover:text-white text-xs font-semibold uppercase tracking-widest transition-colors"
+            className="inline-flex items-center gap-2 text-white/90 hover:text-white text-xs font-semibold uppercase tracking-widest transition-colors bg-black/30 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-white/20 hover:border-white/40"
           >
-            <ArrowLeft size={16} />
+            <ArrowLeft size={14} />
             {meta.fromLabel}
           </Link>
         </div>
@@ -183,7 +194,7 @@ export default function ItineraryDetail() {
 
       {/* ── Duration Tab Selector ──────────────────── */}
       {packages.length > 1 && (
-        <div className="bg-white border-b border-gray-200 sticky top-[55.5px] z-40">
+        <div className="bg-white border-b border-gray-200 sticky top-[68px] z-40">
           <div className="max-w-5xl mx-auto px-5 sm:px-8 flex gap-1 overflow-x-auto py-0">
             {packages.map((pkg, i) => (
               <button

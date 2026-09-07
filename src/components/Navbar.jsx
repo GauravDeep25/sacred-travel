@@ -14,9 +14,11 @@ export default function Navbar() {
     "/experiences", 
     "/about",
     "/contact",
+    "/enquiry",
+    "/enquire",
   ];
   
-  const isPageTop = heroRoutes.includes(location.pathname);
+  const isPageTop = heroRoutes.includes(location.pathname) || location.pathname.startsWith('/itinerary') || location.pathname.startsWith('/itenary');
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
