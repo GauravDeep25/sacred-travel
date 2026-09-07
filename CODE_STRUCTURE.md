@@ -19,7 +19,7 @@ This document provides a comprehensive breakdown of the project architecture, di
 ## 2. Directory Tree Overview
 
 ```text
-sacred-travel/
+yugatirtha/
 ├── public/
 │   ├── assets/                 # Optimized images for hero, domestic, intl & spiritual journeys
 │   │   ├── hero-spiti.jpg
