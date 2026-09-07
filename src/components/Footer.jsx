@@ -88,12 +88,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <a 
-        href={`https://wa.me/${siteConfig.company.whatsapp}`}
-        className="whatsapp-float group"
-      >
-        <MessageCircle size={28} fill="currentColor" />
-      </a>
+      {/* WhatsApp button removed from here! */}
     </footer>
   );
 }
