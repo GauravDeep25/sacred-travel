@@ -83,12 +83,12 @@ export default function SpiritualGrid() {
               </p>
             </motion.div>
 
-            {/* Direction Quick Navigation Cards */}
+            {/* Direction Quick Navigation Cards (Desktop only) */}
             <motion.div 
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="lg:col-span-6 flex flex-col gap-4"
+              className="hidden lg:flex lg:col-span-6 flex-col gap-4"
             >
               <div className="flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-gray-500 mb-2">
                 <Compass size={16} className="text-[#D4A373]" />

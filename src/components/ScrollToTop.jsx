@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowUp } from 'lucide-react';
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,28 +30,22 @@ export default function ScrollToTop() {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
-          className="fixed bottom-36 right-15 z-50"
+          initial={{ opacity: 0, scale: 0.8, y: 10 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.8, y: 10 }}
+          transition={{ duration: 0.2 }}
+          className="fixed bottom-[120px] right-10 z-50 w-[68px] flex justify-center pointer-events-none"
         >
           <button
             onClick={scrollToTop}
             aria-label="Scroll to top"
-            className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white shadow-lg transition-transform hover:scale-110 hover:bg-accent"
+            className="pointer-events-auto flex h-11 w-11 items-center justify-center rounded-full bg-primary text-white shadow-xl transition-all duration-300 hover:scale-110 hover:bg-dark active:scale-95 cursor-pointer border border-white/20"
           >
-            <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              width="24" height="24" 
-              viewBox="0 0 24 24" 
-              fill="none" stroke="currentColor" 
-              strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-            >
-              <path d="m18 15-6-6-6 6"/>
-            </svg>
+            <ArrowUp size={20} strokeWidth={2.5} />
           </button>
         </motion.div>
       )}
     </AnimatePresence>
   );
 }
+
