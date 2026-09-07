@@ -69,12 +69,8 @@ export default function Footer() {
             <h4 className="text-white text-[11px] uppercase tracking-[0.3em] font-bold mb-8">Presence</h4>
             <div className="flex flex-col gap-4 text-sm">
               <p className="leading-relaxed text-base/50">
-                [OFFICE ADDRESS] <br />
-                [CITY, PINCODE]
+                {siteConfig.company.address}
               </p>
-              <div className="mt-4 border-l border-primary/30 pl-4 py-1 italic text-xs text-white/40">
-                Private consultations available by appointment.
-              </div>
             </div>
           </div>
         </div>
