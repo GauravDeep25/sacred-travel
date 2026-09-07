@@ -32,7 +32,7 @@ export default function ScrollToTop() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
-          className="fixed bottom-8 left-8 z-50"
+          className="fixed bottom-36 right-15 z-50"
         >
           <button
             onClick={scrollToTop}
