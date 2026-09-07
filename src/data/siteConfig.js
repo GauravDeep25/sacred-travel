@@ -132,7 +132,7 @@ export const siteConfig = {
             cardDesc: "Shimla, Manali, Dharamshala, Dalhousie and the apple orchards of the lower Himalaya at an unhurried pace.",
             label: "Himachal",
             itineraryId: 'himachal',
-            img: "/assets/himachal.png",
+            img: "/assets/himachal.jpg",
             duration: "4 nights / 5 days",
             price: "From ₹35,000"
           },
@@ -168,7 +168,7 @@ export const siteConfig = {
             cardDesc: "Gangtok, Rumtek, Tawang and the eastern Himalaya's great Buddhist seats, with monastery morning prayers.",
             label: "Sikkim",
             itineraryId: 'sikkim',
-            img: "/assets/sikkim.png",
+            img: "/assets/sikkim.jpg",
             duration: "8 nights / 9 days",
             price: "From ₹59,000"
           },
@@ -177,7 +177,7 @@ export const siteConfig = {
             cardDesc: "Tawang Monastery, Sela Pass, Dirang valleys and the ancient Monpa culture of the high eastern frontier.",
             label: "Arunachal",
             itineraryId: 'arunachal',
-            img: "/assets/Arunachal.png",
+            img: "/assets/Arunachal.jpg",
             duration: "4 nights / 5 days",
             price: "From ₹48,000"
           }
@@ -204,7 +204,7 @@ export const siteConfig = {
             cardDesc: "Rock-cut caves, the Kailasa temple at Ellora, and the quiet Konkan coastline below the ghats.",
             label: "Maharashtra",
             itineraryId: 'maharashtra',
-            img: "/assets/Maharashtra.png",
+            img: "/assets/Maharashtra.jpg",
             duration: "6 nights / 7 days",
             price: "From ₹38,000"
           },
@@ -213,7 +213,7 @@ export const siteConfig = {
             cardDesc: "The white Rann, Modhera sun temple, Somnath and the craft villages of Kutch.",
             label: "Gujarat",
             itineraryId: 'gujarat',
-            img: "/assets/Gujrat.png",
+            img: "/assets/Gujrat.jpg",
             duration: "7 nights / 8 days",
             price: "From ₹49,000"
           }
@@ -240,7 +240,7 @@ export const siteConfig = {
             cardDesc: "Tirumala darshan with assisted access, Srisailam, Lepakshi and the Krishna delta towns.",
             label: "Andhra Pradesh",
             itineraryId: 'andhrapradesh',
-            img: "/assets/Andhra.png",
+            img: "/assets/Andhra.jpg",
             duration: "5 nights / 6 days",
             price: "From ₹34,000"
           }
@@ -320,7 +320,7 @@ export const siteConfig = {
             cardDesc: "Sigiriya rock fortress, Kandy Temple of the Tooth, Ella tea hills, Ravana falls and coastal Trincomalee.",
             label: "Sri Lanka",
             itineraryId: 'srilanka',
-            img: "/assets/Srilanka.png",
+            img: "/assets/Srilanka.jpg",
             duration: "5 nights / 6 days",
             price: "From ₹62,000"
           }
@@ -382,7 +382,7 @@ export const siteConfig = {
             itineraryId: 'uttarakhand',
             duration: "2 nights / 3 days",
             season: "Year-round, best March–November",
-            img: "/assets/Kainchi-Dham.png"
+            img: "/assets/Kainchi-Dham.jpg"
           },
           {
             cardTitle: "Kashi · Prayagraj · Ayodhya",
@@ -425,7 +425,7 @@ export const siteConfig = {
             itineraryId: 'andhrapradesh',
             duration: "2 to 4 days",
             season: "Year-round, best October–March",
-            img: "/assets/Andhra.png"
+            img: "/assets/Andhra.jpg"
           }
         ]
       },
@@ -441,7 +441,7 @@ export const siteConfig = {
             itineraryId: 'odisha',
             duration: "3 to 5 days",
             season: "October–March",
-            img: "/assets/konark.png"
+            img: "/assets/konark.jpg"
           },
 
         ]
@@ -458,7 +458,7 @@ export const siteConfig = {
             itineraryId: 'maharashtra',
             duration: "2 to 4 days",
             season: "Year-round, best August–March",
-            img: "/assets/Maharashtra.png"
+            img: "/assets/Maharashtra.jpg"
           },
           {
             cardTitle: "Somnath & Dwarka Holy Shrines",
@@ -467,7 +467,7 @@ export const siteConfig = {
             itineraryId: 'gujarat',
             duration: "3 nights / 4 days",
             season: "October–March",
-            img: "/assets/Gujrat.png"
+            img: "/assets/Gujrat.jpg"
           },
           {
             cardTitle: "Ujjain Mahakaleshwar & Omkareshwar",
@@ -485,7 +485,7 @@ export const siteConfig = {
             itineraryId: 'maharashtra',
             duration: "3–4 days",
             season: "Year-round, best August–February",
-            img: "/assets/Maharashtra.png"
+            img: "/assets/Maharashtra.jpg"
           }
         ]
       }
