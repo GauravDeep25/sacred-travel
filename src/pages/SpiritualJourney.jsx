@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2, AlertCircle, Loader2, Mail, MessageCircle } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
+import { spiritualSiteConfig } from '../data/siteConfig.spiritual';
 import SpiritualGrid from '../components/spiritualjourney/SpiritualGrid';
 
 export default function SpiritualJourney() {
@@ -144,7 +145,7 @@ export default function SpiritualJourney() {
         </div>
       </section>
 
-      <SpiritualGrid />
+      <SpiritualGrid itineraries={spiritualSiteConfig.itineraries} />
 
       <section className="bg-dark py-24 text-white">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">

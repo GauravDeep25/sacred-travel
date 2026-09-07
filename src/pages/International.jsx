@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { siteConfig } from '../data/siteConfig';
+import { internationalSiteConfig } from '../data/siteConfig.international';
 import InternationalGrid from '../components/international/InternationalGrid';
 
 export default function International() {
@@ -74,7 +75,7 @@ export default function International() {
         </div>
       </section>
 
-      <InternationalGrid />
+      <InternationalGrid itineraries={internationalSiteConfig.itineraries} />
 
       <section className="bg-[#f5f3ef] py-24">
         <div className="mx-auto max-w-4xl px-5 sm:px-8">

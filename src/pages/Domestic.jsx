@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { siteConfig } from '../data/siteConfig';
+import { domesticSiteConfig } from '../data/siteConfig.domestic';
 import DomesticGrid from '../components/domestic/DomesticGrid';
 
 export default function Domestic() {
@@ -71,7 +72,7 @@ export default function Domestic() {
           </motion.p>
         </div>
       </section>
-      <DomesticGrid />
+      <DomesticGrid itineraries={domesticSiteConfig.itineraries} />
       <section className="bg-[#f5f3ef] py-24">
         <div className="mx-auto max-w-4xl px-5 sm:px-8">
           <motion.div 

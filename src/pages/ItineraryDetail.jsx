@@ -3,6 +3,9 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Clock, CheckCircle2, ChevronDown, ChevronUp, MessageCircle } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
+import { domesticSiteConfig } from '../data/siteConfig.domestic';
+import { internationalSiteConfig } from '../data/siteConfig.international';
+import { spiritualSiteConfig } from '../data/siteConfig.spiritual';
 
 // Map destination slugs to card images and page info
 const destinationMeta = {
@@ -94,7 +97,16 @@ export default function ItineraryDetail() {
   const { destination } = useParams();
   const navigate = useNavigate();
 
-  const packages = siteConfig.itineraries?.[destination] || [];
+  const domesticPackages = domesticSiteConfig.itineraries?.[destination];
+  const intlPackages = internationalSiteConfig.itineraries?.[destination];
+  const spiritualPackages = spiritualSiteConfig.itineraries?.[destination];
+
+  const packages =
+    domesticPackages ||
+    intlPackages ||
+    spiritualPackages ||
+    siteConfig.itineraries?.[destination] ||
+    [];
   const meta = destinationMeta[destination] || {
     img: '/assets/hero-spiti.jpg',
     region: 'India',

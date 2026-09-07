@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Compass, MapPin, ArrowDown } from 'lucide-react';
 import { siteConfig } from '../../data/siteConfig';
+import { spiritualSiteConfig } from '../../data/siteConfig.spiritual';
 import IndiaMap from '../IndiaMap';
 import RegionalBanner from '../domestic/RegionalBanner';
 import CardsGrid from '../domestic/CardsGrid';
 
-export default function SpiritualGrid() {
+export default function SpiritualGrid({ itineraries = spiritualSiteConfig.itineraries }) {
   const [selectedDirection, setSelectedDirection] = useState('north');
   const directions = siteConfig.spiritualjourney.directions;
   const directionKeys = ['north', 'south', 'east', 'west'];
@@ -23,25 +24,25 @@ export default function SpiritualGrid() {
     north: {
       name: 'North India',
       label: 'Himalayan Seats',
-      circuits: 'Char Dham · Panch Kedar · Kashi & Ayodhya',
+      circuits: 'Char Dham · Do Dham · Kainchi Dham · Kashi',
       iconColor: 'text-[#D4A373]'
     },
     south: {
       name: 'South India',
       label: 'Granite Sanctuaries',
-      circuits: 'Panch Bhoota Stalam · Chola Temples · Tirupati',
+      circuits: 'Panch Bhoota Stalam · Rameswaram · Mallikarjun & Tirupati',
       iconColor: 'text-[#D4A373]'
     },
     east: {
       name: 'East India',
       label: 'Shakti & Sacred Rivers',
-      circuits: 'Shakti Peeths · Puri Jagannath · Gaya & Bodh Gaya',
+      circuits: 'Puri Jagannath · Shakti Peeths · Gaya & Bodh Gaya',
       iconColor: 'text-[#D4A373]'
     },
     west: {
       name: 'West India',
       label: 'Jyotirlinga & Ocean Coast',
-      circuits: 'Western Jyotirlingas · Dwarka · Ashtavinayak',
+      circuits: 'Maharashtra Jyotirlingas · Somnath & Dwarka · Mahakaleshwar',
       iconColor: 'text-[#D4A373]'
     }
   };
@@ -181,7 +182,7 @@ export default function SpiritualGrid() {
             >
               <div className="max-w-7xl mx-auto px-6 mb-24">
                 <RegionalBanner cat={cat} />
-                <CardsGrid cards={cat.cards} />
+                <CardsGrid cards={cat.cards} itineraries={itineraries} />
               </div>
             </motion.div>
           );

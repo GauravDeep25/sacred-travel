@@ -1,10 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { siteConfig } from '../../data/siteConfig';
+import { internationalSiteConfig } from '../../data/siteConfig.international';
 import RegionalBanner from './RegionalBanner';
 import CardsGrid from './CardsGrid';
 
-export default function InternationalGrid() {
+export default function InternationalGrid({ itineraries = internationalSiteConfig.itineraries }) {
   return (
     <>
       <div className="border-b border-gray-200 bg-[#f5f3ef] sticky top-0 md:top-[55px] z-40">
@@ -39,7 +40,7 @@ export default function InternationalGrid() {
             >
               <div className="max-w-7xl mx-auto px-6 mb-24">
                 <RegionalBanner cat={cat} />
-                <CardsGrid cards={cat.cards} />
+                <CardsGrid cards={cat.cards} itineraries={internationalSiteConfig.itineraries} />
               </div>
             </motion.div>
           );
