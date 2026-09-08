@@ -50,7 +50,7 @@ export default function Hero() {
       </div>
 
       {/* TEXT CONTENT — bottom-left aligned like the reference */}
-      <div className="relative z-20 px-8 md:px-16 pb-12 md:pb-16 max-w-4xl">
+      <div className="relative z-20 px-8 md:px-16 pb-28 md:pb-16 max-w-4xl">
         <AnimatePresence mode="wait">
           <motion.div
             key={index}
