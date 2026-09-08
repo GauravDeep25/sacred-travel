@@ -14,6 +14,7 @@ export default function Experiences() {
   });
   const [status, setStatus] = useState('idle'); // 'idle' | 'submitting' | 'success' | 'error'
   const [statusMessage, setStatusMessage] = useState('');
+  const [activeId, setActiveId] = useState(null);
 
   const handleChange = (e) => {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -115,7 +116,9 @@ export default function Experiences() {
       <section className="py-20 bg-base">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="grid auto-rows-[300px] gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {experiences.items.map((item, i) => (
+            {experiences.items.map((item, i) => {
+              const isActive = activeId === item.id;
+              return (
               <motion.div
                 key={item.id}
                 initial={{ opacity: 0, y: 24 }}
@@ -124,24 +127,29 @@ export default function Experiences() {
                 viewport={{ once: true }}
                 className={`h-full ${item.span || ''}`}
               >
-                <article className="group relative h-full overflow-hidden rounded-sm bg-charcoal">
+                <article 
+                  className="group relative h-full overflow-hidden rounded-sm bg-charcoal cursor-pointer"
+                  onClick={() => setActiveId(isActive ? null : item.id)}
+                  onMouseEnter={() => setActiveId(item.id)}
+                  onMouseLeave={() => setActiveId(null)}
+                >
                   <img
                     src={item.img}
                     alt={item.alt}
                     loading="lazy"
                     decoding="async"
-                    className="size-full object-cover transition-transform duration-[1400ms] group-hover:scale-110"
+                    className={`size-full object-cover transition-transform duration-[1400ms] ${isActive ? 'scale-110' : 'md:group-hover:scale-110'}`}
                   />
                   {/* Atmospheric gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none transition-opacity duration-500 opacity-80 group-hover:opacity-100" />
+                  <div className={`absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none transition-opacity duration-500 ${isActive ? 'opacity-100' : 'opacity-80 md:group-hover:opacity-100'}`} />
 
                   {/* Text positioned at bottom */}
                   <div className="absolute inset-x-0 bottom-0 z-10 p-7">
-                    <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                    <div className={`transition-transform duration-500 ease-out ${isActive ? 'translate-y-0' : 'translate-y-4 md:group-hover:translate-y-0'}`}>
                       <h2 className="font-serif text-2xl text-white">
                         {item.title}
                       </h2>
-                      <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-out opacity-0 group-hover:opacity-100">
+                      <div className={`grid transition-[grid-template-rows] duration-500 ease-out ${isActive ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0 md:group-hover:grid-rows-[1fr] md:group-hover:opacity-100'}`}>
                         <div className="overflow-hidden">
                           <p className="mt-2 max-w-md text-sm leading-relaxed text-white/80 font-sans">
                             {item.desc}
@@ -160,7 +168,8 @@ export default function Experiences() {
                   </div>
                 </article>
               </motion.div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
