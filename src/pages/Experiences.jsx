@@ -133,16 +133,30 @@ export default function Experiences() {
                     className="size-full object-cover transition-transform duration-[1400ms] group-hover:scale-110"
                   />
                   {/* Atmospheric gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none transition-opacity duration-500 opacity-80 group-hover:opacity-100" />
 
                   {/* Text positioned at bottom */}
                   <div className="absolute inset-x-0 bottom-0 z-10 p-7">
-                    <h2 className="font-serif text-2xl text-white">
-                      {item.title}
-                    </h2>
-                    <p className="mt-2 max-w-md text-sm leading-relaxed text-white/80 font-sans">
-                      {item.desc}
-                    </p>
+                    <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                      <h2 className="font-serif text-2xl text-white">
+                        {item.title}
+                      </h2>
+                      <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-out opacity-0 group-hover:opacity-100">
+                        <div className="overflow-hidden">
+                          <p className="mt-2 max-w-md text-sm leading-relaxed text-white/80 font-sans">
+                            {item.desc}
+                          </p>
+                          <a
+                            href={`https://wa.me/${siteConfig.company.whatsapp}?text=Hi Yugatirtha! I would like to know more about the ${encodeURIComponent(item.title)} experience.`}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex items-center gap-2 text-[#D4A373] text-[10px] uppercase tracking-[0.35em] font-bold hover:text-white transition-colors mt-4"
+                          >
+                            <MessageCircle size={13} /> Enquire on WhatsApp
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </article>
               </motion.div>

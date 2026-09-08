@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 import { siteConfig } from '../../data/siteConfig';
 
 export default function ExperiencesGrid() {
@@ -91,13 +91,15 @@ export default function ExperiencesGrid() {
                           ))}
                         </div>
 
-                        <Link
-                          to="/contact"
-                          className="inline-flex items-center gap-2 text-accent text-[10px] uppercase tracking-[0.35em] font-bold"
+                        <a
+                          href={`https://wa.me/${siteConfig.company.whatsapp}?text=Hi Yugatirtha! I would like to know more about the ${encodeURIComponent(cat.title)} experience.`}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-2 text-accent text-[10px] uppercase tracking-[0.35em] font-bold hover:text-white transition-colors mt-2"
                           onClick={(e) => e.stopPropagation()}
                         >
-                          Enquire about this <ArrowRight size={12} />
-                        </Link>
+                          <MessageCircle size={13} /> Enquire on WhatsApp
+                        </a>
                       </motion.div>
                     )}
                   </AnimatePresence>
