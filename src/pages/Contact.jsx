@@ -135,7 +135,7 @@ export default function Contact() {
           ))}
         </div>
 
-        <div className="relative z-20 mx-auto w-full max-w-7xl px-5 pt-32 pb-14 sm:px-8">
+        <div className="relative z-20 mx-auto w-full max-w-7xl px-6 pt-32 pb-14">
           <motion.p 
             initial={{ opacity: 0, y: 10 }} 
             animate={{ opacity: 1, y: 0 }} 
@@ -313,9 +313,6 @@ export default function Contact() {
                         contactData.enquiry?.buttonText || "Send Enquiry"
                       )}
                     </button>
-                    <span className="text-xs text-charcoal/50">
-                      Delivered directly to <strong className="text-charcoal/80">info@yugatirtha.com</strong>
-                    </span>
                   </div>
                 </form>
               )}

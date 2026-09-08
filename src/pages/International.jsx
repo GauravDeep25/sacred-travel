@@ -53,25 +53,27 @@ export default function International() {
           ))}
         </div>
 
-        <div className="relative z-20 text-center px-6 max-w-5xl">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }} 
-            animate={{ opacity: 1, y: 0 }} 
-            transition={{ duration: 1.2, delay: 0.7 }} 
-            className="text-white text-5xl md:text-8xl font-serif leading-[1.1]"
-          >
-            International <br />
-            <span className="italic text-accent text-[#D4A373]">Journeys</span>
-          </motion.h1>
+        <div className="relative z-20 w-full max-w-7xl mx-auto px-6">
+          <div className="max-w-4xl text-left">
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }} 
+              animate={{ opacity: 1, y: 0 }} 
+              transition={{ duration: 1.2, delay: 0.7 }} 
+              className="text-white text-5xl md:text-8xl font-serif leading-[1.1]"
+            >
+              International <br />
+              <span className="italic text-accent text-[#D4A373]">Journeys</span>
+            </motion.h1>
 
-          <motion.p 
-            initial={{ opacity: 0 }} 
-            animate={{ opacity: 1 }} 
-            transition={{ duration: 1.5, delay: 1 }} 
-            className="text-white/70 mt-8 max-w-xl mx-auto font-sans text-sm md:text-base leading-relaxed"
-          >
-            {staticContent.sub}
-          </motion.p>
+            <motion.p 
+              initial={{ opacity: 0 }} 
+              animate={{ opacity: 1 }} 
+              transition={{ duration: 1.5, delay: 1 }} 
+              className="text-white/70 mt-8 max-w-xl font-sans text-sm md:text-base leading-relaxed"
+            >
+              {staticContent.sub}
+            </motion.p>
+          </div>
         </div>
       </section>
 

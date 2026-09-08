@@ -38,7 +38,7 @@ export default function Navbar() {
             <span className={isSolid ? 'text-dark' : 'text-white'}>Yuga</span>
             <span className="text-primary">tirtha</span>
           </span>
-          <span className={`text-[9px] uppercase tracking-[0.3em] transition-colors ${isSolid ? 'text-primary' : 'text-accent'}`}>
+          <span className={`text-[9px] uppercase tracking-[0.3em] transition-colors ${isSolid ? 'text-primary' : 'text-white'}`}>
             {siteConfig.company.tagline}
           </span>
         </Link>

@@ -283,9 +283,6 @@ export default function EnquiryForm() {
                   <MessageCircle size={13} /> WhatsApp
                 </a>
               </div>
-              <p className="text-[11px] text-charcoal/50">
-                Delivered directly to <strong className="text-charcoal/80">info@yugatirtha.com</strong>
-              </p>
             </form>
           )}
         </motion.div>

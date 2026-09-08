@@ -176,7 +176,7 @@ export default function ItineraryDetail() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-black/10" />
 
         {/* Back button positioned safely below fixed navbar */}
-        <div className="absolute top-24 sm:top-28 left-6 sm:left-12 z-20">
+        <div className="absolute top-24 left-0 right-0 z-20 w-full max-w-7xl mx-auto px-6">
           <Link
             to={meta.from}
             className="inline-flex items-center gap-2 text-white/90 hover:text-white text-xs font-semibold uppercase tracking-widest transition-colors bg-black/30 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-white/20 hover:border-white/40"
@@ -187,7 +187,7 @@ export default function ItineraryDetail() {
         </div>
 
         {/* Hero text */}
-        <div className="absolute bottom-0 left-0 right-0 px-6 sm:px-12 pb-10 z-10">
+        <div className="absolute bottom-0 left-0 right-0 pb-10 z-10 w-full max-w-7xl mx-auto px-6">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}

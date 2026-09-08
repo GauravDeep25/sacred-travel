@@ -37,8 +37,9 @@ export default function ExperiencesHero() {
       </div>
 
       {/* CONTENT */}
-      <div className="relative z-20 px-8 md:px-16 pb-24 md:pb-32 max-w-4xl">
-        <AnimatePresence mode="wait">
+      <div className="relative z-20 w-full max-w-7xl mx-auto px-6 pb-24 md:pb-32">
+        <div className="max-w-4xl">
+          <AnimatePresence mode="wait">
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 24 }}
@@ -58,6 +59,7 @@ export default function ExperiencesHero() {
             </p>
           </motion.div>
         </AnimatePresence>
+        </div>
       </div>
 
       {/* SLIDE DOTS */}

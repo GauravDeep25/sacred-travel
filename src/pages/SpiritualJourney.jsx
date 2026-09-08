@@ -113,7 +113,7 @@ export default function SpiritualJourney() {
           ))}
         </div>
 
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-5 pt-32 pb-16 sm:px-8">
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-32 pb-16">
           <motion.p 
             initial={{ opacity: 0, y: 10 }} 
             animate={{ opacity: 1, y: 0 }} 
@@ -138,7 +138,7 @@ export default function SpiritualJourney() {
             initial={{ opacity: 0 }} 
             animate={{ opacity: 1 }} 
             transition={{ duration: 1.5, delay: 1 }} 
-            className="max-w-2xl text-sm leading-relaxed text-ivory/85 sm:text-base"
+            className="max-w-2xl text-sm leading-relaxed text-white/85 sm:text-base"
           >
             {staticContent.sub}
           </motion.p>

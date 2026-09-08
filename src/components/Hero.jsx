@@ -20,10 +20,10 @@ export default function Hero() {
       </AnimatePresence>
 
       <div className="relative z-20 text-center px-6">
-        <span className="text-accent uppercase tracking-[0.4em] text-[10px] block mb-4">{siteData.hero[index].eyebrow}</span>
+        <span className="text-primary uppercase tracking-[0.4em] text-[10px] block mb-4">{siteData.hero[index].eyebrow}</span>
         <h1 className="text-white text-5xl md:text-8xl font-serif leading-[1.1] mb-8">
           {siteData.hero[index].h1} <br />
-          <span className="italic text-accent">{siteData.hero[index].h1Italic}</span>
+          <span className="italic text-primary">{siteData.hero[index].h1Italic}</span>
         </h1>
         <div className="flex flex-col md:flex-row gap-4 justify-center">
           <button className="bg-primary text-white pill-button">Explore Journeys</button>

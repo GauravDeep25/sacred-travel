@@ -50,8 +50,9 @@ export default function Hero() {
       </div>
 
       {/* TEXT CONTENT — bottom-left aligned like the reference */}
-      <div className="relative z-20 px-8 md:px-16 mt-[30vh] md:mt-0 max-w-4xl">
-        <AnimatePresence mode="wait">
+      <div className="relative z-20 w-full max-w-7xl mx-auto px-6 mt-[30vh] md:mt-0">
+        <div className="max-w-4xl">
+          <AnimatePresence mode="wait">
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 24 }}
@@ -90,7 +91,8 @@ export default function Hero() {
           >
             Talk to Us on WhatsApp
           </a>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
 
       {/* SLIDE INDICATOR DOTS — bottom right */}
