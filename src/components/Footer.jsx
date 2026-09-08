@@ -21,10 +21,10 @@ export default function Footer() {
               Experience the world through a lens of reverence and ancient wisdom.
             </p>
             <div className="flex gap-5 text-[10px] uppercase tracking-widest text-white/40">
-              <a href="#" className="hover:text-accent transition-colors flex items-center gap-1">
+              <a href="https://www.instagram.com/yugatirtha" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors flex items-center gap-1">
                 Instagram <ArrowUpRight size={10} />
               </a>
-              <a href="#" className="hover:text-accent transition-colors flex items-center gap-1">
+              <a href="https://www.facebook.com/profile.php?id=61590599979185&mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors flex items-center gap-1">
                 Facebook <ArrowUpRight size={10} />
               </a>
             </div>

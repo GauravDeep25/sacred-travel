@@ -338,7 +338,7 @@ export default function Contact() {
                 <li className="flex items-start gap-4">
                   <Phone className="mt-0.5 size-5 text-primary shrink-0" />
                   <a href={`tel:${company.whatsapp}`} className="hover:text-primary transition-colors text-charcoal/90">
-                    +{company.whatsapp}
+                    {company.whatsapp}
                   </a>
                 </li>
                 <li className="flex items-start gap-4">

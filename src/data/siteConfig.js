@@ -5,9 +5,9 @@ import { spiritualSiteConfig } from './siteConfig.spiritual.js';
 export const siteConfig = {
   company: {
     name: "Yugatirtha",
-    tagline: "JOURNEYS THROUGH TIME",
+    tagline: "Rediscover the Soul of India",
     logo: "Yugatirtha",
-    whatsapp: "+918591262424",
+    whatsapp: "+91 8591262424",
     email: "info@yugatirtha.com",
     address: "3rd floor, Jay sampada apartment chinchpada road kalyan, Mumbai 421306",
     website: "www.yugatirtha.com"
@@ -28,7 +28,7 @@ export const siteConfig = {
       {
         img: "/assets/hero-spiti.jpg",
         eyebrow: "Yuga · era · Tirtha",
-        h1: "Rediscover the soul",
+        h1: "Find Peace among Peaks",
         h1Italic: "of the mountains.",
         sub: "Curated pilgrimages to the world's most silent heights."
       },
