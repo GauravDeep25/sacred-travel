@@ -7,7 +7,7 @@ export const siteConfig = {
     name: "Yugatirtha",
     tagline: "JOURNEYS THROUGH TIME",
     logo: "Yugatirtha",
-    whatsapp: "8591262424",
+    whatsapp: "+918591262424",
     email: "info@yugatirtha.com",
     address: "3rd floor, Jay sampada apartment chinchpada road kalyan, Mumbai 421306",
     website: "www.yugatirtha.com"
