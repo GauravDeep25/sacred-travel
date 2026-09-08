@@ -50,7 +50,7 @@ export default function Hero() {
       </div>
 
       {/* TEXT CONTENT — bottom-left aligned like the reference */}
-      <div className="relative z-20 px-8 md:px-16 pb-24 md:pb-32 max-w-4xl">
+      <div className="relative z-20 px-8 md:px-16 pb-12 md:pb-16 max-w-4xl">
         <AnimatePresence mode="wait">
           <motion.div
             key={index}
@@ -62,7 +62,7 @@ export default function Hero() {
             <span className="text-accent text-[10px] uppercase tracking-[0.5em] font-bold block mb-5">
               {current.eyebrow}
             </span>
-            <h1 className="text-white text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.05] mb-6">
+            <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-serif leading-[1.05] mb-6">
               {current.h1} <br />
               <span className="italic text-accent">{current.h1Italic}</span>
             </h1>

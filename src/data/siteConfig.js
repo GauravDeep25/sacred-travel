@@ -7,7 +7,7 @@ export const siteConfig = {
     name: "Yugatirtha",
     tagline: "Rediscover the Soul of India",
     logo: "Yugatirtha",
-    whatsapp: "+91 8591262424",
+    whatsapp: "+918591262424",
     email: "info@yugatirtha.com",
     address: "3rd floor, Jay sampada apartment chinchpada road kalyan, Mumbai 421306",
     website: "www.yugatirtha.com"
@@ -555,11 +555,11 @@ export const siteConfig = {
         span: ""
       },
       {
-        id: "hidden",
-        title: "Hidden glories of India",
-        desc: "Root-bridge villages, unlisted Chalukyan shrines, high-desert monasteries few itineraries reach.",
-        img: "/assets/northeast-D8OXmwI_.jpg",
-        alt: "Living root bridge deep in a Meghalaya forest",
+        id: "weddings",
+        title: "Sacred Weddings",
+        desc: "Celebrate your union amidst ancient temples, serene landscapes, and deeply rooted spiritual traditions across India.",
+        img: "/assets/sacred-weddings.jpg",
+        alt: "A traditional Indian wedding ceremony in a temple courtyard",
         span: ""
       }
     ]
