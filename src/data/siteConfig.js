@@ -85,9 +85,36 @@ export const siteConfig = {
       { value: 4, label: "Dham Covered", suffix: "", icon: "dham" }
     ],
     testimonials: [
-      { quote: "A profound experience that went beyond simple sightseeing. It felt like coming home.", name: "Aria Sharma", city: "Gangtok" },
-      { quote: "The attention to detail and the reverence for the local culture was unparalleled.", name: "Yuvraj Singh", city: "Delhi" },
-      { quote: "Life-changing. I didn't just see My country; I felt the pulse of its ancient wisdom.", name: "Arjun Kulkarni", city: "Mumbai" }
+      { 
+        quote: "Our Char Dham yatra was handled with such care — the darshan timings, the priests, the pace for my parents. Nothing felt rushed.", 
+        name: "Meera Iyer", 
+        city: "Bengaluru" 
+      },
+      { 
+        quote: "Yash's Spiti route is unlike anything on a brochure. Remote monasteries, real villages, and a team that knows every pass.", 
+        name: "Arjun Kulkarni", 
+        city: "Mumbai" 
+      },
+      { 
+        quote: "Thank you for time to time assistance in the entire trip. All facilities are good. Vehicles and the hospitality is nice at every point. It's really a great experience.  Thank you all.", 
+        name: "M K Singuru", 
+        city: "Vizag" 
+      },
+      { 
+        quote: "Had a wonderful Ujjain trip with Yugatirtha! Everything was well planned, smooth, and comfortable. The temple visits and spiritual experience were truly memorable. Highly recommended!", 
+        name: "Rishabh", 
+        city: "Delhi" 
+      },
+      { 
+        quote: "Yugatirtha made our Puri trip really comfortable and well organised. From the hotel to the temple visits, everything was managed smoothly. We could simply enjoy the spiritual experience without worrying about the arrangements", 
+        name: "Muskan", 
+        city: "Pune" 
+      },
+      { 
+        quote: "Really happy with our Ujjain trip with Yugatirtha. The team was helpful, responsive and made sure everything went according to plan. Visiting Mahakaleshwar was a beautiful experience, and the whole journey was very memorable.", 
+        name: "Shruti", 
+        city: "Mumbai" 
+      }
     ]
   },
 

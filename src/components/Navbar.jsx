@@ -35,8 +35,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex flex-col relative z-50">
           <span className="text-2xl font-serif font-bold transition-colors">
-            <span className={isSolid ? 'text-dark' : 'text-white'}>Yuga</span>
-            <span className="text-primary">tirtha</span>
+            <span className="text-primary">Yuga</span>
+            <span className={isSolid ? 'text-dark' : 'text-white'}>tirtha</span>
           </span>
           <span className={`text-[9px] uppercase tracking-[0.3em] transition-colors ${isSolid ? 'text-primary' : 'text-white'}`}>
             {siteConfig.company.tagline}
