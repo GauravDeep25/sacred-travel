@@ -36,7 +36,7 @@ export default function Hero() {
             transition={{ duration: 2, ease: 'easeInOut' }}
             className="absolute inset-0"
           >
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/20 z-10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/40 md:via-black/30 md:to-black/20 z-10" />
             <img
               src={slide.img}
               className="w-full h-full object-cover ken-burns"

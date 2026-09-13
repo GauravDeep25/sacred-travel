@@ -45,9 +45,9 @@ export default function CardsGrid({ cards, itineraries = {} }) {
                 {hasItinerary ? (
                   <Link
                     to={`/itinerary/${card.itineraryId || itKey}`}
-                    className="mt-auto inline-flex items-center gap-2 border-b border-primary pb-1 text-[0.72rem] uppercase tracking-[0.22em] text-primary transition-colors hover:text-accent hover:border-accent w-max"
+                    className="mt-auto inline-flex items-center gap-2 border border-primary rounded-full px-5 py-2 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-primary transition-colors hover:bg-primary hover:text-white w-max"
                   >
-                    View Itinerary {pkgs.length > 1 && <span className="text-[10px] text-gray-400 font-sans tracking-normal">({pkgs.length} circuits)</span>}
+                    View Itinerary {pkgs.length > 1 && <span className="text-[10px] font-sans tracking-normal font-normal opacity-80">({pkgs.length} circuits)</span>}
                   </Link>
                 ) : (
                   <a

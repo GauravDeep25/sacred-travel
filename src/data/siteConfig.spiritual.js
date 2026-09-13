@@ -310,10 +310,6 @@ export const spiritualSiteConfig = {
             activities: [`Arrive in Ujjain and transfer to the hotel`, `Check-in at the hotel near Mahakaleshwar Temple`, `Freshen up and relax`, `Visit Kaal Bhairav Temple for darshan`, `Visit Gadkalika Mata Temple`, `Visit Mangal Nath Temple, believed to be associated with the origin of Mars`, `Proceed to Ram Ghat for the evening Shipra Aarti`, `Visit Mahakaleshwar Temple for darshan through VIP Pass`, `Visit Harsiddhi Mata Temple`, `Return to the hotel and rest`],
           },
           {
-            title: `Day 1 – Arrival in Ujjain | Temple Darshan & Local Exploration`,
-            activities: [`Early morning breakfast at the hotel`, `Check out from the hotel`, `Drive towards Omkareshwar (Approx. 2.5–3 hours)`, `Arrive in Omkareshwar and proceed for Omkareshwar Jyotirlinga darshan`, `VIP Darshan at Omkareshwar Temple`, `Visit Mamleshwar Temple for darshan`, `Enjoy a peaceful boat ride on the Narmada River`, `Explore the spiritual surroundings of Omkareshwar`, `Check-in at the hotel and relax`],
-          },
-          {
             title: `Day 3 – Omkareshwar to Ujjain / Indore | Departure`,
             activities: [`Early morning breakfast at the hotel`, `Check out from the hotel`, `Optional morning darshan at Omkareshwar Temple, depending on departure time`, `Begin your journey towards Ujjain or Indore`, `Drop at your preferred location, railway station, or airport`],
           },

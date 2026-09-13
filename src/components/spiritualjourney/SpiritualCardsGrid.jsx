@@ -43,12 +43,12 @@ export default function SpiritualCardsGrid({ cards }) {
 
             <div className="mt-8 flex flex-wrap gap-4">
               {card.itineraryId && (
-                <Link
-                  to={`/itinerary/${card.itineraryId}`}
-                  className="inline-block border-b border-accent pb-1 text-[10px] uppercase tracking-[0.2em] font-semibold text-accent hover:text-primary hover:border-primary transition-colors"
-                >
-                  View Itinerary
-                </Link>
+                  <Link
+                    to={`/itinerary/${card.itineraryId}`}
+                    className="inline-flex items-center justify-center gap-2 border border-accent rounded-full px-5 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-accent transition-colors hover:bg-accent hover:text-white"
+                  >
+                    View Itinerary
+                  </Link>
               )}
               <a
                 href={`https://wa.me/918591262424?text=I'm%20interested%20in%20the%20${encodeURIComponent(card.cardTitle)}%20journey.`}

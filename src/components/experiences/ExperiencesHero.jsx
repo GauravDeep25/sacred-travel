@@ -25,7 +25,7 @@ export default function ExperiencesHero() {
             transition={{ duration: 2.2, ease: 'easeInOut' }}
             className="absolute inset-0"
           >
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/15 z-10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/65 to-black/45 md:via-black/35 md:to-black/15 z-10" />
             <img
               src={slide.img}
               className="w-full h-full object-cover ken-burns"

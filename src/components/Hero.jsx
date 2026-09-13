@@ -14,7 +14,7 @@ export default function Hero() {
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-dark">
       <AnimatePresence mode="wait">
         <motion.div key={index} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 2 }} className="absolute inset-0">
-          <div className="absolute inset-0 bg-black/40 z-10" />
+          <div className="absolute inset-0 bg-black/65 md:bg-black/40 z-10" />
           <img src={siteData.hero[index].img} className="w-full h-full object-cover ken-burns" />
         </motion.div>
       </AnimatePresence>
