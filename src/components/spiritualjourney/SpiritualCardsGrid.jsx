@@ -45,7 +45,7 @@ export default function SpiritualCardsGrid({ cards }) {
               {card.itineraryId && (
                   <Link
                     to={`/itinerary/${card.itineraryId}`}
-                    className="inline-flex items-center justify-center gap-2 border border-accent rounded-full px-5 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-accent transition-colors hover:bg-accent hover:text-white"
+                    className="inline-flex items-center justify-center gap-2 border border-accent rounded-md px-5 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-accent transition-colors hover:bg-accent hover:text-white"
                   >
                     View Itinerary
                   </Link>
