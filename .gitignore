@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Itinerary presentation templates (offline/reference only)
+templates/
