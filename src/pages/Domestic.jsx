@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Loader2 } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { domesticSiteConfig } from '../data/siteConfig.domestic';
 import DomesticGrid from '../components/domestic/DomesticGrid';
 
 export default function Domestic() {
+  const navigate = useNavigate();
   const [index, setIndex] = useState(0);
+  const [form, setForm] = useState({ name: '', email: '', phone: '', destination: '', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const slides = siteConfig.domestic.hero;
 
@@ -25,6 +30,90 @@ export default function Domestic() {
   }, [slides.length]); 
 
   const staticContent = slides[0];
+
+  const handleFormChange = (e) => {
+    setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    if (!form.name || !form.email) return;
+
+    setIsSubmitting(true);
+    try {
+      let response;
+      let data = {};
+      let useFallback = false;
+
+      try {
+        response = await fetch("https://formsubmit.co/ajax/info@yugatirtha.com", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({
+            name: form.name,
+            email: form.email,
+            phone: form.phone || 'Not provided',
+            destination: form.destination || 'Domestic Region Enquiry',
+            message: form.message || 'No additional message',
+            _subject: `New Domestic Region Enquiry: ${form.destination || 'Domestic'} - ${form.name}`,
+            _template: "table",
+            _captcha: "false"
+          })
+        });
+        data = await response.json();
+        if (!response.ok && data.success !== "true" && data.success !== true && !(data.message && data.message.includes("Activation"))) {
+          useFallback = true;
+        }
+      } catch (err) {
+        useFallback = true;
+      }
+
+      if (useFallback) {
+        response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({
+            access_key: "7072b3d5-b4da-4be8-8ca6-8b89991604a1",
+            name: form.name,
+            email: form.email,
+            phone: form.phone || 'Not provided',
+            destination: form.destination || 'Domestic Region Enquiry',
+            message: form.message || 'No additional message',
+            subject: `New Domestic Region Enquiry: ${form.destination || 'Domestic'} - ${form.name}`
+          })
+        });
+        data = await response.json();
+      }
+
+      navigate('/thank-you', {
+        state: {
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          destination: form.destination || 'Domestic Circuit',
+          message: form.message,
+          activationNotice: Boolean(data.message && data.message.includes("Activation"))
+        }
+      });
+    } catch (err) {
+      navigate('/thank-you', {
+        state: {
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          destination: form.destination || 'Domestic Circuit'
+        }
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="bg-base min-h-screen">
@@ -96,31 +185,37 @@ export default function Domestic() {
               Tell us the region, the dates and who is travelling — we'll send a considered itinerary, not a template.
             </p>
 
-            <form className="space-y-10">
+            <form className="space-y-10" onSubmit={handleFormSubmit}>
               <div className="grid gap-10 md:grid-cols-2">
                 <div>
                   <label htmlFor="name" className="text-[#D4A373] text-[10px] tracking-widest font-semibold uppercase block mb-3">
-                    Name
+                    Name *
                   </label>
                   <input 
                     id="name" 
+                    name="name"
                     required 
+                    value={form.name}
+                    onChange={handleFormChange}
+                    disabled={isSubmitting}
                     placeholder="Your full name" 
-                    className="w-full border-b border-gray-300 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-gray-400 focus:border-[#D4A373]" 
-                    name="name" 
+                    className="w-full border-b border-gray-300 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-gray-400 focus:border-[#D4A373] disabled:opacity-50" 
                   />
                 </div>
                 <div>
                   <label htmlFor="email" className="text-[#D4A373] text-[10px] tracking-widest font-semibold uppercase block mb-3">
-                    Email
+                    Email *
                   </label>
                   <input 
                     id="email" 
-                    required 
-                    placeholder="you@email.com" 
-                    className="w-full border-b border-gray-300 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-gray-400 focus:border-[#D4A373]" 
+                    name="email"
                     type="email" 
-                    name="email" 
+                    required 
+                    value={form.email}
+                    onChange={handleFormChange}
+                    disabled={isSubmitting}
+                    placeholder="you@email.com" 
+                    className="w-full border-b border-gray-300 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-gray-400 focus:border-[#D4A373] disabled:opacity-50" 
                   />
                 </div>
                 <div>
@@ -129,9 +224,12 @@ export default function Domestic() {
                   </label>
                   <input 
                     id="phone" 
+                    name="phone"
+                    value={form.phone}
+                    onChange={handleFormChange}
+                    disabled={isSubmitting}
                     placeholder="+91 ..." 
-                    className="w-full border-b border-gray-300 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-gray-400 focus:border-[#D4A373]" 
-                    name="phone" 
+                    className="w-full border-b border-gray-300 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-gray-400 focus:border-[#D4A373] disabled:opacity-50" 
                   />
                 </div>
                 <div>
@@ -140,9 +238,12 @@ export default function Domestic() {
                   </label>
                   <input 
                     id="destination" 
+                    name="destination"
+                    value={form.destination}
+                    onChange={handleFormChange}
+                    disabled={isSubmitting}
                     placeholder="Char Dham, Kashmir, Kerala..." 
-                    className="w-full border-b border-gray-300 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-gray-400 focus:border-[#D4A373]" 
-                    name="destination" 
+                    className="w-full border-b border-gray-300 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-gray-400 focus:border-[#D4A373] disabled:opacity-50" 
                   />
                 </div>
               </div>
@@ -155,16 +256,21 @@ export default function Domestic() {
                   id="message" 
                   name="message" 
                   rows="3" 
+                  value={form.message}
+                  onChange={handleFormChange}
+                  disabled={isSubmitting}
                   placeholder="Tell us about the journey you have in mind." 
-                  className="w-full border-b border-gray-300 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-gray-400 focus:border-[#D4A373] resize-none"
+                  className="w-full border-b border-gray-300 bg-transparent py-3 text-sm outline-none transition-colors placeholder:text-gray-400 focus:border-[#D4A373] resize-none disabled:opacity-50" 
                 ></textarea>
               </div>
 
               <button 
                 type="submit" 
-                className="bg-[#E2852B] text-white px-8 py-3.5 text-[11px] font-bold uppercase tracking-[0.2em] transition-colors hover:bg-[#c97524] mt-4"
+                disabled={isSubmitting}
+                className="inline-flex items-center gap-2 bg-[#E2852B] text-white px-8 py-3.5 text-[11px] font-bold uppercase tracking-[0.2em] transition-colors hover:bg-[#c97524] mt-4 disabled:opacity-60 cursor-pointer"
               >
-                Send Enquiry
+                {isSubmitting && <Loader2 size={14} className="animate-spin" />}
+                {isSubmitting ? 'Sending...' : 'Send Enquiry'}
               </button>
             </form>
           </motion.div>

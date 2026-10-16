@@ -1,0 +1,111 @@
+{
+  "destination": "sikkim",
+  "destinationDisplayName": "Sikkim",
+  "category": "Domestic",
+  "region": "Northeast India",
+  "packageId": "sikkim-2",
+  "packageTitle": "Sikkim",
+  "duration": "Sikkim 5N/6D",
+  "durationShort": "5N/6D",
+  "slug": "5n-6d",
+  "pagePath": "/itinerary/sikkim/5n-6d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/sikkim/5n-6d",
+  "apiEndpoint": "/api/itineraries/sikkim/5n-6d.json",
+  "image": "/assets/sikkim.jpg",
+  "inclusions": [
+    "Travel as per the itinerary in a hatchback or SUV, depending on the group size",
+    "Accommodation for 5 nights on a sharing basis, including 2 nights in Gangtok, 1 night in Pelling, and 2 nights in Darjeeling",
+    "A total of 6 meals, with breakfast provided from Day 2 to Day 6, Candlelight dinner at the hotel in Darjeeling",
+    "Driver charges, permits, tolls, fuel, and parking charges",
+    "Airport or railway station pickup and drop-off"
+  ],
+  "days": [
+    {
+      "title": "Day 1 – Arrival at Bagdogra/NJP & Transfer to Gangtok",
+      "activities": [
+        "Arrive at Bagdogra Airport/NJP Railway Station and meet your driver.",
+        "Begin your scenic journey towards Gangtok, the capital of Sikkim.",
+        "Enjoy the beautiful mountain landscapes and winding roads along the way.",
+        "Stop at suitable viewpoints along the route for refreshments and photographs.",
+        "Arrive in Gangtok and check in to your hotel.",
+        "Spend the evening at leisure.",
+        "Explore the famous MG Marg, known for its vibrant atmosphere, cafés, shops, and restaurants.",
+        "Return to the hotel for dinner.",
+        "Overnight stay in Gangtok."
+      ]
+    },
+    {
+      "title": "Day 2 – Excursion to Tsomgo Lake & Baba Mandir | Nathula Pass (Optional)",
+      "activities": [
+        "Enjoy an early breakfast at the hotel.",
+        "Start your excursion towards Tsomgo Lake, a spectacular high-altitude glacial lake surrounded by Himalayan mountains.",
+        "Spend some time enjoying the scenery and taking photographs.",
+        "Continue towards Baba Harbhajan Singh Mandir, popularly known as Baba Mandir.",
+        "Explore the site and learn about its local significance.",
+        "Optional: Proceed towards Nathula Pass, the historic mountain pass on the India–Tibet border, subject to permit availability, weather, and road conditions.",
+        "Return to Gangtok after sightseeing.",
+        "Spend the evening relaxing at the hotel or exploring MG Marg.",
+        "Overnight stay in Gangtok."
+      ]
+    },
+    {
+      "title": "Day 3 – Gangtok to Pelling | Transfer via Ravangla",
+      "activities": [
+        "Enjoy breakfast and check out from your Gangtok hotel.",
+        "Begin your scenic journey towards Pelling.",
+        "En route, visit Ravangla, a beautiful mountain destination in South Sikkim.",
+        "Visit the famous Buddha Park, home to a magnificent Buddha statue surrounded by peaceful gardens and Himalayan landscapes.",
+        "Spend some time exploring the park and enjoying the panoramic mountain views.",
+        "Continue your journey towards Pelling.",
+        "Drive through picturesque mountain roads, forests, valleys, and local villages.",
+        "Arrive in Pelling and check in to your hotel.",
+        "Spend the evening at leisure.",
+        "Enjoy the peaceful mountain atmosphere and views of the surrounding Himalayas.",
+        "Overnight stay in Pelling."
+      ]
+    },
+    {
+      "title": "Day 4 – Pelling Half Day Sightseeing | Skywalk Experience | Transfer to Darjeeling",
+      "activities": [
+        "Enjoy breakfast at the hotel.",
+        "Begin your half-day sightseeing tour of Pelling.",
+        "Visit the historic Pemayangtse Monastery, one of the important monasteries in Sikkim.",
+        "Explore the scenic surroundings and enjoy views of the Himalayan landscape.",
+        "Visit Rabdentse Ruins, the remains of the former capital of Sikkim, if time permits.",
+        "Experience the famous Pelling Skywalk, offering panoramic views of the surrounding mountains and valleys.",
+        "After sightseeing, check out and begin your journey towards Darjeeling.",
+        "Enjoy the scenic drive through the hills.",
+        "Arrive in Darjeeling and check in to your hotel.",
+        "Spend the evening at leisure.",
+        "Overnight stay in Darjeeling."
+      ]
+    },
+    {
+      "title": "Day 5 – Full Day Local Sightseeing in Darjeeling | Candlelight Dinner",
+      "activities": [
+        "Start the day early and proceed towards Tiger Hill to witness the spectacular sunrise over the Himalayan ranges, weather permitting.",
+        "On the way back, visit Ghoom Monastery and Batasia Loop.",
+        "Return to the hotel for breakfast.",
+        "Continue with local sightseeing in Darjeeling.",
+        "Visit the Himalayan Mountaineering Institute and Padmaja Naidu Himalayan Zoological Park.",
+        "Explore the Tenzing Rock area.",
+        "Visit a local tea garden and learn about Darjeeling's famous tea.",
+        "In the evening, take a leisurely walk around Chowrasta/Mall Road and explore the local market.",
+        "In the evening, enjoy a special candlelight dinner, creating a memorable experience surrounded by the beautiful Darjeeling hills.",
+        "Return to the hotel.",
+        "Overnight stay in Darjeeling."
+      ]
+    },
+    {
+      "title": "Day 6 – Departure | Bid Farewell to Darjeeling",
+      "activities": [
+        "Enjoy breakfast at the hotel.",
+        "Check out and begin your journey towards Bagdogra Airport/NJP Railway Station.",
+        "Enjoy the final scenic views of the Himalayan foothills during the drive.",
+        "Arrive at Bagdogra/NJP according to your departure schedule.",
+        "Proceed for your onward journey with beautiful memories of Sikkim & Darjeeling."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Sikkim%20Sikkim%205N%2F6D%20package"
+}

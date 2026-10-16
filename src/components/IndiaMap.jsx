@@ -1,9 +1,11 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 
 export default function IndiaMap({ onRegionClick }) {
-  const [imgSize, setImgSize] = useState({ w: 0, h: 0 });
   const [selectedRegion, setSelectedRegion] = useState(null); // Track clicked region for mobile
-  const imgRef = useRef(null);
+
+  // Original image dimensions used for Image-Map.net coordinates
+  const ORIGINAL_WIDTH = 2754;
+  const ORIGINAL_HEIGHT = 1536;
 
   // Exact coordinates generated from Image-Map.net
   const regions = {
@@ -18,78 +20,64 @@ export default function IndiaMap({ onRegionClick }) {
     onRegionClick(regionName);     // Triggers parent state change
   };
 
-  const handleImageLoad = (e) => {
-    setImgSize({ w: e.target.naturalWidth, h: e.target.naturalHeight });
-  };
-
-  useEffect(() => {
-    if (imgRef.current && imgRef.current.complete && imgRef.current.naturalWidth) {
-      setImgSize({ w: imgRef.current.naturalWidth, h: imgRef.current.naturalHeight });
-    }
-  }, []);
-
   return (
     <div className="relative mx-auto w-full overflow-hidden rounded-lg shadow-sm">
       
       <img 
-        ref={imgRef}
         src="/assets/indiaRegionMap.png" 
         alt="Map of India Regions" 
-        onLoad={handleImageLoad}
         className="block h-auto w-full object-contain"
       />
 
-      {imgSize.w > 0 && (
-        <svg 
-          viewBox={`0 0 ${imgSize.w} ${imgSize.h}`} 
-          className="absolute inset-0 h-full w-full"
-          preserveAspectRatio="none"
+      <svg 
+        viewBox={`0 0 ${ORIGINAL_WIDTH} ${ORIGINAL_HEIGHT}`} 
+        className="absolute inset-0 h-full w-full"
+        preserveAspectRatio="none"
+      >
+        {/* North */}
+        <polygon 
+          points={regions.north} 
+          onClick={() => handleRegionClick('north')}
+          className={`cursor-pointer transition-colors duration-200 hover:fill-[#f3821d]/60 ${
+            selectedRegion === 'north' ? 'fill-[#f3821d]/60' : 'fill-transparent'
+          }`}
         >
-          {/* North */}
-          <polygon 
-            points={regions.north} 
-            onClick={() => handleRegionClick('north')}
-            className={`cursor-pointer transition-colors duration-200 hover:fill-[#f3821d]/60 ${
-              selectedRegion === 'north' ? 'fill-[#f3821d]/60' : 'fill-transparent'
-            }`}
-          >
-            <title>North Region</title>
-          </polygon>
-          
-          {/* West */}
-          <polygon 
-            points={regions.west} 
-            onClick={() => handleRegionClick('west')}
-            className={`cursor-pointer transition-colors duration-200 hover:fill-[#f3821d]/60 ${
-              selectedRegion === 'west' ? 'fill-[#f3821d]/60' : 'fill-transparent'
-            }`}
-          >
-            <title>West Region</title>
-          </polygon>
-          
-          {/* South */}
-          <polygon 
-            points={regions.south} 
-            onClick={() => handleRegionClick('south')}
-            className={`cursor-pointer transition-colors duration-200 hover:fill-[#f3821d]/60 ${
-              selectedRegion === 'south' ? 'fill-[#f3821d]/60' : 'fill-transparent'
-            }`}
-          >
-            <title>South Region</title>
-          </polygon>
-          
-          {/* East */}
-          <polygon 
-            points={regions.east} 
-            onClick={() => handleRegionClick('east')}
-            className={`cursor-pointer transition-colors duration-200 hover:fill-[#f3821d]/60 ${
-              selectedRegion === 'east' ? 'fill-[#f3821d]/60' : 'fill-transparent'
-            }`}
-          >
-            <title>East Region</title>
-          </polygon>
-        </svg>
-      )}
+          <title>North Region</title>
+        </polygon>
+        
+        {/* West */}
+        <polygon 
+          points={regions.west} 
+          onClick={() => handleRegionClick('west')}
+          className={`cursor-pointer transition-colors duration-200 hover:fill-[#f3821d]/60 ${
+            selectedRegion === 'west' ? 'fill-[#f3821d]/60' : 'fill-transparent'
+          }`}
+        >
+          <title>West Region</title>
+        </polygon>
+        
+        {/* South */}
+        <polygon 
+          points={regions.south} 
+          onClick={() => handleRegionClick('south')}
+          className={`cursor-pointer transition-colors duration-200 hover:fill-[#f3821d]/60 ${
+            selectedRegion === 'south' ? 'fill-[#f3821d]/60' : 'fill-transparent'
+          }`}
+        >
+          <title>South Region</title>
+        </polygon>
+        
+        {/* East */}
+        <polygon 
+          points={regions.east} 
+          onClick={() => handleRegionClick('east')}
+          className={`cursor-pointer transition-colors duration-200 hover:fill-[#f3821d]/60 ${
+            selectedRegion === 'east' ? 'fill-[#f3821d]/60' : 'fill-transparent'
+          }`}
+        >
+          <title>East Region</title>
+        </polygon>
+      </svg>
       
     </div>
   );

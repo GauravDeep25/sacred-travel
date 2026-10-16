@@ -1,0 +1,164 @@
+# ==============================================================================
+# PRODUCTION ROUTES & ENDPOINTS — https://www.yugatirtha.com
+# ==============================================================================
+
+# --- Primary Page Routes (GET) ---
+https://www.yugatirtha.com/
+https://www.yugatirtha.com/domestic
+https://www.yugatirtha.com/international
+https://www.yugatirtha.com/spiritualjourney
+https://www.yugatirtha.com/experiences
+https://www.yugatirtha.com/about
+https://www.yugatirtha.com/contact
+https://www.yugatirtha.com/thank-you
+
+# --- Domestic Destination Primary Routes (GET) ---
+https://www.yugatirtha.com/itinerary/kashmir
+https://www.yugatirtha.com/itinerary/ladakh
+https://www.yugatirtha.com/itinerary/himachal
+https://www.yugatirtha.com/itinerary/spiti
+https://www.yugatirtha.com/itinerary/meghalaya
+https://www.yugatirtha.com/itinerary/sikkim
+https://www.yugatirtha.com/itinerary/arunachal
+https://www.yugatirtha.com/itinerary/rajasthan
+
+# --- Domestic Sub-Itinerary Endpoints (GET) ---
+https://www.yugatirtha.com/itinerary/kashmir/4n-5d # Kashmir 4N/5D
+https://www.yugatirtha.com/itinerary/kashmir/5n-6d # Kashmir 5N/6D
+https://www.yugatirtha.com/itinerary/kashmir/6n-7d # Kashmir 6N/7D
+https://www.yugatirtha.com/itinerary/ladakh/5n-6d # Ladakh 5N/6D
+https://www.yugatirtha.com/itinerary/ladakh/6n-7d # Ladakh 6N/7D
+https://www.yugatirtha.com/itinerary/ladakh/7n-8d # Ladakh 7N/8D
+https://www.yugatirtha.com/itinerary/himachal/4n-5d # Himachal 4N/5D
+https://www.yugatirtha.com/itinerary/himachal/5n-6d # Himachal 5N/6D
+https://www.yugatirtha.com/itinerary/himachal/5n-6d-jibhi-tirthan # Himachal 5N/6D
+https://www.yugatirtha.com/itinerary/himachal/8n-9d # Himachal 8N/9D
+https://www.yugatirtha.com/itinerary/spiti/6n-7d # Spiti Valley 6N/7D
+https://www.yugatirtha.com/itinerary/spiti/7n-8d # Spiti Valley 7N/8D
+https://www.yugatirtha.com/itinerary/spiti/8n-9d # Spiti Valley 8N/9D
+https://www.yugatirtha.com/itinerary/meghalaya/4n-5d # Meghalaya 4N/5D
+https://www.yugatirtha.com/itinerary/meghalaya/5n-6d # Meghalaya 5N/6D
+https://www.yugatirtha.com/itinerary/meghalaya/6n-7d # Meghalaya 6N/7D
+https://www.yugatirtha.com/itinerary/sikkim/4n-5d # Sikkim 4N/5D
+https://www.yugatirtha.com/itinerary/sikkim/5n-6d # Sikkim 5N/6D
+https://www.yugatirtha.com/itinerary/sikkim/6n-7d # Sikkim 6N/7D
+https://www.yugatirtha.com/itinerary/arunachal/4n-5d # Arunachal 4N/5D
+https://www.yugatirtha.com/itinerary/arunachal/5n-6d # Arunachal 5N/6D
+https://www.yugatirtha.com/itinerary/arunachal/6n-7d # Arunachal 6N/7D
+https://www.yugatirtha.com/itinerary/rajasthan/6n-7d # Rajasthan 6N/7D
+https://www.yugatirtha.com/itinerary/rajasthan/7n-8d # Rajasthan 7N/8D
+https://www.yugatirtha.com/itinerary/rajasthan/9n-10d # Rajasthan 9N/10D
+
+# --- International Destination Primary Routes (GET) ---
+https://www.yugatirtha.com/itinerary/bali
+https://www.yugatirtha.com/itinerary/japan
+https://www.yugatirtha.com/itinerary/srilanka
+https://www.yugatirtha.com/itinerary/philippines
+https://www.yugatirtha.com/itinerary/georgia
+https://www.yugatirtha.com/itinerary/vietnam
+
+# --- International Sub-Itinerary Endpoints (GET) ---
+https://www.yugatirtha.com/itinerary/bali/5n-6d # Bali 5N/6D
+https://www.yugatirtha.com/itinerary/bali/5n-6d-yoga # Bali 5N/6D (Yoga)
+https://www.yugatirtha.com/itinerary/japan/7n-8d # Japan 7N/8D
+https://www.yugatirtha.com/itinerary/japan/8n-9d # Japan 8N/9D
+https://www.yugatirtha.com/itinerary/srilanka/5n-6d # Sri Lanka 5N/6D
+https://www.yugatirtha.com/itinerary/srilanka/5n-6d-ella-trincomalee # Sri Lanka 5N/6D (Ella & Trincomalee)
+https://www.yugatirtha.com/itinerary/philippines/7n-8d # Philippines 7N/8D
+https://www.yugatirtha.com/itinerary/philippines/6n-7d # Philippines 6N/7D
+https://www.yugatirtha.com/itinerary/georgia/5n-6d # Georgia 5N/6D
+https://www.yugatirtha.com/itinerary/georgia/6n-7d # Georgia 6N/7D
+https://www.yugatirtha.com/itinerary/vietnam/6n-7d # Vietnam 6N/7D
+https://www.yugatirtha.com/itinerary/vietnam/7n-8d # Vietnam 7N/8D
+
+# --- Spiritual Destination Primary Routes (GET) ---
+https://www.yugatirtha.com/itinerary/uttarakhand
+https://www.yugatirtha.com/itinerary/uttarpradesh
+https://www.yugatirtha.com/itinerary/madhyapradesh
+https://www.yugatirtha.com/itinerary/maharashtra
+https://www.yugatirtha.com/itinerary/gujarat
+https://www.yugatirtha.com/itinerary/odisha
+https://www.yugatirtha.com/itinerary/tamilnadu
+https://www.yugatirtha.com/itinerary/andhrapradesh
+
+# --- Spiritual Sub-Itinerary Endpoints (GET) ---
+https://www.yugatirtha.com/itinerary/uttarakhand/do-dham-5n-6d # Do Dham 5N/6D
+https://www.yugatirtha.com/itinerary/uttarakhand/char-dham-9n-10d # Char Dham 9N/10D
+https://www.yugatirtha.com/itinerary/uttarakhand/kainchi-dham-2n-3d # Kainchi Dham 2N/3D
+https://www.yugatirtha.com/itinerary/uttarakhand/badrinath-4n-5d # Badrinath 4N/5D
+https://www.yugatirtha.com/itinerary/uttarpradesh/varanasi-ayodhya-4n-5d # Varanasi - Ayodhya 4N/5D
+https://www.yugatirtha.com/itinerary/uttarpradesh/kashi-2n-3d # Kashi 2N/3D
+https://www.yugatirtha.com/itinerary/uttarpradesh/kashi-prayagraj-ayodhya-4n-5d # Kashi-Prayagraj-Ayodhya 4N/5D
+https://www.yugatirtha.com/itinerary/madhyapradesh/bhasma-aarti-2n-3d # Bhasma Aarti Special 2N/3D
+https://www.yugatirtha.com/itinerary/madhyapradesh/vip-passes-2n-3d # VIP Passes 2N/3D
+https://www.yugatirtha.com/itinerary/maharashtra/pune-jyotirling-2n-3d # Maharashtra Jyotirling Pune 2N/3D
+https://www.yugatirtha.com/itinerary/maharashtra/pune-jyotirling-3n-4d # Maharashtra Jyotirling Pune 3N/4D
+https://www.yugatirtha.com/itinerary/maharashtra/mumbai-jyotirling-3n-4d # Maharashtra Jyotirling Mumbai 3N/4D
+https://www.yugatirtha.com/itinerary/gujarat/3n-4d # Gujarat Jyotirling 3N/4D
+https://www.yugatirtha.com/itinerary/odisha/puri-dham-4n-5d # Puri Dham 4N/5D
+https://www.yugatirtha.com/itinerary/odisha/puri-konark-3n-4d # Puri Konark 3N/4D
+https://www.yugatirtha.com/itinerary/tamilnadu/rameswaram-4n-5d # Rameswaram 4N/5D
+https://www.yugatirtha.com/itinerary/tamilnadu/pancha-bhoota-stalam-6n-7d # Pancha Bhoota Stalam 6N/7D
+https://www.yugatirtha.com/itinerary/andhrapradesh/mallikarjun-jyotirling-3n-4d # Mallikarjun Jyotirling 3N/4D
+https://www.yugatirtha.com/itinerary/andhrapradesh/tirupati-2n-3d # Tirupati 2N/3D
+https://www.yugatirtha.com/itinerary/andhrapradesh/tirupati-kalahasti-2n-3d # Tirupati with Kalahasti 2N/3D
+
+# --- Preview Destination Routes (GET) ---
+https://www.yugatirtha.com/itinerary/kerala
+
+# --- Static JSON API Endpoints (GET) ---
+https://www.yugatirtha.com/api/itineraries.json
+https://www.yugatirtha.com/api/itineraries/index.json
+https://www.yugatirtha.com/api/itineraries/kashmir.json
+https://www.yugatirtha.com/api/itineraries/ladakh.json
+https://www.yugatirtha.com/api/itineraries/himachal.json
+https://www.yugatirtha.com/api/itineraries/spiti.json
+https://www.yugatirtha.com/api/itineraries/meghalaya.json
+https://www.yugatirtha.com/api/itineraries/sikkim.json
+https://www.yugatirtha.com/api/itineraries/arunachal.json
+https://www.yugatirtha.com/api/itineraries/rajasthan.json
+https://www.yugatirtha.com/api/itineraries/bali.json
+https://www.yugatirtha.com/api/itineraries/japan.json
+https://www.yugatirtha.com/api/itineraries/srilanka.json
+https://www.yugatirtha.com/api/itineraries/philippines.json
+https://www.yugatirtha.com/api/itineraries/georgia.json
+https://www.yugatirtha.com/api/itineraries/vietnam.json
+https://www.yugatirtha.com/api/itineraries/uttarakhand.json
+https://www.yugatirtha.com/api/itineraries/uttarpradesh.json
+https://www.yugatirtha.com/api/itineraries/madhyapradesh.json
+https://www.yugatirtha.com/api/itineraries/maharashtra.json
+https://www.yugatirtha.com/api/itineraries/gujarat.json
+https://www.yugatirtha.com/api/itineraries/odisha.json
+https://www.yugatirtha.com/api/itineraries/tamilnadu.json
+https://www.yugatirtha.com/api/itineraries/andhrapradesh.json
+
+# --- Redirect & Alias Routes ---
+/enquiry -> /contact (200 OK)
+/enquire -> /contact (200 OK)
+/thankyou -> /thank-you (301 Redirect)
+/itinerary -> /domestic (301 Redirect)
+/itenary -> /domestic (301 Redirect)
+/itineraries -> /domestic (301 Redirect)
+/itenary/* -> /itinerary/* (200 OK)
+
+# --- Section Deep-Link Anchors ---
+https://www.yugatirtha.com/domestic#north-india
+https://www.yugatirtha.com/domestic#northeast-india
+https://www.yugatirtha.com/domestic#west-india
+https://www.yugatirtha.com/domestic#south-india
+https://www.yugatirtha.com/international#southeast-asia
+https://www.yugatirtha.com/international#east-&-south-asia
+https://www.yugatirtha.com/international#cis-countries
+https://www.yugatirtha.com/spiritualjourney#north
+https://www.yugatirtha.com/spiritualjourney#south
+https://www.yugatirtha.com/spiritualjourney#east
+https://www.yugatirtha.com/spiritualjourney#west
+
+# --- API & External Transactional Endpoints ---
+POST https://formsubmit.co/ajax/info@yugatirtha.com
+POST https://api.web3forms.com/submit
+GET  https://wa.me/918591262424
+
+# --- Static / SEO Endpoints ---
+GET https://www.yugatirtha.com/sitemap.xml
+GET https://www.yugatirtha.com/robots.txt

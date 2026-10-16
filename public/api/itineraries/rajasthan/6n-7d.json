@@ -1,0 +1,113 @@
+{
+  "destination": "rajasthan",
+  "destinationDisplayName": "Rajasthan",
+  "category": "Domestic",
+  "region": "West India",
+  "packageId": "rajasthan-1",
+  "packageTitle": "Rajasthan",
+  "duration": "Rajasthan 6N/7D",
+  "durationShort": "6N/7D",
+  "slug": "6n-7d",
+  "pagePath": "/itinerary/rajasthan/6n-7d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/rajasthan/6n-7d",
+  "apiEndpoint": "/api/itineraries/rajasthan/6n-7d.json",
+  "image": "/assets/rajasthan-Dznk4KEj.jpg",
+  "inclusions": [
+    "Airport / Railway Station pick up and drop as per your flight timings",
+    "Transfer & Sightseeing in an AC vehicle (SUV/Sedan/Tempo Traveler) as per group size with driver allowances, parking charges, toll tax and driver night halts",
+    "6 nights accommodation – 1 Night in Delhi, 2 Nights in Agra, 3 Nights in Jaipur on twin sharing basis",
+    "A total of 6 meals included (Breakfast from Day 2 to Day 7)",
+    "English speaking tour guide during city tour in Delhi, Agra, and Jaipur",
+    "Entrance fees for all monuments mentioned in the itinerary",
+    "Rickshaw ride in Old Delhi (Chandni Chowk)",
+    "Elephant / Jeep ride at Amber Fort",
+    "Bottled water during transfers and tour",
+    "24/7 National Tour Assistance"
+  ],
+  "days": [
+    {
+      "title": "Day 1 – Arrival in Delhi | Sightseeing Tour of Old & New Delhi",
+      "activities": [
+        "Arrive at the designated location in Delhi and board your vehicle for Delhi tour.",
+        "Begin your tour of Old Delhi with Red Fort, Jama Masjid, and a rickshaw ride through the narrow lanes of Chandni Chowk.",
+        "Drive past Raj Ghat, the memorial of Mahatma Gandhi.",
+        "Head to New Delhi and visit Qutub Minar.",
+        "Drive past India Gate, Rashtrapati Bhavan, and Parliament House.",
+        "Visit Humayun's Tomb, a UNESCO World Heritage site and fine example of Mughal architecture.",
+        "Check in to the hotel and relax.",
+        "Overnight stay in Delhi."
+      ]
+    },
+    {
+      "title": "Day 2 – Delhi Sightseeing Continues | Visit Lotus Temple, Akshardham Temple & Drive to Agra",
+      "activities": [
+        "Enjoy a delicious breakfast at the hotel and check out.",
+        "Visit Lotus Temple, a Bahá'í House of Worship famous for its flowerlike shape. (Closed on Mondays)",
+        "Next, visit Akshardham Temple, a modern Hindu temple complex known for its grand architecture and spiritual exhibitions.",
+        "Later, set out on a scenic drive to Agra (approx. 210 km / 4 hrs) via the Yamuna Expressway.",
+        "On arrival in Agra, check in to your hotel and unwind.",
+        "In the evening, visit Mehtab Bagh for a romantic view of the Taj Mahal from across the Yamuna River.",
+        "Explore local markets for shopping.",
+        "Overnight stay in Agra."
+      ]
+    },
+    {
+      "title": "Day 3 – Arrival in Agra | Visit Agra Fort, Tomb of I'timad-ud-Daulah",
+      "activities": [
+        "Enjoy breakfast and check out from hotel and proceed to visit Taj Mahal.",
+        "Visit Agra Fort, a UNESCO World Heritage site that served as the main residence of the Mughal emperors until 1638.",
+        "Explore its palaces, courtyards, and hall of public audience.",
+        "Next, visit Tomb of I'timad-ud-Daulah, often called the 'Baby Taj', a Mughal mausoleum often regarded as a draft of the Taj Mahal.",
+        "Visit Mehtab Bagh for a scenic view of Taj Mahal from across the river, if not visited on Day 2.",
+        "In the evening, explore local markets of Agra for leather goods, marble inlay work, and handicrafts.",
+        "Check in to your hotel and unwind.",
+        "Overnight stay in Agra."
+      ]
+    },
+    {
+      "title": "Day 4 – Early Morning Taj Mahal Visit | Drive to Jaipur via Fatehpur Sikri and Abhaneri Stepwell",
+      "activities": [
+        "Early morning visit the iconic Taj Mahal at sunrise.",
+        "Return to hotel for breakfast, check out and proceed towards Jaipur (approx. 240 km / 5-6 hrs).",
+        "En route, visit Fatehpur Sikri, the deserted red sandstone city built by Emperor Akbar in the late 16th century.",
+        "Explore Buland Darwaza, Jama Masjid, and Tomb of Salim Chishti.",
+        "Continue towards Jaipur, with an optional stop at Abhaneri stepwell (Chand Baori), one of India's largest and deepest stepwells.",
+        "Reach Jaipur in the evening and check in to your hotel.",
+        "Spend the rest of the evening at leisure or explore local markets.",
+        "Overnight stay in Jaipur."
+      ]
+    },
+    {
+      "title": "Day 5 – Transfer to Jaipur | Pink City Exploration - Amber Fort, City Palace, Hawa Mahal & Jantar Mantar",
+      "activities": [
+        "After breakfast, get ready for a full-day sightseeing tour of Jaipur, the Pink City.",
+        "Start with Amer Fort (Amber Fort), a hilltop fortress offering magnificent views, elephant ride or jeep ride.",
+        "Stop at Jal Mahal (Water Palace) for a photo stop.",
+        "Visit City Palace, a magnificent palace complex that combines Rajasthani and Mughal architecture. (Timings: 10 am to 5 pm)",
+        "Walk to the famous Hawa Mahal (Palace of Winds), featuring 953 small windows designed for royal women to observe street festivals.",
+        "Visit Jantar Mantar, an astronomical observatory built by Maharaja Sawai Jai Singh II and a UNESCO World Heritage site.",
+        "Explore the local bazaars of Jaipur for textiles, jewelry, handicrafts, and souvenirs.",
+        "Overnight stay in Jaipur."
+      ]
+    },
+    {
+      "title": "Day 6 – Local Sightseeing of Jaipur | Visit Jaigarh Fort, Nahargarh Fort and Galta Ji",
+      "activities": [
+        "Enjoy breakfast and set out for another day of exploration in Jaipur.",
+        "Visit Jaigarh Fort, home to the Jaivana cannon, once the world's largest cannon on wheels, and offering grand views of the surrounding hills.",
+        "Head to Nahargarh Fort, located on the Aravalli hills, offering sweeping views of Jaipur city.",
+        "Visit Galta Ji (Monkey Temple), an ancient Hindu pilgrimage site set in a narrow crevice in the hills, known for its natural springs and sacred kunds.",
+        "Rest of the day is at leisure for shopping or exploring local cafes.",
+        "Overnight stay in Jaipur."
+      ]
+    },
+    {
+      "title": "Day 7 – Departure day - End of Trip with Lifetime Memories",
+      "activities": [
+        "Enjoy breakfast, check out from the hotel, and proceed towards Delhi (approx. 270 km / 5-6 hrs) or Jaipur Airport/Railway Station for your onward journey.",
+        "Reach Delhi/Jaipur by evening and head towards airport/railway station for your onward flight/train with cherished memories of the Golden Triangle tour."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Rajasthan%20Rajasthan%206N%2F7D%20package"
+}

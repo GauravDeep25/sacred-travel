@@ -1,0 +1,147 @@
+{
+  "destination": "spiti",
+  "destinationDisplayName": "Spiti Valley",
+  "category": "Domestic",
+  "region": "North India",
+  "packageId": "spiti-3",
+  "packageTitle": "Spiti Valley",
+  "duration": "Spiti Valley 8N/9D",
+  "durationShort": "8N/9D",
+  "slug": "8n-9d",
+  "pagePath": "/itinerary/spiti/8n-9d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/spiti/8n-9d",
+  "apiEndpoint": "/api/itineraries/spiti/8n-9d.json",
+  "image": "/assets/hero-spiti.jpg",
+  "inclusions": [
+    "Volvo transfers from Delhi to Shimla & Manali to Delhi.",
+    "Entire travel from Shimla to Spiti and back to Manali by private vehicle as per group size.",
+    "7 nights' accommodation – 1 Night in Narkanda (hotel/stay), 1 Night in Chitkul (hotel/homestay), 1 Night in Tabo (hotel/homestay), 1 Night in Mudh Village (Pin Valley – homestay), 2 Nights in Kaza (hotel/homestay), 1 Night in camps at Chandratal.",
+    "All internal transfers as per itinerary.",
+    "Driver allowance, night charges, toll tax, parking charges, and all necessary permits (excluding special permits if required in restricted areas).",
+    "An oxygen cylinder 24X7 in the vehicle for emergency use."
+  ],
+  "days": [
+    {
+      "title": "Starting Day – Departure from Delhi to Shimla. Overnight Journey to Shimla.",
+      "activities": [
+        "Start your journey by boarding your Volvo bus from Delhi in the evening.",
+        "Leave the city behind as you start your Spiti Valley tour.",
+        "Enjoy the scenic drive as the roads wind through hills, forests, and quiet towns.",
+        "Overnight bus journey to Shimla."
+      ]
+    },
+    {
+      "title": "Day 1 – Arrival In Shimla & Transfer To Narkanda",
+      "activities": [
+        "Arrive in Shimla early in the morning and meet our representative for the onward journey towards Narkanda.",
+        "Start your scenic drive through winding mountain roads surrounded by pine forests, apple orchards, and breathtaking Himalayan views.",
+        "Reach Narkanda by evening and check in to your stay.",
+        "Spend the rest of the evening at leisure, relaxing in the cool mountain weather or exploring the nearby surroundings on your own.",
+        "Overnight stay in Narkanda."
+      ]
+    },
+    {
+      "title": "Day 2 – Narkanda To Chitkul | Explore Sangla & Rakcham",
+      "activities": [
+        "After breakfast, check out and begin your journey towards Chitkul, the last inhabited village near the Indo-Tibetan border.",
+        "On the way, explore Sangla, a beautiful Himalayan town known for its traditional wooden houses, apple orchards, and breathtaking mountain scenery.",
+        "Further ahead, visit Rakcham, a peaceful village located between Sangla and Chitkul, surrounded by pine forests and snow-capped peaks.",
+        "Continue through the picturesque Baspa Valley and reach Chitkul by evening.",
+        "Check in to your hotel or homestay and spend some time at leisure exploring the village surroundings or relaxing near the Baspa River.",
+        "Overnight stay in Chitkul."
+      ]
+    },
+    {
+      "title": "Day 3 – Chitkul To Tabo | Visit Khab Sangam, Nako Lake & Nako Village",
+      "activities": [
+        "Have your breakfast early and start your journey towards Tabo, entering the stunning landscapes of Spiti Valley.",
+        "En route, stop at Khab Sangam, the spectacular confluence where the Spiti River meets the Sutlej River in towering mountains.",
+        "Further ahead, you will visit Nako Village, a peaceful high-altitude settlement known for its traditional mud houses and scenic surroundings.",
+        "Spend some time near the beautiful Nako Lake, surrounded by willow trees and prayer flags, with panoramic mountain views.",
+        "Continue your Spiti Valley adventure further to witness the stark cold desert landscapes along the route.",
+        "Reach Tabo by evening and check in to your stay.",
+        "Spend the evening at leisure, relaxing in this quiet Himalayan village.",
+        "Overnight stay in Tabo."
+      ]
+    },
+    {
+      "title": "Day 4 – Explore Tabo & Dhankar | Transfer To Mudh Village",
+      "activities": [
+        "Start your morning with a fresh breakfast and get ready to explore the ancient wonders of Spiti Valley.",
+        "Today, we'll begin by visiting the famous Tabo Monastery, one of the oldest functioning Buddhist monasteries in the Himalayas, known for its ancient murals, meditation halls, and spiritual significance.",
+        "A little ahead, explore the nearby Tabo Caves, where monks once meditated in isolation in the rugged mountain terrain.",
+        "From there, continue towards the spectacular Dhankar Monastery, dramatically perched on a cliff overlooking the Spiti Valley and the confluence of the Spiti and Pin Rivers.",
+        "Later, drive towards the beautiful Pin Valley region, known for its peaceful villages, dramatic landscapes, and untouched natural beauty.",
+        "Reach Mudh Village by evening and check in to your stay.",
+        "Spend the rest of the evening relaxing in the scenic mountain views of Pin Valley.",
+        "Overnight stay in Mudh Village."
+      ]
+    },
+    {
+      "title": "Day 5 – Explore Mudh Village & Transfer To Kaza",
+      "activities": [
+        "Wake up to the peaceful views of Pin Valley and enjoy a fresh breakfast amidst the quiet mountain surroundings.",
+        "Spend some time exploring Mudh Village, known for its traditional mud houses, scenic landscapes, and untouched Himalayan beauty.",
+        "You can take a short walk through the village lanes, interact with locals, and soak in the calm atmosphere of this remote Spitian village.",
+        "Later, begin your journey towards Kaza, the main town of Spiti Valley.",
+        "Reach Kaza by evening and check in to your stay.",
+        "After some rest, head out to explore the lively Kaza Market, known for its local cafés, Tibetan eateries, handicraft shops, and backpacker vibe.",
+        "You can spend the evening trying local food, shopping for souvenirs, or simply enjoying the vibrant atmosphere of the town.",
+        "Overnight stay in Kaza."
+      ]
+    },
+    {
+      "title": "Day 6 – Explore Key Monastery, Kibber, Chicham, Hikkim, Komic & Langza",
+      "activities": [
+        "Start your day with an early breakfast and head out to explore Spiti's iconic high-altitude villages.",
+        "First stop is Key Monastery, perched dramatically on a hilltop.",
+        "Take in the views and experience the monastery's centuries-old, spiritual vibe.",
+        "Next, drive to Chicham Bridge, the highest suspension bridge in Asia, offering jaw-dropping valley views.",
+        "You'll visit Komic, one of the highest inhabited villages in the world.",
+        "From there, head to Hikkim, where you'll have a chance to send postcards from the world's highest post office.",
+        "Your last stop is Langza, known for its massive Buddha statue and fossil-rich land.",
+        "You can even try spotting marine fossils from when this region was once under the Tethys Sea.",
+        "By evening, drive back to Kaza.",
+        "Overnight stay in Kaza."
+      ]
+    },
+    {
+      "title": "Day 7 – Kaza To Chandra Taal | Overnight Campstay",
+      "activities": [
+        "Wake up early, have breakfast, and check out of the stay.",
+        "Today, you'll head towards one of its most magical spots on this Spiti tour, Chandratal.",
+        "En route, take a short halt at Losar, the last village of Spiti, for snacks and a quick break.",
+        "By evening, reach Chandra Taal and check into our camps.",
+        "Witness the vast turquoise lake changing its colours with the setting sun.",
+        "Enjoy dinner under a sky full of stars and the Milky Way stretching across like a glowing river.",
+        "Overnight stay in camps near Chandra Taal."
+      ]
+    },
+    {
+      "title": "Day 8 – Chandrataal To Manali",
+      "activities": [
+        "Start early in the morning after breakfast and begin our journey towards Manali.",
+        "The drive today is thrilling as we cross rugged roads, water crossings, off-road sections, and constantly changing Himalayan views.",
+        "On the way, you'll cross Kunzum Pass and continue through the wide valleys of Lahaul, where the landscape slowly begins to change.",
+        "Pass through the Atal Tunnel before entering the lush Kullu Valley side.",
+        "Reach Manali by evening and check into the hotel.",
+        "After some rest, head out to explore Old Manali for café hopping, trying local food, and experiencing the laid-back mountain vibe at your own pace.",
+        "Return to the hotel for dinner.",
+        "Overnight stay in Manali."
+      ]
+    },
+    {
+      "title": "Last Day – Self-Exploration In Manali | Depart For Delhi",
+      "activities": [
+        "Wake up to a fresh mountain morning and a relaxed start in Manali.",
+        "After breakfast, the day is free to explore the town at your own pace.",
+        "Visit Hadimba Devi Temple, take a walk through Old Manali, or spend time around Mall Road.",
+        "You can also explore cafés, shop for souvenirs, or just sit back and enjoy the last views of the mountains.",
+        "By evening, reach the boarding point and begin the journey back to Delhi.",
+        "Overnight journey to Delhi.",
+        "Your Spiti trip ends with a collection of mountain memories, long drives, and moments that stay with you long after the road ends."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Spiti%20Valley%20Spiti%20Valley%208N%2F9D%20package"
+}

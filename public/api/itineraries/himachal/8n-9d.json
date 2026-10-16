@@ -1,0 +1,161 @@
+{
+  "destination": "himachal",
+  "destinationDisplayName": "Himachal Pradesh",
+  "category": "Domestic",
+  "region": "North India",
+  "packageId": "himachal-4",
+  "packageTitle": "Himachal",
+  "duration": "Himachal 8N/9D",
+  "durationShort": "8N/9D",
+  "slug": "8n-9d",
+  "pagePath": "/itinerary/himachal/8n-9d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/himachal/8n-9d",
+  "apiEndpoint": "/api/itineraries/himachal/8n-9d.json",
+  "image": "/assets/himachal.jpg",
+  "inclusions": [
+    "8 Nights accommodation in selected hotels/camps",
+    "Daily breakfast & dinner",
+    "Overnight journey by Volvo/bus from Delhi to McLeodganj & Manali to Delhi",
+    "Private vehicle for local transfers & sightseeing",
+    "McLeodganj, Bir Billing, Kasol & Manali sightseeing",
+    "Bir Billing paragliding activity",
+    "River rafting, subject to weather & operational conditions",
+    "Manikaran Sahib visit",
+    "Chalal & Rudranag trekking experience",
+    "1 Night camping in Parvati Valley",
+    "Driver, fuel, toll & parking charges",
+    "Trek/camping assistance",
+    "Tour assistance throughout the journey"
+  ],
+  "days": [
+    {
+      "title": "DAY 0        Overnight Journey From Delhi to McLeodganj (Distance: Approx. 480 Km)",
+      "activities": [
+        "Depart from Delhi in the evening by overnight bus/vehicle.",
+        "Travel towards McLeod Ganj through the scenic landscapes of Himachal Pradesh.",
+        "Overnight journey towards the mountains."
+      ]
+    },
+    {
+      "title": "DAY 1        McLeod Ganj Sightseeing | Visit Bhagsunag Temple & Waterfall (Distance: Approx. 8-10 Km)",
+      "activities": [
+        "Arrive in McLeod Ganj in the morning.",
+        "Transfer to your hotel and freshen up.",
+        "After some rest, begin local sightseeing.",
+        "Visit Bhagsunag Temple, an important spiritual site surrounded by beautiful mountain scenery.",
+        "Continue with a short walk to Bhagsu Waterfall.",
+        "Explore the surrounding cafés, shops, and mountain trails.",
+        "Spend the evening exploring McLeod Ganj Market and the local Tibetan atmosphere.",
+        "Return to the hotel and relax.",
+        "Overnight stay in McLeod Ganj."
+      ]
+    },
+    {
+      "title": "DAY 2        McLeod Ganj To Bir Billing | Local Exploration (Distance: Approx. 70 Km)",
+      "activities": [
+        "Enjoy breakfast and check out from the hotel.",
+        "Begin your scenic drive towards Bir Billing, one of India's most popular paragliding destinations.",
+        "Arrive in Bir and check in to your accommodation.",
+        "Explore Bir Tibetan Colony and its peaceful surroundings.",
+        "Visit local cafés, monasteries, and handicraft shops.",
+        "Enjoy a leisurely walk around the beautiful mountain landscape.",
+        "Spend the evening relaxing and preparing for the next day's adventure activities.",
+        "Overnight stay in Bir Billing."
+      ]
+    },
+    {
+      "title": "DAY 3        Bir Billing Paragliding | Enjoy River Rafting & Transfer To Kasol (Distance: Approx. 180 Km)",
+      "activities": [
+        "Enjoy breakfast at your accommodation.",
+        "Head to the Billing take-off point for an exciting paragliding experience over the beautiful Kangra Valley.",
+        "Enjoy breathtaking aerial views of the Himalayan landscape.",
+        "After the activity, return to Bir and have lunch.",
+        "Continue with a river rafting experience, subject to seasonal conditions and local availability.",
+        "Begin your scenic drive towards Kasol, travelling through beautiful mountain roads and valleys.",
+        "Arrive in Kasol and check in to your accommodation.",
+        "Spend the evening at leisure.",
+        "Explore the riverside surroundings or relax at a local café.",
+        "Overnight stay in Kasol."
+      ]
+    },
+    {
+      "title": "DAY 4        Visit Manikaran Sahib & Trek to Chalal Village | Evening at Leisure (Distance: Approx. 12-15 Km)",
+      "activities": [
+        "Enjoy breakfast at the hotel.",
+        "Drive towards Manikaran Sahib, a revered pilgrimage destination in the Parvati Valley.",
+        "Visit the Manikaran Sahib Gurudwara and experience its peaceful surroundings.",
+        "Explore the famous natural hot springs and the nearby market.",
+        "Return towards Kasol.",
+        "Begin the scenic trek to Chalal Village, passing through forests and mountain trails.",
+        "Explore the traditional village and enjoy beautiful views of the Parvati Valley.",
+        "Trek back to Kasol.",
+        "Spend the evening at leisure.",
+        "Relax by the river or explore the local cafés and market.",
+        "Overnight stay in Kasol."
+      ]
+    },
+    {
+      "title": "DAY 5        Trek To Rudranag | Overnight Camping In Parvati Valley (Distance: Approx. 28 Km)",
+      "activities": [
+        "Enjoy an early breakfast.",
+        "Begin your journey towards Barshaini, the starting point for the Parvati Valley trek.",
+        "Start trekking through scenic mountain trails surrounded by forests and valleys.",
+        "Pass through beautiful Himalayan landscapes as you make your way towards Rudranag.",
+        "Visit the Rudranag Temple and waterfall.",
+        "Spend some time enjoying the peaceful surroundings.",
+        "Continue to the designated camping area, subject to local permissions and campsite availability.",
+        "Enjoy the evening surrounded by the natural beauty of the Parvati Valley.",
+        "Overnight stay in a camp."
+      ]
+    },
+    {
+      "title": "DAY 6        Trek Down to Barshaini & Transfer To Manali | Evening At Leisure (Distance: Approx. 95 Km)",
+      "activities": [
+        "Wake up to the peaceful surroundings of the Parvati Valley.",
+        "Enjoy breakfast at the campsite.",
+        "Begin your trek back towards Barshaini.",
+        "Meet your vehicle at Barshaini and begin the journey towards Manali.",
+        "Enjoy the scenic drive through the Himalayan valleys.",
+        "Arrive in Manali and check in to your hotel.",
+        "Spend the evening at leisure.",
+        "Relax after the trek and enjoy the cool mountain atmosphere.",
+        "Overnight stay in Manali."
+      ]
+    },
+    {
+      "title": "DAY 7        Leisure Day In Manali",
+      "activities": [
+        "Enjoy a relaxed breakfast at the hotel.",
+        "Keep the day free to rest after the trekking and adventure activities.",
+        "Explore Old Manali at your own pace.",
+        "Enjoy local cafés, restaurants, shops, and riverside walks.",
+        "Alternatively, spend some quiet time at the hotel enjoying the mountain views.",
+        "In the evening, explore Mall Road and shop for local souvenirs.",
+        "Return to the hotel.",
+        "Overnight stay in Manali."
+      ]
+    },
+    {
+      "title": "DAY 8        Manali Exploration & Departure For Delhi (Distance: Approx. 480 km)",
+      "activities": [
+        "Enjoy breakfast and check out from the hotel.",
+        "Visit some of Manali's popular attractions, depending on your departure time.",
+        "Explore Hadimba Devi Temple, surrounded by beautiful deodar forests.",
+        "Visit Vashisht Village and Temple if time permits.",
+        "Spend some time shopping at the local market.",
+        "Begin your journey from Manali towards Delhi.",
+        "Enjoy the scenic drive through the mountains and valleys.",
+        "Continue your overnight journey towards Delhi."
+      ]
+    },
+    {
+      "title": "DAY 9        Reach Delhi for journey back home.",
+      "activities": [
+        "Arrive in Delhi in the morning, depending on traffic and road conditions.",
+        "Proceed to your destination with wonderful memories of your Himachal adventure.",
+        "Tour concludes."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Himachal%20Pradesh%20Himachal%208N%2F9D%20package"
+}

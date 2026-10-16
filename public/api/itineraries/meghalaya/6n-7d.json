@@ -1,0 +1,140 @@
+{
+  "destination": "meghalaya",
+  "destinationDisplayName": "Meghalaya",
+  "category": "Domestic",
+  "region": "Northeast India",
+  "packageId": "meghalaya-3",
+  "packageTitle": "Meghalaya",
+  "duration": "Meghalaya 6N/7D",
+  "durationShort": "6N/7D",
+  "slug": "6n-7d",
+  "pagePath": "/itinerary/meghalaya/6n-7d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/meghalaya/6n-7d",
+  "apiEndpoint": "/api/itineraries/meghalaya/6n-7d.json",
+  "image": "/assets/northeast-D8OXmwI_.jpg",
+  "inclusions": [
+    "- Entire travel as per the itinerary by Tempo Traveller",
+    "- 6 nights accommodation – 1 Night in Hotel in Jowai, 2 Nights in Hotel at Cherrapunjee, 1 Night in Camps at Shnongpdeng, & 2 Nights in Hotel at Shillong on double/triple sharing basis",
+    "- 7 meals – Breakfast on Day 2, Day 3, Day 4, Day 5, Day 6, Day 7 + Dinner on Day 3",
+    "- Entry fees to the sightseeing places mentioned in the itinerary",
+    "- Guided trek to various points",
+    "- Team Captain throughout the trip",
+    "- Medical Kit to handle emergency conditions",
+    "- Driver night charges, toll & parking charges",
+    "- All inner line permits",
+    "- Barbeque at Shnongpdeng (if weather permits)",
+    "- Boating, Cliff jumping and Snorkeling in Shnongpdeng",
+    "- Boating, Guide, 4X4 Vehicle for Krem Chympe Caves",
+    "- Bonfire (if weather permits)"
+  ],
+  "days": [
+    {
+      "title": "Day 1 -  Arrival In Guwahati | Transfer To Shillong Via Umiam Lake",
+      "activities": [
+        "Arrive at Guwahati Airport/Railway Station and meet your driver.",
+        "Begin your scenic journey towards Shillong.",
+        "En route, stop at the beautiful Umiam Lake, surrounded by green hills.",
+        "Enjoy the panoramic views and take some photographs.",
+        "Continue towards Shillong, known as the “Scotland of the East.”",
+        "Check in to your hotel and relax.",
+        "In the evening, explore Police Bazaar and the local surroundings.",
+        "Overnight stay in Shillong."
+      ]
+    },
+    {
+      "title": "Day 2 - Nongjrong Sunrise | Laitlum Canyons | Transfer To Jowai",
+      "activities": [
+        "Start your day very early for a memorable Nongjrong Sunrise experience.",
+        "Reach the viewpoint and enjoy panoramic views of the surrounding hills and valleys as the sun rises.",
+        "Return for breakfast and prepare for the next part of the journey.",
+        "Proceed towards Laitlum Canyons, one of Meghalaya's most dramatic landscapes.",
+        "Enjoy the breathtaking views of deep valleys, green hills, and winding trails.",
+        "Spend some time exploring the viewpoint and capturing photographs.",
+        "Continue your journey towards Jowai, the gateway to Meghalaya's beautiful Jaintia Hills.",
+        "Check in to your hotel/homestay.",
+        "Evening at leisure to relax and explore the local surroundings.",
+        "Overnight stay in Jowai."
+      ]
+    },
+    {
+      "title": "Day 3 - Krem Chympe Exploration | Transfer To Shnongpdeng",
+      "activities": [
+        "Enjoy breakfast at the hotel.",
+        "Begin your journey towards Krem Chympe, one of the fascinating cave systems in the Jaintia Hills.",
+        "Prepare for an adventurous cave exploration through the natural underground formations.",
+        "Explore the unique limestone formations, passages, and surrounding landscapes.",
+        "The cave experience can be physically demanding, so follow your local guide's instructions throughout the activity.",
+        "After the exploration, continue towards Shnongpdeng, located beside the beautiful Umngot River.",
+        "Check in to your riverside campsite/homestay.",
+        "Spend the evening relaxing beside the river.",
+        "Enjoy the peaceful surroundings and beautiful sunset views.",
+        "Overnight stay in Shnongpdeng."
+      ]
+    },
+    {
+      "title": "Day 4 - Water Adventures, Dawki Viewpoint & Mawlynnong | Transfer To Cherrapunjee",
+      "activities": [
+        "Enjoy breakfast at your riverside stay.",
+        "Begin the morning with exciting water adventures on the Umngot River.",
+        "Depending on weather, season, and local availability, enjoy activities such as:",
+        "🚣 Boating",
+        "🛶 Kayaking",
+        "🏊 Swimming",
+        "💦 Other locally operated river activities",
+        "After the water activities, proceed towards Dawki Viewpoint.",
+        "Enjoy panoramic views of the Dawki region and the surrounding hills.",
+        "Continue towards Mawlynnong Village, famous for its picturesque surroundings and Khasi culture.",
+        "Explore the village and enjoy a leisurely walk through the local area.",
+        "Visit the Mawlynnong Living Root Bridge if time and local conditions permit.",
+        "Continue towards Cherrapunjee (Sohra).",
+        "Check in to your hotel/resort and relax.",
+        "Overnight stay in Cherrapunjee."
+      ]
+    },
+    {
+      "title": "Day 5 - Day Trip To Double Decker Living Root Bridge | The Nongriat Trek",
+      "activities": [
+        "Start early with breakfast.",
+        "Drive towards Tyrna Village, the starting point of the famous Nongriat trek.",
+        "Begin the descent through lush tropical forests and traditional Khasi villages.",
+        "Follow the scenic trail towards Nongriat Village.",
+        "Along the way, witness Meghalaya's famous living root bridges, naturally formed by guiding the roots of rubber fig trees.",
+        "Continue towards the spectacular Double Decker Living Root Bridge.",
+        "Spend time exploring this remarkable natural structure and the surrounding forest.",
+        "Depending on your fitness level, time, and local conditions, you can explore nearby natural pools and waterfalls.",
+        "Begin the challenging trek back to Tyrna.",
+        "Drive back to Cherrapunjee.",
+        "Relax and recover at your hotel after the trek.",
+        "Overnight stay in Cherrapunjee."
+      ]
+    },
+    {
+      "title": "Day 6 - Cherrapunjee Waterfalls & Caves | Transfer To Shillong",
+      "activities": [
+        "Enjoy breakfast and check out.",
+        "Begin your Cherrapunjee sightseeing tour.",
+        "Visit the magnificent Nohkalikai Falls, one of the most iconic waterfalls in Meghalaya.",
+        "Explore the famous Mawsmai Caves and experience their fascinating limestone formations and narrow passages.",
+        "Depending on time and seasonal accessibility, visit other nearby waterfalls and viewpoints.",
+        "Enjoy the spectacular landscapes of Sohra before beginning your drive towards Shillong.",
+        "On arrival in Shillong, check in to your hotel.",
+        "Spend the evening at leisure.",
+        "Explore Police Bazaar or enjoy a relaxed evening in the city.",
+        "Overnight stay in Shillong."
+      ]
+    },
+    {
+      "title": "Day 7 - Umiam Lake Stop | Transfer To Guwahati | Departure",
+      "activities": [
+        "Enjoy breakfast and check out from your hotel.",
+        "Begin your journey towards Guwahati.",
+        "Make a scenic stop at Umiam Lake if desired and enjoy the final views of Meghalaya's beautiful hills.",
+        "Continue towards Guwahati.",
+        "Depending on your departure schedule, you may have time for a short city visit or shopping.",
+        "Proceed to Guwahati Airport/Railway Station for your onward journey.",
+        "Your memorable 7-day Meghalaya adventure comes to an end."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Meghalaya%20Meghalaya%206N%2F7D%20package"
+}

@@ -1,0 +1,131 @@
+{
+  "destination": "japan",
+  "destinationDisplayName": "Japan",
+  "category": "International",
+  "region": "East Asia",
+  "packageId": "japan-1",
+  "packageTitle": "JAPAN 7N",
+  "duration": "Japan 7N/8D",
+  "durationShort": "7N/8D",
+  "slug": "7n-8d",
+  "pagePath": "/itinerary/japan/7n-8d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/japan/7n-8d",
+  "apiEndpoint": "/api/itineraries/japan/7n-8d.json",
+  "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+  "inclusions": [
+    "3 Nights accommodation in Tokyo at a 3/4-star hotel",
+    "2 Nights accommodation in Kyoto at a 3/4-star hotel",
+    "2 Nights accommodation in Osaka at a 3/4-star hotel",
+    "Daily breakfast at the hotel",
+    "Airport transfers on private/shared basis",
+    "Tokyo city sightseeing as per itinerary",
+    "Mt. Fuji & Lake Kawaguchi day excursion",
+    "Shinkansen bullet train from Tokyo to Kyoto",
+    "Kyoto sightseeing as per itinerary",
+    "Kyoto–Nara–Osaka transfers",
+    "Nara sightseeing including Nara Park & Todai-ji Temple",
+    "Osaka city sightseeing as per itinerary",
+    "Akihabara anime & gaming district visit",
+    "All sightseeing transfers as mentioned in the itinerary",
+    "Applicable entrance fees for included sightseeing"
+  ],
+  "days": [
+    {
+      "title": "Day 1 | Arrival in Tokyo",
+      "activities": [
+        "Arrive at Tokyo International Airport",
+        "Private/shared transfer to hotel",
+        "Check-in and relax",
+        "Evening at leisure",
+        "Explore nearby streets, cafés and convenience stores",
+        "• • Overnight in Tokyo"
+      ]
+    },
+    {
+      "title": "Day 2 | Tokyo City & Pop Culture",
+      "activities": [
+        "Visit Asakusa & Senso-ji Temple",
+        "Explore Nakamise Shopping Street",
+        "Visit Akihabara for anime, manga and gaming",
+        "Explore Shibuya Crossing",
+        "Visit Shibuya Sky for panoramic city views",
+        "• • Overnight in Tokyo"
+      ]
+    },
+    {
+      "title": "Day 3 | Tokyo – Mt. Fuji Excursion",
+      "activities": [
+        "Breakfast at the hotel",
+        "Full-day excursion to the Mt. Fuji region",
+        "Visit Lake Kawaguchi",
+        "Explore Oishi Park",
+        "Enjoy views of Mt. Fuji",
+        "Visit a traditional Japanese village/heritage area depending on seasonal access",
+        "Return to Tokyo",
+        "• • Overnight in Tokyo"
+      ]
+    },
+    {
+      "title": "Day 4 | Tokyo – Kyoto",
+      "activities": [
+        "Breakfast and check-out",
+        "Board the Shinkansen bullet train to Kyoto",
+        "Check-in at the hotel",
+        "Visit Fushimi Inari Shrine",
+        "Explore the traditional streets of Gion",
+        "Evening at leisure",
+        "Overnight in Kyoto"
+      ]
+    },
+    {
+      "title": "Day 5 | Kyoto Heritage & Culture",
+      "activities": [
+        "Breakfast at the hotel",
+        "Visit Kinkaku-ji (Golden Pavilion)",
+        "Visit Arashiyama Bamboo Grove",
+        "Explore Tenryu-ji Temple",
+        "Walk through the historic Arashiyama area",
+        "Optional traditional tea ceremony",
+        "Overnight in Kyoto"
+      ]
+    },
+    {
+      "title": "Day 6 | Kyoto – Nara – Osaka",
+      "activities": [
+        "Breakfast and check-out",
+        "Travel to Nara",
+        "Visit Todai-ji Temple",
+        "Meet the famous Nara Deer",
+        "Explore Nara Park",
+        "Continue to Osaka",
+        "Check-in at the hotel",
+        "Evening at Dotonbori & Shinsaibashi",
+        "Explore Osaka's street-food scene",
+        "Overnight in Osaka"
+      ]
+    },
+    {
+      "title": "Day 7 | Osaka – City & Entertainment",
+      "activities": [
+        "Breakfast at the hotel",
+        "Visit Osaka Castle",
+        "Explore Kuromon Market",
+        "Free time for shopping",
+        "Optional visit to Universal Studios Japan or teamLab Botanical Garden Osaka",
+        "Evening at leisure in Dotonbori",
+        "Overnight in Osaka"
+      ]
+    },
+    {
+      "title": "Day 8 | Departure from Osaka",
+      "activities": [
+        "Breakfast at the hotel",
+        "Check-out",
+        "Free time depending on flight schedule",
+        "Transfer to Kansai International Airport",
+        "Departure from Japan"
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Japan%20Japan%207N%2F8D%20package"
+}

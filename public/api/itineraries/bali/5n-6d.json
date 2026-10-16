@@ -1,0 +1,105 @@
+{
+  "destination": "bali",
+  "destinationDisplayName": "Bali",
+  "category": "International",
+  "region": "Southeast Asia",
+  "packageId": "bali-1",
+  "packageTitle": "BALI 5N",
+  "duration": "Bali 5N/6D",
+  "durationShort": "5N/6D",
+  "slug": "5n-6d",
+  "pagePath": "/itinerary/bali/5n-6d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/bali/5n-6d",
+  "apiEndpoint": "/api/itineraries/bali/5n-6d.json",
+  "image": "/assets/intl-bali-Ck8GSayl.jpg",
+  "inclusions": [
+    "2 Nights accommodation in Ubud at a 3/4-star hotel",
+    "1 Night accommodation in Nusa Penida at a 3/4-star hotel",
+    "2 Nights accommodation in Seminyak at a 3/4-star hotel",
+    "Daily breakfast at the hotel",
+    "Airport transfers on private basis",
+    "Private transfers for sightseeing as per itinerary",
+    "Sanur–Nusa Penida–Sanur fast boat tickets",
+    "Ubud sightseeing including Tegallalang Rice Terrace, Bali Swing & Tirta Empul Temple",
+    "Nusa Penida sightseeing including Kelingking Beach, Broken Beach, Angel’s Billabong & Crystal Bay",
+    "Nusa Penida–Seminyak transfers",
+    "South Bali sightseeing including Padang Padang Beach & Uluwatu Temple",
+    "Kecak Dance Show at Uluwatu",
+    "All applicable taxes and service charges"
+  ],
+  "days": [
+    {
+      "title": "Day 1 | Arrival in Bali – Transfer to Ubud",
+      "activities": [
+        "Arrive at Ngurah Rai International Airport",
+        "Private transfer to Ubud",
+        "Hotel check-in and relaxation",
+        "Evening at leisure to explore Ubud Market or nearby cafés",
+        "Overnight in Ubud"
+      ]
+    },
+    {
+      "title": "Day 2 | Ubud Nature & Culture",
+      "activities": [
+        "Breakfast at the hotel",
+        "Visit Tegallalang Rice Terraces",
+        "Enjoy a Bali Swing experience",
+        "Visit Tirta Empul Temple",
+        "Explore Ubud Art Market and local streets",
+        "Evening at leisure",
+        "Overnight in Ubud"
+      ]
+    },
+    {
+      "title": "Day 3 | Ubud – Nusa Penida",
+      "activities": [
+        "Breakfast and check-out",
+        "Transfer to Sanur Harbour",
+        "Fast boat to Nusa Penida",
+        "Visit Kelingking Beach",
+        "Explore Broken Beach & Angel’s Billabong",
+        "Visit Crystal Bay",
+        "Check-in at the hotel",
+        "Sunset and leisure time",
+        "Overnight in Nusa Penida"
+      ]
+    },
+    {
+      "title": "Day 4 | Nusa Penida – Seminyak",
+      "activities": [
+        "Breakfast at the hotel",
+        "Explore Nusa Penida’s scenic spots",
+        "Visit Diamond Beach / Atuh Beach depending on the route",
+        "Transfer to the harbour",
+        "Fast boat back to Bali",
+        "Private transfer to Seminyak",
+        "Check-in and relax",
+        "Evening at Seminyak Beach",
+        "Overnight in Seminyak"
+      ]
+    },
+    {
+      "title": "Day 5 | South Bali – Uluwatu & Sunset",
+      "activities": [
+        "Breakfast at the hotel",
+        "Visit Padang Padang Beach",
+        "Explore Uluwatu Temple",
+        "Watch the Kecak Dance Show",
+        "Enjoy sunset views",
+        "Evening dinner and optional nightlife/club experience in Seminyak",
+        "Overnight in Seminyak"
+      ]
+    },
+    {
+      "title": "Day 6 | Seminyak – Departure",
+      "activities": [
+        "Breakfast at the hotel",
+        "Free time for shopping, cafés or beach relaxation",
+        "Check-out",
+        "Private transfer to Ngurah Rai International Airport",
+        "Departure from Bali"
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Bali%20Bali%205N%2F6D%20package"
+}

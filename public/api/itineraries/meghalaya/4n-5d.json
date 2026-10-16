@@ -1,0 +1,94 @@
+{
+  "destination": "meghalaya",
+  "destinationDisplayName": "Meghalaya",
+  "category": "Domestic",
+  "region": "Northeast India",
+  "packageId": "meghalaya-1",
+  "packageTitle": "Meghalaya",
+  "duration": "Meghalaya 4N/5D",
+  "durationShort": "4N/5D",
+  "slug": "4n-5d",
+  "pagePath": "/itinerary/meghalaya/4n-5d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/meghalaya/4n-5d",
+  "apiEndpoint": "/api/itineraries/meghalaya/4n-5d.json",
+  "image": "/assets/northeast-D8OXmwI_.jpg",
+  "inclusions": [
+    "A dedicated vehicle with a driver cum guide for the entire stay.",
+    "Accommodation for all nights on twin sharing basis in local homestays/local guesthouses/hotels.",
+    "Breakfast starting day 2 till last day.",
+    "Local guide wherever required.",
+    "All toll charges as required."
+  ],
+  "days": [
+    {
+      "title": "Day 1  - Guwahati To Shillong",
+      "activities": [
+        "Arrive at Guwahati Airport/Railway Station and meet your driver.",
+        "Begin your scenic journey towards Shillong, the “Scotland of the East.”",
+        "En route, visit Umiam Lake and enjoy the beautiful views of the surrounding hills.",
+        "Continue towards Shillong and check in to your hotel.",
+        "After some rest, explore Shillong local market / Police Bazaar.",
+        "Enjoy the evening at leisure.",
+        "Overnight stay in Shillong."
+      ]
+    },
+    {
+      "title": "Day 2 – Shillong – Sacred Grove – Heritage Village – Cherrapunjee",
+      "activities": [
+        "Enjoy breakfast at the hotel and check out.",
+        "Drive towards the beautiful Mawphlang Sacred Grove, a protected forest with deep cultural and spiritual significance for the Khasi community.",
+        "Take a guided walk through the forest and experience its unique flora and peaceful surroundings.",
+        "Proceed towards the Khasi Heritage Village, showcasing traditional Khasi houses, lifestyle, culture, and architecture.",
+        "Continue your scenic drive towards Cherrapunjee (Sohra), one of the most famous destinations in Meghalaya.",
+        "On arrival, check in to your hotel/resort.",
+        "Spend the evening relaxing and enjoying the surrounding hills.",
+        "Overnight stay in Cherrapunjee"
+      ]
+    },
+    {
+      "title": "Day 3 – Cherrapunjee – Tyrna – Double Decker Living Root Bridge – Cherrapunjee",
+      "activities": [
+        "Start your day early with breakfast.",
+        "Drive to Tyrna Village, the starting point for the trek to the famous Nongriat Double Decker Living Root Bridge.",
+        "Begin the trek through lush forests, hills, and traditional Khasi villages.",
+        "Descend hundreds of steps towards Nongriat.",
+        "Reach the spectacular Double Decker Living Root Bridge, naturally created by training the roots of rubber fig trees over many years.",
+        "Spend some time exploring and photographing the area.",
+        "Depending on time and energy, you may continue towards the natural pools/waterfalls nearby.",
+        "Begin the challenging uphill trek back to Tyrna Village.",
+        "Drive back to Cherrapunjee.",
+        "Relax and enjoy a well-deserved evening at your hotel.",
+        "Overnight stay in Cherrapunjee."
+      ]
+    },
+    {
+      "title": "Day 4 – Cherrapunjee – Dawki – Mawlynnong",
+      "activities": [
+        "Enjoy breakfast and check out from the hotel.",
+        "Begin your journey towards Dawki, located close to the India–Bangladesh border.",
+        "Visit the famous Dawki River and enjoy the spectacular views of its crystal-clear waters.",
+        "Enjoy a boating experience on the river, subject to weather and local conditions.",
+        "Visit the Dawki–Tamabil border area and experience the unique atmosphere around the international border.",
+        "Continue towards Mawlynnong, often known for its cleanliness and beautiful natural surroundings.",
+        "Explore the village and experience its traditional Khasi lifestyle.",
+        "Visit the Mawlynnong Living Root Bridge and enjoy a short nature walk.",
+        "Depending on time, visit the Mawlynnong Sky View/Balancing Rock area.",
+        "Check in to your homestay/resort.",
+        "Evening at leisure.",
+        "Overnight stay in Mawlynnong."
+      ]
+    },
+    {
+      "title": "Day 5 – Mawlynnong – Guwahati",
+      "activities": [
+        "Enjoy breakfast at the hotel/homestay.",
+        "Spend some time exploring Mawlynnong in the morning.",
+        "Begin your return journey towards Guwahati.",
+        "Enjoy the scenic drive through the Meghalaya hills.",
+        "On reaching Guwahati, visit Kamakhya Temple if time permits and depending on your departure schedule.",
+        "Proceed to Guwahati Airport/Railway Station for your onward journey."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Meghalaya%20Meghalaya%204N%2F5D%20package"
+}

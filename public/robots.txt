@@ -1,0 +1,26 @@
+# robots.txt for Yugatirtha (Hostinger Deployment)
+# Website: https://www.yugatirtha.com
+
+User-agent: *
+Allow: /
+Allow: /domestic
+Allow: /international
+Allow: /spiritualjourney
+Allow: /experiences
+Allow: /about
+Allow: /contact
+Allow: /itinerary/
+
+# Disallow alias redirects and typo routes to save crawl budget
+Disallow: /itenary/
+Disallow: /itineraries
+Disallow: /enquiry
+Disallow: /enquire
+
+# Static assets and sitemap
+Allow: /assets/
+Allow: /favicon.svg
+Allow: /icons.svg
+
+# XML Sitemap location
+Sitemap: https://www.yugatirtha.com/sitemap.xml

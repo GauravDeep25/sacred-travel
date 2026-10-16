@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { getPackageSlug, extractDurationShort } from '../../data/itineraryRegistry';
 
 export default function CardsGrid({ cards, itineraries = {} }) {
   if (!cards || cards.length === 0) return null;
@@ -43,12 +44,32 @@ export default function CardsGrid({ cards, itineraries = {} }) {
                   <span className="text-emerald-700">{card.price}</span>
                 </div>
                 {hasItinerary ? (
-                  <Link
-                    to={`/itinerary/${card.itineraryId || itKey}`}
-                    className="mt-auto inline-flex items-center gap-2 border border-primary rounded-md px-5 py-2 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-primary transition-colors hover:bg-primary hover:text-white w-max"
-                  >
-                    View Itinerary {pkgs.length > 1 && <span className="text-[10px] font-sans tracking-normal font-normal opacity-80">({pkgs.length} circuits)</span>}
-                  </Link>
+                  <div className="mt-auto space-y-3">
+                    <Link
+                      to={`/itinerary/${card.itineraryId || itKey}`}
+                      className="inline-flex items-center gap-2 border border-primary rounded-md px-5 py-2 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-primary transition-colors hover:bg-primary hover:text-white w-max"
+                    >
+                      View Itinerary {pkgs.length > 1 && <span className="text-[10px] font-sans tracking-normal font-normal opacity-80">({pkgs.length} circuits)</span>}
+                    </Link>
+                    {pkgs.length > 1 && (
+                      <div className="flex flex-wrap items-center gap-1.5 pt-1">
+                        <span className="text-[9px] uppercase tracking-wider text-gray-400 font-semibold mr-1">Circuits:</span>
+                        {pkgs.map((p, pIdx) => {
+                          const slug = getPackageSlug(p, card.itineraryId || itKey, pIdx);
+                          const dur = extractDurationShort(p.duration);
+                          return (
+                            <Link
+                              key={p.id || pIdx}
+                              to={`/itinerary/${card.itineraryId || itKey}/${slug}`}
+                              className="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded bg-[#F5F3EF] hover:bg-[#D4A373]/20 text-[#332D29] hover:text-[#b8864e] border border-gray-200 transition-colors"
+                            >
+                              {dur}
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
                 ) : (
                   <a
                     href={`https://wa.me/918591262424?text=I'd%20like%20the%20itinerary%20for%3A%20${encodeURIComponent(card.cardTitle)}`}

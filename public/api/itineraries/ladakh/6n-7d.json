@@ -1,0 +1,118 @@
+{
+  "destination": "ladakh",
+  "destinationDisplayName": "Ladakh",
+  "category": "Domestic",
+  "region": "North India",
+  "packageId": "ladakh-2",
+  "packageTitle": "Ladakh",
+  "duration": "Ladakh 6N/7D",
+  "durationShort": "6N/7D",
+  "slug": "6n-7d",
+  "pagePath": "/itinerary/ladakh/6n-7d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/ladakh/6n-7d",
+  "apiEndpoint": "/api/itineraries/ladakh/6n-7d.json",
+  "image": "/assets/spiritual-north-NuyL8ZKr.jpg",
+  "inclusions": [
+    "Entire travel from Leh to Leh by Innova",
+    "Stay for 6 nights",
+    "A total of 12 meals",
+    "All inner line permits for the trip",
+    "Driver Night Charges, Toll Tax, Parking Charges, etc.",
+    "On call assistance throughout the trip",
+    "An Oxygen Cylinder 24X7 in the car in case of emergency",
+    "Airport pick or drop. ( Private taxi won't be provided, taxis will be available on pre-decided slots time as per the Flights timings).",
+    "All inner line permits for the trip - Change to- Environmental fees as applicable"
+  ],
+  "days": [
+    {
+      "title": "Day 1 – Arrival in Leh. Leisure Day for Acclimatization.",
+      "activities": [
+        "Arrive at the Leh airport after a scenic flight over the Himalayas.",
+        "Meet our representative who will help with your transfers to the hotel.",
+        "Complete the check-in formalities and rest for some time.",
+        "You can then spend the rest of the day at leisure.",
+        "We suggest you go for a short walk around your hotel, to acclimate yourself to the altitude better.",
+        "After coming back from the hotel our trip captain will provide you with a brief of the journey.",
+        "Overnight stay in Leh."
+      ]
+    },
+    {
+      "title": "Day 2 – Leh Local Sightseeing- Visit Gurudwara Pathar Sahib, Shanti Stupa, etc.",
+      "activities": [
+        "Wake up in your hotel room in Leh and have a delicious breakfast.",
+        "After having breakfast, get ready for local sightseeing.",
+        "Our first stop will be the iconic Shanti Stupa for a mesmerizing view of Leh and its surroundings.",
+        "Moving forward, we will stop at Gurdwara Pathar Sahib, a sacred place that is believed to have imprints of Sikh Guru Nanak Dev Ji.",
+        "Next, we will also witness the rare phenomenon at the Magnetic Hill where the natural surroundings create an optical illusion that makes it look like vehicles are rolling uphill.",
+        "Further, we will stop at the Sangam Point where the Zanskar and Indus rivers confluence.",
+        "Next, we can explore the Hall of Fame, which honors the Indian soldiers who died in the wars and battles fought in Ladakh.",
+        "You can spend your evening exploring the vibrant local Leh market and indulging in some delicious food and drinks at the cozy cafes around.",
+        "After a day of exploration and adventure, we will return to our hotel.",
+        "Enjoy a delicious dinner, and then get some well-deserved rest.",
+        "Overnight stay in Leh."
+      ]
+    },
+    {
+      "title": "Day 3 – Leh To Nubra Valley via Khardung-La - one of the highest motorable roads",
+      "activities": [
+        "Wake up in the Nubra Valley and get ready for a delicious breakfast.",
+        "We will then get ready for the exciting journey on one of the highest motorable roads.",
+        "Our first stop will be the iconic Khardung-La - one of the highest motorable roads in the world at a height of 5359 meters.",
+        "Next, we will stop at the Diskit Monastery, the biggest monastery of Nubra Valley which is famous as the home of 106 feet of Maitreya Buddha statue.",
+        "Further, we will pass over Shyok River to reach Nubra Valley, also known as Ldumra or the Valley of Flowers.",
+        "If time permits, you can also take part in some adventure like a double-humped Bactrian camel safari or an ATV ride on the deserted land of Hunder Sand dunes.",
+        "We will then check into the hotel rooms and have a hearty dinner.",
+        "Overnight stay in Nubra Valley."
+      ]
+    },
+    {
+      "title": "Day 4 – Transfer from Nubra to Pangong Via Shyok | Explore colour-changing Lake",
+      "activities": [
+        "Wake up in the Nubra Valley and get ready for an adventurous journey to the famous Pangong Tso.",
+        "While driving, we will cross the charming Agam and Shyok villages which are known for their scenic beauty.",
+        "Continue the adventurous journey until we are greeted with the majestic views of the famous Pangong Lake which is the highest saltwater lake in the world.",
+        "Pangong Lake is about 4 km wide on average and at least 136 Km long and is located at an altitude of 4300 meters above sea level.",
+        "Spend some time around the lake, where you can admire the reflection of the surrounding mountains in the stunning blue lake.",
+        "You can also click pictures at the famous 3-idiots set here.",
+        "We will then head to check in at our campsite near the lake and have a delicious dinner.",
+        "Overnight stay near Pangong Lake."
+      ]
+    },
+    {
+      "title": "Day 5 – Pangong Lake to Tso Moriri via Tsaga La | Experience the Remote Changthang Region",
+      "activities": [
+        "Wake up early to witness a breathtaking sunrise over Pangong Lake.",
+        "After a delicious breakfast, check out from your camp and begin your journey to Tso Moriri.",
+        "Drive through the remote and rugged landscapes of the Changthang region, passing via Tsaga La, Chushul, and Rezang La.",
+        "Arrive at the beautiful Tso Moriri Lake, a high-altitude Ramsar wetland known for its rich biodiversity and migratory birds.",
+        "Check into your camp or guesthouse near the lake and rest for a while.",
+        "Spend your evening strolling along the pristine shores of the lake and taking in the tranquil atmosphere.",
+        "Have a warm dinner and an overnight stay near Tso Moriri Lake."
+      ]
+    },
+    {
+      "title": "Day 6 – Tso Moriri to Leh via Chumathang | Return to the City",
+      "activities": [
+        "Enjoy your breakfast with the stunning views of Tso Moriri Lake in the backdrop.",
+        "Check out from your accommodation and start your return journey towards Leh.",
+        "Drive past the scenic Mahe Bridge and the natural hot springs of Chumathang.",
+        "En route, you can visit the famous Thiksey Monastery and Shey Palace, if time permits.",
+        "Reach Leh by the evening and check in at your hotel.",
+        "You have the rest of the evening at leisure to relax or buy some last-minute souvenirs from the Leh market.",
+        "Enjoy your final dinner in Ladakh and get some sound sleep.",
+        "Overnight stay in Leh."
+      ]
+    },
+    {
+      "title": "Day 7 – Departure from Leh | Tour Concludes",
+      "activities": [
+        "Wake up and have a delicious breakfast at your hotel in Leh.",
+        "Pack your bags and complete the check-out formalities.",
+        "Our representative will transfer you to the Leh airport for your onward journey.",
+        "Take a scenic flight back home with unforgettable memories of your Ladakh adventure.",
+        "Your trip concludes here."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Ladakh%20Ladakh%206N%2F7D%20package"
+}

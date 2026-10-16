@@ -1,0 +1,106 @@
+{
+  "destination": "georgia",
+  "destinationDisplayName": "Georgia",
+  "category": "International",
+  "region": "CIS Countries",
+  "packageId": "georgia-2",
+  "packageTitle": "GEORGIA 6N7D",
+  "duration": "Georgia 6N/7D",
+  "durationShort": "6N/7D",
+  "slug": "6n-7d",
+  "pagePath": "/itinerary/georgia/6n-7d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/georgia/6n-7d",
+  "apiEndpoint": "/api/itineraries/georgia/6n-7d.json",
+  "image": "/assets/intl-caucasus-DAV0UB-k.jpg",
+  "inclusions": [
+    "6 nights accommodation in 4★ hotels on twin sharing basis.",
+    "Daily breakfast at the hotel.",
+    "Airport arrival and departure transfers.",
+    "Private vehicle for all sightseeing and intercity transfers.",
+    "Tbilisi City Tour including Old Tbilisi, Narikala Fortress, Bridge of Peace & Rike Park.",
+    "Kazbegi & Gudauri excursion including Zhinvali Reservoir, Ananuri Fortress & Friendship Monument.",
+    "Gergeti Trinity Church visit.",
+    "Kakheti day trip including Sighnaghi & Bodbe Monastery.",
+    "Winery visit and wine tasting in Kakheti.",
+    "Mtskheta excursion including Jvari Monastery & Svetitskhoveli Cathedral.",
+    "English-speaking driver/guide.",
+    "Entrance fees as per itinerary.",
+    "Applicable taxes and service charges.",
+    "24/7 local assistance."
+  ],
+  "days": [
+    {
+      "title": "Day 1 | Arrival in Tbilisi | Hotel Check-in & Evening at Leisure",
+      "activities": [
+        "Arrive at Tbilisi International Airport; meet and greet with our representative.",
+        "Private transfer to your 4★ hotel in Tbilisi and smooth check-in.",
+        "Evening at leisure to wander the charming old streets or relax.",
+        "Overnight stay in Tbilisi."
+      ]
+    },
+    {
+      "title": "Day 2 | Tbilisi City Tour: Old Tbilisi, Cable Car & Sulphur Baths",
+      "activities": [
+        "Breakfast at the hotel.",
+        "Explore historic Old Tbilisi: Meidan Square, Sioni Cathedral, and Anchiskhati Basilica.",
+        "Ride the cable car to Narikala Fortress and Mother of Georgia statue for magnificent skyline views.",
+        "Walk down through the historic brick-domed Sulphur Baths of Abanotubani and the canyon waterfall.",
+        "Stroll across the futuristic Bridge of Peace into landscaped Rike Park.",
+        "Overnight stay in Tbilisi."
+      ]
+    },
+    {
+      "title": "Day 3 | Georgian Military Highway: Ananuri, Gudauri & Kazbegi",
+      "activities": [
+        "Breakfast at the hotel and check-out.",
+        "Journey into the high Caucasus along the scenic Georgian Military Highway.",
+        "Visit the turquoise Zhinvali Reservoir and the 17th-century Ananuri Fortress complex.",
+        "Ascend through Gudauri ski resort; stop at the Friendship Monument panoramic viewpoint.",
+        "Arrive in Kazbegi (Stepantsminda) with views of Mount Kazbek; check in to hotel.",
+        "Overnight stay in Kazbegi."
+      ]
+    },
+    {
+      "title": "Day 4 | Gergeti Trinity Church & Return to Tbilisi",
+      "activities": [
+        "Breakfast at the hotel.",
+        "Board 4WD vehicles to reach the 14th-century Gergeti Trinity Church situated high on a plateau.",
+        "Marvel at the jaw-dropping vistas of Mount Kazbek (5,054m).",
+        "Drive back down to Tbilisi in the afternoon.",
+        "Evening at leisure for dining at traditional Georgian taverns.",
+        "Overnight stay in Tbilisi."
+      ]
+    },
+    {
+      "title": "Day 5 | Kakheti Wine Region: Sighnaghi, Bodbe & Wine Tasting",
+      "activities": [
+        "Breakfast at the hotel.",
+        "Full-day tour to Kakheti, the cradle of 8,000-year-old Georgian winemaking.",
+        "Visit the hilltop walled town of Sighnaghi, known as the 'City of Love', with panoramic views of the Alazani Valley.",
+        "Visit Bodbe Nunnery, the sacred resting place of St. Nino who brought Christianity to Georgia.",
+        "Visit a traditional local winery to taste famous Georgian wines crafted in clay amphorae (Qvevri).",
+        "Return to Tbilisi in the evening; overnight stay in Tbilisi."
+      ]
+    },
+    {
+      "title": "Day 6 | Mtskheta UNESCO Heritage Trail & Farewell Dinner",
+      "activities": [
+        "Breakfast at the hotel.",
+        "Visit Mtskheta, Georgia's former royal capital.",
+        "Tour Jvari Monastery perched high on a cliff edge above two merging rivers.",
+        "Visit Svetitskhoveli Cathedral, the historic burial site of Georgian kings.",
+        "Return to Tbilisi; free time for shopping at the Dry Bridge antique market or shopping malls.",
+        "Enjoy a festive Georgian farewell dinner with folk music and dance.",
+        "Overnight stay in Tbilisi."
+      ]
+    },
+    {
+      "title": "Day 7 | Tbilisi Departure",
+      "activities": [
+        "Breakfast at the hotel and check-out.",
+        "Transfer to Tbilisi International Airport for your departure flight home."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Georgia%20Georgia%206N%2F7D%20package"
+}

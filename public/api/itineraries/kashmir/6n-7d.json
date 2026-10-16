@@ -1,0 +1,103 @@
+{
+  "destination": "kashmir",
+  "destinationDisplayName": "Kashmir",
+  "category": "Domestic",
+  "region": "North India",
+  "packageId": "kashmir-3",
+  "packageTitle": "Kashmir",
+  "duration": "Kashmir 6N/7D",
+  "durationShort": "6N/7D",
+  "slug": "6n-7d",
+  "pagePath": "/itinerary/kashmir/6n-7d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/kashmir/6n-7d",
+  "apiEndpoint": "/api/itineraries/kashmir/6n-7d.json",
+  "image": "/assets/kashmir-C3GCvNNI.jpg",
+  "inclusions": [
+    "\"Travel as per the Itinerary in Sedan/ SUV (as per group size)",
+    "Accommodation for 6 Nights on Sharing Basis (1 night in Srinagar in Houseboat, 2 nights in Srinagar in Hotel, 2 nights in Pahalgam in a hotel, 1 night in Gulmarg in a hotel)",
+    "12 Meals (Breakfast from Day 2 to Day 7, Dinner from Day 1 to Day 6)",
+    "Driver Charges, Permits, Tolls, Fuel & Parking charges",
+    "Airport/ Railway Station Pickup and Drop",
+    "Shikara Ride (1 Hr Shikara Ride)",
+    "Welcome drink on arrival.",
+    "Full day local sightseeing in Srinagar..",
+    "Sonmarg Excursion transfer.",
+    "Honeymoon Inclusion - Candle Light Dinner , Cake And Room Decoration in Houseboat",
+    "Gondola cable car Phase 1 Tickets.\""
+  ],
+  "days": [
+    {
+      "title": "Day 1 - Arrival In Srinagar. Local Sightseeing In Srinagar.",
+      "activities": [
+        "Arrive at Srinagar Airport and meet our representative.",
+        "Transfer to the hotel and check in.",
+        "Visit Mughal Gardens – Nishat Bagh and Shalimar Bagh, followed by Shankaracharya Temple, subject to time and local conditions.",
+        "Evening free for leisure and shopping.",
+        "Overnight stay in Srinagar."
+      ]
+    },
+    {
+      "title": "Day 2 - Excursion To Sonmarg. Pony Ride To Thajiwas Glacier.",
+      "activities": [
+        "Breakfast at the hotel and proceed for a day excursion to Sonmarg.",
+        "Enjoy the spectacular Himalayan landscapes and visit Thajiwas Glacier by pony ride, subject to weather and local conditions.",
+        "Spend time enjoying the snow-covered surroundings of Sonmarg.",
+        "Return to Srinagar by evening.",
+        "Overnight stay in Srinagar."
+      ]
+    },
+    {
+      "title": "Day 3 - Srinagar To Gulmarg. Indulge In Winter Sports.",
+      "activities": [
+        "Breakfast and check out from the hotel.",
+        "Drive towards Gulmarg through the scenic Kashmir Valley.",
+        "Check in to the hotel and enjoy the snow-covered landscapes.",
+        "Indulge in winter activities such as skiing, snowboarding and sledging, subject to weather and operational conditions.",
+        "Optional Gondola ride, subject to availability.",
+        "Overnight stay in Gulmarg."
+      ]
+    },
+    {
+      "title": "Day 4 - Gulmarg To Pahalgam. Enroute Visit Avantipur Ruins.",
+      "activities": [
+        "Breakfast and check out.",
+        "Proceed towards Pahalgam through the beautiful Kashmir countryside.",
+        "En route, visit the historic Avantipur Ruins.",
+        "Continue towards Pahalgam and check in to the hotel.",
+        "Evening free to relax and enjoy the peaceful surroundings.",
+        "Overnight stay in Pahalgam."
+      ]
+    },
+    {
+      "title": "Day 5 - Full Day Tour To Aru & Betaab Valley With Chandanwari.",
+      "activities": [
+        "Breakfast at the hotel.",
+        "Proceed for a full-day excursion covering Aru Valley, Betaab Valley and Chandanwari, subject to weather and local vehicle regulations.",
+        "Enjoy the scenic beauty of the mountains, valleys and Lidder River.",
+        "Return to the hotel by evening.",
+        "Overnight stay in Pahalgam."
+      ]
+    },
+    {
+      "title": "Day 6 - Pahalgam To Srinagar. Evening Shikara Ride & Houseboat Stay.",
+      "activities": [
+        "Breakfast and check out from the hotel.",
+        "Drive back towards Srinagar.",
+        "On arrival, enjoy a relaxing Shikara ride on Dal Lake.",
+        "Experience the floating markets and beautiful Himalayan surroundings.",
+        "Check in to a traditional Kashmiri houseboat.",
+        "Evening at leisure.",
+        "Overnight stay in a houseboat in Srinagar."
+      ]
+    },
+    {
+      "title": "Day 7 - Departure. Depart With A Bag Of Happy Memories.",
+      "activities": [
+        "Breakfast and check out from the houseboat.",
+        "Transfer to Srinagar Airport as per your departure schedule.",
+        "Depart with a bag full of happy memories from Kashmir."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Kashmir%20Kashmir%206N%2F7D%20package"
+}

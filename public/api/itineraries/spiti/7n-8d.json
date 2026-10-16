@@ -1,0 +1,146 @@
+{
+  "destination": "spiti",
+  "destinationDisplayName": "Spiti Valley",
+  "category": "Domestic",
+  "region": "North India",
+  "packageId": "spiti-2",
+  "packageTitle": "Spiti Valley",
+  "duration": "Spiti Valley 7N/8D",
+  "durationShort": "7N/8D",
+  "slug": "7n-8d",
+  "pagePath": "/itinerary/spiti/7n-8d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/spiti/7n-8d",
+  "apiEndpoint": "/api/itineraries/spiti/7n-8d.json",
+  "image": "/assets/hero-spiti.jpg",
+  "inclusions": [
+    "Volvo transfer from Delhi to Manali & back (Not included for self bike option).",
+    "Bike Rent for 7 days (for biking option)",
+    "Fuel Expenses for the bike from Manali to Manali",
+    "Entire travel from Aut to Manali by tempo traveler/cab (For Tempo Traveler Option)",
+    "7 nights' accommodation – 1 Night in a resort at Gushaini, 1 Night in camps at Chitkul, 1 Night in hotel at Kalpa, 2 Nights in Hotel/Homestay at Kaza, 1 Night in camps at Chandra Taal, 1 Night in Hotel at Manali, on triple sharing basis",
+    "A total of 13 meals – 2 Meal on Day 1 (Breakfast + Dinner) + 1 Meal on Day 2 (Dinner) + 2 Meals on Day 3 (Breakfast + Dinner) + 2 Meals on Day 4 (Breakfast + Dinner) + 2 Meals on Day 5 (Breakfast + Dinner) + 2 Meal on Day 6 (Breakfast + Dinner) + 1 Meal on Day 7 (Breakfast) + 1 Meal on Day 8 (Breakfast).",
+    "Mechanical Backup",
+    "All inner line permits for the trip (Except Chandra Taal)",
+    "Driver Night Charges, Toll Tax, Parking Charges, etc.",
+    "Team Captain throughout the trip",
+    "An Oxygen Cylinder 24X7 in the car in case of emergency",
+    "Riding Gears – Helmet (Standard Size 58 - 60 cms), Riding Gloves (only for riders), Riding Jackets, Knee Pads (Though it is recommended you carry your own helmet for comfort)"
+  ],
+  "days": [
+    {
+      "title": "Starting Day – Delhi To Tirthan Valley | Overnight Volvo Journey",
+      "activities": [
+        "Arrive at the designated boarding point in Delhi and board your Volvo bus in the evening.",
+        "Begin your journey towards the serene Tirthan Valley.",
+        "Sit back and relax as you set on your Spiti Valley tour from Delhi.",
+        "Overnight journey to Aut."
+      ]
+    },
+    {
+      "title": "Day 1 – Aut To Jibhi/Gushaini | Waterfall Trek & Valley Views",
+      "activities": [
+        "Arrive at Aut in the morning and proceed towards the beautiful villages of Jibhi or Gushaini.",
+        "For bikers, continue to Manali to collect your bikes and have breakfast.",
+        "Enjoy a scenic taxi ride back to your stay in Jibhi/Gushaini.",
+        "In the meanwhile, backpackers will enjoy a short trek to the picturesque Jibhi Waterfall (or Chhoie Waterfall, depending on the stay location).",
+        "Upon arrival, check in to the hotel and freshen up after the journey.",
+        "Dinner and overnight stay in Jibhi/Gushaini."
+      ]
+    },
+    {
+      "title": "Day 2 – Jibhi/Gushaini To Chitkul (Approx. 230 Km | 10-11 Hrs) | Kinnaur Valley Drive",
+      "activities": [
+        "Enjoy an early breakfast and begin your journey towards Chitkul.",
+        "Today's drive takes you through the spectacular landscapes of Kinnaur Valley.",
+        "Follow the Sutlej River as it cuts through deep gorges, towering cliffs, and rugged mountain terrain.",
+        "Along the way, pass apple orchards, traditional villages, and some of the most scenic stretches in the Himalayas.",
+        "By evening, arrive in Chitkul, the last inhabited village near the Indo-Tibetan border.",
+        "Check in to your campsite and soak in the peaceful mountain surroundings.",
+        "Dinner and overnight stay in Chitkul."
+      ]
+    },
+    {
+      "title": "Day 3 – Chitkul To Kalpa (Approx. 80 Km | 6-7 Hrs) | Baspa Valley & Kinnaur Kailash Views",
+      "activities": [
+        "Wake up early and witness a beautiful sunrise over the Baspa Valley.",
+        "Have breakfast and explore Chitkul's charming wooden houses, riverside trails, and mountain scenery.",
+        "By noon, begin your journey towards Kalpa.",
+        "Enjoy scenic views of apple orchards, deep valleys, and the rugged landscapes of Kinnaur along the way.",
+        "By evening, arrive in Kalpa and check in to your hotel.",
+        "Later, admire the majestic Kinnaur Kailash range before settling in for the night.",
+        "Dinner and overnight stay in Kalpa."
+      ]
+    },
+    {
+      "title": "Day 4 – Kalpa To Kaza (Approx. 220 Km | 8-9 Hrs) | Nako, Tabo & Ka Loops",
+      "activities": [
+        "Have breakfast and check out from your hotel in Kalpa.",
+        "Today, your Spiti Valley bike trip takes you deeper into the dramatic landscapes of the cold desert.",
+        "Cross the Sumdo border and enter Spiti Valley, where rugged mountains and vast open valleys dominate the scenery.",
+        "En route, visit Nako, a picturesque Himalayan village nestled beside a tranquil high-altitude lake.",
+        "Continue to Tabo and explore the ancient Tabo Monastery, home to centuries-old murals, temples, and Buddhist treasures.",
+        "Further ahead, drive through the famous Ka Loops, sharp hairpin bends offering spectacular views of the valley below.",
+        "By evening, arrive in Kaza, the heart of Spiti Valley, and check in to your hotel or homestay.",
+        "Dinner and overnight stay in Kaza."
+      ]
+    },
+    {
+      "title": "Day 5 – Kaza Sightseeing | Key Monastery, Chicham Bridge, Hikkim, Komic & Langza",
+      "activities": [
+        "Enjoy breakfast and set out to explore the highlights of your Spiti Valley bike tour package.",
+        "Begin at Key Monastery, the largest monastery in Spiti, known for its ancient murals, prayer halls, and sweeping valley views.",
+        "Next, stop at Chicham Bridge and gaze into the dramatic 1,000-ft-deep gorge below.",
+        "Continue to Komic, one of the world's highest inhabited villages, surrounded by vast barren mountains.",
+        "Later, visit Hikkim and send a postcard from one of the highest post offices on the planet.",
+        "The final stop is Langza, where you can spot ancient marine fossils and admire the giant Buddha statue overlooking the valley.",
+        "Return to Kaza by evening and unwind after a day of exploration.",
+        "Dinner and overnight stay in Kaza."
+      ]
+    },
+    {
+      "title": "Day 6 – Kaza To Chandratal (Approx. 95 Km | 5-6 Hrs) | Overnight Campstay",
+      "activities": [
+        "Enjoy breakfast and check out from your stay in Kaza.",
+        "Today, we make our way towards the spectacular Chandratal Lake.",
+        "En route, stop at Losar, the last village of Spiti Valley, and take a short break for refreshments.",
+        "By evening, arrive near Chandratal and check in to your campsite.",
+        "Later, take a short walk to the famous Moon Lake, known for its crystal-clear waters and changing shades of blue.",
+        "As night falls, witness the sky light up with countless stars, and on clear nights, even the Milky Way.",
+        "Dinner and overnight stay in camps near Chandratal."
+      ]
+    },
+    {
+      "title": "Day 7 – Chandratal To Manali (Approx. 95 Km | 5-6 Hrs) | Old Manali Café Crawl",
+      "activities": [
+        "Wake up to a beautiful mountain morning and enjoy breakfast at the campsite.",
+        "Later, begin your journey back to Manali through the rugged landscapes of Lahaul.",
+        "Cross mountain streams, rocky terrain, and scenic valley stretches along the way.",
+        "By evening, arrive in Manali and check in to your hotel.",
+        "After some time to relax, head out to explore the vibrant lanes of Old Manali.",
+        "Spend the evening café hopping, trying local delicacies, and soaking in the laid-back mountain vibe.",
+        "You can also browse through local shops and enjoy the lively atmosphere around the village.",
+        "Overnight stay in Manali."
+      ]
+    },
+    {
+      "title": "Day 8 – Self-Exploration In Manali & Departure | Until The Himalayas Call Again",
+      "activities": [
+        "Enjoy a hearty breakfast and then proceed to check out of the hotel.",
+        "Spend the day exploring Manali at your own pace.",
+        "You can visit the Hadimba Devi Temple, surrounded by towering cedar forests and known for its unique wooden architecture.",
+        "Walk through the lively lanes of Old Manali and unwind at its charming cafés.",
+        "Later, explore Mall Road for shopping, local treats, and souvenirs before your departure.",
+        "In the evening, board your overnight transfer to Delhi."
+      ]
+    },
+    {
+      "title": "Last Day – Arrival In Delhi",
+      "activities": [
+        "Arrive in Delhi by morning after your overnight journey from Manali.",
+        "Take back unforgettable memories of high mountain passes, ancient monasteries, remote villages, and star-filled Himalayan nights.",
+        "Your Spiti Valley adventure comes to an end here."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Spiti%20Valley%20Spiti%20Valley%207N%2F8D%20package"
+}

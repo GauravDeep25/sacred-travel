@@ -1,0 +1,96 @@
+{
+  "destination": "georgia",
+  "destinationDisplayName": "Georgia",
+  "category": "International",
+  "region": "CIS Countries",
+  "packageId": "georgia-1",
+  "packageTitle": "GEORGIA 5N6D",
+  "duration": "Georgia 5N/6D",
+  "durationShort": "5N/6D",
+  "slug": "5n-6d",
+  "pagePath": "/itinerary/georgia/5n-6d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/georgia/5n-6d",
+  "apiEndpoint": "/api/itineraries/georgia/5n-6d.json",
+  "image": "/assets/intl-caucasus-DAV0UB-k.jpg",
+  "inclusions": [
+    "5 nights accommodation in 4★ hotels on twin sharing basis.",
+    "Daily breakfast at the hotel.",
+    "Airport arrival & departure transfers.",
+    "Private vehicle for sightseeing and intercity transfers.",
+    "Tbilisi city sightseeing.",
+    "Full-day Kazbegi & Gudauri excursion.",
+    "Gergeti Trinity Church visit.",
+    "Mtskheta & Jvari Monastery sightseeing.",
+    "Ananuri Fortress & Zhinvali Reservoir visit.",
+    "English-speaking driver/guide.",
+    "Entrance fees as per itinerary.",
+    "All applicable local taxes and service charges.",
+    "24/7 local assistance during the tour."
+  ],
+  "days": [
+    {
+      "title": "Day 1 | Arrival in Tbilisi | Hotel Check-in & Evening at Leisure",
+      "activities": [
+        "Arrive at Tbilisi International Airport; warm welcome by our driver/guide.",
+        "Private transfer to your hotel in Tbilisi and smooth check-in.",
+        "Evening at leisure to stroll through illuminated Rustaveli Avenue or relax at cozy Georgian cafes.",
+        "Overnight stay in Tbilisi."
+      ]
+    },
+    {
+      "title": "Day 2 | Tbilisi City Tour: Old Town, Narikala & Sulphur Baths",
+      "activities": [
+        "Breakfast at the hotel.",
+        "Comprehensive Tbilisi city tour: stroll cobblestone streets of Old Tbilisi (Dzveli Tbilisi).",
+        "Take the aerial ropeway cable car up to the 4th-century Narikala Fortress for commanding views.",
+        "Visit the monumental Kartlis Deda (Mother of Georgia) statue.",
+        "Explore the historic Abanotubani Sulphur Bath district and the hidden Leghvtakhevi waterfall canyon.",
+        "Cross the iconic modern Bridge of Peace over the Mtkvari River and relax in Rike Park.",
+        "Evening at leisure; overnight stay in Tbilisi."
+      ]
+    },
+    {
+      "title": "Day 3 | Scenic Military Highway: Ananuri, Gudauri & Kazbegi",
+      "activities": [
+        "Breakfast at the hotel and check-out.",
+        "Embark on an exhilarating drive north along the historic Georgian Military Highway into the Greater Caucasus.",
+        "Stop at the turquoise Zhinvali Reservoir and explore the medieval Ananuri Fortress complex.",
+        "Drive past the ski resort of Gudauri and stop at the Russian-Georgian Friendship Monument viewpoint.",
+        "Arrive in Stepantsminda (Kazbegi) under the shadow of Mount Kazbek (5,054m); hotel check-in.",
+        "Overnight stay in Kazbegi."
+      ]
+    },
+    {
+      "title": "Day 4 | Gergeti Trinity Church & Return to Tbilisi",
+      "activities": [
+        "Breakfast at the hotel.",
+        "Take a 4x4 mountain ride up to the iconic 14th-century Gergeti Trinity Church perched dramatically at 2,170m.",
+        "Take in breathtaking panoramic views of snow-capped Mount Kazbek and the surrounding mountain valleys.",
+        "Scenic drive back south through the Dariali gorge towards Tbilisi.",
+        "Evening free for dinner at a traditional Georgian tavern with live polyphonic music and Khinkali / Khachapuri.",
+        "Overnight stay in Tbilisi."
+      ]
+    },
+    {
+      "title": "Day 5 | Mtskheta UNESCO Heritage Sites & Shopping",
+      "activities": [
+        "Breakfast at the hotel.",
+        "Drive to the ancient capital of Georgia, Mtskheta (a UNESCO World Heritage Site).",
+        "Visit the 6th-century Jvari Monastery overlooking the picturesque confluence of the Aragvi and Mtkvari rivers.",
+        "Explore the grand Svetitskhoveli Cathedral, burial site of Christ's mantle and spiritual heart of Georgia.",
+        "Browse Mtskheta's charming souvenir market for Georgian spices, Churchkhela sweets, and ceramics.",
+        "Return to Tbilisi for last-minute shopping at the Dry Bridge Flea Market or Galleria Mall.",
+        "Overnight stay in Tbilisi."
+      ]
+    },
+    {
+      "title": "Day 6 | Tbilisi Departure",
+      "activities": [
+        "Breakfast at the hotel and check-out.",
+        "Free time depending on your flight schedule.",
+        "Private transfer to Tbilisi International Airport for your onward journey."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Georgia%20Georgia%205N%2F6D%20package"
+}

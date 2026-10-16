@@ -7,8 +7,9 @@
     "node": ">=20.0.0"
   },
   "scripts": {
+    "generate-endpoints": "node scripts/generate-endpoints.js",
     "dev": "vite",
-    "build": "vite build",
+    "build": "node scripts/generate-endpoints.js && vite build",
     "lint": "oxlint",
     "preview": "vite preview"
   },

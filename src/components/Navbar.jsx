@@ -16,6 +16,8 @@ export default function Navbar() {
     "/contact",
     "/enquiry",
     "/enquire",
+    "/thank-you",
+    "/thankyou",
   ];
   
   const isPageTop = heroRoutes.includes(location.pathname) || location.pathname.startsWith('/itinerary') || location.pathname.startsWith('/itenary');

@@ -1,0 +1,266 @@
+{
+  "destination": "vietnam",
+  "displayName": "Vietnam",
+  "category": "International",
+  "region": "Southeast Asia",
+  "pagePath": "/itinerary/vietnam",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/vietnam",
+  "packagesCount": 2,
+  "packages": [
+    {
+      "destination": "vietnam",
+      "destinationDisplayName": "Vietnam",
+      "category": "International",
+      "region": "Southeast Asia",
+      "packageId": "vietnam-1",
+      "packageTitle": "Vietnam 6n/7d",
+      "duration": "Vietnam 6N/7D",
+      "durationShort": "6N/7D",
+      "slug": "6n-7d",
+      "pagePath": "/itinerary/vietnam/6n-7d",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/vietnam/6n-7d",
+      "apiEndpoint": "/api/itineraries/vietnam/6n-7d.json",
+      "image": "/assets/intl-vietnam-ZB5ZxQ8t.jpg",
+      "inclusions": [
+        "06 Nights Accommodation in hostel / hotel",
+        "A total of 7 meals included: Breakfast from Day 2 to Day 7 and Lunch on Day 2",
+        "Half-day Hanoi City tour",
+        "Halong Bay day tour with onboard Cruise Lunch and Kayaking",
+        "Full Day Bana Hill Tour with Cable Car and tickets to Golden Bridge, French Village, Fantasy Park (with rides)",
+        "Hoi An Ancient Town Tour",
+        "Basket Boat Ride in Coconut Forest and Lantern boat ride on Hoai River",
+        "Cu Chi Tunnels Tour",
+        "Domestic Flights – (Hanoi to Danang to Saigon)",
+        "All entrance fees and sightseeing as mentioned in the program",
+        "Transportation by vehicle with A/C as per program",
+        "Local English-speaking guides in Vietnam",
+        "Bottles of mineral water on tour days"
+      ],
+      "days": [
+        {
+          "title": "Day 1 | Hanoi Arrival & Half-Day City Tour",
+          "activities": [
+            "Arrival at Noi Bai International Airport in Hanoi; meet and greet by our local representative.",
+            "Transfer to your accommodation and complete smooth check-in formalities.",
+            "Commence the half-day Hanoi city tour: visit the vibrant Old Quarter and scenic Hoan Kiem Lake.",
+            "Visit the sacred Ngoc Son Temple located on an islet within Hoan Kiem Lake.",
+            "Explore the bustling French colonial boulevards and traditional trading guilds.",
+            "Evening at leisure to try iconic Vietnamese egg coffee or enjoy local street food.",
+            "Overnight stay in Hanoi."
+          ]
+        },
+        {
+          "title": "Day 2 | Halong Bay Day Cruise with Onboard Lunch & Kayaking",
+          "activities": [
+            "Breakfast at the accommodation followed by a morning drive to Halong Bay via the expressway.",
+            "Board the luxury day cruise at Tuan Chau Marina and receive a warm welcome drink.",
+            "Savor a sumptuous seafood and Vietnamese buffet lunch as the boat sails through thousands of limestone islands.",
+            "Explore Sung Sot (Surprise) Cave, admiring the dramatic stalactites and karst formations.",
+            "Experience kayaking or a bamboo boat ride through the tranquil waters of Luon Cave lagoon.",
+            "Visit Titov Island to swim in emerald waters or climb to the summit for a 360-degree panoramic view.",
+            "Sunset party on the sundeck with tea and fresh fruits during the return cruise to the harbor.",
+            "Transfer back to Hanoi in the evening; overnight stay in Hanoi."
+          ]
+        },
+        {
+          "title": "Day 3 | Flight to Da Nang & Leisure by the Beach",
+          "activities": [
+            "Breakfast at accommodation and check-out.",
+            "Private transfer to Noi Bai Airport for your domestic flight to Da Nang.",
+            "Arrive at Da Nang Airport and transfer to your hotel for check-in.",
+            "Afternoon free to relax on the pristine sands of My Khe Beach.",
+            "Evening stroll along the Han River waterfront to admire the glowing bridges.",
+            "Witness the spectacle of the Dragon Bridge and explore local seaside cafes.",
+            "Overnight stay in Da Nang."
+          ]
+        },
+        {
+          "title": "Day 4 | Marble Mountains, Coconut Forest & Hoi An Ancient Town",
+          "activities": [
+            "Breakfast at the hotel.",
+            "Visit the Marble Mountains (Ngu Hanh Son) to explore stone-carved pagodas and natural caves.",
+            "Proceed to Cam Thanh Coconut Village for a fun round basket boat ride amidst water palm groves.",
+            "Arrive in the UNESCO World Heritage town of Hoi An.",
+            "Guided walking tour of Hoi An Ancient Town: Japanese Covered Bridge, Phuc Kien Assembly Hall, and antique merchant houses.",
+            "Board a traditional wooden boat on the Hoai River to release glowing paper lanterns for blessings.",
+            "Explore the vibrant Hoi An night market with lanterns, handmade crafts, and street delicacies.",
+            "Return to Da Nang for overnight stay."
+          ]
+        },
+        {
+          "title": "Day 5 | Ba Na Hills & Golden Bridge Full-Day Tour",
+          "activities": [
+            "Breakfast at the hotel.",
+            "Transfer to Ba Na Hills and board the world-record holding cable car to the summit.",
+            "Walk along the iconic Golden Bridge held aloft by giant mossy stone hands with sweeping mountain views.",
+            "Visit Le Jardin D'Amour flower gardens, Debay Wine Cellar, and the giant Linh Ung Buddha statue.",
+            "Explore the charming French Village featuring Gothic cathedrals and cobblestone streets.",
+            "Enjoy exhilarating rides, 4D/5D cinema, and games at the indoor Fantasy Park.",
+            "Descend via cable car in the afternoon and return to Da Nang.",
+            "Overnight stay in Da Nang."
+          ]
+        },
+        {
+          "title": "Day 6 | Flight to Ho Chi Minh City (Saigon) & Leisure",
+          "activities": [
+            "Breakfast at hotel and check-out.",
+            "Transfer to Da Nang Airport for your domestic flight to Ho Chi Minh City (Saigon).",
+            "Arrive in Ho Chi Minh City and private transfer to your hotel for check-in.",
+            "Afternoon at leisure to discover the lively streets of District 1.",
+            "Visit landmarks like the Saigon Central Post Office, Notre-Dame Cathedral Basilica, or Ben Thanh Market.",
+            "Evening stroll along Nguyen Hue Walking Street and experience Saigon's vibrant nightlife.",
+            "Overnight stay in Ho Chi Minh City."
+          ]
+        },
+        {
+          "title": "Day 7 | Cu Chi Tunnels Tour & Airport Departure",
+          "activities": [
+            "Breakfast at the hotel and check-out.",
+            "Morning tour to the historic Cu Chi Tunnels, the famous underground resistance network of the Vietnam War.",
+            "Crawl through safe sections of the tunnels, see command posts, booby traps, and field hospitals.",
+            "Watch historical footage and taste boiled tapioca with sesame salt, the wartime staple meal.",
+            "Return towards the city; time for last-minute souvenir shopping.",
+            "Transfer to Tan Son Nhat International Airport for your departure flight home."
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Vietnam%20Vietnam%206N%2F7D%20package"
+    },
+    {
+      "destination": "vietnam",
+      "destinationDisplayName": "Vietnam",
+      "category": "International",
+      "region": "Southeast Asia",
+      "packageId": "vietnam-2",
+      "packageTitle": "Vietnam 7n/8d",
+      "duration": "Vietnam 7N/8D",
+      "durationShort": "7N/8D",
+      "slug": "7n-8d",
+      "pagePath": "/itinerary/vietnam/7n-8d",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/vietnam/7n-8d",
+      "apiEndpoint": "/api/itineraries/vietnam/7n-8d.json",
+      "image": "/assets/intl-vietnam-ZB5ZxQ8t.jpg",
+      "inclusions": [
+        "7 Nights Accommodation based on double/twin sharing room as per the itinerary",
+        "A total of 9 meals included: Breakfast from Day 2 to Day 8 and Lunch on Day 2 & 4",
+        "Muong Hoa Funicular (2 way) + buffet lunch",
+        "Hanoi to Sapa & Sapa to Hanoi via Sleeper or Limousine Bus",
+        "Sun World Fansipan Legend with Cable car ticket",
+        "Glass Bridge Ticket",
+        "Cat Cat Village Tour",
+        "Half-day Hanoi City tour",
+        "Halong Bay day tour with Sunset party and Kayaking",
+        "Marble Mountains Tour",
+        "Coconut Village Tour with Basket Boat ride",
+        "Hoi An Ancient Town Tour",
+        "Lantern boat ride on Hoai River",
+        "Full Day Bana Hill Tour with Cable Car and tickets to Golden Bridge, French Village, Fantasy Park (with rides)",
+        "Domestic Flight – (Hanoi to Da Nang)",
+        "Sightseeing as mentioned in the program",
+        "Transportation by vehicle with A/C as per the program",
+        "Local English-speaking guides in Vietnam",
+        "Bottles of mineral water on tour days",
+        "Fixed Airport Pick-up & Drop-off"
+      ],
+      "days": [
+        {
+          "title": "Day 1 | Arrival In Hanoi & Transfer To Sapa | Evening At Leisure",
+          "activities": [
+            "Arrival at Hanoi Noi Bai International Airport and welcome by your tour coordinator.",
+            "Board the comfortable limousine sleeper coach for the scenic journey to the misty mountain town of Sapa.",
+            "Drive along the scenic northern expressway through the Red River Delta and into the mountains.",
+            "Arrive in Sapa town nestled beneath the Hoang Lien Son range; check in at your hotel.",
+            "Evening free to explore the iconic Sapa Stone Church, bustling night market, and hillside cafes.",
+            "Overnight stay in Sapa."
+          ]
+        },
+        {
+          "title": "Day 2 | Sapa Tour: Fansipan Peak, Glass Bridge & Cat Cat Village",
+          "activities": [
+            "Breakfast at the hotel.",
+            "Ride the Muong Hoa Funicular across scenic terraced rice valleys to the cable car station.",
+            "Ascend via the Sun World cable car to Fansipan Peak (3,143m), known as the 'Roof of Indochina'.",
+            "Explore the grand mountain pagodas, giant Amitabha Buddha, and panoramic viewing decks above the clouds.",
+            "Relish a delicious buffet lunch included at the mountain restaurant.",
+            "Walk on the Rong May Glass Bridge suspended along cliff faces for an adrenaline rush and breathtaking valley views.",
+            "Afternoon trek to Cat Cat Village, home to the Black H'mong ethnic community, with waterfalls and traditional watermills.",
+            "Return to your hotel; overnight stay in Sapa."
+          ]
+        },
+        {
+          "title": "Day 3 | Sapa to Hanoi & Half-Day Hanoi City Tour",
+          "activities": [
+            "Breakfast at the hotel and check-out.",
+            "Board the limousine bus for the return scenic journey back down to Hanoi.",
+            "Arrive in Hanoi by early afternoon and check in to your hotel.",
+            "Half-day Hanoi city tour: visit the historic Temple of Literature, Vietnam's first national university.",
+            "Explore the picturesque Hoan Kiem Lake, Ngoc Son Temple, and the vibrant maze of the 36 Old Quarter streets.",
+            "Evening free to enjoy dinner at local bistros or sample traditional Pho and egg coffee.",
+            "Overnight stay in Hanoi."
+          ]
+        },
+        {
+          "title": "Day 4 | Ha Long Bay Luxury Day Cruise, Kayaking & Buffet Lunch",
+          "activities": [
+            "Early breakfast at the hotel followed by morning transfer to Tuan Chau Port in Halong Bay.",
+            "Board the luxury day cruise and set sail through the UNESCO World Heritage seascape.",
+            "Enjoy a lavish international and fresh seafood buffet lunch while gliding past iconic limestone islets.",
+            "Explore Sung Sot (Surprise) Cave, filled with breathtaking stalactites and illuminated caverns.",
+            "Kayaking or bamboo boat ride through Luon Cave into a tranquil emerald lagoon.",
+            "Stop at Titov Island to climb the panoramic viewpoint or relax and swim on the sandy beach.",
+            "Enjoy a sunset tea party on the sundeck as the cruise heads back to the harbor.",
+            "Transfer back to Hanoi in the evening; overnight stay in Hanoi."
+          ]
+        },
+        {
+          "title": "Day 5 | Hanoi to Da Nang | Flight Transfer & Evening at Leisure",
+          "activities": [
+            "Breakfast at the hotel and check-out.",
+            "Transfer to Hanoi Airport for your flight to the coastal city of Da Nang.",
+            "Arrival at Da Nang Airport and transfer to your beachfront hotel.",
+            "Afternoon at leisure to soak in the sun at My Khe Beach.",
+            "Visit the Son Tra Peninsula and marvel at the 67-meter tall Lady Buddha statue at Linh Ung Pagoda.",
+            "Evening leisure walk to view the illuminated Dragon Bridge spanning the Han River.",
+            "Overnight stay in Da Nang."
+          ]
+        },
+        {
+          "title": "Day 6 | Marble Mountains, Coconut Forest, Hoi An & Lantern Boat Ride",
+          "activities": [
+            "Breakfast at the hotel.",
+            "Morning tour of the Marble Mountains (Ngu Hanh Son) to explore hidden Buddhist shrines inside natural grottos.",
+            "Visit Cam Thanh Coconut Forest and take an exciting round bamboo basket boat ride with local rowing stunts.",
+            "Head to the UNESCO World Heritage town of Hoi An.",
+            "Stroll through historic lantern-lit alleys, visiting the 400-year-old Japanese Covered Bridge and old merchant residences.",
+            "Take an evening boat ride on the Hoai River to release paper flower candle lanterns for good fortune.",
+            "Time for shopping at Hoi An Night Market for silk lanterns, leather goods, and local treats.",
+            "Return to Da Nang; overnight stay in Da Nang."
+          ]
+        },
+        {
+          "title": "Day 7 | Ba Na Hills Full Day: Cable Car, Golden Bridge & Fantasy Park",
+          "activities": [
+            "Breakfast at the hotel.",
+            "Transfer to Sun World Ba Na Hills and board the world's longest single-rope cable car.",
+            "Walk along the world-renowned Golden Bridge supported by gigantic stone hands high above the clouds.",
+            "Tour the French Village with its European architecture, Le Jardin D'Amour gardens, and the Debay Wine Cellar.",
+            "Enjoy unlimited games, 4D/5D cinema, and rides at the indoor Fantasy Park.",
+            "Visit the mountain Linh Ung Pagoda with its 27m high seated Shakyamuni Buddha.",
+            "Descend by cable car in the late afternoon and return to Da Nang.",
+            "Overnight stay in Da Nang."
+          ]
+        },
+        {
+          "title": "Day 8 | Da Nang Leisure & Airport Departure",
+          "activities": [
+            "Breakfast at the hotel and morning at leisure for beachside walks or souvenir shopping.",
+            "Complete hotel check-out.",
+            "Private transfer to Da Nang International Airport for your scheduled return flight.",
+            "Depart with cherished memories of your incredible journey across Vietnam."
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Vietnam%20Vietnam%207N%2F8D%20package"
+    }
+  ]
+}

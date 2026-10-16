@@ -1,0 +1,786 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-10-16T13:24:16.747Z",
+  "baseDomain": "https://www.yugatirtha.com",
+  "totalDestinations": 22,
+  "totalSubItineraries": 57,
+  "destinations": [
+    {
+      "destination": "kashmir",
+      "displayName": "Kashmir",
+      "category": "Domestic",
+      "region": "North India",
+      "path": "/itinerary/kashmir",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/kashmir",
+      "packagesCount": 3,
+      "apiEndpoint": "/api/itineraries/kashmir.json",
+      "subItineraries": [
+        {
+          "slug": "4n-5d",
+          "duration": "Kashmir 4N/5D",
+          "durationShort": "4N/5D",
+          "packageTitle": "Kashmir",
+          "path": "/itinerary/kashmir/4n-5d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/kashmir/4n-5d",
+          "apiEndpoint": "/api/itineraries/kashmir/4n-5d.json"
+        },
+        {
+          "slug": "5n-6d",
+          "duration": "Kashmir 5N/6D",
+          "durationShort": "5N/6D",
+          "packageTitle": "Kashmir",
+          "path": "/itinerary/kashmir/5n-6d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/kashmir/5n-6d",
+          "apiEndpoint": "/api/itineraries/kashmir/5n-6d.json"
+        },
+        {
+          "slug": "6n-7d",
+          "duration": "Kashmir 6N/7D",
+          "durationShort": "6N/7D",
+          "packageTitle": "Kashmir",
+          "path": "/itinerary/kashmir/6n-7d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/kashmir/6n-7d",
+          "apiEndpoint": "/api/itineraries/kashmir/6n-7d.json"
+        }
+      ]
+    },
+    {
+      "destination": "ladakh",
+      "displayName": "Ladakh",
+      "category": "Domestic",
+      "region": "North India",
+      "path": "/itinerary/ladakh",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/ladakh",
+      "packagesCount": 3,
+      "apiEndpoint": "/api/itineraries/ladakh.json",
+      "subItineraries": [
+        {
+          "slug": "5n-6d",
+          "duration": "Ladakh 5N/6D",
+          "durationShort": "5N/6D",
+          "packageTitle": "Ladakh",
+          "path": "/itinerary/ladakh/5n-6d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/ladakh/5n-6d",
+          "apiEndpoint": "/api/itineraries/ladakh/5n-6d.json"
+        },
+        {
+          "slug": "6n-7d",
+          "duration": "Ladakh 6N/7D",
+          "durationShort": "6N/7D",
+          "packageTitle": "Ladakh",
+          "path": "/itinerary/ladakh/6n-7d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/ladakh/6n-7d",
+          "apiEndpoint": "/api/itineraries/ladakh/6n-7d.json"
+        },
+        {
+          "slug": "7n-8d",
+          "duration": "Ladakh 7N/8D",
+          "durationShort": "7N/8D",
+          "packageTitle": "Ladakh",
+          "path": "/itinerary/ladakh/7n-8d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/ladakh/7n-8d",
+          "apiEndpoint": "/api/itineraries/ladakh/7n-8d.json"
+        }
+      ]
+    },
+    {
+      "destination": "himachal",
+      "displayName": "Himachal Pradesh",
+      "category": "Domestic",
+      "region": "North India",
+      "path": "/itinerary/himachal",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/himachal",
+      "packagesCount": 4,
+      "apiEndpoint": "/api/itineraries/himachal.json",
+      "subItineraries": [
+        {
+          "slug": "4n-5d",
+          "duration": "Himachal 4N/5D",
+          "durationShort": "4N/5D",
+          "packageTitle": "Himachal",
+          "path": "/itinerary/himachal/4n-5d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/himachal/4n-5d",
+          "apiEndpoint": "/api/itineraries/himachal/4n-5d.json"
+        },
+        {
+          "slug": "5n-6d",
+          "duration": "Himachal 5N/6D",
+          "durationShort": "5N/6D",
+          "packageTitle": "Himachal",
+          "path": "/itinerary/himachal/5n-6d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/himachal/5n-6d",
+          "apiEndpoint": "/api/itineraries/himachal/5n-6d.json"
+        },
+        {
+          "slug": "5n-6d-jibhi-tirthan",
+          "duration": "Himachal 5N/6D",
+          "durationShort": "5N/6D",
+          "packageTitle": "Himachal",
+          "path": "/itinerary/himachal/5n-6d-jibhi-tirthan",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/himachal/5n-6d-jibhi-tirthan",
+          "apiEndpoint": "/api/itineraries/himachal/5n-6d-jibhi-tirthan.json"
+        },
+        {
+          "slug": "8n-9d",
+          "duration": "Himachal 8N/9D",
+          "durationShort": "8N/9D",
+          "packageTitle": "Himachal",
+          "path": "/itinerary/himachal/8n-9d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/himachal/8n-9d",
+          "apiEndpoint": "/api/itineraries/himachal/8n-9d.json"
+        }
+      ]
+    },
+    {
+      "destination": "spiti",
+      "displayName": "Spiti Valley",
+      "category": "Domestic",
+      "region": "North India",
+      "path": "/itinerary/spiti",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/spiti",
+      "packagesCount": 3,
+      "apiEndpoint": "/api/itineraries/spiti.json",
+      "subItineraries": [
+        {
+          "slug": "6n-7d",
+          "duration": "Spiti Valley 6N/7D",
+          "durationShort": "6N/7D",
+          "packageTitle": "Spiti Valley",
+          "path": "/itinerary/spiti/6n-7d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/spiti/6n-7d",
+          "apiEndpoint": "/api/itineraries/spiti/6n-7d.json"
+        },
+        {
+          "slug": "7n-8d",
+          "duration": "Spiti Valley 7N/8D",
+          "durationShort": "7N/8D",
+          "packageTitle": "Spiti Valley",
+          "path": "/itinerary/spiti/7n-8d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/spiti/7n-8d",
+          "apiEndpoint": "/api/itineraries/spiti/7n-8d.json"
+        },
+        {
+          "slug": "8n-9d",
+          "duration": "Spiti Valley 8N/9D",
+          "durationShort": "8N/9D",
+          "packageTitle": "Spiti Valley",
+          "path": "/itinerary/spiti/8n-9d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/spiti/8n-9d",
+          "apiEndpoint": "/api/itineraries/spiti/8n-9d.json"
+        }
+      ]
+    },
+    {
+      "destination": "meghalaya",
+      "displayName": "Meghalaya",
+      "category": "Domestic",
+      "region": "Northeast India",
+      "path": "/itinerary/meghalaya",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/meghalaya",
+      "packagesCount": 3,
+      "apiEndpoint": "/api/itineraries/meghalaya.json",
+      "subItineraries": [
+        {
+          "slug": "4n-5d",
+          "duration": "Meghalaya 4N/5D",
+          "durationShort": "4N/5D",
+          "packageTitle": "Meghalaya",
+          "path": "/itinerary/meghalaya/4n-5d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/meghalaya/4n-5d",
+          "apiEndpoint": "/api/itineraries/meghalaya/4n-5d.json"
+        },
+        {
+          "slug": "5n-6d",
+          "duration": "Meghalaya 5N/6D",
+          "durationShort": "5N/6D",
+          "packageTitle": "Meghalaya",
+          "path": "/itinerary/meghalaya/5n-6d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/meghalaya/5n-6d",
+          "apiEndpoint": "/api/itineraries/meghalaya/5n-6d.json"
+        },
+        {
+          "slug": "6n-7d",
+          "duration": "Meghalaya 6N/7D",
+          "durationShort": "6N/7D",
+          "packageTitle": "Meghalaya",
+          "path": "/itinerary/meghalaya/6n-7d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/meghalaya/6n-7d",
+          "apiEndpoint": "/api/itineraries/meghalaya/6n-7d.json"
+        }
+      ]
+    },
+    {
+      "destination": "sikkim",
+      "displayName": "Sikkim",
+      "category": "Domestic",
+      "region": "Northeast India",
+      "path": "/itinerary/sikkim",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/sikkim",
+      "packagesCount": 3,
+      "apiEndpoint": "/api/itineraries/sikkim.json",
+      "subItineraries": [
+        {
+          "slug": "4n-5d",
+          "duration": "Sikkim 4N/5D",
+          "durationShort": "4N/5D",
+          "packageTitle": "Sikkim",
+          "path": "/itinerary/sikkim/4n-5d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/sikkim/4n-5d",
+          "apiEndpoint": "/api/itineraries/sikkim/4n-5d.json"
+        },
+        {
+          "slug": "5n-6d",
+          "duration": "Sikkim 5N/6D",
+          "durationShort": "5N/6D",
+          "packageTitle": "Sikkim",
+          "path": "/itinerary/sikkim/5n-6d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/sikkim/5n-6d",
+          "apiEndpoint": "/api/itineraries/sikkim/5n-6d.json"
+        },
+        {
+          "slug": "6n-7d",
+          "duration": "Sikkim 6N/7D",
+          "durationShort": "6N/7D",
+          "packageTitle": "Sikkim",
+          "path": "/itinerary/sikkim/6n-7d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/sikkim/6n-7d",
+          "apiEndpoint": "/api/itineraries/sikkim/6n-7d.json"
+        }
+      ]
+    },
+    {
+      "destination": "arunachal",
+      "displayName": "Arunachal Pradesh",
+      "category": "Domestic",
+      "region": "Northeast India",
+      "path": "/itinerary/arunachal",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/arunachal",
+      "packagesCount": 3,
+      "apiEndpoint": "/api/itineraries/arunachal.json",
+      "subItineraries": [
+        {
+          "slug": "4n-5d",
+          "duration": "Arunachal 4N/5D",
+          "durationShort": "4N/5D",
+          "packageTitle": "Arunachal",
+          "path": "/itinerary/arunachal/4n-5d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/arunachal/4n-5d",
+          "apiEndpoint": "/api/itineraries/arunachal/4n-5d.json"
+        },
+        {
+          "slug": "5n-6d",
+          "duration": "Arunachal 5N/6D",
+          "durationShort": "5N/6D",
+          "packageTitle": "Arunachal",
+          "path": "/itinerary/arunachal/5n-6d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/arunachal/5n-6d",
+          "apiEndpoint": "/api/itineraries/arunachal/5n-6d.json"
+        },
+        {
+          "slug": "6n-7d",
+          "duration": "Arunachal 6N/7D",
+          "durationShort": "6N/7D",
+          "packageTitle": "Arunachal",
+          "path": "/itinerary/arunachal/6n-7d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/arunachal/6n-7d",
+          "apiEndpoint": "/api/itineraries/arunachal/6n-7d.json"
+        }
+      ]
+    },
+    {
+      "destination": "rajasthan",
+      "displayName": "Rajasthan",
+      "category": "Domestic",
+      "region": "West India",
+      "path": "/itinerary/rajasthan",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/rajasthan",
+      "packagesCount": 3,
+      "apiEndpoint": "/api/itineraries/rajasthan.json",
+      "subItineraries": [
+        {
+          "slug": "6n-7d",
+          "duration": "Rajasthan 6N/7D",
+          "durationShort": "6N/7D",
+          "packageTitle": "Rajasthan",
+          "path": "/itinerary/rajasthan/6n-7d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/rajasthan/6n-7d",
+          "apiEndpoint": "/api/itineraries/rajasthan/6n-7d.json"
+        },
+        {
+          "slug": "7n-8d",
+          "duration": "Rajasthan 7N/8D",
+          "durationShort": "7N/8D",
+          "packageTitle": "Rajasthan",
+          "path": "/itinerary/rajasthan/7n-8d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/rajasthan/7n-8d",
+          "apiEndpoint": "/api/itineraries/rajasthan/7n-8d.json"
+        },
+        {
+          "slug": "9n-10d",
+          "duration": "Rajasthan 9N/10D",
+          "durationShort": "9N/10D",
+          "packageTitle": "Rajasthan",
+          "path": "/itinerary/rajasthan/9n-10d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/rajasthan/9n-10d",
+          "apiEndpoint": "/api/itineraries/rajasthan/9n-10d.json"
+        }
+      ]
+    },
+    {
+      "destination": "bali",
+      "displayName": "Bali",
+      "category": "International",
+      "region": "Southeast Asia",
+      "path": "/itinerary/bali",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/bali",
+      "packagesCount": 2,
+      "apiEndpoint": "/api/itineraries/bali.json",
+      "subItineraries": [
+        {
+          "slug": "5n-6d",
+          "duration": "Bali 5N/6D",
+          "durationShort": "5N/6D",
+          "packageTitle": "BALI 5N",
+          "path": "/itinerary/bali/5n-6d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/bali/5n-6d",
+          "apiEndpoint": "/api/itineraries/bali/5n-6d.json"
+        },
+        {
+          "slug": "5n-6d-yoga",
+          "duration": "Bali 5N/6D (Yoga)",
+          "durationShort": "5N/6D",
+          "packageTitle": "BALI 5N (YOGA)",
+          "path": "/itinerary/bali/5n-6d-yoga",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/bali/5n-6d-yoga",
+          "apiEndpoint": "/api/itineraries/bali/5n-6d-yoga.json"
+        }
+      ]
+    },
+    {
+      "destination": "japan",
+      "displayName": "Japan",
+      "category": "International",
+      "region": "East Asia",
+      "path": "/itinerary/japan",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/japan",
+      "packagesCount": 2,
+      "apiEndpoint": "/api/itineraries/japan.json",
+      "subItineraries": [
+        {
+          "slug": "7n-8d",
+          "duration": "Japan 7N/8D",
+          "durationShort": "7N/8D",
+          "packageTitle": "JAPAN 7N",
+          "path": "/itinerary/japan/7n-8d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/japan/7n-8d",
+          "apiEndpoint": "/api/itineraries/japan/7n-8d.json"
+        },
+        {
+          "slug": "8n-9d",
+          "duration": "Japan 8N/9D",
+          "durationShort": "8N/9D",
+          "packageTitle": "JAPAN 8N",
+          "path": "/itinerary/japan/8n-9d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/japan/8n-9d",
+          "apiEndpoint": "/api/itineraries/japan/8n-9d.json"
+        }
+      ]
+    },
+    {
+      "destination": "srilanka",
+      "displayName": "Sri Lanka",
+      "category": "International",
+      "region": "South Asia",
+      "path": "/itinerary/srilanka",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/srilanka",
+      "packagesCount": 2,
+      "apiEndpoint": "/api/itineraries/srilanka.json",
+      "subItineraries": [
+        {
+          "slug": "5n-6d",
+          "duration": "Sri Lanka 5N/6D",
+          "durationShort": "5N/6D",
+          "packageTitle": "Sri lanka - 5n/6d",
+          "path": "/itinerary/srilanka/5n-6d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/srilanka/5n-6d",
+          "apiEndpoint": "/api/itineraries/srilanka/5n-6d.json"
+        },
+        {
+          "slug": "5n-6d-ella-trincomalee",
+          "duration": "Sri Lanka 5N/6D (Ella & Trincomalee)",
+          "durationShort": "5N/6D",
+          "packageTitle": "Sri lanka 5n/6d (Ella and trinkomale)",
+          "path": "/itinerary/srilanka/5n-6d-ella-trincomalee",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/srilanka/5n-6d-ella-trincomalee",
+          "apiEndpoint": "/api/itineraries/srilanka/5n-6d-ella-trincomalee.json"
+        }
+      ]
+    },
+    {
+      "destination": "philippines",
+      "displayName": "Philippines",
+      "category": "International",
+      "region": "Southeast Asia",
+      "path": "/itinerary/philippines",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/philippines",
+      "packagesCount": 2,
+      "apiEndpoint": "/api/itineraries/philippines.json",
+      "subItineraries": [
+        {
+          "slug": "7n-8d",
+          "duration": "Philippines 7N/8D",
+          "durationShort": "7N/8D",
+          "packageTitle": "PHILIPPINES",
+          "path": "/itinerary/philippines/7n-8d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/philippines/7n-8d",
+          "apiEndpoint": "/api/itineraries/philippines/7n-8d.json"
+        },
+        {
+          "slug": "6n-7d",
+          "duration": "Philippines 6N/7D",
+          "durationShort": "6N/7D",
+          "packageTitle": "PHILIPPINES",
+          "path": "/itinerary/philippines/6n-7d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/philippines/6n-7d",
+          "apiEndpoint": "/api/itineraries/philippines/6n-7d.json"
+        }
+      ]
+    },
+    {
+      "destination": "georgia",
+      "displayName": "Georgia",
+      "category": "International",
+      "region": "CIS Countries",
+      "path": "/itinerary/georgia",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/georgia",
+      "packagesCount": 2,
+      "apiEndpoint": "/api/itineraries/georgia.json",
+      "subItineraries": [
+        {
+          "slug": "5n-6d",
+          "duration": "Georgia 5N/6D",
+          "durationShort": "5N/6D",
+          "packageTitle": "GEORGIA 5N6D",
+          "path": "/itinerary/georgia/5n-6d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/georgia/5n-6d",
+          "apiEndpoint": "/api/itineraries/georgia/5n-6d.json"
+        },
+        {
+          "slug": "6n-7d",
+          "duration": "Georgia 6N/7D",
+          "durationShort": "6N/7D",
+          "packageTitle": "GEORGIA 6N7D",
+          "path": "/itinerary/georgia/6n-7d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/georgia/6n-7d",
+          "apiEndpoint": "/api/itineraries/georgia/6n-7d.json"
+        }
+      ]
+    },
+    {
+      "destination": "vietnam",
+      "displayName": "Vietnam",
+      "category": "International",
+      "region": "Southeast Asia",
+      "path": "/itinerary/vietnam",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/vietnam",
+      "packagesCount": 2,
+      "apiEndpoint": "/api/itineraries/vietnam.json",
+      "subItineraries": [
+        {
+          "slug": "6n-7d",
+          "duration": "Vietnam 6N/7D",
+          "durationShort": "6N/7D",
+          "packageTitle": "Vietnam 6n/7d",
+          "path": "/itinerary/vietnam/6n-7d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/vietnam/6n-7d",
+          "apiEndpoint": "/api/itineraries/vietnam/6n-7d.json"
+        },
+        {
+          "slug": "7n-8d",
+          "duration": "Vietnam 7N/8D",
+          "durationShort": "7N/8D",
+          "packageTitle": "Vietnam 7n/8d",
+          "path": "/itinerary/vietnam/7n-8d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/vietnam/7n-8d",
+          "apiEndpoint": "/api/itineraries/vietnam/7n-8d.json"
+        }
+      ]
+    },
+    {
+      "destination": "uttarakhand",
+      "displayName": "Uttarakhand",
+      "category": "Spiritual",
+      "region": "North India",
+      "path": "/itinerary/uttarakhand",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/uttarakhand",
+      "packagesCount": 4,
+      "apiEndpoint": "/api/itineraries/uttarakhand.json",
+      "subItineraries": [
+        {
+          "slug": "do-dham-5n-6d",
+          "duration": "Do Dham 5N/6D",
+          "durationShort": "5N/6D",
+          "packageTitle": "Do Dham",
+          "path": "/itinerary/uttarakhand/do-dham-5n-6d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/uttarakhand/do-dham-5n-6d",
+          "apiEndpoint": "/api/itineraries/uttarakhand/do-dham-5n-6d.json"
+        },
+        {
+          "slug": "char-dham-9n-10d",
+          "duration": "Char Dham 9N/10D",
+          "durationShort": "9N/10D",
+          "packageTitle": "Char Dham",
+          "path": "/itinerary/uttarakhand/char-dham-9n-10d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/uttarakhand/char-dham-9n-10d",
+          "apiEndpoint": "/api/itineraries/uttarakhand/char-dham-9n-10d.json"
+        },
+        {
+          "slug": "kainchi-dham-2n-3d",
+          "duration": "Kainchi Dham 2N/3D",
+          "durationShort": "2N/3D",
+          "packageTitle": "Kainchi Dham",
+          "path": "/itinerary/uttarakhand/kainchi-dham-2n-3d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/uttarakhand/kainchi-dham-2n-3d",
+          "apiEndpoint": "/api/itineraries/uttarakhand/kainchi-dham-2n-3d.json"
+        },
+        {
+          "slug": "badrinath-4n-5d",
+          "duration": "Badrinath 4N/5D",
+          "durationShort": "4N/5D",
+          "packageTitle": "Badrinath",
+          "path": "/itinerary/uttarakhand/badrinath-4n-5d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/uttarakhand/badrinath-4n-5d",
+          "apiEndpoint": "/api/itineraries/uttarakhand/badrinath-4n-5d.json"
+        }
+      ]
+    },
+    {
+      "destination": "uttarpradesh",
+      "displayName": "Uttar Pradesh",
+      "category": "Spiritual",
+      "region": "North India",
+      "path": "/itinerary/uttarpradesh",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/uttarpradesh",
+      "packagesCount": 3,
+      "apiEndpoint": "/api/itineraries/uttarpradesh.json",
+      "subItineraries": [
+        {
+          "slug": "varanasi-ayodhya-4n-5d",
+          "duration": "Varanasi - Ayodhya 4N/5D",
+          "durationShort": "4N/5D",
+          "packageTitle": "Varanasi - Ayodhya",
+          "path": "/itinerary/uttarpradesh/varanasi-ayodhya-4n-5d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/uttarpradesh/varanasi-ayodhya-4n-5d",
+          "apiEndpoint": "/api/itineraries/uttarpradesh/varanasi-ayodhya-4n-5d.json"
+        },
+        {
+          "slug": "kashi-2n-3d",
+          "duration": "Kashi 2N/3D",
+          "durationShort": "2N/3D",
+          "packageTitle": "Kashi Package",
+          "path": "/itinerary/uttarpradesh/kashi-2n-3d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/uttarpradesh/kashi-2n-3d",
+          "apiEndpoint": "/api/itineraries/uttarpradesh/kashi-2n-3d.json"
+        },
+        {
+          "slug": "kashi-prayagraj-ayodhya-4n-5d",
+          "duration": "Kashi-Prayagraj-Ayodhya 4N/5D",
+          "durationShort": "4N/5D",
+          "packageTitle": "Kashi-Prayagraj-Ayodhya",
+          "path": "/itinerary/uttarpradesh/kashi-prayagraj-ayodhya-4n-5d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/uttarpradesh/kashi-prayagraj-ayodhya-4n-5d",
+          "apiEndpoint": "/api/itineraries/uttarpradesh/kashi-prayagraj-ayodhya-4n-5d.json"
+        }
+      ]
+    },
+    {
+      "destination": "madhyapradesh",
+      "displayName": "Madhya Pradesh",
+      "category": "Spiritual",
+      "region": "Central India",
+      "path": "/itinerary/madhyapradesh",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/madhyapradesh",
+      "packagesCount": 2,
+      "apiEndpoint": "/api/itineraries/madhyapradesh.json",
+      "subItineraries": [
+        {
+          "slug": "bhasma-aarti-2n-3d",
+          "duration": "Bhasma Aarti Special 2N/3D",
+          "durationShort": "2N/3D",
+          "packageTitle": "Bhasma Aarti Special",
+          "path": "/itinerary/madhyapradesh/bhasma-aarti-2n-3d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/madhyapradesh/bhasma-aarti-2n-3d",
+          "apiEndpoint": "/api/itineraries/madhyapradesh/bhasma-aarti-2n-3d.json"
+        },
+        {
+          "slug": "vip-passes-2n-3d",
+          "duration": "VIP Passes 2N/3D",
+          "durationShort": "2N/3D",
+          "packageTitle": "VIP Passes",
+          "path": "/itinerary/madhyapradesh/vip-passes-2n-3d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/madhyapradesh/vip-passes-2n-3d",
+          "apiEndpoint": "/api/itineraries/madhyapradesh/vip-passes-2n-3d.json"
+        }
+      ]
+    },
+    {
+      "destination": "maharashtra",
+      "displayName": "Maharashtra",
+      "category": "Spiritual",
+      "region": "West India",
+      "path": "/itinerary/maharashtra",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/maharashtra",
+      "packagesCount": 3,
+      "apiEndpoint": "/api/itineraries/maharashtra.json",
+      "subItineraries": [
+        {
+          "slug": "pune-jyotirling-2n-3d",
+          "duration": "Maharashtra Jyotirling Pune 2N/3D",
+          "durationShort": "2N/3D",
+          "packageTitle": "Mahrashtra Jyotirling Pune",
+          "path": "/itinerary/maharashtra/pune-jyotirling-2n-3d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/maharashtra/pune-jyotirling-2n-3d",
+          "apiEndpoint": "/api/itineraries/maharashtra/pune-jyotirling-2n-3d.json"
+        },
+        {
+          "slug": "pune-jyotirling-3n-4d",
+          "duration": "Maharashtra Jyotirling Pune 3N/4D",
+          "durationShort": "3N/4D",
+          "packageTitle": "Mahrashtra Jyotirling Pune",
+          "path": "/itinerary/maharashtra/pune-jyotirling-3n-4d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/maharashtra/pune-jyotirling-3n-4d",
+          "apiEndpoint": "/api/itineraries/maharashtra/pune-jyotirling-3n-4d.json"
+        },
+        {
+          "slug": "mumbai-jyotirling-3n-4d",
+          "duration": "Maharashtra Jyotirling Mumbai 3N/4D",
+          "durationShort": "3N/4D",
+          "packageTitle": "Maharashtra Jyotirling Mumbai",
+          "path": "/itinerary/maharashtra/mumbai-jyotirling-3n-4d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/maharashtra/mumbai-jyotirling-3n-4d",
+          "apiEndpoint": "/api/itineraries/maharashtra/mumbai-jyotirling-3n-4d.json"
+        }
+      ]
+    },
+    {
+      "destination": "gujarat",
+      "displayName": "Gujarat",
+      "category": "Spiritual",
+      "region": "West India",
+      "path": "/itinerary/gujarat",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/gujarat",
+      "packagesCount": 1,
+      "apiEndpoint": "/api/itineraries/gujarat.json",
+      "subItineraries": [
+        {
+          "slug": "3n-4d",
+          "duration": "Gujarat Jyotirling 3N/4D",
+          "durationShort": "3N/4D",
+          "packageTitle": "Gujarat Jyotirling",
+          "path": "/itinerary/gujarat/3n-4d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/gujarat/3n-4d",
+          "apiEndpoint": "/api/itineraries/gujarat/3n-4d.json"
+        }
+      ]
+    },
+    {
+      "destination": "odisha",
+      "displayName": "Odisha",
+      "category": "Spiritual",
+      "region": "East India",
+      "path": "/itinerary/odisha",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/odisha",
+      "packagesCount": 2,
+      "apiEndpoint": "/api/itineraries/odisha.json",
+      "subItineraries": [
+        {
+          "slug": "puri-dham-4n-5d",
+          "duration": "Puri Dham 4N/5D",
+          "durationShort": "4N/5D",
+          "packageTitle": "Puri Dham",
+          "path": "/itinerary/odisha/puri-dham-4n-5d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/odisha/puri-dham-4n-5d",
+          "apiEndpoint": "/api/itineraries/odisha/puri-dham-4n-5d.json"
+        },
+        {
+          "slug": "puri-konark-3n-4d",
+          "duration": "Puri Konark 3N/4D",
+          "durationShort": "3N/4D",
+          "packageTitle": "Puri Konark",
+          "path": "/itinerary/odisha/puri-konark-3n-4d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/odisha/puri-konark-3n-4d",
+          "apiEndpoint": "/api/itineraries/odisha/puri-konark-3n-4d.json"
+        }
+      ]
+    },
+    {
+      "destination": "tamilnadu",
+      "displayName": "Tamil Nadu",
+      "category": "Spiritual",
+      "region": "South India",
+      "path": "/itinerary/tamilnadu",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/tamilnadu",
+      "packagesCount": 2,
+      "apiEndpoint": "/api/itineraries/tamilnadu.json",
+      "subItineraries": [
+        {
+          "slug": "rameswaram-4n-5d",
+          "duration": "Rameswaram 4N/5D",
+          "durationShort": "4N/5D",
+          "packageTitle": "Rameswaram",
+          "path": "/itinerary/tamilnadu/rameswaram-4n-5d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/tamilnadu/rameswaram-4n-5d",
+          "apiEndpoint": "/api/itineraries/tamilnadu/rameswaram-4n-5d.json"
+        },
+        {
+          "slug": "pancha-bhoota-stalam-6n-7d",
+          "duration": "Pancha Bhoota Stalam 6N/7D",
+          "durationShort": "6N/7D",
+          "packageTitle": "Pancha bootha stalam",
+          "path": "/itinerary/tamilnadu/pancha-bhoota-stalam-6n-7d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/tamilnadu/pancha-bhoota-stalam-6n-7d",
+          "apiEndpoint": "/api/itineraries/tamilnadu/pancha-bhoota-stalam-6n-7d.json"
+        }
+      ]
+    },
+    {
+      "destination": "andhrapradesh",
+      "displayName": "Andhra Pradesh",
+      "category": "Spiritual",
+      "region": "South India",
+      "path": "/itinerary/andhrapradesh",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/andhrapradesh",
+      "packagesCount": 3,
+      "apiEndpoint": "/api/itineraries/andhrapradesh.json",
+      "subItineraries": [
+        {
+          "slug": "mallikarjun-jyotirling-3n-4d",
+          "duration": "Mallikarjun Jyotirling 3N/4D",
+          "durationShort": "3N/4D",
+          "packageTitle": "Mallikarjun Jyotirling",
+          "path": "/itinerary/andhrapradesh/mallikarjun-jyotirling-3n-4d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/andhrapradesh/mallikarjun-jyotirling-3n-4d",
+          "apiEndpoint": "/api/itineraries/andhrapradesh/mallikarjun-jyotirling-3n-4d.json"
+        },
+        {
+          "slug": "tirupati-2n-3d",
+          "duration": "Tirupati 2N/3D",
+          "durationShort": "2N/3D",
+          "packageTitle": "Tirupati",
+          "path": "/itinerary/andhrapradesh/tirupati-2n-3d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/andhrapradesh/tirupati-2n-3d",
+          "apiEndpoint": "/api/itineraries/andhrapradesh/tirupati-2n-3d.json"
+        },
+        {
+          "slug": "tirupati-kalahasti-2n-3d",
+          "duration": "Tirupati with Kalahasti 2N/3D",
+          "durationShort": "2N/3D",
+          "packageTitle": "Tirupati with Kalahasti",
+          "path": "/itinerary/andhrapradesh/tirupati-kalahasti-2n-3d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/andhrapradesh/tirupati-kalahasti-2n-3d",
+          "apiEndpoint": "/api/itineraries/andhrapradesh/tirupati-kalahasti-2n-3d.json"
+        }
+      ]
+    }
+  ]
+}

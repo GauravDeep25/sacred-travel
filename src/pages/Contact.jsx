@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Phone, MessageCircle, Mail, Globe, CheckCircle2, AlertCircle, Loader2, ArrowRight } from 'lucide-react';
+import { Phone, MessageCircle, Mail, Globe, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 
 export default function Contact() {
+  const navigate = useNavigate();
   const [index, setIndex] = useState(0);
   const [form, setForm] = useState({
     name: '',
@@ -65,31 +67,70 @@ export default function Contact() {
     setStatusMessage('');
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/info@yugatirtha.com", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify({
-          name: form.name,
-          email: form.email,
-          phone: form.phone || 'Not provided',
-          destination: form.destination || 'General Enquiry',
-          message: form.message || 'No additional notes',
-          _subject: `New Journey Enquiry: ${form.destination || 'Yugatirtha'} - ${form.name}`,
-          _template: "table",
-          _captcha: "false"
-        })
-      });
-
-      const data = await response.json();
+      let response;
+      let data = {};
+      let useFallback = false;
+      
+      try {
+        response = await fetch("https://formsubmit.co/ajax/info@yugatirtha.com", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({
+            name: form.name,
+            email: form.email,
+            phone: form.phone || 'Not provided',
+            destination: form.destination || 'General Enquiry',
+            message: form.message || 'No additional notes',
+            _subject: `New Journey Enquiry: ${form.destination || 'Yugatirtha'} - ${form.name}`,
+            _template: "table",
+            _captcha: "false"
+          })
+        });
+        
+        data = await response.json();
+        
+        if (!response.ok && data.success !== "true" && data.success !== true && !(data.message && data.message.includes("Activation"))) {
+          useFallback = true;
+        }
+      } catch (formSubmitErr) {
+        useFallback = true;
+      }
+      
+      if (useFallback) {
+        console.warn('FormSubmit failed, falling back to Web3Forms...');
+        response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({
+            access_key: "7072b3d5-b4da-4be8-8ca6-8b89991604a1",
+            name: form.name,
+            email: form.email,
+            phone: form.phone || 'Not provided',
+            destination: form.destination || 'General Enquiry',
+            message: form.message || 'No additional notes',
+            subject: `New Journey Enquiry: ${form.destination || 'Yugatirtha'} - ${form.name}`
+          })
+        });
+        data = await response.json();
+      }
 
       if (response.ok || data.success === "true" || data.success === true || (data.message && data.message.includes("Activation"))) {
-        setStatus('success');
-        if (data.message && data.message.includes("Activation")) {
-          setStatusMessage("Enquiry received! If this is your first time using this address, please check info@yugatirtha.com for the one-time FormSubmit confirmation email.");
-        }
+        navigate('/thank-you', {
+          state: {
+            name: form.name,
+            email: form.email,
+            phone: form.phone,
+            destination: form.destination,
+            message: form.message,
+            activationNotice: Boolean(data.message && data.message.includes("Activation"))
+          }
+        });
       } else {
         throw new Error(data.message || 'Submission failed');
       }

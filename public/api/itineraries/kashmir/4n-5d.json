@@ -1,0 +1,83 @@
+{
+  "destination": "kashmir",
+  "destinationDisplayName": "Kashmir",
+  "category": "Domestic",
+  "region": "North India",
+  "packageId": "kashmir-1",
+  "packageTitle": "Kashmir",
+  "duration": "Kashmir 4N/5D",
+  "durationShort": "4N/5D",
+  "slug": "4n-5d",
+  "pagePath": "/itinerary/kashmir/4n-5d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/kashmir/4n-5d",
+  "apiEndpoint": "/api/itineraries/kashmir/4n-5d.json",
+  "image": "/assets/kashmir-C3GCvNNI.jpg",
+  "inclusions": [
+    "Entire travel as per the itinerary in a private vehicle",
+    "Accommodation for 4 Nights on a Double Sharing Basis (1 night in Srinagar in a houseboat, 1 night in Srinagar in a hotel, 1 night in Pahalgam in a hotel, 1 night in Gulmarg in a hotel)",
+    "08 Meals (Breakfast from Day 2 to Day 5, Dinner from Day 1 to Day 4)",
+    "Driver Charges, Permits, Tolls, Fuel & Parking charges",
+    "Internal transfer to Aru Valley, Betaab Valley and Chandanwari",
+    "Airport/ Railway Station Pickup and Drop",
+    "Shikara Ride (1 Hr Shikara Ride)",
+    "Gondola Cable car phase 1 tickets.",
+    "Candle Light Dinner , Cake And Room Decoration in Houseboat.\""
+  ],
+  "days": [
+    {
+      "title": "Day 1 - Arrival in Srinagar. Local Sightseeing in Srinagar.",
+      "activities": [
+        "Arrive at Srinagar Airport and meet our representative.",
+        "Transfer to the hotel and check in.",
+        "Proceed for local sightseeing covering Mughal Gardens, Nishat Bagh, Shalimar Bagh and Shankaracharya Temple, subject to time and weather conditions.",
+        "Evening free to explore the local market or enjoy a relaxing Shikara ride on Dal Lake.",
+        "Overnight stay in Srinagar."
+      ]
+    },
+    {
+      "title": "Day 2 - Srinagar to Gulmarg. Indulge in winter sports.",
+      "activities": [
+        "Breakfast and check out from the hotel.",
+        "Drive towards Gulmarg through the scenic Kashmir Valley.",
+        "Arrive in Gulmarg and check in.",
+        "Enjoy the beautiful snow-covered landscapes and indulge in winter activities such as snowboarding, skiing and sledging, subject to weather and operational conditions.",
+        "Optional Gondola ride, subject to availability and weather conditions.",
+        "Evening at leisure.",
+        "Overnight stay in Gulmarg."
+      ]
+    },
+    {
+      "title": "Day 3 - Gulmarg to Pahalgam. Enroute Visit Avantipur Ruins.",
+      "activities": [
+        "Breakfast and check out from the hotel.",
+        "Proceed towards Pahalgam.",
+        "En route, visit the historic Avantipur Ruins, known for its ancient temple remains.",
+        "Continue the scenic drive towards Pahalgam through beautiful valleys and countryside.",
+        "Arrive in Pahalgam and check in to the hotel.",
+        "Evening free to relax and enjoy the peaceful surroundings.",
+        "Overnight stay in Pahalgam."
+      ]
+    },
+    {
+      "title": "Day 4 - Pahalgam to Srinagar. Visit the Aru Valley, Betaab Valley and Chandanwari",
+      "activities": [
+        "Breakfast and check out from the hotel.",
+        "Explore the beautiful valleys of Pahalgam, including Aru Valley, Betaab Valley and Chandanwari, subject to local vehicle regulations and weather conditions.",
+        "Enjoy the scenic Himalayan landscapes and spend time by the Lidder River.",
+        "Proceed towards Srinagar.",
+        "Arrive in Srinagar and check in to the hotel.",
+        "Evening free for leisure and shopping.",
+        "Overnight stay in Srinagar."
+      ]
+    },
+    {
+      "title": "Day 5 - Departure. Depart with a bag of happy memories.",
+      "activities": [
+        "Breakfast and check out from the hotel.",
+        "Transfer to Srinagar Airport as per your departure schedule.",
+        "Depart with a bag full of happy memories from Kashmir."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Kashmir%20Kashmir%204N%2F5D%20package"
+}

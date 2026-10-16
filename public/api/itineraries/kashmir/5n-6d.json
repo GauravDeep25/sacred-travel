@@ -1,0 +1,93 @@
+{
+  "destination": "kashmir",
+  "destinationDisplayName": "Kashmir",
+  "category": "Domestic",
+  "region": "North India",
+  "packageId": "kashmir-2",
+  "packageTitle": "Kashmir",
+  "duration": "Kashmir 5N/6D",
+  "durationShort": "5N/6D",
+  "slug": "5n-6d",
+  "pagePath": "/itinerary/kashmir/5n-6d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/kashmir/5n-6d",
+  "apiEndpoint": "/api/itineraries/kashmir/5n-6d.json",
+  "image": "/assets/kashmir-C3GCvNNI.jpg",
+  "inclusions": [
+    "Travel as per the Itinerary in Sedan",
+    "Accommodation for 5 Nights on Double Sharing Basis (1 night in Srinagar in Houseboat, 2 nights in Srinagar in a hotel, 1 night in Pahalgam in a hotel, 1 night in Gulmarg in a hotel)",
+    "10 Meals (Breakfast from Day 2 to Day 6, Dinner from Day 1 to Day 5)",
+    "Driver Charges, Permits, Tolls, Fuel & Parking charges",
+    "Airport/ Railway Station Pickup and Drop",
+    "Shikara Ride (1 Hr Shikara Ride)",
+    "Honeymoon inclusions - candlelight dinner, flower decoration and cake",
+    "Gondola Cable car phase 1 tickets."
+  ],
+  "days": [
+    {
+      "title": "Day 1 - Arrival in Srinagar. Stay in a houseboat.",
+      "activities": [
+        "Arrive at Srinagar Airport and meet our representative.",
+        "Transfer to the famous Dal Lake and check in to your traditional Kashmiri houseboat.",
+        "Enjoy a relaxing Shikara ride on Dal Lake, surrounded by beautiful mountains and floating markets.",
+        "Evening at leisure to experience the peaceful atmosphere of the lake.",
+        "Overnight stay in a houseboat in Srinagar."
+      ]
+    },
+    {
+      "title": "Day 2 - Srinagar to Gulmarg. Indulge in winter sports.",
+      "activities": [
+        "Breakfast and check out from the houseboat.",
+        "Drive towards Gulmarg through the scenic Kashmir Valley.",
+        "Arrive in Gulmarg and check in to the hotel.",
+        "Spend the day enjoying the snow-covered landscape and optional winter activities such as skiing, snowboarding and sledging, subject to weather and operational conditions.",
+        "Optional Gulmarg Gondola ride, subject to availability and weather conditions.",
+        "Evening at leisure.",
+        "Overnight stay in Gulmarg."
+      ]
+    },
+    {
+      "title": "Day 3 - Gulmarg to Pahalgam. Enroute Visit Avantipur Ruins.",
+      "activities": [
+        "Breakfast and check out.",
+        "Proceed towards the beautiful valley of Pahalgam.",
+        "En route, visit the historic Avantipur Ruins, known for its ancient temple remains.",
+        "Continue the scenic drive towards Pahalgam through the countryside and picturesque valleys.",
+        "Check in to the hotel upon arrival.",
+        "Evening free to relax and enjoy the peaceful surroundings.",
+        "Overnight stay in Pahalgam."
+      ]
+    },
+    {
+      "title": "Day 4 - Pahalgam to Srinagar. Local Sightseeing in Srinagar.",
+      "activities": [
+        "Breakfast and check out from the hotel.",
+        "Enjoy some time around Pahalgam and the scenic Lidder River.",
+        "Proceed towards Srinagar.",
+        "On arrival, visit the beautiful Mughal Gardens – Nishat Bagh and Shalimar Bagh.",
+        "Visit Shankaracharya Temple, subject to time, weather and local conditions.",
+        "Evening free for shopping or leisure.",
+        "Overnight stay in Srinagar."
+      ]
+    },
+    {
+      "title": "Day 5 - Excursion to Sonmarg. Pony Ride to Thajiwas Glacier.\"",
+      "activities": [
+        "Breakfast at the hotel.",
+        "Proceed for a full-day excursion to Sonmarg, surrounded by spectacular Himalayan landscapes.",
+        "Enjoy the scenic beauty of Sonmarg and take a pony ride towards Thajiwas Glacier, subject to weather and local conditions.",
+        "Spend time enjoying the snow-covered surroundings.",
+        "Return to Srinagar by evening.",
+        "Overnight stay in Srinagar."
+      ]
+    },
+    {
+      "title": "Day 6 - Departure. Depart with a bag of happy memories.",
+      "activities": [
+        "Breakfast and check out from the hotel.",
+        "Transfer to Srinagar Airport as per your departure schedule.",
+        "Depart with a bag full of happy memories from Kashmir."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Kashmir%20Kashmir%205N%2F6D%20package"
+}

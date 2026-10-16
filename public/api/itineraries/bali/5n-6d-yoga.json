@@ -1,0 +1,95 @@
+{
+  "destination": "bali",
+  "destinationDisplayName": "Bali",
+  "category": "International",
+  "region": "Southeast Asia",
+  "packageId": "bali-2",
+  "packageTitle": "BALI 5N (YOGA)",
+  "duration": "Bali 5N/6D (Yoga)",
+  "durationShort": "5N/6D",
+  "slug": "5n-6d-yoga",
+  "pagePath": "/itinerary/bali/5n-6d-yoga",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/bali/5n-6d-yoga",
+  "apiEndpoint": "/api/itineraries/bali/5n-6d-yoga.json",
+  "image": "/assets/intl-bali-Ck8GSayl.jpg",
+  "inclusions": [
+    "5 nights stay at a pre-selected premium wellness resort in Ubud",
+    "Daily breakfast and dinners",
+    "5 guided yoga sessions with a professional instructor",
+    "Visit to Tegalalang Rice Terraces",
+    "Sacred Water Healing Ceremony at Pura Taman Pecampuhan Sala",
+    "Heart-opening Cacao Ceremony",
+    "Visit to Tegenungan Waterfall",
+    "Ecstatic Dance Session at The Yoga Barn",
+    "Full-day excursion to Sekumpul Waterfall",
+    "Visit to Ulun Danu Beratan Temple",
+    "Traditional Balinese massage session",
+    "All airport transfers and sightseeing on a private basis",
+    "English-speaking driver throughout the trip"
+  ],
+  "days": [
+    {
+      "title": "DAY 1 – WELCOME TO THE ISLAND OF THE GODS",
+      "activities": [
+        "Arrive in Bali and enjoy a comfortable transfer to your peaceful retreat in Ubud, surrounded by lush rice paddies and tropical greenery. After checking in and taking some time to relax, settle into the tranquil pace of island life.",
+        "In the evening, begin your retreat with a Gentle Releasing Yoga Session, specially designed to ease travel fatigue, stretch the body after your journey, and bring your mind into the present moment.",
+        "As the sun sets, gather for a beautiful Welcome Dinner, where you'll meet your fellow travellers, share stories, and set intentions for the incredible days ahead.",
+        "Meals: Dinner"
+      ]
+    },
+    {
+      "title": "DAY 2 – YOGA • RICE TERRACES • SACRED WATER HEALING",
+      "activities": [
+        "Wake up to the sounds of nature and begin the morning with a peaceful Sunrise Yoga Session, allowing mindful movement and breathwork to awaken your body and mind.",
+        "After breakfast, head towards the iconic Tegalalang Rice Terraces, where you'll stroll through Bali's emerald-green landscapes and soak in spectacular panoramic views.",
+        "Later, experience one of Bali's most unique wellness rituals at Pura Taman Pecampuhan Sala, known for its sacred natural springs. Participate in a traditional Water Healing Ceremony, guided by local customs, designed to cleanse negative energy and promote inner balance.",
+        "Return to Ubud and spend the evening at leisure before enjoying a wholesome group dinner.",
+        "Meals: Breakfast & Dinner"
+      ]
+    },
+    {
+      "title": "DAY 3 – CACAO EXPERIENCE• WATERFALL ESCAPE • ECSTATIC DANCE",
+      "activities": [
+        "Begin your morning with a Revitalising Yoga Session, followed by a nourishing breakfast.",
+        "The day continues with a beautiful Chocolate Workshop, Class & Tasting. Discover the art of chocolate making in a fun, hands-on class. Learn the chocolate-making process, & enjoy a guided chocolate tasting .",
+        "Later, venture to the breathtaking SUWAT Waterfall, where lush tropical forests surround cascading waters. Relax by the falls, take a refreshing swim, or simply enjoy the peaceful atmosphere.",
+        "As night falls, experience the vibrant energy of Ecstatic Dance at The Yoga Barn, one of Ubud's most celebrated wellness experiences. Dance freely without judgement, reconnect with yourself through movement, and embrace the joy of complete self-expression.",
+        "Return to the hotel after an unforgettable evening.",
+        "Meals: Breakfast & Dinner"
+      ]
+    },
+    {
+      "title": "DAY 4 – SEKUMPUL WATERFALL • ULUN DANU TEMPLE",
+      "activities": [
+        "Begin your day with an Uplifting Morning Yoga Session, leaving you feeling refreshed and energised.",
+        "After breakfast, embark on a scenic journey to the breathtaking Sekumpul Waterfall, one of Bali's most spectacular natural wonders. Trek through lush forests and streams before arriving at the magnificent twin waterfalls hidden deep within the jungle.",
+        "Today's adventure takes you to the breathtaking Ulun Danu Beratan Temple, one of Bali's most iconic lakeside temples surrounded by misty mountains and peaceful waters.",
+        "mind, reduce stress, and restore inner balance.",
+        "Return to the resort for dinner and a restful night.",
+        "Meals: Breakfast & Dinner"
+      ]
+    },
+    {
+      "title": "DAY 5 – BALI SWING • SOUND HEALING • MASSAGE • FAREWELL CELEBRATION",
+      "activities": [
+        "Enjoy one final Morning Yoga Session, reflecting on your wellness journey before breakfast.",
+        "On your return, stop for the iconic Bali Swing Experience, where you'll soar above lush valleys and rice terraces while taking in unforgettable panoramic views.",
+        "Later in the evening, immerse yourself in a deeply relaxing Sound Healing Session at the Pyramids of Chi, allowing the therapeutic vibrations of ancient instruments to calm the mind, reduce stress, and restore inner balance.",
+        "Enjoy an authentic Balinese lunch before indulging in a traditional Balinese Massage, allowing your body to fully unwind after days of exploration and yoga.",
+        "In the evening, gather for a memorable Farewell Dinner overlooking the rice fields, celebrating new friendships, unforgettable experiences, and the beautiful journey you've shared together.",
+        "Meals: Breakfast & Dinner"
+      ]
+    },
+    {
+      "title": "DAY 6 – UNTIL NEXT TIME, BALI",
+      "activities": [
+        "Wake up to your final peaceful morning in Bali.",
+        "Take a refreshing swim, enjoy a quiet walk through the gardens, or simply relax with a cup of coffee while soaking in the beauty of your surroundings.",
+        "After breakfast, check out of the resort and transfer comfortably to the airport.",
+        "Leave Bali carrying home not only beautiful memories and meaningful friendships but also a renewed sense of peace, balance, and wellbeing.",
+        "Meals: Breakfast"
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Bali%20Bali%205N%2F6D%20(Yoga)%20package"
+}

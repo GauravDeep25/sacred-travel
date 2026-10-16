@@ -1,0 +1,95 @@
+{
+  "destination": "sikkim",
+  "destinationDisplayName": "Sikkim",
+  "category": "Domestic",
+  "region": "Northeast India",
+  "packageId": "sikkim-1",
+  "packageTitle": "Sikkim",
+  "duration": "Sikkim 4N/5D",
+  "durationShort": "4N/5D",
+  "slug": "4n-5d",
+  "pagePath": "/itinerary/sikkim/4n-5d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/sikkim/4n-5d",
+  "apiEndpoint": "/api/itineraries/sikkim/4n-5d.json",
+  "image": "/assets/sikkim.jpg",
+  "inclusions": [
+    "Meet and assistance on arrival.",
+    "Sight-seeing with airport/railway station pickup and drop.",
+    "Accommodation in below-mentioned hotels with breakfast included (Lachung hotels includes breakfast and dinner).",
+    "Exclusive A/C vehicle as per itinerary on point to point basis (not on disposal basis).",
+    "All Taxes."
+  ],
+  "days": [
+    {
+      "title": "Day 1 – NJP/Bagdogra to Gangtok (MG Marg)",
+      "activities": [
+        "Arrive at NJP Railway Station / Bagdogra Airport and meet your driver.",
+        "Begin your scenic drive towards Gangtok, the capital of Sikkim.",
+        "Enjoy the beautiful mountain landscapes and winding roads along the way.",
+        "On arrival in Gangtok, check in to your hotel.",
+        "Take some time to relax after the journey.",
+        "In the evening, visit MG Marg, Gangtok's famous pedestrian boulevard.",
+        "Explore the local shops, cafés, restaurants, and vibrant surroundings.",
+        "Return to the hotel for dinner.",
+        "Overnight stay in Gangtok."
+      ]
+    },
+    {
+      "title": "Day 2 – Gangtok – Tsomgo Lake & Baba Mandir (Nathula Pass optional)",
+      "activities": [
+        "Enjoy an early breakfast at the hotel.",
+        "Start your excursion towards Tsomgo Lake, a beautiful high-altitude glacial lake surrounded by mountains.",
+        "Spend some time enjoying the scenic surroundings and taking photographs.",
+        "Continue towards Baba Harbhajan Singh Mandir, popularly known as Baba Mandir.",
+        "Learn about the history and local significance of this famous site.",
+        "Optional: Continue to Nathula Pass, subject to permit availability, weather, road conditions, and applicable restrictions.",
+        "Return to Gangtok in the afternoon/evening.",
+        "Spend the evening at leisure.",
+        "Explore MG Marg again or relax at the hotel.",
+        "Overnight stay in Gangtok."
+      ]
+    },
+    {
+      "title": "Day 3 – Gangtok to Lachung (via Singhik View Point & Seven Sisters Waterfalls)",
+      "activities": [
+        "Enjoy breakfast and check out from your hotel.",
+        "Begin your scenic drive towards Lachung, a picturesque mountain village in North Sikkim.",
+        "Stop at Singhik View Point for spectacular views of the surrounding Himalayan peaks, weather permitting.",
+        "Continue your journey through the beautiful mountain roads.",
+        "En route, stop at the impressive Seven Sisters Waterfalls.",
+        "Enjoy the waterfall views and take photographs.",
+        "Continue towards Lachung, passing through beautiful valleys, rivers, forests, and mountain villages.",
+        "Arrive in Lachung and check in to your hotel/homestay.",
+        "Spend the evening relaxing and enjoying the peaceful mountain atmosphere.",
+        "Overnight stay in Lachung."
+      ]
+    },
+    {
+      "title": "Day 4 – Lachung – Yumthang Valley – Bheerma & Twin Waterfalls – back to Gangtok (Zero Point optional)",
+      "activities": [
+        "Start your day early with breakfast.",
+        "Drive towards the spectacular Yumthang Valley, popularly known for its alpine landscapes, mountain views, and seasonal flowers.",
+        "Spend time exploring the valley and enjoying the breathtaking Himalayan scenery.",
+        "Visit Bheerma Waterfall and Twin Waterfalls, subject to road and local accessibility.",
+        "Enjoy the surrounding natural beauty and take photographs.",
+        "Optional: Continue towards Zero Point, one of the highest accessible tourist areas in North Sikkim, subject to permits, weather, road conditions, and local regulations.",
+        "After sightseeing, begin your return journey.",
+        "Continue towards Gangtok.",
+        "Arrive in Gangtok in the evening and check in to your hotel.",
+        "Relax after the long journey.",
+        "Overnight stay in Gangtok."
+      ]
+    },
+    {
+      "title": "Day 5 – Gangtok to NJP/Bagdogra (Departure)",
+      "activities": [
+        "Enjoy breakfast at the hotel.",
+        "Check out and begin your journey back towards NJP Railway Station / Bagdogra Airport.",
+        "Enjoy the final scenic views of the Sikkim hills along the way.",
+        "Arrive at NJP/Bagdogra according to your departure schedule.",
+        "Proceed for your onward journey."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Sikkim%20Sikkim%204N%2F5D%20package"
+}

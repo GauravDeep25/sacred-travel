@@ -1,0 +1,131 @@
+{
+  "destination": "sikkim",
+  "destinationDisplayName": "Sikkim",
+  "category": "Domestic",
+  "region": "Northeast India",
+  "packageId": "sikkim-3",
+  "packageTitle": "Sikkim",
+  "duration": "Sikkim 6N/7D",
+  "durationShort": "6N/7D",
+  "slug": "6n-7d",
+  "pagePath": "/itinerary/sikkim/6n-7d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/sikkim/6n-7d",
+  "apiEndpoint": "/api/itineraries/sikkim/6n-7d.json",
+  "image": "/assets/sikkim.jpg",
+  "inclusions": [
+    "Travel as per itinerary in Hatchback/SUV (as per group size)",
+    "Accommodation for 6 Nights – 2 Nights in Gangtok, 1 Night in Pelling, 2 Nights in Darjeeling, 1 Night in Kalimpong on sharing basis",
+    "6 Meals (Breakfast from Day 2 to Day 7)",
+    "Driver Charges, Permits, Tolls, Fuel & Parking charges",
+    "Airport/Railway Station Pickup and Drop"
+  ],
+  "days": [
+    {
+      "title": "Day 1 – Arrival at Bagdogra Airport/New Jalpaiguri Rly St (NJP), Transfer to Darjeeling",
+      "activities": [
+        "Arrive at Bagdogra Airport / New Jalpaiguri Railway Station (NJP) and meet your driver.",
+        "Begin your scenic drive towards Darjeeling, one of India's most beautiful hill stations.",
+        "Enjoy the winding mountain roads, tea gardens, forests, and views of the Himalayan foothills.",
+        "En route, stop at suitable viewpoints for photographs and refreshments.",
+        "Arrive in Darjeeling and check in to your hotel.",
+        "Spend the evening at leisure.",
+        "Take a relaxed walk around Chowrasta/Mall Road and explore the local cafés and shops.",
+        "Return to the hotel for dinner.",
+        "Overnight stay in Darjeeling."
+      ]
+    },
+    {
+      "title": "Day 2 – Darjeeling Sightseeing Day | Explore the best places in this hill station",
+      "activities": [
+        "Start your day early with a visit to Tiger Hill to witness the spectacular sunrise over the Himalayan ranges, weather permitting.",
+        "On the way back, visit Ghoom Monastery, one of Darjeeling's oldest Tibetan Buddhist monasteries.",
+        "Stop at Batasia Loop and enjoy panoramic views of the surrounding mountains and the famous Darjeeling Himalayan Railway.",
+        "Return to the hotel for breakfast.",
+        "Continue your sightseeing with a visit to the Himalayan Mountaineering Institute.",
+        "Explore the Padmaja Naidu Himalayan Zoological Park, home to several rare Himalayan species.",
+        "Visit Tenzing Rock, associated with the legendary mountaineer Tenzing Norgay.",
+        "Visit a Darjeeling tea garden and learn about the region's world-famous tea.",
+        "In the evening, explore Chowrasta and Mall Road.",
+        "Enjoy the local atmosphere, shopping, cafés, and mountain views.",
+        "Return to the hotel.",
+        "Overnight stay in Darjeeling."
+      ]
+    },
+    {
+      "title": "Day 3 – Darjeeling to Pelling, Half-Day Sightseeing in Pelling",
+      "activities": [
+        "Enjoy breakfast and check out from your Darjeeling hotel.",
+        "Begin your scenic journey towards Pelling in West Sikkim.",
+        "Drive through beautiful mountain landscapes, forests, valleys, and local villages.",
+        "Arrive in Pelling and check in to your hotel.",
+        "After a short rest, begin your half-day sightseeing.",
+        "Visit Pemayangtse Monastery, one of the most important monasteries in Sikkim.",
+        "Explore the historic Rabdentse Ruins, the remains of the former capital of Sikkim.",
+        "Visit the Pelling Skywalk and enjoy panoramic views of the surrounding Himalayan landscape.",
+        "Depending on time and local conditions, visit nearby waterfalls/viewpoints.",
+        "Return to your hotel.",
+        "Evening at leisure.",
+        "Overnight stay in Pelling."
+      ]
+    },
+    {
+      "title": "Day 4 – Pelling to Gangtok, Transfer via Ravangla",
+      "activities": [
+        "Enjoy breakfast and check out from the hotel.",
+        "Begin your journey towards Gangtok.",
+        "En route, stop at Ravangla, a beautiful destination surrounded by the Himalayan mountains.",
+        "Visit the famous Buddha Park, featuring a magnificent Buddha statue set amidst peaceful gardens and mountain scenery.",
+        "Spend time exploring the park and enjoying the panoramic views.",
+        "Continue your drive towards Gangtok.",
+        "Enjoy the scenic route through forests, valleys, and mountain villages.",
+        "Arrive in Gangtok and check in to your hotel.",
+        "Spend the evening at leisure.",
+        "Explore MG Marg, Gangtok's lively pedestrian boulevard.",
+        "Return to the hotel for dinner.",
+        "Overnight stay in Gangtok."
+      ]
+    },
+    {
+      "title": "Day 5 – Explore Around Gangtok, Tsomgo Lake | Baba Mandir | Nathula Pass (Optional)",
+      "activities": [
+        "Enjoy an early breakfast at the hotel.",
+        "Begin your excursion towards Tsomgo Lake, a beautiful high-altitude glacial lake surrounded by mountains.",
+        "Spend some time enjoying the scenery and taking photographs.",
+        "Continue towards Baba Harbhajan Singh Mandir, popularly known as Baba Mandir.",
+        "Explore the site and learn about its local significance.",
+        "Optional: Continue to Nathula Pass, the historic mountain pass on the India–Tibet border, subject to permit availability, weather, road conditions, and local regulations.",
+        "Return to Gangtok after sightseeing.",
+        "Spend the evening at leisure.",
+        "Explore MG Marg, visit local cafés, or relax at the hotel.",
+        "Overnight stay in Gangtok."
+      ]
+    },
+    {
+      "title": "Day 6 – Gangtok to Kalimpong, Sightseeing in Kalimpong",
+      "activities": [
+        "Enjoy breakfast and check out from the hotel.",
+        "Begin your scenic journey towards Kalimpong, a charming hill station known for its monasteries, viewpoints, and colonial-era character.",
+        "On arrival, check in to your hotel.",
+        "Begin your Kalimpong sightseeing tour.",
+        "Visit Deolo Hill, one of the best viewpoints in Kalimpong, offering beautiful views of the surrounding valleys and mountains.",
+        "Visit Durpin Dara Hill for panoramic views of the Teesta and Relli valleys.",
+        "Explore Zang Dhok Palri Phodang Monastery, also known as Durpin Monastery.",
+        "Visit Pine View Nursery, famous for its collection of Himalayan plants and flowers.",
+        "Explore the local market and enjoy the peaceful atmosphere of Kalimpong.",
+        "Return to the hotel.",
+        "Overnight stay in Kalimpong."
+      ]
+    },
+    {
+      "title": "Day 7 – Departure, Kalimpong to Bagdogra Airport/NJP Station",
+      "activities": [
+        "Enjoy breakfast at the hotel.",
+        "Check out and begin your journey towards Bagdogra Airport / NJP Railway Station.",
+        "Enjoy the final scenic views of the Himalayan foothills during the drive.",
+        "Arrive at the airport/railway station according to your departure schedule.",
+        "Proceed for your onward journey with wonderful memories of Darjeeling, Sikkim, and Kalimpong."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Sikkim%20Sikkim%206N%2F7D%20package"
+}

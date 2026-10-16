@@ -1,0 +1,509 @@
+{
+  "destination": "himachal",
+  "displayName": "Himachal Pradesh",
+  "category": "Domestic",
+  "region": "North India",
+  "pagePath": "/itinerary/himachal",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/himachal",
+  "packagesCount": 4,
+  "packages": [
+    {
+      "destination": "himachal",
+      "destinationDisplayName": "Himachal Pradesh",
+      "category": "Domestic",
+      "region": "North India",
+      "packageId": "himachal-1",
+      "packageTitle": "Himachal",
+      "duration": "Himachal 4N/5D",
+      "durationShort": "4N/5D",
+      "slug": "4n-5d",
+      "pagePath": "/itinerary/himachal/4n-5d",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/himachal/4n-5d",
+      "apiEndpoint": "/api/itineraries/himachal/4n-5d.json",
+      "image": "/assets/himachal.jpg",
+      "inclusions": [
+        "4 Nights accommodation",
+        "Daily breakfast & dinner",
+        "Private vehicle for all transfers & sightseeing",
+        "Delhi–Shimla & Manali–Delhi volvo",
+        "Kufri, Shimla & Manali sightseeing",
+        "Solang Valley & snow-point excursion",
+        "Driver, fuel, toll & parking charges",
+        "Tour assistance throughout the journey"
+      ],
+      "days": [
+        {
+          "title": "DAY 0      Delhi to Shimla Departure.",
+          "activities": [
+            "Depart from Delhi in the evening/night by overnight Volvo/bus.",
+            "Travel towards Shimla through the scenic Himalayan foothills.",
+            "Overnight journey to Shimla."
+          ]
+        },
+        {
+          "title": "DAY 1        Kufri Visit - Mall road - Overnight stay in Shimla",
+          "activities": [
+            "Arrive in Shimla in the morning.",
+            "Transfer to the hotel and complete check-in, subject to availability.",
+            "After some rest, proceed for a visit to Kufri, known for its beautiful mountain landscapes.",
+            "Enjoy the scenic surroundings and explore the local attractions.",
+            "Return to Shimla.",
+            "In the evening, explore Mall Road, Ridge, and the nearby local market.",
+            "Enjoy shopping, cafés, and the vibrant atmosphere of Shimla.",
+            "Return to the hotel.",
+            "Overnight stay in Shimla."
+          ]
+        },
+        {
+          "title": "DAY 2        Early morning departure to Manali – Mall Road Visit",
+          "activities": [
+            "Enjoy breakfast and check out from the hotel.",
+            "Start your early morning journey towards Manali.",
+            "Enjoy the scenic drive through the mountains, valleys, and riverside landscapes.",
+            "Stop en route for refreshments and lunch.",
+            "Arrive in Manali and check in to your hotel.",
+            "After some rest, head out to explore Manali Mall Road.",
+            "Enjoy shopping, local cafés, restaurants, and the lively atmosphere.",
+            "Return to the hotel.",
+            "Overnight stay in Manali."
+          ]
+        },
+        {
+          "title": "DAY 3        Solang Valley – Rohtang Pass Visit/Gulaba Snow Point - Overnight Stay in Manali",
+          "activities": [
+            "Enjoy breakfast at the hotel.",
+            "Begin your day with a visit to Solang Valley, famous for its spectacular mountain scenery and adventure activities.",
+            "Enjoy the beautiful views of the surrounding Himalayan peaks.",
+            "Continue towards Rohtang Pass if the route is open and permits are available.",
+            "If Rohtang Pass is not accessible, visit Gulaba Snow Point as an alternative.",
+            "Spend time enjoying the snow-covered landscapes and taking photographs.",
+            "Return to Manali in the evening.",
+            "Relax at the hotel after the day's excursion.",
+            "Overnight stay in Manali."
+          ]
+        },
+        {
+          "title": "DAY 4        Vashishtha Temple Visit – Old Manali – Relax & Chill - Overnight Stay in Manali",
+          "activities": [
+            "Enjoy breakfast at the hotel.",
+            "Visit the peaceful Vashisht Temple and explore the surrounding village.",
+            "Continue towards Old Manali, known for its charming cafés, narrow lanes, local shops, and relaxed atmosphere.",
+            "Explore the area at your own pace.",
+            "Enjoy lunch at one of the local cafés.",
+            "Spend the afternoon relaxing and enjoying the beautiful surroundings of Manali.",
+            "Evening at leisure.",
+            "Return to the hotel.",
+            "Overnight stay in Manali."
+          ]
+        },
+        {
+          "title": "DAY 5        Manali Local Market - Departure to Delhi",
+          "activities": [
+            "Enjoy breakfast and check out from the hotel.",
+            "Spend some time exploring the Manali Local Market.",
+            "Shop for souvenirs, woollens, handicrafts, and local products.",
+            "After shopping, begin your journey towards Delhi.",
+            "Enjoy the scenic drive through the mountains and plains.",
+            "Continue your overnight journey to Delhi."
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Himachal%20Pradesh%20Himachal%204N%2F5D%20package"
+    },
+    {
+      "destination": "himachal",
+      "destinationDisplayName": "Himachal Pradesh",
+      "category": "Domestic",
+      "region": "North India",
+      "packageId": "himachal-2",
+      "packageTitle": "Himachal",
+      "duration": "Himachal 5N/6D",
+      "durationShort": "5N/6D",
+      "slug": "5n-6d",
+      "pagePath": "/itinerary/himachal/5n-6d",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/himachal/5n-6d",
+      "apiEndpoint": "/api/itineraries/himachal/5n-6d.json",
+      "image": "/assets/himachal.jpg",
+      "inclusions": [
+        "4 Nights accommodation in selected hotels",
+        "Daily breakfast & dinner",
+        "Volvo bus tickets: Delhi–Shimla & Manali–Delhi",
+        "Private vehicle for local sightseeing & intercity transfers",
+        "Shimla & Kufri sightseeing",
+        "En route Kullu Valley visit",
+        "Solang Valley & Manali local sightseeing",
+        "Rohtang Pass/Gulaba Snow Point excursion, subject to permits & weather conditions",
+        "Driver, fuel, toll & parking charges",
+        "Tour assistance throughout the journey"
+      ],
+      "days": [
+        {
+          "title": "DAY 1        Delhi to Shimla. Start a scenic road journey",
+          "activities": [
+            "Begin your scenic road journey from Delhi to Shimla.",
+            "Enjoy the changing landscapes as you travel from the plains into the Himalayan foothills.",
+            "Stop en route for refreshments and lunch.",
+            "Arrive in Shimla and check in to your hotel.",
+            "Evening at leisure to relax and explore the nearby surroundings.",
+            "Overnight stay in Shimla."
+          ]
+        },
+        {
+          "title": "DAY 2        Local sightseeing in Shimla. Excursion to Kufri",
+          "activities": [
+            "Enjoy breakfast at the hotel.",
+            "Begin your local sightseeing tour of Shimla.",
+            "Visit popular attractions such as The Ridge, Christ Church, Mall Road, and Scandal Point.",
+            "Later, proceed for an excursion to Kufri, surrounded by beautiful Himalayan landscapes.",
+            "Enjoy the scenic views and explore the local attractions.",
+            "Return to Shimla in the evening.",
+            "Spend the evening at leisure on Mall Road.",
+            "Overnight stay in Shimla."
+          ]
+        },
+        {
+          "title": "DAY 3        Shimla to Manali. En route visit the Kullu Valley",
+          "activities": [
+            "Enjoy breakfast and check out from the hotel.",
+            "Begin your scenic drive towards Manali.",
+            "Travel through beautiful mountain roads, valleys, and riverside landscapes.",
+            "En route, visit the picturesque Kullu Valley.",
+            "Explore the valley and, depending on time, visit local handicraft shops and enjoy the surrounding scenery.",
+            "Continue towards Manali.",
+            "Arrive in Manali and check in to your hotel.",
+            "Spend the evening at leisure.",
+            "Overnight stay in Manali."
+          ]
+        },
+        {
+          "title": "DAY 4        Visit the Solang Valley. Half-Day Local Sightseeing in Manali",
+          "activities": [
+            "Enjoy breakfast at the hotel.",
+            "Visit the beautiful Solang Valley, famous for its panoramic mountain views and adventure activities.",
+            "Enjoy the scenic surroundings and optional adventure activities, subject to season and local conditions.",
+            "Return to Manali.",
+            "After lunch, begin a half-day local sightseeing tour.",
+            "Visit Hadimba Temple, Vashisht Temple, Manali Nature Park, and Old Manali.",
+            "Explore the local cafés, markets, and peaceful surroundings.",
+            "Return to the hotel.",
+            "Overnight stay in Manali."
+          ]
+        },
+        {
+          "title": "DAY 5        Full day excursion to Rohtang Pass.",
+          "activities": [
+            "Enjoy an early breakfast at the hotel.",
+            "Begin your full-day excursion towards Rohtang Pass, subject to weather, road conditions, permits, and local regulations.",
+            "Enjoy breathtaking views of snow-covered mountains and high-altitude landscapes.",
+            "Spend time at the permitted sightseeing area and enjoy the surrounding natural beauty.",
+            "Take photographs and experience the spectacular Himalayan scenery.",
+            "Return to Manali in the evening.",
+            "Relax at the hotel after the day's excursion.",
+            "Overnight stay in Manali."
+          ]
+        },
+        {
+          "title": "DAY 6        Manali to Delhi. Departure",
+          "activities": [
+            "Enjoy breakfast and check out from the hotel.",
+            "Begin your return journey from Manali to Delhi.",
+            "Enjoy the scenic drive through the mountains and valleys.",
+            "Stop en route for refreshments and lunch.",
+            "Continue towards Delhi.",
+            "Arrive in Delhi and proceed for your onward journey."
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Himachal%20Pradesh%20Himachal%205N%2F6D%20package"
+    },
+    {
+      "destination": "himachal",
+      "destinationDisplayName": "Himachal Pradesh",
+      "category": "Domestic",
+      "region": "North India",
+      "packageId": "himachal-3",
+      "packageTitle": "Himachal",
+      "duration": "Himachal 5N/6D",
+      "durationShort": "5N/6D",
+      "slug": "5n-6d-jibhi-tirthan",
+      "pagePath": "/itinerary/himachal/5n-6d-jibhi-tirthan",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/himachal/5n-6d-jibhi-tirthan",
+      "apiEndpoint": "/api/itineraries/himachal/5n-6d-jibhi-tirthan.json",
+      "image": "/assets/himachal.jpg",
+      "inclusions": [
+        "5 Nights accommodation in selected hotels",
+        "Daily breakfast & dinner",
+        "Private vehicle for all transfers & sightseeing",
+        "Chandigarh–Aut & Manali–Chandigarh transfers",
+        "Tirthan, Jibhi & Manali sightseeing",
+        "Jalori Pass & Selorsar Lake excursion",
+        "Solang Valley excursion",
+        "Driver, fuel, toll & parking charges",
+        "Tour assistance throughout the journey"
+      ],
+      "days": [
+        {
+          "title": "DAY 0        Chandigarh to Aut. Begin your journey to the mountain",
+          "activities": [
+            "Begin your journey from Chandigarh towards the mountains.",
+            "Drive through the scenic landscapes of Himachal Pradesh.",
+            "Pass through beautiful valleys, rivers, and mountain villages.",
+            "Arrive in Aut, the gateway to Tirthan Valley.",
+            "Check in to your hotel/homestay and relax.",
+            "Overnight stay in Aut."
+          ]
+        },
+        {
+          "title": "DAY 1        Local sightseeing in Tirthan.",
+          "activities": [
+            "Enjoy breakfast at your stay.",
+            "Begin exploring the peaceful Tirthan Valley, known for its rivers, forests, and traditional Himalayan villages.",
+            "Take a leisurely walk along the Tirthan River.",
+            "Visit nearby villages and experience the local mountain lifestyle.",
+            "Explore the surrounding pine and deodar forests.",
+            "Enjoy the peaceful natural surroundings and capture beautiful photographs.",
+            "Spend the evening relaxing by the river or at your homestay.",
+            "Overnight stay in Tirthan Valley/Jibhi."
+          ]
+        },
+        {
+          "title": "DAY 2        Jibhi to Jalori Pass. Hike to Selorsar Lake",
+          "activities": [
+            "Enjoy an early breakfast.",
+            "Begin your journey from Jibhi towards Jalori Pass.",
+            "Drive through winding mountain roads surrounded by dense forests.",
+            "Reach Jalori Pass, a beautiful high-altitude mountain pass.",
+            "Begin the scenic hike towards Serolsar Lake through the forest trail.",
+            "Enjoy the peaceful surroundings and spectacular Himalayan scenery along the trek.",
+            "Spend some time at Serolsar Lake and relax amidst nature.",
+            "Hike back towards Jalori Pass.",
+            "Drive back to Jibhi.",
+            "Spend the evening relaxing at your accommodation.",
+            "Overnight stay in Jibhi."
+          ]
+        },
+        {
+          "title": "DAY 3        Jibhi to Manali. Local Sightseeing in Jibhi",
+          "activities": [
+            "Enjoy breakfast and check out from your accommodation.",
+            "Before departing, explore some of Jibhi's local attractions.",
+            "Visit the charming Jibhi Waterfall and enjoy the peaceful forest surroundings.",
+            "Take a short walk through the village and explore traditional Himachali architecture.",
+            "Begin your scenic drive towards Manali.",
+            "Travel through beautiful mountain roads and valleys.",
+            "Stop en route for refreshments and lunch.",
+            "Arrive in Manali and check in to your hotel.",
+            "Spend the evening at leisure.",
+            "Overnight stay in Manali."
+          ]
+        },
+        {
+          "title": "DAY 4        Local Sightseeing in Manali. Visit the famous temples and Mall Road",
+          "activities": [
+            "Enjoy breakfast at the hotel.",
+            "Begin your local sightseeing tour of Manali.",
+            "Visit the famous Hadimba Devi Temple, surrounded by tall deodar trees.",
+            "Visit the historic Vashisht Temple and explore the surrounding village.",
+            "Visit Manali Nature Park and enjoy a peaceful walk through the forest.",
+            "Explore Old Manali, known for its cafés, local shops, and relaxed atmosphere.",
+            "In the evening, visit Mall Road for shopping and local food.",
+            "Enjoy the lively atmosphere of central Manali.",
+            "Return to the hotel.",
+            "Overnight stay in Manali."
+          ]
+        },
+        {
+          "title": "DAY 5        Excursion to Solang Valley. Indulge in adventure activities",
+          "activities": [
+            "Enjoy breakfast at the hotel.",
+            "Drive to the spectacular Solang Valley, surrounded by snow-capped Himalayan peaks.",
+            "Spend the day enjoying the valley's scenic beauty.",
+            "Indulge in optional adventure activities depending on season and local availability, such as:",
+            "🪂 Paragliding",
+            "🚡 Ropeway/Cable Car",
+            "🏍️ ATV rides",
+            "🧗 Other locally available activities",
+            "Enjoy photography and leisure time in the valley.",
+            "Return to Manali in the evening.",
+            "Spend the evening relaxing at the hotel or exploring the local market.",
+            "Overnight stay in Manali."
+          ]
+        },
+        {
+          "title": "DAY 6        Manali to Chandigarh. Departure",
+          "activities": [
+            "Enjoy breakfast and check out from the hotel.",
+            "Begin your return journey from Manali to Chandigarh.",
+            "Enjoy the scenic drive through the mountains and valleys.",
+            "Stop en route for refreshments and lunch.",
+            "Continue towards Chandigarh.",
+            "Arrive in Chandigarh and proceed for your onward journey.",
+            "Bid farewell to the beautiful mountains of Himachal Pradesh with unforgettable memories."
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Himachal%20Pradesh%20Himachal%205N%2F6D%20package"
+    },
+    {
+      "destination": "himachal",
+      "destinationDisplayName": "Himachal Pradesh",
+      "category": "Domestic",
+      "region": "North India",
+      "packageId": "himachal-4",
+      "packageTitle": "Himachal",
+      "duration": "Himachal 8N/9D",
+      "durationShort": "8N/9D",
+      "slug": "8n-9d",
+      "pagePath": "/itinerary/himachal/8n-9d",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/himachal/8n-9d",
+      "apiEndpoint": "/api/itineraries/himachal/8n-9d.json",
+      "image": "/assets/himachal.jpg",
+      "inclusions": [
+        "8 Nights accommodation in selected hotels/camps",
+        "Daily breakfast & dinner",
+        "Overnight journey by Volvo/bus from Delhi to McLeodganj & Manali to Delhi",
+        "Private vehicle for local transfers & sightseeing",
+        "McLeodganj, Bir Billing, Kasol & Manali sightseeing",
+        "Bir Billing paragliding activity",
+        "River rafting, subject to weather & operational conditions",
+        "Manikaran Sahib visit",
+        "Chalal & Rudranag trekking experience",
+        "1 Night camping in Parvati Valley",
+        "Driver, fuel, toll & parking charges",
+        "Trek/camping assistance",
+        "Tour assistance throughout the journey"
+      ],
+      "days": [
+        {
+          "title": "DAY 0        Overnight Journey From Delhi to McLeodganj (Distance: Approx. 480 Km)",
+          "activities": [
+            "Depart from Delhi in the evening by overnight bus/vehicle.",
+            "Travel towards McLeod Ganj through the scenic landscapes of Himachal Pradesh.",
+            "Overnight journey towards the mountains."
+          ]
+        },
+        {
+          "title": "DAY 1        McLeod Ganj Sightseeing | Visit Bhagsunag Temple & Waterfall (Distance: Approx. 8-10 Km)",
+          "activities": [
+            "Arrive in McLeod Ganj in the morning.",
+            "Transfer to your hotel and freshen up.",
+            "After some rest, begin local sightseeing.",
+            "Visit Bhagsunag Temple, an important spiritual site surrounded by beautiful mountain scenery.",
+            "Continue with a short walk to Bhagsu Waterfall.",
+            "Explore the surrounding cafés, shops, and mountain trails.",
+            "Spend the evening exploring McLeod Ganj Market and the local Tibetan atmosphere.",
+            "Return to the hotel and relax.",
+            "Overnight stay in McLeod Ganj."
+          ]
+        },
+        {
+          "title": "DAY 2        McLeod Ganj To Bir Billing | Local Exploration (Distance: Approx. 70 Km)",
+          "activities": [
+            "Enjoy breakfast and check out from the hotel.",
+            "Begin your scenic drive towards Bir Billing, one of India's most popular paragliding destinations.",
+            "Arrive in Bir and check in to your accommodation.",
+            "Explore Bir Tibetan Colony and its peaceful surroundings.",
+            "Visit local cafés, monasteries, and handicraft shops.",
+            "Enjoy a leisurely walk around the beautiful mountain landscape.",
+            "Spend the evening relaxing and preparing for the next day's adventure activities.",
+            "Overnight stay in Bir Billing."
+          ]
+        },
+        {
+          "title": "DAY 3        Bir Billing Paragliding | Enjoy River Rafting & Transfer To Kasol (Distance: Approx. 180 Km)",
+          "activities": [
+            "Enjoy breakfast at your accommodation.",
+            "Head to the Billing take-off point for an exciting paragliding experience over the beautiful Kangra Valley.",
+            "Enjoy breathtaking aerial views of the Himalayan landscape.",
+            "After the activity, return to Bir and have lunch.",
+            "Continue with a river rafting experience, subject to seasonal conditions and local availability.",
+            "Begin your scenic drive towards Kasol, travelling through beautiful mountain roads and valleys.",
+            "Arrive in Kasol and check in to your accommodation.",
+            "Spend the evening at leisure.",
+            "Explore the riverside surroundings or relax at a local café.",
+            "Overnight stay in Kasol."
+          ]
+        },
+        {
+          "title": "DAY 4        Visit Manikaran Sahib & Trek to Chalal Village | Evening at Leisure (Distance: Approx. 12-15 Km)",
+          "activities": [
+            "Enjoy breakfast at the hotel.",
+            "Drive towards Manikaran Sahib, a revered pilgrimage destination in the Parvati Valley.",
+            "Visit the Manikaran Sahib Gurudwara and experience its peaceful surroundings.",
+            "Explore the famous natural hot springs and the nearby market.",
+            "Return towards Kasol.",
+            "Begin the scenic trek to Chalal Village, passing through forests and mountain trails.",
+            "Explore the traditional village and enjoy beautiful views of the Parvati Valley.",
+            "Trek back to Kasol.",
+            "Spend the evening at leisure.",
+            "Relax by the river or explore the local cafés and market.",
+            "Overnight stay in Kasol."
+          ]
+        },
+        {
+          "title": "DAY 5        Trek To Rudranag | Overnight Camping In Parvati Valley (Distance: Approx. 28 Km)",
+          "activities": [
+            "Enjoy an early breakfast.",
+            "Begin your journey towards Barshaini, the starting point for the Parvati Valley trek.",
+            "Start trekking through scenic mountain trails surrounded by forests and valleys.",
+            "Pass through beautiful Himalayan landscapes as you make your way towards Rudranag.",
+            "Visit the Rudranag Temple and waterfall.",
+            "Spend some time enjoying the peaceful surroundings.",
+            "Continue to the designated camping area, subject to local permissions and campsite availability.",
+            "Enjoy the evening surrounded by the natural beauty of the Parvati Valley.",
+            "Overnight stay in a camp."
+          ]
+        },
+        {
+          "title": "DAY 6        Trek Down to Barshaini & Transfer To Manali | Evening At Leisure (Distance: Approx. 95 Km)",
+          "activities": [
+            "Wake up to the peaceful surroundings of the Parvati Valley.",
+            "Enjoy breakfast at the campsite.",
+            "Begin your trek back towards Barshaini.",
+            "Meet your vehicle at Barshaini and begin the journey towards Manali.",
+            "Enjoy the scenic drive through the Himalayan valleys.",
+            "Arrive in Manali and check in to your hotel.",
+            "Spend the evening at leisure.",
+            "Relax after the trek and enjoy the cool mountain atmosphere.",
+            "Overnight stay in Manali."
+          ]
+        },
+        {
+          "title": "DAY 7        Leisure Day In Manali",
+          "activities": [
+            "Enjoy a relaxed breakfast at the hotel.",
+            "Keep the day free to rest after the trekking and adventure activities.",
+            "Explore Old Manali at your own pace.",
+            "Enjoy local cafés, restaurants, shops, and riverside walks.",
+            "Alternatively, spend some quiet time at the hotel enjoying the mountain views.",
+            "In the evening, explore Mall Road and shop for local souvenirs.",
+            "Return to the hotel.",
+            "Overnight stay in Manali."
+          ]
+        },
+        {
+          "title": "DAY 8        Manali Exploration & Departure For Delhi (Distance: Approx. 480 km)",
+          "activities": [
+            "Enjoy breakfast and check out from the hotel.",
+            "Visit some of Manali's popular attractions, depending on your departure time.",
+            "Explore Hadimba Devi Temple, surrounded by beautiful deodar forests.",
+            "Visit Vashisht Village and Temple if time permits.",
+            "Spend some time shopping at the local market.",
+            "Begin your journey from Manali towards Delhi.",
+            "Enjoy the scenic drive through the mountains and valleys.",
+            "Continue your overnight journey towards Delhi."
+          ]
+        },
+        {
+          "title": "DAY 9        Reach Delhi for journey back home.",
+          "activities": [
+            "Arrive in Delhi in the morning, depending on traffic and road conditions.",
+            "Proceed to your destination with wonderful memories of your Himachal adventure.",
+            "Tour concludes."
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Himachal%20Pradesh%20Himachal%208N%2F9D%20package"
+    }
+  ]
+}

@@ -1,49 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Clock, CheckCircle2, ChevronDown, ChevronUp, MessageCircle } from 'lucide-react';
-import { siteConfig } from '../data/siteConfig';
-import { domesticSiteConfig } from '../data/siteConfig.domestic';
-import { internationalSiteConfig } from '../data/siteConfig.international';
-import { spiritualSiteConfig } from '../data/siteConfig.spiritual';
-
-// Map destination slugs to card images and page info
-const destinationMeta = {
-  kashmir:       { img: '/assets/kashmir-C3GCvNNI.jpg',          region: 'North India',     from: '/domestic',         fromLabel: 'Domestic' },
-  ladakh:        { img: '/assets/spiritual-north-NuyL8ZKr.jpg',  region: 'North India',     from: '/domestic',         fromLabel: 'Domestic' },
-  himachal:      { img: '/assets/himachal.jpg',     region: 'North India',     from: '/domestic',         fromLabel: 'Domestic' },
-  spiti:         { img: '/assets/himachal.jpg',     region: 'North India',     from: '/domestic',         fromLabel: 'Domestic' },
-  meghalaya:     { img: '/assets/northeast-D8OXmwI_.jpg',         region: 'Northeast India', from: '/domestic',         fromLabel: 'Domestic' },
-  sikkim:        { img: '/assets/sikkim.jpg',     region: 'Northeast India', from: '/domestic',         fromLabel: 'Domestic' },
-  arunachal:     { img: '/assets/Arunachal.jpg',         region: 'Northeast India', from: '/domestic',         fromLabel: 'Domestic' },
-  rajasthan:     { img: '/assets/rajasthan-Dznk4KEj.jpg',         region: 'West India',      from: '/domestic',         fromLabel: 'Domestic' },
-  kerala:        { img: '/assets/kerala-JKm5YrGV.jpg',            region: 'South India',     from: '/domestic',         fromLabel: 'Domestic' },
-  maharashtra:   { img: '/assets/Maharashtra.jpg',        region: 'West India',      from: '/spiritualjourney', fromLabel: 'Spiritual Journey' },
-  gujarat:       { img: '/assets/Gujrat.jpg',        region: 'West India',      from: '/spiritualjourney', fromLabel: 'Spiritual Journey' },
-  tamilnadu:     { img: '/assets/temple-south-CC6aHc0Q.jpg',     region: 'South India',     from: '/spiritualjourney', fromLabel: 'Spiritual Journey' },
-  andhrapradesh: { img: '/assets/Andhra.jpg',     region: 'South India',     from: '/spiritualjourney', fromLabel: 'Spiritual Journey' },
-  uttarakhand:   { img: '/assets/Kainchi-Dham.jpg',  region: 'North India',     from: '/spiritualjourney', fromLabel: 'Spiritual Journey' },
-  uttarpradesh:  { img: '/assets/aarti-Cr2kuE6b.jpg',           region: 'North India',     from: '/spiritualjourney', fromLabel: 'Spiritual Journey' },
-  madhyapradesh: { img: '/assets/hero-aarti.jpg',    region: 'Central India',   from: '/spiritualjourney', fromLabel: 'Spiritual Journey' },
-  odisha:        { img: '/assets/konark.jpg',           region: 'East India',      from: '/spiritualjourney', fromLabel: 'Spiritual Journey' },
-  bali:          { img: '/assets/intl-bali-Ck8GSayl.jpg',         region: 'Southeast Asia',  from: '/international',    fromLabel: 'International' },
-  vietnam:       { img: '/assets/intl-vietnam-ZB5ZxQ8t.jpg',      region: 'Southeast Asia',  from: '/international',    fromLabel: 'International' },
-  philippines:   { img: '/assets/intl-angkor-Xa0-qQac.jpg',       region: 'Southeast Asia',  from: '/international',    fromLabel: 'International' },
-  georgia:       { img: '/assets/intl-caucasus-DAV0UB-k.jpg',     region: 'CIS Countries',   from: '/international',    fromLabel: 'International' },
-  japan:         { img: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200', region: 'East Asia', from: '/international', fromLabel: 'International' },
-  srilanka:      { img: '/assets/Srilanka.jpg',       region: 'South Asia',      from: '/international',    fromLabel: 'International' },
-};
-
-const destinationDisplayNames = {
-  kashmir: 'Kashmir', ladakh: 'Ladakh', himachal: 'Himachal Pradesh',
-  spiti: 'Spiti Valley', meghalaya: 'Meghalaya', sikkim: 'Sikkim',
-  arunachal: 'Arunachal Pradesh', rajasthan: 'Rajasthan', kerala: 'Kerala',
-  maharashtra: 'Maharashtra', gujarat: 'Gujarat', tamilnadu: 'Tamil Nadu',
-  andhrapradesh: 'Andhra Pradesh', uttarakhand: 'Uttarakhand',
-  uttarpradesh: 'Uttar Pradesh', madhyapradesh: 'Madhya Pradesh', odisha: 'Odisha',
-  bali: 'Bali', vietnam: 'Vietnam', philippines: 'Philippines',
-  georgia: 'Georgia', japan: 'Japan', srilanka: 'Sri Lanka',
-};
+import { ArrowLeft, Clock, CheckCircle2, ChevronDown, ChevronUp, MessageCircle, Share2, Check } from 'lucide-react';
+import {
+  destinationMeta,
+  destinationDisplayNames,
+  getDestinationPackages,
+  getPackageSlug,
+  findPackageIndex,
+  extractDurationShort,
+  CANONICAL_BASE,
+} from '../data/itineraryRegistry';
 
 function DayCard({ day, index, isOpen, onToggle }) {
   return (
@@ -94,19 +61,10 @@ function DayCard({ day, index, isOpen, onToggle }) {
 }
 
 export default function ItineraryDetail() {
-  const { destination } = useParams();
+  const { destination, subItinerary } = useParams();
   const navigate = useNavigate();
 
-  const domesticPackages = domesticSiteConfig.itineraries?.[destination];
-  const intlPackages = internationalSiteConfig.itineraries?.[destination];
-  const spiritualPackages = spiritualSiteConfig.itineraries?.[destination];
-
-  const packages =
-    domesticPackages ||
-    intlPackages ||
-    spiritualPackages ||
-    siteConfig.itineraries?.[destination] ||
-    [];
+  const packages = getDestinationPackages(destination);
   const meta = destinationMeta[destination] || {
     img: '/assets/hero-spiti.jpg',
     region: 'India',
@@ -115,15 +73,58 @@ export default function ItineraryDetail() {
   };
   const displayName = destinationDisplayNames[destination] || destination;
 
-  const [selectedPkg, setSelectedPkg] = useState(0);
+  // Derive selected package index directly from the URL route
+  const selectedPkg = packages.length > 0 ? findPackageIndex(packages, destination, subItinerary) : 0;
   const [openDays, setOpenDays] = useState([0]); // first day open by default
-
-  // Reset when package changes
-  useEffect(() => {
-    setOpenDays([0]);
-  }, [selectedPkg]);
+  const [copied, setCopied] = useState(false);
 
   const currentPkg = packages[selectedPkg];
+
+  // Dynamic SEO meta tags and document title for each sub-itinerary endpoint
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const doc = window.document;
+    if (currentPkg) {
+      const dur = extractDurationShort(currentPkg.duration) || currentPkg.duration;
+      doc.title = `${displayName} ${dur} Tour Itinerary | Yugatīrtha`;
+    } else if (displayName) {
+      doc.title = `${displayName} Tour Itineraries & Packages | Yugatīrtha`;
+    }
+
+    // Set canonical link for SEO
+    let canonical = doc.querySelector("link[rel='canonical']");
+    if (!canonical) {
+      canonical = doc.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      doc.head.appendChild(canonical);
+    }
+
+    const currentSlug = currentPkg ? getPackageSlug(currentPkg, destination, selectedPkg) : '';
+    const canonicalUrl = currentSlug
+      ? `${CANONICAL_BASE}/itinerary/${destination}/${currentSlug}`
+      : `${CANONICAL_BASE}/itinerary/${destination}`;
+    canonical.setAttribute('href', canonicalUrl);
+  }, [displayName, destination, selectedPkg, currentPkg]);
+
+  const handleSelectPackage = (index) => {
+    const targetPkg = packages[index];
+    if (targetPkg) {
+      const slug = getPackageSlug(targetPkg, destination, index);
+      navigate(`/itinerary/${destination}/${slug}`);
+      setOpenDays([0]);
+    }
+  };
+
+  const handleCopyLink = () => {
+    const slug = currentPkg ? getPackageSlug(currentPkg, destination, selectedPkg) : '';
+    const shareUrl = slug
+      ? `${window.location.origin}/itinerary/${destination}/${slug}`
+      : `${window.location.origin}/itinerary/${destination}`;
+    navigator.clipboard.writeText(shareUrl).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    });
+  };
 
   const toggleDay = (i) => {
     setOpenDays(prev =>
@@ -194,7 +195,7 @@ export default function ItineraryDetail() {
             transition={{ delay: 0.2 }}
             className="text-[#D4A373] text-[10px] tracking-[0.3em] uppercase font-semibold mb-2"
           >
-            {meta.region} · Itinerary
+            {meta.region} · {currentPkg?.duration ? currentPkg.duration : 'Itinerary'}
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -207,23 +208,51 @@ export default function ItineraryDetail() {
         </div>
       </div>
 
-      {/* ── Duration Tab Selector ──────────────────── */}
+      {/* ── Duration Tab Selector (Sub-Itinerary Endpoints) ── */}
       {packages.length > 1 && (
-        <div className="bg-white border-b border-gray-200 sticky top-[68px] z-40">
-          <div className="max-w-5xl mx-auto px-5 sm:px-8 flex gap-1 overflow-x-auto py-0">
-            {packages.map((pkg, i) => (
-              <button
-                key={pkg.id}
-                onClick={() => setSelectedPkg(i)}
-                className={`flex-shrink-0 px-5 py-4 text-[10px] font-bold uppercase tracking-[0.2em] border-b-2 transition-colors whitespace-nowrap ${
-                  selectedPkg === i
-                    ? 'border-[#D4A373] text-[#b8864e]'
-                    : 'border-transparent text-gray-500 hover:text-gray-900'
-                }`}
-              >
-                {pkg.duration || `Package ${i + 1}`}
-              </button>
-            ))}
+        <div className="bg-white border-b border-gray-200 sticky top-[68px] z-40 shadow-xs">
+          <div className="max-w-5xl mx-auto px-5 sm:px-8 flex items-center justify-between">
+            <div className="flex gap-1 overflow-x-auto py-0">
+              {packages.map((pkg, i) => {
+                const isSelected = selectedPkg === i;
+                const slug = getPackageSlug(pkg, destination, i);
+                return (
+                  <Link
+                    key={pkg.id || i}
+                    to={`/itinerary/${destination}/${slug}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleSelectPackage(i);
+                    }}
+                    className={`flex-shrink-0 px-5 py-4 text-[10px] font-bold uppercase tracking-[0.2em] border-b-2 transition-colors whitespace-nowrap ${
+                      isSelected
+                        ? 'border-[#D4A373] text-[#b8864e]'
+                        : 'border-transparent text-gray-500 hover:text-gray-900'
+                    }`}
+                  >
+                    {pkg.duration || `Package ${i + 1}`}
+                  </Link>
+                );
+              })}
+            </div>
+
+            <button
+              onClick={handleCopyLink}
+              title="Copy direct link to this sub-itinerary"
+              className="hidden sm:inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-gray-500 hover:text-[#b8864e] px-3 py-1.5 rounded transition-colors"
+            >
+              {copied ? (
+                <>
+                  <Check size={13} className="text-emerald-600" />
+                  <span className="text-emerald-600 font-semibold">Link Copied</span>
+                </>
+              ) : (
+                <>
+                  <Share2 size={13} />
+                  <span>Share</span>
+                </>
+              )}
+            </button>
           </div>
         </div>
       )}
@@ -245,17 +274,28 @@ export default function ItineraryDetail() {
                 {/* Header */}
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
                   <div>
-                    <p className="text-[#D4A373] text-[10px] tracking-widest uppercase font-semibold mb-1">Programme</p>
+                    <p className="text-[#D4A373] text-[10px] tracking-widest uppercase font-semibold mb-1">
+                      {displayName} Circuit
+                    </p>
                     <h2 className="font-serif text-3xl text-gray-900">
-                      Day by Day
+                      {currentPkg?.title && currentPkg.title !== displayName ? currentPkg.title : 'Day by Day Plan'}
                     </h2>
                   </div>
-                  {currentPkg?.duration && (
-                    <div className="flex items-center gap-2 text-gray-500 text-xs font-semibold uppercase tracking-widest">
-                      <Clock size={14} className="text-[#D4A373]" />
-                      {currentPkg.duration}
-                    </div>
-                  )}
+                  <div className="flex items-center gap-4">
+                    {currentPkg?.duration && (
+                      <div className="flex items-center gap-2 text-gray-500 text-xs font-semibold uppercase tracking-widest">
+                        <Clock size={14} className="text-[#D4A373]" />
+                        {currentPkg.duration}
+                      </div>
+                    )}
+                    <button
+                      onClick={handleCopyLink}
+                      className="sm:hidden inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-gray-500 hover:text-primary"
+                    >
+                      {copied ? <Check size={12} className="text-emerald-600" /> : <Share2 size={12} />}
+                      <span>{copied ? 'Copied' : 'Share'}</span>
+                    </button>
+                  </div>
                 </div>
 
                 {/* Expand / Collapse all */}
@@ -338,22 +378,30 @@ export default function ItineraryDetail() {
                   {/* Other packages link */}
                   {packages.length > 1 && (
                     <div className="border border-gray-200 bg-white p-6">
-                      <p className="text-[10px] text-gray-500 uppercase tracking-widest font-semibold mb-4">Other durations</p>
+                      <p className="text-[10px] text-gray-500 uppercase tracking-widest font-semibold mb-4">All Circuits & Durations</p>
                       <div className="space-y-2">
-                        {packages.map((pkg, i) => (
-                          <button
-                            key={pkg.id}
-                            onClick={() => setSelectedPkg(i)}
-                            className={`w-full text-left px-4 py-2.5 text-sm flex items-center justify-between transition-colors ${
-                              selectedPkg === i
-                                ? 'bg-[#D4A373]/10 text-[#b8864e] font-semibold'
-                                : 'text-gray-600 hover:bg-gray-50'
-                            }`}
-                          >
-                            <span>{pkg.duration || `Package ${i + 1}`}</span>
-                            <span className="text-xs text-gray-400">{pkg.days?.length || 0}d</span>
-                          </button>
-                        ))}
+                        {packages.map((pkg, i) => {
+                          const slug = getPackageSlug(pkg, destination, i);
+                          const isSelected = selectedPkg === i;
+                          return (
+                            <Link
+                              key={pkg.id || i}
+                              to={`/itinerary/${destination}/${slug}`}
+                              onClick={(e) => {
+                                e.preventDefault();
+                                handleSelectPackage(i);
+                              }}
+                              className={`w-full text-left px-4 py-2.5 text-sm flex items-center justify-between transition-colors ${
+                                isSelected
+                                  ? 'bg-[#D4A373]/10 text-[#b8864e] font-semibold border-l-2 border-[#D4A373]'
+                                  : 'text-gray-600 hover:bg-gray-50'
+                              }`}
+                            >
+                              <span>{pkg.duration || `Package ${i + 1}`}</span>
+                              <span className="text-xs text-gray-400">{pkg.days?.length || 0}d</span>
+                            </Link>
+                          );
+                        })}
                       </div>
                     </div>
                   )}

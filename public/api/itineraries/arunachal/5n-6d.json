@@ -1,0 +1,114 @@
+{
+  "destination": "arunachal",
+  "destinationDisplayName": "Arunachal Pradesh",
+  "category": "Domestic",
+  "region": "Northeast India",
+  "packageId": "arunachal-2",
+  "packageTitle": "Arunachal",
+  "duration": "Arunachal 5N/6D",
+  "durationShort": "5N/6D",
+  "slug": "5n-6d",
+  "pagePath": "/itinerary/arunachal/5n-6d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/arunachal/5n-6d",
+  "apiEndpoint": "/api/itineraries/arunachal/5n-6d.json",
+  "image": "/assets/Arunachal.jpg",
+  "inclusions": [
+    "Accommodation as mentioned, sharing basis, and mentioned meal plan",
+    "All transportation organized through a dedicated air-conditioned vehicle with a professional driver",
+    "Breakfast included in the package",
+    "Inner Line Permit for Arunachal Pradesh and processing fees included",
+    "Pickup and drop from Guwahati Airport/Railway Station/Bus Station",
+    "All sightseeing, land transfer & inter-hotel transfer",
+    "Driver allowance, toll, parking, road tax, permit charges, night halt, interstate charges, Kaziranga permit toll, and forest guard welfare fees included",
+    "Child below 6 yrs sharing same bed with parents will be complimentary and will be according to hotel rules"
+  ],
+  "days": [
+    {
+      "title": "Day 1 – Airport Pickup, Guwahati to Dirang",
+      "activities": [
+        "Arrive at Guwahati Airport and meet your driver.",
+        "Begin your scenic journey towards Dirang, a beautiful Himalayan valley in Arunachal Pradesh.",
+        "Drive through the picturesque landscapes of Assam and enter the mountains of Arunachal Pradesh.",
+        "En route, pass through beautiful forests, valleys, and mountain villages.",
+        "Stop at suitable viewpoints and local eateries for refreshments.",
+        "Continue towards Dirang and check in to your hotel/homestay.",
+        "Spend the evening relaxing and enjoying the peaceful mountain atmosphere.",
+        "Overnight stay in Dirang."
+      ]
+    },
+    {
+      "title": "Day 2 – Dirang to Tawang",
+      "activities": [
+        "Enjoy an early breakfast and check out from the hotel.",
+        "Begin your spectacular drive towards Tawang.",
+        "The journey takes you through some of the most beautiful Himalayan landscapes in Arunachal Pradesh.",
+        "Cross the famous Sela Pass, one of the highest motorable mountain passes in the region, subject to weather and road conditions.",
+        "Stop to admire the surrounding snow-covered mountains and Sela Lake.",
+        "Continue through winding mountain roads and scenic valleys.",
+        "En route, visit the Jaswant Garh War Memorial, dedicated to Rifleman Jaswant Singh Rawat.",
+        "Continue towards Tawang.",
+        "On arrival, check in to your hotel.",
+        "Spend the evening relaxing after the long mountain journey.",
+        "Overnight stay in Tawang."
+      ]
+    },
+    {
+      "title": "Day 3 – Tawang Sightseeing",
+      "activities": [
+        "Enjoy breakfast at the hotel.",
+        "Begin your Tawang sightseeing tour.",
+        "Visit the magnificent Tawang Monastery, one of the largest Buddhist monasteries in India and an important centre of Mahayana Buddhism.",
+        "Explore the monastery complex and enjoy panoramic views of the surrounding mountains.",
+        "Visit the Tawang War Memorial, built in honour of Indian soldiers who lost their lives during the 1962 war.",
+        "Explore the local markets and experience the culture and lifestyle of Tawang.",
+        "Depending on time and local accessibility, visit nearby attractions and viewpoints.",
+        "Spend the evening at leisure.",
+        "Return to your hotel and relax.",
+        "Overnight stay in Tawang."
+      ]
+    },
+    {
+      "title": "Day 4 – Around Tawang Sightseeing (Sela Pass, Bumla Pass, PTSO Lake, Madhuri Lake)",
+      "activities": [
+        "Start early after breakfast for an exciting day exploring the high-altitude attractions around Tawang.",
+        "Visit Bumla Pass, located near the India–China border.",
+        "Enjoy the dramatic mountain scenery and learn about the strategic significance of the area.",
+        "Continue towards PTSO Lake, a beautiful high-altitude lake surrounded by rugged mountains.",
+        "Visit the spectacular Madhuri Lake, also known as Sangetsar Lake, famous for its unique landscape and cinematic appeal.",
+        "Enjoy the breathtaking views and take photographs.",
+        "If the route and weather permit, enjoy additional stops at scenic viewpoints along the way.",
+        "Return to Tawang in the evening.",
+        "Relax at your hotel after the high-altitude excursion.",
+        "Overnight stay in Tawang."
+      ]
+    },
+    {
+      "title": "Day 5 – Tawang to Bomdila",
+      "activities": [
+        "Enjoy breakfast and check out from your hotel.",
+        "Begin your return journey towards Bomdila.",
+        "Drive through the spectacular Himalayan terrain and revisit some of the beautiful landscapes along the route.",
+        "Stop at scenic viewpoints and local villages along the way.",
+        "Depending on road conditions and time, take short breaks for photographs and refreshments.",
+        "Arrive in Bomdila, a picturesque hill town surrounded by forests and mountains.",
+        "Check in to your hotel.",
+        "Spend the evening relaxing and enjoying the cool mountain weather.",
+        "Overnight stay in Bomdila."
+      ]
+    },
+    {
+      "title": "Day 6 – Bomdila to Guwahati, Airport Drop",
+      "activities": [
+        "Enjoy breakfast at the hotel.",
+        "Check out and begin your journey towards Guwahati.",
+        "Drive through the beautiful mountain roads before entering the plains of Assam.",
+        "Enjoy the final views of the Himalayan landscapes along the way.",
+        "Stop for refreshments and lunch en route.",
+        "Continue towards Guwahati.",
+        "On arrival, proceed directly to Guwahati Airport for your onward journey.",
+        "Bid farewell to the beautiful mountains of Arunachal Pradesh with unforgettable memories."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Arunachal%20Pradesh%20Arunachal%205N%2F6D%20package"
+}

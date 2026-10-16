@@ -1,0 +1,131 @@
+{
+  "destination": "arunachal",
+  "destinationDisplayName": "Arunachal Pradesh",
+  "category": "Domestic",
+  "region": "Northeast India",
+  "packageId": "arunachal-3",
+  "packageTitle": "Arunachal",
+  "duration": "Arunachal 6N/7D",
+  "durationShort": "6N/7D",
+  "slug": "6n-7d",
+  "pagePath": "/itinerary/arunachal/6n-7d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/arunachal/6n-7d",
+  "apiEndpoint": "/api/itineraries/arunachal/6n-7d.json",
+  "image": "/assets/Arunachal.jpg",
+  "inclusions": [
+    "Entire travel as per the itinerary",
+    "All Transfers in a Tempo Traveller",
+    "1 Night in Hotel at Tezpur, 4 nights in Hotel in Ziro Valley, 1 Night in a Hotel in Guwahati",
+    "Transport from Guwahati to Guwahati and back in comfortable tourist vehicles",
+    "Inner Line Permit and all other necessary entry permits included",
+    "6 Meals – Breakfast included from Day 2 to Day 7",
+    "All tolls, parking fee, driver & fuel cost",
+    "Airport/Khanapara Pickup and Drop"
+  ],
+  "days": [
+    {
+      "title": "Day 1 – Arrival in Guwahati, Transfer to Tezpur",
+      "activities": [
+        "Arrive at Guwahati Airport/Railway Station and meet your driver.",
+        "Begin your journey towards Tezpur, a beautiful historic town on the banks of the Brahmaputra River.",
+        "Enjoy the scenic drive through Assam's lush green landscapes and tea gardens.",
+        "On arrival in Tezpur, check in to your hotel.",
+        "After some rest, explore the local surroundings.",
+        "Depending on arrival time, visit Agnigarh or enjoy a relaxed evening by the Brahmaputra.",
+        "Return to the hotel for dinner.",
+        "Overnight stay in Tezpur."
+      ]
+    },
+    {
+      "title": "Day 2 – Early Morning Departure for Ziro Valley – Ziro Music Festival",
+      "activities": [
+        "Start your day early with breakfast.",
+        "Check out from the hotel and begin your scenic journey towards Ziro Valley in Arunachal Pradesh.",
+        "Drive through the beautiful landscapes of Assam before entering the hills of Arunachal Pradesh.",
+        "Enjoy the changing scenery of forests, mountains, valleys, and local villages.",
+        "Stop en route for refreshments and lunch.",
+        "Continue towards Ziro Valley.",
+        "On arrival, check in to your campsite/homestay.",
+        "Freshen up and get ready for the Ziro Music Festival.",
+        "Head to the festival venue and enjoy live performances in the unique setting of Ziro's mountains and pine forests.",
+        "Experience the festival's music, local food, arts, crafts, and vibrant atmosphere.",
+        "Return to your accommodation after the day's performances.",
+        "Overnight stay in Ziro Valley."
+      ]
+    },
+    {
+      "title": "Day 3 – Apatani Tribal Village – Ziro Music Festival",
+      "activities": [
+        "Enjoy breakfast at your accommodation.",
+        "Begin your exploration of the unique Apatani tribal culture.",
+        "Visit traditional Apatani villages and observe the distinctive architecture and community lifestyle.",
+        "Explore the famous Apatani paddy fields, surrounded by lush green hills.",
+        "Learn about traditional agricultural practices and the close relationship between the community and its natural surroundings.",
+        "Interact respectfully with local residents and discover traditional customs and handicrafts.",
+        "Return to your accommodation for some rest.",
+        "Later, head towards the Ziro Music Festival.",
+        "Spend the evening enjoying live music performances from artists across India and around the world.",
+        "Explore the food stalls, local products, art, and festival atmosphere.",
+        "Return to your accommodation after the festival.",
+        "Overnight stay in Ziro Valley."
+      ]
+    },
+    {
+      "title": "Day 4 – Fishing in Ziro Valley – Ziro Music Festival",
+      "activities": [
+        "Enjoy breakfast at your campsite/homestay.",
+        "Spend the morning experiencing fishing in and around Ziro Valley, subject to local permissions and seasonal conditions.",
+        "Enjoy the peaceful surroundings and experience a slower side of life in the valley.",
+        "Spend some time exploring nearby villages and agricultural landscapes.",
+        "Return to your accommodation and relax.",
+        "In the afternoon/evening, get ready for another exciting day at the Ziro Music Festival.",
+        "Enjoy live performances, local cuisine, arts, crafts, and the energetic festival environment.",
+        "Return to your accommodation after the day's celebrations.",
+        "Overnight stay in Ziro Valley."
+      ]
+    },
+    {
+      "title": "Day 5 – Local Sightseeing – Ziro Music Festival",
+      "activities": [
+        "Enjoy breakfast at the accommodation.",
+        "Begin a relaxed local sightseeing tour around Ziro Valley.",
+        "Visit scenic pine forests and enjoy a peaceful nature walk.",
+        "Explore traditional villages and surrounding paddy fields.",
+        "Visit local viewpoints to admire the beautiful valley landscape.",
+        "Spend time photographing the mountains, forests, agricultural fields, and traditional settlements.",
+        "Explore local handicrafts and learn more about Apatani traditions.",
+        "Return to your accommodation and freshen up.",
+        "Later, head to the Ziro Music Festival for another evening of music and celebrations.",
+        "Enjoy the final festival performances and soak in the unique atmosphere of music surrounded by nature.",
+        "Return to your accommodation after the festival.",
+        "Overnight stay in Ziro Valley."
+      ]
+    },
+    {
+      "title": "Day 6 – Transfer from Ziro Valley to Guwahati",
+      "activities": [
+        "Enjoy breakfast and check out from your accommodation.",
+        "Begin your return journey towards Guwahati.",
+        "Drive through the scenic landscapes of Arunachal Pradesh and Assam.",
+        "Stop en route for refreshments and lunch.",
+        "Enjoy the final views of the hills and countryside.",
+        "Continue towards Guwahati.",
+        "On arrival, check in to your hotel and relax.",
+        "Spend the evening at leisure after the long journey.",
+        "Overnight stay in Guwahati."
+      ]
+    },
+    {
+      "title": "Day 7 – Maa Kamakhya Temple – Departure",
+      "activities": [
+        "Enjoy breakfast at the hotel.",
+        "Check out and proceed to Maa Kamakhya Temple, one of the most revered temples in Assam.",
+        "Spend time exploring the temple complex and experiencing its spiritual atmosphere.",
+        "Depending on your departure schedule, enjoy some free time for local shopping or refreshments.",
+        "Proceed to Guwahati Airport/Railway Station for your onward journey.",
+        "Bid farewell to Assam and Arunachal Pradesh with wonderful memories of the Ziro Music Festival, Apatani culture, and Ziro Valley."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Arunachal%20Pradesh%20Arunachal%206N%2F7D%20package"
+}

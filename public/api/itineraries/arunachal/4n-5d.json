@@ -1,0 +1,92 @@
+{
+  "destination": "arunachal",
+  "destinationDisplayName": "Arunachal Pradesh",
+  "category": "Domestic",
+  "region": "Northeast India",
+  "packageId": "arunachal-1",
+  "packageTitle": "Arunachal",
+  "duration": "Arunachal 4N/5D",
+  "durationShort": "4N/5D",
+  "slug": "4n-5d",
+  "pagePath": "/itinerary/arunachal/4n-5d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/arunachal/4n-5d",
+  "apiEndpoint": "/api/itineraries/arunachal/4n-5d.json",
+  "image": "/assets/Arunachal.jpg",
+  "inclusions": [
+    "4 Nights hotel accommodation in Ziro Valley as per the package",
+    "Breakfast from Day 2 to Day 5",
+    "Applicable taxes as per the package"
+  ],
+  "days": [
+    {
+      "title": "Day 1 – Arrive in Ziro Valley | Ziro Music Festival",
+      "activities": [
+        "Transfer to your campsite/homestay and complete the check-in process.",
+        "Settle in and take some time to relax after your journey.",
+        "Explore the beautiful surroundings of Ziro Valley at leisure.",
+        "In the afternoon/evening, get ready for your first experience of the Ziro Music Festival.",
+        "Head to the festival venue and enjoy live performances by artists from across India and around the world.",
+        "Experience the unique combination of music, nature, art, food, and local culture.",
+        "Return to your accommodation after the festival.",
+        "Overnight stay in Ziro Valley."
+      ]
+    },
+    {
+      "title": "Day 2 – Ziro Music Festival",
+      "activities": [
+        "Enjoy a relaxed morning and breakfast at your accommodation.",
+        "Spend the day immersing yourself in the Ziro Music Festival.",
+        "Enjoy performances across different stages and discover new artists and genres.",
+        "Explore the festival's food stalls featuring local Arunachali and regional flavours.",
+        "Browse handmade crafts, art, merchandise, and locally produced products.",
+        "Take breaks between performances to enjoy the surrounding Ziro Valley landscape.",
+        "Continue enjoying the festival's evening performances and vibrant atmosphere.",
+        "Return to your campsite/homestay after the day's celebrations.",
+        "Overnight stay in Ziro Valley."
+      ]
+    },
+    {
+      "title": "Day 3 – Explore Apatani Culture | Ziro Music Festival",
+      "activities": [
+        "Enjoy breakfast and begin your cultural exploration of Ziro.",
+        "Visit traditional Apatani villages and experience the distinctive lifestyle and architecture of the community.",
+        "Explore the famous Apatani paddy fields, surrounded by green hills and forests.",
+        "Interact with local people and learn about traditional agricultural practices and village life.",
+        "Visit local homes or community areas, where possible, to understand the region's customs and traditions.",
+        "Explore traditional handicrafts and locally made products.",
+        "Return to your accommodation for some rest.",
+        "In the afternoon/evening, head back to the Ziro Music Festival.",
+        "Enjoy another evening of live music and performances.",
+        "Return to your stay after the festival.",
+        "Overnight stay in Ziro Valley."
+      ]
+    },
+    {
+      "title": "Day 4 – Explore Ziro Valley | Ziro Music Festival",
+      "activities": [
+        "Enjoy breakfast at the campsite/homestay.",
+        "Begin a relaxed exploration of Ziro Valley.",
+        "Visit the scenic pine forests and enjoy a peaceful walk through the natural surroundings.",
+        "Explore viewpoints overlooking the valley and its iconic agricultural landscape.",
+        "Spend time photographing the beautiful combination of rice fields, forests, mountains, and traditional villages.",
+        "Depending on local conditions and time, visit additional nearby villages or cultural attractions.",
+        "Return to your accommodation and freshen up.",
+        "Later, head to the Ziro Music Festival for your final evening.",
+        "Enjoy the closing performances, atmosphere, and celebration of music and culture.",
+        "Return to your accommodation after the festival.",
+        "Overnight stay in Ziro Valley."
+      ]
+    },
+    {
+      "title": "Day 5 – Departure | Bid Farewell to the Valley of Music",
+      "activities": [
+        "Enjoy breakfast at your accommodation.",
+        "Check out and prepare for your departure.",
+        "Take some final photographs of the beautiful Ziro Valley.",
+        "Meet your driver/local representative for your onward transfer.",
+        "Depart Ziro with unforgettable memories of the Ziro Music Festival, Apatani culture, music, and the peaceful Himalayan valley."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Arunachal%20Pradesh%20Arunachal%204N%2F5D%20package"
+}
