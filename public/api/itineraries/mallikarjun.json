@@ -1,0 +1,86 @@
+{
+  "destination": "mallikarjun",
+  "displayName": "Mallikarjun Jyotirling",
+  "category": "Spiritual",
+  "region": "South India",
+  "pagePath": "/itinerary/mallikarjun",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/mallikarjun",
+  "packagesCount": 1,
+  "packages": [
+    {
+      "destination": "mallikarjun",
+      "destinationDisplayName": "Mallikarjun Jyotirling",
+      "category": "Spiritual",
+      "region": "South India",
+      "packageId": "andhrapradesh-1",
+      "packageTitle": "Mallikarjun Jyotirling",
+      "duration": "Mallikarjun Jyotirling 3N/4D",
+      "durationShort": "3N/4D",
+      "slug": "3n-4d",
+      "pagePath": "/itinerary/mallikarjun/3n-4d",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/mallikarjun/3n-4d",
+      "apiEndpoint": "/api/itineraries/mallikarjun/3n-4d.json",
+      "image": "/assets/Andhra.jpg",
+      "inclusions": [
+        "3 Nights accommodation",
+        "Daily breakfast",
+        "Private vehicle for all transfers & sightseeing",
+        "Hyderabad pickup & drop",
+        "Driver, fuel, toll & parking charges",
+        "Sightseeing as per itinerary",
+        "Tour assistance throughout the journey"
+      ],
+      "days": [
+        {
+          "title": "Day 1 – Arrival in Hyderabad & Swarnagiri Temple",
+          "activities": [
+            "Arrival at Hyderabad Airport/Railway Station.",
+            "Meet and greet with our representative and transfer to the hotel.",
+            "Visit Swarnagiri Temple, known for its grand Venkateswara Swamy idol and beautiful architecture.",
+            "Spend some time exploring the temple premises and seek blessings.",
+            "Return to Hyderabad.",
+            "Evening free for leisure or local exploration.",
+            "Overnight stay in Hyderabad."
+          ]
+        },
+        {
+          "title": "Day 2 – Hyderabad to Srisailam",
+          "activities": [
+            "Breakfast at the hotel and check out.",
+            "Proceed towards Srisailam through the scenic Nallamala Hills.",
+            "En route enjoy the beautiful forest and Krishna River landscapes.",
+            "Arrive in Srisailam and check in to the hotel.",
+            "Visit Mallikarjuna Jyotirlinga Temple for darshan.",
+            "Visit Bhramaramba Devi Temple, one of the Shakti Peethas.",
+            "Evening free for temple rituals and spiritual activities.",
+            "Overnight stay in Srisailam."
+          ]
+        },
+        {
+          "title": "Day 3 – Srisailam Sightseeing & Spiritual Exploration",
+          "activities": [
+            "Early morning visit to Mallikarjuna Temple for darshan, subject to temple timings.",
+            "Visit Srisailam Dam and enjoy the scenic surroundings.",
+            "Visit Pathala Ganga and, subject to operations, take the ropeway/steps towards the sacred waters.",
+            "Visit Sakshi Ganapati Temple.",
+            "Explore other nearby spiritual sites depending on time and temple timings.",
+            "Return to the hotel and relax.",
+            "Overnight stay in Srisailam."
+          ]
+        },
+        {
+          "title": "Day 4 – Srisailam to Hyderabad | Departure",
+          "activities": [
+            "Breakfast at the hotel and check out.",
+            "Proceed towards Hyderabad.",
+            "En route, visit any missed attraction, subject to time availability.",
+            "Arrive in Hyderabad.",
+            "Drop at Hyderabad Airport/Railway Station for your onward journey.",
+            "Tour concludes with the blessings of Lord Mallikarjuna and Maa Bhramaramba."
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Mallikarjun%20Jyotirling%20Mallikarjun%20Jyotirling%203N%2F4D%20package"
+    }
+  ]
+}

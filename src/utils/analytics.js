@@ -32,8 +32,9 @@ export function getRouteMetadata(pathname = '/') {
     };
   }
 
-  // Dynamic itinerary routes: /itinerary/:destination/:subItinerary?
-  const match = cleanPath.match(/^\/(?:itinerary|itenary)\/([^/]+)(?:\/([^/]+))?$/i);
+  // Dynamic itinerary routes: /itinerary/:destination/:subItinerary? or direct /:destination/:subItinerary
+  const match = cleanPath.match(/^\/(?:itinerary|itenary)\/([^/]+)(?:\/([^/]+))?$/i) ||
+                cleanPath.match(/^\/([^/]+)\/([^/]+)$/i);
   if (match) {
     const rawDest = match[1].toLowerCase();
     const rawSub = match[2] ? match[2].toLowerCase() : null;

@@ -1,0 +1,168 @@
+{
+  "destination": "puri",
+  "displayName": "Puri Jagannath Dham",
+  "category": "Spiritual",
+  "region": "East India",
+  "pagePath": "/itinerary/puri",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/puri",
+  "packagesCount": 2,
+  "packages": [
+    {
+      "destination": "puri",
+      "destinationDisplayName": "Puri Jagannath Dham",
+      "category": "Spiritual",
+      "region": "East India",
+      "packageId": "odisha-1",
+      "packageTitle": "Puri Dham",
+      "duration": "Puri Dham 4N/5D",
+      "durationShort": "4N/5D",
+      "slug": "4n-5d",
+      "pagePath": "/itinerary/puri/4n-5d",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/puri/4n-5d",
+      "apiEndpoint": "/api/itineraries/puri/4n-5d.json",
+      "image": "/assets/konark.jpg",
+      "inclusions": [
+        "Accommodation as per the choice of hotels/ stays",
+        "Breakfast ( Buffet / Fixed Menu )",
+        "Driver's Night Allowance, Inter State tax, and fuel charges",
+        "Meet, Greet & Assistance if required at destinations",
+        "Parking & Toll Tax",
+        "Arrival & Departure Transfers",
+        "Transfers by Private & Exclusive Car",
+        "Sightseeing by Private & Exclusive Car",
+        "Co-operative driver with local knowledge"
+      ],
+      "days": [
+        {
+          "title": "Day 1 – Bhubaneswar Arrival to Puri",
+          "activities": [
+            "Arrival at Bhubaneswar Airport/Railway Station.",
+            "Pickup and proceed towards Puri.",
+            "Check in to the hotel.",
+            "Visit Shree Jagannath Temple for darshan.",
+            "Visit Puri Beach in the evening.",
+            "Overnight stay in Puri."
+          ]
+        },
+        {
+          "title": "Day 2 – Puri to Konark to Puri",
+          "activities": [
+            "Early morning breakfast at the hotel.",
+            "Visit Konark Sun Temple.",
+            "Visit Chandrabhaga Beach.",
+            "Visit Ramachandi Temple.",
+            "Return to Puri.",
+            "Evening free for Jagannath Temple darshan or local exploration.",
+            "Overnight stay in Puri."
+          ]
+        },
+        {
+          "title": "Day 3 – Puri to Chilika Lake to Puri",
+          "activities": [
+            "Breakfast at the hotel.",
+            "Proceed towards Chilika Lake.",
+            "Enjoy a boat ride at Chilika Lake.",
+            "Visit Kalijai Temple.",
+            "Dolphin spotting, subject to weather and operational conditions.",
+            "Return to Puri.",
+            "Overnight stay in Puri."
+          ]
+        },
+        {
+          "title": "Day 4 – Puri to Bhubaneswar",
+          "activities": [
+            "Breakfast and check out from the hotel.",
+            "Proceed towards Bhubaneswar.",
+            "Visit Lingaraj Temple.",
+            "Visit Mukteshwar Temple.",
+            "Visit Rajarani Temple.",
+            "Visit Udayagiri and Khandagiri Caves.",
+            "Check in to the hotel.",
+            "Overnight stay in Bhubaneswar."
+          ]
+        },
+        {
+          "title": "Day 5 – Bhubaneswar Departure",
+          "activities": [
+            "Breakfast and check out from the hotel.",
+            "Visit remaining local temples, subject to flight/train timing.",
+            "Drop at Bhubaneswar Airport/Railway Station for onward journey."
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Puri%20Jagannath%20Dham%20Puri%20Dham%204N%2F5D%20package"
+    },
+    {
+      "destination": "puri",
+      "destinationDisplayName": "Puri Jagannath Dham",
+      "category": "Spiritual",
+      "region": "East India",
+      "packageId": "odisha-2",
+      "packageTitle": "Puri Konark",
+      "duration": "Puri Konark 3N/4D",
+      "durationShort": "3N/4D",
+      "slug": "3n-4d",
+      "pagePath": "/itinerary/puri/3n-4d",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/puri/3n-4d",
+      "apiEndpoint": "/api/itineraries/puri/3n-4d.json",
+      "image": "/assets/konark.jpg",
+      "inclusions": [
+        "Accommodation as per the choice of hotels/ stays",
+        "Breakfast ( Buffet / Fixed Menu )",
+        "Driver's Night Allowance, Inter State tax, and fuel charges",
+        "Meet, Greet & Assistance if required at destinations",
+        "Parking & Toll Tax",
+        "Arrival & Departure Transfers",
+        "Transfers by Private & Exclusive Car",
+        "Sightseeing by Private & Exclusive Car",
+        "Co-operative driver with local knowledge"
+      ],
+      "days": [
+        {
+          "title": "Day 1 – Bhubaneswar Arrival to Puri",
+          "activities": [
+            "Arrival at Bhubaneswar Airport/Railway Station.",
+            "Pickup and proceed towards Puri.",
+            "Check in to the hotel.",
+            "Visit Shree Jagannath Temple for darshan.",
+            "Visit Puri Beach in the evening.",
+            "Overnight stay in Puri."
+          ]
+        },
+        {
+          "title": "Day 2 – Puri to Konark to Puri",
+          "activities": [
+            "Early morning breakfast at the hotel.",
+            "Visit Konark Sun Temple.",
+            "Visit Chandrabhaga Beach.",
+            "Visit Ramachandi Temple.",
+            "Return to Puri.",
+            "Evening free for Jagannath Temple darshan or local exploration.",
+            "Overnight stay in Puri."
+          ]
+        },
+        {
+          "title": "Day 3 – Puri to Chilika Lake to Puri",
+          "activities": [
+            "Breakfast at the hotel.",
+            "Proceed towards Chilika Lake.",
+            "Enjoy a boat ride at Chilika Lake.",
+            "Visit Kalijai Temple.",
+            "Dolphin spotting, subject to weather and operational conditions.",
+            "Return to Puri.",
+            "Overnight stay in Puri."
+          ]
+        },
+        {
+          "title": "Day 4 – Bhubaneswar Departure",
+          "activities": [
+            "Breakfast and check out from the hotel.",
+            "Proceed towards Bhubaneswar.Visit remaining local temples, subject to flight/train timing.",
+            "Drop at Bhubaneswar Airport/Railway Station for onward journey."
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Puri%20Jagannath%20Dham%20Puri%20Konark%203N%2F4D%20package"
+    }
+  ]
+}

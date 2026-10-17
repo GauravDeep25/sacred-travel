@@ -372,49 +372,103 @@
 
   <!-- Spiritual Main Destination Itineraries -->
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/uttarakhand</loc>
+    <loc>https://www.yugatirtha.com/itinerary/adi-kailash</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/uttarpradesh</loc>
+    <loc>https://www.yugatirtha.com/itinerary/badrinath</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/madhyapradesh</loc>
+    <loc>https://www.yugatirtha.com/itinerary/do-dham</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/maharashtra</loc>
+    <loc>https://www.yugatirtha.com/itinerary/char-dham</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/gujarat</loc>
+    <loc>https://www.yugatirtha.com/itinerary/kainchi-dham</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/odisha</loc>
+    <loc>https://www.yugatirtha.com/itinerary/kashi</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/tamilnadu</loc>
+    <loc>https://www.yugatirtha.com/itinerary/ujjain</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/andhrapradesh</loc>
+    <loc>https://www.yugatirtha.com/itinerary/maharashtra-jyotirling</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.yugatirtha.com/itinerary/somnath-dwarka</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.yugatirtha.com/itinerary/puri</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.yugatirtha.com/itinerary/rameswaram</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.yugatirtha.com/itinerary/pancha-bhoota</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.yugatirtha.com/itinerary/madurai-rameshwaram</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.yugatirtha.com/itinerary/mallikarjun</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.yugatirtha.com/itinerary/tirupati</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.yugatirtha.com/itinerary/khatu-shyam</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.yugatirtha.com/itinerary/baidyanath</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -422,121 +476,145 @@
 
   <!-- Spiritual Sub-Itineraries (Circuits & Durations) -->
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/uttarakhand/do-dham-5n-6d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/adi-kailash/7n-8d</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/uttarakhand/char-dham-9n-10d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/badrinath/4n-5d</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/uttarakhand/kainchi-dham-2n-3d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/do-dham/5n-6d</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/uttarakhand/badrinath-4n-5d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/char-dham/9n-10d</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/uttarpradesh/varanasi-ayodhya-4n-5d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/kainchi-dham/2n-3d</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/uttarpradesh/kashi-2n-3d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/kashi/4n-5d</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/uttarpradesh/kashi-prayagraj-ayodhya-4n-5d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/kashi/2n-3d</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/madhyapradesh/bhasma-aarti-2n-3d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/kashi/4n-5d-sangam</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/madhyapradesh/vip-passes-2n-3d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/ujjain/2n-3d</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/maharashtra/pune-jyotirling-2n-3d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/ujjain/2n-3d-vip</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/maharashtra/pune-jyotirling-3n-4d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/maharashtra-jyotirling/2n-3d</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/maharashtra/mumbai-jyotirling-3n-4d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/maharashtra-jyotirling/3n-4d</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/gujarat/3n-4d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/maharashtra-jyotirling/3n-4d-mumbai</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/odisha/puri-dham-4n-5d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/somnath-dwarka/3n-4d</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/odisha/puri-konark-3n-4d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/puri/4n-5d</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/tamilnadu/rameswaram-4n-5d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/puri/3n-4d</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/tamilnadu/pancha-bhoota-stalam-6n-7d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/rameswaram/4n-5d</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/andhrapradesh/mallikarjun-jyotirling-3n-4d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/pancha-bhoota/6n-7d</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/andhrapradesh/tirupati-2n-3d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/madurai-rameshwaram/2n-3d</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yugatirtha.com/itinerary/andhrapradesh/tirupati-kalahasti-2n-3d</loc>
+    <loc>https://www.yugatirtha.com/itinerary/mallikarjun/3n-4d</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yugatirtha.com/itinerary/tirupati/2n-3d</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yugatirtha.com/itinerary/tirupati/2n-3d-kalahasti</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yugatirtha.com/itinerary/khatu-shyam/2n-3d</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yugatirtha.com/itinerary/baidyanath/2n-3d</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

@@ -13,6 +13,14 @@
   RewriteRule ^(itinerary|itenary|itineraries)/?$ /domestic [R=301,L]
   RewriteRule ^thankyou/?$ /thank-you [R=301,L]
 
+  # 3. 301 SEO redirects from legacy state-based URLs to direct place URLs
+  RewriteRule ^itinerary/uttarakhand/(?:.*adi.*|7n.*)/?$ /itinerary/adi-kailash/7n-8d [R=301,L]
+  RewriteRule ^itinerary/uttarakhand/(?:.*badrinath.*|4n.*)/?$ /itinerary/badrinath/4n-5d [R=301,L]
+  RewriteRule ^itinerary/uttarakhand/(?:.*kainchi.*|2n.*)/?$ /itinerary/kainchi-dham/2n-3d [R=301,L]
+  RewriteRule ^itinerary/uttarakhand/(?:.*char.*|9n.*|10d.*)/?$ /itinerary/char-dham/9n-10d [R=301,L]
+  RewriteRule ^itinerary/uttarakhand/(?:.*do.*|5n.*)/?$ /itinerary/do-dham/5n-6d [R=301,L]
+  RewriteRule ^itinerary/uttarakhand/?$ /spiritualjourney [R=301,L]
+
   # 3. Serve physical files and directories directly (e.g., sitemap.xml, robots.txt, assets, api jsons)
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f

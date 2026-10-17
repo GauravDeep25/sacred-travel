@@ -394,11 +394,38 @@ export const siteConfig = {
         img: "/assets/spiritual-north-NuyL8ZKr.jpg",
         cards: [
           {
-            cardTitle: "Char Dham & Do Dham Yatra",
-            cardDesc: "Yamunotri, Gangotri, Kedarnath and Badrinath — the four Himalayan seats where India's holiest rivers begin, with assisted darshan and helicopter options.",
-            includes: "Haridwar pickup, helicopter or road options, assisted darshan, priest coordination, oxygen-equipped vehicles and mountain-trained crew.",
-            itineraryId: 'uttarakhand',
-            duration: "5 to 10 days",
+            cardTitle: "Adi Kailash & Om Parvat",
+            cardDesc: "Witness the sacred peak of Adi Kailash, Parvati Sarovar, and the natural Om formation etched in snow on Om Parvat in the high Himalayas.",
+            includes: "Kathgodam pickup & drop, 4x4 mountain vehicles, inner line permits, acclimatisation halts, medical briefings, and verified homestays.",
+            itineraryId: 'adi-kailash',
+            duration: "7 nights / 8 days",
+            season: "May–June, September–October",
+            img: "/assets/spiritual-north-NuyL8ZKr.jpg"
+          },
+          {
+            cardTitle: "Badrinath Yatra",
+            cardDesc: "Dedicated pilgrimage to Shri Badrinath Temple in the Chamoli Himalayas, Mana Village, Vyas Gufa, and the sacred Tapt Kund hot springs.",
+            includes: "Private vehicle from Haridwar/Rishikesh, scenic Himalayan stays, VIP darshan assistance, and experienced mountain driver.",
+            itineraryId: 'badrinath',
+            duration: "4 nights / 5 days",
+            season: "May–June, September–October",
+            img: "/assets/spiritual-north.jpg"
+          },
+          {
+            cardTitle: "Do Dham Yatra (Kedarnath & Badrinath)",
+            cardDesc: "Sacred pilgrimage connecting Baba Kedarnath Jyotirling in the Mandakini Valley and Lord Badri Vishal on the banks of the Alaknanda.",
+            includes: "Haridwar pickup/drop, Gaurikund transfers, Guptkashi stays, Badrinath darshan coordination, and mountain-trained team.",
+            itineraryId: 'do-dham',
+            duration: "5 nights / 6 days",
+            season: "May–June, September–October",
+            img: "/assets/spiritual-north-NuyL8ZKr.jpg"
+          },
+          {
+            cardTitle: "Char Dham Yatra",
+            cardDesc: "Yamunotri, Gangotri, Kedarnath and Badrinath — the four Himalayan seats where India's holiest rivers begin, completed with mindful reverence.",
+            includes: "Complete 10-day transport from Haridwar, comfortable hotel stays, Janki Chatti and Gaurikund coordination, priest assistance.",
+            itineraryId: 'char-dham',
+            duration: "9 nights / 10 days",
             season: "May–June, September–October",
             img: "/assets/spiritual-north-NuyL8ZKr.jpg"
           },
@@ -406,7 +433,7 @@ export const siteConfig = {
             cardTitle: "Kainchi Dham & Sacred Kumaon",
             cardDesc: "The revered ashram of Neem Karoli Baba at Kainchi Dham nestled in the Kumaon hills, alongside Nainital, Almora and ancient Himalayan shrines.",
             includes: "Ashram darshan assistance, serene hill-station stays, experienced local drivers, meditation and prayer time.",
-            itineraryId: 'uttarakhand',
+            itineraryId: 'kainchi-dham',
             duration: "2 nights / 3 days",
             season: "Year-round, best March–November",
             img: "/assets/Kainchi-Dham.jpg"
@@ -415,8 +442,8 @@ export const siteConfig = {
             cardTitle: "Kashi · Prayagraj · Ayodhya",
             cardDesc: "The Ganga plain's ancient triad — the city of light, the holy Sangam confluence, and Shri Ram Janmabhoomi in Ayodhya.",
             includes: "Ghat-side stays, private aarti seating, boat darshan at dawn, VIP temple access in Kashi and Ayodhya.",
-            itineraryId: 'uttarpradesh',
-            duration: "2 to 5 days",
+            itineraryId: 'kashi',
+            duration: "2 to 4 days",
             season: "October–March",
             img: "/assets/hero-aarti.jpg"
           }
@@ -431,26 +458,44 @@ export const siteConfig = {
             cardTitle: "Panch Bhoota Stalam",
             cardDesc: "Five Shiva temples embodying the elements — Chidambaram (space), Kalahasti (air), Thiruvannamalai (fire), Thiruvanaikaval (water) and Kanchipuram (earth).",
             includes: "Element-wise sequencing, early morning abhishekam access, Sanskrit-literate guide, comfortable inter-temple transfers.",
-            itineraryId: 'tamilnadu',
+            itineraryId: 'pancha-bhoota',
             duration: "6 nights / 7 days",
             season: "November–February",
             img: "/assets/temple-south-CC6aHc0Q.jpg"
           },
           {
-            cardTitle: "Rameswaram & Madurai Meenakshi",
-            cardDesc: "Madurai Meenakshi Amman, the 22 sacred teerthams of Ramanathaswamy at Rameswaram, and the coastal expanse of Dhanushkodi.",
-            includes: "Assisted darshan, sacred teertham bathing arrangements, heritage temple town stays.",
-            itineraryId: 'tamilnadu',
+            cardTitle: "Rameswaram Sacred Circuit",
+            cardDesc: "The 22 sacred teerthams of Ramanathaswamy at Rameswaram, the coastal expanse of Dhanushkodi, and holy bathing rituals.",
+            includes: "Assisted darshan, sacred teertham bathing arrangements, heritage temple town stays, private AC vehicle.",
+            itineraryId: 'rameswaram',
             duration: "4 nights / 5 days",
             season: "October–March",
             img: "/assets/hero-temple-south.jpg"
           },
           {
-            cardTitle: "Mallikarjun Jyotirling & Tirupati Balaji",
-            cardDesc: "Lord Venkateshwara on the seven hills of Tirumala and the ancient Srisailam Mallikarjuna Swamy Jyotirling in the Nallamala forests.",
-            includes: "Assisted Balaji darshan slots, Srisailam special entry passes, Kalahasteeswara Vayu Lingam darshan.",
-            itineraryId: 'andhrapradesh',
-            duration: "2 to 4 days",
+            cardTitle: "Madurai & Rameshwaram",
+            cardDesc: "Madurai Meenakshi Amman Temple and Sri Ramanathaswamy Temple in Rameshwaram with Pamban Bridge and Dhanushkodi.",
+            includes: "Madurai airport pickup/drop, intercity transfers, selected hotel stays with breakfast and dinner, driver allowances.",
+            itineraryId: 'madurai-rameshwaram',
+            duration: "2 nights / 3 days",
+            season: "October–March",
+            img: "/assets/temple-south-CC6aHc0Q.jpg"
+          },
+          {
+            cardTitle: "Mallikarjun Jyotirling",
+            cardDesc: "The ancient Srisailam Mallikarjuna Swamy Jyotirling and Bhramaramba Devi Shakti Peeth in the lush Nallamala hills.",
+            includes: "Hyderabad pickup/drop, Srisailam special entry coordination, scenic Krishna river views, comfortable hotel stays.",
+            itineraryId: 'mallikarjun',
+            duration: "3 nights / 4 days",
+            season: "Year-round, best October–March",
+            img: "/assets/Andhra.jpg"
+          },
+          {
+            cardTitle: "Tirupati Balaji & Kalahasti",
+            cardDesc: "Lord Venkateshwara on the seven sacred hills of Tirumala and the ancient Vayu Lingam at Srikalahasti.",
+            includes: "Assisted Balaji darshan slots, Kalahasti Rahu-Ketu pooja coordination, Chennai/Tirupati transfers.",
+            itineraryId: 'tirupati',
+            duration: "2 nights / 3 days",
             season: "Year-round, best October–March",
             img: "/assets/Andhra.jpg"
           }
@@ -465,12 +510,20 @@ export const siteConfig = {
             cardTitle: "Puri Dham, Konark & Bhubaneswar",
             cardDesc: "The sacred Jagannath temple, the 13th-century sun chariot at Konark, Lingaraja temple and the coastal beauty of Chilika Lake.",
             includes: "Coastal stays, temple town walks, Odissi performance evening, assisted Jagannath darshan.",
-            itineraryId: 'odisha',
-            duration: "3 to 5 days",
+            itineraryId: 'puri',
+            duration: "3 to 4 days",
             season: "October–March",
             img: "/assets/konark.jpg"
           },
-
+          {
+            cardTitle: "Baidyanath Jyotirlinga (Deoghar)",
+            cardDesc: "Baba Baidyanath Dham Jyotirlinga and Shakti Peeth in Deoghar with traditional peda sweets and evening Aarti.",
+            includes: "Deoghar airport/railway pickup and drop, hotel accommodation, vegetarian meals, assisted darshan.",
+            itineraryId: 'baidyanath',
+            duration: "2 nights / 3 days",
+            season: "Year-round, best October–March",
+            img: "/assets/aarti-Cr2kuE6b.jpg"
+          }
         ]
       },
       west: {
@@ -482,8 +535,8 @@ export const siteConfig = {
             cardTitle: "Maharashtra Jyotirlinga Circuit",
             cardDesc: "Trimbakeshwar, Bhimashankar and Grishneshwar — sacred Jyotirlingas nestled in the Western Ghats and Deccan plateau.",
             includes: "Special entry passes, comfortable AC vehicle from Pune/Mumbai, heritage accommodations.",
-            itineraryId: 'maharashtra',
-            duration: "2 to 4 days",
+            itineraryId: 'maharashtra-jyotirling',
+            duration: "2 to 3 days",
             season: "Year-round, best August–March",
             img: "/assets/Maharashtra.jpg"
           },
@@ -491,7 +544,7 @@ export const siteConfig = {
             cardTitle: "Somnath & Dwarka Holy Shrines",
             cardDesc: "Somnath Jyotirling on the Arabian Sea, Dwarkadhish temple in Krishna's legendary kingdom, and Bet Dwarka.",
             includes: "Evening Somnath sound & light show, Bet Dwarka ferry coordination, coastal stays, temple transfers.",
-            itineraryId: 'gujarat',
+            itineraryId: 'somnath-dwarka',
             duration: "3 nights / 4 days",
             season: "October–March",
             img: "/assets/Gujrat.jpg"
@@ -500,19 +553,19 @@ export const siteConfig = {
             cardTitle: "Ujjain Mahakaleshwar & Omkareshwar",
             cardDesc: "Shree Mahakaleshwar Jyotirling with confirmed Bhasma Aarti registration, Omkareshwar on Mandhata island, and Sandipani Ashram.",
             includes: "Bhasma aarti registration assistance, VIP darshan passes, local priest coordination, Indore/Ujjain transfers.",
-            itineraryId: 'madhyapradesh',
+            itineraryId: 'ujjain',
             duration: "2 nights / 3 days",
             season: "Year-round, best October–March",
             img: "/assets/hero-aarti.jpg"
           },
           {
-            cardTitle: "Ashtavinayak Yatra",
-            cardDesc: "The eight self-manifested Ganesha shrines around Pune — a compact and much-loved Maharashtrian circuit.",
-            includes: "Traditional sequencing, temple-town meals, priest-led sankalpa.",
-            itineraryId: 'maharashtra',
-            duration: "3–4 days",
-            season: "Year-round, best August–February",
-            img: "/assets/Maharashtra.jpg"
+            cardTitle: "Khatu Shyam Ji & Salasar Balaji",
+            cardDesc: "Divine blessings at Shri Khatu Shyam Ji Temple and Salasar Balaji Hanuman Temple with Jaipur heritage sightseeing.",
+            includes: "Jaipur airport pickup and drop, private AC vehicle, hotel stays with breakfast, driver allowances and tolls.",
+            itineraryId: 'khatu-shyam',
+            duration: "2 nights / 3 days",
+            season: "Year-round, best October–March",
+            img: "/assets/rajasthan-Dznk4KEj.jpg"
           }
         ]
       }

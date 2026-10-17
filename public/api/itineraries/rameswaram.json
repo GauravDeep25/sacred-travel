@@ -1,0 +1,121 @@
+{
+  "destination": "rameswaram",
+  "displayName": "Rameswaram",
+  "category": "Spiritual",
+  "region": "South India",
+  "pagePath": "/itinerary/rameswaram",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/rameswaram",
+  "packagesCount": 1,
+  "packages": [
+    {
+      "destination": "rameswaram",
+      "destinationDisplayName": "Rameswaram",
+      "category": "Spiritual",
+      "region": "South India",
+      "packageId": "tamilnadu-1",
+      "packageTitle": "Rameswaram",
+      "duration": "Rameswaram 4N/5D",
+      "durationShort": "4N/5D",
+      "slug": "4n-5d",
+      "pagePath": "/itinerary/rameswaram/4n-5d",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/rameswaram/4n-5d",
+      "apiEndpoint": "/api/itineraries/rameswaram/4n-5d.json",
+      "image": "/assets/temple-south-CC6aHc0Q.jpg",
+      "inclusions": [
+        "Accommodation in selected category hotels.",
+        "Daily breakfast at the hotel.",
+        "Private vehicle for all transfers and sightseeing as per the itinerary.",
+        "Airport/Railway Station pickup and drop.",
+        "Driver allowance.",
+        "Toll taxes.",
+        "Parking charges.",
+        "Fuel charges.",
+        "All applicable transportation charges.",
+        "Assistance during the tour."
+      ],
+      "days": [
+        {
+          "title": "Day 1 – Arrival in Madurai and Local Sightseeing",
+          "activities": [
+            "Arrival at Madurai Airport/Railway Station.",
+            "Meet and greet with our representative.",
+            "Transfer to the pre-booked hotel.",
+            "Check in to the hotel and freshen up.",
+            "Visit the famous Meenakshi Amman Temple.",
+            "Visit Thirumalai Nayakkar Mahal.",
+            "Visit Thirupparankundram Murugan Temple, subject to time availability.",
+            "Visit Gandhi Memorial Museum, subject to time availability.",
+            "In the evening, explore the surroundings of Meenakshi Amman Temple.",
+            "Return to the hotel.",
+            "Overnight stay in Madurai."
+          ]
+        },
+        {
+          "title": "Day 2 – Madurai to Rameswaram",
+          "activities": [
+            "Early morning breakfast at the hotel.",
+            "Check out from the hotel.",
+            "Proceed towards Rameswaram.",
+            "Enjoy the scenic journey towards Pamban Island.",
+            "Stop for a view of the famous Pamban Bridge.",
+            "Arrive in Rameswaram and check in to the hotel.",
+            "Freshen up and relax.",
+            "Visit Agni Theertham.",
+            "Proceed for darshan at Ramanathaswamy Temple.",
+            "Visit Panchamukhi Hanuman Temple.",
+            "Visit Ramar Padam, subject to time availability.",
+            "Return to the hotel.",
+            "Overnight stay in Rameswaram."
+          ]
+        },
+        {
+          "title": "Day 3 – Rameswaram Local Sightseeing",
+          "activities": [
+            "Early morning breakfast at the hotel.",
+            "Proceed for Rameswaram local sightseeing.",
+            "Visit Dhanushkodi.",
+            "Visit Kothandaramaswamy Temple.",
+            "Enjoy the scenic coastal drive towards Dhanushkodi.",
+            "Visit the ruins and beach area of Dhanushkodi.",
+            "Visit Dr. APJ Abdul Kalam Memorial.",
+            "Visit Pamban Bridge viewpoint, if not covered on the previous day.",
+            "Evening free for personal activities or optional temple darshan.",
+            "Return to the hotel.",
+            "Overnight stay in Rameswaram."
+          ]
+        },
+        {
+          "title": "Day 4 – Rameswaram to Kanyakumari",
+          "activities": [
+            "Early morning breakfast at the hotel.",
+            "Check out from the hotel.",
+            "Proceed towards Kanyakumari.",
+            "En route, visit Suchindram Thanumalayan Temple, subject to time availability.",
+            "Continue the journey towards Kanyakumari.",
+            "Arrive in Kanyakumari and check in to the hotel.",
+            "Visit Kumari Amman Temple.",
+            "Visit Gandhi Mandapam.",
+            "Visit the Kanyakumari beach area.",
+            "In the evening, witness the famous sunset at Kanyakumari.",
+            "Return to the hotel.",
+            "Overnight stay in Kanyakumari."
+          ]
+        },
+        {
+          "title": "Day 5 – Kanyakumari Sightseeing and Departure",
+          "activities": [
+            "Early morning witness the beautiful sunrise at Kanyakumari.",
+            "Breakfast at the hotel.",
+            "Check out from the hotel.",
+            "Proceed to Vivekananda Rock Memorial by ferry, subject to ferry operations and weather conditions.",
+            "Visit Thiruvalluvar Statue.",
+            "Visit Vivekananda Memorial.",
+            "Visit the nearby sightseeing points, subject to departure timings.",
+            "Proceed towards Trivandrum Airport for departure."
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Rameswaram%20Rameswaram%204N%2F5D%20package"
+    }
+  ]
+}

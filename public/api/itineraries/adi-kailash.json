@@ -1,0 +1,124 @@
+{
+  "destination": "adi-kailash",
+  "displayName": "Adi Kailash",
+  "category": "Spiritual",
+  "region": "North India",
+  "pagePath": "/itinerary/adi-kailash",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/adi-kailash",
+  "packagesCount": 1,
+  "packages": [
+    {
+      "destination": "adi-kailash",
+      "destinationDisplayName": "Adi Kailash",
+      "category": "Spiritual",
+      "region": "North India",
+      "packageId": "adi-kailash-1",
+      "packageTitle": "Adi Kailash & Om Parvat Yatra",
+      "duration": "Adi Kailash & Om Parvat Yatra 7N/8D",
+      "durationShort": "7N/8D",
+      "slug": "7n-8d",
+      "pagePath": "/itinerary/adi-kailash/7n-8d",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/adi-kailash/7n-8d",
+      "apiEndpoint": "/api/itineraries/adi-kailash/7n-8d.json",
+      "image": "/assets/spiritual-north-NuyL8ZKr.jpg",
+      "inclusions": [
+        "7 nights' accommodation on a twin/triple-sharing basis, as per the selected package.",
+        "Meals as per the hotel and homestay plan; typically breakfast and dinner, subject to availability.",
+        "Pickup from Kathgodam / Haldwani and drop-off at Kathgodam.",
+        "Private vehicle for transfers and sightseeing as per the itinerary.",
+        "Transportation, driver allowance, fuel, tolls and parking charges.",
+        "Accommodation in Dharchula, the Adi Kailash region, Chaukori / Didihat and Bhimtal, as per the final itinerary.",
+        "Assistance with itinerary coordination and permit formalities.",
+        "All applicable hotel and transport taxes included in the quoted package, where specified."
+      ],
+      "days": [
+        {
+          "title": "Day 1 - Kathgodam to Pithoragarh",
+          "activities": [
+            "Pickup from Kathgodam Railway Station or Haldwani and begin the mountain journey.",
+            "Stop at Bhimtal for breakfast, followed by visits to Kainchi Dham and Golu Devta Temple, subject to route and available time.",
+            "Visit the ancient temples of Jageshwar, depending on road conditions and sightseeing time.",
+            "Continue to Pithoragarh, check into the hotel, and enjoy dinner.",
+            "Night stay: Pithoragarh"
+          ]
+        },
+        {
+          "title": "Day 2 - Pithoragarh to Dharchula",
+          "activities": [
+            "After breakfast, drive to Dharchula, a scenic border town along the Kali River.",
+            "Complete the required permit formalities and medical checks, as applicable.",
+            "Enjoy lunch and some time to relax after the drive.",
+            "Explore the local market and attend a briefing on the upcoming high-altitude journey.",
+            "Dinner and overnight stay at the hotel.",
+            "Night stay: Dharchula"
+          ]
+        },
+        {
+          "title": "Day 3 - Dharchula to Gunji / Napalchu",
+          "activities": [
+            "After breakfast, proceed towards the high-altitude villages of the Adi Kailash region.",
+            "Travel through the dramatic mountain landscapes and villages along the approved route.",
+            "Arrive at Gunji or Napalchu and check into a local homestay, subject to availability.",
+            "Take adequate rest and enjoy a gentle village walk only if feeling well acclimatised.",
+            "Dinner and overnight stay at the homestay.",
+            "Night stay: Gunji / Napalchu"
+          ]
+        },
+        {
+          "title": "Day 4 - Gunji to Adi Kailash",
+          "activities": [
+            "Early morning drive towards Jolingkong, subject to road and permit conditions.",
+            "Visit the Adi Kailash viewpoint and Parvati Sarovar.",
+            "Spend time in prayer, meditation or pooja at permitted locations around the sacred lake.",
+            "Admire the Himalayan views, including the surrounding peaks and formations, weather permitting.",
+            "Return to Gunji / Napalchu for dinner and overnight stay.",
+            "Night stay: Gunji / Napalchu"
+          ]
+        },
+        {
+          "title": "Day 5 - Om Parvat Excursion",
+          "activities": [
+            "After breakfast, proceed towards the designated Om Parvat viewing points.",
+            "Witness the naturally formed Om symbol on the mountain when visibility permits.",
+            "Visit the Kali Temple at Kalapani and other permitted sites along the route, subject to access and local restrictions.",
+            "Spend some quiet time appreciating the spiritual significance and Himalayan scenery.",
+            "Return to the homestay for dinner and overnight stay.",
+            "Night stay: Gunji / Napalchu"
+          ]
+        },
+        {
+          "title": "Day 6 - Gunji to Chaukori / Didihat",
+          "activities": [
+            "After breakfast, begin the return journey from the high-altitude region.",
+            "Enjoy scenic stops along the mountain route, with a lunch break en route.",
+            "Continue towards Chaukori or Didihat, depending on road conditions and the final route plan.",
+            "Check into the hotel and relax after the long drive.",
+            "Dinner and overnight stay.",
+            "Night stay: Chaukori / Didihat"
+          ]
+        },
+        {
+          "title": "Day 7 - Chaukori / Didihat to Bhimtal",
+          "activities": [
+            "After breakfast, drive towards Bhimtal through the scenic Kumaon hills.",
+            "Visit Patal Bhuvaneshwar Cave Temple, subject to opening hours and route feasibility.",
+            "Take a lunch break en route and continue towards Bhimtal.",
+            "Check into the hotel and enjoy a relaxed evening by the lake.",
+            "Dinner and overnight stay.",
+            "Night stay: Bhimtal"
+          ]
+        },
+        {
+          "title": "Day 8 - Bhimtal to Kathgodam | Departure",
+          "activities": [
+            "Enjoy breakfast and check out from the hotel.",
+            "Drive to Kathgodam Railway Station or the designated drop-off point.",
+            "Conclude your Adi Kailash and Om Parvat spiritual journey with memorable Himalayan experiences.",
+            "Tour ends at Kathgodam"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Adi%20Kailash%20Adi%20Kailash%20%26%20Om%20Parvat%20Yatra%207N%2F8D%20package"
+    }
+  ]
+}

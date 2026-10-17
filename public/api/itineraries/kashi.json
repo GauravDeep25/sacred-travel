@@ -1,0 +1,296 @@
+{
+  "destination": "kashi",
+  "displayName": "Kashi",
+  "category": "Spiritual",
+  "region": "North India",
+  "pagePath": "/itinerary/kashi",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/kashi",
+  "packagesCount": 3,
+  "packages": [
+    {
+      "destination": "kashi",
+      "destinationDisplayName": "Kashi",
+      "category": "Spiritual",
+      "region": "North India",
+      "packageId": "uttarpradesh-1",
+      "packageTitle": "Varanasi - Ayodhya",
+      "duration": "Varanasi - Ayodhya 4N/5D",
+      "durationShort": "4N/5D",
+      "slug": "4n-5d",
+      "pagePath": "/itinerary/kashi/4n-5d",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/kashi/4n-5d",
+      "apiEndpoint": "/api/itineraries/kashi/4n-5d.json",
+      "image": "/assets/hero-aarti.jpg",
+      "inclusions": [
+        "Accommodation for 4 nights in selected category hotels.",
+        "Daily breakfast at the hotel.",
+        "Private vehicle for all transfers and sightseeing as per the itinerary.",
+        "Airport/Railway Station pickup and drop.",
+        "Driver allowance.",
+        "Fuel charges.",
+        "Toll taxes.",
+        "Parking charges.",
+        "All applicable transportation charges."
+      ],
+      "days": [
+        {
+          "title": "Day 1 – Arrival in Varanasi",
+          "activities": [
+            "Arrival at Varanasi Airport/Railway Station.",
+            "Meet and greet with our representative.",
+            "Transfer to the hotel and check in.",
+            "Freshen up and relax.",
+            "In the evening, proceed to Dashashwamedh Ghat.",
+            "Witness the famous Ganga Aarti.",
+            "Enjoy the spiritual atmosphere of the ghats.",
+            "Return to the hotel.",
+            "Overnight stay in Varanasi."
+          ]
+        },
+        {
+          "title": "Day 2 – Varanasi Sightseeing",
+          "activities": [
+            "Early morning enjoy a boat ride on the River Ganga.",
+            "Visit Kashi Vishwanath Temple for darshan.",
+            "Visit Annapurna Devi Temple.",
+            "Visit Kal Bhairav Temple.",
+            "Visit Sankat Mochan Hanuman Temple.",
+            "Visit Durga Kund Temple.",
+            "Visit Tulsi Manas Mandir.",
+            "Visit Banaras Hindu University and Bharat Kala Bhavan, subject to time availability.",
+            "Visit Assi Ghat in the evening.",
+            "Return to the hotel.",
+            "Overnight stay in Varanasi."
+          ]
+        },
+        {
+          "title": "Day 3 – Varanasi to Ayodhya",
+          "activities": [
+            "Early morning breakfast and check out from the hotel.",
+            "Proceed towards Ayodhya.",
+            "Arrive in Ayodhya and check in to the hotel.",
+            "Freshen up and relax.",
+            "Visit Ram Janmabhoomi Temple for darshan.",
+            "Visit Hanuman Garhi.",
+            "Visit Kanak Bhawan.",
+            "Visit Dashrath Mahal.",
+            "In the evening, visit Saryu Ghat and attend the Saryu Aarti, subject to time availability.",
+            "Return to the hotel.",
+            "Overnight stay in Ayodhya."
+          ]
+        },
+        {
+          "title": "Day 4 – Ayodhya Sightseeing",
+          "activities": [
+            "Early morning visit Ram Janmabhoomi Temple for darshan.",
+            "Visit Ram Ki Paidi.",
+            "Visit Nageshwarnath Temple.",
+            "Visit Treta Ke Thakur.",
+            "Visit Guptar Ghat.",
+            "Visit Mani Parvat, subject to time availability.",
+            "Explore the local spiritual atmosphere and markets.",
+            "In the evening, visit Saryu Ghat.",
+            "Return to the hotel.",
+            "Overnight stay in Ayodhya."
+          ]
+        },
+        {
+          "title": "Day 5 – Ayodhya to Varanasi Departure",
+          "activities": [
+            "Early morning breakfast and check out from the hotel.",
+            "Proceed towards Varanasi.",
+            "En route, visit Vindhyachal Temple, subject to time availability and departure schedule.",
+            "Continue the journey towards Varanasi.",
+            "Drop at Varanasi Airport/Railway Station for onward journey with divine memories."
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Kashi%20Varanasi%20-%20Ayodhya%204N%2F5D%20package"
+    },
+    {
+      "destination": "kashi",
+      "destinationDisplayName": "Kashi",
+      "category": "Spiritual",
+      "region": "North India",
+      "packageId": "uttarpradesh-2",
+      "packageTitle": "Kashi Package",
+      "duration": "Kashi 2N/3D",
+      "durationShort": "2N/3D",
+      "slug": "2n-3d",
+      "pagePath": "/itinerary/kashi/2n-3d",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/kashi/2n-3d",
+      "apiEndpoint": "/api/itineraries/kashi/2n-3d.json",
+      "image": "/assets/hero-aarti.jpg",
+      "inclusions": [
+        "Accommodation for 2 nights in selected category hotels.",
+        "Daily breakfast at the hotel.",
+        "Private vehicle for all transfers and sightseeing as per the itinerary.",
+        "Airport/Railway Station pickup and drop.",
+        "Driver allowance.",
+        "Fuel charges.",
+        "Toll taxes.",
+        "Parking charges.",
+        "All applicable transportation charges."
+      ],
+      "days": [
+        {
+          "title": "Day 1 – Arrival in Varanasi",
+          "activities": [
+            "Arrival at Varanasi Airport/Railway Station.",
+            "Meet and greet with our representative.",
+            "Transfer to the pre-booked hotel.",
+            "Check in to the hotel and freshen up.",
+            "Proceed for darshan at Kashi Vishwanath Temple.",
+            "Visit Kashi Vishalakshi Devi Shaktipeeth.",
+            "Visit Mata Annapurna Temple.",
+            "Explore the ancient lanes of Varanasi with a local companion/guide.",
+            "In the evening, proceed towards Dashashwamedh Ghat.",
+            "Witness the famous and spiritual Ganga Aarti.",
+            "Return to the hotel.",
+            "Overnight stay in Varanasi."
+          ]
+        },
+        {
+          "title": "Day 2 – Varanasi Sightseeing",
+          "activities": [
+            "Breakfast at the hotel.",
+            "Proceed towards Sarnath.",
+            "Visit Moolgandh Kuti Vihar.",
+            "Visit Deer Park.",
+            "Visit Dhamek Stupa.",
+            "Visit Dharmarajika Stupa.",
+            "Visit Sarnath Museum, subject to operational timings.",
+            "Visit Wat Thai Temple and the 80-feet Buddha Statue.",
+            "Return for lunch.",
+            "Later, proceed for Varanasi local sightseeing.",
+            "Visit Vyas Kashi / Ram Nagar Fort.",
+            "Visit the New Kashi Vishwanath Temple located inside the Banaras Hindu University campus.",
+            "Visit Tulsi Manas Temple.",
+            "Visit Sankat Mochan Hanuman Temple.",
+            "Visit Durga Mandir near Durga Kund.",
+            "Return to the hotel.",
+            "Overnight stay in Varanasi."
+          ]
+        },
+        {
+          "title": "Day 3 - Varanasi Departure",
+          "activities": [
+            "Breakfast at the hotel.",
+            "Check out from the hotel.",
+            "Transfer to Varanasi Airport/Railway Station as per the departure schedule.",
+            "Depart for your onward journey with divine memories of Kashi."
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Kashi%20Kashi%202N%2F3D%20package"
+    },
+    {
+      "destination": "kashi",
+      "destinationDisplayName": "Kashi",
+      "category": "Spiritual",
+      "region": "North India",
+      "packageId": "uttarpradesh-3",
+      "packageTitle": "Kashi-Prayagraj-Ayodhya",
+      "duration": "Kashi-Prayagraj-Ayodhya 4N/5D",
+      "durationShort": "4N/5D",
+      "slug": "4n-5d-sangam",
+      "pagePath": "/itinerary/kashi/4n-5d-sangam",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/kashi/4n-5d-sangam",
+      "apiEndpoint": "/api/itineraries/kashi/4n-5d-sangam.json",
+      "image": "/assets/hero-aarti.jpg",
+      "inclusions": [
+        "Accommodation for 4 nights in selected category hotels.",
+        "Daily breakfast at the hotel.",
+        "Private vehicle for all transfers and sightseeing as per the itinerary.",
+        "Airport/Railway Station pickup and drop.",
+        "Driver allowance.",
+        "Fuel charges.",
+        "Toll taxes.",
+        "Parking charges.",
+        "All applicable transportation charges."
+      ],
+      "days": [
+        {
+          "title": "Day 1 – Arrival in Varanasi",
+          "activities": [
+            "Arrival at Varanasi Airport/Railway Station.",
+            "Meet and greet with our representative.",
+            "Transfer to the pre-booked hotel. Check in to the hotel and freshen up.",
+            "Proceed for darshan at Kashi Vishwanath Temple.",
+            "Visit Kashi Vishalakshi Devi Shaktipeeth.",
+            "Visit Mata Annapurna Temple.",
+            "Explore the ancient spiritual lanes around the Kashi Vishwanath Temple.",
+            "In the evening, proceed towards Dashashwamedh Ghat.",
+            "Witness the famous Ganga Aarti.",
+            "Return to the hotel.",
+            "Overnight stay in Varanasi."
+          ]
+        },
+        {
+          "title": "Day 2 – Varanasi Sightseeing",
+          "activities": [
+            "Early morning, enjoy a boat ride on the River Ganga, subject to weather conditions.",
+            "Return to the hotel for breakfast.",
+            "Proceed towards Sarnath, Visit Moolgandh Kuti Vihar.",
+            "Visit Deer Park. Visit Dhamek Stupa.",
+            "Visit Sarnath Museum, subject to operational timings.",
+            "Visit the Buddha Statue and Wat Thai Temple.",
+            "Return towards Varanasi.",
+            "Visit New Kashi Vishwanath Temple inside the Banaras Hindu University campus.",
+            "Visit Sankat Mochan Hanuman Temple.",
+            "Visit Durga Kund Temple. Visit Tulsi Manas Temple.",
+            "Return to the hotel.",
+            "Overnight stay in Varanasi."
+          ]
+        },
+        {
+          "title": "Day 3 – Varanasi to Prayagraj",
+          "activities": [
+            "Breakfast at the hotel.",
+            "Check out from the hotel.",
+            "Proceed towards Prayagraj.",
+            "Arrive in Prayagraj and check in to the hotel.",
+            "Proceed to Triveni Sangam.",
+            "Take a boat ride to the confluence point, subject to boat operations.",
+            "Take a holy dip at the sacred confluence of the Ganga, Yamuna and Saraswati rivers.",
+            "Visit Bade Hanuman Temple.",
+            "Visit Anand Bhavan, subject to time availability and guest preference.",
+            "Visit Alopi Devi Temple.",
+            "Return to the hotel.",
+            "Overnight stay in Prayagraj."
+          ]
+        },
+        {
+          "title": "Day 4 – Prayagraj to Ayodhya",
+          "activities": [
+            "Breakfast at the hotel.",
+            "Check out from the hotel. Proceed towards Ayodhya.",
+            "Arrive in Ayodhya and check in to the hotel.",
+            "Freshen up and relax.",
+            "Proceed for darshan at Shri Ram Janmabhoomi Temple.",
+            "Visit Hanuman Garhi. Visit Kanak Bhawan.",
+            "Visit Dashrath Mahal. Visit Ram Ki Paidi.",
+            "In the evening, visit the banks of the sacred Saryu River.",
+            "Witness the Saryu Aarti, subject to timing.",
+            "Return to the hotel.",
+            "Overnight stay in Ayodhya."
+          ]
+        },
+        {
+          "title": "Day 5 – Ayodhya Sightseeing and Departure",
+          "activities": [
+            "Early morning, proceed for darshan at Shri Ram Janmabhoomi Temple, subject to darshan timings.",
+            "Return to the hotel for breakfast.",
+            "Check out from the hotel.",
+            "Visit Nageshwarnath Temple.",
+            "Visit Treta Ke Thakur.",
+            "Visit Guptar Ghat.",
+            "Visit Mani Parvat, subject to time availability.",
+            "Transfer to Ayodhya Airport/Railway Station for onward journey."
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Kashi%20Kashi-Prayagraj-Ayodhya%204N%2F5D%20package"
+    }
+  ]
+}

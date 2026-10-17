@@ -5,7 +5,7 @@
   "region": "West India",
   "pagePath": "/itinerary/rajasthan",
   "canonicalUrl": "https://www.yugatirtha.com/itinerary/rajasthan",
-  "packagesCount": 3,
+  "packagesCount": 1,
   "packages": [
     {
       "destination": "rajasthan",
@@ -13,367 +13,60 @@
       "category": "Domestic",
       "region": "West India",
       "packageId": "rajasthan-1",
-      "packageTitle": "Rajasthan",
-      "duration": "Rajasthan 6N/7D",
-      "durationShort": "6N/7D",
-      "slug": "6n-7d",
-      "pagePath": "/itinerary/rajasthan/6n-7d",
-      "canonicalUrl": "https://www.yugatirtha.com/itinerary/rajasthan/6n-7d",
-      "apiEndpoint": "/api/itineraries/rajasthan/6n-7d.json",
+      "packageTitle": "Khatu Shyam Ji - Salasar Balaji - Jaipur",
+      "duration": "Khatu Shyam Ji - Salasar Balaji - Jaipur 2N/3D",
+      "durationShort": "2N/3D",
+      "slug": "2n-3d",
+      "pagePath": "/itinerary/rajasthan/2n-3d",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/rajasthan/2n-3d",
+      "apiEndpoint": "/api/itineraries/rajasthan/2n-3d.json",
       "image": "/assets/rajasthan-Dznk4KEj.jpg",
       "inclusions": [
-        "Airport / Railway Station pick up and drop as per your flight timings",
-        "Transfer & Sightseeing in an AC vehicle (SUV/Sedan/Tempo Traveler) as per group size with driver allowances, parking charges, toll tax and driver night halts",
-        "6 nights accommodation – 1 Night in Delhi, 2 Nights in Agra, 3 Nights in Jaipur on twin sharing basis",
-        "A total of 6 meals included (Breakfast from Day 2 to Day 7)",
-        "English speaking tour guide during city tour in Delhi, Agra, and Jaipur",
-        "Entrance fees for all monuments mentioned in the itinerary",
-        "Rickshaw ride in Old Delhi (Chandni Chowk)",
-        "Elephant / Jeep ride at Amber Fort",
-        "Bottled water during transfers and tour",
-        "24/7 National Tour Assistance"
+        "2 nights' accommodation in 3-star hotels: 1 night in Khatu Shyam Ji, 1 night in Jaipur",
+        "Breakfast at the hotels (CP plan).",
+        "Private air-conditioned vehicle for the entire itinerary.",
+        "Jaipur Airport pickup and drop-off.",
+        "Transfers between Jaipur, Khatu Shyam Ji and Salasar Balaji.",
+        "Jaipur sightseeing as per the itinerary.",
+        "Driver allowance, fuel, tolls and parking charges.",
+        "All applicable hotel taxes.",
+        "All transfers and sightseeing on a private basis."
       ],
       "days": [
         {
-          "title": "Day 1 – Arrival in Delhi | Sightseeing Tour of Old & New Delhi",
+          "title": "Day 1 - Jaipur Airport to Khatu Shyam Ji",
           "activities": [
-            "Arrive at the designated location in Delhi and board your vehicle for Delhi tour.",
-            "Begin your tour of Old Delhi with Red Fort, Jama Masjid, and a rickshaw ride through the narrow lanes of Chandni Chowk.",
-            "Drive past Raj Ghat, the memorial of Mahatma Gandhi.",
-            "Head to New Delhi and visit Qutub Minar.",
-            "Drive past India Gate, Rashtrapati Bhavan, and Parliament House.",
-            "Visit Humayun's Tomb, a UNESCO World Heritage site and fine example of Mughal architecture.",
+            "Arrive at Jaipur International Airport.",
+            "Meet and greet by the driver/representative.",
+            "Private transfer to Khatu Shyam Ji (approximately 80 km).",
             "Check in to the hotel and relax.",
-            "Overnight stay in Delhi."
+            "Overnight stay in Khatu Shyam Ji."
           ]
         },
         {
-          "title": "Day 2 – Delhi Sightseeing Continues | Visit Lotus Temple, Akshardham Temple & Drive to Agra",
+          "title": "Day 2 - Khatu Shyam Ji Darshan - Salasar Balaji - Jaipur",
           "activities": [
-            "Enjoy a delicious breakfast at the hotel and check out.",
-            "Visit Lotus Temple, a Bahá'í House of Worship famous for its flowerlike shape. (Closed on Mondays)",
-            "Next, visit Akshardham Temple, a modern Hindu temple complex known for its grand architecture and spiritual exhibitions.",
-            "Later, set out on a scenic drive to Agra (approx. 210 km / 4 hrs) via the Yamuna Expressway.",
-            "On arrival in Agra, check in to your hotel and unwind.",
-            "In the evening, visit Mehtab Bagh for a romantic view of the Taj Mahal from across the Yamuna River.",
-            "Explore local markets for shopping.",
-            "Overnight stay in Agra."
-          ]
-        },
-        {
-          "title": "Day 3 – Arrival in Agra | Visit Agra Fort, Tomb of I'timad-ud-Daulah",
-          "activities": [
-            "Enjoy breakfast and check out from hotel and proceed to visit Taj Mahal.",
-            "Visit Agra Fort, a UNESCO World Heritage site that served as the main residence of the Mughal emperors until 1638.",
-            "Explore its palaces, courtyards, and hall of public audience.",
-            "Next, visit Tomb of I'timad-ud-Daulah, often called the 'Baby Taj', a Mughal mausoleum often regarded as a draft of the Taj Mahal.",
-            "Visit Mehtab Bagh for a scenic view of Taj Mahal from across the river, if not visited on Day 2.",
-            "In the evening, explore local markets of Agra for leather goods, marble inlay work, and handicrafts.",
-            "Check in to your hotel and unwind.",
-            "Overnight stay in Agra."
-          ]
-        },
-        {
-          "title": "Day 4 – Early Morning Taj Mahal Visit | Drive to Jaipur via Fatehpur Sikri and Abhaneri Stepwell",
-          "activities": [
-            "Early morning visit the iconic Taj Mahal at sunrise.",
-            "Return to hotel for breakfast, check out and proceed towards Jaipur (approx. 240 km / 5-6 hrs).",
-            "En route, visit Fatehpur Sikri, the deserted red sandstone city built by Emperor Akbar in the late 16th century.",
-            "Explore Buland Darwaza, Jama Masjid, and Tomb of Salim Chishti.",
-            "Continue towards Jaipur, with an optional stop at Abhaneri stepwell (Chand Baori), one of India's largest and deepest stepwells.",
-            "Reach Jaipur in the evening and check in to your hotel.",
-            "Spend the rest of the evening at leisure or explore local markets.",
+            "Breakfast at the hotel.",
+            "Proceed for Shri Khatu Shyam Ji Temple Darshan and seek blessings.",
+            "Explore the temple surroundings.",
+            "Check out from the hotel and drive to Salasar Balaji Temple.",
+            "Visit Salasar Balaji Temple and seek blessings of Lord Hanuman.",
+            "Continue the journey to Jaipur and check in to the hotel.",
+            "Evening at leisure or explore the nearby local market.",
             "Overnight stay in Jaipur."
           ]
         },
         {
-          "title": "Day 5 – Transfer to Jaipur | Pink City Exploration - Amber Fort, City Palace, Hawa Mahal & Jantar Mantar",
+          "title": "Day 3 - Jaipur Sightseeing - Airport Drop",
           "activities": [
-            "After breakfast, get ready for a full-day sightseeing tour of Jaipur, the Pink City.",
-            "Start with Amer Fort (Amber Fort), a hilltop fortress offering magnificent views, elephant ride or jeep ride.",
-            "Stop at Jal Mahal (Water Palace) for a photo stop.",
-            "Visit City Palace, a magnificent palace complex that combines Rajasthani and Mughal architecture. (Timings: 10 am to 5 pm)",
-            "Walk to the famous Hawa Mahal (Palace of Winds), featuring 953 small windows designed for royal women to observe street festivals.",
-            "Visit Jantar Mantar, an astronomical observatory built by Maharaja Sawai Jai Singh II and a UNESCO World Heritage site.",
-            "Explore the local bazaars of Jaipur for textiles, jewelry, handicrafts, and souvenirs.",
-            "Overnight stay in Jaipur."
-          ]
-        },
-        {
-          "title": "Day 6 – Local Sightseeing of Jaipur | Visit Jaigarh Fort, Nahargarh Fort and Galta Ji",
-          "activities": [
-            "Enjoy breakfast and set out for another day of exploration in Jaipur.",
-            "Visit Jaigarh Fort, home to the Jaivana cannon, once the world's largest cannon on wheels, and offering grand views of the surrounding hills.",
-            "Head to Nahargarh Fort, located on the Aravalli hills, offering sweeping views of Jaipur city.",
-            "Visit Galta Ji (Monkey Temple), an ancient Hindu pilgrimage site set in a narrow crevice in the hills, known for its natural springs and sacred kunds.",
-            "Rest of the day is at leisure for shopping or exploring local cafes.",
-            "Overnight stay in Jaipur."
-          ]
-        },
-        {
-          "title": "Day 7 – Departure day - End of Trip with Lifetime Memories",
-          "activities": [
-            "Enjoy breakfast, check out from the hotel, and proceed towards Delhi (approx. 270 km / 5-6 hrs) or Jaipur Airport/Railway Station for your onward journey.",
-            "Reach Delhi/Jaipur by evening and head towards airport/railway station for your onward flight/train with cherished memories of the Golden Triangle tour."
+            "Breakfast at the hotel and check out.",
+            "Proceed for Jaipur sightseeing, covering: Amber Fort, Jal Mahal, City Palace, Jantar Mantar, Hawa Mahal (photo stop).",
+            "Enjoy free time for shopping or local exploration, depending on flight timings.",
+            "Transfer to Jaipur International Airport for your onward journey."
           ]
         }
       ],
-      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Rajasthan%20Rajasthan%206N%2F7D%20package"
-    },
-    {
-      "destination": "rajasthan",
-      "destinationDisplayName": "Rajasthan",
-      "category": "Domestic",
-      "region": "West India",
-      "packageId": "rajasthan-2",
-      "packageTitle": "Rajasthan",
-      "duration": "Rajasthan 7N/8D",
-      "durationShort": "7N/8D",
-      "slug": "7n-8d",
-      "pagePath": "/itinerary/rajasthan/7n-8d",
-      "canonicalUrl": "https://www.yugatirtha.com/itinerary/rajasthan/7n-8d",
-      "apiEndpoint": "/api/itineraries/rajasthan/7n-8d.json",
-      "image": "/assets/rajasthan-Dznk4KEj.jpg",
-      "inclusions": [
-        "Airport/ Railway Station pick up and drop as per your flight timings",
-        "Comfortable and hygienic Vehicle (SUV/ Sedan/ Tempo Traveler) as per the group size",
-        "7 Nights accommodation (2 Nights in Jaipur, 2 Nights in Udaipur, 1 Night in Jodhpur, 1 Night in Jaisalmer, 1 Night in Swiss Tents)",
-        "A total of 7 meals included (Breakfast from Day 2 to Day 8)",
-        "On call travel assistance throughout the trip",
-        "Driver night charges & allowances, toll tax, parking charges, etc.",
-        "Camel Safari in Jaisalmer (In Swiss Tents)"
-      ],
-      "days": [
-        {
-          "title": "Day 1 – Arrival In Jaipur | Welcome to the Pink City",
-          "activities": [
-            "Arrive at the Jaipur airport/ railway station in the morning and meet our representative, who will safely drop you at your pre-booked hotel.",
-            "Arrive Jaipur, check in to the hotel, after freshen up get ready to explore local Jaipur.",
-            "We will first take you to the magnificent City palace of Jaipur - the current residence of the royal family of Jaipur.",
-            "(Timings- 10 am to 5 pm (ticket window closes at 5 pm)).",
-            "Explore the various edifices, museums, art galleries, and royal suits, and observe local artisans at the workshops located in the palace complex.",
-            "Afterwards, you can take a brief stop at the iconic Hawa Mahal in Jaipur and walk before moving on to Jantar Mantar observatory.",
-            "In the evening you can visit the famous Albert Hall Museum, Birla Mandir (Birla Temple) before heading to hotel.",
-            "Overnight stay in Jaipur."
-          ]
-        },
-        {
-          "title": "Day 2 – Local Sightseeing of Jaipur | Explore the heritage city",
-          "activities": [
-            "After breakfast in the morning we go for Jaipur local sightseeing.",
-            "Head to Amer Fort.",
-            "Morning trip by Amer Fort.",
-            "(Timings - 8:00 AM to 5:30 PM).",
-            "Later on, take an elephant ride (Cost extra) at the Amer Fort to the main entrance of the fort.",
-            "Afterwards, you'll visit the stunning Jal Mahal.",
-            "It is situated right in the center of the Man Sagar Lake on the outskirts of Jaipur.",
-            "Afterwards, head towards the magnificent Nahargarh Fort, built by Maharaja Sawai Jai Singh II, which offers breathtaking panoramic views of Jaipur city and houses the beautiful Madhavendra Bhawan.",
-            "Later in the evening, you can roam around the local markets of Jaipur like Bapu Bazaar, Johari Bazaar to indulge in shopping spree.",
-            "Return to the hotel for dinner and overnight stay in Jaipur."
-          ]
-        },
-        {
-          "title": "Day 3 – Jaipur to Udaipur | Welcome to the City of Lakes",
-          "activities": [
-            "Check out from the hotel after breakfast and drive to Udaipur (the City of Lakes).",
-            "En route to Udaipur, take a halt to visit the famous Pushkar Lake and Brahma Temple.",
-            "After arrival in Udaipur, check-in to your pre-booked hotel.",
-            "In the evening, you can take a boat ride on Lake Pichola (at your own cost) and witness the beautiful sunset.",
-            "Spend a comfortable night at your pre-booked hotel in Udaipur."
-          ]
-        },
-        {
-          "title": "Day 4 – Udaipur Sightseeing | Witness the charm of City Palace",
-          "activities": [
-            "After breakfast, get ready for a full-day sightseeing tour of Udaipur.",
-            "Start the day by visiting Sahelion-ki-Bari, a beautiful garden with fountains, lotus pools and marble elephants, originally built for the queens and their friends to relax and spend some time.",
-            "Later on, visit the City Palace Museum, the grand City Palace complex, which was built over a period of 400 years with a blend of Rajasthani, Mughal and European architecture.",
-            "After exploring the City Palace, head towards the nearby Jagdish Temple, an architecture marvel of the Mewar dynasty dedicated to Lord Vishnu.",
-            "In the evening, you will visit the famous Mansapurna Karni Mata ropeway to get a bird's eye view of the entire city and lakes.",
-            "After completing the local sightseeing, return to your hotel in Udaipur.",
-            "Overnight stay in Udaipur."
-          ]
-        },
-        {
-          "title": "Day 5 – Udaipur to Jodhpur | Blue City of Rajasthan",
-          "activities": [
-            "Post breakfast, complete the checkout formalities and proceed towards Jodhpur.",
-            "By afternoon, reach Jodhpur, Check-in to your hotel and head out for sightseeing of Mehrangarh Fort, which is one of the largest and most glorious forts of India.",
-            "The fort has a museum that houses an exquisite collection of palanquins, howdahs, royal cradles, miniatures, musical instruments, costumes and furniture.",
-            "You can also visit the nearby royal cenotaph of Jaswant Thada, known as the Taj Mahal of Marwar.",
-            "In the evening, you will visit the local shopping areas in Jodhpur like Sardar Market located near the famous Clock Tower.",
-            "Overnight stay in Jodhpur."
-          ]
-        },
-        {
-          "title": "Day 6 – Jodhpur to Jaisalmer | Arrival at Open Thar Desert",
-          "activities": [
-            "Post breakfast in the hotel, complete the checkout formalities and drive to Jaisalmer (The Golden City).",
-            "Before arriving in Jaisalmer, we take a halt to visit the famous Jaisalmer War Museum, which tells the tales of bravery of the Indian soldiers during the 1971 Longewala battle.",
-            "Reach Jaisalmer by late afternoon, check in to your Swiss Tents, and take some rest to prepare yourself for a thrilling Evening in the Thar Desert.",
-            "In the evening, you will go for a Camel Safari in the Sand Dunes to enjoy a beautiful Sunset.",
-            "Spend your evening enjoying folk dance and music activities in the camp.",
-            "Overnight stay in Jaisalmer."
-          ]
-        },
-        {
-          "title": "Day 7 – Sightseeing in Jaisalmer | Explore the 'The Golden City'",
-          "activities": [
-            "Post breakfast, get ready to witness the living Fort of India - the Jaisalmer Fort proudly standing out in the middle of the Thar Desert, built from golden sands stones and sandstone.",
-            "Next, you will visit some of the magnificent havelis in Jaisalmer grand mansions with exquisite carvings, grand courtyards and intricate artwork, basically the ancient homes of wealthy merchants that make up the sandstone city, some of the famous havelis include:",
-            "Patwon ki Haveli, which is actually a cluster of 5 havelis and the first haveli to be erected in Jaisalmer.",
-            "Nathmal ki Haveli, which has two identically looking sections but intricately carved differently, as it was carved by two brothers.",
-            "Salim Singh ki Haveli, known for its unique and distinctive architecture.",
-            "Later you will visit the beautiful Gadisar Lake."
-          ]
-        },
-        {
-          "title": "Day 8 – Jaisalmer to Jodhpur | End of Trip with Lifetime Memories",
-          "activities": [
-            "Post breakfast, pack your luggage, check out and start your journey back to Jodhpur.",
-            "After 5-6 Hrs of road journey you will reach Jodhpur.",
-            "Your tour concludes once you are dropped at the Jodhpur airport/ railway station for your onward journey."
-          ]
-        }
-      ],
-      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Rajasthan%20Rajasthan%207N%2F8D%20package"
-    },
-    {
-      "destination": "rajasthan",
-      "destinationDisplayName": "Rajasthan",
-      "category": "Domestic",
-      "region": "West India",
-      "packageId": "rajasthan-3",
-      "packageTitle": "Rajasthan",
-      "duration": "Rajasthan 9N/10D",
-      "durationShort": "9N/10D",
-      "slug": "9n-10d",
-      "pagePath": "/itinerary/rajasthan/9n-10d",
-      "canonicalUrl": "https://www.yugatirtha.com/itinerary/rajasthan/9n-10d",
-      "apiEndpoint": "/api/itineraries/rajasthan/9n-10d.json",
-      "image": "/assets/rajasthan-Dznk4KEj.jpg",
-      "inclusions": [
-        "Travel as per itinerary in AC Sedan / Innova / Tempo Traveller (As per Group Size).",
-        "Accommodation for 9 Nights on double/triple sharing basis as per group size.",
-        "Meals as per Plan (Breakfast at hotels + Breakfast & Dinner at Swiss Tents).",
-        "Camel Safari in Thar Desert, Jaisalmer.",
-        "Cultural Evening with Folk Dance & Music at Swiss Tents.",
-        "Toll taxes, Parking, State taxes, Driver Bata.",
-        "Sightseeing & Transfers as per the itinerary.",
-        "24/7 National Tour Assistance."
-      ],
-      "days": [
-        {
-          "title": "Day 1 – Arrival in Jaipur | Welcome to the Pink City",
-          "activities": [
-            "Arrive in Jaipur in the morning and meet our representative, who will safely drop you at your pre-booked hotel.",
-            "Complete check-in formalities and rest for a while.",
-            "After freshen up, get ready to explore the magnificent City palace of Jaipur - the current residence of the royal family of Jaipur.",
-            "Explore the various edifices, museums, art galleries, and royal suits, and observe local artisans at the workshops located in the palace complex.",
-            "Afterwards, you can take a brief stop at the iconic Hawa Mahal in Jaipur and walk before moving on to Jantar Mantar observatory.",
-            "In the evening you can visit the famous Albert Hall Museum, Birla Mandir (Birla Temple) before heading to hotel.",
-            "Overnight stay in Jaipur."
-          ]
-        },
-        {
-          "title": "Day 2 – Local Sightseeing of Jaipur | Explore the heritage city",
-          "activities": [
-            "After breakfast in the morning we go for Jaipur local sightseeing.",
-            "Head to Amer Fort.",
-            "Morning trip by Amer Fort.",
-            "(Timings- 8:00 AM to 5:30 PM).",
-            "Later on, take an elephant ride (Cost extra) at the Amer Fort to the main entrance of the fort.",
-            "Afterwards, you'll visit the stunning Jal Mahal.",
-            "It is situated right in the center of the Man Sagar Lake on the outskirts of Jaipur.",
-            "Afterwards, head towards the magnificent Nahargarh Fort, built by Maharaja Sawai Jai Singh II, which offers breathtaking panoramic views of Jaipur city and houses the beautiful Madhavendra Bhawan.",
-            "Later in the evening, you can roam around the local markets of Jaipur like Bapu Bazaar, Johari Bazaar to indulge in shopping spree.",
-            "Return to the hotel for dinner and overnight stay in Jaipur."
-          ]
-        },
-        {
-          "title": "Day 3 – Jaipur to Bikaner | Visit Junagarh Fort & Karni Mata Temple",
-          "activities": [
-            "Post breakfast pack your bags & depart for Bikaner.",
-            "Arrive at Bikaner, check-in to your pre-booked hotel.",
-            "Later in the day go for the local sightseeeing of Bikaner.",
-            "Visit the Junagarh Fort, that has an undefeated fort and houses numerous palaces, courtyards & pavilions.",
-            "Later visit the Karni Mata Temple in Deshnok, also known as the Rat Temple, known for the holy rats.",
-            "You can also visit the National Research Centre on Camel, one of its kind in Asia and see the different breeds of camels.",
-            "Return to the hotel in evening for dinner.",
-            "Overnight stay in Bikaner."
-          ]
-        },
-        {
-          "title": "Day 4 – Bikaner to Jaisalmer | Arrival at Open Thar Desert",
-          "activities": [
-            "Post breakfast in the hotel, complete the checkout formalities and proceed towards Jaisalmer (The Golden City).",
-            "Before arriving in Jaisalmer, we take a halt to visit the famous Jaisalmer War Museum, which tells the tales of bravery of the Indian soldiers during the 1971 Longewala battle.",
-            "Reach Jaisalmer by late afternoon, check in to your Swiss Tents, and take some rest to prepare yourself for a thrilling Evening in the Thar Desert.",
-            "In the evening, you will go for a Camel Safari in the Sand Dunes to enjoy a beautiful sunset.",
-            "Spend your evening enjoying folk dance and music activities in the camp.",
-            "Overnight stay in Jaisalmer."
-          ]
-        },
-        {
-          "title": "Day 5 – Sightseeing in Jaisalmer | Explore the Golden City's havelis and architecture",
-          "activities": [
-            "Post breakfast, get ready to witness the living Fort of India - the Jaisalmer Fort proudly standing out in the middle of the Thar Desert, built from golden sands stones and sandstone.",
-            "Next, you will visit some of the magnificent havelis in Jaisalmer grand mansions with exquisite carvings, grand courtyards and intricate artwork,",
-            "Basically the ancient homes of wealthy merchants that make up the sandstone city; some of the famous havelis include:",
-            "Patwon ki Haveli, which is actually a cluster of 5 havelis and the first haveli to be erected in Jaisalmer;",
-            "Nathmal ki Haveli, which has two identically looking sections but intricately carved differently, as it was carved by two brothers.",
-            "Salim Singh ki Haveli, known for its unique and distinctive architecture.",
-            "Later you will visit the beautiful Gadisar Lake.",
-            "Overnight stay in Jaisalmer."
-          ]
-        },
-        {
-          "title": "Day 6 – Jaisalmer to Jodhpur | Blue City of Rajasthan",
-          "activities": [
-            "Post breakfast, get ready to explore the local sightseeing of Jodhpur.",
-            "You will first visit the Jaswant Thada, a white marble cenotaph in memory of Maharaja Jaswant Singh II.",
-            "Then head to the Umaid Bhawan Palace Museum, a part of the grand Umaid Bhawan Palace which is one of the world's largest private residences.",
-            "Then you will visit the Mandore Gardens, which houses the cenotaphs of Jodhpur's former rulers.",
-            "In the evening, visit the local markets for shopping, where you can buy traditional Rajasthani attire, handicrafts, and spices.",
-            "Overnight stay in Jodhpur."
-          ]
-        },
-        {
-          "title": "Day 7 – Jodhpur Sightseeing | Visit Mehrangarh Fort, Jaswant Thada, Umaid Bhawan",
-          "activities": [
-            "Post breakfast, complete the checkout-formalities and depart for Udaipur.",
-            "En route, visit the Ranakpur Jain Temple, a beautiful 15th-century temple made of white marble, dedicated to Tirthankara Adinatha.",
-            "Reach Udaipur by evening, check in to your pre-booked hotel.",
-            "Rest of the evening is at leisure.",
-            "Overnight stay at Udaipur."
-          ]
-        },
-        {
-          "title": "Day 8 – Jodhpur to Udaipur | Welcome to the City of Lakes",
-          "activities": [
-            "After breakfast, get ready for a full-day sightseeing tour of Udaipur.",
-            "Start the day by visiting Saheliyon-ki-Bari, a beautiful garden with fountains, lotus pools and marble elephants, originally built for the queens and their friends to relax and spend some time.",
-            "Later on, visit the City Palace Museum, the grand City Palace complex, which was built over a period of 400 years with a blend of Rajasthani, Mughal and European architecture.",
-            "After exploring the City Palace, head towards the nearby Jagdish Temple, an architecture marvel of the Mewar dynasty dedicated to Lord Vishnu.",
-            "In the evening, you can take a boat ride on Lake Pichola (at your own cost) and witness the beautiful sunset.",
-            "Overnight stay in Udaipur."
-          ]
-        },
-        {
-          "title": "Day 9 – Udaipur Sightseeing | Visit the charm of City Palace, Lake Pichola",
-          "activities": [
-            "Enjoy a delicious breakfast, pack your bags and complete checkout formalities.",
-            "You will be dropped at Udaipur Airport / Railway station for your onward journey."
-          ]
-        },
-        {
-          "title": "Day 10 – Departure day | End of Trip with Lifetime Memories",
-          "activities": [
-            "Enjoy a delicious breakfast, pack your bags and complete checkout formalities.You will be dropped at Udaipur Airport / Railway station for your onward journey."
-          ]
-        }
-      ],
-      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Rajasthan%20Rajasthan%209N%2F10D%20package"
+      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Rajasthan%20Khatu%20Shyam%20Ji%20-%20Salasar%20Balaji%20-%20Jaipur%202N%2F3D%20package"
     }
   ]
 }

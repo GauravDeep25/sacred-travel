@@ -1,7 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Clock, CheckCircle2, ChevronDown, ChevronUp, MessageCircle, Share2, Check } from 'lucide-react';
+import {
+  ArrowLeft,
+  Clock,
+  CheckCircle2,
+  ChevronDown,
+  ChevronUp,
+  MessageCircle,
+  Share2,
+  Check,
+  Compass,
+  List,
+  MapPin,
+} from 'lucide-react';
+import ItineraryMapScroll from '../components/itinerary/ItineraryMapScroll';
 import {
   destinationMeta,
   destinationDisplayNames,
@@ -65,19 +78,46 @@ export default function ItineraryDetail() {
   const { destination, subItinerary } = useParams();
   const navigate = useNavigate();
 
-  const packages = getDestinationPackages(destination);
-  const meta = destinationMeta[destination] || {
+  // Normalize parameters
+  const cleanDest = (destination || '').toLowerCase().trim().replace(/[^a-z0-9-]/g, '');
+  const cleanSub = (subItinerary || '').toLowerCase().trim().replace(/[^a-z0-9-]/g, '');
+
+  // Backward compatibility: map legacy state routes to specific places
+  let resolvedDest = cleanDest;
+  let resolvedSub = cleanSub;
+  if (cleanDest === 'uttarakhand') {
+    if (cleanSub.includes('adi') || cleanSub.includes('kailash') || cleanSub.includes('7n')) {
+      resolvedDest = 'adi-kailash';
+      resolvedSub = '7n-8d';
+    } else if (cleanSub.includes('badrinath') || cleanSub.includes('4n')) {
+      resolvedDest = 'badrinath';
+      resolvedSub = '4n-5d';
+    } else if (cleanSub.includes('kainchi') || cleanSub.includes('2n')) {
+      resolvedDest = 'kainchi-dham';
+      resolvedSub = '2n-3d';
+    } else if (cleanSub.includes('char') || cleanSub.includes('9n') || cleanSub.includes('10d')) {
+      resolvedDest = 'char-dham';
+      resolvedSub = '9n-10d';
+    } else if (cleanSub.includes('do') || cleanSub.includes('5n')) {
+      resolvedDest = 'do-dham';
+      resolvedSub = '5n-6d';
+    }
+  }
+
+  const packages = getDestinationPackages(resolvedDest, resolvedSub);
+  const meta = destinationMeta[resolvedDest] || {
     img: '/assets/hero-spiti.jpg',
     region: 'India',
     from: '/',
     fromLabel: 'Home',
   };
-  const displayName = destinationDisplayNames[destination] || destination;
+  const displayName = destinationDisplayNames[resolvedDest] || (resolvedDest.charAt(0).toUpperCase() + resolvedDest.slice(1));
 
   // Derive selected package index directly from the URL route
-  const selectedPkg = packages.length > 0 ? findPackageIndex(packages, destination, subItinerary) : 0;
+  const selectedPkg = packages.length > 0 ? findPackageIndex(packages, resolvedDest, resolvedSub) : 0;
   const [openDays, setOpenDays] = useState([0]); // first day open by default
   const [copied, setCopied] = useState(false);
+  const [viewMode, setViewMode] = useState('map'); // 'map' (interactive map & unrolling scroll) or 'list' (accordion)
 
   const currentPkg = packages[selectedPkg];
 
@@ -100,33 +140,33 @@ export default function ItineraryDetail() {
       doc.head.appendChild(canonical);
     }
 
-    const currentSlug = currentPkg ? getPackageSlug(currentPkg, destination, selectedPkg) : '';
+    const currentSlug = currentPkg ? getPackageSlug(currentPkg, resolvedDest, selectedPkg) : '';
     const canonicalUrl = currentSlug
-      ? `${CANONICAL_BASE}/itinerary/${destination}/${currentSlug}`
-      : `${CANONICAL_BASE}/itinerary/${destination}`;
+      ? `${CANONICAL_BASE}/itinerary/${resolvedDest}/${currentSlug}`
+      : `${CANONICAL_BASE}/itinerary/${resolvedDest}`;
     canonical.setAttribute('href', canonicalUrl);
-  }, [displayName, destination, selectedPkg, currentPkg]);
+  }, [displayName, resolvedDest, selectedPkg, currentPkg]);
 
   const handleSelectPackage = (index) => {
     const targetPkg = packages[index];
     if (targetPkg) {
-      const slug = getPackageSlug(targetPkg, destination, index);
+      const slug = getPackageSlug(targetPkg, resolvedDest, index);
       trackEvent('select_package', {
-        destination,
+        destination: resolvedDest,
         package_duration: targetPkg.duration || slug,
       });
-      navigate(`/itinerary/${destination}/${slug}`);
+      navigate(`/itinerary/${resolvedDest}/${slug}`);
       setOpenDays([0]);
     }
   };
 
   const handleCopyLink = () => {
-    const slug = currentPkg ? getPackageSlug(currentPkg, destination, selectedPkg) : '';
+    const slug = currentPkg ? getPackageSlug(currentPkg, resolvedDest, selectedPkg) : '';
     const shareUrl = slug
-      ? `${window.location.origin}/itinerary/${destination}/${slug}`
-      : `${window.location.origin}/itinerary/${destination}`;
+      ? `${window.location.origin}/itinerary/${resolvedDest}/${slug}`
+      : `${window.location.origin}/itinerary/${resolvedDest}`;
     trackEvent('share_itinerary', {
-      destination,
+      destination: resolvedDest,
       package_duration: currentPkg?.duration || 'standard',
       share_url: shareUrl,
     });
@@ -205,7 +245,7 @@ export default function ItineraryDetail() {
             transition={{ delay: 0.2 }}
             className="text-[#D4A373] text-[10px] tracking-[0.3em] uppercase font-semibold mb-2"
           >
-            {meta.region} · {currentPkg?.duration ? currentPkg.duration : 'Itinerary'}
+            {meta.region} · {extractDurationShort(currentPkg?.duration) || currentPkg?.duration || 'Itinerary'}
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -225,11 +265,12 @@ export default function ItineraryDetail() {
             <div className="flex gap-1 overflow-x-auto py-0">
               {packages.map((pkg, i) => {
                 const isSelected = selectedPkg === i;
-                const slug = getPackageSlug(pkg, destination, i);
+                const slug = getPackageSlug(pkg, resolvedDest, i);
+                const shortDur = extractDurationShort(pkg.duration) || pkg.duration || `Package ${i + 1}`;
                 return (
                   <Link
                     key={pkg.id || i}
-                    to={`/itinerary/${destination}/${slug}`}
+                    to={`/itinerary/${resolvedDest}/${slug}`}
                     onClick={(e) => {
                       e.preventDefault();
                       handleSelectPackage(i);
@@ -240,7 +281,7 @@ export default function ItineraryDetail() {
                         : 'border-transparent text-gray-500 hover:text-gray-900'
                     }`}
                   >
-                    {pkg.duration || `Package ${i + 1}`}
+                    {shortDur}
                   </Link>
                 );
               })}
@@ -268,159 +309,273 @@ export default function ItineraryDetail() {
       )}
 
       {/* ── Main Content ───────────────────────────── */}
-      <div className="max-w-5xl mx-auto px-5 sm:px-8 py-14">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+        {/* Top View Mode Switcher & Circuit Header */}
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8 pb-5 border-b border-gray-200">
+          <div>
+            <div className="flex items-center gap-2 text-[#D4A373] text-[10px] tracking-widest uppercase font-semibold mb-1">
+              <span>{displayName} Circuit</span>
+              {currentPkg?.duration && (
+                <>
+                  <span>•</span>
+                  <span className="text-gray-500 font-normal">{currentPkg.duration}</span>
+                </>
+              )}
+            </div>
+            <h2 className="font-serif text-2xl sm:text-3xl text-gray-900">
+              {currentPkg?.title && currentPkg.title !== displayName ? currentPkg.title : 'Curated Pilgrimage Plan'}
+            </h2>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-3">
+            {/* View Switcher Toggle */}
+            <div className="inline-flex items-center bg-[#f4ebd9] p-1 rounded-full border border-[#d9c7aa] shadow-2xs">
+              <button
+                onClick={() => setViewMode('map')}
+                className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all ${
+                  viewMode === 'map'
+                    ? 'bg-[#b8864e] text-white shadow-xs'
+                    : 'text-[#6e5332] hover:text-gray-900'
+                }`}
+                title="View interactive map and unrolling manuscript scrolls"
+              >
+                <Compass size={13} />
+                <span>Map & Scroll</span>
+              </button>
+              <button
+                onClick={() => setViewMode('list')}
+                className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all ${
+                  viewMode === 'list'
+                    ? 'bg-[#b8864e] text-white shadow-xs'
+                    : 'text-[#6e5332] hover:text-gray-900'
+                }`}
+                title="View original day-by-day accordion list"
+              >
+                <List size={13} />
+                <span>Classic List</span>
+              </button>
+            </div>
+
+            {/* Share Button */}
+            <button
+              onClick={handleCopyLink}
+              title="Copy direct link to this sub-itinerary"
+              className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-gray-600 hover:text-[#b8864e] px-3.5 py-2 rounded-full border border-gray-200 bg-white hover:bg-gray-50 transition-colors shadow-2xs"
+            >
+              {copied ? (
+                <>
+                  <Check size={13} className="text-emerald-600" />
+                  <span className="text-emerald-600 font-semibold">Copied</span>
+                </>
+              ) : (
+                <>
+                  <Share2 size={13} />
+                  <span>Share</span>
+                </>
+              )}
+            </button>
+          </div>
+        </div>
+
         <AnimatePresence mode="wait">
-          <motion.div
-            key={selectedPkg}
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.3 }}
-          >
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          {viewMode === 'map' ? (
+            /* ── VIEW 1: Interactive Journey Map & Royal Parchment Scroll ── */
+            <motion.div
+              key={`map-${selectedPkg}`}
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.35 }}
+              className="space-y-12"
+            >
+              <ItineraryMapScroll
+                destination={resolvedDest}
+                displayName={displayName}
+                packageData={currentPkg}
+              />
 
-              {/* Left — Day Timeline */}
-              <div className="lg:col-span-2">
-                {/* Header */}
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
-                  <div>
-                    <p className="text-[#D4A373] text-[10px] tracking-widest uppercase font-semibold mb-1">
-                      {displayName} Circuit
-                    </p>
-                    <h2 className="font-serif text-3xl text-gray-900">
-                      {currentPkg?.title && currentPkg.title !== displayName ? currentPkg.title : 'Day by Day Plan'}
-                    </h2>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    {currentPkg?.duration && (
-                      <div className="flex items-center gap-2 text-gray-500 text-xs font-semibold uppercase tracking-widest">
-                        <Clock size={14} className="text-[#D4A373]" />
-                        {currentPkg.duration}
-                      </div>
-                    )}
-                    <button
-                      onClick={handleCopyLink}
-                      className="sm:hidden inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-gray-500 hover:text-primary"
-                    >
-                      {copied ? <Check size={12} className="text-emerald-600" /> : <Share2 size={12} />}
-                      <span>{copied ? 'Copied' : 'Share'}</span>
-                    </button>
-                  </div>
-                </div>
-
-                {/* Expand / Collapse all */}
-                {currentPkg?.days?.length > 0 && (
-                  <div className="flex gap-4 mb-5">
-                    <button
-                      onClick={expandAll}
-                      className="text-[10px] uppercase tracking-widest font-semibold text-[#D4A373] hover:text-[#b8864e] transition-colors"
-                    >
-                      Expand all
-                    </button>
-                    <span className="text-gray-300">|</span>
-                    <button
-                      onClick={collapseAll}
-                      className="text-[10px] uppercase tracking-widest font-semibold text-gray-400 hover:text-gray-600 transition-colors"
-                    >
-                      Collapse all
-                    </button>
+              {/* Lower Details Row: Inclusions & WhatsApp Booking Concierge */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6 border-t border-[#ebdcc4]">
+                
+                {/* 1. What's Included */}
+                {currentPkg?.inclusions?.length > 0 && (
+                  <div className="lg:col-span-2 border border-[#e2d5c0] bg-white/80 rounded-2xl p-6 sm:p-7 shadow-xs">
+                    <div className="flex items-center gap-2 text-[#D4A373] text-[10px] tracking-widest uppercase font-semibold mb-4">
+                      <CheckCircle2 size={14} className="text-emerald-600" />
+                      <span>Sacred Inclusions & Comforts</span>
+                    </div>
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                      {currentPkg.inclusions.map((inc, i) => (
+                        <li key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-gray-700 leading-relaxed">
+                          <CheckCircle2 size={14} className="flex-shrink-0 mt-0.5 text-emerald-600" />
+                          <span>{inc}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 )}
 
-                {/* Days Accordion */}
-                <div className="space-y-2">
-                  {currentPkg?.days?.map((day, i) => (
-                    <DayCard
-                      key={i}
-                      day={day}
-                      index={i}
-                      isOpen={openDays.includes(i)}
-                      onToggle={() => toggleDay(i)}
-                    />
-                  ))}
-                  {(!currentPkg?.days || currentPkg.days.length === 0) && (
-                    <p className="text-sm text-gray-500 italic">Itinerary details coming soon. Enquire for a custom programme.</p>
-                  )}
-                </div>
-              </div>
-
-              {/* Right — Sidebar */}
-              <div className="lg:col-span-1">
-                <div className="lg:sticky lg:top-28 space-y-6">
-
-                  {/* CTA Card */}
-                  <div className="bg-[#1a1209] text-white p-8">
-                    <p className="text-[#D4A373] text-[10px] tracking-widest uppercase font-semibold mb-3">Book this trip</p>
-                    <h3 className="font-serif text-2xl mb-2 leading-tight">{displayName}</h3>
+                {/* 2. Direct WhatsApp Booking Concierge */}
+                <div className="border border-[#e2d5c0] bg-[#1a1209] text-white rounded-2xl p-6 sm:p-7 shadow-sm flex flex-col justify-between">
+                  <div>
+                    <p className="text-[#D4A373] text-[10px] tracking-widest uppercase font-semibold mb-2">Private Circuit Concierge</p>
+                    <h3 className="font-serif text-2xl text-white mb-2 leading-tight">{displayName}</h3>
                     {currentPkg?.duration && (
-                      <p className="text-white/60 text-xs mb-6 flex items-center gap-2">
+                      <p className="text-white/60 text-xs mb-4 flex items-center gap-2">
                         <Clock size={12} className="text-[#D4A373]" />
                         {currentPkg.duration}
                       </p>
                     )}
+                    <p className="text-xs text-white/70 leading-relaxed mb-6">
+                      Customise your travel dates, pickup points, hotel categories and VIP temple passes directly with our dedicated travel desk.
+                    </p>
+                  </div>
+
+                  <div>
                     <a
                       href={`https://wa.me/918591262424?text=I'd%20like%20to%20enquire%20about%20the%20${encodeURIComponent(displayName)}%20${encodeURIComponent(currentPkg?.duration || '')}%20package`}
                       target="_blank"
                       rel="noreferrer"
-                      onClick={() => trackWhatsAppClick('itinerary_sidebar', `${displayName} - ${currentPkg?.duration || ''}`)}
-                      className="flex items-center justify-center gap-2 w-full bg-[#E2852B] text-white px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-[#c97524] transition-colors"
+                      onClick={() => trackWhatsAppClick('itinerary_map_cta', `${displayName} - ${currentPkg?.duration || ''}`)}
+                      className="flex items-center justify-center gap-2 w-full bg-[#E2852B] text-white px-5 py-3 rounded-full text-xs font-bold uppercase tracking-[0.15em] hover:bg-[#c97524] transition-colors shadow-md"
                     >
                       <MessageCircle size={15} />
                       Enquire via WhatsApp
                     </a>
-                    <p className="text-white/40 text-xs mt-4 text-center">We reply within 24 hours</p>
+                    <p className="text-white/40 text-[10px] mt-2.5 text-center">Prompt assistance within 24 hours</p>
                   </div>
-
-                  {/* Inclusions Card */}
-                  {currentPkg?.inclusions?.length > 0 && (
-                    <div className="border border-gray-200 bg-white p-7">
-                      <p className="text-[#D4A373] text-[10px] tracking-widest uppercase font-semibold mb-5">What's included</p>
-                      <ul className="space-y-3">
-                        {currentPkg.inclusions.map((inc, i) => (
-                          <li key={i} className="flex items-start gap-3">
-                            <CheckCircle2 size={14} className="flex-shrink-0 mt-0.5 text-emerald-600" />
-                            <span className="text-sm text-gray-700 leading-relaxed">{inc}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-
-                  {/* Other packages link */}
-                  {packages.length > 1 && (
-                    <div className="border border-gray-200 bg-white p-6">
-                      <p className="text-[10px] text-gray-500 uppercase tracking-widest font-semibold mb-4">All Circuits & Durations</p>
-                      <div className="space-y-2">
-                        {packages.map((pkg, i) => {
-                          const slug = getPackageSlug(pkg, destination, i);
-                          const isSelected = selectedPkg === i;
-                          return (
-                            <Link
-                              key={pkg.id || i}
-                              to={`/itinerary/${destination}/${slug}`}
-                              onClick={(e) => {
-                                e.preventDefault();
-                                handleSelectPackage(i);
-                              }}
-                              className={`w-full text-left px-4 py-2.5 text-sm flex items-center justify-between transition-colors ${
-                                isSelected
-                                  ? 'bg-[#D4A373]/10 text-[#b8864e] font-semibold border-l-2 border-[#D4A373]'
-                                  : 'text-gray-600 hover:bg-gray-50'
-                              }`}
-                            >
-                              <span>{pkg.duration || `Package ${i + 1}`}</span>
-                              <span className="text-xs text-gray-400">{pkg.days?.length || 0}d</span>
-                            </Link>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  )}
                 </div>
-              </div>
 
-            </div>
-          </motion.div>
+              </div>
+            </motion.div>
+          ) : (
+            /* ── VIEW 2: Classic Accordion & Sidebar List ── */
+            <motion.div
+              key={`list-${selectedPkg}`}
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+                {/* Left — Day Timeline */}
+                <div className="lg:col-span-2">
+                  {/* Expand / Collapse all */}
+                  {currentPkg?.days?.length > 0 && (
+                    <div className="flex gap-4 mb-5">
+                      <button
+                        onClick={expandAll}
+                        className="text-[10px] uppercase tracking-widest font-semibold text-[#D4A373] hover:text-[#b8864e] transition-colors"
+                      >
+                        Expand all
+                      </button>
+                      <span className="text-gray-300">|</span>
+                      <button
+                        onClick={collapseAll}
+                        className="text-[10px] uppercase tracking-widest font-semibold text-gray-400 hover:text-gray-600 transition-colors"
+                      >
+                        Collapse all
+                      </button>
+                    </div>
+                  )}
+
+                  {/* Days Accordion */}
+                  <div className="space-y-2">
+                    {currentPkg?.days?.map((day, i) => (
+                      <DayCard
+                        key={i}
+                        day={day}
+                        index={i}
+                        isOpen={openDays.includes(i)}
+                        onToggle={() => toggleDay(i)}
+                      />
+                    ))}
+                    {(!currentPkg?.days || currentPkg.days.length === 0) && (
+                      <p className="text-sm text-gray-500 italic">Itinerary details coming soon. Enquire for a custom programme.</p>
+                    )}
+                  </div>
+                </div>
+
+                {/* Right — Sidebar */}
+                <div className="lg:col-span-1">
+                  <div className="lg:sticky lg:top-28 space-y-6">
+
+                    {/* CTA Card */}
+                    <div className="bg-[#1a1209] text-white p-8">
+                      <p className="text-[#D4A373] text-[10px] tracking-widest uppercase font-semibold mb-3">Book this trip</p>
+                      <h3 className="font-serif text-2xl mb-2 leading-tight">{displayName}</h3>
+                      {currentPkg?.duration && (
+                        <p className="text-white/60 text-xs mb-6 flex items-center gap-2">
+                          <Clock size={12} className="text-[#D4A373]" />
+                          {currentPkg.duration}
+                        </p>
+                      )}
+                      <a
+                        href={`https://wa.me/918591262424?text=I'd%20like%20to%20enquire%20about%20the%20${encodeURIComponent(displayName)}%20${encodeURIComponent(currentPkg?.duration || '')}%20package`}
+                        target="_blank"
+                        rel="noreferrer"
+                        onClick={() => trackWhatsAppClick('itinerary_sidebar', `${displayName} - ${currentPkg?.duration || ''}`)}
+                        className="flex items-center justify-center gap-2 w-full bg-[#E2852B] text-white px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-[#c97524] transition-colors"
+                      >
+                        <MessageCircle size={15} />
+                        Enquire via WhatsApp
+                      </a>
+                      <p className="text-white/40 text-xs mt-4 text-center">We reply within 24 hours</p>
+                    </div>
+
+                    {/* Inclusions Card */}
+                    {currentPkg?.inclusions?.length > 0 && (
+                      <div className="border border-gray-200 bg-white p-7">
+                        <p className="text-[#D4A373] text-[10px] tracking-widest uppercase font-semibold mb-5">What's included</p>
+                        <ul className="space-y-3">
+                          {currentPkg.inclusions.map((inc, i) => (
+                            <li key={i} className="flex items-start gap-3">
+                              <CheckCircle2 size={14} className="flex-shrink-0 mt-0.5 text-emerald-600" />
+                              <span className="text-sm text-gray-700 leading-relaxed">{inc}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {/* Other packages link */}
+                    {packages.length > 1 && (
+                      <div className="border border-gray-200 bg-white p-6">
+                        <p className="text-[10px] text-gray-500 uppercase tracking-widest font-semibold mb-4">All Circuits & Durations</p>
+                        <div className="space-y-2">
+                          {packages.map((pkg, i) => {
+                            const slug = getPackageSlug(pkg, resolvedDest, i);
+                            const isSelected = selectedPkg === i;
+                            const shortDur = extractDurationShort(pkg.duration) || pkg.duration || `Package ${i + 1}`;
+                            return (
+                              <Link
+                                key={pkg.id || i}
+                                to={`/itinerary/${resolvedDest}/${slug}`}
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  handleSelectPackage(i);
+                                }}
+                                className={`w-full text-left px-4 py-2.5 text-sm flex items-center justify-between transition-colors ${
+                                  isSelected
+                                    ? 'bg-[#D4A373]/10 text-[#b8864e] font-semibold border-l-2 border-[#D4A373]'
+                                    : 'text-gray-600 hover:bg-gray-50'
+                                }`}
+                              >
+                                <span>{shortDur}</span>
+                                <span className="text-xs text-gray-400">{pkg.days?.length || 0}d</span>
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+              </div>
+            </motion.div>
+          )}
         </AnimatePresence>
       </div>
 

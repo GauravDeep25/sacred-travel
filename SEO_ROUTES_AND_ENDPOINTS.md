@@ -46,14 +46,23 @@
 ### Spiritual Routes
 | Route Path | Full Production URL | HTTP Method | Circuits | Type |
 | :--- | :--- | :---: | :---: | :--- |
-| `/itinerary/uttarakhand` | `https://www.yugatirtha.com/itinerary/uttarakhand` | GET | 4 circuits | Dynamic Route |
-| `/itinerary/uttarpradesh` | `https://www.yugatirtha.com/itinerary/uttarpradesh` | GET | 3 circuits | Dynamic Route |
-| `/itinerary/madhyapradesh` | `https://www.yugatirtha.com/itinerary/madhyapradesh` | GET | 2 circuits | Dynamic Route |
-| `/itinerary/maharashtra` | `https://www.yugatirtha.com/itinerary/maharashtra` | GET | 3 circuits | Dynamic Route |
-| `/itinerary/gujarat` | `https://www.yugatirtha.com/itinerary/gujarat` | GET | 1 circuits | Dynamic Route |
-| `/itinerary/odisha` | `https://www.yugatirtha.com/itinerary/odisha` | GET | 2 circuits | Dynamic Route |
-| `/itinerary/tamilnadu` | `https://www.yugatirtha.com/itinerary/tamilnadu` | GET | 2 circuits | Dynamic Route |
-| `/itinerary/andhrapradesh` | `https://www.yugatirtha.com/itinerary/andhrapradesh` | GET | 3 circuits | Dynamic Route |
+| `/itinerary/adi-kailash` | `https://www.yugatirtha.com/itinerary/adi-kailash` | GET | 1 circuits | Dynamic Route |
+| `/itinerary/badrinath` | `https://www.yugatirtha.com/itinerary/badrinath` | GET | 1 circuits | Dynamic Route |
+| `/itinerary/do-dham` | `https://www.yugatirtha.com/itinerary/do-dham` | GET | 1 circuits | Dynamic Route |
+| `/itinerary/char-dham` | `https://www.yugatirtha.com/itinerary/char-dham` | GET | 1 circuits | Dynamic Route |
+| `/itinerary/kainchi-dham` | `https://www.yugatirtha.com/itinerary/kainchi-dham` | GET | 1 circuits | Dynamic Route |
+| `/itinerary/kashi` | `https://www.yugatirtha.com/itinerary/kashi` | GET | 3 circuits | Dynamic Route |
+| `/itinerary/ujjain` | `https://www.yugatirtha.com/itinerary/ujjain` | GET | 2 circuits | Dynamic Route |
+| `/itinerary/maharashtra-jyotirling` | `https://www.yugatirtha.com/itinerary/maharashtra-jyotirling` | GET | 3 circuits | Dynamic Route |
+| `/itinerary/somnath-dwarka` | `https://www.yugatirtha.com/itinerary/somnath-dwarka` | GET | 1 circuits | Dynamic Route |
+| `/itinerary/puri` | `https://www.yugatirtha.com/itinerary/puri` | GET | 2 circuits | Dynamic Route |
+| `/itinerary/rameswaram` | `https://www.yugatirtha.com/itinerary/rameswaram` | GET | 1 circuits | Dynamic Route |
+| `/itinerary/pancha-bhoota` | `https://www.yugatirtha.com/itinerary/pancha-bhoota` | GET | 1 circuits | Dynamic Route |
+| `/itinerary/madurai-rameshwaram` | `https://www.yugatirtha.com/itinerary/madurai-rameshwaram` | GET | 1 circuits | Dynamic Route |
+| `/itinerary/mallikarjun` | `https://www.yugatirtha.com/itinerary/mallikarjun` | GET | 1 circuits | Dynamic Route |
+| `/itinerary/tirupati` | `https://www.yugatirtha.com/itinerary/tirupati` | GET | 2 circuits | Dynamic Route |
+| `/itinerary/khatu-shyam` | `https://www.yugatirtha.com/itinerary/khatu-shyam` | GET | 1 circuits | Dynamic Route |
+| `/itinerary/baidyanath` | `https://www.yugatirtha.com/itinerary/baidyanath` | GET | 1 circuits | Dynamic Route |
 
 ### Preview Route
 | Route Path | Full Production URL | HTTP Method | Type |
@@ -115,26 +124,30 @@
 
 | Destination | Circuit / Duration | Sub-Itinerary Path | Full Canonical URL | Days | API JSON Endpoint |
 | :--- | :--- | :--- | :--- | :---: | :--- |
-| Uttarakhand | **5N/6D** (Do Dham 5N/6D) | `/itinerary/uttarakhand/do-dham-5n-6d` | `https://www.yugatirtha.com/itinerary/uttarakhand/do-dham-5n-6d` | 6 Days | `/api/itineraries/uttarakhand/do-dham-5n-6d.json` |
-| Uttarakhand | **9N/10D** (Char Dham 9N/10D) | `/itinerary/uttarakhand/char-dham-9n-10d` | `https://www.yugatirtha.com/itinerary/uttarakhand/char-dham-9n-10d` | 10 Days | `/api/itineraries/uttarakhand/char-dham-9n-10d.json` |
-| Uttarakhand | **2N/3D** (Kainchi Dham 2N/3D) | `/itinerary/uttarakhand/kainchi-dham-2n-3d` | `https://www.yugatirtha.com/itinerary/uttarakhand/kainchi-dham-2n-3d` | 3 Days | `/api/itineraries/uttarakhand/kainchi-dham-2n-3d.json` |
-| Uttarakhand | **4N/5D** (Badrinath 4N/5D) | `/itinerary/uttarakhand/badrinath-4n-5d` | `https://www.yugatirtha.com/itinerary/uttarakhand/badrinath-4n-5d` | 5 Days | `/api/itineraries/uttarakhand/badrinath-4n-5d.json` |
-| Uttar Pradesh | **4N/5D** (Varanasi - Ayodhya 4N/5D) | `/itinerary/uttarpradesh/varanasi-ayodhya-4n-5d` | `https://www.yugatirtha.com/itinerary/uttarpradesh/varanasi-ayodhya-4n-5d` | 5 Days | `/api/itineraries/uttarpradesh/varanasi-ayodhya-4n-5d.json` |
-| Uttar Pradesh | **2N/3D** (Kashi 2N/3D) | `/itinerary/uttarpradesh/kashi-2n-3d` | `https://www.yugatirtha.com/itinerary/uttarpradesh/kashi-2n-3d` | 3 Days | `/api/itineraries/uttarpradesh/kashi-2n-3d.json` |
-| Uttar Pradesh | **4N/5D** (Kashi-Prayagraj-Ayodhya 4N/5D) | `/itinerary/uttarpradesh/kashi-prayagraj-ayodhya-4n-5d` | `https://www.yugatirtha.com/itinerary/uttarpradesh/kashi-prayagraj-ayodhya-4n-5d` | 5 Days | `/api/itineraries/uttarpradesh/kashi-prayagraj-ayodhya-4n-5d.json` |
-| Madhya Pradesh | **2N/3D** (Bhasma Aarti Special 2N/3D) | `/itinerary/madhyapradesh/bhasma-aarti-2n-3d` | `https://www.yugatirtha.com/itinerary/madhyapradesh/bhasma-aarti-2n-3d` | 3 Days | `/api/itineraries/madhyapradesh/bhasma-aarti-2n-3d.json` |
-| Madhya Pradesh | **2N/3D** (VIP Passes 2N/3D) | `/itinerary/madhyapradesh/vip-passes-2n-3d` | `https://www.yugatirtha.com/itinerary/madhyapradesh/vip-passes-2n-3d` | 3 Days | `/api/itineraries/madhyapradesh/vip-passes-2n-3d.json` |
-| Maharashtra | **2N/3D** (Maharashtra Jyotirling Pune 2N/3D) | `/itinerary/maharashtra/pune-jyotirling-2n-3d` | `https://www.yugatirtha.com/itinerary/maharashtra/pune-jyotirling-2n-3d` | 3 Days | `/api/itineraries/maharashtra/pune-jyotirling-2n-3d.json` |
-| Maharashtra | **3N/4D** (Maharashtra Jyotirling Pune 3N/4D) | `/itinerary/maharashtra/pune-jyotirling-3n-4d` | `https://www.yugatirtha.com/itinerary/maharashtra/pune-jyotirling-3n-4d` | 4 Days | `/api/itineraries/maharashtra/pune-jyotirling-3n-4d.json` |
-| Maharashtra | **3N/4D** (Maharashtra Jyotirling Mumbai 3N/4D) | `/itinerary/maharashtra/mumbai-jyotirling-3n-4d` | `https://www.yugatirtha.com/itinerary/maharashtra/mumbai-jyotirling-3n-4d` | 4 Days | `/api/itineraries/maharashtra/mumbai-jyotirling-3n-4d.json` |
-| Gujarat | **3N/4D** (Gujarat Jyotirling 3N/4D) | `/itinerary/gujarat/3n-4d` | `https://www.yugatirtha.com/itinerary/gujarat/3n-4d` | 4 Days | `/api/itineraries/gujarat/3n-4d.json` |
-| Odisha | **4N/5D** (Puri Dham 4N/5D) | `/itinerary/odisha/puri-dham-4n-5d` | `https://www.yugatirtha.com/itinerary/odisha/puri-dham-4n-5d` | 5 Days | `/api/itineraries/odisha/puri-dham-4n-5d.json` |
-| Odisha | **3N/4D** (Puri Konark 3N/4D) | `/itinerary/odisha/puri-konark-3n-4d` | `https://www.yugatirtha.com/itinerary/odisha/puri-konark-3n-4d` | 4 Days | `/api/itineraries/odisha/puri-konark-3n-4d.json` |
-| Tamil Nadu | **4N/5D** (Rameswaram 4N/5D) | `/itinerary/tamilnadu/rameswaram-4n-5d` | `https://www.yugatirtha.com/itinerary/tamilnadu/rameswaram-4n-5d` | 5 Days | `/api/itineraries/tamilnadu/rameswaram-4n-5d.json` |
-| Tamil Nadu | **6N/7D** (Pancha Bhoota Stalam 6N/7D) | `/itinerary/tamilnadu/pancha-bhoota-stalam-6n-7d` | `https://www.yugatirtha.com/itinerary/tamilnadu/pancha-bhoota-stalam-6n-7d` | 7 Days | `/api/itineraries/tamilnadu/pancha-bhoota-stalam-6n-7d.json` |
-| Andhra Pradesh | **3N/4D** (Mallikarjun Jyotirling 3N/4D) | `/itinerary/andhrapradesh/mallikarjun-jyotirling-3n-4d` | `https://www.yugatirtha.com/itinerary/andhrapradesh/mallikarjun-jyotirling-3n-4d` | 4 Days | `/api/itineraries/andhrapradesh/mallikarjun-jyotirling-3n-4d.json` |
-| Andhra Pradesh | **2N/3D** (Tirupati 2N/3D) | `/itinerary/andhrapradesh/tirupati-2n-3d` | `https://www.yugatirtha.com/itinerary/andhrapradesh/tirupati-2n-3d` | 3 Days | `/api/itineraries/andhrapradesh/tirupati-2n-3d.json` |
-| Andhra Pradesh | **2N/3D** (Tirupati with Kalahasti 2N/3D) | `/itinerary/andhrapradesh/tirupati-kalahasti-2n-3d` | `https://www.yugatirtha.com/itinerary/andhrapradesh/tirupati-kalahasti-2n-3d` | 3 Days | `/api/itineraries/andhrapradesh/tirupati-kalahasti-2n-3d.json` |
+| Adi Kailash | **7N/8D** (Adi Kailash & Om Parvat Yatra 7N/8D) | `/itinerary/adi-kailash/7n-8d` | `https://www.yugatirtha.com/itinerary/adi-kailash/7n-8d` | 8 Days | `/api/itineraries/adi-kailash/7n-8d.json` |
+| Badrinath | **4N/5D** (Badrinath 4N/5D) | `/itinerary/badrinath/4n-5d` | `https://www.yugatirtha.com/itinerary/badrinath/4n-5d` | 5 Days | `/api/itineraries/badrinath/4n-5d.json` |
+| Do Dham | **5N/6D** (Do Dham 5N/6D) | `/itinerary/do-dham/5n-6d` | `https://www.yugatirtha.com/itinerary/do-dham/5n-6d` | 6 Days | `/api/itineraries/do-dham/5n-6d.json` |
+| Char Dham | **9N/10D** (Char Dham 9N/10D) | `/itinerary/char-dham/9n-10d` | `https://www.yugatirtha.com/itinerary/char-dham/9n-10d` | 10 Days | `/api/itineraries/char-dham/9n-10d.json` |
+| Kainchi Dham | **2N/3D** (Kainchi Dham 2N/3D) | `/itinerary/kainchi-dham/2n-3d` | `https://www.yugatirtha.com/itinerary/kainchi-dham/2n-3d` | 3 Days | `/api/itineraries/kainchi-dham/2n-3d.json` |
+| Kashi | **4N/5D** (Varanasi - Ayodhya 4N/5D) | `/itinerary/kashi/4n-5d` | `https://www.yugatirtha.com/itinerary/kashi/4n-5d` | 5 Days | `/api/itineraries/kashi/4n-5d.json` |
+| Kashi | **2N/3D** (Kashi 2N/3D) | `/itinerary/kashi/2n-3d` | `https://www.yugatirtha.com/itinerary/kashi/2n-3d` | 3 Days | `/api/itineraries/kashi/2n-3d.json` |
+| Kashi | **4N/5D** (Kashi-Prayagraj-Ayodhya 4N/5D) | `/itinerary/kashi/4n-5d-sangam` | `https://www.yugatirtha.com/itinerary/kashi/4n-5d-sangam` | 5 Days | `/api/itineraries/kashi/4n-5d-sangam.json` |
+| Ujjain & Omkareshwar | **2N/3D** (Bhasma Aarti Special 2N/3D) | `/itinerary/ujjain/2n-3d` | `https://www.yugatirtha.com/itinerary/ujjain/2n-3d` | 3 Days | `/api/itineraries/ujjain/2n-3d.json` |
+| Ujjain & Omkareshwar | **2N/3D** (VIP Passes 2N/3D) | `/itinerary/ujjain/2n-3d-vip` | `https://www.yugatirtha.com/itinerary/ujjain/2n-3d-vip` | 3 Days | `/api/itineraries/ujjain/2n-3d-vip.json` |
+| Maharashtra Jyotirlinga | **2N/3D** (Maharashtra Jyotirling Pune 2N/3D) | `/itinerary/maharashtra-jyotirling/2n-3d` | `https://www.yugatirtha.com/itinerary/maharashtra-jyotirling/2n-3d` | 3 Days | `/api/itineraries/maharashtra-jyotirling/2n-3d.json` |
+| Maharashtra Jyotirlinga | **3N/4D** (Maharashtra Jyotirling Pune 3N/4D) | `/itinerary/maharashtra-jyotirling/3n-4d` | `https://www.yugatirtha.com/itinerary/maharashtra-jyotirling/3n-4d` | 4 Days | `/api/itineraries/maharashtra-jyotirling/3n-4d.json` |
+| Maharashtra Jyotirlinga | **3N/4D** (Maharashtra Jyotirling Mumbai 3N/4D) | `/itinerary/maharashtra-jyotirling/3n-4d-mumbai` | `https://www.yugatirtha.com/itinerary/maharashtra-jyotirling/3n-4d-mumbai` | 4 Days | `/api/itineraries/maharashtra-jyotirling/3n-4d-mumbai.json` |
+| Somnath & Dwarka | **3N/4D** (Gujarat Jyotirling 3N/4D) | `/itinerary/somnath-dwarka/3n-4d` | `https://www.yugatirtha.com/itinerary/somnath-dwarka/3n-4d` | 4 Days | `/api/itineraries/somnath-dwarka/3n-4d.json` |
+| Puri Jagannath Dham | **4N/5D** (Puri Dham 4N/5D) | `/itinerary/puri/4n-5d` | `https://www.yugatirtha.com/itinerary/puri/4n-5d` | 5 Days | `/api/itineraries/puri/4n-5d.json` |
+| Puri Jagannath Dham | **3N/4D** (Puri Konark 3N/4D) | `/itinerary/puri/3n-4d` | `https://www.yugatirtha.com/itinerary/puri/3n-4d` | 4 Days | `/api/itineraries/puri/3n-4d.json` |
+| Rameswaram | **4N/5D** (Rameswaram 4N/5D) | `/itinerary/rameswaram/4n-5d` | `https://www.yugatirtha.com/itinerary/rameswaram/4n-5d` | 5 Days | `/api/itineraries/rameswaram/4n-5d.json` |
+| Pancha Bhoota Stalam | **6N/7D** (Pancha Bhoota Stalam 6N/7D) | `/itinerary/pancha-bhoota/6n-7d` | `https://www.yugatirtha.com/itinerary/pancha-bhoota/6n-7d` | 7 Days | `/api/itineraries/pancha-bhoota/6n-7d.json` |
+| Madurai & Rameshwaram | **2N/3D** (Madurai - Rameshwaram 2N/3D) | `/itinerary/madurai-rameshwaram/2n-3d` | `https://www.yugatirtha.com/itinerary/madurai-rameshwaram/2n-3d` | 3 Days | `/api/itineraries/madurai-rameshwaram/2n-3d.json` |
+| Mallikarjun Jyotirling | **3N/4D** (Mallikarjun Jyotirling 3N/4D) | `/itinerary/mallikarjun/3n-4d` | `https://www.yugatirtha.com/itinerary/mallikarjun/3n-4d` | 4 Days | `/api/itineraries/mallikarjun/3n-4d.json` |
+| Tirupati Balaji | **2N/3D** (Tirupati 2N/3D) | `/itinerary/tirupati/2n-3d` | `https://www.yugatirtha.com/itinerary/tirupati/2n-3d` | 3 Days | `/api/itineraries/tirupati/2n-3d.json` |
+| Tirupati Balaji | **2N/3D** (Tirupati with Kalahasti 2N/3D) | `/itinerary/tirupati/2n-3d-kalahasti` | `https://www.yugatirtha.com/itinerary/tirupati/2n-3d-kalahasti` | 3 Days | `/api/itineraries/tirupati/2n-3d-kalahasti.json` |
+| Khatu Shyam Ji | **2N/3D** (Khatu Shyam Ji - Salasar Balaji - Jaipur 2N/3D) | `/itinerary/khatu-shyam/2n-3d` | `https://www.yugatirtha.com/itinerary/khatu-shyam/2n-3d` | 3 Days | `/api/itineraries/khatu-shyam/2n-3d.json` |
+| Baidyanath Jyotirlinga | **2N/3D** (Baidyanath Jyotirlinga Yatra 2N/3D) | `/itinerary/baidyanath/2n-3d` | `https://www.yugatirtha.com/itinerary/baidyanath/2n-3d` | 3 Days | `/api/itineraries/baidyanath/2n-3d.json` |
 
 ---
 
@@ -158,14 +171,23 @@
 | `/api/itineraries/philippines.json` | `https://www.yugatirtha.com/api/itineraries/philippines.json` | GET | All packages for Philippines |
 | `/api/itineraries/georgia.json` | `https://www.yugatirtha.com/api/itineraries/georgia.json` | GET | All packages for Georgia |
 | `/api/itineraries/vietnam.json` | `https://www.yugatirtha.com/api/itineraries/vietnam.json` | GET | All packages for Vietnam |
-| `/api/itineraries/uttarakhand.json` | `https://www.yugatirtha.com/api/itineraries/uttarakhand.json` | GET | All packages for Uttarakhand |
-| `/api/itineraries/uttarpradesh.json` | `https://www.yugatirtha.com/api/itineraries/uttarpradesh.json` | GET | All packages for Uttar Pradesh |
-| `/api/itineraries/madhyapradesh.json` | `https://www.yugatirtha.com/api/itineraries/madhyapradesh.json` | GET | All packages for Madhya Pradesh |
-| `/api/itineraries/maharashtra.json` | `https://www.yugatirtha.com/api/itineraries/maharashtra.json` | GET | All packages for Maharashtra |
-| `/api/itineraries/gujarat.json` | `https://www.yugatirtha.com/api/itineraries/gujarat.json` | GET | All packages for Gujarat |
-| `/api/itineraries/odisha.json` | `https://www.yugatirtha.com/api/itineraries/odisha.json` | GET | All packages for Odisha |
-| `/api/itineraries/tamilnadu.json` | `https://www.yugatirtha.com/api/itineraries/tamilnadu.json` | GET | All packages for Tamil Nadu |
-| `/api/itineraries/andhrapradesh.json` | `https://www.yugatirtha.com/api/itineraries/andhrapradesh.json` | GET | All packages for Andhra Pradesh |
+| `/api/itineraries/adi-kailash.json` | `https://www.yugatirtha.com/api/itineraries/adi-kailash.json` | GET | All packages for Adi Kailash |
+| `/api/itineraries/badrinath.json` | `https://www.yugatirtha.com/api/itineraries/badrinath.json` | GET | All packages for Badrinath |
+| `/api/itineraries/do-dham.json` | `https://www.yugatirtha.com/api/itineraries/do-dham.json` | GET | All packages for Do Dham |
+| `/api/itineraries/char-dham.json` | `https://www.yugatirtha.com/api/itineraries/char-dham.json` | GET | All packages for Char Dham |
+| `/api/itineraries/kainchi-dham.json` | `https://www.yugatirtha.com/api/itineraries/kainchi-dham.json` | GET | All packages for Kainchi Dham |
+| `/api/itineraries/kashi.json` | `https://www.yugatirtha.com/api/itineraries/kashi.json` | GET | All packages for Kashi |
+| `/api/itineraries/ujjain.json` | `https://www.yugatirtha.com/api/itineraries/ujjain.json` | GET | All packages for Ujjain & Omkareshwar |
+| `/api/itineraries/maharashtra-jyotirling.json` | `https://www.yugatirtha.com/api/itineraries/maharashtra-jyotirling.json` | GET | All packages for Maharashtra Jyotirlinga |
+| `/api/itineraries/somnath-dwarka.json` | `https://www.yugatirtha.com/api/itineraries/somnath-dwarka.json` | GET | All packages for Somnath & Dwarka |
+| `/api/itineraries/puri.json` | `https://www.yugatirtha.com/api/itineraries/puri.json` | GET | All packages for Puri Jagannath Dham |
+| `/api/itineraries/rameswaram.json` | `https://www.yugatirtha.com/api/itineraries/rameswaram.json` | GET | All packages for Rameswaram |
+| `/api/itineraries/pancha-bhoota.json` | `https://www.yugatirtha.com/api/itineraries/pancha-bhoota.json` | GET | All packages for Pancha Bhoota Stalam |
+| `/api/itineraries/madurai-rameshwaram.json` | `https://www.yugatirtha.com/api/itineraries/madurai-rameshwaram.json` | GET | All packages for Madurai & Rameshwaram |
+| `/api/itineraries/mallikarjun.json` | `https://www.yugatirtha.com/api/itineraries/mallikarjun.json` | GET | All packages for Mallikarjun Jyotirling |
+| `/api/itineraries/tirupati.json` | `https://www.yugatirtha.com/api/itineraries/tirupati.json` | GET | All packages for Tirupati Balaji |
+| `/api/itineraries/khatu-shyam.json` | `https://www.yugatirtha.com/api/itineraries/khatu-shyam.json` | GET | All packages for Khatu Shyam Ji |
+| `/api/itineraries/baidyanath.json` | `https://www.yugatirtha.com/api/itineraries/baidyanath.json` | GET | All packages for Baidyanath Jyotirlinga |
 
 > **Note:** Every sub-itinerary also has an individual JSON endpoint, e.g. `https://www.yugatirtha.com/api/itineraries/kashmir/4n-5d.json`.
 

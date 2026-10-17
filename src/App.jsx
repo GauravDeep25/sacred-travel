@@ -46,6 +46,7 @@ export default function App() {
           <Route path="/itinerary/:destination/:subItinerary" element={<ItineraryDetail />} />
           <Route path="/itenary/:destination" element={<ItineraryDetail />} />
           <Route path="/itenary/:destination/:subItinerary" element={<ItineraryDetail />} />
+          <Route path="/:destination/:subItinerary" element={<ItineraryDetail />} />
           <Route path="/itinerary" element={<Navigate to="/domestic" replace />} />
           <Route path="/itenary" element={<Navigate to="/domestic" replace />} />
           <Route path="/itineraries" element={<Navigate to="/domestic" replace />} />

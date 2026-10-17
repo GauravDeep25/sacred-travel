@@ -1,0 +1,68 @@
+{
+  "destination": "baidyanath",
+  "displayName": "Baidyanath Jyotirlinga",
+  "category": "Spiritual",
+  "region": "East India",
+  "pagePath": "/itinerary/baidyanath",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/baidyanath",
+  "packagesCount": 1,
+  "packages": [
+    {
+      "destination": "baidyanath",
+      "destinationDisplayName": "Baidyanath Jyotirlinga",
+      "category": "Spiritual",
+      "region": "East India",
+      "packageId": "jharkhand-1",
+      "packageTitle": "Baidyanath Jyotirlinga Yatra - Deoghar",
+      "duration": "Baidyanath Jyotirlinga Yatra 2N/3D",
+      "durationShort": "2N/3D",
+      "slug": "2n-3d",
+      "pagePath": "/itinerary/baidyanath/2n-3d",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/baidyanath/2n-3d",
+      "apiEndpoint": "/api/itineraries/baidyanath/2n-3d.json",
+      "image": "/assets/aarti-Cr2kuE6b.jpg",
+      "inclusions": [
+        "2 nights' accommodation in comfortable hotels.",
+        "Daily vegetarian breakfast and dinner.",
+        "Pickup and drop-off from Deoghar Airport or Jasidih Railway Station.",
+        "Private air-conditioned vehicle for transfers and sightseeing.",
+        "Local transfers for temple visits and sightseeing as per the itinerary.",
+        "Assistance and ground coordination for temple visits.",
+        "Hotel accommodation and meals as mentioned in the package."
+      ],
+      "days": [
+        {
+          "title": "Day 1 - Arrival in Deoghar",
+          "activities": [
+            "Pickup from Deoghar Airport or Jasidih Railway Station.",
+            "Transfer to the hotel and complete check-in.",
+            "Enjoy welcome refreshments and relax after the journey.",
+            "In the evening, explore the local markets at your own pace.",
+            "Dinner and overnight stay in Deoghar."
+          ]
+        },
+        {
+          "title": "Day 2 - Baidyanath Jyotirlinga Darshan & Local Experiences",
+          "activities": [
+            "Early morning visit to Baba Baidyanath Dham for darshan and prayers.",
+            "Visit the Shakti Peeth shrine within the temple complex.",
+            "Explore the temple surroundings and experience the spiritual atmosphere of Deoghar.",
+            "Visit a local shop to see the traditional preparation of Deoghar's famous peda sweets.",
+            "Attend the evening Aarti, subject to temple timings and arrangements.",
+            "Dinner and overnight stay in Deoghar."
+          ]
+        },
+        {
+          "title": "Day 3 - Final Darshan & Departure",
+          "activities": [
+            "Breakfast at the hotel.",
+            "Enjoy an optional second darshan or some last-minute souvenir shopping, depending on departure timings.",
+            "Check out from the hotel.",
+            "Transfer to Deoghar Airport or Jasidih Railway Station for your onward journey."
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Baidyanath%20Jyotirlinga%20Baidyanath%20Jyotirlinga%20Yatra%202N%2F3D%20package"
+    }
+  ]
+}

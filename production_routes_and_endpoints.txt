@@ -72,36 +72,49 @@ https://www.yugatirtha.com/itinerary/vietnam/6n-7d # Vietnam 6N/7D
 https://www.yugatirtha.com/itinerary/vietnam/7n-8d # Vietnam 7N/8D
 
 # --- Spiritual Destination Primary Routes (GET) ---
-https://www.yugatirtha.com/itinerary/uttarakhand
-https://www.yugatirtha.com/itinerary/uttarpradesh
-https://www.yugatirtha.com/itinerary/madhyapradesh
-https://www.yugatirtha.com/itinerary/maharashtra
-https://www.yugatirtha.com/itinerary/gujarat
-https://www.yugatirtha.com/itinerary/odisha
-https://www.yugatirtha.com/itinerary/tamilnadu
-https://www.yugatirtha.com/itinerary/andhrapradesh
+https://www.yugatirtha.com/itinerary/adi-kailash
+https://www.yugatirtha.com/itinerary/badrinath
+https://www.yugatirtha.com/itinerary/do-dham
+https://www.yugatirtha.com/itinerary/char-dham
+https://www.yugatirtha.com/itinerary/kainchi-dham
+https://www.yugatirtha.com/itinerary/kashi
+https://www.yugatirtha.com/itinerary/ujjain
+https://www.yugatirtha.com/itinerary/maharashtra-jyotirling
+https://www.yugatirtha.com/itinerary/somnath-dwarka
+https://www.yugatirtha.com/itinerary/puri
+https://www.yugatirtha.com/itinerary/rameswaram
+https://www.yugatirtha.com/itinerary/pancha-bhoota
+https://www.yugatirtha.com/itinerary/madurai-rameshwaram
+https://www.yugatirtha.com/itinerary/mallikarjun
+https://www.yugatirtha.com/itinerary/tirupati
+https://www.yugatirtha.com/itinerary/khatu-shyam
+https://www.yugatirtha.com/itinerary/baidyanath
 
 # --- Spiritual Sub-Itinerary Endpoints (GET) ---
-https://www.yugatirtha.com/itinerary/uttarakhand/do-dham-5n-6d # Do Dham 5N/6D
-https://www.yugatirtha.com/itinerary/uttarakhand/char-dham-9n-10d # Char Dham 9N/10D
-https://www.yugatirtha.com/itinerary/uttarakhand/kainchi-dham-2n-3d # Kainchi Dham 2N/3D
-https://www.yugatirtha.com/itinerary/uttarakhand/badrinath-4n-5d # Badrinath 4N/5D
-https://www.yugatirtha.com/itinerary/uttarpradesh/varanasi-ayodhya-4n-5d # Varanasi - Ayodhya 4N/5D
-https://www.yugatirtha.com/itinerary/uttarpradesh/kashi-2n-3d # Kashi 2N/3D
-https://www.yugatirtha.com/itinerary/uttarpradesh/kashi-prayagraj-ayodhya-4n-5d # Kashi-Prayagraj-Ayodhya 4N/5D
-https://www.yugatirtha.com/itinerary/madhyapradesh/bhasma-aarti-2n-3d # Bhasma Aarti Special 2N/3D
-https://www.yugatirtha.com/itinerary/madhyapradesh/vip-passes-2n-3d # VIP Passes 2N/3D
-https://www.yugatirtha.com/itinerary/maharashtra/pune-jyotirling-2n-3d # Maharashtra Jyotirling Pune 2N/3D
-https://www.yugatirtha.com/itinerary/maharashtra/pune-jyotirling-3n-4d # Maharashtra Jyotirling Pune 3N/4D
-https://www.yugatirtha.com/itinerary/maharashtra/mumbai-jyotirling-3n-4d # Maharashtra Jyotirling Mumbai 3N/4D
-https://www.yugatirtha.com/itinerary/gujarat/3n-4d # Gujarat Jyotirling 3N/4D
-https://www.yugatirtha.com/itinerary/odisha/puri-dham-4n-5d # Puri Dham 4N/5D
-https://www.yugatirtha.com/itinerary/odisha/puri-konark-3n-4d # Puri Konark 3N/4D
-https://www.yugatirtha.com/itinerary/tamilnadu/rameswaram-4n-5d # Rameswaram 4N/5D
-https://www.yugatirtha.com/itinerary/tamilnadu/pancha-bhoota-stalam-6n-7d # Pancha Bhoota Stalam 6N/7D
-https://www.yugatirtha.com/itinerary/andhrapradesh/mallikarjun-jyotirling-3n-4d # Mallikarjun Jyotirling 3N/4D
-https://www.yugatirtha.com/itinerary/andhrapradesh/tirupati-2n-3d # Tirupati 2N/3D
-https://www.yugatirtha.com/itinerary/andhrapradesh/tirupati-kalahasti-2n-3d # Tirupati with Kalahasti 2N/3D
+https://www.yugatirtha.com/itinerary/adi-kailash/7n-8d # Adi Kailash & Om Parvat Yatra 7N/8D
+https://www.yugatirtha.com/itinerary/badrinath/4n-5d # Badrinath 4N/5D
+https://www.yugatirtha.com/itinerary/do-dham/5n-6d # Do Dham 5N/6D
+https://www.yugatirtha.com/itinerary/char-dham/9n-10d # Char Dham 9N/10D
+https://www.yugatirtha.com/itinerary/kainchi-dham/2n-3d # Kainchi Dham 2N/3D
+https://www.yugatirtha.com/itinerary/kashi/4n-5d # Varanasi - Ayodhya 4N/5D
+https://www.yugatirtha.com/itinerary/kashi/2n-3d # Kashi 2N/3D
+https://www.yugatirtha.com/itinerary/kashi/4n-5d-sangam # Kashi-Prayagraj-Ayodhya 4N/5D
+https://www.yugatirtha.com/itinerary/ujjain/2n-3d # Bhasma Aarti Special 2N/3D
+https://www.yugatirtha.com/itinerary/ujjain/2n-3d-vip # VIP Passes 2N/3D
+https://www.yugatirtha.com/itinerary/maharashtra-jyotirling/2n-3d # Maharashtra Jyotirling Pune 2N/3D
+https://www.yugatirtha.com/itinerary/maharashtra-jyotirling/3n-4d # Maharashtra Jyotirling Pune 3N/4D
+https://www.yugatirtha.com/itinerary/maharashtra-jyotirling/3n-4d-mumbai # Maharashtra Jyotirling Mumbai 3N/4D
+https://www.yugatirtha.com/itinerary/somnath-dwarka/3n-4d # Gujarat Jyotirling 3N/4D
+https://www.yugatirtha.com/itinerary/puri/4n-5d # Puri Dham 4N/5D
+https://www.yugatirtha.com/itinerary/puri/3n-4d # Puri Konark 3N/4D
+https://www.yugatirtha.com/itinerary/rameswaram/4n-5d # Rameswaram 4N/5D
+https://www.yugatirtha.com/itinerary/pancha-bhoota/6n-7d # Pancha Bhoota Stalam 6N/7D
+https://www.yugatirtha.com/itinerary/madurai-rameshwaram/2n-3d # Madurai - Rameshwaram 2N/3D
+https://www.yugatirtha.com/itinerary/mallikarjun/3n-4d # Mallikarjun Jyotirling 3N/4D
+https://www.yugatirtha.com/itinerary/tirupati/2n-3d # Tirupati 2N/3D
+https://www.yugatirtha.com/itinerary/tirupati/2n-3d-kalahasti # Tirupati with Kalahasti 2N/3D
+https://www.yugatirtha.com/itinerary/khatu-shyam/2n-3d # Khatu Shyam Ji - Salasar Balaji - Jaipur 2N/3D
+https://www.yugatirtha.com/itinerary/baidyanath/2n-3d # Baidyanath Jyotirlinga Yatra 2N/3D
 
 # --- Preview Destination Routes (GET) ---
 https://www.yugatirtha.com/itinerary/kerala
@@ -123,14 +136,23 @@ https://www.yugatirtha.com/api/itineraries/srilanka.json
 https://www.yugatirtha.com/api/itineraries/philippines.json
 https://www.yugatirtha.com/api/itineraries/georgia.json
 https://www.yugatirtha.com/api/itineraries/vietnam.json
-https://www.yugatirtha.com/api/itineraries/uttarakhand.json
-https://www.yugatirtha.com/api/itineraries/uttarpradesh.json
-https://www.yugatirtha.com/api/itineraries/madhyapradesh.json
-https://www.yugatirtha.com/api/itineraries/maharashtra.json
-https://www.yugatirtha.com/api/itineraries/gujarat.json
-https://www.yugatirtha.com/api/itineraries/odisha.json
-https://www.yugatirtha.com/api/itineraries/tamilnadu.json
-https://www.yugatirtha.com/api/itineraries/andhrapradesh.json
+https://www.yugatirtha.com/api/itineraries/adi-kailash.json
+https://www.yugatirtha.com/api/itineraries/badrinath.json
+https://www.yugatirtha.com/api/itineraries/do-dham.json
+https://www.yugatirtha.com/api/itineraries/char-dham.json
+https://www.yugatirtha.com/api/itineraries/kainchi-dham.json
+https://www.yugatirtha.com/api/itineraries/kashi.json
+https://www.yugatirtha.com/api/itineraries/ujjain.json
+https://www.yugatirtha.com/api/itineraries/maharashtra-jyotirling.json
+https://www.yugatirtha.com/api/itineraries/somnath-dwarka.json
+https://www.yugatirtha.com/api/itineraries/puri.json
+https://www.yugatirtha.com/api/itineraries/rameswaram.json
+https://www.yugatirtha.com/api/itineraries/pancha-bhoota.json
+https://www.yugatirtha.com/api/itineraries/madurai-rameshwaram.json
+https://www.yugatirtha.com/api/itineraries/mallikarjun.json
+https://www.yugatirtha.com/api/itineraries/tirupati.json
+https://www.yugatirtha.com/api/itineraries/khatu-shyam.json
+https://www.yugatirtha.com/api/itineraries/baidyanath.json
 
 # --- Redirect & Alias Routes ---
 /enquiry -> /contact (200 OK)

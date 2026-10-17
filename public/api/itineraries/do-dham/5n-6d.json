@@ -1,0 +1,120 @@
+{
+  "destination": "do-dham",
+  "destinationDisplayName": "Do Dham",
+  "category": "Spiritual",
+  "region": "North India",
+  "packageId": "do-dham-1",
+  "packageTitle": "Do Dham",
+  "duration": "Do Dham 5N/6D",
+  "durationShort": "5N/6D",
+  "slug": "5n-6d",
+  "pagePath": "/itinerary/do-dham/5n-6d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/do-dham/5n-6d",
+  "apiEndpoint": "/api/itineraries/do-dham/5n-6d.json",
+  "image": "/assets/spiritual-north-NuyL8ZKr.jpg",
+  "inclusions": [
+    "5 nights accommodation in selected category hotels",
+    "Daily breakfast and dinner.",
+    "Private vehicle for all transfers and sightseeing as per itinerary.",
+    "Haridwar pickup and drop.",
+    "Guptkashi–Gaurikund–Guptkashi transportation.",
+    "All applicable driver charges.",
+    "Fuel charges.",
+    "Toll taxes.",
+    "Parking charges.",
+    "Accommodation and meals as mentioned.",
+    "Assistance throughout the yatra."
+  ],
+  "days": [
+    {
+      "title": "Day 1 – Haridwar to Guptkashi",
+      "activities": [
+        "Early morning pickup from Haridwar.",
+        "Meet and greet with our representative.",
+        "Proceed towards Guptkashi.",
+        "Enjoy the scenic Himalayan journey through the Garhwal region.",
+        "En route, visit Devprayag, subject to time availability.",
+        "Continue towards Rudraprayag.",
+        "Proceed towards Guptkashi.",
+        "Arrive in Guptkashi and check in to the hotel.",
+        "Evening free for rest and preparation for the Kedarnath trek.",
+        "Overnight stay in Guptkashi."
+      ]
+    },
+    {
+      "title": "Day 2 – Guptkashi to Gaurikund – Trek to Kedarnath",
+      "activities": [
+        "Early morning breakfast.",
+        "Proceed from Guptkashi towards Gaurikund by vehicle.",
+        "Start the trek from Gaurikund to Kedarnath.",
+        "Trek through the scenic Himalayan landscape.",
+        "Reach Kedarnath Dham.",
+        "Check in at the pre-booked accommodation.",
+        "Rest and freshen up.",
+        "Visit Kedarnath Temple for darshan, subject to darshan timings.",
+        "Attend evening Aarti, subject to temple schedule.",
+        "Spend the evening in the spiritual atmosphere of Kedarnath.",
+        "Overnight stay in Kedarnath."
+      ]
+    },
+    {
+      "title": "Day 3 – Kedarnath to Gaurikund – Guptkashi",
+      "activities": [
+        "Early morning darshan at Kedarnath Temple.",
+        "Return to the accommodation for breakfast.",
+        "Begin the trek from Kedarnath towards Gaurikund.",
+        "Arrive at Gaurikund.",
+        "Meet the vehicle and proceed towards Guptkashi.",
+        "Arrive in Guptkashi.",
+        "Check in to the hotel.",
+        "Evening free for rest and relaxation.",
+        "Overnight stay in Guptkashi."
+      ]
+    },
+    {
+      "title": "Day 4 – Guptkashi to Badrinath",
+      "activities": [
+        "Early morning breakfast.",
+        "Check out from the hotel.",
+        "Proceed towards Badrinath.",
+        "En route, enjoy the scenic Himalayan valleys.",
+        "Visit Joshimath, subject to time availability.",
+        "Arrive in Badrinath and check in to the hotel.",
+        "Visit Tapt Kund, subject to local conditions and temple guidelines.",
+        "Proceed for darshan at Shri Badrinath Temple.",
+        "Attend evening Aarti, subject to temple timings.",
+        "Return to the hotel.",
+        "Overnight stay in Badrinath."
+      ]
+    },
+    {
+      "title": "Day 5 – Badrinath to Rudraprayag",
+      "activities": [
+        "Early morning darshan at Badrinath Temple.",
+        "Return to the hotel for breakfast.",
+        "Check out from the hotel.",
+        "Visit Mana Village, subject to time and road conditions.",
+        "Visit Vyas Gufa and Ganesh Gufa, subject to time availability.",
+        "Proceed towards Rudraprayag.",
+        "En route, enjoy the scenic Himalayan landscapes.",
+        "Arrive in Rudraprayag and check in to the hotel.",
+        "Evening free for relaxation.",
+        "Overnight stay in Rudraprayag."
+      ]
+    },
+    {
+      "title": "Day 6 – Rudraprayag to Haridwar – Departure",
+      "activities": [
+        "Early morning breakfast.",
+        "Check out from the hotel.",
+        "Proceed towards Haridwar.",
+        "En route, visit Devprayag, subject to time availability.",
+        "Continue towards Haridwar.",
+        "Arrive in Haridwar.",
+        "Drop at Haridwar Railway Station/Bus Stand/Hotel for onward journey.",
+        "Tour concludes with divine blessings and memories of Kedarnath and Badrinath."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Do%20Dham%20Do%20Dham%205N%2F6D%20package"
+}

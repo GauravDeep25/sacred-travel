@@ -1,0 +1,150 @@
+{
+  "destination": "char-dham",
+  "displayName": "Char Dham",
+  "category": "Spiritual",
+  "region": "North India",
+  "pagePath": "/itinerary/char-dham",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/char-dham",
+  "packagesCount": 1,
+  "packages": [
+    {
+      "destination": "char-dham",
+      "destinationDisplayName": "Char Dham",
+      "category": "Spiritual",
+      "region": "North India",
+      "packageId": "char-dham-1",
+      "packageTitle": "Char Dham",
+      "duration": "Char Dham 9N/10D",
+      "durationShort": "9N/10D",
+      "slug": "9n-10d",
+      "pagePath": "/itinerary/char-dham/9n-10d",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/char-dham/9n-10d",
+      "apiEndpoint": "/api/itineraries/char-dham/9n-10d.json",
+      "image": "/assets/spiritual-north-NuyL8ZKr.jpg",
+      "inclusions": [
+        "9 nights accommodation in selected category hotels/camps.",
+        "Daily breakfast and dinner.",
+        "Private vehicle for all transfers and sightseeing as per itinerary.",
+        "Haridwar pickup and drop.",
+        "Barkot, Uttarkashi, Guptkashi, Kedarnath, Badrinath and Rudraprayag accommodation.",
+        "Transportation to Janki Chatti and Gaurikund.",
+        "Driver allowance, fuel, toll and parking charges.",
+        "All applicable transportation expenses as per itinerary.",
+        "Assistance throughout the yatra."
+      ],
+      "days": [
+        {
+          "title": "Day 1 – Haridwar to Barkot",
+          "activities": [
+            "Pickup from Haridwar and drive towards Barkot.",
+            "En route, enjoy the scenic Himalayan landscapes and visit Mussoorie/ Kempty Falls, subject to time availability.",
+            "Arrive in Barkot and check in to the hotel.",
+            "Evening at leisure and preparation for the Yamunotri Yatra.",
+            "Overnight stay in Barkot."
+          ]
+        },
+        {
+          "title": "Day 2 – Barkot – Yamunotri Temple – Barkot",
+          "activities": [
+            "Early morning drive to Janki Chatti.",
+            "Start the trek to Yamunotri Temple.",
+            "Visit Yamunotri Temple and offer prayers.",
+            "Return trek to Janki Chatti and drive back to Barkot.",
+            "Evening free for rest.",
+            "Overnight stay in Barkot."
+          ]
+        },
+        {
+          "title": "Day 3 – Barkot to Uttarkashi",
+          "activities": [
+            "Breakfast and check out.",
+            "Drive towards Uttarkashi.",
+            "En route enjoy the beautiful Himalayan valleys.",
+            "Visit Vishwanath Temple in Uttarkashi.",
+            "Check in to the hotel and relax.",
+            "Overnight stay in Uttarkashi."
+          ]
+        },
+        {
+          "title": "Day 4 – Uttarkashi – Gangotri Temple – Uttarkashi",
+          "activities": [
+            "Early morning drive towards Gangotri.",
+            "Visit Gangotri Temple and offer prayers.",
+            "Spend time around the sacred Bhagirathi River.",
+            "Return to Uttarkashi by evening.",
+            "Overnight stay in Uttarkashi."
+          ]
+        },
+        {
+          "title": "Day 5 – Uttarkashi to Guptkashi",
+          "activities": [
+            "Breakfast and check out.",
+            "Drive towards Guptkashi through the scenic Himalayan route.",
+            "En route, pass through beautiful mountain valleys and riverside landscapes.",
+            "Arrive in Guptkashi and check in to the hotel.",
+            "Evening free for rest and preparation for Kedarnath.",
+            "Overnight stay in Guptkashi."
+          ]
+        },
+        {
+          "title": "Day 6 – Guptkashi – Gaurikund – Trek to Kedarnath",
+          "activities": [
+            "Early morning proceed towards Gaurikund.",
+            "Start the trek from Gaurikund to Kedarnath.",
+            "Reach Kedarnath and check in to the accommodation.",
+            "Visit Kedarnath Temple for darshan, subject to temple timings.",
+            "Evening Aarti, subject to availability.",
+            "Overnight stay in Kedarnath."
+          ]
+        },
+        {
+          "title": "Day 7 – Kedarnath – Gaurikund – Guptkashi",
+          "activities": [
+            "Early morning darshan at Kedarnath Temple.",
+            "Return to the accommodation and begin the trek towards Gaurikund.",
+            "Arrive at Gaurikund and proceed by vehicle towards Guptkashi.",
+            "Check in to the hotel and relax.",
+            "Overnight stay in Guptkashi."
+          ]
+        },
+        {
+          "title": "Day 8 – Guptkashi to Badrinath",
+          "activities": [
+            "Breakfast and check out.",
+            "Drive towards Badrinath.",
+            "En route enjoy the spectacular Himalayan scenery.",
+            "Arrive in Badrinath and check in.",
+            "Visit Tapt Kund, subject to local conditions and temple guidelines.",
+            "Darshan at Shri Badrinath Temple.",
+            "Attend evening Aarti, subject to temple timings.",
+            "Overnight stay in Badrinath."
+          ]
+        },
+        {
+          "title": "Day 9 – Badrinath – Mana Village – Rudraprayag",
+          "activities": [
+            "Early morning Badrinath Temple darshan.",
+            "Return for breakfast and check out.",
+            "Visit Mana Village, Vyas Gufa and Ganesh Gufa, subject to time and road conditions.",
+            "Proceed towards Rudraprayag.",
+            "Arrive and check in to the hotel.",
+            "Evening at leisure.",
+            "Overnight stay in Rudraprayag."
+          ]
+        },
+        {
+          "title": "Day 10 – Rudraprayag to Haridwar – Departure",
+          "activities": [
+            "Breakfast and check out.",
+            "Drive towards Haridwar.",
+            "En route, visit Devprayag, subject to time availability.",
+            "Arrive in Haridwar.",
+            "Drop at Haridwar Railway Station/Bus Stand/Hotel for onward journey.",
+            "Yatra concludes with the blessings of Char Dham."
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Char%20Dham%20Char%20Dham%209N%2F10D%20package"
+    }
+  ]
+}

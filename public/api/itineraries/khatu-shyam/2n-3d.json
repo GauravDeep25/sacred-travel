@@ -1,0 +1,61 @@
+{
+  "destination": "khatu-shyam",
+  "destinationDisplayName": "Khatu Shyam Ji",
+  "category": "Spiritual",
+  "region": "West India",
+  "packageId": "rajasthan-1",
+  "packageTitle": "Khatu Shyam Ji - Salasar Balaji - Jaipur",
+  "duration": "Khatu Shyam Ji - Salasar Balaji - Jaipur 2N/3D",
+  "durationShort": "2N/3D",
+  "slug": "2n-3d",
+  "pagePath": "/itinerary/khatu-shyam/2n-3d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/khatu-shyam/2n-3d",
+  "apiEndpoint": "/api/itineraries/khatu-shyam/2n-3d.json",
+  "image": "/assets/rajasthan-Dznk4KEj.jpg",
+  "inclusions": [
+    "2 nights' accommodation in 3-star hotels: 1 night in Khatu Shyam Ji, 1 night in Jaipur",
+    "Breakfast at the hotels (CP plan).",
+    "Private air-conditioned vehicle for the entire itinerary.",
+    "Jaipur Airport pickup and drop-off.",
+    "Transfers between Jaipur, Khatu Shyam Ji and Salasar Balaji.",
+    "Jaipur sightseeing as per the itinerary.",
+    "Driver allowance, fuel, tolls and parking charges.",
+    "All applicable hotel taxes.",
+    "All transfers and sightseeing on a private basis."
+  ],
+  "days": [
+    {
+      "title": "Day 1 - Jaipur Airport to Khatu Shyam Ji",
+      "activities": [
+        "Arrive at Jaipur International Airport.",
+        "Meet and greet by the driver/representative.",
+        "Private transfer to Khatu Shyam Ji (approximately 80 km).",
+        "Check in to the hotel and relax.",
+        "Overnight stay in Khatu Shyam Ji."
+      ]
+    },
+    {
+      "title": "Day 2 - Khatu Shyam Ji Darshan - Salasar Balaji - Jaipur",
+      "activities": [
+        "Breakfast at the hotel.",
+        "Proceed for Shri Khatu Shyam Ji Temple Darshan and seek blessings.",
+        "Explore the temple surroundings.",
+        "Check out from the hotel and drive to Salasar Balaji Temple.",
+        "Visit Salasar Balaji Temple and seek blessings of Lord Hanuman.",
+        "Continue the journey to Jaipur and check in to the hotel.",
+        "Evening at leisure or explore the nearby local market.",
+        "Overnight stay in Jaipur."
+      ]
+    },
+    {
+      "title": "Day 3 - Jaipur Sightseeing - Airport Drop",
+      "activities": [
+        "Breakfast at the hotel and check out.",
+        "Proceed for Jaipur sightseeing, covering: Amber Fort, Jal Mahal, City Palace, Jantar Mantar, Hawa Mahal (photo stop).",
+        "Enjoy free time for shopping or local exploration, depending on flight timings.",
+        "Transfer to Jaipur International Airport for your onward journey."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Khatu%20Shyam%20Ji%20Khatu%20Shyam%20Ji%20-%20Salasar%20Balaji%20-%20Jaipur%202N%2F3D%20package"
+}
