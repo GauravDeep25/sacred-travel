@@ -3,6 +3,7 @@ import { useLocation, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CheckCircle2, MessageCircle, ArrowRight, Compass, ShieldCheck, Clock, Mail } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
+import { trackWhatsAppClick } from '../utils/analytics';
 
 export default function ThankYou() {
   const location = useLocation();
@@ -297,6 +298,7 @@ export default function ThankYou() {
                 href={`https://wa.me/${company.whatsapp?.replace(/[^0-9]/g, '')}?text=${whatsappMsg}`}
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => trackWhatsAppClick('thank_you_page', destination || 'General')}
                 className="flex items-center justify-center gap-2 w-full bg-[#E2852B] text-white px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-[#c97524] transition-colors shadow-md"
               >
                 <MessageCircle size={16} /> Chat on WhatsApp

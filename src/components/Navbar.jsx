@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { siteConfig } from '../data/siteConfig';
+import { trackWhatsAppClick } from '../utils/analytics';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -53,7 +54,13 @@ export default function Navbar() {
           <Link to="/contact" className={`${textColor} hover:text-accent transition-colors`}>Contact Us</Link>
         </div>
         <div className="flex items-center gap-4 relative z-50">
-          <a href={`https://wa.me/${siteConfig.company.whatsapp}`} className="hidden md:block rounded-sm bg-primary text-white px-6 py-2.5 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-dark transition-all translate-x-3">
+          <a 
+            href={`https://wa.me/${siteConfig.company.whatsapp}`} 
+            onClick={() => trackWhatsAppClick('navbar_desktop')}
+            target="_blank"
+            rel="noreferrer"
+            className="hidden md:block rounded-sm bg-primary text-white px-6 py-2.5 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-dark transition-all translate-x-3"
+          >
             Enquire
           </a>
           <button
@@ -82,7 +89,13 @@ export default function Navbar() {
           <Link to="/experiences" className="hover:text-accent transition-colors">Experiences</Link>
           <Link to="/about" className="hover:text-accent transition-colors">About</Link>
           <Link to="/contact" className="hover:text-accent transition-colors">Contact Us</Link>
-          <a href={`https://wa.me/${siteConfig.company.whatsapp}`} className="mt-4 rounded-sm bg-primary text-white px-8 py-3 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-dark transition-all">
+          <a 
+            href={`https://wa.me/${siteConfig.company.whatsapp}`} 
+            onClick={() => trackWhatsAppClick('navbar_mobile')}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-4 rounded-sm bg-primary text-white px-8 py-3 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-dark transition-all"
+          >
             Enquire Now
           </a>
         </div>

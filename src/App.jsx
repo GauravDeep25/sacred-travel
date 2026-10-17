@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'r
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import AnalyticsTracker from './components/AnalyticsTracker';
 
 import Home from './pages/Home';
 import Domestic from './pages/Domestic';
@@ -26,6 +27,7 @@ export default function App() {
   return (
     <Router>
       <ScrollRestoration />
+      <AnalyticsTracker />
       <Navbar />
       <main className="bg-base">
         <Routes>

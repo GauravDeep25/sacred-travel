@@ -2,20 +2,43 @@
   RewriteEngine On
   RewriteBase /
 
-  # 1. Server-side 301 SEO redirects for alias/typo routes
+  # 1. Force HTTPS on Hostinger for all live traffic (excluding local test hosts)
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP_HOST} !^localhost
+  RewriteCond %{HTTP_HOST} !^127\.0\.0\.1
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # 2. Server-side 301 SEO redirects for alias/typo routes
   RewriteRule ^itenary/(.*)$ /itinerary/$1 [R=301,L]
   RewriteRule ^(itinerary|itenary|itineraries)/?$ /domestic [R=301,L]
+  RewriteRule ^thankyou/?$ /thank-you [R=301,L]
 
-  # 2. Serve physical files and directories directly (e.g., sitemap.xml, robots.txt, assets)
+  # 3. Serve physical files and directories directly (e.g., sitemap.xml, robots.txt, assets, api jsons)
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
 
-  # 3. SPA Fallback: Route all other requests to index.html
+  # 4. SPA Fallback: Route all other requests to index.html
   RewriteRule . /index.html [L]
 </IfModule>
 
-# Browser Caching for SEO & Performance on Hostinger
+# Prevent caching of index.html so Google Tag & app updates propagate instantly on Hostinger
+<FilesMatch "^(index\.html|robots\.txt|sitemap\.xml)$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+  </IfModule>
+</FilesMatch>
+
+# Security Headers (Configured to allow Google Tag Manager & GA4 without CSP conflicts)
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Browser Caching for Hashed Production Assets on Hostinger
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType image/jpg "access plus 1 year"
@@ -28,3 +51,7 @@
   ExpiresByType application/javascript "access plus 1 month"
 </IfModule>
 
+# Gzip / Deflate Compression on Hostinger
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json image/svg+xml
+</IfModule>

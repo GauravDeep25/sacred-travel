@@ -11,6 +11,7 @@ import {
   extractDurationShort,
   CANONICAL_BASE,
 } from '../data/itineraryRegistry';
+import { trackWhatsAppClick, trackEvent } from '../utils/analytics';
 
 function DayCard({ day, index, isOpen, onToggle }) {
   return (
@@ -110,6 +111,10 @@ export default function ItineraryDetail() {
     const targetPkg = packages[index];
     if (targetPkg) {
       const slug = getPackageSlug(targetPkg, destination, index);
+      trackEvent('select_package', {
+        destination,
+        package_duration: targetPkg.duration || slug,
+      });
       navigate(`/itinerary/${destination}/${slug}`);
       setOpenDays([0]);
     }
@@ -120,6 +125,11 @@ export default function ItineraryDetail() {
     const shareUrl = slug
       ? `${window.location.origin}/itinerary/${destination}/${slug}`
       : `${window.location.origin}/itinerary/${destination}`;
+    trackEvent('share_itinerary', {
+      destination,
+      package_duration: currentPkg?.duration || 'standard',
+      share_url: shareUrl,
+    });
     navigator.clipboard.writeText(shareUrl).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2500);
@@ -352,6 +362,7 @@ export default function ItineraryDetail() {
                       href={`https://wa.me/918591262424?text=I'd%20like%20to%20enquire%20about%20the%20${encodeURIComponent(displayName)}%20${encodeURIComponent(currentPkg?.duration || '')}%20package`}
                       target="_blank"
                       rel="noreferrer"
+                      onClick={() => trackWhatsAppClick('itinerary_sidebar', `${displayName} - ${currentPkg?.duration || ''}`)}
                       className="flex items-center justify-center gap-2 w-full bg-[#E2852B] text-white px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-[#c97524] transition-colors"
                     >
                       <MessageCircle size={15} />
@@ -419,6 +430,7 @@ export default function ItineraryDetail() {
           href={`https://wa.me/918591262424?text=I'd%20like%20to%20enquire%20about%20the%20${encodeURIComponent(displayName)}%20${encodeURIComponent(currentPkg?.duration || '')}%20package`}
           target="_blank"
           rel="noreferrer"
+          onClick={() => trackWhatsAppClick('itinerary_sticky_mobile', `${displayName} - ${currentPkg?.duration || ''}`)}
           className="flex items-center justify-center gap-2 w-full bg-[#E2852B] text-white py-3.5 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-[#c97524] transition-colors"
         >
           <MessageCircle size={15} />

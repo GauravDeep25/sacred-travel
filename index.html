@@ -4,7 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="src/assets/fav.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yugatirtha</title>
+    <title>Yugatīrtha | Sacred Journeys & Experiential Travel</title>
+    <meta name="description" content="Discover transformative pilgrimage circuits, cultural expeditions, and bespoke travel across India and sacred global landscapes." />
+
+    <!-- Google tag (gtag.js) - Google Analytics 4 -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H5NN81NH19"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // send_page_view: false allows React Router to track virtual page views 
+      // accurately with dynamic document.title on every route navigation without duplicate initial hits
+      gtag('config', 'G-H5NN81NH19', {
+        send_page_view: false
+      });
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />

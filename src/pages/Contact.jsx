@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Phone, MessageCircle, Mail, Globe, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
+import { trackLeadSubmission, trackWhatsAppClick, trackPhoneClick } from '../utils/analytics';
 
 export default function Contact() {
   const navigate = useNavigate();
@@ -121,6 +122,11 @@ export default function Contact() {
       }
 
       if (response.ok || data.success === "true" || data.success === true || (data.message && data.message.includes("Activation"))) {
+        trackLeadSubmission({
+          name: form.name,
+          destination: form.destination,
+        });
+
         navigate('/thank-you', {
           state: {
             name: form.name,
@@ -375,7 +381,11 @@ export default function Contact() {
               <ul className="space-y-6 text-sm">
                 <li className="flex items-start gap-4">
                   <Phone className="mt-0.5 size-5 text-primary shrink-0" />
-                  <a href={`tel:${company.whatsapp}`} className="hover:text-primary transition-colors text-charcoal/90">
+                  <a 
+                    href={`tel:${company.whatsapp}`} 
+                    onClick={() => trackPhoneClick(company.whatsapp)}
+                    className="hover:text-primary transition-colors text-charcoal/90"
+                  >
                     {company.whatsapp}
                   </a>
                 </li>
@@ -385,6 +395,7 @@ export default function Contact() {
                     href={`https://wa.me/${company.whatsapp?.replace(/[^0-9]/g, '')}?text=Namaste%20${encodeURIComponent(company.name || 'Yugatirtha')}%2C%20I%20would%20like%20to%20plan%20a%20journey.`} 
                     target="_blank" 
                     rel="noreferrer" 
+                    onClick={() => trackWhatsAppClick('contact_sidebar', form.destination)}
                     className="hover:text-primary transition-colors text-charcoal/90"
                   >
                     Chat on WhatsApp
