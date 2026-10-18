@@ -2,22 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="src/assets/fav.svg" />
+    <link rel="icon" type="image/svg+xml" href="/fav.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yugatīrtha | Sacred Journeys & Experiential Travel</title>
     <meta name="description" content="Discover transformative pilgrimage circuits, cultural expeditions, and bespoke travel across India and sacred global landscapes." />
 
-    <!-- Google tag (gtag.js) - Google Analytics 4 -->
+    <!-- Google tag (gtag.js) -->
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://www.google-analytics.com" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H5NN81NH19"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
       gtag('js', new Date());
 
-      // send_page_view: false allows React Router to track virtual page views 
-      // accurately with dynamic document.title on every route navigation without duplicate initial hits
+      // Disabled default automatic page_view to prevent duplicate hits on initial load in React SPA
       gtag('config', 'G-H5NN81NH19', {
         send_page_view: false
       });

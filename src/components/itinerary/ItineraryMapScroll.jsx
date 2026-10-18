@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Compass,
@@ -10,36 +10,35 @@ import {
   ZoomIn,
   ZoomOut,
   Crosshair,
-  Maximize2,
-  Minimize2,
   Moon,
   MessageCircle,
   Sparkles,
-  Scroll,
-  X,
-  ChevronDown,
-  ChevronUp
+  Scroll
 } from 'lucide-react';
 
 /**
  * Clean & extract human-friendly stop names & night stays from day titles & activities
  */
 function parseDayDetails(day, index, totalDays) {
-  const fullTitle = day?.title || `Day ${index + 1}`;
+  const fullTitle = (day?.title || `Day ${index + 1}`).trim();
   
-  // Remove "Day X -" or "Day X :" prefix
-  const titleWithoutDay = fullTitle.replace(/^Day\s*\d+\s*[-:–—]\s*/i, '').trim();
+  // Cleanly strip prefixes like "Day 1 -", "Day 1 :", "Day 1 |", "Day 1 –", "Day 1.", "Day 01:"
+  let titleWithoutDay = fullTitle
+    .replace(/^Day\s*\d+\s*[:|–—-]\s*/i, '')
+    .replace(/^Day\s*\d+\.?\s*/i, '')
+    .trim();
 
-  // Extract a clean short stop/place name
+  if (!titleWithoutDay) {
+    titleWithoutDay = `Stop ${index + 1}`;
+  }
+
+  // Extract a clean short stop/place name (before secondary delimiters)
   let stopName = titleWithoutDay;
-  if (titleWithoutDay.includes(' - ')) {
-    stopName = titleWithoutDay.split(' - ')[0].trim();
-  } else if (titleWithoutDay.includes(' – ')) {
-    stopName = titleWithoutDay.split(' – ')[0].trim();
-  } else if (titleWithoutDay.includes('.')) {
-    stopName = titleWithoutDay.split('.')[0].trim();
-  } else if (titleWithoutDay.includes('|')) {
-    stopName = titleWithoutDay.split('|')[0].trim();
+  for (const delimiter of [' – ', ' - ', ' — ', ' | ', '. ']) {
+    if (stopName.includes(delimiter)) {
+      stopName = stopName.split(delimiter)[0].trim();
+      break;
+    }
   }
 
   // Handle "Kathgodam to Pithoragarh" -> "Pithoragarh" (or Kathgodam for Day 1)
@@ -150,11 +149,10 @@ export default function ItineraryMapScroll({
   const totalDays = days.length;
 
   const [selectedDayIndex, setSelectedDayIndex] = useState(0);
+  const [slideDirection, setSlideDirection] = useState(1);
   const [isPlayingTour, setIsPlayingTour] = useState(false);
   const [hoveredDayIndex, setHoveredDayIndex] = useState(null);
-  const [isFullscreen, setIsFullscreen] = useState(false);
   const [isFocusMode, setIsFocusMode] = useState(false);
-  const [isScrollOpen, setIsScrollOpen] = useState(true); // Open & close animation for the Royal Scroll
 
   // Pan & Zoom state (No mouse-wheel zooming; buttons + 2-finger pinch)
   const [zoom, setZoom] = useState(1.0);
@@ -167,6 +165,7 @@ export default function ItineraryMapScroll({
 
   const svgContainerRef = useRef(null);
   const scrollSectionRef = useRef(null);
+  const scrollTouchStartRef = useRef({ x: 0, y: 0 });
 
   // Parsed data & coordinates
   const parsedDays = days.map((day, idx) => parseDayDetails(day, idx, totalDays));
@@ -175,6 +174,17 @@ export default function ItineraryMapScroll({
 
   const activePoints = coordinates.slice(0, selectedDayIndex + 1);
   const activePathD = activePoints.length > 1 ? generateCurvedPath(activePoints) : '';
+
+  // Calculate maximum activities count across all days to keep scroll size completely fixed
+  const maxDayActivities = useMemo(() => {
+    return Math.max(...days.map((d) => (d.activities ? d.activities.length : 0)), 5);
+  }, [days]);
+
+  // Compute fixed content height calibrated to comfortably fit the biggest day in this itinerary
+  // Ensures that whether viewing Day 1 or Day N, the parchment scroll never expands, contracts, or jumps
+  const fixedContentHeight = useMemo(() => {
+    return Math.max(540, 210 + maxDayActivities * 55);
+  }, [maxDayActivities]);
 
   // Focus on a specific point with camera glide
   const focusOnPoint = useCallback((index, targetZoom = POINT_FOCUS_ZOOM) => {
@@ -218,11 +228,11 @@ export default function ItineraryMapScroll({
     return () => clearInterval(timer);
   }, [isPlayingTour, totalDays]);
 
-  // Handle Day Selection
+  // Handle Day Selection with directional transition
   const handleSelectDay = (index, shouldFocus = isFocusMode) => {
     setIsPlayingTour(false);
+    setSlideDirection(index >= selectedDayIndex ? 1 : -1);
     setSelectedDayIndex(index);
-    setIsScrollOpen(true); // Automatically unroll the scroll for the newly clicked day
     if (shouldFocus) {
       focusOnPoint(index);
     }
@@ -230,9 +240,9 @@ export default function ItineraryMapScroll({
 
   const handleNextDay = () => {
     if (selectedDayIndex < totalDays - 1) {
+      setSlideDirection(1);
       const nextIdx = selectedDayIndex + 1;
       setSelectedDayIndex(nextIdx);
-      setIsScrollOpen(true);
       if (isFocusMode) {
         focusOnPoint(nextIdx);
       }
@@ -241,11 +251,40 @@ export default function ItineraryMapScroll({
 
   const handlePrevDay = () => {
     if (selectedDayIndex > 0) {
+      setSlideDirection(-1);
       const prevIdx = selectedDayIndex - 1;
       setSelectedDayIndex(prevIdx);
-      setIsScrollOpen(true);
       if (isFocusMode) {
         focusOnPoint(prevIdx);
+      }
+    }
+  };
+
+  // Touch Swipe navigation on the Manuscript Scroll
+  // Swiping Left -> Next Day, Swiping Right -> Prev Day
+  const handleScrollTouchStart = (e) => {
+    if (e.touches && e.touches.length === 1) {
+      scrollTouchStartRef.current = {
+        x: e.touches[0].clientX,
+        y: e.touches[0].clientY,
+      };
+    }
+  };
+
+  const handleScrollTouchEnd = (e) => {
+    if (e.changedTouches && e.changedTouches.length > 0) {
+      const touchEndX = e.changedTouches[0].clientX;
+      const touchEndY = e.changedTouches[0].clientY;
+      const deltaX = touchEndX - scrollTouchStartRef.current.x;
+      const deltaY = touchEndY - scrollTouchStartRef.current.y;
+
+      // Minimum horizontal swipe distance of 35px and distinctly horizontal (not vertical scroll)
+      if (Math.abs(deltaX) > 35 && Math.abs(deltaX) > Math.abs(deltaY) * 1.1) {
+        if (deltaX < 0) {
+          handleNextDay();
+        } else {
+          handlePrevDay();
+        }
       }
     }
   };
@@ -305,7 +344,6 @@ export default function ItineraryMapScroll({
   // Touch handlers for mobile (1 finger pan, 2 fingers pinch to zoom)
   const handleTouchStart = (e) => {
     if (e.touches.length === 2) {
-      // 2 fingers = pinch zoom
       setIsPinching(true);
       setIsDragging(false);
       const dist = Math.hypot(
@@ -314,7 +352,6 @@ export default function ItineraryMapScroll({
       );
       pinchStartRef.current = { dist, zoom };
     } else if (e.touches.length === 1) {
-      // 1 finger = pan/drag
       setIsDragging(true);
       setIsPinching(false);
       dragStartRef.current = {
@@ -384,168 +421,137 @@ export default function ItineraryMapScroll({
   return (
     <div className="w-full space-y-10">
 
-      {/* ── TOP CONTROL DECK: ENLARGED MAP HEADER ────────── */}
-      <div className="bg-[#fcfaf6] border border-[#e8ddcb] rounded-2xl p-4 sm:p-6 shadow-sm">
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-          <div>
-            <div className="flex items-center gap-2 text-[#b8864e] text-[11px] font-bold tracking-[0.25em] uppercase mb-1">
-              <Compass size={15} className="animate-spin-slow text-[#d4af37]" />
-              <span>Interactive Sacred Circuit Map</span>
-              <span className="text-gray-300">•</span>
-              <span className="text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full text-[10px] font-semibold">
-                Touch Pinch & Drag
-              </span>
+      {/* ── TOP CONTROL DECK: EDITORIAL HEADER (NO ROUNDED PILLS) ────────── */}
+      <div className="border border-[#E5E3DB] bg-[#FCFBF8] shadow-xs">
+        <div className="p-6 sm:p-8 pb-5">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+            <div>
+              <p className="eyebrow !mb-2 flex items-center gap-2">
+                <Compass size={13} className="text-primary animate-spin-slow" />
+                <span>Interactive Sacred Circuit Map</span>
+              </p>
+              <h3 className="font-serif text-2xl sm:text-3xl text-charcoal tracking-tight">
+                {displayName} Expedition: Day 1 to Day {totalDays}
+              </h3>
+              <p className="text-xs sm:text-sm text-charcoal/70 mt-1 max-w-2xl leading-relaxed">
+                Drag to pan across the sacred terrain or use the navigation controls below to explore each day's plan.
+              </p>
             </div>
-            <h3 className="font-serif text-2xl sm:text-3xl text-gray-900 tracking-tight">
-              {displayName} Expedition: Day 1 to Day {totalDays}
-            </h3>
-            <p className="text-xs sm:text-sm text-gray-600 mt-1">
-              Pinch with two fingers or use zoom buttons to navigate. Click any day marker to unfurl its royal manuscript scroll.
-            </p>
-          </div>
 
-          {/* Action Toolbar */}
-          <div className="flex flex-wrap items-center gap-2">
-            
-            {/* Single Point Focus vs Full Overview Toggle */}
-            <button
-              onClick={toggleFocusMode}
-              className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-semibold tracking-wide transition-all shadow-xs ${
-                isFocusMode
-                  ? 'bg-[#b8864e] text-white shadow-[#b8864e]/30 scale-105'
-                  : 'bg-white text-gray-700 border border-[#e2d5c0] hover:bg-[#faf4ea]'
-              }`}
-              title={isFocusMode ? 'Zoom out to view full circuit' : 'Zoom into Day ' + (selectedDayIndex + 1)}
-            >
-              <Crosshair size={14} className={isFocusMode ? 'animate-pulse' : ''} />
-              <span>{isFocusMode ? `Focus: Day ${selectedDayIndex + 1}` : 'Single Point Focus'}</span>
-            </button>
-
-            {/* Auto-Play Tour */}
-            <button
-              onClick={() => {
-                setIsPlayingTour(!isPlayingTour);
-                if (!isPlayingTour && !isFocusMode) {
-                  focusOnPoint(selectedDayIndex);
-                }
-              }}
-              className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-semibold tracking-wide transition-all shadow-xs ${
-                isPlayingTour
-                  ? 'bg-amber-600 text-white'
-                  : 'bg-white text-gray-700 border border-[#e2d5c0] hover:bg-[#faf4ea]'
-              }`}
-            >
-              {isPlayingTour ? <Pause size={13} /> : <Play size={13} />}
-              <span>{isPlayingTour ? 'Pause Tour' : 'Auto Tour'}</span>
-            </button>
-
-            {/* Fullscreen / Theater Mode Button */}
-            <button
-              onClick={() => setIsFullscreen(!isFullscreen)}
-              className="inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-white text-gray-700 hover:text-gray-900 border border-[#e2d5c0] hover:bg-[#faf4ea] text-xs font-semibold shadow-xs transition-colors"
-              title={isFullscreen ? 'Exit Fullscreen Theater' : 'Enlarge Map to Fullscreen Theater'}
-            >
-              {isFullscreen ? <Minimize2 size={14} /> : <Maximize2 size={14} />}
-              <span className="hidden sm:inline">{isFullscreen ? 'Exit' : 'Enlarge'}</span>
-            </button>
-
-            {/* Reset View */}
-            <button
-              onClick={resetToOverview}
-              title="Reset view to full route"
-              className="p-2 rounded-full bg-white text-gray-600 hover:text-gray-900 border border-[#e2d5c0] hover:bg-[#faf4ea] transition-colors"
-            >
-              <RotateCcw size={14} />
-            </button>
-
-            {/* Prev / Next Day Navigator */}
-            <div className="flex items-center bg-white border border-[#e2d5c0] rounded-full p-1 shadow-xs">
+            {/* Action Toolbar: Clean Rectangular Buttons Matching Site Aesthetic */}
+            <div className="flex flex-wrap items-center gap-2">
+              
+              {/* Single Point Focus vs Full Overview Toggle */}
               <button
-                onClick={handlePrevDay}
-                disabled={selectedDayIndex === 0}
-                className="p-1.5 rounded-full hover:bg-gray-100 disabled:opacity-30 disabled:hover:bg-transparent transition-colors text-gray-700"
-                title="Previous Stop"
+                onClick={toggleFocusMode}
+                className={`inline-flex items-center gap-2 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.2em] border transition-colors ${
+                  isFocusMode
+                    ? 'bg-primary text-white border-primary'
+                    : 'bg-white text-charcoal border-[#E5E3DB] hover:border-primary hover:text-primary'
+                }`}
+                title={isFocusMode ? 'Zoom out to view full circuit' : 'Focus camera on Day ' + (selectedDayIndex + 1)}
               >
-                <ChevronLeft size={16} />
+                <Crosshair size={13} />
+                <span>{isFocusMode ? `Focus: Day ${selectedDayIndex + 1}` : 'Focus Point'}</span>
               </button>
-              <span className="text-[11px] font-bold px-2.5 text-gray-800 tracking-wider">
-                DAY {selectedDayIndex + 1}/{totalDays}
-              </span>
+
+              {/* Auto-Play Tour */}
               <button
-                onClick={handleNextDay}
-                disabled={selectedDayIndex === totalDays - 1}
-                className="p-1.5 rounded-full hover:bg-gray-100 disabled:opacity-30 disabled:hover:bg-transparent transition-colors text-gray-700"
-                title="Next Stop"
+                onClick={() => {
+                  setIsPlayingTour(!isPlayingTour);
+                  if (!isPlayingTour && !isFocusMode) {
+                    focusOnPoint(selectedDayIndex);
+                  }
+                }}
+                className={`inline-flex items-center gap-2 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.2em] border transition-colors ${
+                  isPlayingTour
+                    ? 'bg-[#003525] text-white border-[#003525]'
+                    : 'bg-white text-charcoal border-[#E5E3DB] hover:border-primary hover:text-primary'
+                }`}
               >
-                <ChevronRight size={16} />
+                {isPlayingTour ? <Pause size={13} /> : <Play size={13} />}
+                <span>{isPlayingTour ? 'Pause' : 'Auto Tour'}</span>
               </button>
+
+              {/* Reset View */}
+              <button
+                onClick={resetToOverview}
+                title="Reset view to full route"
+                className="p-2.5 border border-[#E5E3DB] bg-white text-charcoal hover:border-primary hover:text-primary transition-colors"
+              >
+                <RotateCcw size={13} />
+              </button>
+
+              {/* Prev / Next Day Navigator */}
+              <div className="inline-flex items-center border border-[#E5E3DB] bg-white divide-x divide-[#E5E3DB]">
+                <button
+                  onClick={handlePrevDay}
+                  disabled={selectedDayIndex === 0}
+                  className="p-2.5 hover:bg-[#F9F7F2] disabled:opacity-30 disabled:hover:bg-transparent transition-colors text-charcoal"
+                  title="Previous Stop"
+                >
+                  <ChevronLeft size={15} />
+                </button>
+                <span className="text-[10px] font-bold px-3 text-charcoal tracking-[0.2em] uppercase whitespace-nowrap">
+                  DAY {selectedDayIndex + 1}/{totalDays}
+                </span>
+                <button
+                  onClick={handleNextDay}
+                  disabled={selectedDayIndex === totalDays - 1}
+                  className="p-2.5 hover:bg-[#F9F7F2] disabled:opacity-30 disabled:hover:bg-transparent transition-colors text-charcoal"
+                  title="Next Stop"
+                >
+                  <ChevronRight size={15} />
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Quick Day Selector Strip */}
-        <div className="mt-5 pt-4 border-t border-[#f0e6d6] flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
-          {parsedDays.map((pDay, idx) => {
-            const isSelected = selectedDayIndex === idx;
-            return (
-              <button
-                key={idx}
-                onClick={() => handleSelectDay(idx, isFocusMode)}
-                className={`whitespace-nowrap px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all duration-200 shrink-0 flex items-center gap-1.5 ${
-                  isSelected
-                    ? 'bg-[#b8864e] text-white shadow-md shadow-[#b8864e]/20 scale-105'
-                    : 'bg-white text-gray-600 border border-[#e2d5c0] hover:border-[#b8864e] hover:text-[#b8864e]'
-                }`}
-              >
-                <span className={`w-2 h-2 rounded-full ${isSelected ? 'bg-white' : 'bg-[#d4af37]'}`} />
-                <span>Day {pDay.dayNumber}: {pDay.stopName}</span>
-              </button>
-            );
-          })}
+        {/* Day Tabs Strip (Anchored baseline with flush bottom border - NO COLOR BLEEDING) */}
+        <div className="border-t border-[#E5E3DB] bg-[#F7F4EE] px-4 sm:px-8">
+          <div className="flex items-center overflow-x-auto no-scrollbar gap-1 -mb-[1px]">
+            {parsedDays.map((pDay, idx) => {
+              const isSelected = selectedDayIndex === idx;
+              return (
+                <button
+                  key={idx}
+                  onClick={() => handleSelectDay(idx, isFocusMode)}
+                  className={`flex-shrink-0 px-4 py-3 text-[10px] font-bold uppercase tracking-[0.2em] border-b-2 transition-all whitespace-nowrap ${
+                    isSelected
+                      ? 'border-primary text-primary bg-[#FCFBF8] font-bold shadow-2xs'
+                      : 'border-transparent text-charcoal/60 hover:text-charcoal hover:border-[#DCD4C7]'
+                  }`}
+                >
+                  Day {pDay.dayNumber}: {pDay.stopName}
+                </button>
+              );
+            })}
+          </div>
         </div>
       </div>
 
-      {/* ── THE ENLARGED SCROLLABLE & INTERACTIVE MAP VIEWPORT ── */}
-      <div
-        className={`${
-          isFullscreen
-            ? 'fixed inset-0 z-50 bg-[#160e08]/95 p-4 sm:p-8 flex flex-col justify-center items-center backdrop-blur-md'
-            : 'relative w-full'
-        }`}
-      >
-        <div
-          className={`w-full bg-[#fbf8f2] border-2 border-[#d9c7aa] rounded-2xl shadow-xl relative overflow-hidden flex flex-col ${
-            isFullscreen ? 'max-w-7xl h-[90vh]' : ''
-          }`}
-        >
-          {/* Cartographic Top Bar Header */}
-          <div className="flex items-center justify-between text-[11px] font-serif text-[#8f7450] tracking-widest uppercase bg-[#f4ebdb] border-b border-[#ebdcc4] px-4 py-2.5 select-none">
+      {/* ── THE ENLARGED SCROLLABLE & INTERACTIVE MAP VIEWPORT (NO FULLSCREEN MODAL / EMBEDDED CLEANLY) ── */}
+      <div className="relative w-full">
+        <div className="w-full bg-[#FCFBF8] border border-[#E5E3DB] shadow-lg relative overflow-hidden flex flex-col">
+          {/* Cartographic Top Bar Header (ORANGE BLINKER REMOVED) */}
+          <div className="flex items-center justify-between text-[10px] font-bold uppercase tracking-[0.2em] bg-[#F2ECE1] border-b border-[#E5E3DB] px-5 py-3 select-none text-charcoal/80">
             <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-[#b8864e] animate-ping" />
               <span>YUGATĪRTHA PILGRIMAGE EXPEDITION</span>
               <span className="hidden sm:inline text-gray-400">•</span>
-              <span className="hidden sm:inline text-gray-700">{displayName} Circuit</span>
+              <span className="hidden sm:inline text-charcoal font-semibold">{displayName} Circuit</span>
             </div>
-            <div className="flex items-center gap-4 text-xs font-sans tracking-normal">
-              <span className="text-gray-600 hidden md:inline">
-                Drag to Pan • 2-Finger Pinch to Zoom • Touch to Navigate
+            <div className="flex items-center gap-4 text-xs font-sans tracking-normal font-normal">
+              <span className="text-charcoal/70 hidden md:inline text-[11px]">
+                Drag to Pan • 2-Finger Pinch to Zoom • Tap Marker to View
               </span>
-              <span className="font-semibold text-gray-800 bg-white/70 px-2 py-0.5 rounded border border-[#d8c5a4]">
+              <span className="font-semibold text-charcoal bg-white px-2 py-0.5 border border-[#E5E3DB] text-[10px] tracking-wider uppercase">
                 {zoom.toFixed(1)}x Zoom
               </span>
-              {isFullscreen && (
-                <button
-                  onClick={() => setIsFullscreen(false)}
-                  className="p-1 rounded hover:bg-black/10 text-gray-700"
-                  title="Close Fullscreen"
-                >
-                  <X size={16} />
-                </button>
-              )}
             </div>
           </div>
 
-          {/* SVG Map Container (Enlarged Height: 460px - 600px, Wheel zoom removed!) */}
+          {/* SVG Map Container */}
           <div
             ref={svgContainerRef}
             onMouseDown={handleMouseDown}
@@ -555,38 +561,36 @@ export default function ItineraryMapScroll({
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
-            className={`relative w-full overflow-hidden select-none touch-none ${
-              isFullscreen
-                ? 'flex-1 h-full'
-                : 'h-[460px] sm:h-[540px] md:h-[600px]'
-            } ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
+            className={`relative w-full overflow-hidden select-none touch-none h-[460px] sm:h-[540px] md:h-[600px] ${
+              isDragging ? 'cursor-grabbing' : 'cursor-grab'
+            }`}
           >
             {/* ── STATIONARY COMPASS ROSE FIXED ON TOP OF MAP ── */}
-            <div className="absolute top-4 right-4 z-20 pointer-events-none select-none drop-shadow-md">
-              <svg width="68" height="68" viewBox="0 0 100 100" className="opacity-95">
-                <circle cx="50" cy="50" r="46" fill="#fffdf7" stroke="#b89a6c" strokeWidth="2.2" />
-                <circle cx="50" cy="50" r="40" fill="none" stroke="#d5c4a5" strokeWidth="1.2" strokeDasharray="3 3" />
+            <div className="absolute top-4 right-4 z-20 pointer-events-none select-none drop-shadow-sm">
+              <svg width="64" height="64" viewBox="0 0 100 100" className="opacity-95">
+                <circle cx="50" cy="50" r="46" fill="#FCFBF8" stroke="#d2955c" strokeWidth="2" />
+                <circle cx="50" cy="50" r="40" fill="none" stroke="#E5E3DB" strokeWidth="1.2" strokeDasharray="3 3" />
                 {/* 8-Pointed Star Points */}
-                <polygon points="50,10 57,43 50,50" fill="#b8864e" />
-                <polygon points="50,10 43,43 50,50" fill="#8c6231" />
-                <polygon points="50,90 57,57 50,50" fill="#8c6231" />
-                <polygon points="50,90 43,57 50,50" fill="#b8864e" />
-                <polygon points="90,50 57,57 50,50" fill="#8c6231" />
-                <polygon points="90,50 57,43 50,50" fill="#b8864e" />
-                <polygon points="10,50 43,57 50,50" fill="#b8864e" />
-                <polygon points="10,50 43,43 50,50" fill="#8c6231" />
+                <polygon points="50,10 57,43 50,50" fill="#f3821d" />
+                <polygon points="50,10 43,43 50,50" fill="#d2955c" />
+                <polygon points="50,90 57,57 50,50" fill="#d2955c" />
+                <polygon points="50,90 43,57 50,50" fill="#332D29" />
+                <polygon points="90,50 57,57 50,50" fill="#d2955c" />
+                <polygon points="90,50 57,43 50,50" fill="#332D29" />
+                <polygon points="10,50 43,57 50,50" fill="#332D29" />
+                <polygon points="10,50 43,43 50,50" fill="#d2955c" />
                 {/* Corner Sub-cardinals */}
-                <polygon points="78,22 55,45 50,50" fill="#cbb38d" />
-                <polygon points="22,78 45,55 50,50" fill="#cbb38d" />
-                <polygon points="78,78 55,55 50,50" fill="#a48455" />
-                <polygon points="22,22 45,45 50,50" fill="#a48455" />
+                <polygon points="78,22 55,45 50,50" fill="#E2DACD" />
+                <polygon points="22,78 45,55 50,50" fill="#E2DACD" />
+                <polygon points="78,78 55,55 50,50" fill="#C2B7A5" />
+                <polygon points="22,22 45,45 50,50" fill="#C2B7A5" />
                 {/* Center Boss */}
-                <circle cx="50" cy="50" r="6" fill="#4d3012" stroke="#d4af37" strokeWidth="1.5" />
+                <circle cx="50" cy="50" r="5" fill="#332D29" stroke="#f3821d" strokeWidth="1.5" />
                 {/* Cardinal Direction Letters */}
-                <text x="50" y="8" textAnchor="middle" fontSize="11" fontWeight="bold" fill="#4d3012" fontFamily="serif">N</text>
-                <text x="94" y="54" textAnchor="middle" fontSize="10" fontWeight="bold" fill="#5c3814" fontFamily="serif">E</text>
-                <text x="50" y="99" textAnchor="middle" fontSize="10" fontWeight="bold" fill="#5c3814" fontFamily="serif">S</text>
-                <text x="7" y="54" textAnchor="middle" fontSize="10" fontWeight="bold" fill="#5c3814" fontFamily="serif">W</text>
+                <text x="50" y="8" textAnchor="middle" fontSize="11" fontWeight="bold" fill="#f3821d" fontFamily="serif">N</text>
+                <text x="94" y="54" textAnchor="middle" fontSize="10" fontWeight="bold" fill="#332D29" fontFamily="serif">E</text>
+                <text x="50" y="99" textAnchor="middle" fontSize="10" fontWeight="bold" fill="#332D29" fontFamily="serif">S</text>
+                <text x="7" y="54" textAnchor="middle" fontSize="10" fontWeight="bold" fill="#332D29" fontFamily="serif">W</text>
               </svg>
             </div>
 
@@ -597,30 +601,26 @@ export default function ItineraryMapScroll({
               preserveAspectRatio="xMidYMid meet"
             >
               <defs>
-                {/* Vintage Parchment Texture Gradient */}
                 <radialGradient id="parchmentTexture" cx="50%" cy="50%" r="70%">
-                  <stop offset="0%" stopColor="#fffdf8" stopOpacity="0.95" />
-                  <stop offset="65%" stopColor="#fbf6ea" stopOpacity="0.95" />
-                  <stop offset="100%" stopColor="#f0e1c6" stopOpacity="1" />
+                  <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.95" />
+                  <stop offset="60%" stopColor="#F9F7F2" stopOpacity="0.95" />
+                  <stop offset="100%" stopColor="#EFE8DD" stopOpacity="1" />
                 </radialGradient>
 
-                {/* Radiant Golden Trail Glow */}
                 <filter id="goldTrailGlow" x="-30%" y="-30%" width="160%" height="160%">
                   <feGaussianBlur stdDeviation="5" result="blur" />
                   <feComposite in="SourceGraphic" in2="blur" operator="over" />
                 </filter>
 
-                {/* Pin Drop Shadow */}
                 <filter id="pinShadow" x="-25%" y="-25%" width="150%" height="150%">
-                  <feDropShadow dx="0" dy="3" stdDeviation="4" floodColor="#2e1d0d" floodOpacity="0.3" />
+                  <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="#332D29" floodOpacity="0.2" />
                 </filter>
               </defs>
 
-              {/* Base Cartographic Background */}
               <rect x="0" y="0" width={WORLD_WIDTH} height={WORLD_HEIGHT} fill="url(#parchmentTexture)" />
 
               {/* Topographical Contour Waves */}
-              <g stroke="#dfcfb5" strokeWidth="1.2" fill="none" opacity="0.5">
+              <g stroke="#DFD8CC" strokeWidth="1.2" fill="none" opacity="0.6">
                 <path d="M 0 160 Q 300 90 600 150 T 1200 130" />
                 <path d="M 0 280 Q 250 330 650 240 T 1200 300" />
                 <path d="M 0 420 Q 350 480 750 380 T 1200 440" />
@@ -629,48 +629,48 @@ export default function ItineraryMapScroll({
                 <path d="M 1020 0 Q 980 300 1030 600" strokeDasharray="4 8" />
               </g>
 
-              {/* Illustrated Mountain Ridges Silhouette across high valleys */}
-              <g stroke="#c9b392" strokeWidth="1.4" fill="none" opacity="0.4">
+              {/* Illustrated Mountain Ridges Silhouette */}
+              <g stroke="#CFC5B5" strokeWidth="1.4" fill="none" opacity="0.5">
                 <path d="M 460 200 L 510 135 L 560 200 L 610 120 L 660 200 L 710 145 L 760 200" />
                 <path d="M 510 135 L 530 200" />
                 <path d="M 610 120 L 630 200" />
                 <path d="M 710 145 L 725 200" />
               </g>
 
-              {/* 1. Base Trail Path (Full Expedition in warm sepia dash) */}
+              {/* 1. Base Trail Path */}
               {fullPathD && (
                 <path
                   d={fullPathD}
                   fill="none"
-                  stroke="#9e805b"
-                  strokeWidth="4"
+                  stroke="#B8AC9C"
+                  strokeWidth="3.5"
                   strokeDasharray="9 7"
                   strokeLinecap="round"
-                  opacity="0.65"
+                  opacity="0.75"
                 />
               )}
 
-              {/* 2. Active Progress Trail (Illuminated radiant gold) */}
+              {/* 2. Active Progress Trail (Saffron Brand Color) */}
               {activePathD && (
                 <path
                   d={activePathD}
                   fill="none"
-                  stroke="#d4923b"
-                  strokeWidth="5"
+                  stroke="#f3821d"
+                  strokeWidth="4.5"
                   strokeLinecap="round"
                   filter="url(#goldTrailGlow)"
                   className="transition-all duration-500"
                 />
               )}
 
-              {/* 3. Interactive Waypoint Pins for every Day */}
+              {/* 3. Waypoint Markers (NO BUBBLY PILLS: Crisp rectangular plaques) */}
               {coordinates.map((pt, idx) => {
                 const pDay = parsedDays[idx];
                 const isSelected = selectedDayIndex === idx;
                 const isHovered = hoveredDayIndex === idx;
                 const isPassed = idx < selectedDayIndex;
 
-                const labelOffsetY = idx % 2 === 0 ? -32 : 38;
+                const labelOffsetY = idx % 2 === 0 ? -30 : 36;
 
                 return (
                   <g
@@ -684,68 +684,66 @@ export default function ItineraryMapScroll({
                     onMouseEnter={() => setHoveredDayIndex(idx)}
                     onMouseLeave={() => setHoveredDayIndex(null)}
                   >
-                    {/* Active Golden Pulse Waves */}
+                    {/* Elegant Cartographic Halo for Selected Stop (No distracting blinkers) */}
                     {isSelected && (
                       <>
                         <circle
                           cx="0"
                           cy="0"
-                          r="34"
+                          r="25"
                           fill="none"
-                          stroke="#d4923b"
-                          strokeWidth="2.5"
-                          opacity="0.6"
-                          className="animate-ping"
+                          stroke="#f3821d"
+                          strokeWidth="1.5"
+                          strokeDasharray="3 3"
+                          opacity="0.8"
                         />
                         <circle
                           cx="0"
                           cy="0"
-                          r="24"
-                          fill="#d4923b"
-                          fillOpacity="0.15"
-                          stroke="#ffd700"
-                          strokeWidth="1.5"
+                          r="20"
+                          fill="#f3821d"
+                          fillOpacity="0.14"
                         />
                       </>
                     )}
 
-                    {/* Outer Medallion Marker */}
+                    {/* Outer Circle Medallion */}
                     <circle
                       cx="0"
                       cy="0"
-                      r={isSelected ? 18 : isHovered ? 16 : 13}
-                      fill={isSelected ? '#b8864e' : isPassed ? '#543c1f' : '#ffffff'}
-                      stroke={isSelected ? '#ffd700' : isPassed ? '#d4af37' : '#947854'}
-                      strokeWidth={isSelected ? '3.5' : '2'}
+                      r={isSelected ? 16 : isHovered ? 15 : 12}
+                      fill={isSelected ? '#f3821d' : isPassed ? '#332D29' : '#FFFFFF'}
+                      stroke={isSelected ? '#FFFFFF' : isPassed ? '#d2955c' : '#B8AC9C'}
+                      strokeWidth={isSelected ? '3' : '1.8'}
                       filter="url(#pinShadow)"
                       className="transition-all duration-300"
                     />
 
-                    {/* Inner Day Number Badge */}
+                    {/* Day Number */}
                     <text
                       x="0"
-                      y={isSelected ? '5' : '4'}
+                      y={isSelected ? '4.5' : '4'}
                       textAnchor="middle"
-                      fontSize={isSelected ? '12' : '10'}
+                      fontSize={isSelected ? '11' : '10'}
                       fontWeight="bold"
                       fontFamily="sans-serif"
-                      fill={isSelected || isPassed ? '#ffffff' : '#3d2c18'}
+                      fill={isSelected || isPassed ? '#FFFFFF' : '#332D29'}
                       className="select-none pointer-events-none"
                     >
                       {pDay.dayNumber}
                     </text>
 
-                    {/* Stop Name Label Plaque */}
+                    {/* Clean Rectangular Label Plaque (NO PILL RX=13) */}
                     <g transform={`translate(0, ${labelOffsetY})`}>
                       <rect
-                        x="-62"
-                        y="-13"
-                        width="124"
-                        height="26"
-                        rx="13"
-                        fill={isSelected ? '#2e1e10' : '#fffcf5'}
-                        stroke={isSelected ? '#ffd700' : '#cfbea2'}
-                        strokeWidth={isSelected ? '2' : '1'}
+                        x="-58"
+                        y="-12"
+                        width="116"
+                        height="24"
+                        rx="1"
+                        fill={isSelected ? '#332D29' : '#FFFFFF'}
+                        stroke={isSelected ? '#f3821d' : '#DCD4C7'}
+                        strokeWidth={isSelected ? '1.5' : '1'}
                         filter="url(#pinShadow)"
                         className="transition-all duration-200"
                       />
@@ -753,10 +751,10 @@ export default function ItineraryMapScroll({
                         x="0"
                         y="4"
                         textAnchor="middle"
-                        fontSize="10.5"
+                        fontSize="10"
                         fontWeight={isSelected ? 'bold' : '600'}
                         fontFamily="serif"
-                        fill={isSelected ? '#ffd700' : '#382818'}
+                        fill={isSelected ? '#f3821d' : '#332D29'}
                         className="select-none pointer-events-none tracking-tight"
                       >
                         {pDay.stopName.length > 17 ? pDay.stopName.slice(0, 16) + '…' : pDay.stopName}
@@ -767,48 +765,44 @@ export default function ItineraryMapScroll({
               })}
             </svg>
 
-            {/* Floating Navigation & Zoom HUD Overlay on the Map */}
-            <div className="absolute bottom-4 right-4 flex flex-col items-center gap-1.5 bg-white/90 backdrop-blur-md p-1.5 rounded-2xl border border-[#d8c5a4] shadow-lg select-none z-20">
+            {/* Floating Navigation & Zoom HUD (Clean Rectangular Box) */}
+            <div className="absolute bottom-4 right-4 flex flex-col items-center bg-white/95 backdrop-blur-md border border-[#E5E3DB] shadow-md divide-y divide-[#E5E3DB] select-none z-20">
               <button
                 onClick={handleZoomIn}
-                className="p-2 rounded-xl hover:bg-[#faf4ea] text-gray-700 hover:text-gray-900 transition-colors"
+                className="p-2.5 hover:bg-[#F9F7F2] text-charcoal hover:text-primary transition-colors"
                 title="Zoom In (+)"
               >
-                <ZoomIn size={17} />
+                <ZoomIn size={16} />
               </button>
-              <div className="w-4 h-[1px] bg-gray-200" />
               <button
                 onClick={handleZoomOut}
-                className="p-2 rounded-xl hover:bg-[#faf4ea] text-gray-700 hover:text-gray-900 transition-colors"
+                className="p-2.5 hover:bg-[#F9F7F2] text-charcoal hover:text-primary transition-colors"
                 title="Zoom Out (-)"
               >
-                <ZoomOut size={17} />
+                <ZoomOut size={16} />
               </button>
-              <div className="w-4 h-[1px] bg-gray-200" />
               <button
                 onClick={() => focusOnPoint(selectedDayIndex)}
-                className={`p-2 rounded-xl transition-colors ${
-                  isFocusMode ? 'bg-[#b8864e] text-white' : 'hover:bg-[#faf4ea] text-gray-700'
+                className={`p-2.5 transition-colors ${
+                  isFocusMode ? 'bg-primary text-white' : 'hover:bg-[#F9F7F2] text-charcoal'
                 }`}
                 title="Center on Selected Stop"
               >
-                <Crosshair size={17} />
+                <Crosshair size={16} />
               </button>
             </div>
 
-            {/* Active Stop Badge Overlay (Top Left of Map) */}
-            <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md border border-[#d8c5a4] rounded-xl px-4 py-2.5 shadow-md max-w-xs select-none z-20">
-              <div className="flex items-center gap-2 text-[10px] uppercase tracking-wider font-bold text-[#b8864e]">
-                <span>Day {currentParsedDay.dayNumber} of {totalDays}</span>
-                <span>•</span>
-                <span>{currentParsedDay.stageType}</span>
-              </div>
-              <h4 className="font-serif text-base sm:text-lg text-gray-900 font-semibold leading-tight mt-0.5">
+            {/* Active Stop Badge Overlay (Clean Editorial Border Box - NO PILLS) */}
+            <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md border border-[#E5E3DB] p-4 shadow-sm max-w-xs select-none z-20">
+              <p className="text-[10px] uppercase tracking-[0.25em] font-bold text-primary mb-1">
+                Day {currentParsedDay.dayNumber} of {totalDays} · {currentParsedDay.stageType}
+              </p>
+              <h4 className="font-serif text-lg text-charcoal font-medium leading-tight">
                 {currentParsedDay.stopName}
               </h4>
               {currentParsedDay.nightStay && (
-                <div className="flex items-center gap-1.5 text-xs text-[#8a2b2b] mt-1 font-serif">
-                  <Moon size={11} />
+                <div className="flex items-center gap-1.5 text-xs text-[#003525] mt-1.5 font-serif border-t border-[#E5E3DB]/70 pt-1.5">
+                  <Moon size={11} className="text-[#003525]" />
                   <span>Stay: {currentParsedDay.nightStay}</span>
                 </div>
               )}
@@ -817,248 +811,198 @@ export default function ItineraryMapScroll({
           </div>
 
           {/* Map Bottom Status Bar */}
-          <div className="flex items-center justify-between text-[11px] text-[#7d6749] bg-[#fbf8f2] border-t border-[#ebdcc4] px-4 py-2.5">
-            <span className="flex items-center gap-1.5 font-medium">
-              <Sparkles size={13} className="text-[#b8864e]" />
+          <div className="flex items-center justify-between text-[11px] text-charcoal/80 bg-[#F9F7F2] border-t border-[#E5E3DB] px-5 py-3">
+            <span className="flex items-center gap-2 font-medium">
+              <Sparkles size={13} className="text-primary" />
               <strong>Day {currentParsedDay.dayNumber}:</strong> {currentParsedDay.titleWithoutDay}
             </span>
-            <div className="flex items-center gap-3">
-              <span className="text-gray-500 italic hidden sm:inline">
-                {isFocusMode ? 'Showing 1 point at a time (Camera locked)' : 'Entire Route Overview'}
+            <div className="flex items-center gap-4">
+              <span className="text-charcoal/60 italic hidden sm:inline text-xs">
+                {isFocusMode ? 'Focused view on current stage' : 'Overview of complete pilgrimage'}
               </span>
               <button
                 onClick={() => {
-                  setIsScrollOpen(true);
                   if (scrollSectionRef.current) {
                     scrollSectionRef.current.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
-                className="text-[#b8864e] hover:text-[#936531] font-semibold underline underline-offset-2 flex items-center gap-1"
+                className="text-primary hover:text-[#d97013] font-bold text-[10px] uppercase tracking-[0.2em] flex items-center gap-1"
               >
-                <Scroll size={13} />
-                <span>{isScrollOpen ? 'Scroll Down to Details' : 'Unroll Manuscript Scroll'}</span>
+                <span>Read Itinerary Below ↓</span>
               </button>
             </div>
           </div>
         </div>
       </div>
 
-      {/* ── THE ROYAL MANUSCRIPT SCROLL SECTION (WITH OPEN/CLOSE ANIMATION) ── */}
-      <div ref={scrollSectionRef} className="max-w-4xl mx-auto w-full pt-4">
+      {/* ── THE ROYAL MANUSCRIPT SCROLL (WITH FINGER SWIPE NAVIGATION) ── */}
+      <div
+        ref={scrollSectionRef}
+        onTouchStart={handleScrollTouchStart}
+        onTouchEnd={handleScrollTouchEnd}
+        className="max-w-4xl mx-auto w-full pt-4 pb-12 select-none touch-pan-y"
+      >
         
-        {/* Scroll Header Bar with Open / Close Toggle Button */}
+        {/* Subtle Header Tag */}
         <div className="flex items-center justify-between px-2 mb-3">
-          <div className="flex items-center gap-2 text-xs font-serif text-[#785b37]">
-            <Scroll size={15} className="text-[#b8864e]" />
-            <span className="font-semibold uppercase tracking-widest text-[11px]">Royal Manuscript Itinerary</span>
+          <div className="flex items-center gap-2 text-xs font-serif text-charcoal/80">
+            <Scroll size={14} className="text-primary" />
+            <span className="font-bold uppercase tracking-[0.25em] text-[10px] text-primary">Royal Manuscript Itinerary</span>
             <span>•</span>
             <span className="italic">Day {currentParsedDay.dayNumber}: {currentParsedDay.stopName}</span>
           </div>
-
-          <button
-            onClick={() => setIsScrollOpen(!isScrollOpen)}
-            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium text-[#7d5d36] hover:text-gray-900 bg-[#f4ebdb] hover:bg-[#ede1ce] border border-[#d8c5a4] transition-colors"
-          >
-            {isScrollOpen ? (
-              <>
-                <span>Roll Up</span>
-                <ChevronUp size={14} />
-              </>
-            ) : (
-              <>
-                <span>Unroll Scroll</span>
-                <ChevronDown size={14} />
-              </>
-            )}
-          </button>
+          <div className="flex items-center gap-3">
+            <span className="text-[10px] uppercase tracking-[0.15em] text-charcoal/45 font-bold hidden sm:inline">
+              Swipe left/right or use buttons to navigate
+            </span>
+            <span className="text-[10px] uppercase tracking-[0.2em] text-primary font-bold bg-[#F4EFE6] px-2 py-0.5 border border-[#E5E3DB]">
+              Stage {selectedDayIndex + 1} of {totalDays}
+            </span>
+          </div>
         </div>
 
-        {/* AnimatePresence for Smooth Rolling Open and Closed Animation */}
-        <AnimatePresence mode="wait">
-          {isScrollOpen ? (
-            /* ── STATE 1: UNROLLED SCROLL WITH ANIMATION ── */
-            <motion.div
-              key={`open-scroll-${selectedDayIndex}`}
-              initial={{ height: 0, opacity: 0, scaleY: 0.1 }}
-              animate={{ height: 'auto', opacity: 1, scaleY: 1 }}
-              exit={{ height: 0, opacity: 0, scaleY: 0.1 }}
-              transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
-              style={{ transformOrigin: 'top center' }}
-              className="relative w-full overflow-hidden"
-            >
-              {/* TOP WOODEN ROLLER ROD */}
-              <div className="relative z-20 flex items-center justify-center">
-                {/* Left Gold Finial */}
-                <div className="w-6 h-8 rounded-l-md bg-gradient-to-r from-[#8a6828] via-[#d4af37] to-[#ffd700] shadow-md border-r border-[#694c16]" />
-                
-                {/* Center Walnut Wooden Rod */}
-                <div className="flex-1 h-6 bg-gradient-to-b from-[#2e190e] via-[#4d2a17] to-[#1a0e08] rounded-xs shadow-md border-y border-[#6e3e23] relative">
-                  <div className="absolute inset-x-0 top-1 h-[1px] bg-white/20" />
-                  <div className="absolute inset-x-0 bottom-1 h-[1px] bg-black/40" />
-                </div>
+        {/* ── STATIC SCROLL CONTAINER: NEVER RESIZES OR JUMPS ── */}
+        <div className="relative w-full">
+          
+          {/* Top Wooden Rod (Stationary & Fixed) */}
+          <div className="relative z-20 flex items-center justify-center">
+            <div className="w-6 h-8 rounded-l-xs bg-gradient-to-r from-[#b37e46] via-[#d2955c] to-[#f3821d] shadow-md border-r border-[#8c5e2d]" />
+            <div className="flex-1 h-6 bg-gradient-to-b from-[#1F1B18] via-[#332D29] to-[#161311] shadow-md border-y border-[#4a3f37] relative">
+              <div className="absolute inset-x-0 top-1 h-[1px] bg-white/15" />
+              <div className="absolute inset-x-0 bottom-1 h-[1px] bg-black/40" />
+            </div>
+            <div className="w-6 h-8 rounded-r-xs bg-gradient-to-l from-[#b37e46] via-[#d2955c] to-[#f3821d] shadow-md border-l border-[#8c5e2d]" />
+          </div>
 
-                {/* Right Gold Finial */}
-                <div className="w-6 h-8 rounded-r-md bg-gradient-to-l from-[#8a6828] via-[#d4af37] to-[#ffd700] shadow-md border-l border-[#694c16]" />
-              </div>
+          {/* Parchment Sheet Body (Fixed Structure) */}
+          <div className="relative mx-4 bg-gradient-to-b from-[#FFFFFF] via-[#F9F7F2] to-[#F3EDE2] border-x-2 border-[#E2DACD] shadow-2xl p-6 sm:p-10 pt-8 text-charcoal">
+            
+            {/* Watermark Texture */}
+            <div className="absolute inset-0 opacity-[0.025] pointer-events-none bg-[radial-gradient(#332D29_1px,transparent_1px)] [background-size:16px_16px]" />
 
-              {/* UNROLLED PARCHMENT BODY */}
-              <div className="relative mx-4 bg-gradient-to-b from-[#fbf6ec] via-[#f8f0dd] to-[#f4e9d0] border-x-2 border-[#d9c7a8] shadow-2xl p-6 sm:p-10 pt-8 text-charcoal">
-                
-                {/* Subtle Watermark Texture */}
-                <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#8c6231_1px,transparent_1px)] [background-size:16px_16px]" />
+            {/* Inner Double Frame (Flex container with fixed min-height) */}
+            <div className="border border-[#E7E1D7] p-6 sm:p-8 bg-white/50 backdrop-blur-2xs rounded-none relative shadow-inner flex flex-col justify-between">
+              
+              {/* Corner Fleurons */}
+              <span className="absolute -top-3 -left-3 text-[#d2955c] font-serif text-base select-none">⚜</span>
+              <span className="absolute -top-3 -right-3 text-[#d2955c] font-serif text-base select-none">⚜</span>
+              <span className="absolute -bottom-3 -left-3 text-[#d2955c] font-serif text-base select-none">⚜</span>
+              <span className="absolute -bottom-3 -right-3 text-[#d2955c] font-serif text-base select-none">⚜</span>
 
-                {/* Inner Double Gold Border Frame */}
-                <div className="border border-[#dcc59f] p-6 sm:p-8 bg-white/40 backdrop-blur-2xs rounded-sm relative shadow-inner">
-                  
-                  {/* Classical Corner Fleurons */}
-                  <span className="absolute -top-3 -left-3 text-[#b8864e] font-serif text-base select-none">⚜</span>
-                  <span className="absolute -top-3 -right-3 text-[#b8864e] font-serif text-base select-none">⚜</span>
-                  <span className="absolute -bottom-3 -left-3 text-[#b8864e] font-serif text-base select-none">⚜</span>
-                  <span className="absolute -bottom-3 -right-3 text-[#b8864e] font-serif text-base select-none">⚜</span>
-
-                  {/* Top Close / Roll Up Button in Upper Right */}
-                  <button
-                    onClick={() => setIsScrollOpen(false)}
-                    className="absolute top-3 right-3 text-gray-400 hover:text-gray-700 p-1.5 rounded-full hover:bg-black/5 transition-colors"
-                    title="Roll Up Manuscript"
+              {/* ── CONTENT CONTAINER: FIXED TO MAX DATA SIZE (NEVER RESIZES) ── */}
+              <div
+                style={{ minHeight: `${fixedContentHeight}px` }}
+                className="relative flex flex-col justify-start overflow-hidden"
+              >
+                <AnimatePresence mode="wait" custom={slideDirection}>
+                  <motion.div
+                    key={selectedDayIndex}
+                    custom={slideDirection}
+                    initial={{ opacity: 0, x: slideDirection * 22 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -slideDirection * 22 }}
+                    transition={{ duration: 0.18, ease: 'easeOut' }}
+                    className="space-y-6"
                   >
-                    <X size={16} />
-                  </button>
-
-                  {/* Header & Seal */}
-                  <div className="text-center pb-5 border-b border-[#e5d4bb] mb-6">
-                    <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-[#f3e5ce] border border-[#d5bc94] text-[10px] font-bold tracking-[0.25em] text-[#825c2b] uppercase mb-2">
-                      <span>DAY 0{currentParsedDay.dayNumber} OF 0{totalDays}</span>
-                      <span>•</span>
-                      <span>{currentParsedDay.stageType.toUpperCase()}</span>
-                    </div>
-
-                    <h3 className="font-serif text-2xl sm:text-4xl text-gray-900 leading-tight">
-                      {currentParsedDay.titleWithoutDay}
-                    </h3>
-
-                    {/* Night Stay Wax Badge */}
-                    {currentParsedDay.nightStay && (
-                      <div className="mt-3.5 inline-flex items-center gap-2 px-4 py-1.5 rounded-md bg-[#581c1c]/5 border border-[#8a2b2b]/20 text-[#6d1f1f] text-xs font-serif">
-                        <Moon size={13} className="text-[#8a2b2b]" />
-                        <span><strong>Night Stay:</strong> {currentParsedDay.nightStay}</span>
+                    {/* Header: Day Number, Title, Stay */}
+                    <div className="text-center pb-5 border-b border-[#E7E1D7]">
+                      <div className="inline-block text-[10px] font-bold tracking-[0.25em] text-primary uppercase mb-2">
+                        DAY 0{currentParsedDay.dayNumber} OF 0{totalDays} · {currentParsedDay.stageType.toUpperCase()}
                       </div>
-                    )}
-                  </div>
 
-                  {/* Detailed Activities Programme */}
-                  <div className="space-y-4 mb-8">
-                    <p className="text-[11px] uppercase tracking-[0.2em] font-bold text-[#b8864e]">
-                      Daily Sacred Programme & Darshan
-                    </p>
-                    
-                    {currentParsedDay.activities && currentParsedDay.activities.length > 0 ? (
-                      <ul className="space-y-3.5">
-                        {currentParsedDay.activities.map((act, actIdx) => (
-                          <li key={actIdx} className="flex items-start gap-3 text-sm text-gray-800 leading-relaxed">
-                            <span className="mt-1.5 w-2 h-2 rounded-full bg-[#b8864e] shrink-0 border border-[#8a5b28]" />
-                            <span>{act}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <p className="text-sm text-gray-500 italic">
-                        Detailed sightseeing, pujas and transfers are curated seamlessly for this day.
-                      </p>
-                    )}
-                  </div>
+                      <h3 className="font-serif text-2xl sm:text-4xl text-charcoal leading-tight">
+                        {currentParsedDay.titleWithoutDay}
+                      </h3>
 
-                  {/* Bottom Navigation & WhatsApp Action Bar */}
-                  <div className="pt-5 border-t border-[#e5d4bb] flex flex-col sm:flex-row items-center justify-between gap-4">
-                    <div className="flex items-center gap-2 w-full sm:w-auto">
-                      <button
-                        onClick={handlePrevDay}
-                        disabled={selectedDayIndex === 0}
-                        className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1 px-4 py-2 rounded-md text-xs font-semibold text-gray-700 bg-[#f7eedc] hover:bg-[#ebdcc0] disabled:opacity-40 disabled:hover:bg-[#f7eedc] transition-colors border border-[#d9c49f]"
-                      >
-                        <ChevronLeft size={15} />
-                        <span>Prev Stop</span>
-                      </button>
-                      <button
-                        onClick={handleNextDay}
-                        disabled={selectedDayIndex === totalDays - 1}
-                        className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1 px-4 py-2 rounded-md text-xs font-semibold text-gray-700 bg-[#f7eedc] hover:bg-[#ebdcc0] disabled:opacity-40 disabled:hover:bg-[#f7eedc] transition-colors border border-[#d9c49f]"
-                      >
-                        <span>Next Stop</span>
-                        <ChevronRight size={15} />
-                      </button>
+                      {currentParsedDay.nightStay && (
+                        <div className="mt-3.5 inline-flex items-center gap-2 px-3.5 py-1 border border-[#003525]/20 bg-[#003525]/10 text-[#003525] text-xs font-serif">
+                          <Moon size={12} className="text-[#003525]" />
+                          <span><strong>Night Stay:</strong> {currentParsedDay.nightStay}</span>
+                        </div>
+                      )}
                     </div>
 
-                    <a
-                      href={whatsappUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold bg-[#25D366] text-white hover:bg-[#20ba59] transition-colors shadow-sm"
-                    >
-                      <MessageCircle size={15} />
-                      <span>Enquire Day {currentParsedDay.dayNumber} Details</span>
-                    </a>
-                  </div>
-
-                </div>
+                    {/* Activities List */}
+                    <div className="space-y-3.5">
+                      <p className="text-[10px] uppercase tracking-[0.25em] font-bold text-accent">
+                        Daily Sacred Programme & Darshan
+                      </p>
+                      
+                      {currentParsedDay.activities && currentParsedDay.activities.length > 0 ? (
+                        <ul className="space-y-3">
+                          {currentParsedDay.activities.map((act, actIdx) => (
+                            <li key={actIdx} className="flex items-start gap-3 text-sm text-charcoal leading-relaxed">
+                              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                              <span>{act}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className="text-sm text-charcoal/60 italic">
+                          Detailed sightseeing, pujas and transfers are curated seamlessly for this day.
+                        </p>
+                      )}
+                    </div>
+                  </motion.div>
+                </AnimatePresence>
               </div>
 
-              {/* BOTTOM WOODEN ROLLER ROD & SILK TASSEL */}
-              <div className="relative z-20 flex flex-col items-center">
-                <div className="w-full flex items-center justify-center">
-                  <div className="w-6 h-8 rounded-l-md bg-gradient-to-r from-[#8a6828] via-[#d4af37] to-[#ffd700] shadow-md border-r border-[#694c16]" />
-                  <div className="flex-1 h-6 bg-gradient-to-b from-[#2e190e] via-[#4d2a17] to-[#1a0e08] rounded-xs shadow-md border-y border-[#6e3e23] relative">
-                    <div className="absolute inset-x-0 top-1 h-[1px] bg-white/20" />
-                    <div className="absolute inset-x-0 bottom-1 h-[1px] bg-black/40" />
-                  </div>
-                  <div className="w-6 h-8 rounded-r-md bg-gradient-to-l from-[#8a6828] via-[#d4af37] to-[#ffd700] shadow-md border-l border-[#694c16]" />
+              {/* ── FIXED ACTION BUTTONS: NEVER SHIFT OR JUMP ── */}
+              <div className="pt-6 mt-6 border-t border-[#E7E1D7] flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="flex items-center border border-[#E5E3DB] bg-[#F9F7F2] divide-x divide-[#E5E3DB] w-full sm:w-auto">
+                  <button
+                    onClick={handlePrevDay}
+                    disabled={selectedDayIndex === 0}
+                    className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.2em] text-charcoal hover:bg-white disabled:opacity-30 disabled:hover:bg-[#F9F7F2] transition-colors"
+                  >
+                    <ChevronLeft size={14} />
+                    <span>Prev Stop</span>
+                  </button>
+                  <button
+                    onClick={handleNextDay}
+                    disabled={selectedDayIndex === totalDays - 1}
+                    className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.2em] text-charcoal hover:bg-white disabled:opacity-30 disabled:hover:bg-[#F9F7F2] transition-colors"
+                  >
+                    <span>Next Stop</span>
+                    <ChevronRight size={14} />
+                  </button>
                 </div>
 
-                {/* Hanging Silk Tassel Centerpiece */}
-                <div className="flex flex-col items-center -mt-0.5">
-                  <div className="w-2 h-4 bg-[#b8864e]" />
-                  <div className="w-4 h-4 rounded-full bg-[#851d1d] shadow-xs border border-[#ffd700]" />
-                  <div className="w-5 h-7 bg-gradient-to-b from-[#851d1d] to-[#580000] rounded-b-sm shadow-xs" />
-                </div>
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 text-[10px] font-bold uppercase tracking-[0.2em] bg-primary text-white hover:bg-[#c97524] transition-colors shadow-sm"
+                >
+                  <MessageCircle size={14} />
+                  <span>Enquire Day {currentParsedDay.dayNumber} Details</span>
+                </a>
               </div>
 
-            </motion.div>
-          ) : (
-            /* ── STATE 2: ROLLED CLOSED SCROLL BANNER ── */
-            <motion.div
-              key="closed-scroll"
-              initial={{ opacity: 0, scaleY: 0.8 }}
-              animate={{ opacity: 1, scaleY: 1 }}
-              exit={{ opacity: 0, scaleY: 0.8 }}
-              transition={{ duration: 0.35, ease: 'easeOut' }}
-              onClick={() => setIsScrollOpen(true)}
-              className="cursor-pointer group select-none py-2"
-            >
-              {/* Rolled Cylinder Rods with Center Calligraphic Badge */}
-              <div className="relative flex flex-col items-center">
-                {/* Double Rods Closed Together */}
-                <div className="w-full flex items-center justify-center">
-                  <div className="w-6 h-9 rounded-l-md bg-gradient-to-r from-[#8a6828] via-[#d4af37] to-[#ffd700] shadow-md border-r border-[#694c16]" />
-                  <div className="flex-1 h-8 bg-gradient-to-b from-[#2e190e] via-[#4d2a17] to-[#1a0e08] rounded-xs shadow-md border-y border-[#6e3e23] flex items-center justify-center px-4">
-                    <span className="text-[#ffd700] font-serif text-sm sm:text-base tracking-wider flex items-center gap-2 group-hover:scale-105 transition-transform">
-                      <Scroll size={16} className="text-[#ffd700]" />
-                      <span>Day {currentParsedDay.dayNumber}: {currentParsedDay.stopName} — Click to Unroll Manuscript</span>
-                      <ChevronDown size={15} />
-                    </span>
-                  </div>
-                  <div className="w-6 h-9 rounded-r-md bg-gradient-to-l from-[#8a6828] via-[#d4af37] to-[#ffd700] shadow-md border-l border-[#694c16]" />
-                </div>
+            </div>
+          </div>
 
-                {/* Tassel */}
-                <div className="flex flex-col items-center -mt-0.5">
-                  <div className="w-2 h-3 bg-[#b8864e]" />
-                  <div className="w-3.5 h-3.5 rounded-full bg-[#851d1d] border border-[#ffd700]" />
-                  <div className="w-4 h-6 bg-gradient-to-b from-[#851d1d] to-[#580000] rounded-b-sm shadow-xs" />
-                </div>
+          {/* Bottom Wooden Rod & Tassel (Stationary & Fixed) */}
+          <div className="relative z-20 flex flex-col items-center">
+            <div className="w-full flex items-center justify-center">
+              <div className="w-6 h-8 rounded-l-xs bg-gradient-to-r from-[#b37e46] via-[#d2955c] to-[#f3821d] shadow-md border-r border-[#8c5e2d]" />
+              <div className="flex-1 h-6 bg-gradient-to-b from-[#1F1B18] via-[#332D29] to-[#161311] shadow-md border-y border-[#4a3f37] relative">
+                <div className="absolute inset-x-0 top-1 h-[1px] bg-white/15" />
+                <div className="absolute inset-x-0 bottom-1 h-[1px] bg-black/40" />
               </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+              <div className="w-6 h-8 rounded-r-xs bg-gradient-to-l from-[#b37e46] via-[#d2955c] to-[#f3821d] shadow-md border-l border-[#8c5e2d]" />
+            </div>
+
+            {/* Hanging Tassel */}
+            <div className="flex flex-col items-center -mt-0.5">
+              <div className="w-2 h-4 bg-primary" />
+              <div className="w-3.5 h-3.5 rounded-full bg-charcoal shadow-xs border border-accent" />
+              <div className="w-4 h-6 bg-gradient-to-b from-charcoal to-[#1a1614] shadow-xs" />
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
     </div>

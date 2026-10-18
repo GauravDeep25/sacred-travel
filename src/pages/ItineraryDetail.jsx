@@ -329,13 +329,13 @@ export default function ItineraryDetail() {
 
           <div className="flex flex-wrap items-center gap-3">
             {/* View Switcher Toggle */}
-            <div className="inline-flex items-center bg-[#f4ebd9] p-1 rounded-full border border-[#d9c7aa] shadow-2xs">
+            <div className="inline-flex items-center border border-[#E7E1D7] bg-white divide-x divide-[#E7E1D7] shadow-2xs">
               <button
                 onClick={() => setViewMode('map')}
-                className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all ${
+                className={`inline-flex items-center gap-2 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.2em] transition-colors ${
                   viewMode === 'map'
-                    ? 'bg-[#b8864e] text-white shadow-xs'
-                    : 'text-[#6e5332] hover:text-gray-900'
+                    ? 'bg-primary text-white'
+                    : 'text-[#332D29] hover:bg-[#F9F7F2] hover:text-primary'
                 }`}
                 title="View interactive map and unrolling manuscript scrolls"
               >
@@ -344,10 +344,10 @@ export default function ItineraryDetail() {
               </button>
               <button
                 onClick={() => setViewMode('list')}
-                className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all ${
+                className={`inline-flex items-center gap-2 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.2em] transition-colors ${
                   viewMode === 'list'
-                    ? 'bg-[#b8864e] text-white shadow-xs'
-                    : 'text-[#6e5332] hover:text-gray-900'
+                    ? 'bg-primary text-white'
+                    : 'text-[#332D29] hover:bg-[#F9F7F2] hover:text-primary'
                 }`}
                 title="View original day-by-day accordion list"
               >
@@ -360,7 +360,7 @@ export default function ItineraryDetail() {
             <button
               onClick={handleCopyLink}
               title="Copy direct link to this sub-itinerary"
-              className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-gray-600 hover:text-[#b8864e] px-3.5 py-2 rounded-full border border-gray-200 bg-white hover:bg-gray-50 transition-colors shadow-2xs"
+              className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-[#332D29] hover:text-primary px-4 py-2.5 border border-[#E7E1D7] bg-white hover:bg-[#F9F7F2] transition-colors shadow-2xs"
             >
               {copied ? (
                 <>
@@ -395,19 +395,19 @@ export default function ItineraryDetail() {
               />
 
               {/* Lower Details Row: Inclusions & WhatsApp Booking Concierge */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6 border-t border-[#ebdcc4]">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6 border-t border-[#E7E1D7]">
                 
                 {/* 1. What's Included */}
                 {currentPkg?.inclusions?.length > 0 && (
-                  <div className="lg:col-span-2 border border-[#e2d5c0] bg-white/80 rounded-2xl p-6 sm:p-7 shadow-xs">
-                    <div className="flex items-center gap-2 text-[#D4A373] text-[10px] tracking-widest uppercase font-semibold mb-4">
-                      <CheckCircle2 size={14} className="text-emerald-600" />
+                  <div className="lg:col-span-2 border border-[#E7E1D7] bg-[#FCFBF8] p-8 shadow-xs">
+                    <div className="flex items-center gap-2 text-primary text-[10px] tracking-[0.25em] uppercase font-bold mb-4">
+                      <CheckCircle2 size={14} className="text-emerald-700" />
                       <span>Sacred Inclusions & Comforts</span>
                     </div>
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                       {currentPkg.inclusions.map((inc, i) => (
-                        <li key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-gray-700 leading-relaxed">
-                          <CheckCircle2 size={14} className="flex-shrink-0 mt-0.5 text-emerald-600" />
+                        <li key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#332D29] leading-relaxed">
+                          <CheckCircle2 size={14} className="flex-shrink-0 mt-0.5 text-emerald-700" />
                           <span>{inc}</span>
                         </li>
                       ))}
@@ -416,13 +416,13 @@ export default function ItineraryDetail() {
                 )}
 
                 {/* 2. Direct WhatsApp Booking Concierge */}
-                <div className="border border-[#e2d5c0] bg-[#1a1209] text-white rounded-2xl p-6 sm:p-7 shadow-sm flex flex-col justify-between">
+                <div className="border border-[#E7E1D7] bg-[#1a1209] text-white p-8 shadow-sm flex flex-col justify-between">
                   <div>
-                    <p className="text-[#D4A373] text-[10px] tracking-widest uppercase font-semibold mb-2">Private Circuit Concierge</p>
+                    <p className="text-primary text-[10px] tracking-[0.25em] uppercase font-bold mb-2">Private Circuit Concierge</p>
                     <h3 className="font-serif text-2xl text-white mb-2 leading-tight">{displayName}</h3>
                     {currentPkg?.duration && (
                       <p className="text-white/60 text-xs mb-4 flex items-center gap-2">
-                        <Clock size={12} className="text-[#D4A373]" />
+                        <Clock size={12} className="text-primary" />
                         {currentPkg.duration}
                       </p>
                     )}
@@ -437,7 +437,7 @@ export default function ItineraryDetail() {
                       target="_blank"
                       rel="noreferrer"
                       onClick={() => trackWhatsAppClick('itinerary_map_cta', `${displayName} - ${currentPkg?.duration || ''}`)}
-                      className="flex items-center justify-center gap-2 w-full bg-[#E2852B] text-white px-5 py-3 rounded-full text-xs font-bold uppercase tracking-[0.15em] hover:bg-[#c97524] transition-colors shadow-md"
+                      className="flex items-center justify-center gap-2 w-full bg-primary text-white px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-[#c97524] transition-colors shadow-sm"
                     >
                       <MessageCircle size={15} />
                       Enquire via WhatsApp
