@@ -22,7 +22,7 @@ import {
  */
 function parseDayDetails(day, index, totalDays) {
   const fullTitle = (day?.title || `Day ${index + 1}`).trim();
-  
+
   // Cleanly strip prefixes like "Day 1 -", "Day 1 :", "Day 1 |", "Day 1 –", "Day 1.", "Day 01:"
   let titleWithoutDay = fullTitle
     .replace(/^Day\s*\d+\s*[:|–—-]\s*/i, '')
@@ -52,7 +52,7 @@ function parseDayDetails(day, index, totalDays) {
   let nightStay = null;
   const activities = day?.activities || [];
   for (const act of activities) {
-    const match = act.match(/(?:Night\s*stay|Overnight\s*stay\s*(?:in|at)?)\s*[:–—\-]?\s*([A-Za-z0-9\s/]+)/i);
+    const match = act.match(/(?:Night\s*stay|Overnight\s*stay\s*(?:in|at)?)\s*[:–—-]?\s*([A-Za-z0-9\s/]+)/i);
     if (match && match[1]) {
       nightStay = match[1].replace(/[.,]/g, '').trim();
       break;
@@ -93,10 +93,10 @@ function calculateWaypointCoordinates(totalDays) {
   const points = [];
   for (let i = 0; i < totalDays; i++) {
     const t = i / (totalDays - 1); // 0 to 1
-    
+
     // Natural curving circuit across the landscape
     const x = paddingX + t * (width - 2 * paddingX);
-    
+
     // Sinusoidal crest for Himalayan elevation peaks
     const elevationArch = Math.sin(t * Math.PI) * 210;
     const meander = Math.sin(t * Math.PI * 2.8) * 60;
@@ -143,7 +143,7 @@ const POINT_FOCUS_ZOOM = 2.4;
 const MOBILE_FOCUS_ZOOM = 3.4;
 
 export default function ItineraryMapScroll({
-  destination,
+  destination: _destination,
   displayName,
   packageData,
 }) {
@@ -224,15 +224,51 @@ export default function ItineraryMapScroll({
     }
   }, [isMobile, coordinates, selectedDayIndex]);
 
-  // Calculate maximum activities count across all days to keep scroll size completely fixed
-  const maxDayActivities = useMemo(() => {
-    return Math.max(...days.map((d) => (d.activities ? d.activities.length : 0)), 5);
+  // 1. Calculate maximum activity count and maximum text volume across all days in this itinerary
+  const maxContentMetrics = useMemo(() => {
+    if (!days || days.length === 0) {
+      return { maxActs: 4, maxLinesMobile: 14, maxLinesDesktop: 10 };
+    }
+
+    let maxActs = 0;
+    let maxLinesMobile = 0;
+    let maxLinesDesktop = 0;
+
+    days.forEach((d) => {
+      const acts = d.activities || [];
+      maxActs = Math.max(maxActs, acts.length);
+
+      const titleLen = (d.title || '').length;
+      // Mobile text column (~300px): ~32 chars/line for titles, ~36 for activities
+      const titleLinesMob = Math.max(1, Math.ceil(titleLen / 32));
+      const actLinesMob = acts.reduce((sum, a) => sum + Math.max(1, Math.ceil(a.length / 36)), 0);
+      const totalMob = titleLinesMob + actLinesMob + acts.length * 0.5;
+
+      // Desktop text column (~700px): ~65 chars/line for titles, ~75 for activities
+      const titleLinesDesk = Math.max(1, Math.ceil(titleLen / 65));
+      const actLinesDesk = acts.reduce((sum, a) => sum + Math.max(1, Math.ceil(a.length / 75)), 0);
+      const totalDesk = titleLinesDesk + actLinesDesk + acts.length * 0.5;
+
+      maxLinesMobile = Math.max(maxLinesMobile, totalMob);
+      maxLinesDesktop = Math.max(maxLinesDesktop, totalDesk);
+    });
+
+    return {
+      maxActs: Math.max(maxActs, 4),
+      maxLinesMobile: Math.max(maxLinesMobile, 12),
+      maxLinesDesktop: Math.max(maxLinesDesktop, 8),
+    };
   }, [days]);
 
-  // Compute fixed content height calibrated to comfortably fit the biggest day in this itinerary
+  // 2. Compute a constant, fixed content height calibrated to fit the maximum text content
   const fixedContentHeight = useMemo(() => {
-    return Math.max(540, 210 + maxDayActivities * 55);
-  }, [maxDayActivities]);
+    if (isMobile) {
+      // Mobile: fixed height so the scroll never changes size between days
+      return Math.max(420, 150 + Math.round(maxContentMetrics.maxLinesMobile * 24));
+    }
+    // Desktop: fixed height calibrated to the maximum text content across all days
+    return Math.max(500, 170 + Math.round(maxContentMetrics.maxLinesDesktop * 27));
+  }, [isMobile, maxContentMetrics]);
 
   // Focus on a specific point with camera glide
   const focusOnPoint = useCallback((index, targetZoom = POINT_FOCUS_ZOOM) => {
@@ -461,6 +497,20 @@ export default function ItineraryMapScroll({
 
   const currentParsedDay = parsedDays[selectedDayIndex] || parsedDays[0];
 
+  const cleanTitle = useMemo(() => {
+    const raw = packageData?.title || displayName || '';
+    // Strip any ": Day 1 to Day 3", "Day m to day n", or similar range pattern
+    const withoutDays = raw
+      .replace(/:\s*Day\s*\d+\s*(?:to|-)\s*Day\s*\d+/gi, '')
+      .replace(/\s*Day\s*\d+\s*(?:to|-)\s*Day\s*\d+/gi, '')
+      .replace(/:\s*Day\s*\d+\s*to\s*\d+/gi, '')
+      .trim();
+
+    return withoutDays.toLowerCase().includes('expedition')
+      ? withoutDays
+      : `${withoutDays} Expedition`;
+  }, [packageData?.title, displayName]);
+
   const whatsappMessage = encodeURIComponent(
     `Namaste! I would like to enquire about ${displayName} (${packageData?.duration || 'Tour'}), specifically Day ${currentParsedDay?.dayNumber}: ${currentParsedDay?.titleWithoutDay}.`
   );
@@ -479,7 +529,7 @@ export default function ItineraryMapScroll({
                 <span>Interactive Sacred Circuit Map</span>
               </p>
               <h3 className="font-serif text-xl sm:text-2xl lg:text-3xl text-charcoal tracking-tight">
-                {displayName} Expedition: Day 1 to Day {totalDays}
+                {cleanTitle}
               </h3>
               <p className="text-xs sm:text-sm text-charcoal/70 mt-1 max-w-2xl leading-relaxed hidden sm:block">
                 Drag to pan across the sacred terrain or use the navigation controls below to explore each day's plan.
@@ -488,15 +538,14 @@ export default function ItineraryMapScroll({
 
             {/* Desktop Action Toolbar (Preserved for PC) */}
             <div className="hidden md:flex flex-wrap items-center gap-2">
-              
+
               {/* Single Point Focus vs Full Overview Toggle */}
               <button
                 onClick={toggleFocusMode}
-                className={`inline-flex items-center gap-2 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.2em] border transition-colors ${
-                  isFocusMode
+                className={`inline-flex items-center gap-2 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.2em] border transition-colors ${isFocusMode
                     ? 'bg-primary text-white border-primary'
                     : 'bg-white text-charcoal border-[#E5E3DB] hover:border-primary hover:text-primary'
-                }`}
+                  }`}
                 title={isFocusMode ? 'Zoom out to view full circuit' : 'Focus camera on Day ' + (selectedDayIndex + 1)}
               >
                 <Crosshair size={13} />
@@ -511,11 +560,10 @@ export default function ItineraryMapScroll({
                     focusOnPoint(selectedDayIndex);
                   }
                 }}
-                className={`inline-flex items-center gap-2 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.2em] border transition-colors ${
-                  isPlayingTour
+                className={`inline-flex items-center gap-2 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.2em] border transition-colors ${isPlayingTour
                     ? 'bg-[#003525] text-white border-[#003525]'
                     : 'bg-white text-charcoal border-[#E5E3DB] hover:border-primary hover:text-primary'
-                }`}
+                  }`}
               >
                 {isPlayingTour ? <Pause size={13} /> : <Play size={13} />}
                 <span>{isPlayingTour ? 'Pause' : 'Auto Tour'}</span>
@@ -560,22 +608,20 @@ export default function ItineraryMapScroll({
               <div className="inline-flex items-center border border-[#E5E3DB] bg-white divide-x divide-[#E5E3DB] shadow-2xs">
                 <button
                   onClick={() => setMobileSubView('map')}
-                  className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-[9px] font-bold uppercase tracking-wider transition-colors ${
-                    mobileSubView === 'map'
+                  className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-[9px] font-bold uppercase tracking-wider transition-colors ${mobileSubView === 'map'
                       ? 'bg-primary text-white'
                       : 'text-charcoal hover:bg-[#F9F7F2]'
-                  }`}
+                    }`}
                 >
                   <Compass size={11} />
                   <span>Map</span>
                 </button>
                 <button
                   onClick={() => setMobileSubView('stops')}
-                  className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-[9px] font-bold uppercase tracking-wider transition-colors ${
-                    mobileSubView === 'stops'
+                  className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-[9px] font-bold uppercase tracking-wider transition-colors ${mobileSubView === 'stops'
                       ? 'bg-primary text-white'
                       : 'text-charcoal hover:bg-[#F9F7F2]'
-                  }`}
+                    }`}
                 >
                   <List size={11} />
                   <span>Stops ({totalDays})</span>
@@ -586,11 +632,10 @@ export default function ItineraryMapScroll({
               <div className="flex items-center gap-1.5">
                 <button
                   onClick={toggleFocusMode}
-                  className={`inline-flex items-center gap-1 px-2.5 py-1.5 text-[9px] font-bold uppercase tracking-wider border transition-colors ${
-                    isFocusMode
+                  className={`inline-flex items-center gap-1 px-2.5 py-1.5 text-[9px] font-bold uppercase tracking-wider border transition-colors ${isFocusMode
                       ? 'bg-primary text-white border-primary'
                       : 'bg-white text-charcoal border-[#E5E3DB]'
-                  }`}
+                    }`}
                   title={isFocusMode ? 'Show Full Route' : 'Focus Day'}
                 >
                   <Crosshair size={11} />
@@ -604,11 +649,10 @@ export default function ItineraryMapScroll({
                       focusOnPoint(selectedDayIndex, MOBILE_FOCUS_ZOOM);
                     }
                   }}
-                  className={`p-1.5 border transition-colors ${
-                    isPlayingTour
+                  className={`p-1.5 border transition-colors ${isPlayingTour
                       ? 'bg-[#003525] text-white border-[#003525]'
                       : 'bg-white text-charcoal border-[#E5E3DB]'
-                  }`}
+                    }`}
                   title={isPlayingTour ? 'Pause Tour' : 'Auto Play'}
                 >
                   {isPlayingTour ? <Pause size={12} /> : <Play size={12} />}
@@ -627,25 +671,31 @@ export default function ItineraryMapScroll({
           </div>
         </div>
 
-        {/* Day Tabs Strip (Anchored baseline with flush bottom border) */}
+        {/* Day Tabs Strip with horizontal scroll bar positioned cleanly below the orange indicator line */}
         <div className="border-t border-[#E5E3DB] bg-[#F7F4EE] px-3 sm:px-8">
-          <div className="flex items-center overflow-x-auto no-scrollbar gap-1 -mb-[1px]">
-            {parsedDays.map((pDay, idx) => {
-              const isSelected = selectedDayIndex === idx;
-              return (
-                <button
-                  key={idx}
-                  onClick={() => handleSelectDay(idx, isFocusMode)}
-                  className={`flex-shrink-0 px-3 sm:px-4 py-2.5 sm:py-3 text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] border-b-2 transition-all whitespace-nowrap ${
-                    isSelected
-                      ? 'border-primary text-primary bg-[#FCFBF8] font-bold shadow-2xs'
-                      : 'border-transparent text-charcoal/60 hover:text-charcoal hover:border-[#DCD4C7]'
-                  }`}
-                >
-                  Day {pDay.dayNumber}: {pDay.stopName}
-                </button>
-              );
-            })}
+          <div className="overflow-x-auto pt-1 pb-2 scrollbar-thin scrollbar-thumb-[#d2955c]/30 hover:scrollbar-thumb-primary/60 scrollbar-track-black/5">
+            <div className="flex items-center gap-1 border-b border-[#E5E3DB] min-w-max">
+              {parsedDays.map((pDay, idx) => {
+                const isSelected = selectedDayIndex === idx;
+                return (
+                  <button
+                    key={idx}
+                    onClick={() => handleSelectDay(idx, isFocusMode)}
+                    className={`relative flex-shrink-0 px-3.5 sm:px-5 py-2.5 sm:py-3 text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] transition-all whitespace-nowrap cursor-pointer ${
+                      isSelected
+                        ? 'text-primary bg-[#FCFBF8] font-bold shadow-2xs'
+                        : 'text-charcoal/60 hover:text-charcoal hover:bg-black/5'
+                    }`}
+                  >
+                    <span>Day {pDay.dayNumber}: {pDay.stopName}</span>
+                    {/* Active Orange Indicator Line - Sits securely ABOVE the scrollbar */}
+                    {isSelected && (
+                      <span className="absolute bottom-0 left-0 right-0 h-[2.5px] bg-primary z-10" />
+                    )}
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
@@ -674,21 +724,19 @@ export default function ItineraryMapScroll({
                         scrollSectionRef.current.scrollIntoView({ behavior: 'smooth' });
                       }
                     }}
-                    className={`w-full text-left p-3 border transition-all flex items-center justify-between gap-3 ${
-                      isSelected
+                    className={`w-full text-left p-3 border transition-all flex items-center justify-between gap-3 ${isSelected
                         ? 'border-primary bg-primary/10 shadow-xs'
                         : 'border-[#E5E3DB] bg-white hover:bg-[#F9F7F2]'
-                    }`}
+                      }`}
                   >
                     <div className="flex items-center gap-3 min-w-0">
                       <span
-                        className={`w-7 h-7 shrink-0 text-xs font-bold flex items-center justify-center ${
-                          isSelected
+                        className={`w-7 h-7 shrink-0 text-xs font-bold flex items-center justify-center ${isSelected
                             ? 'bg-primary text-white'
                             : isPassed
-                            ? 'bg-charcoal text-white'
-                            : 'bg-[#F2ECE1] text-charcoal border border-[#E5E3DB]'
-                        }`}
+                              ? 'bg-charcoal text-white'
+                              : 'bg-[#F2ECE1] text-charcoal border border-[#E5E3DB]'
+                          }`}
                       >
                         {pDay.dayNumber}
                       </span>
@@ -745,9 +793,8 @@ export default function ItineraryMapScroll({
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
-              className={`relative w-full overflow-hidden select-none h-[310px] sm:h-[440px] md:h-[600px] ${
-                isDragging ? 'cursor-grabbing' : 'cursor-grab'
-              }`}
+              className={`relative w-full overflow-hidden select-none h-[310px] sm:h-[440px] md:h-[600px] ${isDragging ? 'cursor-grabbing' : 'cursor-grab'
+                }`}
             >
               {/* STATIONARY COMPASS ROSE (Hidden on mobile to preserve screen space; preserved on PC) */}
               <div className="hidden md:block absolute top-4 right-4 z-20 pointer-events-none select-none drop-shadow-sm">
@@ -970,9 +1017,8 @@ export default function ItineraryMapScroll({
                 </button>
                 <button
                   onClick={() => focusOnPoint(selectedDayIndex, isMobile ? MOBILE_FOCUS_ZOOM : POINT_FOCUS_ZOOM)}
-                  className={`p-2 sm:p-2.5 transition-colors ${
-                    isFocusMode ? 'bg-primary text-white' : 'hover:bg-[#F9F7F2] text-charcoal'
-                  }`}
+                  className={`p-2 sm:p-2.5 transition-colors ${isFocusMode ? 'bg-primary text-white' : 'hover:bg-[#F9F7F2] text-charcoal'
+                    }`}
                   title="Center on Selected Stop"
                 >
                   <Crosshair size={15} />
@@ -1071,7 +1117,7 @@ export default function ItineraryMapScroll({
         onTouchEnd={handleScrollTouchEnd}
         className="max-w-4xl mx-auto w-full pt-4 pb-12 select-none touch-pan-y px-1 sm:px-0"
       >
-        
+
         {/* Subtle Header Tag */}
         <div className="flex items-center justify-between px-2 mb-2 sm:mb-3">
           <div className="flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-serif text-charcoal/80 truncate">
@@ -1092,7 +1138,7 @@ export default function ItineraryMapScroll({
 
         {/* ── SCROLL CONTAINER (ADAPTIVE HEIGHT ON MOBILE, FIXED ON PC) ── */}
         <div className="relative w-full">
-          
+
           {/* Top Wooden Rod (Stationary & Fixed) */}
           <div className="relative z-20 flex items-center justify-center">
             <div className="w-5 sm:w-6 h-7 sm:h-8 rounded-l-xs bg-gradient-to-r from-[#b37e46] via-[#d2955c] to-[#f3821d] shadow-md border-r border-[#8c5e2d]" />
@@ -1105,23 +1151,23 @@ export default function ItineraryMapScroll({
 
           {/* Parchment Sheet Body (Responsive padding) */}
           <div className="relative mx-1 sm:mx-4 bg-gradient-to-b from-[#FFFFFF] via-[#F9F7F2] to-[#F3EDE2] border-x sm:border-x-2 border-[#E2DACD] shadow-2xl p-4 sm:p-10 pt-6 sm:pt-8 text-charcoal">
-            
+
             {/* Watermark Texture */}
             <div className="absolute inset-0 opacity-[0.025] pointer-events-none bg-[radial-gradient(#332D29_1px,transparent_1px)] [background-size:16px_16px]" />
 
             {/* Inner Double Frame */}
             <div className="border border-[#E7E1D7] p-4 sm:p-8 bg-white/50 backdrop-blur-2xs rounded-none relative shadow-inner flex flex-col justify-between">
-              
+
               {/* Corner Fleurons */}
               <span className="absolute -top-3 -left-3 text-[#d2955c] font-serif text-sm sm:text-base select-none">⚜</span>
               <span className="absolute -top-3 -right-3 text-[#d2955c] font-serif text-sm sm:text-base select-none">⚜</span>
               <span className="absolute -bottom-3 -left-3 text-[#d2955c] font-serif text-sm sm:text-base select-none">⚜</span>
               <span className="absolute -bottom-3 -right-3 text-[#d2955c] font-serif text-sm sm:text-base select-none">⚜</span>
 
-              {/* ── CONTENT CONTAINER: Adaptive on mobile to avoid blank space, Fixed on desktop ── */}
+              {/* ── CONTENT CONTAINER: Fixed size calibrated to maximum text content (does not jump or resize) ── */}
               <div
-                style={{ minHeight: isMobile ? undefined : `${fixedContentHeight}px` }}
-                className="relative flex flex-col justify-start overflow-hidden min-h-[180px] md:min-h-0"
+                style={{ height: `${fixedContentHeight}px` }}
+                className="relative flex flex-col justify-start overflow-y-auto scrollbar-thin scrollbar-thumb-primary/20 hover:scrollbar-thumb-primary/40 pr-1 sm:pr-2"
               >
                 <AnimatePresence mode="wait" custom={slideDirection}>
                   <motion.div
@@ -1156,7 +1202,7 @@ export default function ItineraryMapScroll({
                       <p className="text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] font-bold text-accent">
                         Daily Sacred Programme & Darshan
                       </p>
-                      
+
                       {currentParsedDay.activities && currentParsedDay.activities.length > 0 ? (
                         <ul className="space-y-2 sm:space-y-3">
                           {currentParsedDay.activities.map((act, actIdx) => (
@@ -1182,9 +1228,8 @@ export default function ItineraryMapScroll({
                   <button
                     key={i}
                     onClick={() => handleSelectDay(i, isFocusMode)}
-                    className={`h-1.5 rounded-full transition-all ${
-                      selectedDayIndex === i ? 'w-4 bg-primary' : 'w-1.5 bg-[#E5E3DB]'
-                    }`}
+                    className={`h-1.5 rounded-full transition-all ${selectedDayIndex === i ? 'w-4 bg-primary' : 'w-1.5 bg-[#E5E3DB]'
+                      }`}
                     aria-label={`Jump to day ${i + 1}`}
                   />
                 ))}
