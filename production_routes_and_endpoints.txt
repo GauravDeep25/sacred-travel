@@ -122,6 +122,10 @@ https://www.yugatirtha.com/itinerary/kerala
 # --- Static JSON API Endpoints (GET) ---
 https://www.yugatirtha.com/api/itineraries.json
 https://www.yugatirtha.com/api/itineraries/index.json
+https://www.yugatirtha.com/api/itineraries/maharashtra-3-jyotirlinga.json
+https://www.yugatirtha.com/api/itineraries/nainital-kainchi-bhimtal.json
+https://www.yugatirtha.com/api/itineraries/gujarat-jyotirlinga.json
+https://www.yugatirtha.com/api/itineraries/ujjain-omkareshwar-yatra.json
 https://www.yugatirtha.com/api/itineraries/kashmir.json
 https://www.yugatirtha.com/api/itineraries/ladakh.json
 https://www.yugatirtha.com/api/itineraries/himachal.json

@@ -12,7 +12,8 @@ import {
   Check,
   Compass,
   List,
-  MapPin,
+  XCircle,
+  AlertCircle,
 } from 'lucide-react';
 import ItineraryMapScroll from '../components/itinerary/ItineraryMapScroll';
 import {
@@ -31,17 +32,17 @@ function DayCard({ day, index, isOpen, onToggle }) {
     <div className="border border-gray-200 bg-white overflow-hidden">
       <button
         onClick={onToggle}
-        className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-[#faf9f7] transition-colors group"
+        className="w-full flex items-center justify-between px-4 sm:px-6 py-3.5 sm:py-5 text-left hover:bg-[#faf9f7] transition-colors group"
         aria-expanded={isOpen}
       >
-        <div className="flex items-center gap-4">
-          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#D4A373]/15 text-[#b8864e] text-xs font-bold flex items-center justify-center">
+        <div className="flex items-center gap-3 sm:gap-4">
+          <span className="flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#D4A373]/15 text-[#b8864e] text-xs font-bold flex items-center justify-center">
             {String(index + 1).padStart(2, '0')}
           </span>
-          <span className="font-serif text-base sm:text-lg text-gray-900 leading-snug">{day.title}</span>
+          <span className="font-serif text-sm sm:text-base md:text-lg text-gray-900 leading-snug">{day.title}</span>
         </div>
-        <span className="ml-4 flex-shrink-0 text-[#D4A373]">
-          {isOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+        <span className="ml-3 sm:ml-4 flex-shrink-0 text-[#D4A373]">
+          {isOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
         </span>
       </button>
       <AnimatePresence initial={false}>
@@ -53,18 +54,18 @@ function DayCard({ day, index, isOpen, onToggle }) {
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="overflow-hidden"
           >
-            <div className="px-6 pb-6 pt-2 border-t border-gray-100">
+            <div className="px-4 sm:px-6 pb-5 sm:pb-6 pt-2 border-t border-gray-100">
               {day.activities && day.activities.length > 0 ? (
-                <ul className="space-y-2 mt-3">
+                <ul className="space-y-2 mt-2 sm:mt-3">
                   {day.activities.map((act, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm text-gray-700 leading-relaxed">
+                    <li key={i} className="flex items-start gap-2.5 sm:gap-3 text-xs sm:text-sm text-gray-700 leading-relaxed">
                       <span className="flex-shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-[#D4A373]" />
                       {act}
                     </li>
                   ))}
                 </ul>
               ) : (
-                <p className="text-sm text-gray-500 mt-3 italic">Full details available on enquiry.</p>
+                <p className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3 italic">Full details available on enquiry.</p>
               )}
             </div>
           </motion.div>
@@ -214,8 +215,8 @@ export default function ItineraryDetail() {
 
   return (
     <div className="min-h-screen bg-[#faf9f6]">
-      {/* ── Hero Strip ─────────────────────────────── */}
-      <div className="relative h-[55vh] min-h-[380px] w-full overflow-hidden">
+      {/* ── Hero Strip (Responsive Height: compact on mobile, majestic on PC) ── */}
+      <div className="relative h-[38vh] min-h-[250px] sm:h-[55vh] sm:min-h-[380px] w-full overflow-hidden">
         <img
           src={meta.img}
           alt={displayName}
@@ -224,26 +225,26 @@ export default function ItineraryDetail() {
           fetchPriority="high"
           decoding="async"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/15" />
 
         {/* Back button positioned safely below fixed navbar */}
-        <div className="absolute top-24 left-0 right-0 z-20 w-full max-w-7xl mx-auto px-6">
+        <div className="absolute top-20 sm:top-24 left-0 right-0 z-20 w-full max-w-7xl mx-auto px-4 sm:px-6">
           <Link
             to={meta.from}
-            className="inline-flex items-center gap-2 text-white/90 hover:text-white text-xs font-semibold uppercase tracking-widest transition-colors bg-black/30 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-white/20 hover:border-white/40"
+            className="inline-flex items-center gap-1.5 sm:gap-2 text-white/90 hover:text-white text-[10px] sm:text-xs font-semibold uppercase tracking-widest transition-colors bg-black/35 backdrop-blur-sm px-3 sm:px-3.5 py-1.5 rounded-full border border-white/20 hover:border-white/40"
           >
-            <ArrowLeft size={14} />
+            <ArrowLeft size={13} />
             {meta.fromLabel}
           </Link>
         </div>
 
         {/* Hero text */}
-        <div className="absolute bottom-0 left-0 right-0 pb-10 z-10 w-full max-w-7xl mx-auto px-6">
+        <div className="absolute bottom-0 left-0 right-0 pb-6 sm:pb-10 z-10 w-full max-w-7xl mx-auto px-4 sm:px-6">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-[#D4A373] text-[10px] tracking-[0.3em] uppercase font-semibold mb-2"
+            className="text-[#D4A373] text-[9px] sm:text-[10px] tracking-[0.25em] sm:tracking-[0.3em] uppercase font-semibold mb-1 sm:mb-2"
           >
             {meta.region} · {extractDurationShort(currentPkg?.duration) || currentPkg?.duration || 'Itinerary'}
           </motion.p>
@@ -251,7 +252,7 @@ export default function ItineraryDetail() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.35 }}
-            className="font-serif text-4xl sm:text-6xl text-white leading-tight"
+            className="font-serif text-3xl sm:text-5xl lg:text-6xl text-white leading-tight"
           >
             {displayName}
           </motion.h1>
@@ -260,9 +261,9 @@ export default function ItineraryDetail() {
 
       {/* ── Duration Tab Selector (Sub-Itinerary Endpoints) ── */}
       {packages.length > 1 && (
-        <div className="bg-white border-b border-gray-200 sticky top-[68px] z-40 shadow-xs">
-          <div className="max-w-5xl mx-auto px-5 sm:px-8 flex items-center justify-between">
-            <div className="flex gap-1 overflow-x-auto py-0">
+        <div className="bg-white border-b border-gray-200 sticky top-[60px] sm:top-[68px] z-40 shadow-xs">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+            <div className="flex gap-1 overflow-x-auto no-scrollbar py-0">
               {packages.map((pkg, i) => {
                 const isSelected = selectedPkg === i;
                 const slug = getPackageSlug(pkg, resolvedDest, i);
@@ -275,7 +276,7 @@ export default function ItineraryDetail() {
                       e.preventDefault();
                       handleSelectPackage(i);
                     }}
-                    className={`flex-shrink-0 px-5 py-4 text-[10px] font-bold uppercase tracking-[0.2em] border-b-2 transition-colors whitespace-nowrap ${
+                    className={`flex-shrink-0 px-3.5 sm:px-5 py-3 sm:py-4 text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] border-b-2 transition-colors whitespace-nowrap ${
                       isSelected
                         ? 'border-[#D4A373] text-[#b8864e]'
                         : 'border-transparent text-gray-500 hover:text-gray-900'
@@ -309,11 +310,11 @@ export default function ItineraryDetail() {
       )}
 
       {/* ── Main Content ───────────────────────────── */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
-        {/* Top View Mode Switcher & Circuit Header */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8 pb-5 border-b border-gray-200">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-12 pb-24 lg:pb-14">
+        {/* Top View Mode Switcher & Circuit Header (Decluttered for Mobile) */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 mb-6 sm:mb-8 pb-4 sm:pb-5 border-b border-gray-200">
           <div>
-            <div className="flex items-center gap-2 text-[#D4A373] text-[10px] tracking-widest uppercase font-semibold mb-1">
+            <div className="flex items-center gap-1.5 sm:gap-2 text-[#D4A373] text-[9px] sm:text-[10px] tracking-widest uppercase font-semibold mb-1">
               <span>{displayName} Circuit</span>
               {currentPkg?.duration && (
                 <>
@@ -322,36 +323,36 @@ export default function ItineraryDetail() {
                 </>
               )}
             </div>
-            <h2 className="font-serif text-2xl sm:text-3xl text-gray-900">
+            <h2 className="font-serif text-xl sm:text-2xl lg:text-3xl text-gray-900">
               {currentPkg?.title && currentPkg.title !== displayName ? currentPkg.title : 'Curated Pilgrimage Plan'}
             </h2>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3 self-start sm:self-auto">
             {/* View Switcher Toggle */}
             <div className="inline-flex items-center border border-[#E7E1D7] bg-white divide-x divide-[#E7E1D7] shadow-2xs">
               <button
                 onClick={() => setViewMode('map')}
-                className={`inline-flex items-center gap-2 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.2em] transition-colors ${
+                className={`inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] transition-colors ${
                   viewMode === 'map'
                     ? 'bg-primary text-white'
                     : 'text-[#332D29] hover:bg-[#F9F7F2] hover:text-primary'
                 }`}
                 title="View interactive map and unrolling manuscript scrolls"
               >
-                <Compass size={13} />
+                <Compass size={12} className="shrink-0" />
                 <span>Map & Scroll</span>
               </button>
               <button
                 onClick={() => setViewMode('list')}
-                className={`inline-flex items-center gap-2 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.2em] transition-colors ${
+                className={`inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] transition-colors ${
                   viewMode === 'list'
                     ? 'bg-primary text-white'
                     : 'text-[#332D29] hover:bg-[#F9F7F2] hover:text-primary'
                 }`}
                 title="View original day-by-day accordion list"
               >
-                <List size={13} />
+                <List size={12} className="shrink-0" />
                 <span>Classic List</span>
               </button>
             </div>
@@ -360,17 +361,17 @@ export default function ItineraryDetail() {
             <button
               onClick={handleCopyLink}
               title="Copy direct link to this sub-itinerary"
-              className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-[#332D29] hover:text-primary px-4 py-2.5 border border-[#E7E1D7] bg-white hover:bg-[#F9F7F2] transition-colors shadow-2xs"
+              className="inline-flex items-center gap-1.5 text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#332D29] hover:text-primary px-3 sm:px-4 py-2 sm:py-2.5 border border-[#E7E1D7] bg-white hover:bg-[#F9F7F2] transition-colors shadow-2xs"
             >
               {copied ? (
                 <>
-                  <Check size={13} className="text-emerald-600" />
-                  <span className="text-emerald-600 font-semibold">Copied</span>
+                  <Check size={12} className="text-emerald-600 shrink-0" />
+                  <span className="text-emerald-600 font-semibold text-[9px] sm:text-[10px]">Copied</span>
                 </>
               ) : (
                 <>
-                  <Share2 size={13} />
-                  <span>Share</span>
+                  <Share2 size={12} className="shrink-0" />
+                  <span className="hidden sm:inline">Share</span>
                 </>
               )}
             </button>
@@ -386,7 +387,7 @@ export default function ItineraryDetail() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.35 }}
-              className="space-y-12"
+              className="space-y-8 sm:space-y-12"
             >
               <ItineraryMapScroll
                 destination={resolvedDest}
@@ -395,16 +396,16 @@ export default function ItineraryDetail() {
               />
 
               {/* Lower Details Row: Inclusions & WhatsApp Booking Concierge */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6 border-t border-[#E7E1D7]">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 pt-4 sm:pt-6 border-t border-[#E7E1D7]">
                 
                 {/* 1. What's Included */}
                 {currentPkg?.inclusions?.length > 0 && (
-                  <div className="lg:col-span-2 border border-[#E7E1D7] bg-[#FCFBF8] p-8 shadow-xs">
-                    <div className="flex items-center gap-2 text-primary text-[10px] tracking-[0.25em] uppercase font-bold mb-4">
+                  <div className="lg:col-span-2 border border-[#E7E1D7] bg-[#FCFBF8] p-5 sm:p-8 shadow-xs">
+                    <div className="flex items-center gap-2 text-primary text-[9px] sm:text-[10px] tracking-[0.25em] uppercase font-bold mb-3 sm:mb-4">
                       <CheckCircle2 size={14} className="text-emerald-700" />
                       <span>Sacred Inclusions & Comforts</span>
                     </div>
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3.5">
                       {currentPkg.inclusions.map((inc, i) => (
                         <li key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#332D29] leading-relaxed">
                           <CheckCircle2 size={14} className="flex-shrink-0 mt-0.5 text-emerald-700" />
@@ -416,17 +417,17 @@ export default function ItineraryDetail() {
                 )}
 
                 {/* 2. Direct WhatsApp Booking Concierge */}
-                <div className="border border-[#E7E1D7] bg-[#1a1209] text-white p-8 shadow-sm flex flex-col justify-between">
+                <div className="border border-[#E7E1D7] bg-[#1a1209] text-white p-5 sm:p-8 shadow-sm flex flex-col justify-between">
                   <div>
-                    <p className="text-primary text-[10px] tracking-[0.25em] uppercase font-bold mb-2">Private Circuit Concierge</p>
-                    <h3 className="font-serif text-2xl text-white mb-2 leading-tight">{displayName}</h3>
+                    <p className="text-primary text-[9px] sm:text-[10px] tracking-[0.25em] uppercase font-bold mb-2">Private Circuit Concierge</p>
+                    <h3 className="font-serif text-xl sm:text-2xl text-white mb-2 leading-tight">{displayName}</h3>
                     {currentPkg?.duration && (
-                      <p className="text-white/60 text-xs mb-4 flex items-center gap-2">
+                      <p className="text-white/60 text-xs mb-3 sm:mb-4 flex items-center gap-2">
                         <Clock size={12} className="text-primary" />
                         {currentPkg.duration}
                       </p>
                     )}
-                    <p className="text-xs text-white/70 leading-relaxed mb-6">
+                    <p className="text-xs text-white/70 leading-relaxed mb-5 sm:mb-6">
                       Customise your travel dates, pickup points, hotel categories and VIP temple passes directly with our dedicated travel desk.
                     </p>
                   </div>
@@ -437,14 +438,50 @@ export default function ItineraryDetail() {
                       target="_blank"
                       rel="noreferrer"
                       onClick={() => trackWhatsAppClick('itinerary_map_cta', `${displayName} - ${currentPkg?.duration || ''}`)}
-                      className="flex items-center justify-center gap-2 w-full bg-primary text-white px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-[#c97524] transition-colors shadow-sm"
+                      className="flex items-center justify-center gap-2 w-full bg-primary text-white px-5 sm:px-6 py-3 sm:py-3.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-[#c97524] transition-colors shadow-sm"
                     >
                       <MessageCircle size={15} />
                       Enquire via WhatsApp
                     </a>
-                    <p className="text-white/40 text-[10px] mt-2.5 text-center">Prompt assistance within 24 hours</p>
+                    <p className="text-white/40 text-[9px] sm:text-[10px] mt-2 sm:mt-2.5 text-center">Prompt assistance within 24 hours</p>
                   </div>
                 </div>
+
+                {/* Exclusions Card */}
+                {currentPkg?.exclusions?.length > 0 && (
+                  <div className="lg:col-span-2 border border-[#E7E1D7] bg-[#FCFBF8] p-5 sm:p-8 shadow-xs">
+                    <div className="flex items-center gap-2 text-rose-700 text-[9px] sm:text-[10px] tracking-[0.25em] uppercase font-bold mb-3 sm:mb-4">
+                      <XCircle size={14} className="text-rose-600" />
+                      <span>Exclusions</span>
+                    </div>
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3.5">
+                      {currentPkg.exclusions.map((exc, i) => (
+                        <li key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#332D29] leading-relaxed">
+                          <XCircle size={14} className="flex-shrink-0 mt-0.5 text-rose-500" />
+                          <span>{exc}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {/* Important Notes Card */}
+                {currentPkg?.notes?.length > 0 && (
+                  <div className="lg:col-span-3 border border-amber-200 bg-amber-50/50 p-5 sm:p-6 shadow-xs">
+                    <div className="flex items-center gap-2 text-amber-800 text-[9px] sm:text-[10px] tracking-[0.25em] uppercase font-bold mb-3">
+                      <AlertCircle size={14} className="text-amber-700" />
+                      <span>Important Notes & Guidelines</span>
+                    </div>
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs sm:text-sm text-gray-700 leading-relaxed">
+                      {currentPkg.notes.map((note, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <span className="text-amber-600 font-bold">•</span>
+                          <span>{note}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
 
               </div>
             </motion.div>
@@ -533,6 +570,36 @@ export default function ItineraryDetail() {
                             <li key={i} className="flex items-start gap-3">
                               <CheckCircle2 size={14} className="flex-shrink-0 mt-0.5 text-emerald-600" />
                               <span className="text-sm text-gray-700 leading-relaxed">{inc}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {/* Exclusions Card */}
+                    {currentPkg?.exclusions?.length > 0 && (
+                      <div className="border border-gray-200 bg-white p-7">
+                        <p className="text-rose-600 text-[10px] tracking-widest uppercase font-semibold mb-5">Exclusions</p>
+                        <ul className="space-y-3">
+                          {currentPkg.exclusions.map((exc, i) => (
+                            <li key={i} className="flex items-start gap-3">
+                              <XCircle size={14} className="flex-shrink-0 mt-0.5 text-rose-500" />
+                              <span className="text-sm text-gray-700 leading-relaxed">{exc}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {/* Important Notes Card */}
+                    {currentPkg?.notes?.length > 0 && (
+                      <div className="border border-amber-200 bg-amber-50/60 p-6">
+                        <p className="text-amber-800 text-[10px] tracking-widest uppercase font-semibold mb-4">Important Notes</p>
+                        <ul className="space-y-2">
+                          {currentPkg.notes.map((note, i) => (
+                            <li key={i} className="flex items-start gap-2 text-xs text-gray-700 leading-relaxed">
+                              <span className="text-amber-600 font-bold">•</span>
+                              <span>{note}</span>
                             </li>
                           ))}
                         </ul>

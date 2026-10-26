@@ -1,0 +1,71 @@
+{
+  "destination": "nainital-kainchi-bhimtal",
+  "destinationDisplayName": "Nainital • Kainchi Dham • Bhimtal",
+  "category": "Group Trips",
+  "region": "North India",
+  "packageId": "nainital-kainchi-bhimtal-group",
+  "packageTitle": "Nainital • Kainchi Dham • Bhimtal Getaway",
+  "duration": "3 Nights / 2 Days Sightseeing | Delhi to Delhi",
+  "durationShort": "3 Nights / 2 Days Sightseeing | Delhi to Delhi",
+  "slug": "3n-2d",
+  "pagePath": "/itinerary/nainital-kainchi-bhimtal/3n-2d",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/nainital-kainchi-bhimtal/3n-2d",
+  "apiEndpoint": "/api/itineraries/nainital-kainchi-bhimtal/3n-2d.json",
+  "image": "/assets/Kainchi-Dham.jpg",
+  "inclusions": [
+    "Delhi-to-Delhi transportation by Tempo Traveller or bus, depending on group size.",
+    "Local union Sumo transportation for Nainital sightseeing, as per applicable route and arrangements.",
+    "One night's hotel accommodation in Bhimtal on triple/quad sharing basis, with one double bed and an additional mattress.",
+    "One breakfast at the hotel.",
+    "One dinner at the hotel.",
+    "Kainchi Dham visit and darshan.",
+    "Trip Captain throughout the trip.",
+    "Basic first-aid support."
+  ],
+  "days": [
+    {
+      "title": "Day 1: Departure from Delhi (Akshardham Metro)",
+      "activities": [
+        "Meet the group and Trip Captain at the designated meeting point at Akshardham Metro Station.",
+        "Begin the journey towards Nainital by Tempo Traveller or bus, depending on group size.",
+        "Enjoy an overnight journey towards Uttarakhand.",
+        "Dinner halt en route at your own expense."
+      ]
+    },
+    {
+      "title": "Day 2: Bhimtal • Kainchi Dham • Golu Devta",
+      "activities": [
+        "Arrive in Bhimtal and check in to the hotel.",
+        "Freshen up and get ready for sightseeing.",
+        "Visit Kainchi Dham Ashram and seek blessings of Neem Karoli Baba.",
+        "Proceed to Golu Devta Temple for darshan.",
+        "Explore the scenic surroundings of Bhimtal.",
+        "Return to the hotel and enjoy group activities.",
+        "Dinner at the hotel.",
+        "Overnight stay in Bhimtal."
+      ]
+    },
+    {
+      "title": "Day 3: Nainital Sightseeing & Return Journey to Delhi",
+      "activities": [
+        "Enjoy breakfast at the hotel.",
+        "Proceed towards Nainital for local sightseeing.",
+        "Transfer to local union cabs near Nainital, as Tempo Travellers may have restrictions on entering certain areas.",
+        "Enjoy boating at Naini Lake (at your own expense).",
+        "Visit Naina Devi Temple and seek blessings.",
+        "Explore Mall Road and enjoy café hopping and shopping at your leisure.",
+        "Return to the designated parking area by local cabs.",
+        "Board the Tempo Traveller or bus and begin the overnight journey towards Delhi.",
+        "Dinner halt en route, if required, at your own expense."
+      ]
+    },
+    {
+      "title": "Day 4: Arrival in Delhi",
+      "activities": [
+        "Arrive at Akshardham Metro Station, Delhi in the morning.",
+        "Tour concludes with beautiful memories and new friendships."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Nainital%20%E2%80%A2%20Kainchi%20Dham%20%E2%80%A2%20Bhimtal%203%20Nights%20%2F%202%20Days%20Sightseeing%20%7C%20Delhi%20to%20Delhi%20package"
+}

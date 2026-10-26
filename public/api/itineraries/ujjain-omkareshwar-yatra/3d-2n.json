@@ -1,0 +1,76 @@
+{
+  "destination": "ujjain-omkareshwar-yatra",
+  "destinationDisplayName": "Ujjain & Omkareshwar Jyotirlinga",
+  "category": "Group Trips",
+  "region": "Central India",
+  "packageId": "ujjain-omkareshwar-group",
+  "packageTitle": "Ujjain & Omkareshwar Jyotirlinga Yatra",
+  "duration": "3 Days / 2 Nights | Mumbai to Mumbai",
+  "durationShort": "3 Days / 2 Nights | Mumbai to Mumbai",
+  "slug": "3d-2n",
+  "pagePath": "/itinerary/ujjain-omkareshwar-yatra/3d-2n",
+  "canonicalUrl": "https://www.yugatirtha.com/itinerary/ujjain-omkareshwar-yatra/3d-2n",
+  "apiEndpoint": "/api/itineraries/ujjain-omkareshwar-yatra/3d-2n.json",
+  "image": "/assets/hero-aarti.jpg",
+  "inclusions": [
+    "Mumbai-to-Mumbai transportation by Volvo bus, with onward and return sectors arranged as per the itinerary.",
+    "Local transportation for Ujjain, Omkareshwar and Indore sightseeing.",
+    "One night's hotel accommodation in Ujjain.",
+    "One night's hotel accommodation in Indore.",
+    "Two breakfasts.",
+    "Two lunches.",
+    "VIP darshan at Mahakaleshwar Jyotirlinga Temple, subject to confirmation.",
+    "VIP darshan at Omkareshwar Jyotirlinga Temple, subject to confirmation.",
+    "Trip coordination and assistance throughout the journey.",
+    "Applicable vehicle tolls, parking charges and permits, as per the package arrangement."
+  ],
+  "days": [
+    {
+      "title": "Day 1: Friday – Overnight Journey from Mumbai",
+      "activities": [
+        "Board the Volvo bus from Mumbai for an overnight journey towards Ujjain.",
+        "Enjoy a comfortable overnight journey and prepare for a spiritual experience in Madhya Pradesh."
+      ]
+    },
+    {
+      "title": "Day 2: Saturday – Ujjain Temple Tour & Mahakaleshwar Darshan",
+      "activities": [
+        "Arrive in Ujjain and transfer to the hotel for freshening up, subject to hotel arrangements.",
+        "Begin the spiritual journey with darshan at Kal Bhairav Temple.",
+        "Visit Mangalnath Temple, a sacred temple associated with Lord Shiva.",
+        "Explore Sandipani Ashram, an ancient spiritual site traditionally associated with Lord Krishna's education.",
+        "Enjoy lunch and continue exploring other prominent temples in Ujjain, subject to time availability.",
+        "Visit Mahakaleshwar Jyotirlinga Temple for VIP darshan, as per the confirmed arrangement.",
+        "Experience the divine evening Ram Ghat Aarti on the banks of the sacred Shipra River.",
+        "Visit Harsiddhi Mata Temple and experience the evening aarti, subject to temple timings.",
+        "Explore the Mahakal Lok Corridor, with its grand sculptures, illuminated pathways and spiritual atmosphere.",
+        "Return to the hotel for an overnight stay in Ujjain."
+      ]
+    },
+    {
+      "title": "Day 3: Sunday – Omkareshwar Darshan & Overnight Stay in Indore",
+      "activities": [
+        "Enjoy breakfast at the hotel and check out.",
+        "Depart for Omkareshwar, situated on the sacred Narmada River.",
+        "Visit Omkareshwar Jyotirlinga Temple for VIP darshan, as per the confirmed arrangement.",
+        "Visit Mamleshwar Temple, another important Shiva temple associated with the Omkareshwar pilgrimage.",
+        "Enjoy an optional boat ride on the Narmada River, subject to availability and local conditions.",
+        "Spend leisure time exploring the Narmada ghats and the local market.",
+        "Enjoy lunch and proceed towards Indore.",
+        "Arrive in Indore and check in to the hotel.",
+        "Overnight stay in Indore."
+      ]
+    },
+    {
+      "title": "Day 4: Monday – Return Journey to Mumbai",
+      "activities": [
+        "Check out from the hotel as per the bus departure schedule.",
+        "Transfer to the designated boarding point in Indore.",
+        "Board the Volvo bus for Mumbai.",
+        "Arrive in Mumbai on Monday morning, subject to traffic and bus schedules.",
+        "Tour concludes with divine blessings and beautiful memories."
+      ]
+    }
+  ],
+  "whatsappUrl": "https://wa.me/918591262424?text=I%20would%20like%20to%20enquire%20about%20Ujjain%20%26%20Omkareshwar%20Jyotirlinga%203%20Days%20%2F%202%20Nights%20%7C%20Mumbai%20to%20Mumbai%20package"
+}

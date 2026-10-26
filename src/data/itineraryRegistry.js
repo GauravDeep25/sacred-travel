@@ -1,6 +1,7 @@
 import { domesticSiteConfig } from './siteConfig.domestic.js';
 import { internationalSiteConfig } from './siteConfig.international.js';
 import { spiritualSiteConfig } from './siteConfig.spiritual.js';
+import { groupToursSiteConfig } from './groupTours.js';
 import { siteConfig } from './siteConfig.js';
 
 export const CANONICAL_BASE = 'https://www.yugatirtha.com';
@@ -44,6 +45,12 @@ export const destinationMeta = {
   'georgia':               { img: '/assets/intl-caucasus-DAV0UB-k.jpg',   region: 'CIS Countries',   from: '/international',    fromLabel: 'International' },
   'japan':                 { img: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200', region: 'East Asia', from: '/international', fromLabel: 'International' },
   'srilanka':              { img: '/assets/Srilanka.jpg',                 region: 'South Asia',      from: '/international',    fromLabel: 'International' },
+
+  // ── Group Departures & Fixed Trips ──
+  'maharashtra-3-jyotirlinga': { img: '/assets/Maharashtra.jpg',         region: 'West India',      from: '/group-trips',      fromLabel: 'Group Trips' },
+  'nainital-kainchi-bhimtal':  { img: '/assets/Kainchi-Dham.jpg',         region: 'North India',     from: '/group-trips',      fromLabel: 'Group Trips' },
+  'gujarat-jyotirlinga':       { img: '/assets/Gujrat.jpg',               region: 'West India',      from: '/group-trips',      fromLabel: 'Group Trips' },
+  'ujjain-omkareshwar-yatra':  { img: '/assets/hero-aarti.jpg',           region: 'Central India',   from: '/group-trips',      fromLabel: 'Group Trips' },
 };
 
 export const destinationDisplayNames = {
@@ -84,6 +91,12 @@ export const destinationDisplayNames = {
   'georgia':               'Georgia',
   'japan':                 'Japan',
   'srilanka':              'Sri Lanka',
+
+  // Group Trips
+  'maharashtra-3-jyotirlinga': 'Maharashtra 3 Jyotirlinga Yatra',
+  'nainital-kainchi-bhimtal':  'Nainital • Kainchi Dham • Bhimtal',
+  'gujarat-jyotirlinga':       'Gujarat Jyotirlinga Yatra',
+  'ujjain-omkareshwar-yatra':  'Ujjain & Omkareshwar Jyotirlinga',
 };
 
 // Explicit custom duration sub-slugs for disambiguation
@@ -123,6 +136,12 @@ export const customSubSlugs = {
   // Tirupati
   'andhrapradesh-2': '2n-3d',
   'andhrapradesh-3': '2n-3d-kalahasti',
+
+  // Group Departures
+  'maharashtra-3jyotirlinga-group': '3d-2n',
+  'nainital-kainchi-bhimtal-group': '3n-2d',
+  'gujarat-jyotirlinga-group':      '3d-2n',
+  'ujjain-omkareshwar-group':       '3d-2n',
 };
 
 /**
@@ -207,6 +226,7 @@ export function getDestinationPackages(destination, subItinerary = '') {
 
   // Direct lookup
   return (
+    groupToursSiteConfig.itineraries?.[dest] ||
     spiritualSiteConfig.itineraries?.[dest] ||
     domesticSiteConfig.itineraries?.[dest] ||
     internationalSiteConfig.itineraries?.[dest] ||
@@ -288,6 +308,7 @@ const canonicalSpiritualPlaces = [
  */
 export function getItineraryCatalog() {
   const allDestinations = [
+    ...Object.entries(groupToursSiteConfig.itineraries || {}).map(([dest, pkgs]) => ({ dest, pkgs, category: 'Group Trips', from: '/group-trips' })),
     ...Object.entries(domesticSiteConfig.itineraries || {}).map(([dest, pkgs]) => ({ dest, pkgs, category: 'Domestic', from: '/domestic' })),
     ...Object.entries(internationalSiteConfig.itineraries || {}).map(([dest, pkgs]) => ({ dest, pkgs, category: 'International', from: '/international' })),
     ...canonicalSpiritualPlaces

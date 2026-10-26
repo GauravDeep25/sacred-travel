@@ -1,6 +1,7 @@
 import { domesticSiteConfig } from './siteConfig.domestic.js';
 import { internationalSiteConfig } from './siteConfig.international.js';
 import { spiritualSiteConfig } from './siteConfig.spiritual.js';
+import { groupToursSiteConfig } from './groupTours.js';
 
 export const siteConfig = {
   company: {
@@ -15,6 +16,7 @@ export const siteConfig = {
 
   navigation: [
     { name: "Home", path: "/" },
+    { name: "Group Trips", path: "/group-trips" },
     { name: "Domestic", path: "/domestic" },
     { name: "International", path: "/international" },
     { name: "Spiritual Journey", path: "/spiritualjourney" },
@@ -763,11 +765,14 @@ export const siteConfig = {
     quote: "Travel, at its best, is a pilgrimage — a crossing (tirtha) through time (yuga) that connects people not just to places, but to something older and deeper than themselves."
   },
 
+  groupTrips: groupToursSiteConfig,
+
   itineraries: {
     ...domesticSiteConfig.itineraries,
     ...internationalSiteConfig.itineraries,
     ...spiritualSiteConfig.itineraries,
+    ...groupToursSiteConfig.itineraries,
   },
 };
 
-export { domesticSiteConfig, internationalSiteConfig, spiritualSiteConfig };
+export { domesticSiteConfig, internationalSiteConfig, spiritualSiteConfig, groupToursSiteConfig };

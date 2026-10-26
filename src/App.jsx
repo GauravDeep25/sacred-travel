@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Domestic from './pages/Domestic';
 import International from './pages/International';
 import SpiritualJourney from './pages/SpiritualJourney';
+import GroupTrips from './pages/GroupTrips';
 import Experiences from './pages/Experiences';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -32,6 +33,10 @@ export default function App() {
       <main className="bg-base">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/group-trips" element={<GroupTrips />} />
+          <Route path="/grouptrips" element={<Navigate to="/group-trips" replace />} />
+          <Route path="/group-tours" element={<Navigate to="/group-trips" replace />} />
+          <Route path="/grouptours" element={<Navigate to="/group-trips" replace />} />
           <Route path="/domestic" element={<Domestic />} />
           <Route path="/international" element={<International />} />
           <Route path="/spiritualjourney" element={<SpiritualJourney />} />

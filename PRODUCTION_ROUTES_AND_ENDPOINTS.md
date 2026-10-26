@@ -157,6 +157,10 @@
 | :--- | :--- | :---: | :--- |
 | `/api/itineraries.json` | `https://www.yugatirtha.com/api/itineraries.json` | GET | Master catalog of all destinations and sub-itineraries |
 | `/api/itineraries/index.json` | `https://www.yugatirtha.com/api/itineraries/index.json` | GET | Master catalog index |
+| `/api/itineraries/maharashtra-3-jyotirlinga.json` | `https://www.yugatirtha.com/api/itineraries/maharashtra-3-jyotirlinga.json` | GET | All packages for Maharashtra 3 Jyotirlinga Yatra |
+| `/api/itineraries/nainital-kainchi-bhimtal.json` | `https://www.yugatirtha.com/api/itineraries/nainital-kainchi-bhimtal.json` | GET | All packages for Nainital • Kainchi Dham • Bhimtal |
+| `/api/itineraries/gujarat-jyotirlinga.json` | `https://www.yugatirtha.com/api/itineraries/gujarat-jyotirlinga.json` | GET | All packages for Gujarat Jyotirlinga Yatra |
+| `/api/itineraries/ujjain-omkareshwar-yatra.json` | `https://www.yugatirtha.com/api/itineraries/ujjain-omkareshwar-yatra.json` | GET | All packages for Ujjain & Omkareshwar Jyotirlinga |
 | `/api/itineraries/kashmir.json` | `https://www.yugatirtha.com/api/itineraries/kashmir.json` | GET | All packages for Kashmir |
 | `/api/itineraries/ladakh.json` | `https://www.yugatirtha.com/api/itineraries/ladakh.json` | GET | All packages for Ladakh |
 | `/api/itineraries/himachal.json` | `https://www.yugatirtha.com/api/itineraries/himachal.json` | GET | All packages for Himachal Pradesh |

@@ -1,10 +1,94 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-10-18T06:54:59.393Z",
+  "generatedAt": "2026-10-26T15:43:06.149Z",
   "baseDomain": "https://www.yugatirtha.com",
-  "totalDestinations": 31,
-  "totalSubItineraries": 61,
+  "totalDestinations": 35,
+  "totalSubItineraries": 65,
   "destinations": [
+    {
+      "destination": "maharashtra-3-jyotirlinga",
+      "displayName": "Maharashtra 3 Jyotirlinga Yatra",
+      "category": "Group Trips",
+      "region": "West India",
+      "path": "/itinerary/maharashtra-3-jyotirlinga",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/maharashtra-3-jyotirlinga",
+      "packagesCount": 1,
+      "apiEndpoint": "/api/itineraries/maharashtra-3-jyotirlinga.json",
+      "subItineraries": [
+        {
+          "slug": "3d-2n",
+          "duration": "3 Days / 2 Nights | Group Departure from Mumbai & Pune",
+          "durationShort": "3 Days / 2 Nights | Group Departure from Mumbai & Pune",
+          "packageTitle": "Maharashtra 3 Jyotirlinga Yatra",
+          "path": "/itinerary/maharashtra-3-jyotirlinga/3d-2n",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/maharashtra-3-jyotirlinga/3d-2n",
+          "apiEndpoint": "/api/itineraries/maharashtra-3-jyotirlinga/3d-2n.json"
+        }
+      ]
+    },
+    {
+      "destination": "nainital-kainchi-bhimtal",
+      "displayName": "Nainital • Kainchi Dham • Bhimtal",
+      "category": "Group Trips",
+      "region": "North India",
+      "path": "/itinerary/nainital-kainchi-bhimtal",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/nainital-kainchi-bhimtal",
+      "packagesCount": 1,
+      "apiEndpoint": "/api/itineraries/nainital-kainchi-bhimtal.json",
+      "subItineraries": [
+        {
+          "slug": "3n-2d",
+          "duration": "3 Nights / 2 Days Sightseeing | Delhi to Delhi",
+          "durationShort": "3 Nights / 2 Days Sightseeing | Delhi to Delhi",
+          "packageTitle": "Nainital • Kainchi Dham • Bhimtal Getaway",
+          "path": "/itinerary/nainital-kainchi-bhimtal/3n-2d",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/nainital-kainchi-bhimtal/3n-2d",
+          "apiEndpoint": "/api/itineraries/nainital-kainchi-bhimtal/3n-2d.json"
+        }
+      ]
+    },
+    {
+      "destination": "gujarat-jyotirlinga",
+      "displayName": "Gujarat Jyotirlinga Yatra",
+      "category": "Group Trips",
+      "region": "West India",
+      "path": "/itinerary/gujarat-jyotirlinga",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/gujarat-jyotirlinga",
+      "packagesCount": 1,
+      "apiEndpoint": "/api/itineraries/gujarat-jyotirlinga.json",
+      "subItineraries": [
+        {
+          "slug": "3d-2n",
+          "duration": "3 Days / 2 Nights Journey | Mumbai & Pune Departure",
+          "durationShort": "3 Days / 2 Nights Journey | Mumbai & Pune Departure",
+          "packageTitle": "Gujarat Jyotirlinga Yatra",
+          "path": "/itinerary/gujarat-jyotirlinga/3d-2n",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/gujarat-jyotirlinga/3d-2n",
+          "apiEndpoint": "/api/itineraries/gujarat-jyotirlinga/3d-2n.json"
+        }
+      ]
+    },
+    {
+      "destination": "ujjain-omkareshwar-yatra",
+      "displayName": "Ujjain & Omkareshwar Jyotirlinga",
+      "category": "Group Trips",
+      "region": "Central India",
+      "path": "/itinerary/ujjain-omkareshwar-yatra",
+      "canonicalUrl": "https://www.yugatirtha.com/itinerary/ujjain-omkareshwar-yatra",
+      "packagesCount": 1,
+      "apiEndpoint": "/api/itineraries/ujjain-omkareshwar-yatra.json",
+      "subItineraries": [
+        {
+          "slug": "3d-2n",
+          "duration": "3 Days / 2 Nights | Mumbai to Mumbai",
+          "durationShort": "3 Days / 2 Nights | Mumbai to Mumbai",
+          "packageTitle": "Ujjain & Omkareshwar Jyotirlinga Yatra",
+          "path": "/itinerary/ujjain-omkareshwar-yatra/3d-2n",
+          "canonicalUrl": "https://www.yugatirtha.com/itinerary/ujjain-omkareshwar-yatra/3d-2n",
+          "apiEndpoint": "/api/itineraries/ujjain-omkareshwar-yatra/3d-2n.json"
+        }
+      ]
+    },
     {
       "destination": "kashmir",
       "displayName": "Kashmir",
