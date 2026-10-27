@@ -140,7 +140,7 @@ const WORLD_HEIGHT = 600;
 const MIN_ZOOM = 1.0;
 const MAX_ZOOM = 4.0;
 const POINT_FOCUS_ZOOM = 2.4;
-const MOBILE_FOCUS_ZOOM = 3.4;
+const MOBILE_FOCUS_ZOOM = 1.6;
 
 export default function ItineraryMapScroll({
   destination: _destination,
@@ -172,7 +172,7 @@ export default function ItineraryMapScroll({
   });
   const [mobileSubView, setMobileSubView] = useState('map'); // 'map' (interactive map) or 'stops' (vertical circuit stops timeline)
 
-  // Pan & Zoom state: in mobile view, default to 3.4x zoom and focused on current checkpoint
+  // Pan & Zoom state: in mobile view, default to 1.6x zoom and focused on current checkpoint
   const [zoom, setZoom] = useState(() => {
     if (typeof window !== 'undefined' && window.innerWidth < 768) {
       return MOBILE_FOCUS_ZOOM;
@@ -214,7 +214,7 @@ export default function ItineraryMapScroll({
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // In mobile view, default map to 3.4x zoom and focused on the current checkpoint
+  // In mobile view, default map to 1.6x zoom and focused on the current checkpoint
   useEffect(() => {
     if (isMobile && coordinates[selectedDayIndex]) {
       const pt = coordinates[selectedDayIndex];
