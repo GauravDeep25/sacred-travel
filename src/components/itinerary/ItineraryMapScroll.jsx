@@ -224,51 +224,17 @@ export default function ItineraryMapScroll({
     }
   }, [isMobile, coordinates, selectedDayIndex]);
 
-  // 1. Calculate maximum activity count and maximum text volume across all days in this itinerary
-  const maxContentMetrics = useMemo(() => {
-    if (!days || days.length === 0) {
-      return { maxActs: 4, maxLinesMobile: 14, maxLinesDesktop: 10 };
+  // Keep the top of the scroll stationary on the display when day transitions occur
+  const maintainScrollTopPosition = useCallback(() => {
+    if (scrollSectionRef.current) {
+      const rect = scrollSectionRef.current.getBoundingClientRect();
+      // If the top of the scroll had scrolled above the viewport (top < 0),
+      // bring it back cleanly to the top of the display so user never loses orientation
+      if (rect.top < 0) {
+        scrollSectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
-
-    let maxActs = 0;
-    let maxLinesMobile = 0;
-    let maxLinesDesktop = 0;
-
-    days.forEach((d) => {
-      const acts = d.activities || [];
-      maxActs = Math.max(maxActs, acts.length);
-
-      const titleLen = (d.title || '').length;
-      // Mobile text column (~300px): ~32 chars/line for titles, ~36 for activities
-      const titleLinesMob = Math.max(1, Math.ceil(titleLen / 32));
-      const actLinesMob = acts.reduce((sum, a) => sum + Math.max(1, Math.ceil(a.length / 36)), 0);
-      const totalMob = titleLinesMob + actLinesMob + acts.length * 0.5;
-
-      // Desktop text column (~700px): ~65 chars/line for titles, ~75 for activities
-      const titleLinesDesk = Math.max(1, Math.ceil(titleLen / 65));
-      const actLinesDesk = acts.reduce((sum, a) => sum + Math.max(1, Math.ceil(a.length / 75)), 0);
-      const totalDesk = titleLinesDesk + actLinesDesk + acts.length * 0.5;
-
-      maxLinesMobile = Math.max(maxLinesMobile, totalMob);
-      maxLinesDesktop = Math.max(maxLinesDesktop, totalDesk);
-    });
-
-    return {
-      maxActs: Math.max(maxActs, 4),
-      maxLinesMobile: Math.max(maxLinesMobile, 12),
-      maxLinesDesktop: Math.max(maxLinesDesktop, 8),
-    };
-  }, [days]);
-
-  // 2. Compute a constant, fixed content height calibrated to fit the maximum text content
-  const fixedContentHeight = useMemo(() => {
-    if (isMobile) {
-      // Mobile: fixed height so the scroll never changes size between days
-      return Math.max(420, 150 + Math.round(maxContentMetrics.maxLinesMobile * 24));
-    }
-    // Desktop: fixed height calibrated to the maximum text content across all days
-    return Math.max(500, 170 + Math.round(maxContentMetrics.maxLinesDesktop * 27));
-  }, [isMobile, maxContentMetrics]);
+  }, []);
 
   // Focus on a specific point with camera glide
   const focusOnPoint = useCallback((index, targetZoom = POINT_FOCUS_ZOOM) => {
@@ -330,6 +296,7 @@ export default function ItineraryMapScroll({
       if (isFocusMode || isMobile) {
         focusOnPoint(nextIdx, isMobile ? MOBILE_FOCUS_ZOOM : POINT_FOCUS_ZOOM);
       }
+      maintainScrollTopPosition();
     }
   };
 
@@ -341,6 +308,7 @@ export default function ItineraryMapScroll({
       if (isFocusMode || isMobile) {
         focusOnPoint(prevIdx, isMobile ? MOBILE_FOCUS_ZOOM : POINT_FOCUS_ZOOM);
       }
+      maintainScrollTopPosition();
     }
   };
 
@@ -1136,10 +1104,10 @@ export default function ItineraryMapScroll({
           </div>
         </div>
 
-        {/* ── SCROLL CONTAINER (ADAPTIVE HEIGHT ON MOBILE, FIXED ON PC) ── */}
+        {/* ── SCROLL CONTAINER (TOP FIXED ON DISPLAY, DYNAMIC BOTTOM HEIGHT BASED ON CONTENT) ── */}
         <div className="relative w-full">
 
-          {/* Top Wooden Rod (Stationary & Fixed) */}
+          {/* Top Wooden Rod (Stationary & Fixed on Display) */}
           <div className="relative z-20 flex items-center justify-center">
             <div className="w-5 sm:w-6 h-7 sm:h-8 rounded-l-xs bg-gradient-to-r from-[#b37e46] via-[#d2955c] to-[#f3821d] shadow-md border-r border-[#8c5e2d]" />
             <div className="flex-1 h-5 sm:h-6 bg-gradient-to-b from-[#1F1B18] via-[#332D29] to-[#161311] shadow-md border-y border-[#4a3f37] relative">
@@ -1156,7 +1124,7 @@ export default function ItineraryMapScroll({
             <div className="absolute inset-0 opacity-[0.025] pointer-events-none bg-[radial-gradient(#332D29_1px,transparent_1px)] [background-size:16px_16px]" />
 
             {/* Inner Double Frame */}
-            <div className="border border-[#E7E1D7] p-4 sm:p-8 bg-white/50 backdrop-blur-2xs rounded-none relative shadow-inner flex flex-col justify-between">
+            <div className="border border-[#E7E1D7] p-4 sm:p-8 bg-white/50 backdrop-blur-2xs rounded-none relative shadow-inner flex flex-col">
 
               {/* Corner Fleurons */}
               <span className="absolute -top-3 -left-3 text-[#d2955c] font-serif text-sm sm:text-base select-none">⚜</span>
@@ -1164,11 +1132,8 @@ export default function ItineraryMapScroll({
               <span className="absolute -bottom-3 -left-3 text-[#d2955c] font-serif text-sm sm:text-base select-none">⚜</span>
               <span className="absolute -bottom-3 -right-3 text-[#d2955c] font-serif text-sm sm:text-base select-none">⚜</span>
 
-              {/* ── CONTENT CONTAINER: Fixed size calibrated to maximum text content (does not jump or resize) ── */}
-              <div
-                style={{ height: `${fixedContentHeight}px` }}
-                className="relative flex flex-col justify-start overflow-y-auto scrollbar-thin scrollbar-thumb-primary/20 hover:scrollbar-thumb-primary/40 pr-1 sm:pr-2"
-              >
+              {/* ── CONTENT CONTAINER: Dynamic height adapting to content rather than fixed size ── */}
+              <div className="relative flex flex-col justify-start min-h-[140px] sm:min-h-[160px]">
                 <AnimatePresence mode="wait" custom={slideDirection}>
                   <motion.div
                     key={selectedDayIndex}
@@ -1270,7 +1235,7 @@ export default function ItineraryMapScroll({
             </div>
           </div>
 
-          {/* Bottom Wooden Rod & Tassel (Stationary & Fixed) */}
+          {/* Bottom Wooden Rod & Tassel (Dynamic bottom height adapts with content) */}
           <div className="relative z-20 flex flex-col items-center">
             <div className="w-full flex items-center justify-center">
               <div className="w-5 sm:w-6 h-7 sm:h-8 rounded-l-xs bg-gradient-to-r from-[#b37e46] via-[#d2955c] to-[#f3821d] shadow-md border-r border-[#8c5e2d]" />
